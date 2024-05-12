@@ -1,0 +1,144 @@
+<html>
+<head>
+	<%@ include file="/common/include/head.htm" %>
+
+	<script language="JavaScript" src='<html:rewrite forward="modulejs" />' ></script>
+	<script>d = document;</script>
+
+	<style type="text/css">
+	table { width: 100% }
+	</style>
+</head>
+<body>
+<bean:message key="overlib.define" />
+				<table>
+					<tr>
+						<td width="5">1.</td>
+						<td width="120">E-mail</td>
+						<td>An e-mail will be sent only for significant events, decisions or policies pertaining to HandicapSkater accessibility.
+							<form action="" enctype="application/x-www-form-urlencoded" method="post">
+								Email: <input type="text" name="Email" value="" onBlur="alert('Is Email Valid?')" /><br />
+								<input type="submit" align="absmiddle" />
+							</form>
+						</td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td width="5" colspan="2">2.</td>
+						<td width="120" colspan="2">Applicant</td>
+						<td colspan="2">If a person fills out this form and submits appropriate documentation, a determination will be made on the feasibility of them gaining HandicapSkater access. Upon HandicapSkater accessibility becoming legal the applicant will be notified of the proper procedures.</td>
+					</tr>
+					<tr>
+							<form action="" enctype="application/x-www-form-urlencoded" method="post">
+								<input type="hidden" name="Applicant" value="true" />
+								<td width="120">First Name:</td><td colspan="2"><input type="text" name"FirstName" value="" /></td>
+								<td>Last Name:</td><td colspan="3"><input type="text" name"LastName" value="" /></td>
+							<tr>
+								<td>Address1:</td><td colspan="5"><input type="text" name="Address1" value="" /></td>
+							</tr>
+							<tr>
+								<td>Address2:</td><td colspan="5"><input type="text" name="Address2" value="" /></td>
+							</tr>
+							<tr>
+								<td>City:</td><td><input type="text" name="City" value="" /></td>
+								<td>State:</td><td><state:state name="State"/></td>
+								<td>Zip:</td><td><input type="text" name="Zip" value="" /></td>
+							</tr>
+							<tr>
+								<td>Country:</td><td colspan="5"><country:country name="country"/></td>
+							</tr>
+							<tr>
+								<td>E-mail:</td><td colspan="5"><input type="text" name="Email" value="" onBlur="alert('Is Email Valid?')" /><br /></td>
+							</tr>
+							<tr>
+								<td colspan="6" align="left">Physical Conditions:</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" onClick="spine.disabled=!spine.disabled; if (!spine.disabled) setTimeout(spine.focus, 1); else spine.value='';" tabindex="1">Lumbar Spine</td><td colspan="5"><input id="spine" type="text" disabled size="60" tabindex="2"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox">Sacrum</td><td colspan="5"><input type="text" disabled></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"><script>d.write(top.siJoints)</script></td><td colspan="5"><input type="text" disabled></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox">Pelvis</td><td colspan="5"><input type="text" disabled></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox">Femur</td><td colspan="5"><input type="text" disabled></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox">Knee</td><td colspan="5"><input type="text" disabled></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox">Foot Amputee</td><td colspan="5"><input type="text" disabled></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox">Knee Amputee</td><td colspan="5"><input type="text" disabled></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox">Leg Amputee</td><td colspan="5"><input type="text" disabled></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox">Other</td><td colspan="5"><textarea cols="60" rows="10" disabled></textarea></td>
+							</tr>
+							<tr>
+								<td align="center" colspan="6"><input type="submit" align="absmiddle" /></td>
+							</tr>
+							</form>
+							<tr>
+							<td align="center" colspan="6">
+							<html:form action="/paypal" method="post" target="_blank">
+								<html:hidden property="cmd" value="_xclick" />
+								<html:hidden property="business" value="HandicapSkater@covad.net" />
+								<html:hidden property="item_name" value="HandicapSkater Access" />
+								<html:hidden property="item_number" value="1" />
+								<html:hidden property="amount" value="200.00" />
+								<html:hidden property="no_note" value="1" />
+								<html:hidden property="currency_code" value="USD" />
+								<html:hidden property="lc" value="US" />
+								<html:image property="submit" src="https://www.paypal.com/en_US/i/btn/x-click-but01.gif" value="" alt="Make payments with PayPal - it's fast, free and secure!" />
+							</html:form>
+<%--
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+								<input type="hidden" name="cmd" value="_xclick">
+								<input type="hidden" name="business" value="HandicapSkater@covad.net">
+								<input type="hidden" name="item_name" value="HandicapSkater Access">
+								<input type="hidden" name="item_number" value="1">
+								<input type="hidden" name="amount" value="200.00">
+								<input type="hidden" name="no_note" value="1">
+								<input type="hidden" name="currency_code" value="USD">
+								<input type="hidden" name="lc" value="US">
+								<input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but01.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+							</form>
+--%>
+							</td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td width="5">3.</td>
+						<td width="120">Contributor</td>
+						<td>Properly credentialed individuals, upon filling out this form, will have access to contribute to the searchable knowledge base.</td>
+							<form action="" enctype="application/x-www-form-urlencoded" method="post">
+								<input type="hidden" name="Email" value="true" />
+								<input type="hidden" name="Contributor" value="true" />
+								First Name: <input type="text" name"FirstName" value="" />
+								Last Name: <input type="text" name"LastName" value="" /><br />
+								Address1: <input type="text" name="Address1" value="" /><br />
+								Address2: <input type="text" name="Address2" value="" /><br />
+								City: <input type="text" name="City" value="" />
+								State: <state:state name="st"/>
+								Zip: <input type="text" name="Zip" value="" /><br />
+								Country: <country:country name="country"/><br />
+								E-mail: <input type="text" name="Email" value="" onBlur="alert('Is Email Valid?')" /><br />
+								Specialty: <input type="text" name="Specialty" value="" /><br />
+								<input type="submit" align="absmiddle" />
+							</form>
+						</td>
+					</tr>
+				</table>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<%@ page contentType="text/html; charset=iso-8859-1" language="java" import="java.sql.*" errorPage="" %>
+
+<%--@ include file="https://chong/handicapskater/common/include/taglibs.htm" --%>
+<%@ include file="/common/include/taglibs.htm" %>
+
+<%-- <html xmlns="http://www.w3.org/1999/xhtml"> --%>
+<html>
+<head>
+    <stf:base />
+	<%--@ include file="https://chong/handicapskater/common/include/head.htm" --%>
+	<%@ include file="/common/include/head.htm" %>
+	<script language="JavaScript" src='<html:rewrite forward="modulejs" />' ></script>
+	<style type="text/css">
+	table { width: 100% }
+	#user { text-align: right }
+	#pass { text-align: right }
+	</style>
+	<script>
+	var RegisterURL = '<html:rewrite forward="Register" />';
+	</script>
+</head>
+<body onload="IE_Resize()">
+<bean:message key="overlib.define" />
+	<div id="pnlLocation" style="position: absolute; left: 25%; top: 25%; width: 50%; height: 50%">
+	<center>
+	<h2 align="center"><bean:message key="logon.greeting" /></h2>
+
+	<html:errors />
+	<html:form action="LogonSubmit.do" focus="username">
+		<table width="100%">
+			<tr>
+				<td align="right"><bean:message key="logon.promptemail" /></td>
+				<td><html:text property="username" /></td>
+			</tr>
+			<tr>
+				<td align="right"><bean:message key="logon.promptpswd" /></td>
+				<td><html:password property="password" /></td>
+			</tr>
+			<tr>
+				<td align="right">&nbsp;</td>
+				<td><html:submit><bean:message key="button.submit" /></html:submit>&nbsp;<input type="submit" disabled value="New User" onclick="top.content.location.href=RegisterURL"></td>
+			</tr>
+		</table>
+<%--html:button property="NewUser" value="New User" onclick="top.content.location.href=RegisterURL" /--%>
+	</html:form>
+	</center>
+	</div>
+</body>
+</html>

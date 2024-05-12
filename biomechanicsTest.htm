@@ -1,0 +1,79 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<%@ include file="/common/include/taglibs.htm" %>
+
+<f:use_faces>
+<html>
+<head>
+    <stf:base/>
+	<%@ include file="/common/include/head.htm" %>
+	<script language="JavaScript" src='<html:rewrite forward="modulejs" />' ></script>
+</head>
+<body>
+<%--  bundle="demoBundle" --%>
+<h:form formName="tabbedForm">
+  <s:stylesheet path="/faces/common/css/stylesheet.css" />
+ Powered by Faces Components:
+<d:pane_tabbed id="tabcontrol"
+        paneClass="tabbed-pane"
+     contentClass="tabbed-content"
+    selectedClass="tabbed-selected"
+  unselectedClass="tabbed-unselected">
+
+  <d:pane_tab id="first" selected="true">
+
+    <f:facet name="label">
+      <d:pane_tablabel label="B A S I C S" commandName="first" />
+    </f:facet>
+	<h:panel_group>
+	  <h:output_text value="Biomechanics Basics" />
+	</h:panel_group>
+    <%--@ include file="BiomechanicsBasics.jsp" --%>
+
+  </d:pane_tab>
+
+  <d:pane_tab id="second" selected="false">
+
+    <f:facet name="label">
+      <d:pane_tablabel label="W A L K I N G" commandName="second" />
+    </f:facet>
+	<h:panel_group>
+	  <h:output_text value="Biomechanics Walking" />
+	</h:panel_group>
+
+    <%--@ include file="BiomechanicsWalking.jsp" --%>
+  </d:pane_tab>
+
+
+  <d:pane_tab id="third" selected="false">
+
+    <f:facet name="label">
+      <d:pane_tablabel label="R U N N I N G" commandName="third" />
+    </f:facet>
+	<h:panel_group>
+	  <h:output_text value="Biomechanics Running" />
+	</h:panel_group>
+ 
+    <%--@ include file="BiomechanicsRunning.jsp" --%>
+  </d:pane_tab>
+
+  <d:pane_tab id="fourth" selected="false">
+
+    <f:facet name="label">
+      <d:pane_tablabel label="S K A T I N G" commandName="fourth" />
+    </f:facet>
+	<h:panel_group>
+	  <h:output_text value="Biomechanics Skating" />
+	</h:panel_group>
+ 
+    <%--@ include file="BiomechanicsSkating.jsp" --%>
+  </d:pane_tab>
+
+</d:pane_tabbed>
+
+<hr />
+</h:form>
+
+</body>
+</html>
+</f:use_faces>
