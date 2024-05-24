@@ -92,6 +92,18 @@
                 </div>
 
                 <iframe id="content" name="content" src="overview.htm" style="display: table-cell; height: 100%; border: 0" width="100%" />
+
+                <script>
+                    function updateIframeSrc() {
+                        const hash = window.location.hash.substring(1);
+                        const [page, section] = hash.split('#')
+                        const iframe = document.getElementById('content');
+                        iframe.src = `${page}.htm#${section}`;
+                    }
+
+                    window.addEventListener('hashchange', updateIframeSrc)
+                    window.addEventListener('load', updateIframeSrc)
+                </script>
             </div>
         </div>
     </div>
