@@ -97,30 +97,33 @@
                     function updateIframeSrc() {
                         const hash = window.location.hash.substring(1);
                         if (hash) {
-                            const [page, section] = hash.split('#')
+                            const [page, section] = hash.split('#');
                             const iframe = document.getElementById('content');
-                            // iframe.src = `${page}.htm#${section}`;
                             iframe.onload = function() {
                                 if (section) {
-                                    iframe.content.location.hash = section;
+                                    iframe.contentWindow.location.hash = section;
                                 }
                             };
                             iframe.src = `${page}.htm`;
                         }
                     }
 
-
                     function simulateLinkClick() {
                         const hash = window.location.hash.substring(1);
                         if (hash) {
-                            const link = document.querySelector(`a[id="#${hash}"]`);
+                            const [page] = hash.split('#');
+                            const link = document.querySelector(`a[href="${page}.htm"]`);
                             if (link) {
                                 link.click();
                             }
                         }
                     }
 
-                    window.addEventListener('hashchange', updateIframeSrc);
+                    window.addEventListener('hashchange', () => {
+                        simulateLinkClick();
+                        updateIframeSrc();
+                    });
+
                     window.addEventListener('load', () => {
                         simulateLinkClick();
                         updateIframeSrc();
