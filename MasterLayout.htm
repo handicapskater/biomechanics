@@ -121,19 +121,19 @@
 
                     window.addEventListener('hashchange', () => {
                         updateIframeSrc();
-                        setTimeout(simulateLinkClick, 500); // Delay to ensure Angular has processed the hash change
+                        setTimeout(simulateLinkClick, 5000); // Delay to ensure Angular has processed the hash change
                     });
 
                     window.addEventListener('load', () => {
                         updateIframeSrc();
-                        setTimeout(simulateLinkClick, 500); // Delay to ensure Angular has loaded
+                        setTimeout(simulateLinkClick, 5000); // Delay to ensure Angular has loaded
                     });
 
                     document.addEventListener('DOMContentLoaded', function() {
                         setTimeout(() => {
                             updateIframeSrc();
                             simulateLinkClick();
-                        }, 100000); // Delay to ensure Angular has loaded
+                        }, 1000); // Delay to ensure Angular has loaded
                     });
                 </script>
             </div>
