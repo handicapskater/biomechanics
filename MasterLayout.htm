@@ -112,7 +112,6 @@
                         const hash = window.location.hash.substring(1);
                         if (hash) {
                             const [page] = hash.split('#');
-                            // document.querySelector(`a[href="${page}.htm"]`).click()
                             const intervalId = setInterval(() => {
                                 document.querySelector(`a[href="${page}.htm"]`).click()
                                 const link = document.querySelector(`a[href="${page}.htm"]`);
