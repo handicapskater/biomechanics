@@ -109,8 +109,22 @@
                         }
                     }
 
-                    window.addEventListener('hashchange', updateIframeSrc)
-                    window.addEventListener('load', updateIframeSrc)
+
+                    function simulateLinkClick() {
+                        const hash = window.location.hash.substring(1);
+                        if (hash) {
+                            const link = document.querySelector(`a[href="#${hash}"]`);
+                            if (link) {
+                                link.click();
+                            }
+                        }
+                    }
+
+                    window.addEventListener('hashchange', updateIframeSrc);
+                    window.addEventListener('load', () => {
+                        simulateLinkClick();
+                        updateIframeSrc();
+                    });
                 </script>
             </div>
         </div>
