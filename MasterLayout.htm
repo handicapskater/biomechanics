@@ -113,7 +113,7 @@
                     function simulateLinkClick() {
                         const hash = window.location.hash.substring(1);
                         if (hash) {
-                            const link = document.querySelector(`a[href="#${hash}"]`);
+                            const link = document.querySelector(`a[id="#${hash}"]`);
                             if (link) {
                                 link.click();
                             }
