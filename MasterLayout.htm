@@ -112,6 +112,7 @@
                         const hash = window.location.hash.substring(1);
                         if (hash) {
                             const [page] = hash.split('#');
+                            // document.querySelector(`a[href="${page}.htm"]`).click()
                             const intervalId = setInterval(() => {
                                 document.querySelector(`a[href="${page}.htm"]`).click()
                                 const link = document.querySelector(`a[href="${page}.htm"]`);
@@ -119,7 +120,7 @@
                                     link.click();
                                     clearInterval(intervalId);
                                 }
-                            }, 100); // Check every 100ms
+                            }, 1000); // Check every 100ms
 
                             setTimeout(() => clearInterval(intervalId), 5000); // Stop checking after 5 seconds
                         }
@@ -127,19 +128,19 @@
 
                     window.addEventListener('hashchange', () => {
                         simulateLinkClick();
-                        updateIframeSrc();
+                        // updateIframeSrc();
                     });
 
                     window.addEventListener('load', () => {
                         simulateLinkClick();
-                        updateIframeSrc();
+                        // updateIframeSrc();
                     });
 
                     // Ensuring Angular has finished loading
                     document.addEventListener('DOMContentLoaded', function() {
                         setTimeout(() => {
                             simulateLinkClick();
-                            updateIframeSrc();
+                            // updateIframeSrc();
                         }, 1000); // Delay to ensure Angular has loaded
                     });
                 </script>
