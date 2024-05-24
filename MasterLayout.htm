@@ -113,12 +113,14 @@
                         if (hash) {
                             const [page] = hash.split('#');
                             const intervalId = setInterval(() => {
-                                `$('#${page}').toggleClass('linkActionHi')`
-                                // const link = document.querySelector(`a[href="${page}.htm"]`);
-                                // if (link) {
-                                //     link.click();
-                                //     clearInterval(intervalId);
-                                // }
+                                const link = document.querySelector(`a[href="${page}.htm"]`);
+                                if (link) {
+                                    const scope = angular.element(link).scope();
+                                    scope.$apply(() => {
+                                        scope.setMenuItem(scope.item);
+                                    });
+                                    clearInterval(intervalId);
+                                }
                             }, 100); // Check every 100ms
 
                             setTimeout(() => clearInterval(intervalId), 5000); // Stop checking after 5 seconds
@@ -133,6 +135,14 @@
                     window.addEventListener('load', () => {
                         simulateLinkClick();
                         updateIframeSrc();
+                    });
+
+                    // Ensuring Angular has finished loading
+                    document.addEventListener('DOMContentLoaded', function() {
+                        setTimeout(() => {
+                            simulateLinkClick();
+                            updateIframeSrc();
+                        }, 1000); // Delay to ensure Angular has loaded
                     });
                 </script>
             </div>
