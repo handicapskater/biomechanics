@@ -94,7 +94,6 @@
                 <iframe id="content" name="content" src="overview.htm" style="display: table-cell; height: 100%; border: 0" width="100%" />
 
                 <script>
-                    alert('WTF');
                     function updateIframeSrc() {
                         const hash = window.location.hash.substring(1);
                         if (hash) {
@@ -114,10 +113,9 @@
                         if (hash) {
                             const [page] = hash.split('#');
                             const intervalId = setInterval(() => {
+                                document.querySelector(`a[href="${page}.htm"]`).click()
                                 const link = document.querySelector(`a[href="${page}.htm"]`);
-                                alert("checking link");
                                 if (link) {
-                                    alert("clicking link");
                                     link.click();
                                     clearInterval(intervalId);
                                 }
