@@ -112,35 +112,21 @@
                         const hash = window.location.hash.substring(1);
                         if (hash) {
                             const [page] = hash.split('#');
-                            const intervalId = setInterval(() => {
-                                document.querySelector(`a[href="${page}.htm"]`).click()
-                                const link = document.querySelector(`a[href="${page}.htm"]`);
-                                if (link) {
-                                    link.click();
-                                    clearInterval(intervalId);
-                                }
-                            }, 5000); // Check every 100ms
-
-                            setTimeout(() => clearInterval(intervalId), 5000); // Stop checking after 5 seconds
+                            const link = document.querySelector(`a[href="${page}.htm"]`);
+                            if (link) {
+                                link.click();
+                            }
                         }
                     }
 
                     window.addEventListener('hashchange', () => {
                         simulateLinkClick();
-                        // updateIframeSrc();
+                        updateIframeSrc();
                     });
 
                     window.addEventListener('load', () => {
                         simulateLinkClick();
-                        // updateIframeSrc();
-                    });
-
-                    // Ensuring Angular has finished loading
-                    document.addEventListener('DOMContentLoaded', function() {
-                        setTimeout(() => {
-                            simulateLinkClick();
-                            // updateIframeSrc();
-                        }, 1000); // Delay to ensure Angular has loaded
+                        updateIframeSrc();
                     });
                 </script>
             </div>
