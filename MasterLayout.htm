@@ -113,11 +113,12 @@
                         if (hash) {
                             const [page] = hash.split('#');
                             const intervalId = setInterval(() => {
-                                const link = document.querySelector(`a[href="${page}.htm"]`);
-                                if (link) {
-                                    link.click();
-                                    clearInterval(intervalId);
-                                }
+                                `$('#${page}').toggleClass('linkActionHi')`
+                                // const link = document.querySelector(`a[href="${page}.htm"]`);
+                                // if (link) {
+                                //     link.click();
+                                //     clearInterval(intervalId);
+                                // }
                             }, 100); // Check every 100ms
 
                             setTimeout(() => clearInterval(intervalId), 5000); // Stop checking after 5 seconds
