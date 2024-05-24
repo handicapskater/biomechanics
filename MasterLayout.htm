@@ -113,12 +113,11 @@
                         if (hash) {
                             const [page] = hash.split('#');
                             const intervalId = setInterval(() => {
+                                // console.log('document.querySelector("' + page + ' : ' + a[href="${page}.htm"])
                                 const link = document.querySelector(`a[href="${page}.htm"]`);
+                                console.log(`link = ${link}`)
                                 if (link) {
-                                    const scope = angular.element(link).scope();
-                                    scope.$apply(() => {
-                                        scope.setMenuItem(scope.item);
-                                    });
+                                    link.click();
                                     clearInterval(intervalId);
                                 }
                             }, 100); // Check every 100ms
