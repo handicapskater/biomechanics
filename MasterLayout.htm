@@ -108,16 +108,36 @@
                         }
                     }
 
+
                     function simulateLinkClick() {
+                        console.log("simulateLinkClick")
+                        console.log(`window.location.href: ${window.location.href}`)
                         const hash = window.location.hash.substring(1);
+                        console.log(`hash: ${hash}`)
                         if (hash) {
                             const [page] = hash.split('#');
+                            console.log(`page: ${page}`)
                             const link = document.querySelector(`a[href="${page}.htm"]`);
+                            console.log(`link: ${link}`)
                             if (link) {
+                                console.log("link.click()")
                                 link.click();
+                            } else {
+                                console.log(`Link not found: a[href="${page}.htm"]`);
                             }
                         }
                     }
+
+                    // function simulateLinkClick() {
+                    //     const hash = window.location.hash.substring(1);
+                    //     if (hash) {
+                    //         const [page] = hash.split('#');
+                    //         const link = document.querySelector(`a[href="${page}.htm"]`);
+                    //         if (link) {
+                    //             link.click();
+                    //         }
+                    //     }
+                    // }
 
                     window.addEventListener('hashchange', () => {
                         updateIframeSrc();
