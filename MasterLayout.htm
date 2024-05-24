@@ -114,9 +114,9 @@
                             const [page] = hash.split('#');
                             const intervalId = setInterval(() => {
                                 const link = document.querySelector(`a[href="${page}.htm"]`);
-                                console.log("checking link")
+                                alert("checking link")
                                 if (link) {
-                                    console.log("clicking link")
+                                    alert("clicking link")
                                     link.click();
                                     clearInterval(intervalId);
                                 }
