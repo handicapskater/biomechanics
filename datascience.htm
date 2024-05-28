@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed Tableau</title>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.8.0.min.js"></script>
+</head>
+<body>
+<div id="vizContainer" style="width: 800px; height: 600px;"></div>
+
+<script type="text/javascript">
+    const containerDiv = document.getElementById("vizContainer"),
+        url = "https://public.tableau.com/views/MobilityAidAnalytics/Analytics?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link";
+
+    const viz = new tableau.Viz(containerDiv, url);
+</script>
+</body>
+</html>

@@ -6,7 +6,7 @@ menuData = [
         { name: 'running', page: 'running.htm', text: 'Running' },
         { name: 'walking', page: 'walking.htm', text: 'Walking' },
         { name: 'skating', page: 'skating.htm', text: 'Skating' },
-        { name: 'data-science', page: 'https://public.tableau.com/views/MobilityAidAnalytics/Analytics?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link', text: 'Data Science' },
+        { name: 'data-science', page: 'datascience.htm', text: 'Data Science' },
         { name: 'conclusion', page: 'conclusion.htm', text: 'Conclusion' },
         { name: 'references', page: 'references.htm', text: 'References' },
         { name: 'saints', page: 'saints.htm', text: 'Saints' },
