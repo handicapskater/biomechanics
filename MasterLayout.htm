@@ -63,7 +63,7 @@
             <div style="display: table-row">
                 <div style="height: 100%; width: 150px; vertical-align: middle; display: table-cell;">
                     <span style="position: absolute; top: 5px; left: 0px; width: 150px; font-size: 10pt; text-align: center"><script>document.write(top.legend)</script></span>
-                    <div id="menu" name="menu">
+                    <nav id="menu" name="menu">
                         <div ng-repeat="item in menu" class="navigation">
                             <a name="{{item.name}}" id="{{item.name}}" href="{{item.page}}"
                                style="display: block" class="{{'linkAction'}}" target="content"
@@ -72,8 +72,8 @@
                             </a>
                         </div>
                         <a style="display: table-cell; width: 150px" href="mailto:handicapskater@mindspring.com?subject=HandicapSkater">Comments</a>
-                    </div>
-                    <div id="footer" name="footer">
+                    </nav>
+                    <footer id="footer" name="footer">
                         <div>
                         <span name='paypal' id='paypal'>
                             <a style="display: table-cell" href='https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=HandicapSkater@mindspring.com&amp;no_note=1&amp;currency_code=USD&amp;tax=0&amp;lc=US' target='_blank'>
@@ -90,7 +90,7 @@
                         <a href='javascript:alert(about)' class='copyright'>HandicapSkater.com &reg;</a>
                         <br />
                         <a href="common/siteversion.htm" target='_blank' class='copyright'>Version 4.0</a>
-                    </div>
+                    </footer>
                 </div>
 
                 <iframe id="content" name="content" src="overview.htm" style="display: table-cell; height: 100%; border: 0" width="100%" />
