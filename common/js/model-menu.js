@@ -8,6 +8,7 @@ menuData = [
         { name: 'skating', page: 'skating.htm', text: 'Skating' },
         { name: 'data-science', page: 'datascience.htm', text: 'Data Science' },
         { name: 'conclusion', page: 'conclusion.htm', text: 'Conclusion' },
+        { name: 'advocacy', page: 'advocacy.htm', text: 'Advocacy' },
         { name: 'references', page: 'references.htm', text: 'References' },
         { name: 'saints', page: 'saints.htm', text: 'Saints' },
         { name: 'sinners', page: 'sinners.htm', text: 'Sinners' },
