@@ -17,7 +17,6 @@ header {
 .container {
     flex: 1;
     display: flex;
-    height: calc(100vh - 60px); /* Adjust height to ensure footer is visible */
 }
 
 nav {
@@ -27,6 +26,7 @@ nav {
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     box-sizing: border-box; /* Ensure padding is included in the width */
     overflow-y: auto;
+    height: calc(100vh - 60px); /* Adjust height to ensure footer is visible */
 }
 
 nav ul {
