@@ -1,10 +1,10 @@
 body {
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    height: 100%;
     margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+    overflow-x: hidden;
+    padding: 0.5em;
+    width: 100%;
 }
 
 header {
@@ -15,9 +15,12 @@ header {
 }
 
 .container {
-    flex: 1;
-    display: flex;
-    height: calc(100vh - 60px); /* Adjust height to ensure footer is visible */
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 1em;
+    /*height: calc(100vh - 60px); !* Adjust height to ensure footer is visible *!*/
 }
 
 nav {
@@ -52,6 +55,15 @@ nav a {
 nav a:hover, nav a:focus, nav a.linkActionHi {
     background: #ddd;
     color: #000;
+}
+p, h3, ol, ul {
+    margin: 0 0 1em 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul {
+    padding-left: 1.5em;
 }
 
 .contact {
