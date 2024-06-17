@@ -42,7 +42,7 @@ nav li {
 }
 
 nav a {
-    display: block;
+    /*display: block;*/
     /*padding: 10px;*/
     /*margin: 5px 0;*/
     text-decoration: none;
