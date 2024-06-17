@@ -13,6 +13,7 @@ header {
 }
 
 .container {
+    background-color: #f4f4f4;
     box-sizing: border-box;
     margin: 0 auto;
     max-width: 100%;
@@ -24,8 +25,8 @@ header {
 nav {
     width: 100px;
     background: #f4f4f4;
-    padding: 5px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    /*padding: 5px;*/
+    /*box-shadow: 2px 0 5px rgba(0,0,0,0.1);*/
     box-sizing: border-box; /* Ensure padding is included in the width */
     overflow-y: auto;
 }
@@ -36,16 +37,16 @@ nav ul {
 }
 
 nav li {
-    margin: 5px 0;
+    /*margin: 5px 0;*/
 }
 
 nav a {
     display: block;
-    padding: 10px;
-    margin: 5px 0;
+    /*padding: 10px;*/
+    /*margin: 5px 0;*/
     text-decoration: none;
     color: #333;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     background: #e4e4e4;
     transition: background 0.3s, color 0.3s;
 }
