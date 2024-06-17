@@ -131,13 +131,13 @@
 <header>
     <h1>HandicapSkater Biomechanics</h1>
 </header>
-<div class="container" ng-init="initMenu()" ng-controller="MenuController">
+<div class="container">
     <div class="top-ads">
         <div class="ad left-ad">Ad Space Top Left</div>
         <div class="ad right-ad">Ad Space Top Right</div>
     </div>
     <div class="content">
-        <nav id="menu" aria-label="Main Navigation">
+        <nav id="menu" aria-label="Main Navigation" ng-init="initMenu()" ng-controller="MenuController">
             <ul>
                 <li ng-repeat="item in menu">
                     <a name="{{item.name}}" id="{{item.name}}" href="{{item.page}}" target="content"
