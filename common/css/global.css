@@ -23,10 +23,10 @@ header {
 }
 
 nav {
-    width: 140px;
+    width: 150px;
     background: #f4f4f4;
-    /*padding: 5px;*/
-    /*box-shadow: 2px 0 5px rgba(0,0,0,0.1);*/
+    padding: 5px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     box-sizing: border-box; /* Ensure padding is included in the width */
     overflow-y: auto;
     padding: 10px;
