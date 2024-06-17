@@ -55,7 +55,7 @@ main {
     box-sizing: border-box; /* Ensure padding is included in the width */
 }
 nav {
-    width: 200px; /* Set a fixed width for the navigation */
+    width: 150px; /* Set a fixed width for the navigation */
     background: #f4f4f4;
     padding: 10px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
