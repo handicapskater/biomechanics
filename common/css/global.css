@@ -84,8 +84,7 @@ ol, ul {
     cursor: pointer;
 }
 main {
-    flex: 1;
-    padding: 1px;
+    padding: 0;
     overflow-y: auto; /* Allow main content to scroll if necessary */
     box-sizing: border-box; /* Ensure padding is included in the width */
 }
