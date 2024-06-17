@@ -82,6 +82,9 @@ ol, ul {
     background: #0056b3;
 }
 
+.def {
+    color: #0000ee;
+}
 main {
     flex: 1;
     padding: 20px;
