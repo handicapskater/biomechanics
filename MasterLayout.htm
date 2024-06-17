@@ -36,8 +36,13 @@
         }
 
         body {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 100%;
+            grid-template-areas:
+                "header"
+                "main"
+                "footer";
             height: 100%;
         }
 
@@ -51,16 +56,16 @@
         }
 
         header {
-            flex-shrink: 0;
+            grid-area: header;
         }
 
         footer {
-            flex-shrink: 0;
+            grid-area: footer;
         }
 
         .container {
             display: flex;
-            flex: 1;
+            grid-area: main;
             overflow: hidden;
         }
 
@@ -74,6 +79,7 @@
             flex-shrink: 0;
             display: flex;
             flex-direction: column;
+            height: 100%;
         }
 
         nav ul {
@@ -123,7 +129,7 @@
             display: flex;
             flex-direction: column;
             overflow: hidden;
-            padding: 20px;
+            padding: 0;
             box-sizing: border-box;
         }
 
@@ -131,8 +137,8 @@
             width: 100%;
             height: 100%;
             border: none;
-            flex: 1;
             display: block;
+            flex: 1;
         }
     </style>
 </head>
