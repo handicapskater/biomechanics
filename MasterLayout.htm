@@ -23,107 +23,18 @@
     <script src="common/js/model-menu.js"></script>
     <script src="common/js/global.js"></script>
     <script src="common/js/overlib_mini.js"></script>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-        }
-
-        .top-ads, .bottom-ads {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-            background: #f4f4f4;
-        }
-
-        .content {
-            display: flex;
-            flex: 1;
-        }
-
-        nav {
-            width: 250px;
-            background: #f4f4f4;
-            padding: 20px;
-            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-            box-sizing: border-box;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav li {
-            margin: 10px 0;
-        }
-
-        nav a {
-            display: block;
-            padding: 10px;
-            margin: 5px 0;
-            text-decoration: none;
-            color: #333;
-            border-radius: 5px;
-            background: #e4e4e4;
-            transition: background 0.3s, color 0.3s;
-        }
-
-        nav a:hover, nav a:focus {
-            background: #ddd;
-            color: #000;
-        }
-
-        nav .contact {
-            display: block;
-            margin-top: 20px;
-            padding: 10px;
-            text-align: center;
-            background: #007BFF;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-
-        nav .contact:hover {
-            background: #0056b3;
-        }
-
-        footer .paypal, footer .social, footer .copyright {
-            display: inline-block;
-            margin: 0 10px;
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
 </head>
 <body>
-<div class="container">
-    <header>
-        <div class="top-ads">
-            <div class="ad left-ad">Ad Space Top Left</div>
-            <h1>HandicapSkater Biomechanics</h1>
-            <div class="ad right-ad">Ad Space Top Right</div>
-        </div>
-    </header>
+<header>
+    <h1>HandicapSkater Biomechanics</h1>
+</header>
+<div class="container" ng-init="initMenu()" ng-controller="MenuController">
+    <div class="top-ads">
+        <div class="ad left-ad">Ad Space Top Left</div>
+        <div class="ad right-ad">Ad Space Top Right</div>
+    </div>
     <div class="content">
-        <nav id="menu" aria-label="Main Navigation" ng-init="initMenu()" ng-controller="MenuController">
+        <nav id="menu" aria-label="Main Navigation">
             <ul>
                 <li ng-repeat="item in menu">
                     <a name="{{item.name}}" id="{{item.name}}" href="{{item.page}}" target="content"
@@ -138,27 +49,27 @@
             <iframe id="content" name="content" src="overview.htm"></iframe>
         </main>
     </div>
-    <footer>
-        <div class="bottom-ads">
-            <div class="ad left-ad">Ad Space Bottom Left</div>
-<!--            <span class="paypal">-->
-<!--            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=HandicapSkater@mindspring.com&amp;no_note=1&amp;currency_code=USD&amp;tax=0&amp;lc=US" target="_blank">-->
-<!--                <img src="https://www.paypal.com/en_US/i/btn/x-click-but04.gif" alt="PayPal">-->
-<!--            </a>-->
-            </span>
-                <span class="social">
-                <a href="http://www.facebook.com/group.php?gid=44036411369" target="_blank"><img src="common/images/fb_connect.png" alt="Facebook"></a>
-                <a href="https://twitter.com/handicapskater" class="twitter-follow-button" data-show-count="false">Follow @handicapskater</a>
-            </span>
-                <span class="copyright">
-                <a href="common/copyright.htm" target="_blank">Copyright &copy; 2004 - <script>document.write(new Date().getFullYear())</script></a>
-<!--                <a href="javascript:alert('about')" class="copyright">HandicapSkater.com &reg;</a>-->
-<!--                <a href="common/siteversion.htm" target="_blank">Version 4.0</a>-->
-            </span>
-            <div class="ad right-ad">Ad Space Bottom Right</div>
-        </div>
-    </footer>
+    <div class="bottom-ads">
+        <div class="ad left-ad">Ad Space Bottom Left</div>
+        <div class="ad right-ad">Ad Space Bottom Right</div>
+    </div>
 </div>
+<footer>
+        <span class="paypal">
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=HandicapSkater@mindspring.com&amp;no_note=1&amp;currency_code=USD&amp;tax=0&amp;lc=US" target="_blank">
+                <img src="https://www.paypal.com/en_US/i/btn/x-click-but04.gif" alt="PayPal">
+            </a>
+        </span>
+    <span class="social">
+            <a href="http://www.facebook.com/group.php?gid=44036411369" target="_blank"><img src="common/images/fb_connect.png" alt="Facebook"></a>
+            <a href="https://twitter.com/handicapskater" class="twitter-follow-button" data-show-count="false">Follow @handicapskater</a>
+        </span>
+    <span class="copyright">
+            <a href="common/copyright.htm" target="_blank">Copyright &copy; 2004 - <script>document.write(new Date().getFullYear())</script></a>
+            <a href="javascript:alert('about')" class="copyright">HandicapSkater.com &reg;</a>
+            <a href="common/siteversion.htm" target="_blank">Version 4.0</a>
+        </span>
+</footer>
 
 <script>
     function updateIframeSrc() {
