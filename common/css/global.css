@@ -84,6 +84,7 @@ ol, ul {
 
 .def {
     color: #0000ee;
+    cursor: pointer;
 }
 main {
     flex: 1;
