@@ -1,165 +1,108 @@
 <!DOCTYPE html>
-<html ng-app style="height: 100%">
-<head lang="en">
-    <title>HandicapSkater Biomechanics</title>
-    <meta name="Keywords" content='Handicap Skater, Handicap Mobility, Disabled Access, HandicapSkater Biomechanics, RollerGracie'>
-    <meta name="Description" content='HandicapSkater is innovating the use of skates as a non-ballistic mobility aid. Help support this evolutionary advance in mobility for the disabled.'>
-    <meta name="Author" content='handicapskater@mindspring.com'>
-    <meta name="ROBOTS" content='INDEX, NOFOLLOW'>
-    <meta http-equiv="PRAGMA" 			content="NO-CACHE">
-    <meta http-equiv="Cache-Control"	content="no-cache">
-    <meta http-equiv="Expires" 			content="01-Jan-2001 12:00:00 GMT">
-    <meta http-equiv="Content-Type" 	content="text/html; charset=iso-8859-1">
-    <meta http-equiv="imagetoolbar" 	content="no">
+<html lang="en" ng-app>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HandicapSkater Biomechanics</title>
+    <meta name="keywords" content="Handicap Skater, Handicap Mobility, Disabled Access, HandicapSkater Biomechanics, RollerGracie">
+    <meta name="description" content="HandicapSkater is innovating the use of skates as a non-ballistic mobility aid. Help support this evolutionary advance in mobility for the disabled.">
+    <meta name="author" content="handicapskater@mindspring.com">
+    <meta name="robots" content="index, nofollow">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="01-Jan-2001 12:00:00 GMT">
+    <meta http-equiv="imagetoolbar" content="no">
 
-    <link rel='shortcut icon' 	href='common/images/favicon.ico' />
-    <link rel='icon' 			href='common/images/favicon.ico' />
-    <link rel="stylesheet" 		type="text/css" 	href='common/css/global.css' />
+    <link rel="shortcut icon" href="common/images/favicon.ico">
+    <link rel="stylesheet" href="common/css/global.css">
 
-    <script src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
-    <script language='JavaScript' type='text/JavaScript' src='common/js/angular.js'></script>
-    <!--
-    <script language='JavaScript' type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js'></script>
-    -->
-
-    <script language='JavaScript' type='text/JavaScript' src='common/js/model-tooltips.js'></script>
-    <script language='JavaScript' type='text/JavaScript' src='common/js/controller-menu.js'></script>
-    <script language='JavaScript' type='text/JavaScript' src='common/js/model-menu.js'></script>
-    <script language='JavaScript' type='text/JavaScript' src='common/js/global.js'></script>
-    <script language='JavaScript' type='text/JavaScript' src='common/js/overlib_mini.js'><!-- overLIB (c) Erik Bosrup --></script>
-
-    <style type="text/css">
-        .copyright { font: "helvetica, times, arial"; font-size: 10pt; color: blue; text-align: center; width: 150px }
-        a 				{ text-decoration: none; cursor: hand; font-size: 11pt; }
-        div 				{ text-align: center; width: 100px }
-        #footer { position: absolute; height: 150px; bottom: 15px; }
-        #menu   { position: fixed; height: 400px; top: 20px; z-index: 10; opacity: 1; background-color: white }
-        #paypal { position: fixed; bottom: text-align: center; width: 100%; }
-        .linkAction   	{ cursor: hand; color: blue; font-size: 11pt; width: 150px }
-        .linkActionHi 	{ cursor: hand; color: turquoise; font-size: 11pt }
-        .linkText     	{ cursor: default; color: black; font-size: 11pt }
-        .navigation     { height: 30px; }
-    </style>
-    <script language="javascript">
-        if (top.location != self.location) {
-            top.location = self.location;
-        }
-
-        var curYear = new Date().getFullYear();
-        var yearsOfInjury = curYear - 1983;
-        var yearsOfSkating = curYear - 1991;
-        var yearsOfDocumenting = curYear - 1999;
-    </script>
-    <script language="JavaScript" type="text/javascript" src="common/js/model-tooltips.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="common/js/angular.js"></script>
+    <script src="common/js/model-tooltips.js"></script>
+    <script src="common/js/controller-menu.js"></script>
+    <script src="common/js/model-menu.js"></script>
+    <script src="common/js/global.js"></script>
+    <script src="common/js/overlib_mini.js"></script>
 </head>
-<body style="height: 98%" onload="$('#overview').toggleClass('linkActionHi')">
-    <div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
-    <div id="container" style="border: 1px; width: 100%; height: 100%; top: 0px; left: 0px; visibility: visible;"
-         ng-init="initMenu()" ng-controller="MenuController">
-
-        <div style="width: 100%; display: table; height: 100%">
-            <div style="display: table-row">
-                <div style="height: 100%; vertical-align: middle; display: table-cell;">
-                    <span style="position: absolute; top: 5px; left: 0px; width: 150px; font-size: 10pt; text-align: center"><script>document.write(top.legend)</script></span>
-                    <nav id="menu" name="menu">
-                        <div ng-repeat="item in menu" class="navigation">
-                            <a name="{{item.name}}" id="{{item.name}}" href="{{item.page}}"
-                               style="display: block" class="{{'linkAction'}}" target="content"
-                               ng-click="setMenuItem(item)" ng-mouseover="alert('mouseover')" ng-mouseout="alert('mousout')">
-                                {{item.text}}
-                            </a>
-                        </div>
-                        <a style="display: table-cell; width: 150px" href="mailto:handicapskater@mindspring.com?subject=HandicapSkater">Comments</a>
-                    </nav>
-                    <footer id="footer" name="footer">
-                        <div>
-                        <span name='paypal' id='paypal'>
-                            <a style="display: table-cell" href='https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=HandicapSkater@mindspring.com&amp;no_note=1&amp;currency_code=USD&amp;tax=0&amp;lc=US' target='_blank'>
-                                <img src='https://www.paypal.com/en_US/i/btn/x-click-but04.gif' height='31' width='62' />
-                            </a>
-                        </span>
-                        </div>
-                        <br />
-                        <a style="display: table-cell"  href="http://www.facebook.com/group.php?gid=44036411369#!/group.php?gid=44036411369&v=wall" target="_blank" class="copyright"><img src="common/images/fb_connect.png" /></a>
-                        <a href="https://twitter.com/handicapskater" class="twitter-follow-button" data-show-count="false">Follow @handicapskater</a>
-                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                        <a href="common/copyright.htm" target='_blank' class='copyright'>Copyright &copy; 2004 - <script>document.write(curYear)</script></a>
-                        <br />
-                        <a href='javascript:alert(about)' class='copyright'>HandicapSkater.com &reg;</a>
-                        <br />
-                        <a href="common/siteversion.htm" target='_blank' class='copyright'>Version 4.0</a>
-                    </footer>
-                </div>
-
-                <iframe id="content" name="content" src="overview.htm" style="display: table-cell; height: 100%; border: 0" width="100%" />
-
-                <script>
-                    function updateIframeSrc() {
-                        const hash = window.location.hash.substring(1);
-                        if (hash) {
-                            const [page, section] = hash.split('#');
-                            const iframe = document.getElementById('content');
-                            iframe.onload = function() {
-                                if (section) {
-                                    iframe.contentWindow.location.hash = section;
-                                }
-                            };
-                            iframe.src = `${page}.htm`;
-                        }
-                    }
-
-
-                    function simulateLinkClick() {
-                        console.log("simulateLinkClick")
-                        console.log(`window.location.href: ${window.location.href}`)
-                        const hash = window.location.hash.substring(1);
-                        console.log(`hash: ${hash}`)
-                        if (hash) {
-                            const [page] = hash.split('#');
-                            console.log(`page: ${page}`)
-                            const link = document.querySelector(`a[href="${page}.htm"]`);
-                            console.log(`link: ${link}`)
-                            if (link) {
-                                console.log("link.click()")
-                                link.click();
-                            } else {
-                                console.log(`Link not found: a[href="${page}.htm"]`);
-                            }
-                        }
-                    }
-
-                    // function simulateLinkClick() {
-                    //     const hash = window.location.hash.substring(1);
-                    //     if (hash) {
-                    //         const [page] = hash.split('#');
-                    //         const link = document.querySelector(`a[href="${page}.htm"]`);
-                    //         if (link) {
-                    //             link.click();
-                    //         }
-                    //     }
-                    // }
-
-                    window.addEventListener('hashchange', () => {
-                        updateIframeSrc();
-                        setTimeout(simulateLinkClick, 5000); // Delay to ensure Angular has processed the hash change
-                    });
-
-                    window.addEventListener('load', () => {
-                        updateIframeSrc();
-                        setTimeout(simulateLinkClick, 5000); // Delay to ensure Angular has loaded
-                    });
-
-                    document.addEventListener('DOMContentLoaded', function() {
-                        setTimeout(() => {
-                            updateIframeSrc();
-                            simulateLinkClick();
-                        }, 1000); // Delay to ensure Angular has loaded
-                    });
-                </script>
-            </div>
+<body>
+<header>
+    <h1>HandicapSkater Biomechanics</h1>
+</header>
+<div class="container" ng-init="initMenu()" ng-controller="MenuController">
+    <nav id="menu" aria-label="Main Navigation">
+        <div ng-repeat="item in menu" class="navigation">
+            <a name="{{item.name}}" id="{{item.name}}" href="{{item.page}}"
+               ng-click="setMenuItem(item)"
+               ng-mouseover="alert('mouseover')"
+               ng-mouseout="alert('mouseout')">
+                {{item.text}}
+            </a>
         </div>
-    </div>
+        <a href="mailto:handicapskater@mindspring.com?subject=HandicapSkater">Comments</a>
+    </nav>
+    <main>
+        <iframe id="content" name="content" src="overview.htm"></iframe>
+    </main>
+</div>
+<footer>
+        <span class="paypal">
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=HandicapSkater@mindspring.com&amp;no_note=1&amp;currency_code=USD&amp;tax=0&amp;lc=US" target="_blank">
+                <img src="https://www.paypal.com/en_US/i/btn/x-click-but04.gif" alt="PayPal">
+            </a>
+        </span>
+    <span class="social">
+            <a href="http://www.facebook.com/group.php?gid=44036411369" target="_blank"><img src="common/images/fb_connect.png" alt="Facebook"></a>
+            <a href="https://twitter.com/handicapskater" class="twitter-follow-button" data-show-count="false">Follow @handicapskater</a>
+        </span>
+    <span class="copyright">
+            <a href="common/copyright.htm" target="_blank">Copyright &copy; 2004 - <script>document.write(new Date().getFullYear())</script></a>
+            <a href="javascript:alert('about')" class="copyright">HandicapSkater.com &reg;</a>
+            <a href="common/siteversion.htm" target="_blank">Version 4.0</a>
+        </span>
+</footer>
+
+<script>
+    function updateIframeSrc() {
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+            const [page, section] = hash.split('#');
+            const iframe = document.getElementById('content');
+            iframe.onload = function() {
+                if (section) {
+                    iframe.contentWindow.location.hash = section;
+                }
+            };
+            iframe.src = `${page}.htm`;
+        }
+    }
+
+    function simulateLinkClick() {
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+            const [page] = hash.split('#');
+            const link = document.querySelector(`a[href="${page}.htm"]`);
+            if (link) {
+                link.click();
+            }
+        }
+    }
+
+    window.addEventListener('hashchange', () => {
+        updateIframeSrc();
+        setTimeout(simulateLinkClick, 500);
+    });
+
+    window.addEventListener('load', () => {
+        updateIframeSrc();
+        setTimeout(simulateLinkClick, 500);
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(() => {
+            updateIframeSrc();
+            simulateLinkClick();
+        }, 1000);
+    });
+</script>
 </body>
 </html>
