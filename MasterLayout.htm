@@ -31,40 +31,41 @@
     <h1>HandicapSkater Biomechanics</h1>
 </header>
 
-<nav id="menu" aria-label="Main Navigation">
-    <ul>
-        <li ng-repeat="item in menu">
-            <a name="{{item.name}}" id="{{item.name}}" href="{{item.page}}" target="content"
-               ng-click="setMenuItem(item)">
-                {{item.text}}
-            </a>
-        </li>
-    </ul>
-    <a class="contact" href="mailto:handicapskater@mindspring.com?subject=HandicapSkater">Comments</a>
-</nav>
-
 <div class="container" ng-init="initMenu()" ng-controller="MenuController">
+    <nav id="menu" aria-label="Main Navigation">
+        <ul>
+            <li ng-repeat="item in menu">
+                <a name="{{item.name}}" id="{{item.name}}" href="{{item.page}}" target="content"
+                   ng-click="setMenuItem(item)">
+                    {{item.text}}
+                </a>
+            </li>
+        </ul>
+        <a class="contact" href="mailto:handicapskater@mindspring.com?subject=HandicapSkater">Comments</a>
+    </nav>
+
     <main>
         <iframe id="content" name="content" src="overview.htm"></iframe>
     </main>
-</div>
 
-<footer>
-    <span class="paypal">
-        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=HandicapSkater@mindspring.com&amp;no_note=1&amp;currency_code=USD&amp;tax=0&amp;lc=US" target="_blank">
-            <img src="https://www.paypal.com/en_US/i/btn/x-click-but04.gif" alt="PayPal">
-        </a>
-    </span>
-    <span class="social">
+    <footer>
+        <span class="paypal">
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=HandicapSkater@mindspring.com&amp;no_note=1&amp;currency_code=USD&amp;tax=0&amp;lc=US" target="_blank">
+                <img src="https://www.paypal.com/en_US/i/btn/x-click-but04.gif" alt="PayPal">
+            </a>
+        </span>
+        <span class="social">
             <a href="http://www.facebook.com/group.php?gid=44036411369" target="_blank"><img src="common/images/fb_connect.png" alt="Facebook"></a>
             <a href="https://twitter.com/handicapskater" class="twitter-follow-button" data-show-count="false">Follow @handicapskater</a>
         </span>
-    <span class="copyright">
+        <span class="copyright">
             <a href="common/copyright.htm" target="_blank">Copyright &copy; 2004 - <script>document.write(new Date().getFullYear())</script></a>
             <a href="javascript:alert('about')" class="copyright">HandicapSkater.com &reg;</a>
             <a href="common/siteversion.htm" target="_blank">Version 4.0</a>
         </span>
-</footer>
+    </footer>
+</div>
+
 
 <script>
     function updateIframeSrc() {
