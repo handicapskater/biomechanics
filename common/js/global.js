@@ -49,7 +49,7 @@ function ButtonDown(theButton, url) {
 }
 
 function imageLink(id, src, align, width, height) {
-	d.write("<a href='javascript:alert(top.copyright)'><img id='"+id+"' src='"+src+"' align='"+((align)?align:'')+"' "+((width)?'width='+width:'')+" "+((height)?'height='+height:'')+"/></a>");
+	d.write("<a href='javascript:alert(top.copyright)' class='def'><img id='"+id+"' src='"+src+"' align='"+((align)?align:'')+"' "+((width)?'width='+width:'')+" "+((height)?'height='+height:'')+"/></a>");
 }
 
 function IE_Resize() {
