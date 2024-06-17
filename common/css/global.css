@@ -21,7 +21,7 @@ header {
 }
 
 nav {
-    width: 150px;
+    width: 100px;
     background: #f4f4f4;
     padding: 5px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
@@ -88,6 +88,7 @@ main {
     padding: 0;
     overflow-y: auto; /* Allow main content to scroll if necessary */
     box-sizing: border-box; /* Ensure padding is included in the width */
+    width: 100%;
 }
 
 footer {
