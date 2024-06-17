@@ -6,6 +6,25 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    margin: 0;
+    padding: 0;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
 h1 {
     color: #333;
@@ -16,8 +35,26 @@ h2 {
 h3 {
     margin-top: 20px;
 }
+iframe {
+    width: 100%;
+    border: none;
+    flex: 1;
+}
 img {
     border: 0
+}
+main {
+    padding: 20px;
+}
+nav a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+}
+nav a:hover {
+    background: #ddd;
 }
 ol, ul {
     margin-left: 20px;
