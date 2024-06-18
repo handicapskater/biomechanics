@@ -76,6 +76,7 @@
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
             box-sizing: border-box;
             overflow-y: auto;
+            flex-shrink: 0;
         }
 
         nav ul {
@@ -126,6 +127,7 @@
             overflow: hidden;
             padding: 0;
             box-sizing: border-box;
+            width: calc(100% - 250px);
         }
 
         iframe {
@@ -144,40 +146,20 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        .left-top-ad {
-            left: 0px;
-            top: 0px;
-            width: 200px;
-            grid-area: left-top-ad;
+        .left-ad {
+            grid-area: left-ad;
         }
 
-        .right-top-ad {
-            right: 30px;
-            top: 0px;
-            width: 200px;
-            grid-area: right-top-ad;
-        }
-
-        .left-bottom-ad {
-            left: 0px;
-            bottom: 30px;
-            width: 200px;
-            grid-area: left-bottom-ad;
-        }
-
-        .right-bottom-ad {
-            right: 30px;
-            bottom: 30px;
-            width: 200px;
-            grid-area: right-bottom-ad;
+        .right-ad {
+            grid-area: right-ad;
         }
     </style>
 </head>
 <body>
 <header>
-    <div class="left-top-ad">Ad Space Left</div>
-    <h1 text-align="center">HandicapSkater Biomechanics</h1>
-    <div class="right-top-ad">Ad Space Right</div>
+    <div class="left-ad">Ad Space Top Left</div>
+    <h1 style="text-align:center; width: 100%;">HandicapSkater Biomechanics</h1>
+    <div class="right-ad">Ad Space Top Right</div>
 </header>
 <div class="container" ng-init="initMenu()" ng-controller="MenuController">
     <nav id="menu" aria-label="Main Navigation">
@@ -196,13 +178,15 @@
     </main>
 </div>
 <footer>
-    <div class="left-bottom-ad">Ad Space Left</div>
+    <div class="left-ad">Ad Space Bottom Left</div>
     <div class="social">
         <a href="http://www.facebook.com/group.php?gid=44036411369" target="_blank"><img src="common/images/fb_connect.png" alt="Facebook"></a>
-        <a class="copyright" href="common/copyright.htm" target="_blank">Copyright &copy; 2004 - <script>document.write(new Date().getFullYear())</script></a>
         <a href="https://twitter.com/handicapskater" class="twitter-follow-button" data-show-count="false">Follow @handicapskater</a>
     </div>
-    <div class="right-bottom-ad">Ad Space Right</div>
+    <div class="copyright">
+        <a href="common/copyright.htm" target="_blank">Copyright &copy; 2004 - <script>document.write(new Date().getFullYear())</script></a>
+    </div>
+    <div class="right-ad">Ad Space Bottom Right</div>
 </footer>
 
 <script>
