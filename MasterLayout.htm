@@ -8,10 +8,6 @@
     <meta name="description" content="HandicapSkater is innovating the use of skates as a non-ballistic mobility aid. Help support this evolutionary advance in mobility for the disabled.">
     <meta name="author" content="handicapskater@mindspring.com">
     <meta name="robots" content="index, nofollow">
-    <meta http-equiv="pragma" content="no-cache">
-    <meta http-equiv="cache-control" content="no-cache">
-    <meta http-equiv="expires" content="01-Jan-2001 12:00:00 GMT">
-    <meta http-equiv="imagetoolbar" content="no">
 
     <link rel="shortcut icon" href="common/images/favicon.ico">
     <link rel="stylesheet" href="common/css/global.css">
@@ -24,72 +20,90 @@
     <script src="common/js/global.js"></script>
     <script src="common/js/overlib_mini.js"></script>
     <style>
-        body {
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
+        html, body {
             margin: 0;
-            overflow-x: hidden;
-            padding: 0.1em;
+            padding: 0;
             width: 100%;
-            display: block;
+            height: 100%;
+            min-width: 800px;
+            min-height: 600px;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr 250px 1fr;
+            grid-template-areas:
+                "header header header"
+                "left-ad container right-ad"
+                "footer footer footer";
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        header, footer {
+            grid-column: span 3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         header {
+            grid-area: header;
+        }
+
+        footer {
+            grid-area: footer;
             text-align: center;
         }
 
         .container {
-            background-color: #f4f4f4;
-            box-sizing: border-box;
-            margin: 0 auto;
-            max-width: 100%;
+            grid-area: container;
+            display: flex;
             overflow: hidden;
-            padding: .1em;
-            /*height: calc(100vh - 60px); !* Adjust height to ensure footer is visible *!*/
+            background-color: #fff;
         }
 
         nav {
-            width: 140px;
+            width: 250px;
             background: #f4f4f4;
-            padding: 5px;
-            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            overflow-y: auto;
         }
 
         nav ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
         }
 
         nav li {
-            /*margin: 5px 0;*/
+            margin-bottom: 10px;
         }
 
         nav a {
-            /*display: block;*/
-            /*padding: 10px;*/
-            /*margin: 5px 0;*/
-            text-decoration: none;
+            display: block;
+            padding: 10px;
+            background: #e4e4f4;
             color: #333;
-            /*border-radius: 5px;*/
-            background: #e4e4e4;
+            text-decoration: none;
+            border-radius: 5px;
             transition: background 0.3s, color 0.3s;
         }
 
-        nav a:hover, nav a:focus, nav a.linkActionHi {
+        nav a:hover, nav a:focus {
             background: #ddd;
             color: #000;
         }
-        p, h3, ol, ul {
-            margin: 0 0 1em 0;
-            padding: 0;
-            line-height: 1.6;
-        }
 
-        ol, ul {
-            padding-left: 1.5em;
-        }
-
-        .contact {
+        nav .contact {
             display: block;
             margin-top: 20px;
             padding: 10px;
@@ -101,130 +115,74 @@
             transition: background 0.3s;
         }
 
-        .contact:hover {
+        nav .contact:hover {
             background: #0056b3;
         }
 
-        .def {
-            color: #0000ee;
-            cursor: pointer;
-        }
         main {
-            /*flex: 1;*/
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
             padding: 0;
-            overflow-y: auto; /* Allow main content to scroll if necessary */
-            box-sizing: border-box; /* Ensure padding is included in the width */
-            width: 100%;
-        }
-
-        footer {
-            text-align: center;
-        }
-
-        .paypal, .social, .copyright {
-            display: inline-block;
-            margin: 0 10px;
+            box-sizing: border-box;
         }
 
         iframe {
             width: 100%;
             height: 100%;
             border: none;
-        }
-        body {
-            padding: 0;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        .top-ads, .bottom-ads {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-            background: #f4f4f4;
-        }
-
-        .content {
-            display: flex;
-            flex: 1;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav {
-            width: 250px;
-            background: #f4f4f4;
-            padding: 20px;
-            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-            box-sizing: border-box;
-        }
-
-        main {
-            flex: 1;
-            padding: 0;
-            margin: 0;
-            overflow-y: auto;
-            box-sizing: border-box;
-            display: flex;
-            width: 100%;
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            margin: 0;
-            padding: 0;
             display: block;
+            flex: 1;
+        }
+
+        .ad {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-ad {
+            grid-area: left-ad;
+        }
+
+        .right-ad {
+            grid-area: right-ad;
         }
     </style>
 </head>
 <body>
 <header>
-    <div class="ad left-ad">Ad Space Top Left</div>
     <h1>HandicapSkater Biomechanics</h1>
-    <div class="ad right-ad">Ad Space Top Right</div>
 </header>
+<div class="left-ad">Ad Space Left</div>
 <div class="container" ng-init="initMenu()" ng-controller="MenuController">
-    <div class="content">
-        <nav id="menu" aria-label="Main Navigation">
-            <ul>
-                <li ng-repeat="item in menu">
-                    <a name="{{item.name}}" id="{{item.name}}" href="{{item.page}}" target="content"
-                       ng-click="setMenuItem(item)">
-                        {{item.text}}
-                    </a>
-                </li>
-            </ul>
-            <a class="contact" href="mailto:handicapskater@mindspring.com?subject=HandicapSkater">Comments</a>
-        </nav>
-        <main>
-            <iframe id="content" name="content" src="overview.htm"></iframe>
-        </main>
-    </div>
+    <nav id="menu" aria-label="Main Navigation">
+        <ul>
+            <li ng-repeat="item in menu">
+                <a name="{{item.name}}" id="{{item.name}}" href="{{item.page}}" target="content"
+                   ng-click="setMenuItem(item)">
+                    {{item.text}}
+                </a>
+            </li>
+        </ul>
+        <a class="contact" href="mailto:handicapskater@mindspring.com?subject=HandicapSkater">Comments</a>
+    </nav>
+    <main>
+        <iframe id="content" name="content" src="overview.htm"></iframe>
+    </main>
 </div>
+<div class="right-ad">Ad Space Right</div>
 <footer>
-    <div class="ad left-ad">Ad Space Bottom Left</div>
-    <div>
+    <div class="social">
         <a href="http://www.facebook.com/group.php?gid=44036411369" target="_blank"><img src="common/images/fb_connect.png" alt="Facebook"></a>
         <a href="https://twitter.com/handicapskater" class="twitter-follow-button" data-show-count="false">Follow @handicapskater</a>
-        <a class=copyright" href="common/copyright.htm" target="_blank">Copyright &copy; 2004 - <script>document.write(new Date().getFullYear())</script></a>
     </div>
-    <div class="ad right-ad">Ad Space Bottom Right</div>
+    <div class="copyright">
+        <a href="common/copyright.htm" target="_blank">Copyright &copy; 2004 - <script>document.write(new Date().getFullYear())</script></a>
+    </div>
 </footer>
 
 <script>
