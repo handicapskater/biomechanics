@@ -10,7 +10,7 @@
     <meta name="robots" content="index, nofollow">
 
     <link rel="shortcut icon" href="common/images/favicon.ico">
-    <link rel="stylesheet" href="common/css/global.css">
+<!--    <link rel="stylesheet" href="common/css/global.css">-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="common/js/angular.js"></script>
@@ -47,14 +47,9 @@
             flex-shrink: 0;
         }
 
-        header {
-            text-align: center;
-        }
-
         .container {
             display: flex;
             flex: 1;
-            background-color: #fff;
             overflow: hidden;
         }
 
@@ -65,7 +60,6 @@
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
             box-sizing: border-box;
             overflow-y: auto;
-            flex-shrink: 0;
         }
 
         nav ul {
@@ -112,7 +106,6 @@
         main {
             flex: 1;
             display: flex;
-            flex-direction: column;
             overflow: hidden;
             padding: 0;
             box-sizing: border-box;
@@ -123,7 +116,6 @@
             height: 100%;
             border: none;
             display: block;
-            flex: 1;
         }
 
         .ad {
@@ -132,22 +124,16 @@
             justify-content: center;
             background-color: #f4f4f4;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .left-ad {
             width: 200px;
-        }
-
-        .right-ad {
-            width: 200px;
+            height: 100%;
         }
     </style>
 </head>
 <body>
 <header>
-    <div class="left-ad">Ad Space Top Left</div>
+    <div class="ad">Ad Space Top Left</div>
     <h1>HandicapSkater Biomechanics</h1>
-    <div class="right-ad">Ad Space Top Right</div>
+    <div class="ad">Ad Space Top Right</div>
 </header>
 <div class="container" ng-init="initMenu()" ng-controller="MenuController">
     <nav id="menu" aria-label="Main Navigation">
@@ -166,7 +152,7 @@
     </main>
 </div>
 <footer>
-    <div class="left-ad">Ad Space Bottom Left</div>
+    <div class="ad">Ad Space Bottom Left</div>
     <div class="social">
         <a href="http://www.facebook.com/group.php?gid=44036411369" target="_blank"><img src="common/images/fb_connect.png" alt="Facebook"></a>
         <a href="https://twitter.com/handicapskater" class="twitter-follow-button" data-show-count="false">Follow @handicapskater</a>
@@ -174,7 +160,7 @@
     <div class="copyright">
         <a href="common/copyright.htm" target="_blank">Copyright &copy; 2004 - <script>document.write(new Date().getFullYear())</script></a>
     </div>
-    <div class="right-ad">Ad Space Bottom Right</div>
+    <div class="ad">Ad Space Bottom Right</div>
 </footer>
 
 <script>
