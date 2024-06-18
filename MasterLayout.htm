@@ -10,7 +10,7 @@
     <meta name="robots" content="index, nofollow">
 
     <link rel="shortcut icon" href="common/images/favicon.ico">
-<!--    <link rel="stylesheet" href="common/css/global.css">-->
+    <!-- <link rel="stylesheet" href="common/css/global.css"> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="common/js/angular.js"></script>
@@ -54,7 +54,7 @@
         }
 
         nav {
-            width: 250px;
+            width: 180px; /* Reduced width of the nav */
             background: #f4f4f4;
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -117,6 +117,8 @@
             height: 100%;
             border: none;
             display: block;
+            flex: 1;
+            overflow: auto; /* Ensure iframe shows scrollbars when necessary */
         }
 
         .ad {
