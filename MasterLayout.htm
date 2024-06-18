@@ -106,6 +106,7 @@
         main {
             flex: 1;
             display: flex;
+            flex-direction: column;
             overflow: hidden;
             padding: 0;
             box-sizing: border-box;
@@ -127,15 +128,21 @@
             width: 200px;
             height: 100%;
         }
+
+        .ad-space {
+            width: 200px;
+            flex-shrink: 0;
+        }
     </style>
 </head>
 <body>
 <header>
-    <div class="ad">Ad Space Top Left</div>
+    <div class="ad ad-space">Ad Space Top Left</div>
     <h1>HandicapSkater Biomechanics</h1>
-    <div class="ad">Ad Space Top Right</div>
+    <div class="ad ad-space">Ad Space Top Right</div>
 </header>
 <div class="container" ng-init="initMenu()" ng-controller="MenuController">
+    <div class="ad ad-space">Ad Space Left</div>
     <nav id="menu" aria-label="Main Navigation">
         <ul>
             <li ng-repeat="item in menu">
@@ -150,9 +157,10 @@
     <main>
         <iframe id="content" name="content" src="overview.htm"></iframe>
     </main>
+    <div class="ad ad-space">Ad Space Right</div>
 </div>
 <footer>
-    <div class="ad">Ad Space Bottom Left</div>
+    <div class="ad ad-space">Ad Space Bottom Left</div>
     <div class="social">
         <a href="http://www.facebook.com/group.php?gid=44036411369" target="_blank"><img src="common/images/fb_connect.png" alt="Facebook"></a>
         <a href="https://twitter.com/handicapskater" class="twitter-follow-button" data-show-count="false">Follow @handicapskater</a>
@@ -160,7 +168,7 @@
     <div class="copyright">
         <a href="common/copyright.htm" target="_blank">Copyright &copy; 2004 - <script>document.write(new Date().getFullYear())</script></a>
     </div>
-    <div class="ad">Ad Space Bottom Right</div>
+    <div class="ad ad-space">Ad Space Bottom Right</div>
 </footer>
 
 <script>
