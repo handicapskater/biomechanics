@@ -55,7 +55,6 @@
 
         header {
             grid-area: header;
-            text-align: center;
         }
 
         footer {
@@ -77,7 +76,6 @@
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
             box-sizing: border-box;
             overflow-y: auto;
-            flex-shrink: 0;
         }
 
         nav ul {
@@ -154,12 +152,21 @@
         .right-ad {
             grid-area: right-ad;
         }
+
+        .left-ad, .right-ad {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
 <header>
     <div class="left-ad">Ad Space Top Left</div>
-    <h1 style="text-align:center;">HandicapSkater Biomechanics</h1>
+    <h1>HandicapSkater Biomechanics</h1>
     <div class="right-ad">Ad Space Top Right</div>
 </header>
 <div class="container" ng-init="initMenu()" ng-controller="MenuController">
