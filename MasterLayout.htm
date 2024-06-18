@@ -144,20 +144,33 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        .left-ad {
-            grid-area: left-ad;
+        .left-top-ad {
+            top: 0px;
+            grid-area: left-top-ad;
         }
 
-        .right-ad {
-            grid-area: right-ad;
+        .right-top-ad {
+            top: 0px;
+            grid-area: right-top-ad;
+        }
+
+        .left-bottom-ad {
+            bottom: 30px;
+            grid-area: left-bottom-ad;
+        }
+
+        .right-bottom-ad {
+            bottom: 30px;
+            grid-area: right-bottom-ad;
         }
     </style>
 </head>
 <body>
 <header>
+    <div class="left-top-ad">Ad Space Left</div>
     <h1>HandicapSkater Biomechanics</h1>
+    <div class="right-top-ad">Ad Space Right</div>
 </header>
-<div class="left-ad">Ad Space Left</div>
 <div class="container" ng-init="initMenu()" ng-controller="MenuController">
     <nav id="menu" aria-label="Main Navigation">
         <ul>
@@ -174,8 +187,8 @@
         <iframe id="content" name="content" src="overview.htm"></iframe>
     </main>
 </div>
-<div class="right-ad">Ad Space Right</div>
 <footer>
+    <div class="left-bottom-ad">Ad Space Left</div>
     <div class="social">
         <a href="http://www.facebook.com/group.php?gid=44036411369" target="_blank"><img src="common/images/fb_connect.png" alt="Facebook"></a>
         <a href="https://twitter.com/handicapskater" class="twitter-follow-button" data-show-count="false">Follow @handicapskater</a>
@@ -183,6 +196,7 @@
     <div class="copyright">
         <a href="common/copyright.htm" target="_blank">Copyright &copy; 2004 - <script>document.write(new Date().getFullYear())</script></a>
     </div>
+    <div class="right-bottom-ad">Ad Space Right</div>
 </footer>
 
 <script>
