@@ -78,6 +78,7 @@
             background: #e4e4f4;
             color: #333;
             text-decoration: none;
+            text-align: center;
             border-radius: 5px;
             transition: background 0.3s, color 0.3s;
         }
@@ -168,7 +169,7 @@
         <ul>
             <li ng-repeat="item in menu">
                 <a name="{{item.name}}" id="{{item.name}}" href="{{item.page}}" target="content"
-                   ng-click="setMenuItem(item)" style-="text-align: center">
+                   ng-click="setMenuItem(item)">
                     {{item.text}}
                 </a>
             </li>
