@@ -32,39 +32,28 @@
         }
 
         body {
-            display: grid;
-            grid-template-rows: auto 1fr auto;
-            grid-template-columns: 1fr auto 1fr;
-            grid-template-areas:
-                "header header header"
-                "left-ad container right-ad"
-                "footer footer footer";
+            display: flex;
+            flex-direction: column;
             height: 100vh;
-            overflow: hidden;
         }
 
         header, footer {
-            grid-column: span 3;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 10px;
             background-color: #f4f4f4;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0;
         }
 
         header {
-            grid-area: header;
-        }
-
-        footer {
-            grid-area: footer;
             text-align: center;
         }
 
         .container {
-            grid-area: container;
             display: flex;
+            flex: 1;
             background-color: #fff;
             overflow: hidden;
         }
@@ -76,6 +65,7 @@
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
             box-sizing: border-box;
             overflow-y: auto;
+            flex-shrink: 0;
         }
 
         nav ul {
@@ -126,7 +116,6 @@
             overflow: hidden;
             padding: 0;
             box-sizing: border-box;
-            width: 100%;
         }
 
         iframe {
@@ -146,20 +135,11 @@
         }
 
         .left-ad {
-            grid-area: left-ad;
+            width: 200px;
         }
 
         .right-ad {
-            grid-area: right-ad;
-        }
-
-        .left-ad, .right-ad {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 10px;
-            background-color: #f4f4f4;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            width: 200px;
         }
     </style>
 </head>
