@@ -12,7 +12,7 @@ menuData = [
         { name: 'references', page: 'references.htm', text: 'References' },
         { name: 'saints', page: 'saints.htm', text: 'Saints' },
         { name: 'sinners', page: 'sinners.htm', text: 'Sinners' },
-        { name: 'media', page: 'media.htm', text: 'Media' }
-        // { name: 'pleadings', page: 'pleadings.htm', text: 'Pleadings' },
+        { name: 'media', page: 'media.htm', text: 'Media' },
+        { name: 'pleadings', page: 'pleadings.htm', text: 'Pleadings' },
         // { name: 'terms', page: 'common/terms.htm', text: 'Policies' }
 ]
