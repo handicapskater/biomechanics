@@ -3,25 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embed Tableau</title>
-<!--    <link rel="stylesheet" 		type="text/css" 	href='common/css/global.css' />-->
-    <script src="https://public.tableau.com/javascripts/api/tableau-2.8.0.min.js"></script>
+    <title>Handicap Skater Links</title>
     <style>
-        html {
+        body {
+            font-family: Arial, sans-serif;
             background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
         }
-        #vizContainer {
-            align-content: center;
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .link-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            font-size: 18px;
+            color: #fff;
+            background-color: #0056b3;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .link-button:hover {
+            background-color: #003d80;
+        }
+        .link-container {
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-<div id="vizContainer" style="width: 800px; height: 600px;"></div>
-<script type="text/javascript">
-    const containerDiv = document.getElementById("vizContainer"),
-        url = "https://public.tableau.com/views/MobilityAidAnalytics/Analytics?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link";
+<div class="container">
+    <h1>Handicap Skater Data Science</h1>
+    <p>
+        Welcome to the Handicap Skater Data Science page. Here you can find links to my latest Tableau visualization and
+        Jupyter notebooks hosted on Google Colab. Click the buttons below to open each resource in a new window.
+    </p>
 
-    const viz = new tableau.Viz(containerDiv, url);
-</script>
+    <div class="link-container">
+        <a href="https://public.tableau.com/views/MobilityAidAnalytics/Analytics?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link"
+           target="_blank" class="link-button">
+            Tableau Viz - Non-Standard Mobility Aid Prescriptive Analytics
+        </a>
+    </div>
+
+    <div class="link-container">
+        <a href="https://colab.research.google.com/github/handicapskater/datascience/blob/main/HandicapSkater-Public.ipynb"
+           target="_blank" class="link-button">
+            Google Colab Notebook
+        </a>
+    </div>
+</div>
 </body>
 </html>
