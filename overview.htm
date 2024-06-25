@@ -1,16 +1,6 @@
-<html xmlns="http://www.w3.org/1999/html">
-<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="Cache-Control"	content="no-cache">
-	<meta http-equiv="PRAGMA" 			content="NO-CACHE">
-	<meta http-equiv="Expires" 			content="01-Jan-2001 12:00:00 GMT">
-	<meta http-equiv="Content-Type" 	content="text/html; charset=iso-8859-1">
-	<meta http-equiv="imagetoolbar" 	content="no">
 
-	<link rel='shortcut icon' 	href='common/images/favicon.ico' />
-	<link rel='icon' 			href='common/images/favicon.ico' />
-<!--	<link rel="stylesheet" 		type="text/css" 	href='common/css/global.css' />-->
 	<style>
 		body {
 			padding-left: 0.5em;
@@ -19,7 +9,18 @@
 			background-color: #f4f4f4;
 		}
 		li { padding: 3px }
+		.def {
+			cursor: pointer;
+			color: blue;
+			text-decoration: none;
+		}
+		#overDiv {
+			position: absolute;
+			visibility:hidden;
+			z-index:1000;
+		}
 	</style>
+	<!--	<link rel="stylesheet" 		type="text/css" 	href='common/css/global.css' />-->
 	<script language='JavaScript' type='text/JavaScript' src='common/js/global.js'></script>
 	<script language='JavaScript' type='text/JavaScript' src='common/js/overlib_mini.js'><!-- overLIB (c) Erik Bosrup --></script>
 
@@ -137,9 +138,13 @@
 </script>
 </head>
 <body>
-<div id="overDiv"></div>
+	<div id="overDiv"></div>
 	<p style="font-size: 1.2em;">
-		Welcome to <strong>HandicapSkater.com</strong>, a platform dedicated to sharing my journey and advocating for the recognition and accommodation of unique mobility needs. My name is Troy Wilkes, and I live with a ballistic mobility impairment that makes walking a source of severe pain and potential Pain-Induced Cardiovascular Events (PICE). Through extensive biomechanical analysis and data science, I have found that inline skating provides a pain-free and effective way to manage my condition.
+		Welcome to <strong>HandicapSkater.com</strong>, a platform dedicated to sharing my journey and advocating for
+		the recognition and accommodation of unique mobility needs. My name is Troy Wilkes, and I live with a ballistic
+		mobility impairment that makes walking a source of severe pain and potential <script>d.write(top.pice)</script>.
+		Through extensive biomechanical analysis and data science, I have found that inline skating provides a pain-free
+		and effective way to manage my condition.
 	</p>
 	<h3>The Purpose of This Site:</h3>
 	<ol>
@@ -156,6 +161,15 @@
 			relevant authorities to advocate for disability equality and accommodations.
 		</li>
 	</ol>
+	<h3 id="hypotheses">Hypotheses</h3>
+	<p>
+		In this <a href="https://colab.research.google.com/github/handicapskater/datascience/blob/main/HandicapSkater-Public.ipynb"
+		target="_blank">Jupyter Notebook</a>, I explore equality for the disabled through rampant Law Fare
+		discrimination by using biometric data backed by GPS map data to prove the data science null hypothesis	that
+		walking triggers a <script>d.write(top.pice)</script>. The analysis presented in this notebook demonstrates
+		compelling evidence	supporting the alternative hypothesis that walking triggers a
+		<script>d.write(top.pice)</script>, while skating does not.
+	</p>
 	<h3>Legal Precedents</h3>
 	<p>Over the years, several legal precedents have been set that recognize the rights of individuals with disabilities
 		and the necessity of reasonable accommodations:</p>
@@ -175,7 +189,7 @@
 	<h3>Combining the Biomechanics, Data Science, and Legal Foundations</h3>
 	<p>This site integrates biomechanical analysis, data science, and legal precedents to form a comprehensive case for the necessity of my mobility aid and more specifically a spontaneous way to judge a person's disability. The evidence presented here demonstrates that:</p>
 	<ul>
-		<li><b>Biomechanics:</b> Walking triggers severe pain and PICE, while skating provides a pain-free alternative.
+		<li><b>Biomechanics:</b> Walking triggers severe pain and <script>d.write(top.pice)</script>, while skating provides a pain-free alternative.
 		</li>
 		<li><b>Data Science:</b> Statistical analyses confirm the significant differences in pain and heart rate levels
 			between walking and skating.
@@ -184,6 +198,7 @@
 			mobility needs.
 		</li>
 	</ul>
+	<h3>Conclusion</h3>
 	<p style="font-size: 1.2em;">
 		Thank you for visiting <strong>HandicapSkater.com</strong>. Your support is crucial in helping to ensure that individuals with unique mobility needs receive the recognition and accommodation they deserve.
 	</p>
