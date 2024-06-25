@@ -2,7 +2,7 @@
 <html lang="en" ng-app>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>HandicapSkater Biomechanics</title>
     <meta name="keywords" content="Handicap Skater, Handicap Mobility, Disabled Access, HandicapSkater Biomechanics, RollerGracie">
     <meta name="description" content="HandicapSkater is innovating the use of skates as a non-ballistic mobility aid. Help support this evolutionary advance in mobility for the disabled.">
@@ -12,7 +12,10 @@
     <link rel="shortcut icon" href="common/images/favicon.ico">
     <!-- <link rel="stylesheet" href="common/css/global.css"> -->
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="common/js/angular.js"></script>
     <script src="common/js/model-tooltips.js"></script>
     <script src="common/js/controller-menu.js"></script>
@@ -43,6 +46,19 @@
             background-color: #f4f4f4;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             flex-shrink: 0;
+        }
+
+        header .nav-toggle {
+            display: none;
+            cursor: pointer;
+        }
+
+        header .nav-toggle .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: #333;
         }
 
         .container {
@@ -170,8 +186,29 @@
         }
 
         @media (max-width: 768px) {
+            header .nav-toggle {
+                display: block;
+            }
             nav {
-                width: 120px;
+                width: 100%;
+                height: 0;
+                overflow: hidden;
+                transition: height 0.3s;
+            }
+            nav ul {
+                display: flex;
+                flex-direction: column;
+            }
+            nav li {
+                margin-bottom: 0;
+            }
+            nav a {
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+            }
+            .container {
+                flex-direction: column;
             }
             .ad-space {
                 display: none;
@@ -186,21 +223,18 @@
 
         @media (max-width: 480px) {
             nav {
-                width: 100%;
                 height: auto;
                 box-shadow: none;
                 padding: 10px;
-                overflow: hidden; /* Ensure nav doesn't overflow */
+                overflow: hidden;
             }
             nav ul {
                 display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
             }
             nav li {
-                margin-bottom: 0; /* Remove bottom margin for horizontal layout */
-                flex: 1;
+                margin-bottom: 0;
             }
             nav a {
                 width: 100%;
@@ -219,13 +253,46 @@
             .ad-space {
                 display: none;
             }
-        }    </style>
+        }
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28%255, %255, %255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+         .footer {
+             position: fixed;
+             bottom: 0;
+             width: 100%;
+             background-color: #f4f4f4;
+             color: white;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             padding: 10px 20px;
+             box-sizing: border-box;
+         }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .copyright {
+            flex-grow: 1;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 <header>
     <div class="ad ad-space">Ad Space Top Left</div>
     <h1>HandicapSkater Biomechanics</h1>
     <div class="ad ad-space">Ad Space Top Right</div>
+<!--    <div class="nav-toggle" id="nav-toggle">-->
+<!--        <div class="bar"></div>-->
+<!--        <div class="bar"></div>-->
+<!--        <div class="bar"></div>-->
+<!--    </div>-->
 </header>
 <div class="container" ng-init="initMenu()" ng-controller="MenuController">
     <nav id="menu" aria-label="Main Navigation">
@@ -237,17 +304,73 @@
                 </a>
             </li>
         </ul>
-        <a class="contact" href="mailto:handicapskater@mindspring.com?subject=HandicapSkater">Comments</a>
+<!--
+    <nav id="menu" aria-label="Main Navigation" class="navbar navbar-expand-md bg-dark navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="nav-bar">
+                    <li class="nav-item" ng-repeat="item in menu">
+                        <a class="nav-link" id="{{item.name}}" href="{{item.page}}" target="content"
+                           ng-click="setMenuItem(item)">
+                            {{item.text}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+//-->
+<!--            <div class="collapse navbar-collapse" id="collapsibleNavbar">-->
+<!--                <ul class="navbar-nav">-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="#">Link 1</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="#">Link 2</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="#">Link 3</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+        </nav>
+        <!--
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="nav-bar">
+                <li class="nav-item" ng-repeat="item in menu">
+                    <a class="nav-link" id="{{item.name}}" href="{{item.page}}" target="content"
+                       ng-click="setMenuItem(item)">
+                        {{item.text}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+        //-->
     </nav>
     <main>
         <iframe id="content" name="content" src="overview.htm"></iframe>
     </main>
 </div>
 <footer>
-    <div class="social">
-        <a href="http://www.facebook.com/group.php?gid=44036411369" target="_blank"><img src="common/images/fb_connect.png" alt="Facebook"></a>
-        <a href="https://twitter.com/handicapskater" class="twitter-follow-button" data-show-count="false">Follow @HandicapSkater</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <a href="common/copyright.htm" target="_blank">Copyright &copy; 2004 - <script>document.write(new Date().getFullYear())</script></a>
+    <div class="footer">
+        <div class="social-media-left">
+            <a href="http://www.facebook.com/group.php?gid=44036411369" target="_blank"><img src="common/images/fb_connect.png" alt="Facebook"></a>
+            <a href="linkedin.com/handicapskater" target="_blank"><img src="common/images/fb_connect.png" alt="LinkedIn" /></a>
+        </div>
+
+        <div class="copyright">
+            <a href="common/copyright.htm" target="_blank">Copyright &copy; 2004 - <script>document.write(new Date().getFullYear())</script></a>
+        </div>
+
+        <div class="social-media-right">
+            <a href="instagram.com/darce.maul" target="_blank"><img src="common/images/fb_connect.png" alt="Instagram" /></a>
+            <a href="https://twitter.com/handicapskater" class="twitter-follow-button" data-show-count="false">Follow @HandicapSkater</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
     </div>
 </footer>
 
@@ -255,17 +378,16 @@
     function updateIframeSrc() {
         const hash = window.location.hash.substring(1);
         if (hash) {
-            const [page, section] = hash.split('#');
-            const iframe = document.getElementById('content');
+            const [page, section] = hash.split(’#’);
+            const iframe = document.getElementById(‘content’);
             iframe.onload = function() {
                 if (section) {
                     iframe.contentWindow.location.hash = section;
                 }
             };
-            iframe.src = `${page}.htm`;
+            iframe.src = ${page}.htm;
         }
     }
-
     function simulateLinkClick() {
         const hash = window.location.hash.substring(1);
         if (hash) {
@@ -276,6 +398,11 @@
             }
         }
     }
+    $(document).ready(function () {
+        $(".navbar-toggler").on("click", function () {
+            $(".navbar-collapse").toggle();
+        });
+    });
 
     window.addEventListener('hashchange', () => {
         updateIframeSrc();
@@ -290,6 +417,16 @@
             updateIframeSrc();
             simulateLinkClick();
         }, 1000);
+    });
+
+    // Toggle the navigation menu
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+        const nav = document.querySelector('nav');
+        if (nav.style.height) {
+            nav.style.height = '';
+        } else {
+            nav.style.height = 'auto';
+        }
     });
 </script>
 </body>

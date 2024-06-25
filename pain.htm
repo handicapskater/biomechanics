@@ -1,18 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Chronic vs Acute Pain and Mobility</title>
-	<link rel="stylesheet" 		type="text/css" 	href='common/css/global.css' />
+	<style>
+		html {
+			padding-left: 10px;
+			padding-right: 10px;
+			background-color: #f4f4f4;
+		}
+		.def {
+			cursor: pointer;
+			color: blue;
+			text-decoration: none;
+		}
+	</style>
+<!--	<link rel="stylesheet" 		type="text/css" 	href='common/css/global.css' />-->
 	<script language='JavaScript' type='text/JavaScript' src='common/js/global.js'></script>
 	<script language='JavaScript' type='text/JavaScript' src='common/js/overlib_mini.js'><!-- overLIB (c) Erik Bosrup --></script>
-	<script language="JavaScript" src='common/js/module.js' ></script>
-	<style>
-	</style>
+<!--	<script language="JavaScript" src='common/js/module.js' ></script>-->
 </head>
 <body>
-	<div class="container">
 	<h2>Understanding Chronic vs. Acute Pain and Mobility</h2>
 
 	<div class="section">
@@ -32,6 +37,96 @@
 			<li><strong>Management:</strong> Requires a comprehensive, multimodal approach addressing both physical and psychological aspects.</li>
 		</ul>
 		<p class="source">Source: <a href="https://my.clevelandclinic.org/health/articles/12051-acute-vs-chronic-pain">Cleveland Clinic</a></p>
+	</div>
+
+	<div class="section">
+		<h3>Pain-Induced Cardiovascular Event</h3>
+		<p><strong>PICE:</strong></p>
+		<p>
+			A Pain-Induced Cardiovascular Event (PICE) refers to a physiological response where the experience of pain
+			triggers significant changes in cardiovascular metrics such as heart rate, heart rate variability (HRV), and
+			possibly blood pressure. This concept is based on the understanding that pain, particularly chronic or
+			severe pain, can elicit a strong response from the autonomic nervous system made up of the sympathetic and
+			parasympathetic nervous systems, leading to noticeable cardiovascular effects. It is an important concept in
+			understanding the physiological impact of pain on the cardiovascular system providing a measurable way to
+			assess the severity and impact of pain on an individual, enabling better management and treatment of
+			pain-related conditions.
+		</p>
+		<ul>
+			<li>
+				<strong>Heart Rate (HR):</strong> Pain can cause an increase in heart rate as part of the body’s stress
+				response. This is mediated by the autonomic nervous system, particularly through the activation of the
+				sympathetic nervous system.
+			</li>
+			<li>
+				<strong>Heart Rate Variability (HRV):</strong> HRV, which measures the variation in time between
+				heartbeats, can be influenced by pain. Typically, pain can reduce HRV, indicating increased sympathetic
+				and reduced parasympathetic activity.
+			</li>
+			<li>
+				<strong>Blood Pressure:</strong> Pain may also lead to changes in blood pressure, though this can vary
+				depending on the individual and the nature of the pain.
+			</li>
+		</ul>
+		<p><strong>Sympathetic Nervous System (SNS)</strong></p>
+		<p>
+			The SNS prepares teh body for the "fight or flight" response during stressful situations by increasing HR,
+			dilating bronchial passages, decreasing motility of the large intestine, constricting blood vessels,
+			dilating pupils, and causing perspiration.
+			Mechanisms:
+		</p>
+		<ul>
+			<li>
+				<strong>Heart Rate (HR):</strong> The SNS releases norepinephrine which binds to beta-adrenergic
+				receptors in the heart, increasing the rate and force of heart contractions.
+			</li>
+			<li>
+				<strong>Energy Mobilization:</strong> It stimulates the release of glucose from energy stores and
+				increases blood flow to skeletal muscles, allowing the body to react quickly to stress.
+			</li>
+		</ul>
+		<p><strong>Parasympathetic Nervous System (PNS)</strong></p>
+		<p>
+			The PNS promotes the "rest and digest" response, conserving energy and replenishing the body's resources. It
+			decreases HR, increases intestinal and glandular activities, and relaxes sphincter muscles in the
+			gastrointestinal tract.
+			Mechanisms:
+		</p>
+		<ul>
+			<li>
+				<strong>Heart Rate (HR):</strong> The PNS releases acetylcholine which binds to muscarinic receptors in
+				the heart, decreasing heart rate.
+			</li>
+			<li>
+				<strong>Digestive Process:</strong> It stimulates digestive enzyme secretion and peristalsis, aiding in
+				digestion and nutrient absorption.
+			</li>
+		</ul>
+		<p><strong>Applications in Data Science and Health Monitoring:</strong></p>
+		<ul>
+			<li>
+				<strong>Identification and Monitoring:</strong> PICE can be used to identify episodes of significant
+				pain in patients, especially those with chronic pain conditions. Wearable devices like WHOOP and
+				platforms like Strava can track HR and HRV to detect these events.
+			</li>
+			<li>
+				<strong>Pain Management:</strong> Skating reduces the load on painful joints and deformities, preventing
+				the exacerbation of chronic pain and allowing for more extended, less painful activity.
+			</li>
+			<li>
+				<strong>Personalized Healthcare:</strong> Understanding the patterns of PICE in an individual can help
+				in personalizing pain management and treatment strategies. Continuous monitoring can provide insights
+				into the effectiveness of interventions and the need for adjustments.
+			</li>
+			<li>
+				<strong>Research:</strong> PICE can be a valuable metric in clinical research to study the relationship
+				between pain and cardiovascular health. It can help in understanding how chronic pain affects overall
+				health and in developing new therapeutic approaches.
+			</li>
+		</ul>
+
+
+		<p class="source">Sources in HandicapSkater Jupyter notebook: BMC Musculoskeletal Disorders, Pain, Journal of Pain Research, Journal of Pain</p>
 	</div>
 
 	<div class="section">
@@ -68,7 +163,6 @@
 			<li><a target="_blank" href="https://my.clevelandclinic.org/health/articles/12051-acute-vs-chronic-pain">Cleveland Clinic on Acute vs. Chronic Pain</a></li>
 			<li><a target="_blank" href="https://www.hingehealth.com">Hinge Health Guide on Chronic Pain</a></li>
 		</ul>
-	</div>
 	</div>
 </body>
 </html>
