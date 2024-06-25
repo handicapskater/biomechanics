@@ -260,22 +260,26 @@
         .navbar-toggler-icon {
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28%255, %255, %255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
         }
-         .footer {
-             position: fixed;
-             bottom: 0;
-             width: 100%;
-             background-color: #333;
-             color: white;
-             display: flex;
-             justify-content: space-between;
-             align-items: center;
-             padding: 10px 20px;
-             box-sizing: border-box;
-         }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            border-top: 1px solid #ddd;
+        }
         .footer a {
-            color: white;
+            color: #333;
             text-decoration: none;
             margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
         }
         .copyright {
             flex-grow: 1;
@@ -295,7 +299,7 @@
     </div>
 </header>
 <div class="container" ng-init="initMenu()" ng-controller="MenuController">
-    <nav id="menu" aria-label="Main Navigation" class="navbar">
+    <nav id="menu" aria-label="Main Navigation" class="navbar navbar-expand-md bg-dark navbar-dark">
 <!--        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">-->
 <!--            <span class="navbar-toggler-icon"></span>-->
 <!--        </button>-->
@@ -318,6 +322,8 @@
 <!--                </ul>-->
 <!--            </div>-->
 
+<div class="container" ng-init="initMenu()" ng-controller="MenuController">
+    <nav id="menu" aria-label="Main Navigation" class="navbar navbar-expand-md bg-dark navbar-dark">
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="nav-bar">
                 <li class="nav-item" ng-repeat="item in menu">
