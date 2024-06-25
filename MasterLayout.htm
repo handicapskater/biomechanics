@@ -12,7 +12,10 @@
     <link rel="shortcut icon" href="common/images/favicon.ico">
     <!-- <link rel="stylesheet" href="common/css/global.css"> -->
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="common/js/angular.js"></script>
     <script src="common/js/model-tooltips.js"></script>
     <script src="common/js/controller-menu.js"></script>
@@ -265,15 +268,21 @@
     </div>
 </header>
 <div class="container" ng-init="initMenu()" ng-controller="MenuController">
-    <nav id="menu" aria-label="Main Navigation">
-        <ul>
-            <li ng-repeat="item in menu">
-                <a name="{{item.name}}" id="{{item.name}}" href="{{item.page}}" target="content"
-                   ng-click="setMenuItem(item)">
-                    {{item.text}}
-                </a>
-            </li>
-        </ul>
+    <nav id="menu" aria-label="Main Navigation" class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="nav-bar">
+                <li class="nav-item" ng-repeat="item in menu">
+                    <a class="nav-link" id="{{item.name}}" href="{{item.page}}" target="content"
+                       ng-click="setMenuItem(item)">
+                        {{item.text}}
+                    </a>
+                </li>
+            </ul>
+        </div>
 <!--        <a class="contact" href="mailto:handicapskater@mindspring.com?subject=HandicapSkater">Comments</a>-->
     </nav>
     <main>
