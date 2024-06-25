@@ -1,16 +1,6 @@
-<html xmlns="http://www.w3.org/1999/html">
-<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="Cache-Control"	content="no-cache">
-	<meta http-equiv="PRAGMA" 			content="NO-CACHE">
-	<meta http-equiv="Expires" 			content="01-Jan-2001 12:00:00 GMT">
-	<meta http-equiv="Content-Type" 	content="text/html; charset=iso-8859-1">
-	<meta http-equiv="imagetoolbar" 	content="no">
 
-	<link rel='shortcut icon' 	href='common/images/favicon.ico' />
-	<link rel='icon' 			href='common/images/favicon.ico' />
-<!--	<link rel="stylesheet" 		type="text/css" 	href='common/css/global.css' />-->
 	<style>
 		body {
 			padding-left: 0.5em;
@@ -19,7 +9,18 @@
 			background-color: #f4f4f4;
 		}
 		li { padding: 3px }
+		.def {
+			cursor: pointer;
+			color: blue;
+			text-decoration: none;
+		}
+		#overDiv {
+			position: absolute;
+			visibility:hidden;
+			z-index:1000;
+		}
 	</style>
+	<!--	<link rel="stylesheet" 		type="text/css" 	href='common/css/global.css' />-->
 	<script language='JavaScript' type='text/JavaScript' src='common/js/global.js'></script>
 	<script language='JavaScript' type='text/JavaScript' src='common/js/overlib_mini.js'><!-- overLIB (c) Erik Bosrup --></script>
 
@@ -134,16 +135,14 @@
 	var s = "Department of Transportation: Federal Transit Administration - The Office of Transit Safety and Oversight administers a national transit safety program and program compliance oversight process.";
 	var DOT_FTA = "<span id=\"DOT-FTA\" class=\"def\" onmouseover=\"return overlib('"+s+"', WIDTH, 550, CAPTION, 'Department of Transportation: Federal Transit Administration', CENTER)\" onmouseout=\"return nd()\">DOT-FTA</span>";
 	// ======================================================
-	var s = "A Pain-Induced Cardiovascular Event (PICE) refers to a physiological response where the experience of pain triggers significant changes in cardiovascular metrics such as heart rate, heart rate variability (HRV), and possibly blood pressure. This concept is based on the understanding that pain, particularly chronic or severe pain, can elicit a strong response from the autonomic nervous system, leading to noticeable cardiovascular effects."
-	var pice = "<span id=\"PICE\" class=\"def\" onmouseover=\"return overlib('"+s+"', WIDTH, 550, CAPTION, 'Pain-Induced Cardiovascular Event', CENTER)\" onmouseout=\"return nd()\">PICE</span>";
 </script>
 </head>
 <body>
-<div id="overDiv"></div>
+	<div id="overDiv"></div>
 	<p style="font-size: 1.2em;">
 		Welcome to <strong>HandicapSkater.com</strong>, a platform dedicated to sharing my journey and advocating for
 		the recognition and accommodation of unique mobility needs. My name is Troy Wilkes, and I live with a ballistic
-		mobility impairment that makes walking a source of severe pain and potential <script>d.write(pice)</script>.
+		mobility impairment that makes walking a source of severe pain and potential <script>d.write(top.pice)</script>.
 		Through extensive biomechanical analysis and data science, I have found that inline skating provides a pain-free
 		and effective way to manage my condition.
 	</p>
@@ -167,7 +166,7 @@
 		In this <a href="https://colab.research.google.com/github/handicapskater/datascience/blob/main/HandicapSkater-Public.ipynb">
 		Jupyter Notebook</a>, I explore equality for the disabled through rampant Law Fare discrimination by using
 		biometric data backed by GPS map data to prove the data science null hypothesis	that walking triggers a
-		<script>d.write(pice)</script>. The analysis presented in this notebook demonstrates compelling evidence
+		<script>d.write(top.pice)</script>. The analysis presented in this notebook demonstrates compelling evidence
 		supporting the alternative hypothesis that walking triggers a <script>d.write(top.pice)</script>, while skating
 		does not.
 	</p>
