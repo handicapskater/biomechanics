@@ -2,7 +2,7 @@
 <html lang="en" ng-app>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>HandicapSkater Biomechanics</title>
     <meta name="keywords" content="Handicap Skater, Handicap Mobility, Disabled Access, HandicapSkater Biomechanics, RollerGracie">
     <meta name="description" content="HandicapSkater is innovating the use of skates as a non-ballistic mobility aid. Help support this evolutionary advance in mobility for the disabled.">
@@ -260,6 +260,27 @@
         .navbar-toggler-icon {
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28%255, %255, %255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
         }
+         .footer {
+             position: fixed;
+             bottom: 0;
+             width: 100%;
+             background-color: #333;
+             color: white;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             padding: 10px 20px;
+             box-sizing: border-box;
+         }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .copyright {
+            flex-grow: 1;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -316,10 +337,20 @@
     </main>
 </div>
 <footer>
-    <div class="social">
-        <a href="http://www.facebook.com/group.php?gid=44036411369" target="_blank"><img src="common/images/fb_connect.png" alt="Facebook"></a>
-        <a href="https://twitter.com/handicapskater" class="twitter-follow-button" data-show-count="false">Follow @HandicapSkater</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <a href="common/copyright.htm" target="_blank">Copyright &copy; 2004 - <script>document.write(new Date().getFullYear())</script></a>
+    <div class="footer">
+        <div class="social-media-left">
+            <a href="http://www.facebook.com/group.php?gid=44036411369" target="_blank"><img src="common/images/fb_connect.png" alt="Facebook"></a>
+            <a href="linkedin.com/handicapskater" target="_blank"><img src="common/images/fb_connect.png" alt="LinkedIn" /></a>
+        </div>
+
+        <div class="copyright">
+            <a href="common/copyright.htm" target="_blank">Copyright &copy; 2004 - <script>document.write(new Date().getFullYear())</script></a>
+        </div>
+
+        <div class="social-media-right">
+            <a href="instagram.com/darce.maul" target="_blank"><img src="common/images/fb_connect.png" alt="Instagram" /></a>
+            <a href="https://twitter.com/handicapskater" class="twitter-follow-button" data-show-count="false">Follow @HandicapSkater</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
     </div>
 </footer>
 
