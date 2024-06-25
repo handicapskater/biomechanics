@@ -1,16 +1,6 @@
-<html xmlns="http://www.w3.org/1999/html">
-<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="Cache-Control"	content="no-cache">
-	<meta http-equiv="PRAGMA" 			content="NO-CACHE">
-	<meta http-equiv="Expires" 			content="01-Jan-2001 12:00:00 GMT">
-	<meta http-equiv="Content-Type" 	content="text/html; charset=iso-8859-1">
-	<meta http-equiv="imagetoolbar" 	content="no">
 
-	<link rel='shortcut icon' 	href='common/images/favicon.ico' />
-	<link rel='icon' 			href='common/images/favicon.ico' />
-<!--	<link rel="stylesheet" 		type="text/css" 	href='common/css/global.css' />-->
 	<style>
 		body {
 			padding-left: 0.5em;
@@ -24,7 +14,13 @@
 			color: blue;
 			text-decoration: none;
 		}
+		#overDiv {
+			position: absolute;
+			visibility:hidden;
+			z-index:1000;
+		}
 	</style>
+	<!--	<link rel="stylesheet" 		type="text/css" 	href='common/css/global.css' />-->
 	<script language='JavaScript' type='text/JavaScript' src='common/js/global.js'></script>
 	<script language='JavaScript' type='text/JavaScript' src='common/js/overlib_mini.js'><!-- overLIB (c) Erik Bosrup --></script>
 
@@ -142,7 +138,7 @@
 </script>
 </head>
 <body>
-	<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+	<div id="overDiv"></div>
 	<p style="font-size: 1.2em;">
 		Welcome to <strong>HandicapSkater.com</strong>, a platform dedicated to sharing my journey and advocating for
 		the recognition and accommodation of unique mobility needs. My name is Troy Wilkes, and I live with a ballistic
