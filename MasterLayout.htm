@@ -460,31 +460,46 @@
         }
 
         /* Optional: Center the whole .copyright section */
-        .footer .copyright {
+        /*.footer .copyright {*/
+        /*    text-align: center;*/
+        /*    display: flex;*/
+        /*    flex-wrap: wrap;*/
+        /*    justify-content: center;*/
+        /*    align-items: center;*/
+        /*    gap: 12px;*/
+        /*    padding: 20px 0;*/
+        /*}*/
+        /* Donate button styled to match footer icons */
+        .donate-button {
+            display: inline-block;
+            background-color: #f57c00; /* same vibrant orange */
+            color: white;
+            font-weight: bold;
             text-align: center;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 12px; /* Rounded rectangle */
+            font-family: sans-serif;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            border: none;
+            margin: 0 12px;
+        }
+
+        /* Hover effect like the icon buttons */
+        .donate-button:hover {
+            background-color: #e06200;
+        }
+
+        /* Optional: center the whole footer */
+        .footer .copyright {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             gap: 12px;
             padding: 20px 0;
-        }
-        .donate-button {
-            background: linear-gradient(#fba01c, #f57c00);
-            color: white;
-            font-weight: bold;
-            padding: 12px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-family: sans-serif;
-            display: inline-block;
-            transition: background 0.3s;
-        }
-
-        .donate-button:hover {
-            background: linear-gradient(#f57c00, #fba01c);
-        }
-    </style>
+        }    </style>
 </head>
 <body>
 <header>
