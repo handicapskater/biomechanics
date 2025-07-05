@@ -13,3 +13,13 @@ function setItem(menuItem) {
     $('#'+menuItem.name).toggleClass('linkActionHi');
     lastButton = menuItem;
 }
+
+window.onload = function () {
+    var iframe = document.getElementById('mainFrame');
+    iframe.style.height = window.innerHeight - 80 + 'px';
+};
+
+window.onresize = function () {
+    var iframe = document.getElementById('mainFrame');
+    iframe.style.height = window.innerHeight - 80 + 'px';
+};
