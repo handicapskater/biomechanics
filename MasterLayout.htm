@@ -524,7 +524,10 @@
     <nav id="menu" aria-label="Main Navigation">
         <ul>
             <li ng-repeat="item in menu">
-                <a name="{{item.name}}" id="{{item.name}}" href="{{item.page}}" target="content"
+                <a name="{{item.name}}"
+                   id="{{item.name}}"
+                   href="{{item.page}}"
+                   target="content"
                    ng-click="setMenuItem(item)">
                     {{item.text}}
                 </a>
