@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+
+<html lang="en" ng-app="">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
     <title>HandicapSkater Biomechanics</title>
-    <meta name="keywords" content="Handicap Skater, Handicap Mobility, Disabled Access, HandicapSkater Biomechanics, RollerGracie">
-    <meta name="description" content="HandicapSkater is innovating the use of skates as a non-ballistic mobility aid. Help support this evolutionary advance in mobility for the disabled.">
-    <meta name="author" content="handicapskater@mindspring.com">
-    <meta name="robots" content="index, nofollow">
-
-    <link rel="shortcut icon" href="common/images/favicon.ico">
-    <link rel="stylesheet" href="common/css/global.css">
-
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+    <meta content="Handicap Skater, Handicap Mobility, Disabled Access, HandicapSkater Biomechanics, RollerGracie" name="keywords"/>
+    <meta content="HandicapSkater is innovating the use of skates as a non-ballistic mobility aid. Help support this evolutionary advance in mobility for the disabled." name="description"/>
+    <meta content="handicapskater@mindspring.com" name="author"/>
+    <meta content="index, nofollow" name="robots"/>
+    <link href="common/images/favicon.ico" rel="shortcut icon"/>
+    <link href="common/css/global.css" rel="stylesheet"/>
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -22,7 +21,7 @@
     <script src="common/js/model-menu.js"></script>
     <script src="common/js/global.js"></script>
     <script src="common/js/overlib_mini.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <style>
         .fa {
             padding: 20px;
@@ -252,8 +251,10 @@
             display: flex;
             flex-direction: column;
             flex-grow: 1;
+            padding: 0;
+            margin: 0;
             width: 100%;
-            height: 100%;
+            box-sizing: border-box;
         }
 
         iframe {
@@ -393,18 +394,18 @@
         .navbar-toggler-icon {
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28%255, %255, %255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
         }
-         .footer {
-             position: fixed;
-             bottom: 0;
-             width: 100%;
-             background-color: #f4f4f4;
-             color: #333;
-             /*display: flex;*/
-             /*justify-content: space-between;*/
-             align-items: center;
-             /*padding: 10px 20px;*/
-             /*box-sizing: border-box;*/
-         }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f4f4f4;
+            color: #333;
+            /*display: flex;*/
+            /*justify-content: space-between;*/
+            align-items: center;
+            /*padding: 10px 20px;*/
+            /*box-sizing: border-box;*/
+        }
         .footer a {
             /*color: #333;*/
             text-decoration: none;
@@ -505,105 +506,99 @@
 </head>
 <body>
 <header>
-<!--    <div class="ad ad-space">Ad Space Top Left</div>-->
+    <!--    <div class="ad ad-space">Ad Space Top Left</div>-->
     <h1>HandicapSkater Biomechanics</h1>
-<!--    <div class="ad ad-space">Ad Space Top Right</div>-->
-<!--    <div class="nav-toggle" id="nav-toggle">-->
-<!--        <div class="bar"></div>-->
-<!--        <div class="bar"></div>-->
-<!--        <div class="bar"></div>-->
-<!--    </div>-->
-
+    <!--    <div class="ad ad-space">Ad Space Top Right</div>-->
+    <!--    <div class="nav-toggle" id="nav-toggle">-->
+    <!--        <div class="bar"></div>-->
+    <!--        <div class="bar"></div>-->
+    <!--        <div class="bar"></div>-->
+    <!--    </div>-->
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0&appId=595532390634587"
-            nonce="epJ9hRCi"></script>
+    <script async="" crossorigin="anonymous" defer="" nonce="epJ9hRCi" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0&amp;appId=595532390634587"></script>
 </header>
-<div class="container" ng-controller="MenuController">
-    <nav id="menu" aria-label="Main Navigation">
+<div class="container" ng-controller="MenuController" ng-init="initMenu()">
+    <nav aria-label="Main Navigation" id="menu">
         <ul>
             <li ng-repeat="item in menu">
-                <a name="{{item.name}}" id="{{item.name}}" href="{{item.page}}" target="content"
-                   ng-click="setMenuItem(item)">
+                <a href="{{item.page}}" id="{{item.name}}" name="{{item.name}}" ng-click="setMenuItem(item)" target="content">
                     {{item.text}}
                 </a>
             </li>
         </ul>
-<!--
-    <nav id="menu" aria-label="Main Navigation" class="navbar navbar-expand-md bg-dark navbar-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-            <a class="navbar-brand" href="#">Logo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="nav-bar">
-                    <li class="nav-item" ng-repeat="item in menu">
-                        <a class="nav-link" id="{{item.name}}" href="{{item.page}}" target="content"
-                           ng-click="setMenuItem(item)">
-                            {{item.text}}
-                        </a>
-                    </li>
-                </ul>
-            </div>
-//-->
-<!--            <div class="collapse navbar-collapse" id="collapsibleNavbar">-->
-<!--                <ul class="navbar-nav">-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#">Link 1</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#">Link 2</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#">Link 3</a>-->
-<!--                    </li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--        </nav>-->
         <!--
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="nav-bar">
-                <li class="nav-item" ng-repeat="item in menu">
-                    <a class="nav-link" id="{{item.name}}" href="{{item.page}}" target="content"
-                       ng-click="setMenuItem(item)">
-                        {{item.text}}
-                    </a>
-                </li>
-            </ul>
-        </div>
+            <nav id="menu" aria-label="Main Navigation" class="navbar navbar-expand-md bg-dark navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a class="navbar-brand" href="#">Logo</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="nav-bar">
+                            <li class="nav-item" ng-repeat="item in menu">
+                                <a class="nav-link" id="{{item.name}}" href="{{item.page}}" target="content"
+                                   ng-click="setMenuItem(item)">
+                                    {{item.text}}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
         //-->
+        <!--            <div class="collapse navbar-collapse" id="collapsibleNavbar">-->
+        <!--                <ul class="navbar-nav">-->
+        <!--                    <li class="nav-item">-->
+        <!--                        <a class="nav-link" href="#">Link 1</a>-->
+        <!--                    </li>-->
+        <!--                    <li class="nav-item">-->
+        <!--                        <a class="nav-link" href="#">Link 2</a>-->
+        <!--                    </li>-->
+        <!--                    <li class="nav-item">-->
+        <!--                        <a class="nav-link" href="#">Link 3</a>-->
+        <!--                    </li>-->
+        <!--                </ul>-->
+        <!--            </div>-->
+        <!--        </nav>-->
+        <!--
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="nav-bar">
+                        <li class="nav-item" ng-repeat="item in menu">
+                            <a class="nav-link" id="{{item.name}}" href="{{item.page}}" target="content"
+                               ng-click="setMenuItem(item)">
+                                {{item.text}}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                //-->
     </nav>
-    <main>
-        <iframe id="content" name="content" src="overview.htm" frameborder="0"
-                style="flex: 1; width: 100%; height: 100%; border: none; background: #f4f4f4;"></iframe>
+    <main style="flex: 1; display: flex; flex-direction: column; width: 100%; height: 100%;">
+        <iframe frameborder="0" id="mainFrame" name="mainFrame" src="overview.htm" style="width: 100vw; height: calc(100vh - 80px); border: none; background: #f4f4f4;"></iframe>
     </main>
 </div>
 <footer style="border-box: unset">
     <div class="footer">
         <div class="copyright">
             <!--
-            <div class="gfm-embed" data-url="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai/widget/small?sharesheet=fundraiser sidebar&attribution_id=sl:73265a98-2405-4786-b415-ae0f88938e36"></div>
-            -->
-            <a href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai"
-               class="donate-button" target="_blank">Donate Now</a>
-            <script defer src="https://www.gofundme.com/static/js/embed.js"></script>
-            <a href="http://www.facebook.com/group.php?gid=44036411369" target="_blank" class="fa fa-facebook"></a>
-            <a href="https://twitter.com/handicapskater" target="_blank" class="fa fa-twitter"></a>
+                        <div class="gfm-embed" data-url="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai/widget/small?sharesheet=fundraiser sidebar&attribution_id=sl:73265a98-2405-4786-b415-ae0f88938e36"></div>
+                        -->
+            <a class="donate-button" href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai" target="_blank">Donate Now</a>
+            <script defer="defer" src="https://www.gofundme.com/static/js/embed.js"></script>
+            <a class="fa fa-facebook" href="http://www.facebook.com/group.php?gid=44036411369" target="_blank"></a>
+            <a class="fa fa-twitter" href="https://twitter.com/handicapskater" target="_blank"></a>
             <span style="vertical-align: middle">
-                <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-                <script type="IN/FollowCompany" data-id="103320223" data-counter="bottom"></script>
-            </span>
-            <a href="common/copyright.htm" target="_blank">Copyright &copy; 2004 - <script>document.write(new Date().getFullYear())</script></a>
-            <a href="https://www.youtube.com/channel/UCv8NPazTzuPxE_YM8-MIReQ" target="_blank" class="fa fa-youtube"></a>
-            <a href="https://rumble.com/c/c-1635644" target="_blank" class="fa fa-rumble">R</a>
-            <a href="https://instagram.com/handicapskater" target="_blank" class="fa fa-instagram"></a>
+<script defer="defer" src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+<script data-counter="bottom" data-id="103320223" type="IN/FollowCompany"></script>
+</span>
+            <a href="common/copyright.htm" target="_blank">Copyright © 2004 - <script>document.write(new Date().getFullYear())</script></a>
+            <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCv8NPazTzuPxE_YM8-MIReQ" target="_blank"></a>
+            <a class="fa fa-rumble" href="https://rumble.com/c/c-1635644" target="_blank">R</a>
+            <a class="fa fa-instagram" href="https://instagram.com/handicapskater" target="_blank"></a>
         </div>
     </div>
 </footer>
-
 <script>
     function updateIframeSrc() {
         const hash = window.location.hash.substring(1);
