@@ -518,7 +518,7 @@
     <script async="" crossorigin="anonymous" defer="" nonce="epJ9hRCi" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0&amp;appId=595532390634587"></script>
 </header>
 <div class="container" ng-controller="MenuController" ng-init="initMenu()">
-    <nav aria-label="Main Navigation" id="menu">
+    <nav aria-label="Main Navigation" id="menu" width="250px">
         <ul>
             <li ng-repeat="item in menu">
                 <a href="{{item.page}}" id="{{item.name}}" name="{{item.name}}" ng-click="setMenuItem(item)" target="content">
@@ -575,7 +575,7 @@
                 //-->
     </nav>
     <main style="flex: 1; display: flex; flex-direction: column; width: 100%; height: 100%;">
-        <iframe frameborder="0" id="content" name="content" src="overview.htm" style="border: none; background: #f4f4f4;"></iframe>
+        <iframe id="content" name="content" src="overview.htm" style="border: none; background: #f4f4f4;"></iframe>
     </main>
 </div>
 <footer style="border-box: unset">
