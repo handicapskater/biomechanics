@@ -12,11 +12,7 @@ body {
 header {
     text-align: center;
 }
-.content-container {
-    flex-grow: 1;
-    width: 100%;
-    box-sizing: border-box;
-}
+
 .container {
     background-color: #f4f4f4;
     box-sizing: border-box;
