@@ -11,7 +11,6 @@
     <meta content="index, nofollow" name="robots"/>
     <link href="common/images/favicon.ico" rel="shortcut icon"/>
     <link href="common/css/global.css" rel="stylesheet"/>
-    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -293,100 +292,12 @@
             height: 60px;
         }
 
-        /*footer .social img {*/
-        /*    height: 24px;*/
-        /*}*/
-
-        /*footer .copyright {*/
-        /*    font-size: 0.9em;*/
-        /*    color: #666;*/
-        /*}*/
-
         h1 {
             text-align: center;
             margin: 0;
             padding: 10px;
             width: 100%;
         }
-
-        /*@media (max-width: 1200px) {*/
-        /*    nav {*/
-        /*        width: 150px;*/
-        /*    }*/
-        /*    .ad-space {*/
-        /*        width: 150px;*/
-        /*    }*/
-        /*}*/
-
-        /*@media (max-width: 768px) {*/
-        /*    header .nav-toggle {*/
-        /*        display: block;*/
-        /*    }*/
-        /*    nav {*/
-        /*        width: 100%;*/
-        /*        height: 0;*/
-        /*        overflow: hidden;*/
-        /*        transition: height 0.3s;*/
-        /*    }*/
-        /*    nav ul {*/
-        /*        display: flex;*/
-        /*        flex-direction: column;*/
-        /*    }*/
-        /*    nav li {*/
-        /*        margin-bottom: 0;*/
-        /*    }*/
-        /*    nav a {*/
-        /*        width: 100%;*/
-        /*        text-align: center;*/
-        /*        padding: 10px;*/
-        /*    }*/
-        /*    .container {*/
-        /*        flex-direction: column;*/
-        /*    }*/
-        /*    .ad-space {*/
-        /*        display: none;*/
-        /*    }*/
-        /*    header, footer {*/
-        /*        padding: 5px;*/
-        /*    }*/
-        /*    h1 {*/
-        /*        font-size: 1.5em;*/
-        /*    }*/
-        /*}*/
-
-        /*@media (max-width: 480px) {*/
-        /*    nav {*/
-        /*        height: auto;*/
-        /*        box-shadow: none;*/
-        /*        padding: 10px;*/
-        /*        overflow: hidden;*/
-        /*    }*/
-        /*    nav ul {*/
-        /*        display: flex;*/
-        /*        flex-direction: column;*/
-        /*        align-items: center;*/
-        /*    }*/
-        /*    nav li {*/
-        /*        margin-bottom: 0;*/
-        /*    }*/
-        /*    nav a {*/
-        /*        width: 100%;*/
-        /*        text-align: center;*/
-        /*        padding: 10px;*/
-        /*    }*/
-        /*    main {*/
-        /*        padding: 0;*/
-        /*    }*/
-        /*    footer {*/
-        /*        flex-direction: column;*/
-        /*        gap: 10px;*/
-        /*        height: auto;*/
-        /*        padding: 10px 0;*/
-        /*    }*/
-        /*    .ad-space {*/
-        /*        display: none;*/
-        /*    }*/
-        /*}*/
 
         .navbar-toggler {
             border-color: rgba(255, 255, 255, 0.1);
@@ -400,16 +311,10 @@
             width: 100%;
             background-color: #f4f4f4;
             color: #333;
-            /*display: flex;*/
-            /*justify-content: space-between;*/
             align-items: center;
-            /*padding: 10px 20px;*/
-            /*box-sizing: border-box;*/
         }
         .footer a {
-            /*color: #333;*/
             text-decoration: none;
-            /*margin: 0 10px;*/
         }
         .copyright {
             color: #333;
@@ -425,7 +330,6 @@
             border-top: 1px solid #ddd;
         }
         .copyright a {
-            /*color: #333;*/
             text-decoration: none;
             margin: 0 10px;
         }
@@ -448,29 +352,7 @@
             height: 40px;
             border: none;
         }
-        /* Fix Donate button layout and transparency */
-        .gfm-embed {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: transparent !important;
-            margin: 0 auto 10px auto;
-            padding: 0;
-            max-width: fit-content;
-            border: none;
-            box-shadow: none;
-        }
 
-        /* Optional: Center the whole .copyright section */
-        /*.footer .copyright {*/
-        /*    text-align: center;*/
-        /*    display: flex;*/
-        /*    flex-wrap: wrap;*/
-        /*    justify-content: center;*/
-        /*    align-items: center;*/
-        /*    gap: 12px;*/
-        /*    padding: 20px 0;*/
-        /*}*/
         /* Donate button styled to match footer icons */
         .donate-button {
             display: inline-block;
@@ -526,53 +408,6 @@
                 </a>
             </li>
         </ul>
-        <!--
-            <nav id="menu" aria-label="Main Navigation" class="navbar navbar-expand-md bg-dark navbar-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-                    <a class="navbar-brand" href="#">Logo</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul class="nav-bar">
-                            <li class="nav-item" ng-repeat="item in menu">
-                                <a class="nav-link" id="{{item.name}}" href="{{item.page}}" target="content"
-                                   ng-click="setMenuItem(item)">
-                                    {{item.text}}
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-        //-->
-        <!--            <div class="collapse navbar-collapse" id="collapsibleNavbar">-->
-        <!--                <ul class="navbar-nav">-->
-        <!--                    <li class="nav-item">-->
-        <!--                        <a class="nav-link" href="#">Link 1</a>-->
-        <!--                    </li>-->
-        <!--                    <li class="nav-item">-->
-        <!--                        <a class="nav-link" href="#">Link 2</a>-->
-        <!--                    </li>-->
-        <!--                    <li class="nav-item">-->
-        <!--                        <a class="nav-link" href="#">Link 3</a>-->
-        <!--                    </li>-->
-        <!--                </ul>-->
-        <!--            </div>-->
-        <!--        </nav>-->
-        <!--
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="nav-bar">
-                        <li class="nav-item" ng-repeat="item in menu">
-                            <a class="nav-link" id="{{item.name}}" href="{{item.page}}" target="content"
-                               ng-click="setMenuItem(item)">
-                                {{item.text}}
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                //-->
     </nav>
     <main style="flex: 1; display: flex; flex-direction: column; width: 100%; height: 100%;">
         <iframe id="content" name="content" src="overview.htm" style="border: none; background: #f4f4f4;"></iframe>
