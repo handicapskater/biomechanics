@@ -1,6 +1,5 @@
 menuData = [
         { name: 'overview', page: 'overview.htm', text: 'Overview' },
-        { name: 'advocacy', page: 'advocacy.htm', text: 'Advocacy' },
         { name: 'injury', page: 'background.htm', text: 'Injuries' },
         { name: 'pain', page: 'pain.htm', text: 'Pain' },
         { name: 'biomechanics', page: 'BiomechanicsBasics.htm', text: 'Biomechanics' },
