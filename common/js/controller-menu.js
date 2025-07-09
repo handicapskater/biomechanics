@@ -20,16 +20,18 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
     $scope.setMenuItem = function(item) {
         $scope.currentItem = item.name;
 
-        // Remove active class from all menu items
         setTimeout(function () {
             const menuLinks = document.querySelectorAll('#menu a');
-            menuLinks.forEach(link => link.classList.remove('active'));
+            menuLinks.forEach(link => {
+                link.classList.remove('active');
+                link.removeAttribute('data-current');
+            });
 
-            // Add active class to the current item
             const activeLink = document.getElementById(item.name);
             if (activeLink) {
                 activeLink.classList.add('active');
-                activeLink.classList.blur();
+                activeLink.setAttribute('data-current', 'true'); // force styling
+                activeLink.blur();
             }
         }, 100);
     };
