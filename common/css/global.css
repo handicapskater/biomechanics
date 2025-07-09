@@ -75,6 +75,29 @@ nav a.active {
     font-weight: bold;    /* or normal if you want no visual cue */
 }
 
+nav a {
+    background: #e4e4f4;
+    color: #333;
+}
+
+nav a:hover,
+nav a:focus {
+    background: #ddd;
+    color: #000;
+}
+
+nav a.active {
+    background: #d0d0e8;  /* consistent and visible */
+    color: #111;
+    font-weight: bold;
+}
+
+nav a.active:hover,
+nav a.active:focus {
+    background: #d0d0e8;  /* prevent change on hover/focus */
+    color: #111;
+}
+
 p, h3, ol, ul {
     margin: 0 0 1em 0;
     padding: 0;
@@ -120,4 +143,38 @@ footer {
     justify-content: space-between;
     padding: 10px;
     background: #f4f4f4;
+}
+
+/* === CONSOLIDATED MENU STYLING === */
+
+nav a {
+    display: block;
+    padding: 10px;
+    background: #e4e4f4;
+    color: #333;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Normal hover/focus behavior */
+nav a:hover,
+nav a:focus {
+    background: #ddd;
+    color: #000;
+}
+
+/* Active (selected) menu item — visually consistent */
+nav a.active {
+    background: #c9c9ec;  /* visually distinct, but not dark */
+    color: #111;
+    font-weight: bold;
+}
+
+/* Prevent hover/focus from overriding active styling */
+nav a.active:hover,
+nav a.active:focus {
+    background: #c9c9ec;
+    color: #111;
 }
