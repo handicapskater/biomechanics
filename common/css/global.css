@@ -183,3 +183,17 @@ nav a.active:focus {
 nav a:focus:not(.active) {
     outline: none;
 }
+
+/* Fallback: style the link that matches current iframe src */
+nav a[data-current="true"] {
+    background: #c9c9ec !important;
+    color: #111 !important;
+    font-weight: bold;
+}
+
+/* Suppress hover override */
+nav a[data-current="true"]:hover,
+nav a[data-current="true"]:focus {
+    background: #c9c9ec !important;
+    color: #111 !important;
+}
