@@ -29,6 +29,7 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
             const activeLink = document.getElementById(item.name);
             if (activeLink) {
                 activeLink.classList.add('active');
+                activeLink.classList.blur();
             }
         }, 100);
     };
