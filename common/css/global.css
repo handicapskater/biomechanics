@@ -145,8 +145,7 @@ footer {
     background: #f4f4f4;
 }
 
-/* === CONSOLIDATED MENU STYLING === */
-
+/* General nav link styling */
 nav a {
     display: block;
     padding: 10px;
@@ -156,25 +155,31 @@ nav a {
     border-radius: 5px;
     text-decoration: none;
     transition: background 0.3s, color 0.3s;
+    outline: none; /* remove browser default focus outline */
 }
 
-/* Normal hover/focus behavior */
+/* Hover/focus styling */
 nav a:hover,
 nav a:focus {
     background: #ddd;
     color: #000;
 }
 
-/* Active (selected) menu item — visually consistent */
+/* Active styling */
 nav a.active {
-    background: #c9c9ec;  /* visually distinct, but not dark */
+    background: #c9c9ec;
     color: #111;
     font-weight: bold;
 }
 
-/* Prevent hover/focus from overriding active styling */
+/* Prevent focus or hover from altering active */
 nav a.active:hover,
 nav a.active:focus {
     background: #c9c9ec;
     color: #111;
 }
+
+/* Optional: remove lingering focus style when clicking anywhere */
+nav a:focus:not(.active) {
+    outline: none;
+}}
