@@ -33,3 +33,21 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
         }, 100);
     };
 });
+
+window.addEventListener("load", function () {
+    const iframe = document.getElementById('content');
+    if (iframe) {
+        iframe.addEventListener("load", function () {
+            const currentSrc = iframe.contentWindow.location.pathname.split('/').pop();
+            const links = document.querySelectorAll('#menu a');
+
+            links.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href === currentSrc) {
+                    links.forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
+                }
+            });
+        });
+    }
+});
