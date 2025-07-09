@@ -69,6 +69,12 @@ nav a.active {
     font-weight: normal;
 }
 
+nav a.active {
+    background: #e4e4f4;  /* same as default */
+    color: #333;          /* same as default */
+    font-weight: bold;    /* or normal if you want no visual cue */
+}
+
 p, h3, ol, ul {
     margin: 0 0 1em 0;
     padding: 0;
