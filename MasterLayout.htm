@@ -320,7 +320,8 @@
     <nav aria-label="Main Navigation" id="menu" width="250px">
         <ul>
             <li ng-repeat="item in menu">
-                <a href="{{item.page}}" id="{{item.name}}" name="{{item.name}}" ng-click="setMenuItem(item)" target="content">
+                <a href="{{item.page}}" id="{{item.name}}" name="{{item.name}}" ng-click="setMenuItem(item)"
+                   target="content" ng-class="{'active': currentItem === item.name}">
                     {{item.text}}
                 </a>
             </li>
