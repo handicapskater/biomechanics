@@ -2,7 +2,7 @@ name: Deploy GitHub Pages
 
 on:
   push:
-    branches: [ main ]  # or master
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
@@ -12,6 +12,10 @@ permissions:
 
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -20,10 +24,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload site
+      - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'biomechanics'  # THIS is the folder to publish
+          path: '.'  # this must contain index.html
 
       - name: Deploy to GitHub Pages
         id: deployment
