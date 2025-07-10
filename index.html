@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html lang="en"  ng-app="menuApp">
+<head>
+    <meta name="description" content="HandicapSkater advocates for mobility equality, using AI and biomechanics to validate prosthetic skating for health, driving, and ADA reform.">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>-->
+    <title>HandicapSkater Biomechanics</title>
+    <meta content="Handicap Skater, Handicap Mobility, Disabled Access, HandicapSkater Biomechanics, RollerGracie" name="keywords"/>
+    <meta content="HandicapSkater is innovating the use of skates as a non-ballistic mobility aid. Help support this evolutionary advance in mobility for the disabled." name="description"/>
+    <meta content="handicapskater@mindspring.com" name="author"/>
+    <meta content="index, nofollow" name="robots"/>
+    <link rel="icon" href="common/images/favicon.ico" type="image/x-icon">
+    <link href="common/css/global.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="common/js/angular.js"></script>
+    <script src="common/js/model-tooltips.js"></script>
+    <script src="common/js/controller-menu.js"></script>
+    <script src="common/js/model-menu.js"></script>
+    <script src="common/js/global.js"></script>
+    <script src="common/js/overlib_mini.js"></script>
+    <script language="JavaScript" src='common/js/module.js' ></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <style>
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #000000;
+            color: white;
+        }
+
+        .fa-twitter::before {
+            content: "X";
+            font-size: 1.2em;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+        .fa-rumble {
+            background: #86c742;
+            color: white;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            box-sizing: unset;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header, footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0;
+        }
+
+        header .nav-toggle {
+            display: none;
+            cursor: pointer;
+        }
+
+        header .nav-toggle .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        nav {
+            width: 240px;
+            background: #f4f4f4;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            /*box-sizing: border-box;*/
+            overflow-y: auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            display: block;
+            padding: 10px;
+            background: #e4e4f4;
+            color: #333;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav a:hover, nav a:focus {
+            background: #ddd;
+            color: #000;
+        }
+
+        nav .contact {
+            display: block;
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            background: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav .contact:hover {
+            background: #0056b3;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+            overflow: auto;
+            background-color: transparent;
+        }
+
+        .ad {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            height: 100%;
+            visibility: hidden;
+        }
+
+        .ad-space {
+            width: 200px;
+            flex-shrink: 0;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #f4f4f4;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            height: 60px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28%255, %255, %255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f4f4f4;
+            color: #333;
+            align-items: center;
+        }
+        .footer a {
+            text-decoration: none;
+        }
+        .copyright {
+            color: #333;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .copyright {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            background-color: #f4f4f4;
+            border-top: 1px solid #ddd;
+        }
+        .copyright a {
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .copyright a:hover {
+            text-decoration: underline;
+        }
+        .fa {
+            font-size: 20px;
+        }
+        .gofundme-footer-button {
+            width: 150px;              /* adjust to fit your footer spacing */
+            height: 40px;
+            overflow: hidden;
+            margin-right: 10px;        /* optional: spacing between social icons */
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .gofundme-footer-button iframe {
+            max-width: 150px !important;
+            height: 40px;
+            border: none;
+        }
+
+        /* Donate button styled to match footer icons */
+        .donate-button {
+            display: inline-block;
+            background-color: #f57c00; /* same vibrant orange */
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 12px; /* Rounded rectangle */
+            font-family: sans-serif;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            border: none;
+            margin: 0 12px;
+        }
+
+        /* Hover effect like the icon buttons */
+        .donate-button:hover {
+            background-color: #e06200;
+            text-decoration: none;
+        }
+
+        /* Optional: center the whole footer */
+        .footer .copyright {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            padding: 20px 0;
+        }
+    </style>
+    <link href="common/css/global.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <!--    <div class="ad ad-space">Ad Space Top Left</div>-->
+    <h1>HandicapSkater Biomechanics</h1>
+    <!--    <div class="ad ad-space">Ad Space Top Right</div>-->
+    <!--    <div class="nav-toggle" id="nav-toggle">-->
+    <!--        <div class="bar"></div>-->
+    <!--        <div class="bar"></div>-->
+    <!--        <div class="bar"></div>-->
+    <!--    </div>-->
+    <div id="fb-root"></div>
+    <script async="" crossorigin="anonymous" defer="" nonce="epJ9hRCi" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0&amp;appId=595532390634587"></script>
+</header>
+<div class="container" ng-controller="MenuController" ng-init="initMenu()">
+    <nav aria-label="Main Navigation" id="menu" width="250px">
+        <ul>
+            <li ng-repeat="item in menu">
+                <a href="{{item.page}}" id="{{item.name}}" name="{{item.name}}" ng-click="setMenuItem(item)"
+                   target="content" ng-class="{'active': currentItem === item.name}">
+                    {{item.text}}
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main id="content"></main>
+    <!--    <main style="flex: 1; display: flex; flex-direction: column; width: 100%; height: 100%;">-->
+    <!--        <iframe-->
+    <!--                id="content"-->
+    <!--                name="content"-->
+    <!--                src="overview.htm"-->
+    <!--                style="border: none; background: transparent; flex-grow: 1;"-->
+    <!--                allowtransparency="true">-->
+    <!--        </iframe>-->
+    <!--    </main>-->
+</div>
+<footer style="border-box: unset">
+    <div class="footer">
+        <div class="copyright">
+            <!--
+                        <div class="gfm-embed" data-url="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai/widget/small?sharesheet=fundraiser sidebar&attribution_id=sl:73265a98-2405-4786-b415-ae0f88938e36"></div>
+                        -->
+            <a class="donate-button" href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai" target="_blank">Donate Now</a>
+            <script defer="defer" src="https://www.gofundme.com/static/js/embed.js"></script>
+            <a class="fa fa-facebook" href="http://www.facebook.com/group.php?gid=44036411369" target="_blank"></a>
+            <a class="fa fa-twitter" href="https://twitter.com/handicapskater" target="_blank"></a>
+            <span style="vertical-align: middle">
+<script defer="defer" src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+<script data-counter="bottom" data-id="103320223" type="IN/FollowCompany"></script>
+</span>
+            <a href="common/copyright.htm" target="_blank">Copyright © 2004 - <script>document.write(new Date().getFullYear())</script></a>
+            <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCv8NPazTzuPxE_YM8-MIReQ" target="_blank"></a>
+            <a class="fa fa-rumble" href="https://rumble.com/c/c-1635644" target="_blank">R</a>
+            <a class="fa fa-instagram" href="https://instagram.com/handicapskater" target="_blank"></a>
+        </div>
+    </div>
+</footer>
+<script>
+    function updateIframeSrc() {
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+            const [page, section] = hash.split(’#’);
+            const iframe = document.getElementById(‘content’);
+            iframe.onload = function() {
+                if (section) {
+                    iframe.contentWindow.location.hash = section;
+                }
+            };
+            iframe.src = ${page}.htm;
+        }
+    }
+    function simulateLinkClick() {
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+            const [page] = hash.split('#');
+            const link = document.querySelector(`a[href="${page}.htm"]`);
+            if (link) {
+                link.click();
+            }
+        }
+    }
+    $(document).ready(function () {
+        $(".navbar-toggler").on("click", function () {
+            $(".navbar-collapse").toggle();
+        });
+    });
+
+    window.addEventListener('hashchange', () => {
+        updateIframeSrc();
+        setTimeout(simulateLinkClick, 500);
+    });
+    window.addEventListener('load', () => {
+        updateIframeSrc();
+        setTimeout(simulateLinkClick, 500);
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(() => {
+            updateIframeSrc();
+            simulateLinkClick();
+        }, 1000);
+    });
+
+    // Toggle the navigation menu
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+        const nav = document.querySelector('nav');
+        if (nav.style.height) {
+            nav.style.height = '';
+        } else {
+            nav.style.height = 'auto';
+        }
+    });
+</script>
+</body>
+</html>
