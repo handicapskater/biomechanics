@@ -19,6 +19,7 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
 
     $scope.setMenuItem = function(item) {
         $scope.currentItem = item.name;
+        $("#content").load(item.page);
 
         setTimeout(function () {
             const menuLinks = document.querySelectorAll('#menu a');
