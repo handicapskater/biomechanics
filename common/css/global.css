@@ -203,5 +203,7 @@ iframe {
 }
 
 body, html {
-    background-color: #f4f4f4; /* or your desired global background */
+    background-color: transparent !important;
+    margin: 0;
+    padding: 0;
 }
