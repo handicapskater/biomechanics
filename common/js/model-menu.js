@@ -13,5 +13,5 @@ menuData = [
         { name: 'saints', page: 'saints.htm', text: 'Saints' },
         { name: 'sinners', page: 'sinners.htm', text: 'Sinners' },
         { name: 'media', page: 'media.htm', text: 'Media' },
-        // { name: 'terms', page: 'common/terms.htm', text: 'Policies' }
+        // { name: 'terms', page: 'common/terms.htm', text: 'Policies' },
 ]
