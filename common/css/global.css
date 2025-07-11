@@ -251,3 +251,57 @@ h2, h3 {
 .source a:hover {
     text-decoration: underline;
 }
+
+.hero-section {
+    background: linear-gradient(to right, #c0d6ff, #f0f8ff);
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 3px solid #aaa;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #004b99;
+}
+
+.hero-btn.secondary {
+    background-color: #444;
+}
+
+.hero-btn.secondary:hover {
+    background-color: #222;
+}
