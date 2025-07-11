@@ -17,28 +17,34 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
     $scope.setMenuItem = function(item) {
         $scope.currentItem = item.name;
 
-        console.log("Fetching Page: " + item.page);
         fetch(item.page)
             .then(response => {
                 if (!response.ok) throw new Error(`Failed to load ${item.page}`);
                 return response.text();
             })
             .then(html => {
-                console.log("html: " + html);
                 const contentDiv = document.getElementById("content");
                 contentDiv.innerHTML = html;
 
-                // Execute any inline scripts inside the loaded HTML
+                // Re-run scripts inside loaded content
                 const scripts = contentDiv.querySelectorAll("script");
-                scripts.forEach(oldScript => {
+                scripts.forEach(script => {
                     const newScript = document.createElement("script");
-                    if (oldScript.src) {
-                        newScript.src = oldScript.src;
+                    if (script.src) {
+                        newScript.src = script.src;
                     } else {
-                        newScript.textContent = oldScript.textContent;
+                        newScript.textContent = script.textContent;
                     }
-                    oldScript.parentNode.replaceChild(newScript, oldScript);
+                    script.replaceWith(newScript);
                 });
+
+                // Recompile Angular content
+                const scope = angular.element(contentDiv).scope();
+                const injector = angular.element(contentDiv).injector();
+                injector.invoke(function($compile) {
+                    $compile(contentDiv)(scope);
+                });
+                scope.$applyAsync();
 
                 window.location.hash = item.name;
                 window.scrollTo(0, 0);
@@ -47,7 +53,6 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
                 document.getElementById("content").innerHTML = `<p>Error loading page: ${err.message}</p>`;
             });
 
-        // Highlight the selected menu item
         setTimeout(function () {
             const menuLinks = document.querySelectorAll('#menu a');
             menuLinks.forEach(link => {
