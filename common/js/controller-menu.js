@@ -47,7 +47,21 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
                 return response.text();
             })
             .then(html => {
-                document.getElementById("content").innerHTML = html;
+                const container = document.getElementById("content");
+                container.innerHTML = html;
+
+                // Extract and run any <script> tags
+                const scripts = container.querySelectorAll("script");
+                scripts.forEach(script => {
+                    const newScript = document.createElement("script");
+                    if (script.src) {
+                        newScript.src = script.src;
+                    } else {
+                        newScript.textContent = script.textContent;
+                    }
+                    document.body.appendChild(newScript);
+                });
+
                 window.location.hash = item.name;
                 window.scrollTo(0, 0);
             })
@@ -55,7 +69,6 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
                 document.getElementById("content").innerHTML = `<p>Error loading page: ${err.message}</p>`;
             });
 
-        // Highlight the selected menu item
         setTimeout(function () {
             const menuLinks = document.querySelectorAll('#menu a');
             menuLinks.forEach(link => {
