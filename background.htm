@@ -1,15 +1,17 @@
-s	<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+	<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
         <table width='100%'>
             <tr id="wreck">
                 <td>In 1983, I was in an accident that left me disabled. The following
-                    <span id="kinematics"></span>
+                    <span id="kinematics" onmouseover="return overlib('Definition of kinematics');" onmouseout="return nd();">kinematics</span>
                     model depicts how I suffered my injuries.
                 </td>
             </tr>
             <tr>
                 <td align="center">
-                    <script language="javascript">imageLink("walk", 'common/images/Accident-Handicap.gif', "center");
-                    </script>
+                    <div id="walk1" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+                        <script language="javascript">imageLink("walk", 'common/images/Accident-Handicap.gif', "center");
+                        </script>
+                    </div>
                 </td>
             </tr>
             <tr>
