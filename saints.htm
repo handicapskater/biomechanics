@@ -1,14 +1,14 @@
 <div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
 
 In 1999, our patient started having major difficulty walking, while still being able to skate with ease. Since then, he has
-successfully petitioned many organizations to allow him access on skates according to the <script>d.writeln(window.ada)</script>,
+successfully petitioned many organizations to allow him access on skates according to the <span id="ada"></span>,
 whereby he provides a standard agreement for access including:
 <ol>
 	<li>Displaying a <a href="common/images/HandicapSkates.gif" target="_blank">handicap sticker on the outside of each skate</a> to facilitate recognition by an organization's staff.
 	<li>A release of "all" liability agreement with the organization.
 	<li>Displaying a badge and/or presenting documentation upon inquiry by the staff of an organization.
 	<li>Conducting himself in a professional manner.
-	<li>Agreeing that a wheelchair standard of access is appropriate for skates, ie. a <script>document.write(window.commonWheelchair)</script>.
+	<li>Agreeing that a wheelchair standard of access is appropriate for skates, ie. a <span id="commonWheelchair"></span>.
 	<li>He has insurance to cover skating mishaps, while handicap skating.
 	<li>Some organizations request that he contact them in advance to notify their staff.
 </ol>
@@ -37,3 +37,15 @@ whereby he provides a standard agreement for access including:
 	</td>
   </tr>
 </table>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Replace placeholder <span id="..."></span> with window variable content
+        document.querySelectorAll("span[id]").forEach(span => {
+            const id = span.id;
+            const replacement = window[id];
+            if (typeof replacement === "string" && replacement.includes("<span")) {
+                span.outerHTML = replacement;
+            }
+        });
+    });
+</script>
