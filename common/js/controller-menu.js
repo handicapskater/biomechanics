@@ -26,7 +26,7 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
                 const contentDiv = document.getElementById("content");
                 contentDiv.innerHTML = html;
 
-                // Re-run scripts inside loaded content
+                // Re-run all inline scripts
                 const scripts = contentDiv.querySelectorAll("script");
                 scripts.forEach(script => {
                     const newScript = document.createElement("script");
@@ -35,17 +35,10 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
                     } else {
                         newScript.textContent = script.textContent;
                     }
-                    script.replaceWith(newScript);
+                    document.body.appendChild(newScript);
                 });
 
-                // Recompile Angular content
-                const scope = angular.element(contentDiv).scope();
-                const injector = angular.element(contentDiv).injector();
-                injector.invoke(function($compile) {
-                    $compile(contentDiv)(scope);
-                });
-                scope.$applyAsync();
-
+                // Update hash and scroll
                 window.location.hash = item.name;
                 window.scrollTo(0, 0);
             })
@@ -53,7 +46,8 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
                 document.getElementById("content").innerHTML = `<p>Error loading page: ${err.message}</p>`;
             });
 
-        setTimeout(function () {
+        // Update menu UI
+        setTimeout(() => {
             const menuLinks = document.querySelectorAll('#menu a');
             menuLinks.forEach(link => {
                 link.classList.remove('active');
