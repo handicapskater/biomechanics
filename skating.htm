@@ -16,26 +16,36 @@
 			text-decoration: none;
 		}
 	</style>
-<!--<body>-->
 <div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
-Skating reduces your impact force to <b><sup>1</sup>/<sub>10</sub></b> <script>d.write(window.bw)</script>-<b><sup>1</sup>/<sub>4</sub></b> <script>d.write(window.bw)</script> as reported by Mahar, et. al. This likely happens since there is no "flight phase" during
-skating and you apply <script>d.write(window.force)</script>s almost entirely in a horizontal direction. This differs from walking, which has both a horizontal and
-vertical <script>d.write(window.force)</script> component.
+Skating reduces your impact force to <b><sup>1</sup>/<sub>10</sub></b> <span id="bw"></span>-<b><sup>1</sup>/<sub>4</sub></b> <span id="bw"></span> as reported by Mahar, et. al. This likely happens since there is no "flight phase" during
+skating and you apply <span id="force"></span>s almost entirely in a horizontal direction. This differs from walking, which has both a horizontal and
+vertical <span id="force"></span> component.
 <p></p>
+<div id="skate"></div>
 <script>imageLink("skate", 'common/images/Skeleton-Skating-Hi.gif', "left");</script>
 <br clear="all" />
 <br />
-This <script>d.write(window.kinematics)</script> model demonstrates non-ballistic motion from a side-view perspective for skating. There are
+This <span id="kinematics"></span> model demonstrates non-ballistic motion from a side-view perspective for skating. There are
 several observations:
 <ol>
 	<li>The pelvis is at an angle with the legs, creating a shock absorber.</li>
 	<li>The knees are also at an angle, creating another shock absorber.</li>
-	<li>At the base of the spine, where the <script>d.write(window.siJoints)</script> connect the sacrum to the pelvis, there is no torsion or intra-pelvic torsion.</li>
+	<li>At the base of the spine, where the <span id="siJoints"></span> connect the sacrum to the pelvis, there is no torsion or intra-pelvic torsion.</li>
 	<li>There is a reduction in the gravitational force, because the foot is not falling forward.</li>
 	<li>Momentum is transfered between strides, thus easing the force necessary to propel forward.</li>
 </ol>
 <p></p>
+<div id="skate-side"></div>
 <script>imageLink("skate-side", 'common/images/Skeleton-Skating-SideView.gif', "left");</script>
-
-<!--</body>-->
-<!--</html>-->
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		// Replace placeholder <span id="..."></span> with window variable content
+		document.querySelectorAll("span[id]").forEach(span => {
+			const id = span.id;
+			const replacement = window[id];
+			if (typeof replacement === "string" && replacement.includes("<span")) {
+				span.outerHTML = replacement;
+			}
+		});
+	});
+</script>
