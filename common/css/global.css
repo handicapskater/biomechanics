@@ -25,6 +25,11 @@ body, td {
     color: #222 !important;
 }
 
+.content-container {
+    background-color: #f4f4f4 !important;
+    font-family: inherit;
+}
+
 header {
     text-align: center;
 }
