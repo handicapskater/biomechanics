@@ -25,7 +25,7 @@ function contextMenu(e) {
 
 // Track imageLink calls if DOM is not ready
 window.imageQueue = [];
-
+/*
 function imageLink(id, src, align = "center", width = "auto", height = "auto") {
 	const content = document.getElementById("content");
 
@@ -47,6 +47,22 @@ function imageLink(id, src, align = "center", width = "auto", height = "auto") {
 
 	container.appendChild(img);
 	content.appendChild(container);
+}
+*/
+
+function imageLink(id, imageUrl, alignment = "center") {
+	const existingDiv = document.getElementById(id);
+	if (existingDiv) {
+		const img = document.createElement('img');
+		img.src = imageUrl;
+		img.alt = id;
+		img.style.width = 'auto';
+		img.style.height = 'auto';
+		existingDiv.innerHTML = ''; // Clear previous content
+		existingDiv.appendChild(img);
+	} else {
+		console.warn(`imageLink: Element with id '${id}' not found. Skipping.`);
+	}
 }
 
 // Re-run queued imageLinks after load
