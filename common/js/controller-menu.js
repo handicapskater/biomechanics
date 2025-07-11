@@ -1,3 +1,27 @@
+
+function loadDynamicContent(id) {
+    if (window[id]) {
+        const el = document.getElementById(id);
+        if (el) {
+            if (typeof window[id] === 'function') {
+                const result = window[id]();
+                if (typeof result === 'string') {
+                    el.innerHTML = result;
+                } else {
+                    console.warn(`Function ${id} did not return a string.`);
+                }
+            } else {
+                console.warn(`${id} exists but is not a function.`);
+            }
+        } else {
+            console.warn(`Element with id '${id}' not found.`);
+        }
+    } else {
+        console.warn(`Function '${id}' not found on window.`);
+    }
+}
+
+
 // controller-menu.js
 angular.module('menuApp', []).controller('MenuController', function($scope) {
     $scope.menu = menuData;
@@ -23,22 +47,7 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
                 return response.text();
             })
             .then(html => {
-                const contentDiv = document.getElementById("content");
-                contentDiv.innerHTML = html;
-
-                // Re-run all inline scripts
-                const scripts = contentDiv.querySelectorAll("script");
-                scripts.forEach(script => {
-                    const newScript = document.createElement("script");
-                    if (script.src) {
-                        newScript.src = script.src;
-                    } else {
-                        newScript.textContent = script.textContent;
-                    }
-                    document.body.appendChild(newScript);
-                });
-
-                // Update hash and scroll
+                document.getElementById("content").innerHTML = html;
                 window.location.hash = item.name;
                 window.scrollTo(0, 0);
             })
@@ -46,8 +55,8 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
                 document.getElementById("content").innerHTML = `<p>Error loading page: ${err.message}</p>`;
             });
 
-        // Update menu UI
-        setTimeout(() => {
+        // Highlight the selected menu item
+        setTimeout(function () {
             const menuLinks = document.querySelectorAll('#menu a');
             menuLinks.forEach(link => {
                 link.classList.remove('active');
