@@ -329,7 +329,9 @@
             </li>
         </ul>
     </nav>
-    <main id="content"></main>
+    <main style="flex: 1; display: flex; flex-direction: column; width: 100%; height: 100%;">
+        <div id="content" class="content-container" style="flex-grow: 1; overflow-y: auto; padding: 20px;"></div>
+    </main>
     <!--    <main style="flex: 1; display: flex; flex-direction: column; width: 100%; height: 100%;">-->
     <!--        <iframe-->
     <!--                id="content"-->
@@ -389,6 +391,14 @@
         $(".navbar-toggler").on("click", function () {
             $(".navbar-collapse").toggle();
         });
+    });
+
+    window.addEventListener('load', function () {
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+            const link = document.querySelector(`a[id="${hash}"]`);
+            if (link) link.click();
+        }
     });
 
     window.addEventListener('hashchange', () => {
