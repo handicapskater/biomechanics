@@ -2,7 +2,7 @@
         <table width='100%'>
             <tr id="wreck">
                 <td>In 1983, I was in an accident that left me disabled. The following
-                    <span class="tooltip" id="kinematics" onmouseover="return overlib(window.kinematics);" onmouseout="return nd();">kinematics</span>
+                    <span id="kinematics"></span>
                     model depicts how I suffered my injuries.
                 </td>
             </tr>
@@ -23,8 +23,8 @@
             </tr>
             <tr>
                 <td align='left'>My Orthopedic Surgeon explained that I had a <b>ballistic mobility impairment</b> and
-                    to avoid <span class="tooltip" id="ballisticMotion" onmouseover="return overlib(window.ballisticMotion);" onmouseout="return nd();">ballisticMotion</span>s, such as running. Furthermore, the Surgeon
-                    stated that I had a limited number of <span class="tooltip" id="impactShock" onmouseover="return overlib(window.impactShock);" onmouseout="return nd();">impactShock</span>s, before surgery
+                    to avoid <span id="ballisticMotion"></span>s, such as running. Furthermore, the Surgeon
+                    stated that I had a limited number of <span id="impactShock"></span>s, before surgery
                     would be needed. <br />
                     The injuries that I sustained are listed below:
                     <ol>
@@ -119,20 +119,4 @@
                 }
             });
         }); */
-            document.addEventListener("DOMContentLoaded", function () {
-            document.querySelectorAll("span[id]").forEach(span => {
-                const id = span.id;
-                const tooltipText = window[id];
-
-                if (tooltipText) {
-                    let label = tooltipText.match(/\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*/) || [id];
-                    span.textContent = label[0];
-                    span.setAttribute("onmouseover", `return overlib('${tooltipText.replace(/'/g, "\\'")}');`);
-                    span.setAttribute("onmouseout", "return nd();");
-                    span.style.cursor = "help";
-                    span.style.textDecoration = "underline dotted";
-                }
-            });
-        });
-
     </script>

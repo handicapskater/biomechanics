@@ -34,3 +34,13 @@ window.step = "<span id=\"step\" class=\"def\" onmouseover=\"return overlib('A p
 window.torque = "<span id=\"torque\" class=\"def\" onmouseover=\"return overlib('The product of the magnitude of a force and the perpendicular distance from the line of action of the force to the axis of rotation, Hamill and Knutzen (2003, p. 427).<br />i.e. A wrench loosening a nut.<br />[Units: pound-inch (lb-in) or pound-foot (lb-ft)]', CAPTION, 'Torque', CENTER)\" onmouseout=\"return nd()\">torque</span>";
 window.work = "<span id=\"work\" class=\"def\" onmouseover=\"return overlib('The product of the force applied to a body and the distance through which the force is applied, Hamill and Knutzen (2003, p. 379).<br />[Units: pound-inch (lb-in) or pound-foot (lb-ft)]', CAPTION, 'Work', CENTER)\" onmouseout=\"return nd()\">work</span>";
 
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("span[id]").forEach(span => {
+        const id = span.id;
+        const fullSpan = window[id];
+        if (typeof fullSpan === "string" && fullSpan.includes("<span")) {
+            // Replace placeholder with the complete span HTML
+            span.outerHTML = fullSpan;
+        }
+    });
+});
