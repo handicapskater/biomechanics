@@ -15,8 +15,11 @@
     <link href="common/css/global.css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="common/js/angular.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4GeErB6r2i1Jc9p6PRbJ98hKQF1X+6d9lvY5bk4e7w+FxTDC6eXyTr/Of" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" integrity="sha384-pzjw8f+ua7Kw1T+SkI2jv8Bmk+JdHl/Y+6J/x2bY/uDvhIbXENzDzTDUcXz4cF1V" crossorigin="anonymous">    <script src="common/js/angular.js"></script>
     <script src="common/js/global.js"></script>
     <script src="common/js/model-tooltips.js"></script>
     <script src="common/js/model-menu.js"></script>
@@ -314,7 +317,7 @@
         <ul>
             <li ng-repeat="item in menu">
                 <a href="" id="{{item.name}}" name="{{item.name}}" ng-click="setMenuItem(item); $event.preventDefault();"
-                   ng-class="{'active': currentItem === item.name}">
+                   ng-class="getActiveClass(item)">
                     {{item.text}}
                 </a>
             </li>
@@ -355,6 +358,10 @@
             nav.style.height = 'auto';
         }
     });
+
+    $scope.getActiveClass = function(item) {
+        return $scope.currentItem === item.name ? 'active' : '';
+    };
 </script>
 </body>
 </html>
