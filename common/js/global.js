@@ -12,7 +12,7 @@ function mouseDown(e) {
 }
 function mouseUp(e) {
 	if (e.which != 1) {
-		alert(top.copyright);
+		alert(window.copyright);
 		e.cancelable = true;
 		e.bubbles = false;
 		return false;
@@ -28,7 +28,7 @@ if (netscape) {
 	window.onmouseup	 = mouseUp;
 	window.oncontextmenu = contextMenu;
 } else // if (ie)
-	d.onmousedown = new Function("if (event.button==2 || event.button==3) alert(top.copyright)");
+	d.onmousedown = new Function("if (event.button==2 || event.button==3) alert(window.copyright)");
 
 // Utility Functions
 function ButtonUp(theButton) {	
@@ -49,7 +49,7 @@ function ButtonDown(theButton, url) {
 }
 
 function imageLink(id, src, align, width, height) {
-	d.write("<a href='javascript:alert(top.copyright)' class='def'><img id='"+id+"' src='"+src+"' align='"+((align)?align:'')+"' "+((width)?'width='+width:'')+" "+((height)?'height='+height:'')+"/></a>");
+	d.write("<a href='javascript:alert(window.copyright)' class='def'><img id='"+id+"' src='"+src+"' align='"+((align)?align:'')+"' "+((width)?'width='+width:'')+" "+((height)?'height='+height:'')+"/></a>");
 }
 
 function IE_Resize() {
