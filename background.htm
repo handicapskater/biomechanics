@@ -64,61 +64,6 @@
         <hr />
         <h3 id="amputee-skating">Amputee Skating - coming soon</h3>
     <script>
-        /*
-        document.addEventListener("DOMContentLoaded", function () {
-            const tooltips = {
-                ballisticMotion: "Ballistic motion refers to high-impact movement such as running or jumping, which causes repeated forceful stress to the pelvis.",
-                impactShock: "Impact shock is the force transmitted to the skeletal system during abrupt loading, such as landing or heel-strike.",
-                siJoints: "The sacroiliac joints connect the spine to the pelvis and can crack or separate under traumatic or repetitive stress."
-            };
-
-            for (const [id, text] of Object.entries(tooltips)) {
-                const span = document.getElementById(id);
-                if (span) {
-                    span.textContent = id === "siJoints" ? "SI joints" : "s"; // Insert display text
-                    span.setAttribute("onmouseover", `return overlib('${text}');`);
-                    span.setAttribute("onmouseout", "return nd();");
-                    span.style.cursor = "help";
-                    span.style.textDecoration = "underline dotted"; // Optional style
-                } else {
-                    console.warn(`Missing span with id: ${id}`);
-                }
-            }
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-            const tooltipSpans = document.querySelectorAll("span[id]");
-
-            tooltipSpans.forEach(span => {
-                const id = span.id;
-                const tooltipText = window[id];
-
-                if (tooltipText) {
-                    // Derive label from tooltip text
-                    let label = "";
-
-                    // Try to use the first capitalized phrase or first sentence fragment
-                    const capitalizedMatch = tooltipText.match(/\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+)* /);
-                    if (capitalizedMatch) {
-                        label = capitalizedMatch[0];
-                    } else {
-                        // Fallback: use first 1–2 words
-                        label = tooltipText.split(' ').slice(0, 2).join(' ');
-                    }
-
-                    // Trim and sanitize
-                    label = label.trim().replace(/[\.:]+$/, '');
-
-                    // Update span content and tooltip
-                    span.textContent = label;
-                    span.setAttribute("onmouseover", `return overlib('${tooltipText.replace(/'/g, "\\'")}');`);
-                    span.setAttribute("onmouseout", "return nd();");
-
-                    // Optional: add visual cue
-                    span.style.cursor = "help";
-                    span.style.textDecoration = "underline dotted";
-                }
-            });
-        }); */
         document.addEventListener("DOMContentLoaded", function () {
             // Replace placeholder <span id="..."></span> with window variable content
             document.querySelectorAll("span[id]").forEach(span => {
