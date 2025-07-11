@@ -23,7 +23,21 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
                 return response.text();
             })
             .then(html => {
-                document.getElementById("content").innerHTML = html;
+                const contentDiv = document.getElementById("content");
+                contentDiv.innerHTML = html;
+
+                // Execute any inline scripts inside the loaded HTML
+                const scripts = contentDiv.querySelectorAll("script");
+                scripts.forEach(oldScript => {
+                    const newScript = document.createElement("script");
+                    if (oldScript.src) {
+                        newScript.src = oldScript.src;
+                    } else {
+                        newScript.textContent = oldScript.textContent;
+                    }
+                    oldScript.parentNode.replaceChild(newScript, oldScript);
+                });
+
                 window.location.hash = item.name;
                 window.scrollTo(0, 0);
             })
