@@ -22,6 +22,43 @@ function mouseUp(e) {
 function contextMenu(e) {
 	return false;
 }
+
+// Track imageLink calls if DOM is not ready
+window.imageQueue = [];
+
+function imageLink(id, src, align = "center", width = "auto", height = "auto") {
+	const content = document.getElementById("content");
+
+	if (!content) {
+		// Queue it to run later
+		window.imageQueue.push({id, src, align, width, height});
+		return;
+	}
+
+	const container = document.createElement("div");
+	container.id = id;
+	container.style.textAlign = align;
+
+	const img = document.createElement("img");
+	img.src = src;
+	img.alt = id;
+	img.style.width = width;
+	img.style.height = height;
+
+	container.appendChild(img);
+	content.appendChild(container);
+}
+
+// Re-run queued imageLinks after load
+document.addEventListener("DOMContentLoaded", () => {
+	if (window.imageQueue && window.imageQueue.length > 0) {
+		window.imageQueue.forEach(i =>
+			imageLink(i.id, i.src, i.align, i.width, i.height)
+		);
+		window.imageQueue = [];
+	}
+});
+
 if (netscape) {
 	window.captureEvents(Event.MOUSEDOWN | Event.MOUSEUP | Event.CONTEXTMENU);
 	window.onmousedown 	 = mouseDown;
@@ -46,10 +83,6 @@ function ButtonDown(theButton, url) {
 		style.borderRight	= "1px #f0f0f0 solid";
 		style.borderBottom	= "1px #f0f0f0 solid";
 	}
-}
-
-function imageLink(id, src, align, width, height) {
-	d.write("<a href='javascript:alert(window.copyright)' class='def'><img id='"+id+"' src='"+src+"' align='"+((align)?align:'')+"' "+((width)?'width='+width:'')+" "+((height)?'height='+height:'')+"/></a>");
 }
 
 function IE_Resize() {
