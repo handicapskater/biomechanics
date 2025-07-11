@@ -17,6 +17,7 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
     $scope.setMenuItem = function(item) {
         $scope.currentItem = item.name;
 
+        console.log("Fetching Page: " + item.name);
         fetch(item.page)
             .then(response => {
                 if (!response.ok) throw new Error(`Failed to load ${item.page}`);
