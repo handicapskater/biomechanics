@@ -323,7 +323,7 @@
         <ul>
             <li ng-repeat="item in menu">
                 <a href="{{item.page}}" id="{{item.name}}" name="{{item.name}}" ng-click="setMenuItem(item)"
-                   target="content" ng-class="{'active': currentItem === item.name}">
+                   ng-class="{'active': currentItem === item.name}">
                     {{item.text}}
                 </a>
             </li>
@@ -364,58 +364,6 @@
     </div>
 </footer>
 <script>
-    function updateIframeSrc() {
-        const hash = window.location.hash.substring(1);
-        if (hash) {
-            const [page, section] = hash.split(’#’);
-            const iframe = document.getElementById(‘content’);
-            iframe.onload = function() {
-                if (section) {
-                    iframe.contentWindow.location.hash = section;
-                }
-            };
-            iframe.src = ${page}.htm;
-        }
-    }
-    function simulateLinkClick() {
-        const hash = window.location.hash.substring(1);
-        if (hash) {
-            const [page] = hash.split('#');
-            const link = document.querySelector(`a[href="${page}.htm"]`);
-            if (link) {
-                link.click();
-            }
-        }
-    }
-    $(document).ready(function () {
-        $(".navbar-toggler").on("click", function () {
-            $(".navbar-collapse").toggle();
-        });
-    });
-
-    window.addEventListener('load', function () {
-        const hash = window.location.hash.substring(1);
-        if (hash) {
-            const link = document.querySelector(`a[id="${hash}"]`);
-            if (link) link.click();
-        }
-    });
-
-    window.addEventListener('hashchange', () => {
-        updateIframeSrc();
-        setTimeout(simulateLinkClick, 500);
-    });
-    window.addEventListener('load', () => {
-        updateIframeSrc();
-        setTimeout(simulateLinkClick, 500);
-    });
-    document.addEventListener('DOMContentLoaded', function() {
-        setTimeout(() => {
-            updateIframeSrc();
-            simulateLinkClick();
-        }, 1000);
-    });
-
     // Toggle the navigation menu
     document.getElementById('nav-toggle').addEventListener('click', function() {
         const nav = document.querySelector('nav');
