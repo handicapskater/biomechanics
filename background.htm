@@ -23,8 +23,8 @@
             </tr>
             <tr>
                 <td align='left'>My Orthopedic Surgeon explained that I had a <b>ballistic mobility impairment</b> and
-                    to avoid <span id="ballisticMotion"></span>s, such as running. Furthermore, the Surgeon
-                    stated that I had a limited number of <span id="impactShock"></span>s, before surgery
+                    to avoid <span id="ballisticMotion" onmouseover="return overlib('Definition of ballistic motion');" onmouseout="return nd();">ballisticMotion</span>s, such as running. Furthermore, the Surgeon
+                    stated that I had a limited number of <span id="impactShock" onmouseover="return overlib('Definition of impact shock');" onmouseout="return nd();">impactShock</span>s, before surgery
                     would be needed. <br />
                     The injuries that I sustained are listed below:
                     <ol>
@@ -63,3 +63,25 @@
         </table>
         <hr />
         <h3 id="amputee-skating">Amputee Skating - coming soon</h3>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tooltips = {
+                ballisticMotion: "Ballistic motion refers to high-impact movement such as running or jumping, which causes repeated forceful stress to the pelvis.",
+                impactShock: "Impact shock is the force transmitted to the skeletal system during abrupt loading, such as landing or heel-strike.",
+                siJoints: "The sacroiliac joints connect the spine to the pelvis and can crack or separate under traumatic or repetitive stress."
+            };
+
+            for (const [id, text] of Object.entries(tooltips)) {
+                const span = document.getElementById(id);
+                if (span) {
+                    span.textContent = id === "siJoints" ? "SI joints" : "s"; // Insert display text
+                    span.setAttribute("onmouseover", `return overlib('${text}');`);
+                    span.setAttribute("onmouseout", "return nd();");
+                    span.style.cursor = "help";
+                    span.style.textDecoration = "underline dotted"; // Optional style
+                } else {
+                    console.warn(`Missing span with id: ${id}`);
+                }
+            }
+        });
+    </script>
