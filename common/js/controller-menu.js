@@ -50,7 +50,7 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
                 const container = document.getElementById("content");
                 container.innerHTML = html;
 
-                // Extract and run any <script> tags
+                // Re-run script tags
                 const scripts = container.querySelectorAll("script");
                 scripts.forEach(script => {
                     const newScript = document.createElement("script");
@@ -62,6 +62,15 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
                     document.body.appendChild(newScript);
                 });
 
+                // ✅ Run tooltip replacement logic again
+                container.querySelectorAll("span[id]").forEach(span => {
+                    const id = span.id;
+                    const fullSpan = window[id];
+                    if (typeof fullSpan === "string" && fullSpan.includes("<span")) {
+                        span.outerHTML = fullSpan;
+                    }
+                });
+
                 window.location.hash = item.name;
                 window.scrollTo(0, 0);
             })
@@ -69,6 +78,7 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
                 document.getElementById("content").innerHTML = `<p>Error loading page: ${err.message}</p>`;
             });
 
+        // Update active menu link
         setTimeout(function () {
             const menuLinks = document.querySelectorAll('#menu a');
             menuLinks.forEach(link => {
