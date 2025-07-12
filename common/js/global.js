@@ -143,18 +143,17 @@ function replayHero() {
 	$('#heroModal').modal('show');
 }
 
-// global.js
 document.addEventListener('DOMContentLoaded', function () {
-	// Only show modal if not already dismissed
-	if (!localStorage.getItem('hideHero')) {
-		$('#heroModal').modal('show');
-	}
+	const modalShown = localStorage.getItem('heroModalShown');
 
-	// Save user's preference to not show again
-	window.dismissHero = function () {
-		localStorage.setItem('hideHero', 'true');
-		$('#heroModal').modal('hide');
-	};
+	if (!modalShown) {
+		const modalEl = new bootstrap.Modal(document.getElementById('heroModal'), {
+			backdrop: 'static',
+			keyboard: false
+		});
+		modalEl.show();
+		localStorage.setItem('heroModalShown', 'true');
+	}
 });
 
 // Function to dismiss hero modal and set localStorage flag

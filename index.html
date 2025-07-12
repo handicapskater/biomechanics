@@ -315,48 +315,48 @@
     <link href="common/css/global.css" rel="stylesheet"/>
 </head>
 <body>
-<div id="heroModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="heroModalTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content bg-transparent border-0 shadow-none">
+<!--<div id="heroModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="heroModalTitle" aria-hidden="true">-->
+<!--    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">-->
+<!--        <div class="modal-content bg-transparent border-0 shadow-none">-->
 
-            <!--                    <div class="modal-header">-->
-            <!--                        <h5 class="modal-title">Welcome to HandicapSkater</h5>-->
-            <!--                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="dismissHero();">-->
-            <!--                            <span aria-hidden="true">&times;</span>-->
-            <!--                        </button>-->
-            <!--                    </div>-->
-            <div class="modal-body p-0">
-                <button type="button" class="close text-white position-absolute" style="top: 10px; right: 20px;" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="hero-content">
-                    <h1 class="hero-title">HandicapSkater:<br />Mobility Evolution for Equal Rights</h1>
-                    <p class="hero-subtitle">
-                        HandicapSkater champions the use of non-standard mobility aids — from skates to adaptive devices —
-                        with AI to promote health, independence, and equal access in transportation, employment, and public
-                        life — Fight for Equality.
-                        <br />
-                        <a
-                                href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai"
-                                class="hero-btn btn-danger"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                            Donate for Equality
-                        </a>
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#" onclick="loadPage('overview.htm'); return false;" class="hero-btn">Explore the Mission</a>
-                        <a href="#" onclick="loadPage('datascience.htm'); return false;" class="hero-btn secondary">See the Data Science</a>
-                        <a href="#" onclick="loadPage('pleading.htm'); return false;" class="hero-btn btn-info">Know Your Rights</a>
-                        <a href="#" onclick="loadPage('BiomechanicsBasics.htm'); return false;" class="hero-btn btn-dark">Biomechanics in Action</a>
-                        <a href="#" onclick="loadPage('datascience.htm'); return false;" class="hero-btn btn-outline-light">Watch the Story</a>
-                        <button onclick="dismissHero(); $('#heroModal').modal('hide');" style="margin-top: 1em;">Don't show again</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--            &lt;!&ndash;                    <div class="modal-header">&ndash;&gt;-->
+<!--            &lt;!&ndash;                        <h5 class="modal-title">Welcome to HandicapSkater</h5>&ndash;&gt;-->
+<!--            &lt;!&ndash;                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="dismissHero();">&ndash;&gt;-->
+<!--            &lt;!&ndash;                            <span aria-hidden="true">&times;</span>&ndash;&gt;-->
+<!--            &lt;!&ndash;                        </button>&ndash;&gt;-->
+<!--            &lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--            <div class="modal-body p-0">-->
+<!--                <button type="button" class="close text-white position-absolute" style="top: 10px; right: 20px;" data-dismiss="modal" aria-label="Close">-->
+<!--                    <span aria-hidden="true">&times;</span>-->
+<!--                </button>-->
+<!--                <div class="hero-content">-->
+<!--                    <h1 class="hero-title">HandicapSkater:<br />Mobility Evolution for Equal Rights</h1>-->
+<!--                    <p class="hero-subtitle">-->
+<!--                        HandicapSkater champions the use of non-standard mobility aids — from skates to adaptive devices —-->
+<!--                        with AI to promote health, independence, and equal access in transportation, employment, and public-->
+<!--                        life — Fight for Equality.-->
+<!--                        <br />-->
+<!--                        <a-->
+<!--                                href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai"-->
+<!--                                class="hero-btn btn-danger"-->
+<!--                                target="_blank"-->
+<!--                                rel="noopener noreferrer">-->
+<!--                            Donate for Equality-->
+<!--                        </a>-->
+<!--                    </p>-->
+<!--                    <div class="hero-buttons">-->
+<!--                        <a href="#" onclick="loadPage('overview.htm'); return false;" class="hero-btn">Explore the Mission</a>-->
+<!--                        <a href="#" onclick="loadPage('datascience.htm'); return false;" class="hero-btn secondary">See the Data Science</a>-->
+<!--                        <a href="#" onclick="loadPage('pleading.htm'); return false;" class="hero-btn btn-info">Know Your Rights</a>-->
+<!--                        <a href="#" onclick="loadPage('BiomechanicsBasics.htm'); return false;" class="hero-btn btn-dark">Biomechanics in Action</a>-->
+<!--                        <a href="#" onclick="loadPage('datascience.htm'); return false;" class="hero-btn btn-outline-light">Watch the Story</a>-->
+<!--                        <button onclick="dismissHero(); $('#heroModal').modal('hide');" style="margin-top: 1em;">Don't show again</button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 <header>
     <!--    <div class="ad ad-space">Ad Space Top Left</div>-->
     <h1>HandicapSkater Biomechanics</h1>
@@ -422,5 +422,25 @@
         return $scope.currentItem === item.name ? 'active' : '';
     };
 </script>
+<!-- Hero Modal Dialog -->
+<div id="heroModal" class="modal fade" tabindex="-1" aria-labelledby="heroModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-title">HandicapSkater: Revolutionizing Mobility</h1>
+                    <p class="hero-subtitle">
+                        Prosthetic skates helped me ride a motorcycle, drive, and walk again. Skates reduce impact, prevent PICE, and reverse chronic health conditions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a class="hero-btn primary" href="overview.htm">Explore the Mission</a>
+                        <a class="hero-btn info" href="tableau.html">See the Data Science</a>
+                        <a class="hero-btn donate" href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai" target="_blank" rel="noopener">Donate for Equality</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
