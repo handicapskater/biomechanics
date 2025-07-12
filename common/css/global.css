@@ -301,7 +301,8 @@ h2, h3 {
 .hero-title {
     font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 .hero-subtitle {
