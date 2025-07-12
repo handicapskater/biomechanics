@@ -323,7 +323,7 @@
                 <div class="hero-content">
                     <h1 class="hero-title">HandicapSkater: Revolutionizing Mobility</h1>
                     <p class="hero-subtitle">
-                        Prosthetic skates helped me ride a motorcycle, drive, and walk again. Skates reduce impact, prevent PICE, and reverse chronic health conditions.
+                        Prosthetic skates helped me ride a motorcycle, drive, and ambulate again. Skates reduce impact, prevent <span id-"pice"></span>, and reverse chronic health conditions.
                     </p>
                     <div class="hero-buttons">
                         <a class="hero-btn primary" href="overview.htm">Explore the Mission</a>
@@ -441,6 +441,17 @@
     $scope.getActiveClass = function(item) {
         return $scope.currentItem === item.name ? 'active' : '';
     };
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Replace placeholder <span id="..."></span> with window variable content
+        document.querySelectorAll("span[id]").forEach(span => {
+            const id = span.id;
+            const replacement = window[id];
+            if (typeof replacement === "string" && replacement.includes("<span")) {
+                span.outerHTML = replacement;
+            }
+        });
+    });
 </script>
 </body>
 </html>
