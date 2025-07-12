@@ -436,3 +436,52 @@ h2, h3 {
     align-items: center;
     justify-content: center;
 }
+
+/* Ensure modal overlay behaves like a true modal */
+.modal.show {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-dialog {
+    max-width: 900px;
+    margin: auto;
+}
+
+.modal-content {
+    background: rgba(0, 0, 0, 0.85);  /* gives it a modal feel */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Optional background fix */
+.modal-body {
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    background-image: url('../images/HandicapSkater-Hayabusa-Full.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(1.7) contrast(1.1) saturate(2.5) drop-shadow(0 0 10px red);
+}
+
+/* Ensure background still shows underneath hero content */
+.hero-content {
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6);  /* semi-transparent black overlay */
+    border-radius: 8px;
+}
+
+.hero-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-buttons a,
+.hero-buttons button {
+    margin: 0.5rem;
+}
