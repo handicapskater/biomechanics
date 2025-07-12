@@ -281,7 +281,7 @@ h2, h3 {
 .hero-content {
     position: relative;
     z-index: 1;
-    transform: translateY(-100px)
+    transform: translateY(-120px)
 }
 
 .hero-title {
