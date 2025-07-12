@@ -84,14 +84,14 @@ if (netscape) {
 	d.onmousedown = new Function("if (event.button==2 || event.button==3) alert(window.copyright)");
 
 // Utility Functions
-function ButtonUp(theButton) {	
+function ButtonUp(theButton) {
 	with (theButton) {
-		style.borderLeft	= "1px #f0f0f0 solid"; 
+		style.borderLeft	= "1px #f0f0f0 solid";
 		style.borderTop		= "1px #f0f0f0 solid";
 		style.borderRight	= "1px gray solid";
 		style.borderBottom	= "1px gray solid";
 	}
-}																										
+}
 function ButtonDown(theButton, url) {
 	with (theButton) {
 		style.borderLeft	= "1px gray solid";
@@ -104,7 +104,7 @@ function ButtonDown(theButton, url) {
 function IE_Resize() {
 	if (document.all.posLayer) {
 		if (parseInt(document.all.posLayer.style.width) < document.body.clientWidth)
-			document.all.posLayer.style.left = document.body.clientWidth / 2 - parseInt(document.all.posLayer.style.width) / 2; 
+			document.all.posLayer.style.left = document.body.clientWidth / 2 - parseInt(document.all.posLayer.style.width) / 2;
 		if (parseInt(document.all.posLayer.style.height) < document.body.clientHeight)
 			document.all.posLayer.style.top = document.body.clientHeight / 2 - parseInt(document.all.posLayer.style.height) / 2;
 	}
@@ -117,8 +117,8 @@ function NS_Resize(win) {
 		origHeight = innerHeight;
 		location.reload();
 	}
-	if (document.width < innerWidth)					
-		win.left = innerWidth / 2 - document.width / 2; 
+	if (document.width < innerWidth)
+		win.left = innerWidth / 2 - document.width / 2;
 	if (document.height < innerHeight)
 		win.top = innerHeight / 2 - document.height / 2;
 	win.visibility = 'show';
@@ -162,43 +162,31 @@ function getCookie(name) {
 	}, '');
 }
 
-/*
-function dismissHero() {
-	setCookie("hideHero", "true", 365);  // 1 year
-	const hero = document.getElementById("hero");
-	if (hero) hero.style.display = "none";
-}
-*/
-
-function dismissHero() {
-	document.querySelector('.hero-section').style.display = 'none';
-	localStorage.setItem('hideHero', 'true');
-}
-
-function replayHero() {
-	localStorage.removeItem('hideHero');
-	document.querySelector('.hero-section').style.display = 'block';
-}
-
-/*
-window.addEventListener("DOMContentLoaded", () => {
-	if (getCookie("hideHero") !== "true") {
-		const hero = document.getElementById("hero");
-		if (hero) hero.style.display = "block";
-	}
-});
-*/
-
 window.addEventListener('DOMContentLoaded', function () {
 	if (localStorage.getItem('hideHero') === 'true') {
 		document.querySelector('.hero-section').style.display = 'none';
 	}
 });
 
-window.addEventListener('DOMContentLoaded', function () {
-	const hasSeenHero = localStorage.getItem('hideHero');
-	if (hasSeenHero !== 'true') {
-		$('#heroModal').modal('show');
-		localStorage.setItem('hideHero', 'true');
+function replayHero() {
+	localStorage.removeItem('hideHero');
+	$('#heroModal').modal('show');
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+	// Check localStorage for modal dismissal
+	const shouldHideHero = localStorage.getItem('hideHero');
+	const isOverview = window.location.href.includes("overview.htm");
+
+	if (!shouldHideHero && isOverview) {
+		setTimeout(() => {
+			$('#heroModal').modal('show');
+		}, 500);
 	}
 });
+
+// Function to dismiss hero modal and set localStorage flag
+function dismissHero() {
+	$('#heroModal').modal('hide');
+	localStorage.setItem('hideHero', 'true');
+}
