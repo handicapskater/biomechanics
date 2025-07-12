@@ -485,3 +485,36 @@ h2, h3 {
 .hero-buttons button {
     margin: 0.5rem;
 }
+
+.modal.show {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+}
+
+.modal-backdrop {
+    z-index: 1040 !important;
+}
+
+.modal-dialog {
+    max-width: 900px;
+    margin: auto;
+}
+
+.modal-content {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.modal-body.hero-section {
+    padding: 2em;
+    color: white;
+    text-align: center;
+    background-image: url('../images/HandicapSkater-Hayabusa-Full.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(1.7) contrast(1.1) saturate(2.5) drop-shadow(0 0 10px red);
+}
