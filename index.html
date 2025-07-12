@@ -315,6 +315,26 @@
     <link href="common/css/global.css" rel="stylesheet"/>
 </head>
 <body>
+<!-- Hero Modal Dialog -->
+<div id="heroModal" class="modal fade" tabindex="-1" aria-labelledby="heroModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-title">HandicapSkater: Revolutionizing Mobility</h1>
+                    <p class="hero-subtitle">
+                        Prosthetic skates helped me ride a motorcycle, drive, and walk again. Skates reduce impact, prevent PICE, and reverse chronic health conditions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a class="hero-btn primary" href="overview.htm">Explore the Mission</a>
+                        <a class="hero-btn info" href="tableau.html">See the Data Science</a>
+                        <a class="hero-btn donate" href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai" target="_blank" rel="noopener">Donate for Equality</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!--<div id="heroModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="heroModalTitle" aria-hidden="true">-->
 <!--    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">-->
 <!--        <div class="modal-content bg-transparent border-0 shadow-none">-->
@@ -422,25 +442,5 @@
         return $scope.currentItem === item.name ? 'active' : '';
     };
 </script>
-<!-- Hero Modal Dialog -->
-<div id="heroModal" class="modal fade" tabindex="-1" aria-labelledby="heroModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-body hero-section">
-                <div class="hero-content">
-                    <h1 class="hero-title">HandicapSkater: Revolutionizing Mobility</h1>
-                    <p class="hero-subtitle">
-                        Prosthetic skates helped me ride a motorcycle, drive, and walk again. Skates reduce impact, prevent PICE, and reverse chronic health conditions.
-                    </p>
-                    <div class="hero-buttons">
-                        <a class="hero-btn primary" href="overview.htm">Explore the Mission</a>
-                        <a class="hero-btn info" href="tableau.html">See the Data Science</a>
-                        <a class="hero-btn donate" href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai" target="_blank" rel="noopener">Donate for Equality</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 </body>
 </html>
