@@ -253,7 +253,7 @@ h2, h3 {
 }
 
 .hero-section {
-    background-image: url('common/images/HandicapSkater-H2-Skates.png');
+    background-image: url('../images/HandicapSkater-H2-Skates.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
