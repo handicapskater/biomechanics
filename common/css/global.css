@@ -253,7 +253,8 @@ h2, h3 {
 }
 
 .hero-section {
-    background-image: url('../images/HandicapSkater-H2-Skates.png');
+    /*background-image: url('../images/HandicapSkater-H2-Skates.png');*/
+    background-image: url('../images/HandicapSkater-Hayabusa-Full.jpeg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -280,7 +281,7 @@ h2, h3 {
 .hero-content {
     position: relative;
     z-index: 1;
-    transform: translateY(-60px)
+    transform: translateY(-80px)
 }
 
 .hero-title {
