@@ -310,6 +310,12 @@ h2, h3 {
     color: #f0f0f0;
 }
 
+.hero-subtitle {
+    background: rgba(0, 0, 0, 0.4);  /* translucent black */
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
 .hero-buttons {
     display: flex;
     justify-content: center;
