@@ -149,3 +149,34 @@ Panel.prototype.print	= printXPanel;
 	function printXPanel() {
 		printPanel();
 	}
+
+function setCookie(name, value, days) {
+	const expires = new Date(Date.now() + days*864e5).toUTCString();
+	document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=/';
+}
+
+function getCookie(name) {
+	return document.cookie.split('; ').reduce((r, v) => {
+		const parts = v.split('=');
+		return parts[0] === name ? decodeURIComponent(parts[1]) : r;
+	}, '');
+}
+
+function dismissHero() {
+	setCookie("hideHero", "true", 365);  // 1 year
+	const hero = document.getElementById("hero");
+	if (hero) hero.style.display = "none";
+}
+
+// Example: Hide hero if cookie exists
+if (getCookie("hideHero") !== "true") {
+	document.getElementById("hero").style.display = "block";
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+	if (getCookie("hideHero") !== "true") {
+		const hero = document.getElementById("hero");
+		if (hero) hero.style.display = "block";
+	}
+});
+
