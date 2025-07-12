@@ -340,30 +340,38 @@
     <main style="flex: 1; display: flex; flex-direction: column; width: 100%; height: 100%;">
         <div class="modal fade" id="heroModal" tabindex="-1" role="dialog" aria-labelledby="heroModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                <div class="modal-content hero-section">
-                    <div class="modal-body">
-                        <div class="hero-content">
-                            <h1 class="hero-title">HandicapSkater:<br />Mobility Evolution for Equal Rights</h1>
-                            <p class="hero-subtitle">
-                                HandicapSkater champions the use of non-standard mobility aids — from skates to adaptive devices —
-                                with AI to promote health, independence, and equal access in transportation, employment, and public
-                                life — Fight for Equality.
-                                <br />
-                                <a
-                                        href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai"
-                                        class="hero-btn btn-danger"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                    Donate for Equality
-                                </a>
-                            </p>
-                            <div class="hero-buttons">
-                                <a href="#" onclick="loadPage('overview.htm'); return false;" class="hero-btn">Explore the Mission</a>
-                                <a href="#" onclick="loadPage('datascience.htm'); return false;" class="hero-btn secondary">See the Data Science</a>
-                                <a href="#" onclick="loadPage('pleading.htm'); return false;" class="hero-btn btn-info">Know Your Rights</a>
-                                <a href="#" onclick="loadPage('BiomechanicsBasics.htm'); return false;" class="hero-btn btn-dark">Biomechanics in Action</a>
-                                <a href="#" onclick="loadPage('datascience.htm'); return false;" class="hero-btn btn-outline-light">Watch the Story</a>
-                                <button onclick="dismissHero(); $('#heroModal').modal('hide');" style="margin-top: 1em;">Don't show again</button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Welcome to HandicapSkater</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="dismissHero();">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body hero-section">
+                        <div class="modal-body">
+                            <div class="hero-content">
+                                <h1 class="hero-title">HandicapSkater:<br />Mobility Evolution for Equal Rights</h1>
+                                <p class="hero-subtitle">
+                                    HandicapSkater champions the use of non-standard mobility aids — from skates to adaptive devices —
+                                    with AI to promote health, independence, and equal access in transportation, employment, and public
+                                    life — Fight for Equality.
+                                    <br />
+                                    <a
+                                            href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai"
+                                            class="hero-btn btn-danger"
+                                            target="_blank"
+                                            rel="noopener noreferrer">
+                                        Donate for Equality
+                                    </a>
+                                </p>
+                                <div class="hero-buttons">
+                                    <a href="#" onclick="loadPage('overview.htm'); return false;" class="hero-btn">Explore the Mission</a>
+                                    <a href="#" onclick="loadPage('datascience.htm'); return false;" class="hero-btn secondary">See the Data Science</a>
+                                    <a href="#" onclick="loadPage('pleading.htm'); return false;" class="hero-btn btn-info">Know Your Rights</a>
+                                    <a href="#" onclick="loadPage('BiomechanicsBasics.htm'); return false;" class="hero-btn btn-dark">Biomechanics in Action</a>
+                                    <a href="#" onclick="loadPage('datascience.htm'); return false;" class="hero-btn btn-outline-light">Watch the Story</a>
+                                    <button onclick="dismissHero(); $('#heroModal').modal('hide');" style="margin-top: 1em;">Don't show again</button>
+                                </div>
                             </div>
                         </div>
                     </div>

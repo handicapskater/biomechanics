@@ -180,11 +180,6 @@ function replayHero() {
 	document.querySelector('.hero-section').style.display = 'block';
 }
 
-// Example: Hide hero if cookie exists
-if (getCookie("hideHero") !== "true") {
-	document.getElementById("hero").style.display = "block";
-}
-
 /*
 window.addEventListener("DOMContentLoaded", () => {
 	if (getCookie("hideHero") !== "true") {
