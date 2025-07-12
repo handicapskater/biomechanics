@@ -144,14 +144,9 @@ function replayHero() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-	const modalShown = localStorage.getItem('heroModalShown');
-
-	if (!modalShown) {
-		const modalEl = new bootstrap.Modal(document.getElementById('heroModal'), {
-			backdrop: 'static',
-			keyboard: false
-		});
-		modalEl.show();
+	const alreadyShown = localStorage.getItem('heroModalShown');
+	if (!alreadyShown) {
+		$('#heroModal').modal('show');
 		localStorage.setItem('heroModalShown', 'true');
 	}
 });
