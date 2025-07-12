@@ -339,3 +339,64 @@ h2, h3 {
 .hero-btn:hover {
     background-color: #0056b3;
 }
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+    justify-content: center;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    min-width: 200px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Individual button styles */
+.hero-btn.primary {
+    background-color: #00d4ff;
+    color: #000;
+}
+
+.hero-btn.secondary {
+    background-color: #4a4a4a;
+    color: #fff;
+}
+
+.hero-btn.info {
+    background-color: #0077cc;
+    color: #fff;
+}
+
+.hero-btn.dark {
+    background-color: #111;
+    color: #fff;
+}
+
+.hero-btn.light {
+    background-color: #fff;
+    color: #111;
+    border: 2px solid #ccc;
+}
+
+.hero-btn.donate {
+    background-color: #ff5722;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hover effects */
+.hero-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    filter: brightness(1.1);
+}
