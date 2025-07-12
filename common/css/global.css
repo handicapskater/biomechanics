@@ -301,26 +301,25 @@ h2, h3 {
 .hero-title {
     font-size: 2.5rem;
     font-weight: bold;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 
 .hero-subtitle {
     font-size: 1.1rem;
-    margin-bottom: 2rem;
     color: #f0f0f0;
 }
 
 .hero-subtitle {
     background: rgba(0, 0, 0, 0.4);  /* translucent black */
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 0.5rem;
 }
 
 .hero-buttons {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .hero-btn {
