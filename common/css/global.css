@@ -254,7 +254,8 @@ h2, h3 {
 
 .hero-section {
     /*background-image: url('../images/HandicapSkater-H2-Skates.png');*/
-    background-image: url('../images/HandicapSkater-Hayabusa-Full.jpeg');
+    /*background-image: url('../images/HandicapSkater-Hayabusa-Full.jpeg');*/
+    background-image: url('../images/HandicapSkater-Hayabusa-Full.gif');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
