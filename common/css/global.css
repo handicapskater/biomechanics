@@ -496,7 +496,7 @@ h2, h3 {
 }
 
 .hero-section {
-    background-image: url('common/images/HandicapSkater-Hayabusa-Full.gif');
+    background-image: url('../common/images/HandicapSkater-Hayabusa-Full.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
