@@ -162,10 +162,22 @@ function getCookie(name) {
 	}, '');
 }
 
+/*
 function dismissHero() {
 	setCookie("hideHero", "true", 365);  // 1 year
 	const hero = document.getElementById("hero");
 	if (hero) hero.style.display = "none";
+}
+*/
+
+function dismissHero() {
+	document.querySelector('.hero-section').style.display = 'none';
+	localStorage.setItem('hideHero', 'true');
+}
+
+function replayHero() {
+	localStorage.removeItem('hideHero');
+	document.querySelector('.hero-section').style.display = 'block';
 }
 
 // Example: Hide hero if cookie exists
@@ -173,10 +185,33 @@ if (getCookie("hideHero") !== "true") {
 	document.getElementById("hero").style.display = "block";
 }
 
+/*
 window.addEventListener("DOMContentLoaded", () => {
 	if (getCookie("hideHero") !== "true") {
 		const hero = document.getElementById("hero");
 		if (hero) hero.style.display = "block";
 	}
 });
+*/
 
+window.addEventListener('DOMContentLoaded', function () {
+	if (localStorage.getItem('hideHero') === 'true') {
+		document.querySelector('.hero-section').style.display = 'none';
+	}
+});
+
+window.addEventListener('DOMContentLoaded', function () {
+	const heroSection = document.querySelector('.hero-section');
+	const hasSeenHero = localStorage.getItem('hideHero');
+
+	// Only show on first load
+	if (heroSection) {
+		if (hasSeenHero === 'true') {
+			heroSection.style.display = 'none';
+		} else {
+			heroSection.style.display = 'block';
+			// Set it immediately to avoid future loads
+			localStorage.setItem('hideHero', 'true');
+		}
+	}
+});
