@@ -201,17 +201,9 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 
 window.addEventListener('DOMContentLoaded', function () {
-	const heroSection = document.querySelector('.hero-section');
 	const hasSeenHero = localStorage.getItem('hideHero');
-
-	// Only show on first load
-	if (heroSection) {
-		if (hasSeenHero === 'true') {
-			heroSection.style.display = 'none';
-		} else {
-			heroSection.style.display = 'block';
-			// Set it immediately to avoid future loads
-			localStorage.setItem('hideHero', 'true');
-		}
+	if (hasSeenHero !== 'true') {
+		$('#heroModal').modal('show');
+		localStorage.setItem('hideHero', 'true');
 	}
 });
