@@ -488,8 +488,6 @@ h2, h3 {
 
 .modal.show {
     display: flex !important;
-    align-items: center;
-    justify-content: center;
     z-index: 1050;
 }
 
@@ -497,24 +495,11 @@ h2, h3 {
     z-index: 1040 !important;
 }
 
-.modal-dialog {
-    max-width: 900px;
-    margin: auto;
-}
-
-.modal-content {
-    background: transparent;
-    border: none;
-    box-shadow: none;
-}
-
-.modal-body.hero-section {
-    padding: 2em;
-    color: white;
-    text-align: center;
-    background-image: url('../images/HandicapSkater-Hayabusa-Full.gif');
+.hero-section {
+    background-image: url('common/images/HandicapSkater-Hayabusa-Full.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(1.7) contrast(1.1) saturate(2.5) drop-shadow(0 0 10px red);
+    filter: brightness(1.6) contrast(1.2) saturate(2.0);
+    text-shadow: 1px 1px 3px black;
 }
