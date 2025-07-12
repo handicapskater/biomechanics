@@ -400,3 +400,16 @@ h2, h3 {
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     filter: brightness(1.1);
 }
+
+.modal-backdrop {
+    z-index: 1040 !important;
+}
+
+.modal {
+    z-index: 1050 !important;
+}
+
+.modal-body.hero-section {
+    background-color: #fff;
+    padding: 2em;
+}
