@@ -25,30 +25,6 @@ function contextMenu(e) {
 
 // Track imageLink calls if DOM is not ready
 window.imageQueue = [];
-/*
-function imageLink(id, src, align = "center", width = "auto", height = "auto") {
-	const content = document.getElementById("content");
-
-	if (!content) {
-		// Queue it to run later
-		window.imageQueue.push({id, src, align, width, height});
-		return;
-	}
-
-	const container = document.createElement("div");
-	container.id = id;
-	container.style.textAlign = align;
-
-	const img = document.createElement("img");
-	img.src = src;
-	img.alt = id;
-	img.style.width = width;
-	img.style.height = height;
-
-	container.appendChild(img);
-	content.appendChild(container);
-}
-*/
 
 function imageLink(id, imageUrl, alignment = "center") {
 	const existingDiv = document.getElementById(id);
@@ -162,27 +138,23 @@ function getCookie(name) {
 	}, '');
 }
 
-window.addEventListener('DOMContentLoaded', function () {
-	if (localStorage.getItem('hideHero') === 'true') {
-		document.querySelector('.hero-section').style.display = 'none';
-	}
-});
-
 function replayHero() {
 	localStorage.removeItem('hideHero');
 	$('#heroModal').modal('show');
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-	// Check localStorage for modal dismissal
-	const shouldHideHero = localStorage.getItem('hideHero');
-	const isOverview = window.location.href.includes("overview.htm");
-
-	if (!shouldHideHero && isOverview) {
-		setTimeout(() => {
-			$('#heroModal').modal('show');
-		}, 500);
+// global.js
+document.addEventListener('DOMContentLoaded', function () {
+	// Only show modal if not already dismissed
+	if (!localStorage.getItem('hideHero')) {
+		$('#heroModal').modal('show');
 	}
+
+	// Save user's preference to not show again
+	window.dismissHero = function () {
+		localStorage.setItem('hideHero', 'true');
+		$('#heroModal').modal('hide');
+	};
 });
 
 // Function to dismiss hero modal and set localStorage flag
