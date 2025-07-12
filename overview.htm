@@ -63,4 +63,15 @@
 	<strong>HandicapSkater is not just a story. It’s a blueprint for health, mobility, and equality.</strong>
 </div>
 <br />
-&nbsp;
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		// Replace placeholder <span id="..."></span> with window variable content
+		document.querySelectorAll("span[id]").forEach(span => {
+			const id = span.id;
+			const replacement = window[id];
+			if (typeof replacement === "string" && replacement.includes("<span")) {
+				span.outerHTML = replacement;
+			}
+		});
+	});
+</script>&nbsp;
