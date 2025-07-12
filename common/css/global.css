@@ -268,7 +268,8 @@ h2, h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    filter: brightness(1.5) contrast(1.15) saturate(1.8);
+    /*filter: brightness(1.5) contrast(1.15) saturate(1.8);*/
+    filter: brightness(1.7) contrast(1.1) saturate(2.5) drop-shadow(0 0 10px red);
 }
 
 .hero-section::before {
