@@ -41,6 +41,16 @@ function imageLink(id, imageUrl, alignment = "center") {
 	}
 }
 
+function loadVideo(videoUrl) {
+	const container = document.getElementById("videoContainer");
+	container.innerHTML = `
+		<video width="100%" controls playsinline autoplay muted>
+			<source src="${videoUrl}" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+    `;
+}
+
 // Re-run queued imageLinks after load
 document.addEventListener("DOMContentLoaded", () => {
 	if (window.imageQueue && window.imageQueue.length > 0) {
