@@ -84,7 +84,7 @@ function loadVideo(videoUrl) {
 		videoElement.style.margin = '20px auto';
 	}
 
-	console.log("Video element: ", videoElement);
+	console.log("Video element: ", videoElement.src);
 	container.appendChild(videoElement);
 	videoElement.scrollIntoView({ behavior: 'smooth' });
 }
