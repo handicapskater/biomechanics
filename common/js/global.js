@@ -86,6 +86,10 @@ function loadVideo(videoUrl) {
 
 	console.log("Video element: ", videoElement.src);
 	container.appendChild(videoElement);
+
+	const overlay = document.getElementById("hero-overlay");
+	if (overlay) overlay.style.display = "none";
+
 	videoElement.scrollIntoView({ behavior: 'smooth' });
 }
 
