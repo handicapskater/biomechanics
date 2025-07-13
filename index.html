@@ -316,22 +316,28 @@
 </head>
 <body>
 <!-- Hero Modal Dialog -->
-<div id="heroModal" class="modal fade" tabindex="-1" aria-labelledby="heroModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-body hero-section">
-                <div class="hero-content">
-                    <h1 class="hero-title">HandicapSkater: Revolutionizing Mobility</h1>
-                    <p class="hero-subtitle">
-                        Prosthetic skates helped me ride a motorcycle, drive, and move around. Skates reduce impact, prevent <span id="pice"></span>, and reverse chronic health conditions.
-                    </p>
-                    <div class="hero-buttons">
-                        <a class="hero-btn primary" onclick="loadPage('overview.htm'); return false;">Explore the Mission</a>
-                        <a class="hero-btn info" onclick="loadPage('datascience.htm'); return false;">See the Data Science</a>
-                        <a class="hero-btn donate" href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai" target="_blank" rel="noopener">Donate for Equality</a>
-                        <button onclick="dismissHero()">Don't show again</button>
-                    </div>
+<div id="heroModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="heroModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content bg-dark text-white text-center">
+            <div class="modal-body p-5">
+                <h1 class="hero-title mb-4">HandicapSkater: Revolutionizing Mobility</h1>
+                <p class="hero-subtitle mb-4">
+                    Prosthetic skates helped me ride a motorcycle, drive, and move around. Skates reduce impact, prevent
+                    <span id="pice"></span>, and reverse chronic health conditions.
+                </p>
+                <div class="hero-buttons mb-4">
+                    <a class="btn btn-info mx-2" onclick="loadPage('overview.htm'); return false;">Explore the Mission</a>
+                    <a class="btn btn-primary mx-2" onclick="loadPage('datascience.htm'); return false;">See the Data Science</a>
+                    <a class="btn btn-warning mx-2" target="_blank"
+                       href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai">
+                        Donate for Equality
+                    </a>
+                    <button class="btn btn-light mx-2 hero-btn dont-show">Don't show again</button>
                 </div>
+                <button type="button" class="close position-absolute" style="top: 10px; right: 15px;"
+                        data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
         </div>
     </div>
@@ -454,15 +460,22 @@
         });
     });
 
-    $(document).ready(function () {
-        if (!localStorage.getItem("hideHero")) {
-        $('#heroModal').modal('show');
-    }
-    });
-
     function dismissHero() {
         localStorage.setItem("hideHero", "true");
         $('#heroModal').modal('hide');
     }
+
+    $(document).ready(function () {
+        // Only show modal if localStorage doesn't have the hide flag
+        if (!localStorage.getItem("hideHero")) {
+            $('#heroModal').modal('show');
+        }
+
+        // Close button sets hide flag
+        $('.hero-btn.dont-show, .modal .close').on('click', function () {
+            localStorage.setItem("hideHero", "true");
+            $('#heroModal').modal('hide');
+        });
+    });
 </script></body>
 </html>
