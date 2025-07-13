@@ -470,7 +470,6 @@ h2, h3 {
 
 /* Ensure background still shows underneath hero content */
 .hero-content {
-    padding: 2rem;
     border-radius: 8px;
     text-align: center;
     background-image: url('../images/HandicapSkater-Hayabusa-Full.gif');
