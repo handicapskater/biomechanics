@@ -313,9 +313,83 @@
         }
     </style>
     <link href="common/css/global.css" rel="stylesheet"/>
+    <style>
+        .hero-modal {
+            position: relative;
+            background: rgba(0, 0, 0, 0.65); /* Dark overlay for readability */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .hero-modal img {
+            width: 100%;
+            height: auto;
+            filter: brightness(60%); /* dim background for contrast */
+            border-radius: 10px;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 1.8em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000;
+            z-index: 10;
+        }
+
+        .hero-links a {
+            color: cyan;
+            font-weight: bold;
+            margin: 0 15px;
+            text-decoration: underline;
+        }
+
+        .hero-close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 1.5em;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        #dontShowAgain {
+            margin-top: 15px;
+            background: #00ffff;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+
 </head>
 <body>
-<!-- Hero Modal Dialog -->
+<div class="hero-modal" id="heroModal">
+    <img src="../images/HandicapSkater-Hayabusa-Full.gif" alt="Hero Background">
+    <div class="hero-text">
+        HandicapSkater: Revolutionizing Mobility<br/>
+        <small>Prosthetic skates helped me ride a motorcycle, drive, and move around. Skates reduce impact, prevent <a href="#PICE" style="color: cyan;">PICE</a>, and reverse chronic health conditions.</small>
+        <div class="hero-links">
+            <a href="#mission">Explore the Mission</a>
+            <a href="#science">See the Data Science</a>
+            <a href="#donate">Donate for Equality</a>
+        </div>
+        <button id="dontShowAgain">Don't show again</button>
+    </div>
+    <button class="hero-close" onclick="document.getElementById('heroModal').style.display='none'">×</button>
+</div>
+<!-- Hero Modal Dialog
 <div id="heroModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="heroModalTitle" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
         <div class="modal-content bg-dark text-white text-center">
@@ -342,6 +416,7 @@
         </div>
     </div>
 </div>
+-->
 <!--<div id="heroModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="heroModalTitle" aria-hidden="true">-->
 <!--    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">-->
 <!--        <div class="modal-content bg-transparent border-0 shadow-none">-->
@@ -476,6 +551,17 @@
             localStorage.setItem("hideHero", "true");
             $('#heroModal').modal('hide');
         });
+    });
+
+    document.getElementById('dontShowAgain').addEventListener('click', function () {
+        localStorage.setItem('hideHeroModal', 'true');
+        document.getElementById('heroModal').style.display = 'none';
+    });
+
+    window.addEventListener('DOMContentLoaded', function () {
+        if (localStorage.getItem('hideHeroModal') === 'true') {
+            document.getElementById('heroModal').style.display = 'none';
+        }
     });
 </script></body>
 </html>
