@@ -329,6 +329,7 @@
                         <a class="hero-btn primary" onclick="loadPage('overview.htm'); return false;">Explore the Mission</a>
                         <a class="hero-btn info" onclick="loadPage('datascience.htm'); return false;">See the Data Science</a>
                         <a class="hero-btn donate" href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai" target="_blank" rel="noopener">Donate for Equality</a>
+                        <button onclick="dismissHero()">Don't show again</button>
                     </div>
                 </div>
             </div>
@@ -452,6 +453,16 @@
             }
         });
     });
-</script>
-</body>
+
+    $(document).ready(function () {
+        if (!localStorage.getItem("hideHero")) {
+        $('#heroModal').modal('show');
+    }
+    });
+
+    function dismissHero() {
+        localStorage.setItem("hideHero", "true");
+        $('#heroModal').modal('hide');
+    }
+</script></body>
 </html>
