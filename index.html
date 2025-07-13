@@ -405,7 +405,7 @@
         <div class="hero-content">
             <h1>HandicapSkater: Revolutionizing Mobility</h1>
             <p>Prosthetic skates helped me ride a motorcycle, drive, and move around. <br>
-                Skates reduce impact, prevent <a href="#PICE">PICE</a>, and reverse chronic health conditions.</p>
+                Skates reduce impact, prevent <span id="pice"></span>, and reverse chronic health conditions.</p>
             <div class="hero-links">
                 <a href="#mission">Explore the Mission</a>
                 <a href="#science">See the Data Science</a>
@@ -522,7 +522,7 @@
                         -->
             <!--            <a class="donate-button" href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai" target="_blank">Donate Now</a>-->
             <!--            <script defer="defer" src="https://www.gofundme.com/static/js/embed.js"></script>-->
-            <button onclick="localStorage.removeItem('hideHero'); $('#heroModal').modal('show');">Replay Hero</button>
+            <button id="replayHero">Replay Hero</button>
             <a class="fa fa-facebook" href="http://www.facebook.com/group.php?gid=44036411369" target="_blank"></a>
             <a class="fa fa-twitter" href="https://twitter.com/handicapskater" target="_blank"></a>
             <span style="vertical-align: middle">
@@ -536,84 +536,42 @@
         </div>
     </div>
 </footer>
-<script>
-    /*
-    // Toggle the navigation menu
-    document.getElementById('nav-toggle').addEventListener('click', function() {
-        const nav = document.querySelector('nav');
-        if (nav.style.height) {
-            nav.style.height = '';
-        } else {
-            nav.style.height = 'auto';
-        }
-    });
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const heroModal = document.getElementById("heroModal");
+                        const dismissBtn = document.getElementById("dismissHero");
+                        const closeBtn = document.getElementById("closeHero");
+                        const replayBtn = document.getElementById("replayHero");
 
-    $scope.getActiveClass = function(item) {
-        return $scope.currentItem === item.name ? 'active' : '';
-    };
+                        // Hide if previously dismissed
+                        if (localStorage.getItem("hideHero") === "true") {
+                            heroModal.style.display = "none";
+                        }
 
-    document.addEventListener("DOMContentLoaded", function () {
-        // Replace placeholder <span id="..."></span> with window variable content
-        document.querySelectorAll("span[id]").forEach(span => {
-            const id = span.id;
-            const replacement = window[id];
-            if (typeof replacement === "string" && replacement.includes("<span")) {
-                span.outerHTML = replacement;
-            }
-        });
-    });
+                        // Dismiss permanently
+                        if (dismissBtn) {
+                            dismissBtn.addEventListener("click", () => {
+                                localStorage.setItem("hideHero", "true");
+                                heroModal.style.display = "none";
+                            });
+                        }
 
-    function dismissHero() {
-        localStorage.setItem("hideHero", "true");
-        $('#heroModal').modal('hide');
-    }
+                        // Close just this session
+                        if (closeBtn) {
+                            closeBtn.addEventListener("click", () => {
+                                heroModal.style.display = "none";
+                            });
+                        }
 
-    $(document).ready(function () {
-        // Only show modal if localStorage doesn't have the hide flag
-        if (!localStorage.getItem("hideHero")) {
-            $('#heroModal').modal('show');
-        }
+                        // Replay Hero manually from footer
+                        if (replayBtn) {
+                            replayBtn.addEventListener("click", () => {
+                                localStorage.removeItem("hideHero");
+                                heroModal.style.display = "block";
+                            });
+                        }
+                    });
+                </script>
 
-        // Close button sets hide flag
-        $('.hero-btn.dont-show, .modal .close').on('click', function () {
-            localStorage.setItem("hideHero", "true");
-            $('#heroModal').modal('hide');
-        });
-    });
-
-    document.getElementById('dontShowAgain').addEventListener('click', function () {
-        localStorage.setItem('hideHeroModal', 'true');
-        document.getElementById('heroModal').style.display = 'none';
-    });
-
-    window.addEventListener('DOMContentLoaded', function () {
-        if (localStorage.getItem('hideHeroModal') === 'true') {
-            document.getElementById('heroModal').style.display = 'none';
-        }
-    });
-
-     */
-        const heroModal = document.getElementById("heroModal");
-        const dismissBtn = document.getElementById("dismissHero");
-        const closeBtn = document.getElementById("closeHero");
-
-        // Dismiss forever
-        dismissBtn.addEventListener("click", () => {
-        localStorage.setItem("hideHero", "true");
-        heroModal.style.display = "none";
-    });
-
-        // Close just for now
-        closeBtn.addEventListener("click", () => {
-        heroModal.style.display = "none";
-    });
-
-        // Auto-hide if previously dismissed
-        window.addEventListener("DOMContentLoaded", () => {
-        if (localStorage.getItem("hideHero") === "true") {
-        heroModal.style.display = "none";
-    }
-    });
-</script>
 </body>
 </html>
