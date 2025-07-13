@@ -43,27 +43,50 @@ function imageLink(id, imageUrl, alignment = "center") {
 
 function loadVideo(videoUrl) {
 	const container = document.getElementById('videoContainer');
-	container.innerHTML = ''; // Clear previous video if present
+	container.innerHTML = ''; // Clear previous video
 
 	console.log("Loading Video: ", videoUrl);
-	const video = document.createElement('video');
-	video.src = videoUrl;
-	video.controls = true;
-	video.autoplay = true;
-	video.muted = true;
-	video.loop = true;
-	video.playsInline = true;
-	video.controlsList = "nodownload";
-	video.style.width = '100%';
-	video.style.maxWidth = '720px';
-	video.style.display = 'block';
-	video.style.margin = '20px auto';
 
-	console.log("Video html: ", video.currentSrc)
-	container.appendChild(video);
+	let videoElement;
 
-	// Optional: scroll to video
-	video.scrollIntoView({ behavior: 'smooth' });
+	if (videoUrl.includes("youtu")) {
+		// Convert short URL to embed URL if needed
+		const videoIdMatch = videoUrl.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/))([^\s&]+)/);
+		if (!videoIdMatch || !videoIdMatch[1]) {
+			console.error("Invalid YouTube URL");
+			return;
+		}
+		const videoId = videoIdMatch[1];
+		const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}`;
+
+		videoElement = document.createElement('iframe');
+		videoElement.src = embedUrl;
+		videoElement.allow = "autoplay; fullscreen";
+		videoElement.frameBorder = "0";
+		videoElement.allowFullscreen = true;
+		videoElement.style.width = '100%';
+		videoElement.style.maxWidth = '720px';
+		videoElement.style.aspectRatio = '16 / 9';
+		videoElement.style.display = 'block';
+		videoElement.style.margin = '20px auto';
+	} else {
+		videoElement = document.createElement('video');
+		videoElement.src = videoUrl;
+		videoElement.controls = true;
+		videoElement.autoplay = true;
+		videoElement.muted = true;
+		videoElement.loop = true;
+		videoElement.playsInline = true;
+		videoElement.controlsList = "nodownload";
+		videoElement.style.width = '100%';
+		videoElement.style.maxWidth = '720px';
+		videoElement.style.display = 'block';
+		videoElement.style.margin = '20px auto';
+	}
+
+	console.log("Video element: ", videoElement);
+	container.appendChild(videoElement);
+	videoElement.scrollIntoView({ behavior: 'smooth' });
 }
 
 // Re-run queued imageLinks after load
