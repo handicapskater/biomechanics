@@ -516,9 +516,28 @@ h2, h3 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /*filter: brightness(1.6) contrast(1.2) saturate(2.0);*/
-    /*text-shadow: 1px 1px 3px black;*/
-    filter: brightness(0.6) contrast(1.2) saturate(1.2);
-    text-shadow: 1px 1px 3px black;
+    filter: brightness(0.5) contrast(1.1) saturate(1.2); /* Less washed out */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9); /* Stronger shadow */
+    color: white;
 }
 
+nav, .menu-bar, .menu-container {
+    position: relative;
+    z-index: 10;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    gap: 10px;
+}
+
+.footer.copyright img,
+.footer.copyright button {
+    max-width: 50px;
+    height: auto;
+}

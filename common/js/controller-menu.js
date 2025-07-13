@@ -21,6 +21,15 @@ function loadDynamicContent(id) {
     }
 }
 
+function injectTooltips() {
+    const spanIds = Object.keys(window).filter(key => typeof window[key] === 'string' && window[key].includes('<span'));
+    spanIds.forEach(id => {
+        const span = document.getElementById(id);
+        if (span) {
+            span.outerHTML = window[id];
+        }
+    });
+}
 
 // controller-menu.js
 angular.module('menuApp', []).controller('MenuController', function($scope) {
@@ -127,6 +136,7 @@ $scope.loadPage = function(page) {
                 if (typeof fullSpan === "string" && fullSpan.includes("<span")) {
                     span.outerHTML = fullSpan;
                 }
+                injectTooltips();
             });
         });
 };
