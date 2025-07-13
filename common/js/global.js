@@ -45,6 +45,7 @@ function loadVideo(videoUrl) {
 	const container = document.getElementById('videoContainer');
 	container.innerHTML = ''; // Clear previous video if present
 
+	console.log("Loading Video: ", videoUrl);
 	const video = document.createElement('video');
 	video.src = videoUrl;
 	video.controls = true;
@@ -58,6 +59,7 @@ function loadVideo(videoUrl) {
 	video.style.display = 'block';
 	video.style.margin = '20px auto';
 
+	console.log("Video html: ", video.currentSrc)
 	container.appendChild(video);
 
 	// Optional: scroll to video
