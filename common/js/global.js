@@ -52,6 +52,7 @@ function loadVideo(videoUrl) {
 	video.muted = true;
 	video.loop = true;
 	video.playsInline = true;
+	video.controlsList = "nodownload";
 	video.style.width = '100%';
 	video.style.maxWidth = '720px';
 	video.style.display = 'block';
@@ -168,7 +169,11 @@ function replayHero() {
 document.addEventListener('DOMContentLoaded', function () {
 	const alreadyShown = localStorage.getItem('heroModalShown');
 	if (!alreadyShown) {
-		$('#heroModal').modal('show');
+		try {
+			$('#heroModal').modal('show');
+		} catch (e) {
+			console.warn("Modal fallback", e);
+		}
 		localStorage.setItem('heroModalShown', 'true');
 	}
 });
