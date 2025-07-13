@@ -471,8 +471,13 @@ h2, h3 {
 /* Ensure background still shows underneath hero content */
 .hero-content {
     padding: 2rem;
-    background: rgba(0, 0, 0, 0.6);  /* semi-transparent black overlay */
     border-radius: 8px;
+    text-align: center;
+    background-image: url('../images/HandicapSkater-Hayabusa-Full.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(1.7) contrast(1.1) saturate(2.5) drop-shadow(0 0 10px red);
 }
 
 .hero-title {
