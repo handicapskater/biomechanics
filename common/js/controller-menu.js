@@ -112,3 +112,21 @@ window.addEventListener("hashchange", function () {
         scope.$apply();
     }
 });
+
+$scope.loadPage = function(page) {
+    const container = document.getElementById("content");
+    fetch(page)
+        .then(response => response.text())
+        .then(html => {
+            container.innerHTML = html;
+
+            // 🔁 ADD THIS HERE: Re-run tooltip logic
+            container.querySelectorAll("span[id]").forEach(span => {
+                const id = span.id;
+                const fullSpan = window[id];
+                if (typeof fullSpan === "string" && fullSpan.includes("<span")) {
+                    span.outerHTML = fullSpan;
+                }
+            });
+        });
+};

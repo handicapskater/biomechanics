@@ -481,6 +481,16 @@ h2, h3 {
     height: 100%;
 }
 
+.hero-content {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: white;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.4);
+    padding: 1em;
+    border-radius: 10px;
+}
 .hero-title {
     font-size: 2rem;
     font-weight: bold;
@@ -506,6 +516,9 @@ h2, h3 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(1.6) contrast(1.2) saturate(2.0);
+    /*filter: brightness(1.6) contrast(1.2) saturate(2.0);*/
+    /*text-shadow: 1px 1px 3px black;*/
+    filter: brightness(0.6) contrast(1.2) saturate(1.2);
     text-shadow: 1px 1px 3px black;
 }
+
