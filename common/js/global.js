@@ -42,20 +42,25 @@ function imageLink(id, imageUrl, alignment = "center") {
 }
 
 function loadVideo(videoUrl) {
-	const container = document.getElementById("videoContainer");
-	container.innerHTML = `
-		<video width="100%" controls playsinline autoplay muted>
-			<source 
-				src="${videoUrl}" type="video/mp4">
-				autoplay 
-				muted 
-				loop 
-				controls 
-				playsinline 
-				style="width: 100%; max-width: 720px; margin-top: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.3);">
-			Your browser does not support the video tag.
-		</video>
-    `;
+	const container = document.getElementById('videoContainer');
+	container.innerHTML = ''; // Clear previous video if present
+
+	const video = document.createElement('video');
+	video.src = videoUrl;
+	video.controls = true;
+	video.autoplay = true;
+	video.muted = true;
+	video.loop = true;
+	video.playsInline = true;
+	video.style.width = '100%';
+	video.style.maxWidth = '720px';
+	video.style.display = 'block';
+	video.style.margin = '20px auto';
+
+	container.appendChild(video);
+
+	// Optional: scroll to video
+	video.scrollIntoView({ behavior: 'smooth' });
 }
 
 // Re-run queued imageLinks after load
