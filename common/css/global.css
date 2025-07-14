@@ -636,3 +636,124 @@ main, #content {
     min-height: 100vh;
     background-color: #fff;
 }
+
+/* Make hero image full width and responsive */
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hero-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5); /* Darkens image for text readability */
+}
+
+/* Overlay text container */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+    font-size: 1.8em;
+    line-height: 1.4em;
+}
+
+/* Make sure the sidebar is fixed to the left */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f4f4fa;
+    padding-top: 70px;
+    z-index: 10;
+}
+
+/* Push content over */
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+/* Footer spacing */
+footer {
+    margin-left: 200px;
+    padding: 10px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+/* Fix buttons in footer */
+.footer-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background: #eee;
+}
+
+.footer-icons a img {
+    vertical-align: middle;
+    max-width: 20px;
+}
+
+/* Fix brightness and legibility of the existing hero image */
+#hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(0.45); /* darkens just enough to read text */
+}
+
+/* Fix overlay text visibility */
+#hero .overlayText {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+    text-align: center;
+    z-index: 2;
+    font-size: 1.5rem;
+    line-height: 1.4em;
+}
+
+/* Fix buttons on hero */
+#hero .overlayText .button {
+    background-color: #00f0ff;
+    color: black;
+    padding: 10px 16px;
+    margin: 6px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#hero .overlayText .button:hover {
+    background-color: #00b3cc;
+}
+
+/* Optional: Add dismiss button visibility */
+#hero .overlayText .dismiss {
+    background-color: yellow;
+}
