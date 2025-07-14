@@ -2,22 +2,12 @@
     div#content {
         width: 100%;
     }
-
     nav {
         width: 100%;
-        background: #f4f4f4;
-        padding: 20px;
-        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-        box-sizing: border-box;
-        overflow-y: auto;
-        min-width: 200px;
-        flex-shrink: 0;
     }
-
     .layout-table {
         display: block;
     }
-
 }
 
 body {
@@ -36,14 +26,17 @@ body, td {
 }
 
 .content-container {
-    background-color: #f4f4f4 !important;
-    font-family: inherit;
-    padding: 1em;
-    font-size: 16px;
-    line-height: 1.6;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+    /*background-color: #f4f4f4 !important;*/
+    /*font-family: inherit;*/
+    /*padding: 1em;*/
+    /*font-size: 16px;*/
+    /*line-height: 1.6;*/
+    /*background: #fff;*/
+    /*border-radius: 8px;*/
+    /*box-shadow: 0 0 10px rgba(0,0,0,0.05);*/
 }
 
 .page-title {
@@ -57,30 +50,33 @@ header {
     text-align: center;
 }
 
+nav {
+    width: 250px !important;
+    background: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
 }
 
 nav li {
-    /*margin: 5px 0;
-    */;
+    /*margin: 5px 0;*/
 }
 
 nav a {
-    /*display: block;
-    */
-    /*padding: 10px;
-  */
-    /*margin: 5px 0;
-  */
+    /*display: block;*/
+    /*padding: 10px;*/
+    /*margin: 5px 0;*/
     text-decoration: none;
     color: #333;
-    /*border-radius: 5px;
-    */
+    /*border-radius: 5px;*/
     background: #e4e4e4;
     transition: background 0.3s, color 0.3s;
-    background: #e4e4f4;
 }
 
 nav a:hover, nav a:focus, nav a.linkActionHi {
@@ -92,14 +88,17 @@ nav a.active {
     background-color: inherit;
     color: inherit;
     font-weight: normal;
+}
+
+nav a.active {
+    background: #e4e4f4;  /* same as default */
+    color: #333;          /* same as default */
+    font-weight: bold;    /* or normal if you want no visual cue */
+}
+
+nav a {
     background: #e4e4f4;
-    /* same as default */
     color: #333;
-    /* same as default */
-    font-weight: bold;
-    /* or normal if you want no visual cue */;
-    /* consistent and visible */
-    color: #111;
 }
 
 nav a:hover,
@@ -108,10 +107,15 @@ nav a:focus {
     color: #000;
 }
 
+nav a.active {
+    background: #d0d0e8;  /* consistent and visible */
+    color: #111;
+    font-weight: bold;
+}
+
 nav a.active:hover,
 nav a.active:focus {
-    background: #d0d0e8;
-    /* prevent change on hover/focus */
+    background: #d0d0e8;  /* prevent change on hover/focus */
     color: #111;
 }
 
@@ -144,7 +148,6 @@ ol, ul {
 .def {
     color: #0000ee;
     cursor: pointer;
-    text-decoration: underline dotted;
 }
 
 footer {
@@ -173,8 +176,7 @@ nav a {
     border-radius: 5px;
     text-decoration: none;
     transition: background 0.3s, color 0.3s;
-    outline: none;
-    /* prevent default focus ring */;
+    outline: none; /* prevent default focus ring */
 }
 
 /* Hover and focus state (non-active links only) */
@@ -214,7 +216,6 @@ body, html {
     background-color: transparent !important;
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 
 /* style.css */
@@ -232,6 +233,12 @@ h2, h3 {
     color: #1f1f1f;
 }
 
+.def {
+    color: #0056b3;
+    cursor: pointer;
+    text-decoration: underline dotted;
+}
+
 .section {
     margin-bottom: 40px;
     padding: 10px 20px;
@@ -244,84 +251,61 @@ h2, h3 {
     color: #0077cc;
     text-decoration: none;
 }
-
 .source a:hover {
     text-decoration: underline;
 }
 
 .hero-section {
-    /*background-image: url('../images/HandicapSkater-H2-Skates.png');
-    */
-    /*background-image: url('../images/HandicapSkater-Hayabusa-Full.jpeg');
-  */
+    /*background-image: url('../images/HandicapSkater-H2-Skates.png');*/
+    /*background-image: url('../images/HandicapSkater-Hayabusa-Full.jpeg');*/
     background-image: url('../images/HandicapSkater-Hayabusa-Full.gif');
-    /*background-size: contain;
-    */
+    /*background-size: contain;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #000;
-    /* fallback */
+    background-color: #000; /* fallback */
     padding: 6rem 2rem;
     color: white;
     text-align: center;
     position: relative;
-    /*min-height: 400px;
-    */
+    /*min-height: 400px;*/
     min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    filter: brightness(1.5) contrast(1.15) saturate(1.8);
-    /*filter: brightness(1.7) contrast(1.1) saturate(2.5) drop-shadow(0 0 10px red);
-    */;
+    filter: brightness(0.6) contrast(1.2) saturate(1.2);
+    text-shadow: 2px 2px 6px black;
+    height: 300px;
+    /*filter: brightness(1.5) contrast(1.15) saturate(1.8);*/
+    /*filter: brightness(1.7) contrast(1.1) saturate(2.5) drop-shadow(0 0 10px red);*/
 }
 
-/*.hero-section {
-  */
-/*    background-image: url('../images/HandicapSkater-Hayabusa-Full.gif');
-  */
-/*    background-size: cover;
-  */
-/*    background-position: center;
-  */
-/*    background-repeat: no-repeat;
-  */
-/*    filter: brightness(0.5) contrast(1.1) saturate(1.2);
-  !* Less washed out *!*/
-/*    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
-  !* Stronger shadow *!*/
-/*    color: white;
-  */
-/*;
-}
-
-*/
+/*.hero-section {*/
+/*    background-image: url('../images/HandicapSkater-Hayabusa-Full.gif');*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    filter: brightness(0.5) contrast(1.1) saturate(1.2); !* Less washed out *!*/
+/*    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9); !* Stronger shadow *!*/
+/*    color: white;*/
+/*}*/
 
 .hero-section::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    /* darker overlay for readability */
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* darker overlay for readability */
     z-index: 0;
 }
 
 .hero-section::after {
     content: '';
-    /*position: absolute;
-    */
-    /*top: 0;
-  left: 0;
-  */
-    /*width: 100%;
-  */
-    /*height: 100%;
-  */
+    /*position: absolute;*/
+    /*top: 0; left: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
     background: radial-gradient(circle at 60% 70%, rgba(0,0,0,0) 20%, rgba(0,0,0,0.5) 100%);
     pointer-events: none;
     z-index: 1;
@@ -330,13 +314,7 @@ h2, h3 {
 .hero-content {
     position: relative;
     z-index: 1;
-    transform: translateY(-140px);
-    top: 20%;
-    left: 10%;
-    color: white;
-    background-color: rgba(0,0,0,0.4);
-    padding: 1em;
-    border-radius: 10px;
+    transform: translateY(-140px)
 }
 
 .hero-title {
@@ -349,8 +327,10 @@ h2, h3 {
 .hero-subtitle {
     font-size: 1.1rem;
     color: #f0f0f0;
-    background: rgba(0, 0, 0, 0.4);
-    /* translucent black */
+}
+
+.hero-subtitle {
+    background: rgba(0, 0, 0, 0.4);  /* translucent black */
     padding: 0.25rem;
     border-radius: 0.5rem;
 }
@@ -359,8 +339,6 @@ h2, h3 {
     display: flex;
     justify-content: center;
     gap: 0.25rem;
-    flex-wrap: wrap;
-    margin-top: 24px;
 }
 
 .hero-btn {
@@ -371,26 +349,46 @@ h2, h3 {
     text-decoration: none;
     font-weight: bold;
     transition: background 0.3s ease;
-    display: inline-block;
-    font-size: 1rem;
-    text-align: center;
-    min-width: 200px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 .hero-btn.secondary {
     background-color: #444;
-    color: #fff;
 }
 
 .hero-btn:hover {
     background-color: #0056b3;
 }
 
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+    justify-content: center;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    min-width: 200px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
 /* Individual button styles */
 .hero-btn.primary {
     background-color: #00d4ff;
     color: #000;
+}
+
+.hero-btn.secondary {
+    background-color: #4a4a4a;
+    color: #fff;
 }
 
 .hero-btn.info {
@@ -407,12 +405,6 @@ h2, h3 {
     background-color: #fff;
     color: #111;
     border: 2px solid #ccc;
-}
-
-.hero-btn.donate {
-    background-color: #ff5722;
-    color: white;
-    font-weight: bold;
 }
 
 /* Hover effects */
@@ -435,20 +427,24 @@ h2, h3 {
     padding: 2em;
 }
 
+.modal-backdrop {
+    z-index: 1040;
+}
+
+.modal {
+    z-index: 1050;
+}
+
 .modal-content {
     background: transparent;
     border: none;
     box-shadow: none;
-    /* gives it a modal feel */
-    border-radius: 12px;
-    overflow: hidden;
 }
 
 .modal.show {
     display: flex !important;
     align-items: center;
     justify-content: center;
-    z-index: 1050;
 }
 
 /* Ensure modal overlay behaves like a true modal */
@@ -461,6 +457,13 @@ h2, h3 {
 .modal-dialog {
     max-width: 900px;
     margin: auto;
+}
+
+.modal-content {
+    background: rgba(0, 0, 0, 0.85);  /* gives it a modal feel */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* Optional background fix */
@@ -488,10 +491,36 @@ h2, h3 {
     height: 100%;
 }
 
+.hero-content {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: white;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.4);
+    padding: 1em;
+    border-radius: 10px;
+}
+.hero-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
 .hero-buttons a,
 .hero-buttons button {
     margin: 0.5rem;
 }
+
+.modal.show {
+    display: flex !important;
+    z-index: 1050;
+}
+
+.modal-backdrop {
+    z-index: 1040 !important;
+}
+
 
 nav, .menu-bar, .menu-container {
     position: relative;
@@ -514,6 +543,16 @@ nav, .menu-bar, .menu-container {
     height: auto;
 }
 
+nav {
+    width: 250px;
+    min-width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    flex-shrink: 0;
+}
+
 .footer .fa {
     width: 44px;
     height: 44px;
@@ -528,14 +567,42 @@ nav, .menu-bar, .menu-container {
     margin: 0 6px;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 .container {
     display: flex;
-    /*flex: 1;
-    */
-    flex-direction: row;
-    height: 100%;
+    /*flex-direction: row;*/
+    height: calc(100vh - 60px);
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 240px;
+    background: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    flex-shrink: 0;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+nav {
+    width: 250px;
+    min-width: 250px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 main, #content {
@@ -544,3 +611,364 @@ main, #content {
     box-sizing: border-box;
     max-width: 1200px;
 }
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #f8f8ff;
+    overflow-y: auto;
+    padding: 20px 0;
+    z-index: 10;
+}
+
+#content {
+    margin-left: 220px;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+/* Make hero image full width and responsive */
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hero-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5); /* Darkens image for text readability */
+}
+
+/* Overlay text container */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+    font-size: 1.8em;
+    line-height: 1.4em;
+}
+
+/* Make sure the sidebar is fixed to the left */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f4f4fa;
+    padding-top: 70px;
+    z-index: 10;
+}
+
+/* Push content over */
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+/* Footer spacing */
+footer {
+    margin-left: 200px;
+    padding: 10px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+/* Fix buttons in footer */
+.footer-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background: #eee;
+}
+
+.footer-icons a img {
+    vertical-align: middle;
+    max-width: 20px;
+}
+
+/* Fix brightness and legibility of the existing hero image */
+#hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(0.45); /* darkens just enough to read text */
+}
+
+/* Fix overlay text visibility */
+#hero .overlayText {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+    text-align: center;
+    z-index: 2;
+    font-size: 1.5rem;
+    line-height: 1.4em;
+}
+
+/* Fix buttons on hero */
+#hero .overlayText .button {
+    background-color: #00f0ff;
+    color: black;
+    padding: 10px 16px;
+    margin: 6px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#hero .overlayText .button:hover {
+    background-color: #00b3cc;
+}
+
+/* Optional: Add dismiss button visibility */
+#hero .overlayText .dismiss {
+    background-color: yellow;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #000000;
+    color: white;
+}
+
+.fa-twitter::before {
+    content: "X";
+    font-size: 1.2em;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-rumble {
+    background: #86c742;
+    color: white;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    box-sizing: unset;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+header .nav-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+header .nav-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #333;
+}
+
+nav a {
+    display: block;
+    padding: 10px 15px;
+    margin: 6px 0;
+    text-decoration: none;
+    color: #222;
+    border-radius: 5px;
+    background: #e4e4e4;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a.active, nav a:hover, nav a:focus, nav a[data-current="true"] {
+    background: #333;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 100%;
+    visibility: hidden;
+}
+
+.ad-space {
+    width: 200px;
+    flex-shrink: 0;
+}
+
+footer {
+    text-align: center;
+    background-color: #f4f4f4;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 60px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28%255, %255, %255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f4f4f4;
+    color: #333;
+    align-items: center;
+}
+.footer a {
+    text-decoration: none;
+}
+.copyright {
+    color: #333;
+    flex-grow: 1;
+    text-align: center;
+}
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+}
+.copyright a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+.copyright a:hover {
+    text-decoration: underline;
+}
+.fa {
+    font-size: 20px;
+}
+.gofundme-footer-button {
+    width: 150px;              /* adjust to fit your footer spacing */
+    height: 40px;
+    overflow: hidden;
+    margin-right: 10px;        /* optional: spacing between social icons */
+    display: inline-block;
+    vertical-align: middle;
+}
+.gofundme-footer-button iframe {
+    max-width: 150px !important;
+    height: 40px;
+    border: none;
+}
+
+/* Donate button styled to match footer icons */
+.donate-button {
+    display: inline-block;
+    background-color: #f57c00; /* same vibrant orange */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 12px; /* Rounded rectangle */
+    font-family: sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border: none;
+    margin: 0 12px;
+}
+
+/* Hover effect like the icon buttons */
+.donate-button:hover {
+    background-color: #e06200;
+    text-decoration: none;
+}
+
