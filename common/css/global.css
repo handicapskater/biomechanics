@@ -26,14 +26,17 @@ body, td {
 }
 
 .content-container {
-    background-color: #f4f4f4 !important;
-    font-family: inherit;
-    padding: 1em;
-    font-size: 16px;
-    line-height: 1.6;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+    /*background-color: #f4f4f4 !important;*/
+    /*font-family: inherit;*/
+    /*padding: 1em;*/
+    /*font-size: 16px;*/
+    /*line-height: 1.6;*/
+    /*background: #fff;*/
+    /*border-radius: 8px;*/
+    /*box-shadow: 0 0 10px rgba(0,0,0,0.05);*/
 }
 
 .page-title {
@@ -575,11 +578,26 @@ body, html {
 
 .container {
     display: flex;
-    /*flex: 1;*/
-    flex-direction: row;
-    height: 100%;
+    /*flex-direction: row;*/
+    height: calc(100vh - 60px);
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 240px;
+    background: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    flex-shrink: 0;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 nav {
