@@ -36,6 +36,9 @@ window.work = "<span id=\"work\" class=\"def\" onmouseover=\"return overlib('The
 
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("span[id]").forEach(span => {
+        if (span.closest('#menu'))
+            return;
+
         const id = span.id;
         const fullSpan = window[id];
         if (typeof fullSpan === "string" && fullSpan.includes("<span")) {
@@ -44,3 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+// Run once on initial load
+document.addEventListener("DOMContentLoaded", applyTooltips);
+
+// Export for reuse
+window.applyTooltips = applyTooltips;
