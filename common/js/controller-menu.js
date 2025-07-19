@@ -58,6 +58,9 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
             .then(html => {
                 const container = document.getElementById("content");
                 container.innerHTML = html;
+                // Re-run tooltips safely — excludes menu
+                if (typeof window.applyTooltips === 'function')
+                    window.applyTooltips();
 
                 // Re-run script tags
                 const scripts = container.querySelectorAll("script");
@@ -73,6 +76,8 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
 
                 // ✅ Run tooltip replacement logic again
                 container.querySelectorAll("span[id]").forEach(span => {
+                    if (span.closest('#menu'))
+                        return;
                     const id = span.id;
                     const fullSpan = window[id];
                     if (typeof fullSpan === "string" && fullSpan.includes("<span")) {
@@ -117,9 +122,14 @@ window.addEventListener("load", function () {
             .then(response => response.text())
             .then(html => {
                 container.innerHTML = html;
+                // Re-run tooltips safely — excludes menu
+                if (typeof window.applyTooltips === 'function')
+                    window.applyTooltips();
 
                 // 🔁 ADD THIS HERE: Re-run tooltip logic
                 container.querySelectorAll("span[id]").forEach(span => {
+                    if (span.closest('#menu'))
+                        return;
                     const id = span.id;
                     const fullSpan = window[id];
                     if (typeof fullSpan === "string" && fullSpan.includes("<span")) {
@@ -140,3 +150,36 @@ window.addEventListener("hashchange", function () {
         scope.$apply();
     }
 });
+
+window.loadPage = function (page) {
+    const container = document.getElementById("content");
+    fetch(page)
+        .then(response => response.text())
+        .then(html => {
+            container.innerHTML = html;
+            // Re-run tooltips safely — excludes menu
+            if (typeof window.applyTooltips === 'function')
+                window.applyTooltips();
+
+            // Tooltip replacement logic
+            container.querySelectorAll("span[id]").forEach(span => {
+                if (span.closest('#menu'))
+                    return;
+                const id = span.id;
+                const fullSpan = window[id];
+                if (typeof fullSpan === "string" && fullSpan.includes("<span")) {
+                    span.outerHTML = fullSpan;
+                }
+            });
+
+            injectTooltips();
+
+            // Dismiss modal if it's open
+            const heroModal = document.getElementById("heroModal");
+            if (heroModal) {
+                heroModal.style.display = "none";
+                document.body.classList.remove("modal-open");
+                document.body.style.overflow = "auto";
+            }
+        });
+};

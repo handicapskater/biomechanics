@@ -42,6 +42,11 @@ function imageLink(id, imageUrl, alignment = "center") {
 }
 
 function loadVideo(videoUrl) {
+	const container = document.getElementById("videoContainer");
+	container.innerHTML = `<iframe width="560" height="315" src="${videoUrl}" frameborder="0" allowfullscreen></iframe>`;
+}
+
+function loadVideo2(videoUrl) {
 	const container = document.getElementById('videoContainer');
 	container.innerHTML = ''; // Clear previous video
 
@@ -91,6 +96,27 @@ function loadVideo(videoUrl) {
 	if (overlay) overlay.style.display = "none";
 
 	videoElement.scrollIntoView({ behavior: 'smooth' });
+}
+
+// Make loadPage globally available
+function loadPage(page) {
+	const scope = angular.element(document.querySelector('[ng-controller="MenuController"]')).scope();
+	scope.$apply(() => {
+		scope.setMenuItem({ name: page.replace('.htm', ''), page: page });
+	});
+
+	// Hide hero modal if visible
+	const heroModal = document.getElementById("heroModal");
+	if (heroModal) {
+		heroModal.style.display = "none";
+		document.body.classList.remove("modal-open");
+		document.body.style.overflow = "auto"; // restore scroll
+	}
+}
+
+// Make loadVideo globally available
+function loadVideo(url) {
+	window.open(url, '_blank');
 }
 
 // Re-run queued imageLinks after load
