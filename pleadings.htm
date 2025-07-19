@@ -1,56 +1,427 @@
-<h1>Legal Pleadings</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="description" content="HandicapSkater advocates for mobility equality, using AI and biomechanics to validate prosthetic skating for health, driving, and ADA reform.">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>-->
+  <title>HandicapSkater Biomechanics</title>
+  <meta content="Handicap Skater, Handicap Mobility, Disabled Access, HandicapSkater Biomechanics, RollerGracie" name="keywords"/>
+  <meta content="HandicapSkater is innovating the use of skates as a non-ballistic mobility aid. Help support this evolutionary advance in mobility for the disabled." name="description"/>
+  <meta content="handicapskater@mindspring.com" name="author"/>
+  <meta content="index, nofollow" name="robots"/>
+  <link rel="icon" href="common/images/favicon.ico" type="image/x-icon">
+  <link href="common/css/global.css" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4GeErB6r2i1Jc9p6PRbJ98hKQF1X+6d9lvY5bk4e7w+FxTDC6eXyTr/Of" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" integrity="sha384-pzjw8f+ua7Kw1T+SkI2jv8Bmk+JdHl/Y+6J/x2bY/uDvhIbXENzDzTDUcXz4cF1V" crossorigin="anonymous">
+  <script src="common/js/angular.js"></script>
+  <script src="common/js/global.js"></script>
+  <script src="common/js/model-tooltips.js"></script>
+  <script src="common/js/model-menu.js"></script>
+  <script src="common/js/controller-menu.js"></script>
+  <script src="common/js/overlib_mini.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <style>
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+    }
 
-<section>
-  <details open>
-    <summary>Legend</summary>
-    <div class="legend-box">
-      <ul>
-        <li><span class="legend-label ada">ADA Violation</span> - Legal ADA violations and denials.</li>
-        <li><span class="legend-label facts">Quotes</span> - Extracted documentation quotes.</li>
-        <li><span class="legend-label sci">Scientific Fact</span> - Scientific or biometric basis.</li>
-        <li><span class="legend-label prec">Legal</span> - Legal citation or court precedent.</li>
-      </ul>
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .fa-twitter {
+      background: #000000;
+      color: white;
+    }
+
+    .fa-twitter::before {
+      content: "X";
+      font-size: 1.2em;
+    }
+
+    .fa-youtube {
+      background: #bb0000;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+
+    .fa-rumble {
+      background: #86c742;
+      color: white;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      box-sizing: unset;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    header, footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #f4f4f4;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+
+    header .nav-toggle {
+      display: none;
+      cursor: pointer;
+    }
+
+    header .nav-toggle .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      background-color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    nav a {
+      display: block;
+      padding: 10px 15px;
+      margin: 6px 0;
+      text-decoration: none;
+      color: #222;
+      border-radius: 5px;
+      background: #e4e4e4;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav a.active, nav a:hover, nav a:focus, nav a[data-current="true"] {
+      background: #333;
+      color: #fff;
+    }
+
+    /*nav {*/
+    /*    width: 240px;*/
+    /*    background: #f4f4f4;*/
+    /*    padding: 20px;*/
+    /*    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);*/
+    /*    !*box-sizing: border-box;*!*/
+    /*    overflow-y: auto;*/
+    /*}*/
+
+    /*nav ul {*/
+    /*    list-style-type: none;*/
+    /*    padding: 0;*/
+    /*    margin: 0;*/
+    /*}*/
+
+    /*nav li {*/
+    /*    margin-bottom: 10px;*/
+    /*}*/
+
+    /*nav a {*/
+    /*    display: block;*/
+    /*    padding: 10px;*/
+    /*    background: #e4e4f4;*/
+    /*    color: #333;*/
+    /*    text-decoration: none;*/
+    /*    text-align: center;*/
+    /*    border-radius: 5px;*/
+    /*    transition: background 0.3s, color 0.3s;*/
+    /*}*/
+
+    /*nav a:hover, nav a:focus {*/
+    /*    background: #ddd;*/
+    /*    color: #000;*/
+    /*}*/
+
+    /*nav .contact {*/
+    /*    display: block;*/
+    /*    margin-top: 20px;*/
+    /*    padding: 10px;*/
+    /*    text-align: center;*/
+    /*    background: #007BFF;*/
+    /*    color: #fff;*/
+    /*    text-decoration: none;*/
+    /*    border-radius: 5px;*/
+    /*    transition: background 0.3s;*/
+    /*}*/
+
+    /*nav .contact:hover {*/
+    /*    background: #0056b3;*/
+    /*}*/
+
+    main {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .ad {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f4f4f4;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 200px;
+      height: 100%;
+      visibility: hidden;
+    }
+
+    .ad-space {
+      width: 200px;
+      flex-shrink: 0;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #f4f4f4;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      height: 60px;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 0;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .navbar-toggler {
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28%255, %255, %255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #f4f4f4;
+      color: #333;
+      align-items: center;
+    }
+    .footer a {
+      text-decoration: none;
+    }
+    .copyright {
+      color: #333;
+      flex-grow: 1;
+      text-align: center;
+    }
+    .copyright {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      background-color: #f4f4f4;
+      border-top: 1px solid #ddd;
+    }
+    .copyright a {
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .copyright a:hover {
+      text-decoration: underline;
+    }
+    .fa {
+      font-size: 20px;
+    }
+    .gofundme-footer-button {
+      width: 150px;              /* adjust to fit your footer spacing */
+      height: 40px;
+      overflow: hidden;
+      margin-right: 10px;        /* optional: spacing between social icons */
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .gofundme-footer-button iframe {
+      max-width: 150px !important;
+      height: 40px;
+      border: none;
+    }
+
+    /* Donate button styled to match footer icons */
+    .donate-button {
+      display: inline-block;
+      background-color: #f57c00; /* same vibrant orange */
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 12px; /* Rounded rectangle */
+      font-family: sans-serif;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      border: none;
+      margin: 0 12px;
+    }
+
+    /* Hover effect like the icon buttons */
+    .donate-button:hover {
+      background-color: #e06200;
+      text-decoration: none;
+    }
+
+    /* Optional: center the whole footer */
+    .footer .copyright {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      padding: 20px 0;
+    }
+  </style>
+  <link href="common/css/global.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="heroModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="heroModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content bg-transparent border-0 shadow-none">
+
+      <!--                    <div class="modal-header">-->
+      <!--                        <h5 class="modal-title">Welcome to HandicapSkater</h5>-->
+      <!--                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="dismissHero();">-->
+      <!--                            <span aria-hidden="true">&times;</span>-->
+      <!--                        </button>-->
+      <!--                    </div>-->
+      <div class="modal-body p-0">
+        <button type="button" class="close text-white position-absolute" style="top: 10px; right: 20px;" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="hero-content">
+          <h1 class="hero-title">HandicapSkater:<br />Mobility Evolution for Equal Rights</h1>
+          <p class="hero-subtitle">
+            HandicapSkater champions the use of non-standard mobility aids — from skates to adaptive devices —
+            with AI to promote health, independence, and equal access in transportation, employment, and public
+            life — Fight for Equality.
+            <br />
+            <a
+                    href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai"
+                    class="hero-btn btn-danger"
+                    target="_blank"
+                    rel="noopener noreferrer">
+              Donate for Equality
+            </a>
+          </p>
+          <div class="hero-buttons">
+            <a href="#" onclick="loadPage('overview.htm'); return false;" class="hero-btn">Explore the Mission</a>
+            <a href="#" onclick="loadPage('datascience.htm'); return false;" class="hero-btn secondary">See the Data Science</a>
+            <a href="#" onclick="loadPage('pleading.htm'); return false;" class="hero-btn btn-info">Know Your Rights</a>
+            <a href="#" onclick="loadPage('BiomechanicsBasics.htm'); return false;" class="hero-btn btn-dark">Biomechanics in Action</a>
+            <a href="#" onclick="loadPage('datascience.htm'); return false;" class="hero-btn btn-outline-light">Watch the Story</a>
+            <button onclick="dismissHero(); $('#heroModal').modal('hide');" style="margin-top: 1em;">Don't show again</button>
+          </div>
+        </div>
+      </div>
     </div>
-  </details>
-</section>
+  </div>
+</div>
+<header>
+  <!--    <div class="ad ad-space">Ad Space Top Left</div>-->
+  <h1>HandicapSkater Biomechanics</h1>
+  <!--    <div class="ad ad-space">Ad Space Top Right</div>-->
+  <!--    <div class="nav-toggle" id="nav-toggle">-->
+  <!--        <div class="bar"></div>-->
+  <!--        <div class="bar"></div>-->
+  <!--        <div class="bar"></div>-->
+  <!--    </div>-->
+  <div id="fb-root"></div>
+  <script async="" crossorigin="anonymous" defer="" nonce="epJ9hRCi" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0&amp;appId=595532390634587"></script>
+</header>
+<div class="container" ng-controller="MenuController" ng-init="initMenu()">
+  <nav aria-label="Main Navigation" id="menu" width="250px">
+    <ul>
+      <li ng-repeat="item in menu">
+        <a href="" id="{{item.name}}" name="{{item.name}}" ng-click="setMenuItem(item); $event.preventDefault();"
+           ng-class="getActiveClass(item)">
+          {{item.text}}
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main style="flex: 1; display: flex; flex-direction: column; width: 100%; height: 100%;">
+    <div id="content" class="content-container" style="flex-grow: 1; overflow-y: auto; padding: 20px;">
+    </div>
+  </main>
+</div>
+<footer style="border-box: unset">
+  <div class="footer">
+    <div class="copyright">
+      <!--
+                  <div class="gfm-embed" data-url="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai/widget/small?sharesheet=fundraiser sidebar&attribution_id=sl:73265a98-2405-4786-b415-ae0f88938e36"></div>
+                  -->
+      <!--            <a class="donate-button" href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai" target="_blank">Donate Now</a>-->
+      <!--            <script defer="defer" src="https://www.gofundme.com/static/js/embed.js"></script>-->
+      <button onclick="localStorage.removeItem('hideHero'); $('#heroModal').modal('show');">Replay Hero</button>
+      <a class="fa fa-facebook" href="http://www.facebook.com/group.php?gid=44036411369" target="_blank"></a>
+      <a class="fa fa-twitter" href="https://twitter.com/handicapskater" target="_blank"></a>
+      <span style="vertical-align: middle">
+            <script defer="defer" src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+            <script data-counter="bottom" data-id="103320223" type="IN/FollowCompany"></script>
+            </span>
+      <a href="common/copyright.htm" target="_blank">Copyright © 2004 - <script>document.write(new Date().getFullYear())</script></a>
+      <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCv8NPazTzuPxE_YM8-MIReQ" target="_blank"></a>
+      <a class="fa fa-rumble" href="https://rumble.com/c/c-1635644" target="_blank">R</a>
+      <a class="fa fa-instagram" href="https://instagram.com/handicapskater" target="_blank"></a>
+    </div>
+  </div>
+</footer>
+<script>
+  // Toggle the navigation menu
+  document.getElementById('nav-toggle').addEventListener('click', function() {
+    const nav = document.querySelector('nav');
+    if (nav.style.height) {
+      nav.style.height = '';
+    } else {
+      nav.style.height = 'auto';
+    }
+  });
 
-<section id="facts">
-  <h2>Legal Facts</h2>
-  <article>
-    <h3>1986 – Dr. John Clarke, Orthopedic Surgeon</h3>
-    <p class="case-summary">Medical recommendation to avoid ballistic activity and substitute with smoother alternatives.</p>
-    <table class="pleading-table">
-      <tr><th>Category</th><th>Description</th></tr>
-      <tr><td><span class="facts">Quote</span></td><td>“...substituting swimming or cycling for ballistic type activity...”</td></tr>
-      <tr><td><span class="prec">Legal</span></td><td>Initiated use of inline skates in 1991 to reduce impact from walking.</td></tr>
-    </table>
-  </article>
-</section>
+  $scope.getActiveClass = function(item) {
+    return $scope.currentItem === item.name ? 'active' : '';
+  };
+</script>
 
-<section id="precedents">
-  <h2>Key Legal Precedents & Violations</h2>
-  <article>
-    <h3>2007 – DOJ/DOT-FTA Civil Rights Complaint</h3>
-    <p class="case-summary">Mandated ParaTransit and set national standard for new mobility aid evaluation.</p>
-    <table class="pleading-table">
-      <tr><th>Category</th><th>Description</th></tr>
-      <tr><td><span class="prec">Legal Pleading</span></td><td><a href="common/doc/HandicapSkater-Pleading.pdf">Discrimination of HandicapSkater Accessibility</a></td></tr>
-      <tr><td><span class="sci">Ruling</span></td><td>DOJ and DOT-FTA enforced ParaTransit as a reasonable accommodation.</td></tr>
-      <tr><td><span class="prec">Legal</span></td><td>Established biomechanical documentation for non-traditional mobility aid.</td></tr>
-      <tr><td><span class="ada">ADA Violation</span></td><td>15-year refusal of public transit access for valid medical disability.</td></tr>
-    </table>
-  </article>
-</section>
 
-<style>
-  .legend-box { border: 2px solid #000; background: #fff; padding: 10px; width: 100%; max-width: 700px; }
-  .legend-label { padding: 3px 6px; border-radius: 4px; font-weight: bold; }
-  .ada { background-color: #FF033E; color: yellow; }
-  .facts { background-color: yellow; }
-  .sci { background-color: lawngreen; }
-  .prec { background-color: dodgerblue; color: white; }
-  .pleading-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
-  .pleading-table th, .pleading-table td { border: 1px solid #333; padding: 8px; vertical-align: top; }
-  .pleading-table th { background-color: #eee; text-align: left; }
-  .case-summary { font-style: italic; margin: 4px 0; color: #333; }
-</style>
+</body>
+</html>
