@@ -1,427 +1,375 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta name="description" content="HandicapSkater advocates for mobility equality, using AI and biomechanics to validate prosthetic skating for health, driving, and ADA reform.">
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>-->
-  <title>HandicapSkater Biomechanics</title>
-  <meta content="Handicap Skater, Handicap Mobility, Disabled Access, HandicapSkater Biomechanics, RollerGracie" name="keywords"/>
-  <meta content="HandicapSkater is innovating the use of skates as a non-ballistic mobility aid. Help support this evolutionary advance in mobility for the disabled." name="description"/>
-  <meta content="handicapskater@mindspring.com" name="author"/>
-  <meta content="index, nofollow" name="robots"/>
-  <link rel="icon" href="common/images/favicon.ico" type="image/x-icon">
-  <link href="common/css/global.css" rel="stylesheet"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4GeErB6r2i1Jc9p6PRbJ98hKQF1X+6d9lvY5bk4e7w+FxTDC6eXyTr/Of" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" integrity="sha384-pzjw8f+ua7Kw1T+SkI2jv8Bmk+JdHl/Y+6J/x2bY/uDvhIbXENzDzTDUcXz4cF1V" crossorigin="anonymous">
-  <script src="common/js/angular.js"></script>
-  <script src="common/js/global.js"></script>
-  <script src="common/js/model-tooltips.js"></script>
-  <script src="common/js/model-menu.js"></script>
-  <script src="common/js/controller-menu.js"></script>
-  <script src="common/js/overlib_mini.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-  <style>
-    .fa {
-      padding: 20px;
-      font-size: 30px;
-      width: 30px;
-      text-align: center;
-      text-decoration: none;
-      margin: 5px 2px;
-      border-radius: 50%;
-    }
+<title>Legal Pleadings</title>
+<h2 class="page-title">Legal Pleadings</h2>
 
-    .fa:hover {
-      opacity: 0.7;
-    }
-
-    .fa-facebook {
-      background: #3B5998;
-      color: white;
-    }
-
-    .fa-twitter {
-      background: #000000;
-      color: white;
-    }
-
-    .fa-twitter::before {
-      content: "X";
-      font-size: 1.2em;
-    }
-
-    .fa-youtube {
-      background: #bb0000;
-      color: white;
-    }
-
-    .fa-instagram {
-      background: #125688;
-      color: white;
-    }
-
-    .fa-rumble {
-      background: #86c742;
-      color: white;
-    }
-
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      font-family: Arial, sans-serif;
-      box-sizing: unset;
-    }
-
-    body {
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-    }
-
-    header, footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      background-color: #f4f4f4;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      flex-shrink: 0;
-    }
-
-    header .nav-toggle {
-      display: none;
-      cursor: pointer;
-    }
-
-    header .nav-toggle .bar {
-      display: block;
-      width: 25px;
-      height: 3px;
-      margin: 5px auto;
-      background-color: #333;
-    }
-
-    .container {
-      display: flex;
-      flex: 1;
-      overflow: hidden;
-    }
-
-    nav a {
-      display: block;
-      padding: 10px 15px;
-      margin: 6px 0;
-      text-decoration: none;
-      color: #222;
-      border-radius: 5px;
-      background: #e4e4e4;
-      font-weight: bold;
-      transition: background 0.3s, color 0.3s;
-    }
-
-    nav a.active, nav a:hover, nav a:focus, nav a[data-current="true"] {
-      background: #333;
-      color: #fff;
-    }
-
-    /*nav {*/
-    /*    width: 240px;*/
-    /*    background: #f4f4f4;*/
-    /*    padding: 20px;*/
-    /*    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);*/
-    /*    !*box-sizing: border-box;*!*/
-    /*    overflow-y: auto;*/
-    /*}*/
-
-    /*nav ul {*/
-    /*    list-style-type: none;*/
-    /*    padding: 0;*/
-    /*    margin: 0;*/
-    /*}*/
-
-    /*nav li {*/
-    /*    margin-bottom: 10px;*/
-    /*}*/
-
-    /*nav a {*/
-    /*    display: block;*/
-    /*    padding: 10px;*/
-    /*    background: #e4e4f4;*/
-    /*    color: #333;*/
-    /*    text-decoration: none;*/
-    /*    text-align: center;*/
-    /*    border-radius: 5px;*/
-    /*    transition: background 0.3s, color 0.3s;*/
-    /*}*/
-
-    /*nav a:hover, nav a:focus {*/
-    /*    background: #ddd;*/
-    /*    color: #000;*/
-    /*}*/
-
-    /*nav .contact {*/
-    /*    display: block;*/
-    /*    margin-top: 20px;*/
-    /*    padding: 10px;*/
-    /*    text-align: center;*/
-    /*    background: #007BFF;*/
-    /*    color: #fff;*/
-    /*    text-decoration: none;*/
-    /*    border-radius: 5px;*/
-    /*    transition: background 0.3s;*/
-    /*}*/
-
-    /*nav .contact:hover {*/
-    /*    background: #0056b3;*/
-    /*}*/
-
-    main {
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-      padding: 0;
-      margin: 0;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    .ad {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #f4f4f4;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      width: 200px;
-      height: 100%;
-      visibility: hidden;
-    }
-
-    .ad-space {
-      width: 200px;
-      flex-shrink: 0;
-    }
-
-    footer {
-      text-align: center;
-      background-color: #f4f4f4;
-      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      height: 60px;
-    }
-
-    h1 {
-      text-align: center;
-      margin: 0;
-      padding: 10px;
-      width: 100%;
-    }
-
-    .navbar-toggler {
-      border-color: rgba(255, 255, 255, 0.1);
-    }
-    .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28%255, %255, %255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    }
-    .footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background-color: #f4f4f4;
-      color: #333;
-      align-items: center;
-    }
-    .footer a {
-      text-decoration: none;
-    }
-    .copyright {
-      color: #333;
-      flex-grow: 1;
-      text-align: center;
-    }
-    .copyright {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 20px;
-      background-color: #f4f4f4;
-      border-top: 1px solid #ddd;
-    }
-    .copyright a {
-      text-decoration: none;
-      margin: 0 10px;
-    }
-    .copyright a:hover {
-      text-decoration: underline;
-    }
-    .fa {
-      font-size: 20px;
-    }
-    .gofundme-footer-button {
-      width: 150px;              /* adjust to fit your footer spacing */
-      height: 40px;
-      overflow: hidden;
-      margin-right: 10px;        /* optional: spacing between social icons */
-      display: inline-block;
-      vertical-align: middle;
-    }
-    .gofundme-footer-button iframe {
-      max-width: 150px !important;
-      height: 40px;
-      border: none;
-    }
-
-    /* Donate button styled to match footer icons */
-    .donate-button {
-      display: inline-block;
-      background-color: #f57c00; /* same vibrant orange */
-      color: white;
-      font-weight: bold;
-      text-align: center;
-      text-decoration: none;
-      padding: 12px 24px;
-      border-radius: 12px; /* Rounded rectangle */
-      font-family: sans-serif;
-      font-size: 16px;
-      transition: background-color 0.3s ease;
-      border: none;
-      margin: 0 12px;
-    }
-
-    /* Hover effect like the icon buttons */
-    .donate-button:hover {
-      background-color: #e06200;
-      text-decoration: none;
-    }
-
-    /* Optional: center the whole footer */
-    .footer .copyright {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 12px;
-      padding: 20px 0;
-    }
-  </style>
-  <link href="common/css/global.css" rel="stylesheet"/>
-</head>
-<body>
-<div id="heroModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="heroModalTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content bg-transparent border-0 shadow-none">
-
-      <!--                    <div class="modal-header">-->
-      <!--                        <h5 class="modal-title">Welcome to HandicapSkater</h5>-->
-      <!--                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="dismissHero();">-->
-      <!--                            <span aria-hidden="true">&times;</span>-->
-      <!--                        </button>-->
-      <!--                    </div>-->
-      <div class="modal-body p-0">
-        <button type="button" class="close text-white position-absolute" style="top: 10px; right: 20px;" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <div class="hero-content">
-          <h1 class="hero-title">HandicapSkater:<br />Mobility Evolution for Equal Rights</h1>
-          <p class="hero-subtitle">
-            HandicapSkater champions the use of non-standard mobility aids — from skates to adaptive devices —
-            with AI to promote health, independence, and equal access in transportation, employment, and public
-            life — Fight for Equality.
-            <br />
-            <a
-                    href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai"
-                    class="hero-btn btn-danger"
-                    target="_blank"
-                    rel="noopener noreferrer">
-              Donate for Equality
-            </a>
-          </p>
-          <div class="hero-buttons">
-            <a href="#" onclick="loadPage('overview.htm'); return false;" class="hero-btn">Explore the Mission</a>
-            <a href="#" onclick="loadPage('datascience.htm'); return false;" class="hero-btn secondary">See the Data Science</a>
-            <a href="#" onclick="loadPage('pleading.htm'); return false;" class="hero-btn btn-info">Know Your Rights</a>
-            <a href="#" onclick="loadPage('BiomechanicsBasics.htm'); return false;" class="hero-btn btn-dark">Biomechanics in Action</a>
-            <a href="#" onclick="loadPage('datascience.htm'); return false;" class="hero-btn btn-outline-light">Watch the Story</a>
-            <button onclick="dismissHero(); $('#heroModal').modal('hide');" style="margin-top: 1em;">Don't show again</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<h2>Legend</h2>
+<div style="width: 600px; border: 5px solid black; padding: 0px; margin: 0px">
+  <ul class="ol1" style="padding: 5px">
+    <li class="ada" style="list-style: none"><span style="background-color: #FF033E; color: yellow">&nbsp; ADA Violations &nbsp;</span> - legal ADA violations.</li>
+    <li class="facts" style="list-style: none"><span style="background-color: yellow">&nbsp; Quotes from Documents &nbsp;</span> - significant quotes from principals.</li>
+    <li class="sci" style="list-style: none"><span style="background-color: lawngreen">&nbsp; Scientific Fact &nbsp;</span> - relevant scientific facts.</li>
+    <li class="prec" style="list-style: none"><span style="background-color: dodgerblue; color: white">&nbsp; Legal &nbsp;</span> - principled information pertaining to the law.</li>
+  </ul>
 </div>
-<header>
-  <!--    <div class="ad ad-space">Ad Space Top Left</div>-->
-  <h1>HandicapSkater Biomechanics</h1>
-  <!--    <div class="ad ad-space">Ad Space Top Right</div>-->
-  <!--    <div class="nav-toggle" id="nav-toggle">-->
-  <!--        <div class="bar"></div>-->
-  <!--        <div class="bar"></div>-->
-  <!--        <div class="bar"></div>-->
-  <!--    </div>-->
-  <div id="fb-root"></div>
-  <script async="" crossorigin="anonymous" defer="" nonce="epJ9hRCi" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0&amp;appId=595532390634587"></script>
-</header>
-<div class="container" ng-controller="MenuController" ng-init="initMenu()">
-  <nav aria-label="Main Navigation" id="menu" width="250px">
-    <ul>
-      <li ng-repeat="item in menu">
-        <a href="" id="{{item.name}}" name="{{item.name}}" ng-click="setMenuItem(item); $event.preventDefault();"
-           ng-class="getActiveClass(item)">
-          {{item.text}}
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <main style="flex: 1; display: flex; flex-direction: column; width: 100%; height: 100%;">
-    <div id="content" class="content-container" style="flex-grow: 1; overflow-y: auto; padding: 20px;">
-    </div>
-  </main>
-</div>
-<footer style="border-box: unset">
-  <div class="footer">
-    <div class="copyright">
-      <!--
-                  <div class="gfm-embed" data-url="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai/widget/small?sharesheet=fundraiser sidebar&attribution_id=sl:73265a98-2405-4786-b415-ae0f88938e36"></div>
-                  -->
-      <!--            <a class="donate-button" href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai" target="_blank">Donate Now</a>-->
-      <!--            <script defer="defer" src="https://www.gofundme.com/static/js/embed.js"></script>-->
-      <button onclick="localStorage.removeItem('hideHero'); $('#heroModal').modal('show');">Replay Hero</button>
-      <a class="fa fa-facebook" href="http://www.facebook.com/group.php?gid=44036411369" target="_blank"></a>
-      <a class="fa fa-twitter" href="https://twitter.com/handicapskater" target="_blank"></a>
-      <span style="vertical-align: middle">
-            <script defer="defer" src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-            <script data-counter="bottom" data-id="103320223" type="IN/FollowCompany"></script>
-            </span>
-      <a href="common/copyright.htm" target="_blank">Copyright © 2004 - <script>document.write(new Date().getFullYear())</script></a>
-      <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCv8NPazTzuPxE_YM8-MIReQ" target="_blank"></a>
-      <a class="fa fa-rumble" href="https://rumble.com/c/c-1635644" target="_blank">R</a>
-      <a class="fa fa-instagram" href="https://instagram.com/handicapskater" target="_blank"></a>
-    </div>
-  </div>
-</footer>
-<script>
-  // Toggle the navigation menu
-  document.getElementById('nav-toggle').addEventListener('click', function() {
-    const nav = document.querySelector('nav');
-    if (nav.style.height) {
-      nav.style.height = '';
-    } else {
-      nav.style.height = 'auto';
-    }
-  });
-
-  $scope.getActiveClass = function(item) {
-    return $scope.currentItem === item.name ? 'active' : '';
-  };
-</script>
-
-
-</body>
-</html>
+<h2>Legal Facts</h2>
+<ol class="ol1">
+  <li class="li1">Clarke, John P., (January 1986). Smart Corporation Medical Record Copying. Orthopedic Surgeon notes on patient from 1983 through 1986.</li>
+  <table class="ol1" style="border: 2px solid black">
+    <tr>
+      <th style="border: 1px solid black">Category</th>
+      <th style="border: 1px solid black">Description</th>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td class="ol1">I [<span style="background-color: yellow">Dr Clarke, Orthopaedic Surgeon</span>] have suggested that he [Troy] continue with activity as tolerated and that he try <span style="background-color: yellow">substituting swimming or cycling for ballistic type activity</span> such as running.</td>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Precedent&nbsp;</span></td>
+      <td>In 1991, I started using inline skates to eliminate the ballistic motion in walking by transitioning to skating.</td>
+    </tr>
+  </table>
+  <p />
+  <li class="li1">Tselos, Alexander, (July 2000). Target corporate counsel providing a Reasonable Accommodation for mobility aid.</li>
+  <table class="ol1" style="border: 2px solid black">
+    <tr>
+      <th style="border: 1px solid black">Category</th>
+      <th style="border: 1px solid black">Description</th>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec"><nobr>&nbsp;Precedent&nbsp;</nobr></span></td>
+      <td><a href="common/doc/HandicapSkater-Target-RA.pdf" target="_blank">Target corporate counsel, Alex, granting access to store with skates as a mobility aid that is still accepted now in 2023.</a></td>
+    </tr>
+  </table>
+  <p />
+  <li class="li1">Sieger, Matthew, (May 2001). SamTrans Accessible Transit Services. Reply Letter to Reasonable Accommodation request.</li>
+  <table class="ol1" style="border: 2px solid black">
+    <tr>
+      <th style="border: 1px solid black">Category</th>
+      <th style="border: 1px solid black">Description</th>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td class="ol1">I (Matthew Sieger) think that SamTrans management would be open to <span style="background-color: yellow">allowing Mr. Wilkes to wear his roller blades [inline skates] if he were in a wheelchair or power scooter</span>. He could use the wheelchair or scooter to get to and from the bus stops and to travel on the bus. He would then be free to use the roller blades at the various stores from which he has received permission for roller-blading [inline skating]. <span style="background-color: yellow">I would think that use of a wheelchair or scooter would save him from many jolts as well.</span></td>
+    </tr>
+    <tr>
+      <td class="ol1"><span style="background-color: #FF033E; color: yellow"><nobr>&nbsp;ADA Violation&nbsp;</nobr></span></td>
+      <td>SamTrans refusing access with mobility aid and not providing a reasonable accommodation.</td>
+    </tr>
+  </table>
+  <p />
+  <li class="li1">Sano, Akira, (October 2003). DOT-FTA Office of Civil Rights. Refusal Letter of mobility aid.</li>
+  <table class="ol1" style="border: 2px solid black">
+    <tr>
+      <th style="border: 1px solid black">Category</th>
+      <th style="border: 1px solid black">Description</th>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td class="ol1"><span style="background-color: yellow">Your choice of mobility device</span>, albeit one that suits your personal needs, does not fit the definition of "common wheelchair" as defined by thge Department of Transfportation's ADA regulation and therefore <span style="background-color: yellow">does not need to be accommodated as one.</span></td>
+    </tr>
+    <tr>
+      <td><span class="ada">&nbsp;<nobr>ADA Violation</nobr>&nbsp;</span></td>
+      <td>DOT-FTA's not allowing mobility aid nor providing a reasonable accommodation.</td>
+    </tr>
+  </table>
+  <p />
+  <li class="li1">Wilkes, Troy, (June, 2005). Cisco, Inc approval letter for skate access.</li>
+  <table class="ol1" style="border: 2px solid black">
+    <tr>
+      <th style="border: 1px solid black">Category</th>
+      <th style="border: 1px solid black">Description</th>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Precedent&nbsp;</span></td>
+      <td><a href="common/doc/HandicapSkater-Cisco.pdf" target="_blank">Cisco has given me permission</a> to use my mobility aid around Cisco campus for work.</td>
+    </tr>
+  </table>
+  <p />
+  <li class="li1">San Mateo Judge, (August, 2005). Reasonable Accommodation for courtroom.</li>
+  <table class="ol1" style="border: 2px solid black">
+    <tr>
+      <th style="border: 1px solid black">Category</th>
+      <th style="border: 1px solid black">Description</th>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Precedent&nbsp;</span></td>
+      <td class="ol1"><a href="common/doc/HandicapSkater-SM-RA.pdf" target="_blank">Skate access was granted in the courtroom.</a></td>
+    </tr>
+  </table>
+  <p />
+  <li class="li1">Smetanka, Nancy, (September, 2005). San Francisco International Airport - Manager Customer Service Letter affirming skate access.</li>
+  <table class="ol1" style="border: 2px solid black">
+    <tr>
+      <th style="border: 1px solid black">Category</th>
+      <th style="border: 1px solid black">Description</th>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td class="ol1">He (Troy) has <span style="background-color: yellow">successfully navigated the Airport including airline-security checkpoints, operated by TSA, while on skates</span></span> with no disruption of normal Airport operations.</td>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Precedent&nbsp;</span></td>
+      <td>San Francisco International Airport has given me <a href="common/doc/HandicapSkater-SFO-Approval.pdf" target="_blank">permission to use my mobility aid around airport</a> to/from boarding planes.</td>
+    </tr>
+  </table>
+  <p />
+  <li class="li1">O'Brien, Catherine C., (March, 2006). US DOJ letter requiring DOT-FTA to address a reasonable accommodation for skates on public transit.</li>
+  <table class="ol1" style="border: 2px solid black">
+    <tr>
+      <th style="border: 1px solid black">Category</th>
+      <th style="border: 1px solid black">Description</th>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Precedent&nbsp;</span></td>
+      <td><a href="common/doc/HandicapSkater-DOJ.pdf" target="_blank">US DOJ has pressured the DOT-FTA to mandate BART to give me permission</a> to provide a reasonable accommodation for refusing access for the last 15 years.</td>
+    </tr>
+  </table>
+  <p />
+  <li class="li1">Wilkes, Troy, (June, 2006). Visa, Inc approval letter for skate access.</li>
+  <table class="ol1" style="border: 2px solid black">
+    <tr>
+      <th style="border: 1px solid black">Category</th>
+      <th style="border: 1px solid black">Description</th>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Precedent&nbsp;</span></td>
+      <td><a href="common/doc/HandicapSkater-VISA.pdf" target="_blank">Visa has given me permission</a> to use my mobility aid around Visa campus for work.</td>
+    </tr>
+  </table>
+  <p />
+  <li class="li1">Adams, Nicole O., (November, 2006). San Francisco Superior Court granting reasonable accommodation for the use of skates in the courtroom as a mobility aid.</li>
+  <table class="ol1" style="border: 2px solid black">
+    <tr>
+      <th style="border: 1px solid black">Category</th>
+      <th style="border: 1px solid black">Description</th>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Precedent&nbsp;</span></td>
+      <td class="ol1"><a href="common/doc/HandicapSkater-SF-RA.pdf" target="_blank">Skate access was granted in the courtroom.</a></td>
+    </tr>
+  </table>
+  <p />
+  <li class="li1">Klein, Jonathon, (March, 2007). US DOJ letter requiring DOT-FTA to address BART providing a reasonable accommodation for skates on public transit.</li>
+  <table class="ol1" style="border: 2px solid black">
+    <tr>
+      <th style="border: 1px solid black">Category</th>
+      <th style="border: 1px solid black">Description</th>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Precedent&nbsp;</span></td>
+      <td>Violation of TItle II of Americans with Disabilitiies Act of 1990 (ADA) and the Department of Transportation (DOT) implementing regulations at 49 CFR Parts 27, 37, and 38.</td>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Precedent&nbsp;</span></td>
+      <td>A public entity shall make reasonable modifications in policies, practices, or procedures when the modifications are necessary to avoid discrimination on the basis of disability..." 28 CFR / 35.130(b)(7)</td>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Precedent&nbsp;</span></td>
+      <td>BART's argument that reasonable accommodation is not required because it would be contrary to the California Penal Code's prohibition of roller skates in transit facilities is incorrect on its face. Simililarly, BART's contention that it has no obligation to make reasonable modification "to accommodate the needs of one passenger" is incorrect.</td>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Precedent&nbsp;</span></td>
+      <td><a href="common/doc/HandicapSkater-DOT-FTA.pdf" target="_blank">DOJ pressures DOT-FTA to oversee a reasonable accommodation</a> for the use of my mobility aid with BART.</td>
+    </tr>
+  </table>
+  <p />
+  <li class="li1">Forgaard, Eric, (March, 2012). JobTrain - Director of Administrative Services where I was mandated to attend a seminar and harassed.</li>
+  <table class="ol1" style="border: 2px solid black">
+    <tr>
+      <th style="border: 1px solid black">Category</th>
+      <th style="border: 1px solid black">Description</th>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Precedent&nbsp;</span></td>
+      <td class="ol1"><a href="common/doc/HandicapSkater-JobTrain.pdf" target="_blank">Mr. Forgaard replied with this letter affirming skate access.</a></td>
+    </tr>
+  </table>
+  <p />
+  <li class="li1">Cornerstone Properties Admin, (June, 2013). Management addresses Parking Lot Harassment.</li>
+  <table class="ol1" style="border: 2px solid black">
+    <tr>
+      <th style="border: 1px solid black">Category</th>
+      <th style="border: 1px solid black">Description</th>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Precedent&nbsp;</span></td>
+      <td class="ol1"><a href="common/doc/HandicapSkater-SaaS-Parking.pdf" target="_blank">My motorcycle with a handicap plate was being targetted with harassment.</a></td>
+    </tr>
+  </table>
+  <p />
+  <li class="li1">Wilkes, Troy (2022). Using a wearable fitness tracker, I was able to document activities and my corresponding heart rate.</li>
+  <table class="ol1" style="border: 2px solid black">
+    <tr>
+      <th style="border: 1px solid black">Category</th>
+      <th style="border: 1px solid black">Description</th>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Precedent&nbsp;</span></td>
+      <td>I was able to <a href="common/doc/HeartRateData-ManualLabor.pdf" target="_blank">show my heart rate escalate</a> while walking, bending down and other manual labor tasks.</td>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Precedent&nbsp;</span></td>
+      <td>I was able to <a href="common/doc/HeartRateData-PhysicalTherapy.pdf" target="_blank">show my heart rate regulated</a> while skating, showing the necessity of using skates.</td>
+    </tr>
+  </table>
+</ol>
+<h2>Legal Precedents/Violatioons</h2>
+<ol class="ol1">
+  <li class="li1" id="smlas">2004 (ADA Title II Public Transit) - San Mateo Legal Aid Society (SMLAS) BART Reasonable Accommodation Request</li>
+  <table class="ol1" style="border: 2px solid black">
+    <tr>
+      <th style="border: 1px solid black">Category</th>
+      <th style="border: 1px solid black">Description</th>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Legal Pleading&nbsp;</span></td>
+      <td class="ol1">SMLAS submitted a reasonable accommodation request for mobility aid.</td>
+    </tr>
+    <tr>
+      <td class="ol1"><span style="background-color: #FF033E; color: yellow">&nbsp;ADA Violation&nbsp;</span></td>
+      <td>BART refused citing state law.&nbsp;&nbsp;<a href="common/doc/BART-ADA-Refusal.pdf" target="_blank">BART Refusal Letter</a></td>
+    </tr>
+  </table>
+  <p />
+  <li class="li1" id="smctp">2005 (ADA Title II Public Transit) - San Mateo Country Transit Police v. Troy Wilkes (HandicapSkater)</li>
+  <table class="ol1" style="border: 2px solid black; table-layout: auto">
+    <tr>
+      <th style="border: 1px solid black">Category</th>
+      <th style="border: 1px solid black">Description</th>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Civil Disobedience&nbsp;</span></td>
+      <td>Boarded CalTrain with mobility aid to bring attention to this ADA issue.</td>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Legal Pleading&nbsp;</span></td>
+      <td><a href="common/doc/HandicapSkater-Pleading.pdf" target="_blank">Discrimination of HandicapSkater Accessibility</a></td>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="sci">&nbsp;Ruling&nbsp;</span></td>
+      <td><a href="#">Dismissal in the Interests of Justice</a></td>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Precedent&nbsp;</span></td>
+      <td>Requested and approved to use inline skates as a mobility aid in a San Mateo courtroom.</td>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="ada">&nbsp;ADA Violation&nbsp;</span></td>
+      <td>Declared in Legal Pleading, that I was relegated to riding a motorcycle with skates, since I cannot access Public Transit to get to work.</td>
+    </tr>
+  </table>
+  <p />
+  <li class="li1" id="sftp">2007 (ADA Title II Public Transit) - San Francisco Transit Police v. Troy Wilkes (HandicapSkater)</span></li>
+  <table class="ol1" style="border: 2px solid black">
+    <tr>
+      <th style="border: 1px solid black">Category</th>
+      <th style="border: 1px solid black">Description</th>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Civil Disobedience&nbsp;</span></td>
+      <td>Boarded BART with mobility aid to bring attention to this ADA issue.</td>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Legal Pleading&nbsp;</span></td>
+      <td>Refer to <a href="common/doc/HandicapSkater-Pleading.pdf" target="_blank">Discrimination of HandicapSkater Accessibility</a>.</td>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="sci">&nbsp;Ruling&nbsp;</span></td>
+      <td>Dismissal in the Interests of Justice</td>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Precedent&nbsp;</span></td>
+      <td>Used skate precedent from San Mateo courtroom in San Francisco courtroom.</td>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="ada">&nbsp;ADA Violation&nbsp;</span></td>
+      <td>Declared in Legal Pleading, that I was relegated to riding a motorcycle with skates, since I cannot access Public Transit to get to work.</td>
+    </tr>
+  </table>
+  <p />
+  <li class="li1" id="dotfta">2007 (ADA Title V Miscellaneous Provisions) - DOJ/DOT-FTA Civil Rights Complaint for Troy Wilkes (HandicapSkater)</span></li>
+  <table class="ol1" style="border: 2px solid black">
+    <tr>
+      <th style="border: 1px solid black">Category</th>
+      <th style="border: 1px solid black">Description</th>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Legal Pleading&nbsp;</span></td>
+      <td>Refer to <a href="common/doc/HandicapSkater-Pleading.pdf" target="_blank">Discrimination of HandicapSkater Accessibility</a>.</td>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="sci">&nbsp;Ruling&nbsp;</span></td>
+      <td>DOJ and DOT-FTA mandated Public Transit to provide ParaTransit as a reasonable accommodation.</td>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="prec">&nbsp;Precedent&nbsp;</span></td>
+      <td>Set a precedent for Federal Rule making by establishing a standard of having both a doctor and biomechanics expert provide documentation defining a new mobility aid.</td>
+    </tr>
+    <tr>
+      <td class="ol1"><span class="ada">&nbsp;ADA Violation&nbsp;</span></td>
+      <td>Declared in Legal Pleading, that I was relegated to riding a motorcycle with skates, since I cannot access Public Transit to get to work.</td>
+    </tr>
+  </table>
+  <p />
+  <li class="li1" id="cadmv">2019 (ADA Title I Employment - AirBnB) - Troy Wilkes (HandicapSkater) v. EverythingD/Accenture/AirBnB</li>
+  <table class="ol1" style="border: 2px solid black">
+    <tr>
+      <th style="border: 1px solid black">Date</th>
+      <th style="border: 1px solid black">Category</th>
+      <th style="border: 1px solid black">Description</th>
+    </tr>
+    <tr>
+      <td><nobr>January 31,  2019</nobr></td>
+      <td><span class="ada">&nbsp;DFEH Case&nbsp;</span></td>
+      <td><a href="common/DFEH - AirBnB Summary.html">DFEH AirBnB reasonable accommodation case</a></td>
+    </tr>
+    <tr>
+      <td><nobr>June 17, 2022</nobr></td>
+      <td><span class="sci">&nbsp;Ruling&nbsp;</span></td>
+      <td>DFEH finds no discrimination.</td>
+    </tr>
+  </table>
+  <p />
+  <li class="li1" id="cadmv2">2022 (ADA Title V Miscellaneous Provisions - Rehabilitation Act) - CA DMV Driver Safety v. Troy Wilkes (HandicapSkater)</li>
+  <table class="ol1" style="border: 2px solid black">
+    <tr>
+      <th style="border: 1px solid black">Date</th>
+      <th style="border: 1px solid black">Category</th>
+      <th style="border: 1px solid black">Description</th>
+    </tr>
+    <tr>
+      <td><nobr>October 26, 2021</nobr></td>
+      <td><span class="ada">&nbsp;<nobr>ADA Violation</nobr>&nbsp;</span></td>
+      <td>San Mateo PD Officer Julio Jolivette could not write a citation, so falsified a report to the DMV. <a href="common/doc/SMPD-ReexaminationRequest.pdf" target="_blank">DMV Re-evaluation Request</a></td>
+    </tr>
+    <tr>
+      <td><nobr>March 23, 2022</nobr></td>
+      <td><span class="ada">&nbsp;<nobr>ADA Violation</nobr>&nbsp;</span></td>
+      <td>DMV Officer Christine Limpin falsified her report over a phone conversation suspending my license for 3 months. <a href="common/doc/DMV-OrderOfSuspension.pdf" target="_blank">DMV Order of License Suspension</a></td>
+    </tr>
+    <tr>
+      <td><nobr>April 11, 2022</nobr></td>
+      <td><span class="prec">&nbsp;<nobr>Legal Pleading</nobr>&nbsp;</span></td>
+      <td><a href="common/doc/HandicapSkater-Driving-Accommodation-Pleading.pdf" target="_blank">HandicapSkater Driving Accommodation</a></td>
+    </tr>
+    <tr>
+      <td><nobr>April - June, 2022</nobr></td>
+      <td><span class="prec" style="width: 100%">&nbsp;<nobr>Civil Disobedience</nobr>&nbsp;</span></td>
+      <td>Rode motorcycle to Redwood City with a suspended license, as DMV accessibility specialists suggested, to practice the motorcycle lollipop driving test. <a href="https://rumble.com/user/HandicapSkater" target="_blank">Videos demonstrating lollipop progression at Redwood City DMV</a>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><nobr>June, 2022</nobr></td>
+      <td><span class="prec" style="width: 100%">&nbsp;<nobr>Civil Disobedience</nobr>&nbsp;</span></td>
+      <td>Rented a car over the weekend with a suspended license, so I could practice and perform the car driving test.</td>
+    </tr>
+    <tr>
+      <td><nobr>June 17, 2022</nobr></td>
+      <td><span class="sci">&nbsp;<nobr>Ruling</nobr>&nbsp;</span></td>
+      <td><a href="common/doc/DMV-LicenseReinstatement.pdf" target="_blank">Driver's License Reinstated.</a></span></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><span class="prec">&nbsp;Precedent&nbsp;</span></td>
+      <td>Set DMV Precedent for using skates as a mobility aid to ride a motorcycle and drive a car, by passing the required tests.</td>
+    </tr>
+  </table>
+</ol>
