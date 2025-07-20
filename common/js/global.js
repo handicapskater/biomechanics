@@ -238,3 +238,14 @@ function dismissHero() {
 	$('#heroModal').modal('hide');
 	localStorage.setItem('hideHero', 'true');
 }
+
+// Hamburger Menu Toggle
+document.addEventListener("DOMContentLoaded", function () {
+	const toggle = document.getElementById("menu-toggle");
+	const sidebar = document.querySelector(".sidebar");
+	if (toggle && sidebar) {
+		toggle.addEventListener("click", () => {
+			sidebar.classList.toggle("active");
+		});
+	}
+});

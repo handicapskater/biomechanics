@@ -31,51 +31,25 @@
     <script src="common/js/controller-menu.js"></script>
     <script src="common/js/overlib_mini.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-    <link href="common/css/global.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-themed">
 <div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
-<!--<div id="heroModal" class="hero-container" style="display: none;">-->
-<!--    <div class="hero-background">-->
-<!--        <div class="hero-content">-->
-<!--            <button id="closeHero" class="hero-close" aria-label="Close">×</button>-->
-<!--            <h1>HandicapSkater: Revolutionizing Mobility</h1>-->
-<!--            <p>-->
-<!--                Prosthetic skates helped me ride a motorcycle, drive, and move around.<br>-->
-<!--                Skates reduce impact, prevent <span id="pice"></span>, and reverse chronic health conditions.-->
-<!--            </p>-->
-<!--            <div class="hero-links">-->
-<!--                <a class="btn btn-info mx-1" onclick="loadPage('overview.htm'); return false;">Explore the Mission</a>-->
-<!--                <a class="btn btn-primary mx-1" onclick="loadPage('datascience.htm'); return false;">See the Data Science</a>-->
-<!--                <button class="btn btn-dark mx-1" onclick="loadVideo('https://youtu.be/T9-aQNxP1q8')">See the Story</button>-->
-<!--                <a class="btn btn-warning mx-1" target="_blank"-->
-<!--                   href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai">-->
-<!--                    Donate for Equality-->
-<!--                </a>-->
-<!--            </div>-->
-<!--            <div class="mt-3">-->
-<!--                <button id="dismissHeroOnce" class="btn btn-outline-secondary mx-1">Dismiss This Time</button>-->
-<!--                <button id="dismissHero" class="btn btn-outline-secondary mx-1">Don't show again</button>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
 
 <div id="heroModal" class="hero-container" style="display: none;">
     <div class="hero-background">
-        <div class="hero-content p-4 text-center bg-white rounded shadow-lg" style="max-width: 720px; margin: 10vh auto;">
-            <button id="closeHero" class="hero-close btn btn-sm btn-light" aria-label="Close" style="position:absolute; top:10px; right:10px;">×</button>
-
-            <!-- Cropped sharp image (replace this with optimized one) -->
+        <div class="hero-content p-4 text-center rounded shadow-lg" style="position: relative; max-width: 720px; margin: 10vh auto;">
+            <button id="closeHero" class="hero-close" aria-label="Close"
+                    style="position: absolute; top: 0.5rem; right: 0.5rem; z-index: 10; background: transparent; border: none; padding: 0; margin: 0; cursor: pointer;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
             <img src="common/images/HandicapSkater-Hayabusa-Full.gif"
                  alt="Motorcycle with prosthetic skate highlighted"
                  class="hero-img-highlight">
-<!--                 style="width: 100%; height: 260px; object-fit: cover; object-position: center 35%;">-->
-
-<!--                 class="hero-img-crop">-->
-<!--                 style="width: 100%; max-height: 220px; object-fit: cover; object-position: center top;">-->
-<!--                 alt="Motorcycle with red-circled skate"-->
-<!--                 style="width: 100%; height: auto; object-fit: cover; object-position: center bottom; border-radius: 6px; margin-bottom: 1rem; max-height: 280px;">-->
 
             <h2><strong>HandicapSkater: Revolutionizing Mobility</strong></h2>
             <p>Prosthetic skates helped me ride a motorcycle, drive, and move around.</p>
@@ -92,83 +66,11 @@
             </div>
 
             <div class="mt-3">
-                <button id="dismissHeroOnce" class="btn btn-outline-secondary mx-1">Dismiss This Time</button>
                 <button id="dismissHero" class="btn btn-outline-secondary mx-1">Don't show again</button>
             </div>
         </div>
     </div>
 </div>
-
-<!-- Hero Modal Dialog
-<div id="heroModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="heroModalTitle" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-        <div class="modal-content bg-dark text-white text-center">
-            <div class="modal-body p-5">
-                <h1 class="hero-title mb-4">HandicapSkater: Revolutionizing Mobility</h1>
-                <p class="hero-subtitle mb-4">
-                    Prosthetic skates helped me ride a motorcycle, drive, and move around. Skates reduce impact, prevent
-                    <span id="pice"></span>, and reverse chronic health conditions.
-                </p>
-                <div class="hero-buttons mb-4">
-                    <a class="btn btn-info mx-2" onclick="loadPage('overview.htm'); return false;">Explore the Mission</a>
-                    <a class="btn btn-primary mx-2" onclick="loadPage('datascience.htm'); return false;">See the Data Science</a>
-                    <a class="btn btn-warning mx-2" target="_blank"
-                       href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai">
-                        Donate for Equality
-                    </a>
-                    <button class="btn btn-light mx-2 hero-btn dont-show">Don't show again</button>
-                </div>
-                <button type="button" class="close position-absolute" style="top: 10px; right: 15px;"
-                        data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
--->
-<!--<div id="heroModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="heroModalTitle" aria-hidden="true">-->
-<!--    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">-->
-<!--        <div class="modal-content bg-transparent border-0 shadow-none">-->
-
-<!--            &lt;!&ndash;                    <div class="modal-header">&ndash;&gt;-->
-<!--            &lt;!&ndash;                        <h5 class="modal-title">Welcome to HandicapSkater</h5>&ndash;&gt;-->
-<!--            &lt;!&ndash;                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="dismissHero();">&ndash;&gt;-->
-<!--            &lt;!&ndash;                            <span aria-hidden="true">&times;</span>&ndash;&gt;-->
-<!--            &lt;!&ndash;                        </button>&ndash;&gt;-->
-<!--            &lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--            <div class="modal-body p-0">-->
-<!--                <button type="button" class="close text-white position-absolute" style="top: 10px; right: 20px;" data-dismiss="modal" aria-label="Close">-->
-<!--                    <span aria-hidden="true">&times;</span>-->
-<!--                </button>-->
-<!--                <div class="hero-content">-->
-<!--                    <h1 class="hero-title">HandicapSkater:<br />Mobility Evolution for Equal Rights</h1>-->
-<!--                    <p class="hero-subtitle">-->
-<!--                        HandicapSkater champions the use of non-standard mobility aids — from skates to adaptive devices —-->
-<!--                        with AI to promote health, independence, and equal access in transportation, employment, and public-->
-<!--                        life — Fight for Equality.-->
-<!--                        <br />-->
-<!--                        <a-->
-<!--                                href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai"-->
-<!--                                class="hero-btn btn-danger"-->
-<!--                                target="_blank"-->
-<!--                                rel="noopener noreferrer">-->
-<!--                            Donate for Equality-->
-<!--                        </a>-->
-<!--                    </p>-->
-<!--                    <div class="hero-buttons">-->
-<!--                        <a href="#" onclick="loadPage('overview.htm'); return false;" class="hero-btn">Explore the Mission</a>-->
-<!--                        <a href="#" onclick="loadPage('datascience.htm'); return false;" class="hero-btn secondary">See the Data Science</a>-->
-<!--                        <a href="#" onclick="loadPage('pleading.htm'); return false;" class="hero-btn btn-info">Know Your Rights</a>-->
-<!--                        <a href="#" onclick="loadPage('BiomechanicsBasics.htm'); return false;" class="hero-btn btn-dark">Biomechanics in Action</a>-->
-<!--                        <a href="#" onclick="loadPage('datascience.htm'); return false;" class="hero-btn btn-outline-light">Watch the Story</a>-->
-<!--                        <button onclick="dismissHero(); $('#heroModal').modal('hide');" style="margin-top: 1em;">Don't show again</button>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
 <header>
     <!--    <div class="ad ad-space">Ad Space Top Left</div>-->
     <h1>HandicapSkater Biomechanics</h1>
@@ -180,6 +82,9 @@
     <!--    </div>-->
     <div id="fb-root"></div>
     <script async="" crossorigin="anonymous" defer="" nonce="epJ9hRCi" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0&amp;appId=595532390634587"></script>
+    <button id="menu-toggle" aria-label="Toggle Menu" style="position: absolute; left: 1rem; top: 0.75rem; display: none;">
+        <i class="fa fa-bars"></i>
+    </button>
 </header>
 <div class="container" ng-controller="MenuController" ng-init="initMenu()">
     <nav class="sidebar" aria-label="Main Navigation" id="menu">
@@ -193,32 +98,28 @@
         </ul>
     </nav>
     <main class="main-content">
-        <div id="content" class="content-container" style="flex-grow: 1; overflow-y: auto; padding: 20px;">
+        <div id="content" class="content-container bg-themed">
         </div>
     </main>
 </div>
-<footer style="border-box: unset">
-    <div class="footer">
-        <div class="copyright">
-            <!--
-                        <div class="gfm-embed" data-url="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai/widget/small?sharesheet=fundraiser sidebar&attribution_id=sl:73265a98-2405-4786-b415-ae0f88938e36"></div>
-                        -->
-            <!--            <a class="donate-button" href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai" target="_blank">Donate Now</a>-->
-            <!--            <script defer="defer" src="https://www.gofundme.com/static/js/embed.js"></script>-->
-            <button id="replayHero">Replay Hero</button>
-            <a class="fa fa-facebook" href="http://www.facebook.com/group.php?gid=44036411369" target="_blank"></a>
-            <a class="fa fa-twitter" href="https://twitter.com/handicapskater" target="_blank"></a>
-            <span style="vertical-align: middle">
-            <script defer="defer" src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-            <script data-counter="bottom" data-id="103320223" type="IN/FollowCompany"></script>
-            </span>
-            <a href="common/copyright.htm" target="_blank">Copyright © 2004 - <script>document.write(new Date().getFullYear())</script></a>
-            <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCv8NPazTzuPxE_YM8-MIReQ" target="_blank"></a>
-            <a class="fa fa-rumble" href="https://rumble.com/c/c-1635644" target="_blank">R</a>
-            <a class="fa fa-instagram" href="https://instagram.com/handicapskater" target="_blank"></a>
-        </div>
+<footer>
+    <div class="footer d-flex justify-content-center align-items-center flex-wrap p-2">
+        <button id="replayHero" class="btn btn-outline-secondary mx-1">Welcome</button>
+        <a class="fa fa-facebook mx-1" href="http://www.facebook.com/group.php?gid=44036411369" target="_blank"></a>
+        <a class="fa fa-twitter mx-1" href="https://twitter.com/handicapskater" target="_blank"></a>
+        <span style="vertical-align: middle">
+      <script defer src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+      <script data-counter="bottom" data-id="103320223" type="IN/FollowCompany"></script>
+    </span>
+        <a href="common/copyright.htm" target="_blank" class="mx-1">
+            Copyright © 2004 – <script>document.write(new Date().getFullYear())</script>
+        </a>
+        <a class="fa fa-youtube mx-1" href="https://www.youtube.com/channel/UCv8NPazTzuPxE_YM8-MIReQ" target="_blank"></a>
+        <a class="fa fa-rumble mx-1" href="https://rumble.com/c/c-1635644" target="_blank">R</a>
+        <a class="fa fa-instagram mx-1" href="https://instagram.com/handicapskater" target="_blank"></a>
     </div>
 </footer>
+
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const heroModal = document.getElementById("heroModal");
