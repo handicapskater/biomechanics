@@ -47,9 +47,3 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
-// Run once on initial load
-document.addEventListener("DOMContentLoaded", applyTooltips);
-
-// Export for reuse
-window.applyTooltips = applyTooltips;

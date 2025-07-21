@@ -41,7 +41,7 @@
         <div class="hero-content p-4 text-center rounded shadow-lg" style="position: relative; max-width: 720px; margin: 10vh auto;">
             <button id="closeHero" class="hero-close" aria-label="Close"
                     style="position: absolute; top: 0.5rem; right: 0.5rem; z-index: 10; background: transparent; border: none; padding: 0; margin: 0; cursor: pointer;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333"
+                <svg class="svg-close-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333"
                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="18" y1="6" x2="6" y2="18" />
                     <line x1="6" y1="6" x2="18" y2="18" />
@@ -73,7 +73,7 @@
 </div>
 <header>
     <!--    <div class="ad ad-space">Ad Space Top Left</div>-->
-    <h1>HandicapSkater Biomechanics</h1>
+    <h1><span class="small-caps">HandicapSkater</span> Biomechanics</h1>
     <!--    <div class="ad ad-space">Ad Space Top Right</div>-->
     <!--    <div class="nav-toggle" id="nav-toggle">-->
     <!--        <div class="bar"></div>-->
@@ -126,7 +126,6 @@
         const dismissBtn = document.getElementById("dismissHero");
         const closeBtn = document.getElementById("closeHero");
         const replayBtn = document.getElementById("replayHero");
-        const dismissOnceBtn = document.getElementById("dismissHeroOnce");
 
         function hideHero() {
             heroModal.style.display = "none";
@@ -159,7 +158,6 @@
             showHero();
         });
 
-        dismissOnceBtn?.addEventListener("click", hideHero);
     });
 </script>
 </body>
