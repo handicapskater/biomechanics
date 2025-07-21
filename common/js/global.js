@@ -41,10 +41,10 @@ function imageLink(id, imageUrl, alignment = "center") {
 	}
 }
 
-function loadVideo(videoUrl) {
-	const container = document.getElementById("videoContainer");
-	container.innerHTML = `<iframe width="560" height="315" src="${videoUrl}" frameborder="0" allowfullscreen></iframe>`;
-}
+// function loadVideo(videoUrl) {
+// 	const container = document.getElementById("videoContainer");
+// 	container.innerHTML = `<iframe width="560" height="315" src="${videoUrl}" frameborder="0" allowfullscreen></iframe>`;
+// }
 
 function loadVideo2(videoUrl) {
 	const container = document.getElementById('videoContainer');
@@ -105,12 +105,12 @@ function loadPage(page) {
 		scope.setMenuItem({ name: page.replace('.htm', ''), page: page });
 	});
 
-	// Hide hero modal if visible
+	// Dismiss modal if visible
 	const heroModal = document.getElementById("heroModal");
-	if (heroModal) {
+	if (heroModal && heroModal.style.display !== "none") {
 		heroModal.style.display = "none";
 		document.body.classList.remove("modal-open");
-		document.body.style.overflow = "auto"; // restore scroll
+		document.body.style.overflow = "auto"; // Restore scroll
 	}
 }
 
@@ -129,13 +129,9 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 });
 
-if (netscape) {
-	window.captureEvents(Event.MOUSEDOWN | Event.MOUSEUP | Event.CONTEXTMENU);
-	window.onmousedown 	 = mouseDown;
-	window.onmouseup	 = mouseUp;
-	window.oncontextmenu = contextMenu;
-} else // if (ie)
-	d.onmousedown = new Function("if (event.button==2 || event.button==3) alert(window.copyright)");
+document.addEventListener("mousedown", mouseDown);
+document.addEventListener("mouseup", mouseUp);
+document.addEventListener("contextmenu", contextMenu);
 
 // Utility Functions
 function ButtonUp(theButton) {
@@ -221,15 +217,40 @@ function replayHero() {
 	$('#heroModal').modal('show');
 }
 
+// function replayHero() {
+// 	localStorage.removeItem("heroModalShown");
+// 	localStorage.removeItem("hideHero");
+//
+// 	const modal = document.getElementById("heroModal");
+// 	if (modal) {
+// 		modal.style.display = "block";
+// 		modal.setAttribute("aria-hidden", "false");
+// 		document.body.classList.add("modal-open");
+// 		document.body.style.overflow = "hidden";
+// 	}
+// }
+
+// document.addEventListener('DOMContentLoaded', function () {
+// 	const alreadyShown = localStorage.getItem('heroModalShown');
+// 	if (!alreadyShown) {
+// 		try {
+// 			$('#heroModal').modal('show');
+// 		} catch (e) {
+// 			console.warn("Modal fallback", e);
+// 		}
+// 		localStorage.setItem('heroModalShown', 'true');
+// 	}
+// });
+
 document.addEventListener('DOMContentLoaded', function () {
-	const alreadyShown = localStorage.getItem('heroModalShown');
-	if (!alreadyShown) {
-		try {
-			$('#heroModal').modal('show');
-		} catch (e) {
-			console.warn("Modal fallback", e);
+	const hideHero = localStorage.getItem('hideHero');
+
+	if (hideHero !== 'true') {
+		const heroModal = document.getElementById("heroModal");
+		if (heroModal) {
+			heroModal.style.setProperty("display", "block", "important");
+			heroModal.setAttribute("aria-hidden", "false");
 		}
-		localStorage.setItem('heroModalShown', 'true');
 	}
 });
 
@@ -238,6 +259,18 @@ function dismissHero() {
 	$('#heroModal').modal('hide');
 	localStorage.setItem('hideHero', 'true');
 }
+
+// function dismissHero() {
+// 	const modal = document.getElementById("heroModal");
+// 	if (modal) {
+// 		modal.style.display = "none";
+// 		modal.setAttribute("aria-hidden", "true");
+// 		document.body.classList.remove("modal-open");
+// 		document.body.style.overflow = "auto";
+// 	}
+// 	localStorage.setItem("heroModalShown", "true");
+// 	localStorage.setItem("hideHero", "true");
+// }
 
 // Hamburger Menu Toggle
 document.addEventListener("DOMContentLoaded", function () {
@@ -249,3 +282,4 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}
 });
+

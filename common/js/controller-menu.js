@@ -57,7 +57,8 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
             })
             .then(html => {
                 const container = document.getElementById("content");
-                container.innerHTML = html;
+                // container.innerHTML = html.trimStart();
+                injectPageContent(html);
                 // Re-run tooltips safely — excludes menu
                 if (typeof window.applyTooltips === 'function')
                     window.applyTooltips();
@@ -121,7 +122,8 @@ window.addEventListener("load", function () {
         fetch(page)
             .then(response => response.text())
             .then(html => {
-                container.innerHTML = html;
+                // container.innerHTML = html.trimStart();
+                injectTooltips(html);
                 // Re-run tooltips safely — excludes menu
                 if (typeof window.applyTooltips === 'function')
                     window.applyTooltips();
@@ -151,35 +153,69 @@ window.addEventListener("hashchange", function () {
     }
 });
 
-window.loadPage = function (page) {
+// document.addEventListener("DOMContentLoaded", function () {
+//     window.loadPage = function (page) {
+//         const container = document.getElementById("content");
+//         fetch(page)
+//             .then(response => response.text())
+//             .then(html => {
+//                 // container.innerHTML = html.trimStart();
+//                 injectTooltips(html);
+//                 // Re-run tooltips safely — excludes menu
+//                 if (typeof window.applyTooltips === 'function')
+//                     window.applyTooltips();
+//
+//                 // Tooltip replacement logic
+//                 container.querySelectorAll("span[id]").forEach(span => {
+//                     if (span.closest('#menu'))
+//                         return;
+//                     const id = span.id;
+//                     const fullSpan = window[id];
+//                     if (typeof fullSpan === "string" && fullSpan.includes("<span")) {
+//                         span.outerHTML = fullSpan;
+//                     }
+//                 });
+//
+//                 injectTooltips();
+//
+//                 // Dismiss modal if it's open
+//                 const heroModal = document.getElementById("heroModal");
+//                 if (heroModal) {
+//                     heroModal.style.display = "none";
+//                     document.body.classList.remove("modal-open");
+//                     document.body.style.overflow = "auto";
+//                 }
+//             });
+//     };
+// });
+
+function injectPageContent(html) {
     const container = document.getElementById("content");
-    fetch(page)
-        .then(response => response.text())
-        .then(html => {
-            container.innerHTML = html;
-            // Re-run tooltips safely — excludes menu
-            if (typeof window.applyTooltips === 'function')
-                window.applyTooltips();
 
-            // Tooltip replacement logic
-            container.querySelectorAll("span[id]").forEach(span => {
-                if (span.closest('#menu'))
-                    return;
-                const id = span.id;
-                const fullSpan = window[id];
-                if (typeof fullSpan === "string" && fullSpan.includes("<span")) {
-                    span.outerHTML = fullSpan;
-                }
-            });
+    container.innerHTML = `<div class="injected-page">${html.trimStart()}</div>`;
 
-            injectTooltips();
+    // ✅ Reset scroll positions
+    window.scrollTo(0, 0);
+    container.scrollTop = 0;
+    if (container.parentElement) container.parentElement.scrollTop = 0;
 
-            // Dismiss modal if it's open
-            const heroModal = document.getElementById("heroModal");
-            if (heroModal) {
-                heroModal.style.display = "none";
-                document.body.classList.remove("modal-open");
-                document.body.style.overflow = "auto";
+    // ✅ Scroll iframe edge case: force reflow
+    // container.style.display = 'none';
+    // void container.offsetHeight; // force reflow
+    // container.style.display = '';
+
+    // ✅ Re-apply tooltips
+    if (typeof window.applyTooltips === 'function') window.applyTooltips();
+
+    container.querySelectorAll("span[id]").forEach(span => {
+        if (!span.closest('#menu')) {
+            const id = span.id;
+            const fullSpan = window[id];
+            if (typeof fullSpan === "string" && fullSpan.includes("<span")) {
+                span.outerHTML = fullSpan;
             }
-        });
-};
+        }
+    });
+
+    injectTooltips();
+}
