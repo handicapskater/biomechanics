@@ -7,12 +7,24 @@
     --padding: 16px;
 
     --dark-bg: #0c1c2c;
-    --content-bg: #f5f0e6;
-    --gold: #d4af37;
     --text-light: #ffffff;
-    --text-dark: #222222;
     --accent: #c89b3c;
     --shadow: rgba(0, 0, 0, 0.5);
+
+    /* Soft Sky & Charcoal - Clean modern look that doesn't strain the eyes. */
+    /*--content-bg: #eef4f9;*/
+    /*--text-dark: #2e3440;*/
+    /*--gold: #e0b200;*/
+
+    /* Pearl & Gunmetal - Simple and subtle with elegance. */
+    /*--content-bg: #f7f7f7;*/
+    /*--text-dark: #232323;*/
+    /*--gold: #dab600;*/
+
+    --content-bg: #E8EFF5;
+    --text-dark: #0F172A;
+    --gold: #e0b200;
+
 }
 
 /*****ACCEPTED BEGIN*************************************************/
@@ -393,7 +405,7 @@ footer button:hover {
 /* Overview Styling */
 .image-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* space-between; */
     flex-wrap: wrap; /* ensures they stack on mobile */
     margin-bottom: 1rem;
     gap: 1rem;
@@ -425,14 +437,89 @@ footer button:hover {
 }
 
 .caption {
-    font-weight: bold;
+    /*font-weight: bold;*/
     margin-bottom: 0.25rem;
 }
+
+.inline-years {
+    display: inline;
+    font-weight: bold;
+}
+
 /* Biomechanics Styling */
 .image-row img.three-column {
     max-width: 100%;
     height: auto;
     width: 31%; /* Display side-by-side on desktop */
+}
+
+.image-row .uniform {
+    flex: 1 1 48%;
+    max-width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-row .uniform .image-container {
+    aspect-ratio: 1 / 1;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-row .uniform .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.comparison-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.comparison-block {
+    flex: 1 1 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f5f5f8;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.image-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.caption {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.caption span {
+    color: #0047AB; /* blue highlights */
+    font-weight: bold;
 }
 
 /* Conclusion */
@@ -451,9 +538,39 @@ footer button:hover {
     object-fit: contain;
 }
 
+.comparison-block {
+    padding: 1rem;
+    /*background-color: #e9f1f7; !* Cloud Blue *!*/
+    background-color: #f4f4f4; /* Pearl Gray */
+
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.caption {
+    padding-bottom: 0.5rem;
+}
+
+.image-wrapper {
+    margin: 0 auto;
+    padding: 0;
+    max-height: 260px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.comparison-container {
+    margin-bottom: 0; /* trim excess space below */
+}
+
 .image-container.flipped img {
     transform: scaleX(-1);
 }
+
 /*****ACCEPTED END***************************************************/
 
 
