@@ -48,6 +48,11 @@ angular.module('menuApp', []).controller('MenuController', function($scope) {
     };
 
     $scope.setMenuItem = function(item) {
+        if (item.url) {
+            window.location.href = item.url;
+            return;
+        }
+
         $scope.currentItem = item.name;
 
         fetch(item.page)

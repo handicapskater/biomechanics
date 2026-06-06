@@ -1,4 +1,5 @@
 menuData = [
+        { name: 'home', page: 'overview.htm', text: 'Home' },
         { name: 'overview', page: 'overview.htm', text: 'Overview' },
         { name: 'injury', page: 'background.htm', text: 'Injuries' },
         { name: 'pain', page: 'pain.htm', text: 'Pain' },
@@ -7,6 +8,8 @@ menuData = [
         { name: 'skating', page: 'skating.htm', text: 'Skating' },
         { name: 'running', page: 'running.htm', text: 'Running' },
         { name: 'data-science', page: 'datascience.htm', text: 'Data Science' },
+        { name: 'com-platform', url: '/health-ai.html#commercial-platform', text: '.com Platform' },
+        { name: 'org-standards', url: '/health-ai.html#nonprofit-standards', text: '.org Standards' },
         // { name: 'pleadings', page: 'pleadings.htm', text: 'Legal' },
         { name: 'pleadings-backup', page: 'pleadings-backup.html', text: 'Legal' },
         { name: 'conclusion', page: 'conclusion.htm', text: 'Conclusion' },

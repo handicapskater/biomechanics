@@ -21,6 +21,10 @@ Then open:
 
 - http://localhost:8080/
 - http://localhost:8080/story/
+- http://localhost:8080/data.html
+- http://localhost:8080/precedent.html
+- http://localhost:8080/health-ai.html#commercial-platform
+- http://localhost:8080/health-ai.html#nonprofit-standards
 
 ## Verification
 
@@ -32,7 +36,17 @@ These URLs should return successfully when served from the repo root:
 - http://localhost:8080/story/index.html
 - http://localhost:8080/precedent.html
 - http://localhost:8080/data.html
+- http://localhost:8080/datascience.htm
+- http://localhost:8080/health-ai.html
+- http://localhost:8080/health-ai.html#commercial-platform
+- http://localhost:8080/health-ai.html#nonprofit-standards
 - http://localhost:8080/videos/
 - http://localhost:8080/videos/index.html
 
 The canonical story page is `/story/`, backed by `story/index.html`. The legacy `story.html` page redirects there. The canonical videos URL is `/videos/`, with legacy `videos.html` redirecting there.
+
+## Public Positioning
+
+- `HandicapSkater.com`: commercial AI/ML wearable data science platform positioning for wearable biometrics, HR/HRV/activity evidence, mobility accommodation analytics, AI/ML pattern detection, and platform potential.
+- `HandicapSkater.org`: nonprofit standards, civil-rights, and accommodation framework for non-traditional mobility aid standards, evidence-based accommodation standards, public-sector accessibility education, and fair access.
+- `data.html` and `datascience.htm`: public biomechanics proof layer. HR and HRV are supportive signals, not standalone proof of pain. FSI and CSS are proposed synthesized metrics, not medical diagnoses.
