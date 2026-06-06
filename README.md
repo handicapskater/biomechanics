@@ -23,8 +23,8 @@ Then open:
 - http://localhost:8080/story/
 - http://localhost:8080/data.html
 - http://localhost:8080/precedent.html
-- http://localhost:8080/health-ai.html#commercial-platform
-- http://localhost:8080/health-ai.html#nonprofit-standards
+- http://localhost:8080/platform.html
+- http://localhost:8080/standards.html
 
 ## Verification
 
@@ -38,8 +38,8 @@ These URLs should return successfully when served from the repo root:
 - http://localhost:8080/data.html
 - http://localhost:8080/datascience.htm
 - http://localhost:8080/health-ai.html
-- http://localhost:8080/health-ai.html#commercial-platform
-- http://localhost:8080/health-ai.html#nonprofit-standards
+- http://localhost:8080/platform.html
+- http://localhost:8080/standards.html
 - http://localhost:8080/videos/
 - http://localhost:8080/videos/index.html
 
