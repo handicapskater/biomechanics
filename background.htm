@@ -1,0 +1,78 @@
+<h2 class="page-title">Injuries</h2>
+    <div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+        <table width='100%'>
+            <tr id="wreck">
+                <td>In 1983, I was in an accident that left me disabled. The following
+                    <span id="kinematics"></span>
+                    model depicts how I suffered my injuries.
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <div id="walk" style="text-align: center;"></div>
+                    <script>imageLink("walk", 'common/images/Accident-Handicap.gif', "center");</script>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr id="pelvis-injury">
+                <td align="center">
+                    <div id="pelvisModel" style="text-align: center;"></div>
+                    <script>imageLink("pelvisModel", 'common/images/AccidentPelvisModel.gif', "center");</script>
+                </td>
+            </tr>
+            <tr>
+                <td align='left'>My Orthopedic Surgeon explained that I had a <b>ballistic mobility impairment</b> and
+                    to avoid <span id="ballisticMotion"></span>s, such as running. Furthermore, the Surgeon
+                    stated that I had a limited number of <span id="impactShock"></span>s, before surgery
+                    would be needed. <br />
+                    The injuries that I sustained are listed below:
+                    <ol>
+                        <li>
+                            Left superior ramus proximally in the acetabular region [fracture]
+                        </li>
+                        <li>
+                            A fracture near the left ischiopubic synchondrosis
+                        </li>
+                        <li>
+                            A right parasymphyseal fracture [later diagnosed as a fracture in the pubic symphysis]
+                        </li>
+                        <li>
+                            A right pubic fracture near the ischiopubic synchondrosis
+                        </li>
+                        <li>
+                            Pubic diastasis
+                        </li>
+                        <li>
+                            Head of the left femur is a little higher than the right because of a pelvic deformity ~1 cm
+                        </li>
+                        <li>
+                            There is a widening of the left <span id="siJoints"></span> compared to the right
+                            [later diagnosed as a cracked sacroiliac joint]
+                        </li>
+                        <li>
+                            Evidence of sacrum diastasis
+                        </li>
+                    </ol>
+                    diastasis - a force injury to bones without a fracture.<br />
+                    ischiopubic - relating to both ischium and pubis.<br />
+                    ramus - branch like structure.<br />
+                    synchondrosis - an immovable articulation in which the union is formed by cartilage.<br />
+                </td>
+            </tr>
+        </table>
+        <hr />
+        <h3 id="amputee-skating">Amputee Skating - coming soon</h3>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Replace placeholder <span id="..."></span> with window variable content
+            document.querySelectorAll("span[id]").forEach(span => {
+                const id = span.id;
+                const replacement = window[id];
+                if (typeof replacement === "string" && replacement.includes("<span")) {
+                    span.outerHTML = replacement;
+                }
+            });
+        });
+    </script>
