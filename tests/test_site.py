@@ -140,7 +140,7 @@ class SiteTests(unittest.TestCase):
         standards = read("standards.html")
         data = read("data.html")
         self.assertIn("wearable-health", platform)
-        self.assertIn("licensing or partnership candidate", platform)
+        self.assertIn("licensing, research, standards, or platform collaboration after validation", platform)
         self.assertIn("nonprofit standards", standards)
         self.assertIn("within-person pattern", data)
         self.assertIn("medical diagnoses", data)

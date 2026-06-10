@@ -10,32 +10,56 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="nav-wrap">
-      <a class="brand" href="/story/">HandicapSkater</a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a aria-current="page" href="/story/">Story</a>
-        <a href="/data.html">Data</a>
-        <a href="/evidence/strava-gps-skate-maps/">GPS Skate Maps</a>
-        <a href="/precedent.html">Precedent</a>
-        <a href="/videos/">Videos</a>
-        <a href="/platform.html">.com Platform</a>
-        <a href="/standards.html">.org Standards</a>
-      </nav>
-    </div>
-  </header>
+  <div id="site-header"></div>
+  <script src="/common/site-header.js"></script>
 
   <main id="main">
     <section class="hero">
       <div class="hero-inner">
         <p class="eyebrow">Walking hurts. Skating lets me live.</p>
-        <h1>A Disability Nobody Recognized Until I Proved It</h1>
+        <h1>A Disability Nobody Recognized Until the Data Made It Visible</h1>
         <p class="lead">For more than 30 years, I have had to document that walking causes pain and that skating gives me mobility.</p>
+        <p class="hero-copy">HandicapSkater is a real-world wearable-health mobility evidence case study showing how route data, HR/HRV, recovery signals, HRV/RRI testing, accelerometer evidence, and source-linked activity labels can support individualized mobility accommodation review.</p>
         <div class="button-row">
           <a class="btn primary" href="/data.html">See the Data</a>
           <a class="btn secondary" href="/precedent.html">View Precedent</a>
           <a class="btn outline" href="/videos/">Watch Videos</a>
         </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="section-header">
+        <h2>Why this matters beyond one case</h2>
+        <p>This case study asks a larger health-data question: how can wearable and route data help document functional mobility when ordinary categories like walking, exercise, recreation, or transportation do not describe the person's lived reality?</p>
+        <p>The project combines longitudinal wearable data, GPS route records, targeted HRV/RRI and accelerometer testing, and legal-access documentation into a source-linked evidence record.</p>
+      </div>
+      <div class="grid three">
+        <article class="card"><h3>WHOOP-style wearable data</h3><p>Long-history HR/HRV, strain, recovery, and activity-label context.</p></article>
+        <article class="card"><h3>Strava GPS route data</h3><p>Route, distance, duration, elevation, speed, and repeated physical-therapy skating context.</p></article>
+        <article class="card"><h3>Kubios / Polar H10 targeted testing</h3><p>HRV/RRI, accelerometer, Fractal Stability Index, and Comparable Similarity Score evidence.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Integrated evidence record</h2>
+        <p>These records support source-linked individualized review. They are not medical diagnosis, and no single metric proves pain by itself.</p>
+        <section class="section alt">
+          <div class="section-header">
+            <h2>Beyond step counting</h2>
+            <p>Most wearables count activity. This project asks a harder question: is the movement healthy, harmful, accessible, or forced?</p>
+            <p>For disability, more steps are not always better. The goal is sustainable functional mobility, not conformity to walking.</p>
+          </div>
+        </section>
+      </div>
+      <div class="grid three">
+        <article class="card"><h3>3,453</h3><p>Included evidence events</p></article>
+        <article class="card"><h3>1,549</h3><p>Skating events</p></article>
+        <article class="card"><h3>133</h3><p>ParaTransit events</p></article>
+        <article class="card"><h3>950</h3><p>Baseline/recovery/readiness records excluded from burden comparisons</p></article>
+        <article class="card"><h3>71</h3><p>Targeted RRI/accelerometer/Fractal Stability Index/Comparable Similarity Score-capable records</p></article>
+        <article class="card"><h3>4,935</h3><p>Duplicate-excluded records retained for audit</p></article>
       </div>
     </section>
 
@@ -165,7 +189,7 @@
         <article class="timeline-item">
           <h2>L. Wearable data and health AI</h2>
           <p>WHOOP, Polar H10, Kubios, Strava, and related metrics now make the physical cost visible. The signals include heart rate, HRV/RMSSD, duration, vertical/horizontal dynamics, impact burden, and activity cohorts.</p>
-          <p>This matters because disability is often invisible until data makes the burden visible. Health AI can help compare walking, skating, motorcycle travel, ParaTransit, wheelchair use, and public-access stress.</p>
+          <p>This matters because disability is often invisible until data makes the burden visible. Wearable-health analytics can help compare walking, skating, motorcycle travel, ParaTransit, wheelchair use, and public-access stress when the records are interpreted as within-person context rather than standalone diagnosis.</p>
           <p><a href="/data.html">See the metrics page</a> | <a href="/evidence/strava-gps-skate-maps/">Strava GPS skate maps</a> | <a href="/health-ai.html">Health AI case study</a> | <a href="/datascience.htm">Legacy data science page</a></p>
         </article>
 
