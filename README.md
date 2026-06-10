@@ -22,6 +22,7 @@ Then open:
 - http://localhost:8080/
 - http://localhost:8080/story/
 - http://localhost:8080/data.html
+- http://localhost:8080/evidence/strava-gps-skate-maps/
 - http://localhost:8080/precedent.html
 - http://localhost:8080/platform.html
 - http://localhost:8080/standards.html
@@ -36,6 +37,7 @@ These URLs should return successfully when served from the repo root:
 - http://localhost:8080/story/index.html
 - http://localhost:8080/precedent.html
 - http://localhost:8080/data.html
+- http://localhost:8080/evidence/strava-gps-skate-maps/
 - http://localhost:8080/datascience.htm
 - http://localhost:8080/health-ai.html
 - http://localhost:8080/platform.html
@@ -50,3 +52,13 @@ The canonical story page is `/story/`, backed by `story/index.html`. The legacy 
 - `HandicapSkater.com`: commercial AI/ML wearable data science platform positioning for wearable biometrics, HR/HRV/activity evidence, mobility accommodation analytics, AI/ML pattern detection, and platform potential.
 - `HandicapSkater.org`: nonprofit standards, civil-rights, and accommodation framework for non-traditional mobility aid standards, evidence-based accommodation standards, public-sector accessibility education, and fair access.
 - `data.html` and `datascience.htm`: public biomechanics proof layer. HR and HRV are supportive signals, not standalone proof of pain. FSI and CSS are proposed synthesized metrics, not medical diagnoses.
+- `evidence/strava-gps-skate-maps/`: Strava GPS skate-map evidence page derived from the sibling datascience notebook section `Strava GPS Skate Maps for Physical Therapy`. Route data is activity context for physical therapy and mobility-aid use, not diagnosis.
+
+## Site Tests
+
+Run static link and public-copy checks:
+
+```sh
+python3 scripts/check_site_links.py
+python3 -m unittest discover -s tests
+```
