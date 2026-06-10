@@ -37,16 +37,16 @@
       </div>
     </section>
 
-    <section class="section alt">
-      <div class="section-header">
-        <h2>Notebook Section Recreated</h2>
-        <p>The sibling datascience notebook explains that a wearable device was integrated with Strava so GPS data could correspond to biometrics showing routes, distances, elevation, date, and time. During the 2020 pandemic, the record includes dual 12-mile skates around San Francisco on Friday Night Skate and Saturday Night Skate routes.</p>
-      </div>
-      <div class="grid two">
-        <article class="card"><h3>Skate routes</h3><p>Friday Night Skate, Saturday Night Skate, Extra Night Skate, and holiday routes are used as physical therapy context during and after the pandemic.</p></article>
-        <article class="card"><h3>Related activity context</h3><p>Walking/manual labor, motocross physical therapy, obstacle-course practice, and wheelchair-pushing access records are interpreted as context, not standalone proof of pain.</p></article>
-      </div>
-    </section>
+<!--    <section class="section alt">-->
+<!--      <div class="section-header">-->
+<!--        <h2>Notebook Section Recreated</h2>-->
+<!--        <p>The sibling datascience notebook explains that a wearable device was integrated with Strava so GPS data could correspond to biometrics showing routes, distances, elevation, date, and time. During the 2020 pandemic, the record includes dual 12-mile skates around San Francisco on Friday Night Skate and Saturday Night Skate routes.</p>-->
+<!--      </div>-->
+<!--      <div class="grid two">-->
+<!--        <article class="card"><h3>Skate routes</h3><p>Friday Night Skate, Saturday Night Skate, Extra Night Skate, and holiday routes are used as physical therapy context during and after the pandemic.</p></article>-->
+<!--        <article class="card"><h3>Related activity context</h3><p>Walking/manual labor, motocross physical therapy, obstacle-course practice, and wheelchair-pushing access records are interpreted as context, not standalone proof of pain.</p></article>-->
+<!--      </div>-->
+<!--    </section>-->
 
     <section class="section">
       <div class="section-header">
@@ -65,9 +65,118 @@
         <h2>Route Map Pages</h2>
         <p>The following 327 route-map pages are the complete HTML map set referenced by the public notebook section. Each map opens as an individual static route page.</p>
       </div>
-      <details open>
-        <summary>Open the Strava GPS skate-route map list</summary>
-        <ol class="link-list">
+      <div class="grid three">
+        <article class="card"><h3>COVID-era route continuity</h3><p>Repeated routes show physical-therapy skating continued as a practical mobility pattern during a disrupted period.</p></article>
+        <article class="card"><h3>Long-distance functional mobility</h3><p>Distance, duration, and route consistency help distinguish mobility-aid use from isolated recreation.</p></article>
+        <article class="card"><h3>Why ParaTransit matters</h3><p>Transportation to and from physical-therapy skating is part of the accommodation context, not a separate recreational errand.</p></article>
+      </div>
+    </section>
+
+    <section class="section route-explorer" id="route-browser">
+
+      <div class="section-header">
+
+        <h2>Route Map Explorer</h2>
+
+        <p>Search or filter the route archive, select a route, then preview it in-page or open the full map.</p>
+
+      </div>
+
+      <div class="route-explorer-layout">
+
+        <aside class="route-picker" aria-label="Route map search and selection">
+
+          <div class="route-browser-controls">
+
+            <label>
+
+              <span class="visually-hidden">Search route maps</span>
+
+              <input id="route-search" type="search" placeholder="Search date, FNS, SNS, ENS, holiday...">
+
+            </label>
+
+            <label>
+
+              <span class="visually-hidden">Filter by year</span>
+
+              <select id="route-year">
+
+                <option value="">All years</option>
+
+              </select>
+
+            </label>
+
+            <label>
+
+              <span class="visually-hidden">Filter by route type</span>
+
+              <select id="route-type">
+
+                <option value="">All route types</option>
+
+                <option value="FNS">FNS</option>
+
+                <option value="SNS">SNS</option>
+
+                <option value="ENS">ENS</option>
+
+                <option value="Holiday">Holiday</option>
+
+                <option value="Other">Other</option>
+
+              </select>
+
+            </label>
+
+            <label>
+
+              <span class="visually-hidden">Select route map</span>
+
+              <select id="route-select" size="12" aria-label="Filtered route map results"></select>
+
+            </label>
+
+          </div>
+
+          <p id="route-browser-summary" class="route-browser-summary">Loading route maps...</p>
+
+        </aside>
+
+        <section class="route-preview-panel" aria-label="Selected route map preview">
+          <div class="route-preview-card">
+            <p class="eyebrow">Selected route</p>
+            <h3 id="selected-route-title">No route selected</h3>
+            <p id="selected-route-help">Choose a route from the list to load the map preview.</p>
+
+            <div class="button-row">
+              <a id="selected-route-open" class="btn secondary" href="#" target="_blank" rel="noopener" hidden>Open full map</a>
+            </div>
+          </div>
+
+          <div id="route-map-empty" class="callout">
+            No route selected yet. Search, filter, and select a route to preview it here.
+          </div>
+
+          <div class="route-map-frame-wrap">
+            <iframe
+                    id="route-map-frame"
+                    title="Selected GPS skate route map"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    hidden></iframe>
+          </div>
+        </section>
+      </div>
+
+      <details class="route-archive-raw">
+
+        <summary>Open complete raw route archive list</summary>
+
+        <p>The raw list is preserved for audit and for browsers without JavaScript.</p>
+
+        <ol id="route-map-list">
           <li><a href="/common/maps/20201219-20_38_05-SNS-4493921718.html">2020-12-19 20:38:05 - SNS</a></li>
           <li><a href="/common/maps/20201224-20_42_47-Xmas Eve FNS-4514564439.html">2020-12-24 20:42:47 - Xmas Eve FNS</a></li>
           <li><a href="/common/maps/20201225-20_36_26-Xmas FNS-4517973252.html">2020-12-25 20:36:26 - Xmas FNS</a></li>
@@ -415,5 +524,159 @@
   <footer class="site-footer">
     <div><a href="/index.htm">Legacy Site</a> | <a href="/data.html">Data</a> | <a href="/health-ai.html">Health AI case study</a></div>
   </footer>
+  <script>
+    (function () {
+      const rawList = document.getElementById("route-map-list");
+      const searchInput = document.getElementById("route-search");
+      const yearSelect = document.getElementById("route-year");
+      const typeSelect = document.getElementById("route-type");
+      const routeSelect = document.getElementById("route-select");
+      const summary = document.getElementById("route-browser-summary");
+
+      const selectedTitle = document.getElementById("selected-route-title");
+      const selectedHelp = document.getElementById("selected-route-help");
+      const selectedOpen = document.getElementById("selected-route-open");
+      const emptyState = document.getElementById("route-map-empty");
+      const frame = document.getElementById("route-map-frame");
+
+      if (!rawList || !searchInput || !yearSelect || !typeSelect || !routeSelect || !summary || !selectedTitle || !selectedHelp || !selectedOpen || !emptyState || !frame) {        console.warn("Route explorer did not initialize because required elements are missing.");
+        return;
+      }
+
+      const holidayPattern = /\b(xmas|christmas|new year|new year's|thanksgiving|holiday|halloween|easter|july|independence)\b/i;
+      let selectedRoute = null;
+
+      function getRouteType(text) {
+        if (holidayPattern.test(text)) return "Holiday";
+        if (/\bFNS\b/i.test(text)) return "FNS";
+        if (/\bSNS\b/i.test(text)) return "SNS";
+        if (/\bENS\b/i.test(text)) return "ENS";
+        return "Other";
+      }
+
+      function getYear(text) {
+        const match = text.match(/\b(20\d{2})-\d{2}-\d{2}\b/);
+        return match ? match[1] : "Unknown";
+      }
+
+      function normalizeHref(href) {
+        if (!href || href === "#") return "#";
+        return new URL(href, window.location.href).pathname;
+      }
+
+      const routes = Array.from(rawList.querySelectorAll("li")).map((li, index) => {
+        const link = li.querySelector("a");
+        const label = link ? link.textContent.trim() : li.textContent.trim();
+        const text = li.textContent.trim().replace(/\s+/g, " ");
+        const href = link ? normalizeHref(link.getAttribute("href")) : "#";
+        const year = getYear(text);
+        const type = getRouteType(text);
+
+        return { index, label, text, href, year, type };
+      }).filter((route) => route.href && route.href !== "#");
+
+      const years = Array.from(new Set(routes.map((route) => route.year)))
+              .filter((year) => year !== "Unknown")
+              .sort();
+
+      for (const year of years) {
+        const option = document.createElement("option");
+        option.value = year;
+        option.textContent = year;
+        yearSelect.appendChild(option);
+      }
+
+      function filteredRoutes() {
+        const query = searchInput.value.trim().toLowerCase();
+        const year = yearSelect.value;
+        const type = typeSelect.value;
+
+        return routes.filter((route) => {
+          const matchesQuery = !query || route.text.toLowerCase().includes(query);
+          const matchesYear = !year || route.year === year;
+          const matchesType = !type || route.type === type;
+          return matchesQuery && matchesYear && matchesType;
+        });
+      }
+
+      function renderOptions() {
+        const matches = filteredRoutes();
+
+        routeSelect.innerHTML = "";
+        summary.textContent = `${matches.length} of ${routes.length} route maps shown`;
+
+        if (!matches.length) {
+          const option = document.createElement("option");
+          option.textContent = "No route maps match the current filters";
+          option.disabled = true;
+          routeSelect.appendChild(option);
+          return;
+        }
+
+        for (const route of matches) {
+          const option = document.createElement("option");
+          option.value = String(route.index);
+          option.textContent = `${route.label}  [${route.type}${route.year !== "Unknown" ? ", " + route.year : ""}]`;
+
+          if (selectedRoute && selectedRoute.index === route.index) {
+            option.selected = true;
+          }
+
+          routeSelect.appendChild(option);
+        }
+      }
+
+      function selectRoute(route, updateUrl) {
+        selectedRoute = route;
+
+        selectedTitle.textContent = route.label;
+        selectedHelp.textContent = `${route.type} route${route.year !== "Unknown" ? " from " + route.year : ""}. The map preview is loaded below. Use Open full map for a dedicated page.`;
+
+        const fullMapUrl = new URL(route.href, window.location.href);
+        fullMapUrl.searchParams.set("v", "popupfix3");
+        selectedOpen.href = fullMapUrl.pathname + fullMapUrl.search;
+        selectedOpen.hidden = false;
+
+        emptyState.hidden = true;
+        frame.hidden = false;
+
+        // Cache-bust the iframe so stale map HTML does not keep showing old popup shells.
+        const mapUrl = new URL(route.href, window.location.href);
+        mapUrl.searchParams.set("v", "popupfix3");
+        frame.src = mapUrl.pathname + mapUrl.search;
+
+        if (updateUrl) {
+          const url = new URL(window.location.href);
+          url.searchParams.set("route", String(route.index + 1));
+          window.history.replaceState({}, "", url);
+        }
+
+        renderOptions();
+      }
+
+      searchInput.addEventListener("input", renderOptions);
+      yearSelect.addEventListener("change", renderOptions);
+      typeSelect.addEventListener("change", renderOptions);
+
+      routeSelect.addEventListener("change", function () {
+        const route = routes.find((item) => String(item.index) === routeSelect.value);
+        if (route) {
+          selectRoute(route, true);
+        }
+      });
+
+      renderOptions();
+
+      const initialRouteParam = new URL(window.location.href).searchParams.get("route");
+      if (initialRouteParam !== null) {
+        const oneBasedIndex = Number(initialRouteParam) - 1;
+        const route = routes[oneBasedIndex] || routes.find((item) => String(item.index) === initialRouteParam);
+
+        if (route) {
+          selectRoute(route, false);
+        }
+      }
+    })();
+  </script>
 </body>
 </html>
