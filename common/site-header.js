@@ -1,7 +1,8 @@
 (function () {
   const links = [
-    { href: "/story/", label: "Story", match: ["/", "/story/"] },
-    { href: "/healthcare-wearable-mobility/", label: "Healthcare", match: ["/", "/healthcare-wearable-mobility/"] },
+    { href: "/", label: "Home", match: ["/"] },
+    { href: "/story/", label: "Story", match: ["/story/"] },
+    { href: "/healthcare-wearable-mobility/", label: "Healthcare", match: ["/healthcare-wearable-mobility/"] },
     { href: "/data.html", label: "Data", match: ["/data.html"] },
     { href: "/health-ai.html", label: "Health AI", match: ["/health-ai.html"] },
     { href: "/evidence/strava-gps-skate-maps/", label: "GPS Maps", match: ["/evidence/strava-gps-skate-maps/"] },

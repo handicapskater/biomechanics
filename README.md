@@ -50,9 +50,9 @@ The canonical story page is `/story/`, backed by `story/index.html`. The legacy 
 ## Public Positioning
 
 - `HandicapSkater.com`: commercial AI/ML wearable data science platform positioning for wearable biometrics, HR/HRV/activity evidence, mobility accommodation analytics, AI/ML pattern detection, and platform potential.
-- `HandicapSkater.org`: nonprofit standards, civil-rights, and accommodation framework for non-traditional mobility aid standards, evidence-based accommodation standards, public-sector accessibility education, and fair access.
+- `HandicapSkater.org`: nonprofit standards, civil rights, and accommodation framework for non-traditional mobility aid standards, evidence-based accommodation standards, public sector accessibility education, and fair access.
 - `data.html` and `datascience.htm`: public biomechanics proof layer. HR and HRV are supportive signals, not standalone proof of pain. FSI and CSS are proposed synthesized metrics, not medical diagnoses.
-- `evidence/strava-gps-skate-maps/`: Strava GPS skate-map evidence page derived from the sibling datascience notebook section `Strava GPS Skate Maps for Physical Therapy`. Route data is activity context for physical therapy and mobility-aid use, not diagnosis.
+- `evidence/strava-gps-skate-maps/`: Strava GPS skate-map evidence page derived from the sibling datascience notebook section `Strava GPS Skate Maps for Physical Therapy`. Route data is activity context for physical therapy and mobility aid use, not diagnosis.
 
 ## Site Tests
 
