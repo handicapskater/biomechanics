@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import unittest
+from html.parser import HTMLParser
 from pathlib import Path
 
 from scripts import check_site_links
@@ -12,6 +13,44 @@ SAMPLED_MAP_PAGES = check_site_links.SAMPLED_MAP_PAGES
 
 def read(path: str | Path) -> str:
     return (ROOT / path).read_text(errors="ignore")
+
+
+class NavParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.in_nav = False
+        self.nav_links: list[tuple[str, str]] = []
+        self.brand_links: list[str] = []
+        self._active_href: str | None = None
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        attr = dict(attrs)
+        if tag == "nav" and attr.get("class") == "site-nav":
+            self.in_nav = True
+        if tag == "a" and attr.get("class") == "brand":
+            href = attr.get("href")
+            if href:
+                self.brand_links.append(href)
+        if self.in_nav and tag == "a":
+            self._active_href = attr.get("href")
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "nav" and self.in_nav:
+            self.in_nav = False
+        if tag == "a":
+            self._active_href = None
+
+    def handle_data(self, data: str) -> None:
+        if self.in_nav and self._active_href:
+            text = " ".join(data.split())
+            if text:
+                self.nav_links.append((self._active_href, text))
+
+
+def parse_nav(path: str | Path) -> NavParser:
+    parser = NavParser()
+    parser.feed(read(path))
+    return parser
 
 
 class SiteTests(unittest.TestCase):
@@ -36,6 +75,50 @@ class SiteTests(unittest.TestCase):
         self.assertIn("not medical diagnosis", html.lower())
         self.assertIn("not standalone proof of pain", html.lower())
         self.assertIn("HandicapSkater-Public.ipynb", html)
+
+    def test_homepage_routes_to_story_and_keeps_legacy_link(self) -> None:
+        html = read("index.html")
+        self.assertIn('url=/story/', html)
+        self.assertIn('href="/story/"', html)
+        self.assertIn("HandicapSkater Story", html)
+        self.assertIn("Legacy Site", html)
+        self.assertIn('href="/index.htm"', html)
+
+    def test_main_navigation_alignment(self) -> None:
+        pages = [
+            Path("story/index.html"),
+            Path("data.html"),
+            Path("precedent.html"),
+            Path("videos/index.html"),
+            Path("health-ai.html"),
+            Path("platform.html"),
+            Path("standards.html"),
+            Path("evidence/strava-gps-skate-maps/index.html"),
+        ]
+        expected_hrefs = {
+            "/story/",
+            "/data.html",
+            "/evidence/strava-gps-skate-maps/",
+            "/precedent.html",
+            "/videos/",
+            "/platform.html",
+            "/standards.html",
+        }
+        for page in pages:
+            nav = parse_nav(page)
+            self.assertEqual(nav.brand_links, ["/story/"], str(page))
+            labels = [text for _href, text in nav.nav_links]
+            hrefs = {href for href, _text in nav.nav_links}
+            self.assertNotIn("Home", labels, str(page))
+            self.assertTrue(expected_hrefs.issubset(hrefs), str(page))
+
+    def test_required_pages_include_strava_nav_and_legacy_footer(self) -> None:
+        for page in ("precedent.html", "standards.html", "evidence/strava-gps-skate-maps/index.html"):
+            html = read(page)
+            self.assertIn('href="/evidence/strava-gps-skate-maps/"', html)
+            self.assertIn("GPS Skate Maps", html)
+        for page in ("story/index.html", "data.html", "precedent.html", "videos/index.html", "health-ai.html", "platform.html", "standards.html", "evidence/strava-gps-skate-maps/index.html"):
+            self.assertIn("Legacy Site", read(page), page)
 
     def test_sampled_route_maps_have_provenance_banner(self) -> None:
         for page in SAMPLED_MAP_PAGES:
