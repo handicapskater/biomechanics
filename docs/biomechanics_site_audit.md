@@ -51,7 +51,7 @@ External links were not validated for remote availability during this audit.
 - commercial rights/IP layer
 - wearable biometrics and mobility-mode analytics
 - HR/HRV/activity evidence and pattern detection
-- strategic fit, licensing candidate, acquisition candidate, or platform extension potential
+- strategic fit, licensing or partnership candidate after validation, or platform extension potential
 
 `HandicapSkater.org` is now presented as:
 
@@ -67,7 +67,7 @@ The commercial platform language is intentionally separated from nonprofit stand
 
 Risky claim patterns searched:
 
-- "Google will buy"
+- direct named-platform acquisition claims
 - "proves pain"
 - "court-proven biomarker"
 - "clinically validated"
