@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 import unittest
 from html.parser import HTMLParser
 from pathlib import Path
@@ -10,47 +11,78 @@ ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_PAGES = check_site_links.PUBLIC_PAGES
 SAMPLED_MAP_PAGES = check_site_links.SAMPLED_MAP_PAGES
 
+MODERN_PAGES = [
+    Path("index.html"),
+    Path("story/index.html"),
+    Path("healthcare-wearable-mobility/index.html"),
+    Path("data.html"),
+    Path("health-ai.html"),
+    Path("precedent.html"),
+    Path("videos/index.html"),
+    Path("platform.html"),
+    Path("standards.html"),
+    Path("evidence/strava-gps-skate-maps/index.html"),
+]
+
+EXPECTED_NAV_HREFS = {
+    "/story/",
+    "/healthcare-wearable-mobility/",
+    "/data.html",
+    "/health-ai.html",
+    "/evidence/strava-gps-skate-maps/",
+    "/precedent.html",
+    "/videos/",
+    "/platform.html",
+    "/standards.html",
+}
+
+EXPECTED_NAV_LABELS = {
+    "Story",
+    "Healthcare",
+    "Data",
+    "Health AI",
+    "GPS Maps",
+    "Precedent",
+    "Videos",
+    "Platform",
+    "Standards",
+}
+
 
 def read(path: str | Path) -> str:
     return (ROOT / path).read_text(errors="ignore")
 
 
-class NavParser(HTMLParser):
+class LinkParser(HTMLParser):
     def __init__(self) -> None:
         super().__init__()
-        self.in_nav = False
-        self.nav_links: list[tuple[str, str]] = []
-        self.brand_links: list[str] = []
-        self._active_href: str | None = None
+        self.links: list[tuple[str, str]] = []
+        self._href: str | None = None
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        attr = dict(attrs)
-        if tag == "nav" and attr.get("class") == "site-nav":
-            self.in_nav = True
-        if tag == "a" and attr.get("class") == "brand":
-            href = attr.get("href")
-            if href:
-                self.brand_links.append(href)
-        if self.in_nav and tag == "a":
-            self._active_href = attr.get("href")
+        if tag == "a":
+            attr = dict(attrs)
+            self._href = attr.get("href")
 
     def handle_endtag(self, tag: str) -> None:
-        if tag == "nav" and self.in_nav:
-            self.in_nav = False
         if tag == "a":
-            self._active_href = None
+            self._href = None
 
     def handle_data(self, data: str) -> None:
-        if self.in_nav and self._active_href:
+        if self._href:
             text = " ".join(data.split())
             if text:
-                self.nav_links.append((self._active_href, text))
+                self.links.append((self._href, text))
 
 
-def parse_nav(path: str | Path) -> NavParser:
-    parser = NavParser()
+def parse_links(path: str | Path) -> LinkParser:
+    parser = LinkParser()
     parser.feed(read(path))
     return parser
+
+
+def site_header_js() -> str:
+    return read("common/site-header.js")
 
 
 class SiteTests(unittest.TestCase):
@@ -61,71 +93,149 @@ class SiteTests(unittest.TestCase):
     def test_static_internal_links_and_route_targets(self) -> None:
         self.assertEqual(check_site_links.check_pages(PUBLIC_PAGES + SAMPLED_MAP_PAGES), [])
         map_links = check_site_links.evidence_map_links()
-        self.assertGreaterEqual(len(map_links), 2)
+        self.assertGreaterEqual(len(map_links), 300)
         for url in map_links:
             target = check_site_links.resolve_local(Path("evidence/strava-gps-skate-maps/index.html"), url)
             self.assertIsNotNone(target)
             self.assertTrue(target.exists(), url)
 
+    def test_shared_navigation_include_is_used_by_modern_pages(self) -> None:
+        for page in MODERN_PAGES:
+            html = read(page)
+            self.assertIn('id="site-header"', html, str(page))
+            self.assertIn('/common/site-header.js', html, str(page))
+            self.assertNotIn('<header class="site-header">', html, str(page))
+
+    def test_shared_navigation_contains_expected_items_once(self) -> None:
+        js = site_header_js()
+        self.assertIn('href: "/story/"', js)
+        self.assertIn('href: "/healthcare-wearable-mobility/"', js)
+        self.assertIn('href: "/health-ai.html"', js)
+        self.assertIn('href: "/evidence/strava-gps-skate-maps/"', js)
+        self.assertIn('label: "Healthcare"', js)
+        self.assertIn('label: "Health AI"', js)
+        self.assertIn('label: "GPS Maps"', js)
+        self.assertNotIn('label: ".com Platform"', js)
+        self.assertNotIn('label: ".org Standards"', js)
+
+        hrefs = set(re.findall(r'href:\s*"([^"]+)"', js))
+        labels = set(re.findall(r'label:\s*"([^"]+)"', js))
+        self.assertTrue(EXPECTED_NAV_HREFS.issubset(hrefs))
+        self.assertTrue(EXPECTED_NAV_LABELS.issubset(labels))
+
+    def test_shared_navigation_uses_exact_active_matching(self) -> None:
+        js = site_header_js()
+        self.assertIn('normalizePath', js)
+        self.assertIn('link.match.includes(path)', js)
+        self.assertNotIn('startsWith', js)
+        self.assertRegex(js, r'match:\s*\["/",\s*"/story/"\]')
+        self.assertIn('href: "/healthcare-wearable-mobility/"', js)
+        self.assertIn('label: "Healthcare"', js)
+        self.assertIn('"/healthcare-wearable-mobility/"', js)
+
+    def test_homepage_is_story_not_redirect_shell(self) -> None:
+        html = read("index.html")
+        self.assertIn("A Disability Nobody Recognized Until the Data Made It Visible", html)
+        self.assertIn("Walking hurts. Skating lets me live.", html)
+        self.assertIn("Beyond step counting", html)
+        self.assertIn("Wearable-health analytics can help compare", html)
+        self.assertIn("Legacy Site", html)
+        self.assertIn('href="/index.htm"', html)
+        self.assertNotIn('url=/story/', html)
+        self.assertNotIn('This homepage now routes', html)
+        self.assertNotIn('Comparable Similarity Score evidence..', html)
+
+    def test_healthcare_landing_page_exists_and_is_company_neutral(self) -> None:
+        html = read("healthcare-wearable-mobility/index.html")
+        self.assertIn("Wearable Mobility Evidence for Individualized Accommodation", html)
+        self.assertIn("Most wearables count activity", html)
+        self.assertIn("Fractal Stability Index", html)
+        self.assertIn("Comparable Similarity Score", html)
+        self.assertIn("This is not a diagnostic product", html)
+        self.assertIn("privacy-preserving summaries", html)
+        self.assertIn('href="/health-ai.html"', html)
+        self.assertIn('href="/evidence/strava-gps-skate-maps/"', html)
+        self.assertNotIn("Google", html)
+        self.assertNotIn("Fitbit", html)
+
+    def test_data_and_health_ai_define_fsi_css_correctly(self) -> None:
+        for page in ("data.html", "health-ai.html"):
+            html = read(page)
+            lower = html.lower()
+            self.assertIn("Fractal Stability Index", html, page)
+            self.assertIn("Comparable Similarity Score", html, page)
+            self.assertNotIn("functional stress and cumulative strain", lower, page)
+            self.assertNotIn("cumulative strain score", lower, page)
+
+            # Data has the explicit medical-diagnosis caveat. Health AI uses
+            # the safer HR/HRV burden-review caveat instead, so accept either
+            # phrasing rather than forcing identical copy across pages.
+            self.assertTrue(
+                "not medical" in lower
+                or "do not prove pain by themselves" in lower
+                or "not a claim" in lower,
+                page,
+            )
+
     def test_strava_evidence_page_content_and_caveats(self) -> None:
         html = read("evidence/strava-gps-skate-maps/index.html")
         self.assertIn("Strava GPS Skate Maps for Physical Therapy", html)
+        self.assertIn("Route Map Explorer", html)
         self.assertIn("physical therapy", html.lower())
         self.assertIn("mobility-aid", html.lower())
         self.assertIn("not medical diagnosis", html.lower())
-        self.assertIn("not standalone proof of pain", html.lower())
+        self.assertIn("Route maps do not prove pain by themselves", html)
         self.assertIn("HandicapSkater-Public.ipynb", html)
 
-    def test_homepage_routes_to_story_and_keeps_legacy_link(self) -> None:
-        html = read("index.html")
-        self.assertIn('url=/story/', html)
-        self.assertIn('href="/story/"', html)
-        self.assertIn("HandicapSkater Story", html)
-        self.assertIn("Legacy Site", html)
-        self.assertIn('href="/index.htm"', html)
+    def test_route_explorer_has_single_immediate_preview_ui(self) -> None:
+        html = read("evidence/strava-gps-skate-maps/index.html")
+        self.assertIn('id="route-select"', html)
+        self.assertIn('id="route-map-frame"', html)
+        self.assertIn('id="route-map-empty"', html)
+        self.assertIn('id="selected-route-open"', html)
+        self.assertIn("function selectRoute(route, updateUrl)", html)
+        self.assertIn("frame.src", html)
+        self.assertIn("route.index + 1", html)
+        self.assertNotIn('id="selected-route-load"', html)
+        self.assertNotIn(">Preview map<", html)
 
-    def test_main_navigation_alignment(self) -> None:
-        pages = [
-            Path("story/index.html"),
-            Path("data.html"),
-            Path("precedent.html"),
-            Path("videos/index.html"),
-            Path("health-ai.html"),
-            Path("platform.html"),
-            Path("standards.html"),
-            Path("evidence/strava-gps-skate-maps/index.html"),
-        ]
-        expected_hrefs = {
-            "/story/",
-            "/data.html",
-            "/evidence/strava-gps-skate-maps/",
-            "/precedent.html",
-            "/videos/",
-            "/platform.html",
-            "/standards.html",
-        }
-        for page in pages:
-            nav = parse_nav(page)
-            self.assertEqual(nav.brand_links, ["/story/"], str(page))
-            labels = [text for _href, text in nav.nav_links]
-            hrefs = {href for href, _text in nav.nav_links}
-            self.assertNotIn("Home", labels, str(page))
-            self.assertTrue(expected_hrefs.issubset(hrefs), str(page))
+        ids = re.findall(r'id="([^"]+)"', html)
+        duplicates = sorted({item for item in ids if ids.count(item) > 1})
+        self.assertEqual(duplicates, [])
 
-    def test_required_pages_include_strava_nav_and_legacy_footer(self) -> None:
-        for page in ("precedent.html", "standards.html", "evidence/strava-gps-skate-maps/index.html"):
-            html = read(page)
-            self.assertIn('href="/evidence/strava-gps-skate-maps/"', html)
-            self.assertIn("GPS Skate Maps", html)
-        for page in ("story/index.html", "data.html", "precedent.html", "videos/index.html", "health-ai.html", "platform.html", "standards.html", "evidence/strava-gps-skate-maps/index.html"):
-            self.assertIn("Legacy Site", read(page), page)
-
-    def test_sampled_route_maps_have_provenance_banner(self) -> None:
+    def test_route_maps_do_not_contain_popup_or_provenance_overlay(self) -> None:
+        forbidden = (
+            "hs-route-provenance",
+            "HandicapSkater route/activity context",
+            "Back to evidence page",
+            "bindPopup",
+            "openPopup",
+            "L.popup",
+            "setContent",
+            "leaflet-popup",
+        )
         for page in SAMPLED_MAP_PAGES:
             html = read(page)
-            self.assertIn("hs-route-provenance", html)
-            self.assertIn("Strava GPS Skate Maps for Physical Therapy", html)
-            self.assertIn("/evidence/strava-gps-skate-maps/", html)
+            for token in forbidden:
+                self.assertNotIn(token, html, str(page))
+            self.assertIn("OpenStreetMap", html, str(page))
+            self.assertIn("L.map", html, str(page))
+
+    def test_route_maps_have_no_folium_popup_variables(self) -> None:
+        map_dir = ROOT / "common/maps"
+        self.assertTrue(map_dir.exists())
+        sampled = sorted(map_dir.glob("*.html"))[:20]
+        self.assertGreaterEqual(len(sampled), 2)
+        for page in sampled:
+            html = page.read_text(errors="ignore")
+            self.assertNotRegex(html, r"\bpopup_[A-Za-z0-9_]+")
+            self.assertNotRegex(html, r"\bhtml_[A-Za-z0-9_]+")
+            self.assertNotIn("hs-route-provenance", html)
+
+    def test_required_pages_include_legacy_footer(self) -> None:
+        for page in MODERN_PAGES:
+            html = read(page)
+            self.assertIn("Legacy Site", html, str(page))
 
     def test_public_pages_do_not_name_disallowed_platforms(self) -> None:
         # Vendor libraries and archived case records are intentionally excluded.
@@ -139,10 +249,14 @@ class SiteTests(unittest.TestCase):
         platform = read("platform.html")
         standards = read("standards.html")
         data = read("data.html")
+        health_ai = read("health-ai.html")
         self.assertIn("wearable-health", platform)
-        self.assertIn("licensing, research, standards, or platform collaboration after validation", platform)
+        self.assertIn("What this can become", platform)
+        self.assertIn("platform collaboration after validation", platform)
         self.assertIn("nonprofit standards", standards)
+        self.assertIn("Distinguish user-defined labels from platform-default labels", standards)
         self.assertIn("within-person pattern", data)
+        self.assertIn("mobility-burden patterns for review", health_ai)
         self.assertIn("medical diagnoses", data)
 
 
