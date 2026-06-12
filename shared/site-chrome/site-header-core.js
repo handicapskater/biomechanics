@@ -1,20 +1,3 @@
-(function () {
-  const config = {
-    brand: "HandicapSkater.com",
-    links: [
-    { href: "/", label: "Home", match: ["/"] },
-    { href: "/story/", label: "Story", match: ["/story/"] },
-    { href: "/healthcare-wearable-mobility/", label: "Healthcare", match: ["/healthcare-wearable-mobility/"] },
-    { href: "/data.html", label: "Data", match: ["/data.html"] },
-    { href: "/health-ai.html", label: "Health AI", match: ["/health-ai.html"] },
-    { href: "/platform.html", label: "Platform", match: ["/platform.html"] },
-    { href: "/videos/", label: "Videos", match: ["/videos/", "/videos/index.html"] },
-    { href: "/evidence/strava-gps-skate-maps/", label: "GPS Maps", match: ["/evidence/strava-gps-skate-maps/"] },
-    { href: "/precedent.html", label: "Precedent", match: ["/precedent.html"] },
-    { href: "https://handicapskater.org/", label: "Standards", match: [] }
-    ]
-  };
-
 function ensureChromeStylesheet() {
   if (document.querySelector('link[href="/common/css/site-chrome.css"]')) {
     return;
@@ -55,7 +38,3 @@ function renderSiteHeader(config) {
     </div>
   </header>`;
 }
-
-
-  renderSiteHeader(config);
-})();
