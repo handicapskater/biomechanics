@@ -27,6 +27,54 @@
 
 }
 
+.site-header {
+    background: rgba(247, 250, 249, 0.96);
+    border-bottom: 1px solid #d9e2e7;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-wrap {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1180px;
+    padding: 0.85rem 1rem;
+}
+
+.brand {
+    color: #102336;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.site-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.45rem;
+    justify-content: flex-end;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.site-nav a {
+    border-radius: 999px;
+    color: #102336;
+    font-size: 0.88rem;
+    font-weight: 800;
+    padding: 0.42rem 0.72rem;
+    text-decoration: none;
+}
+
+.site-nav a.external-link {
+    border: 1px solid #d9e2e7;
+}
+
 /*****ACCEPTED BEGIN*************************************************/
 /* Body Styling */
 html {
@@ -689,4 +737,15 @@ footer button:hover {
         flex-direction: column;
         text-align: center;
     }
+}
+
+.site-nav a.external-link {
+    border: 1px solid var(--line);
+    background: transparent;
+}
+
+.site-nav a.external-link:hover,
+.site-nav a.external-link:focus {
+    background: var(--blue);
+    color: #fff;
 }

@@ -70,8 +70,14 @@ def check_external(url: str) -> tuple[bool, str]:
             return True, f"{e.code} provider-blocked"
         return False, str(e.code)
     except URLError as e:
+        reason = str(e.reason)
+        if "nodename nor servname provided" in reason or "Name or service not known" in reason or "Temporary failure in name resolution" in reason:
+            return True, f"{reason} dns-unavailable"
         return False, str(e.reason)
     except Exception as e:
+        reason = repr(e)
+        if "nodename nor servname provided" in reason or "Name or service not known" in reason or "Temporary failure in name resolution" in reason:
+            return True, f"{reason} dns-unavailable"
         return False, repr(e)
 
 def main() -> int:
