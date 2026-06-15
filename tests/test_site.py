@@ -405,6 +405,34 @@ class SiteTests(unittest.TestCase):
         self.assertIn("mobility-burden patterns for review", health_ai)
         self.assertIn("medical diagnoses", data)
 
+    def test_main_pages_share_evidence_stack_and_role_language(self) -> None:
+        pages = (
+            "index.html",
+            "healthcare-wearable-mobility/index.html",
+            "data.html",
+            "platform.html",
+            "story/index.html",
+            "standards.html",
+            "precedent.html",
+        )
+        for page in pages:
+            html = read(page)
+            self.assertIn("Evidence Stack", html, page)
+            self.assertIn("HandicapSkater.com is the public case-study, evidence, and product-development site", html, page)
+            self.assertIn("HandicapSkater.org is the standards, doctrine, and accommodation-review site", html, page)
+            self.assertIn("legal notebook", html.lower(), page)
+            self.assertIn("wearable notebook", html.lower(), page)
+            self.assertIn("Legacy notebook", html, page)
+            self.assertIn("FSICSS platform", html, page)
+
+    def test_public_non_claims_and_archive_context_are_visible(self) -> None:
+        for page in ("index.html", "healthcare-wearable-mobility/index.html", "data.html", "platform.html", "story/index.html", "standards.html", "precedent.html"):
+            html = read(page)
+            self.assertIn("What this does not claim", html, page)
+        for page in ("data.html", "story/index.html", "precedent.html"):
+            html = read(page).lower()
+            self.assertIn("archive context", html, page)
+
 
 if __name__ == "__main__":
     unittest.main()
