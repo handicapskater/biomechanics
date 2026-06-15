@@ -54,6 +54,13 @@ The canonical story page is `/story/`, backed by `story/index.html`. The legacy 
 - `data.html` and `datascience.htm`: public biomechanics proof layer. HR and HRV are supportive signals, not standalone proof of pain. FSI and CSS are proposed synthesized metrics, not medical diagnoses.
 - `evidence/strava-gps-skate-maps/`: Strava GPS skate-map evidence page derived from the sibling datascience notebook section `Strava GPS Skate Maps for Physical Therapy`. Route data is activity context for physical therapy and mobility aid use, not diagnosis.
 
+## Claim Governance
+
+- `docs/source_linked_claim_map.md`: maps public pages to canonical claim IDs,
+  notebook outputs, platform reports, and evidence records.
+- `docs/linkedin_claim_vocabulary.md`: keeps LinkedIn company copy aligned with
+  the same public-safe vocabulary used on the website.
+
 ## Site Tests
 
 Run static link and public-copy checks:
