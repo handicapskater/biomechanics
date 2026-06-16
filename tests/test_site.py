@@ -219,6 +219,22 @@ class SiteTests(unittest.TestCase):
         self.assertIn("background: transparent", css)
         self.assertIn("border-color: var(--chrome-line)", css)
 
+    def test_public_fsi_css_results_are_source_linked_and_court_safe(self) -> None:
+        data = read("data.html")
+        platform = read("platform.html")
+        claim_map = read("docs/source_linked_claim_map.md")
+
+        self.assertIn("Source-linked FSI/CSS case-study results", data)
+        self.assertIn("Kubios/Polar H10 as the activity-specific biomechanics stream", data)
+        self.assertIn("WHOOP as longitudinal physiology context", data)
+        self.assertIn("Strava as functional distance and route-capacity context", data)
+        self.assertIn("do not diagnose pain", data)
+        self.assertIn("Evidence Observatory", platform)
+        self.assertIn("Qdrant similarity search", platform)
+        self.assertIn("optional Neo4j knowledge graph context", platform)
+        self.assertIn("HS-CLAIM-007", claim_map)
+        self.assertIn("HS-CLAIM-008", claim_map)
+
     def test_nav_focus_is_not_grouped_with_current_page_active_style(self) -> None:
         css = nav_css()
         self.assertIn('.site-nav a[aria-current="page"]', css)
