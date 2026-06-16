@@ -69,6 +69,38 @@
       </div>
     </section>
 
+    <section class="section" id="evidence-observatory">
+      <div class="section-header">
+        <h2>FSI/CSS Evidence Observatory</h2>
+        <p>The Evidence Observatory is the live review surface for source-linked FSI/CSS outputs, RAG retrieval, and court-safe summaries. It is designed to answer questions against pipeline corpus data, generated case-study reports, public-safe platform docs, and selected user-added RAG documents.</p>
+      </div>
+      <div class="grid three">
+        <article class="card">
+          <h3>Biomechanics results</h3>
+          <p>Walking versus skating is evaluated with dynamic burden metrics such as vertical dynamic ratio, jerk ratio, impact shock, movement standard deviation, FSI, CSS, and PICE where activity-specific physiology exists.</p>
+          <a href="/data.html#fsicss-results">Review public results summary</a>
+        </article>
+        <article class="card">
+          <h3>Transportation burden</h3>
+          <p>Sedan, bus/cutaway, van, rail, motorcycle, and shared-ride records are compared as context-specific mobility states, not interchangeable travel labels.</p>
+          <a href="/precedent.html">Review accommodation context</a>
+        </article>
+        <article class="card">
+          <h3>Live RAG workflow</h3>
+          <p>The local workflow uses Qdrant similarity search, optional Neo4j knowledge graph context, and a configurable local LLM. Retrieval-only mode remains available when no model is installed.</p>
+          <a href="/docs/source_linked_claim_map.md">Review source map</a>
+        </article>
+      </div>
+      <div class="evidence-panel">
+        <ul class="check-list">
+          <li>Kubios/Polar H10 is the activity-specific source for HRV/RRI and accelerometer burden.</li>
+          <li>WHOOP is longitudinal context for HR, strain, recovery, and overnight HRV patterns.</li>
+          <li>Strava is functional capacity context for route completion, distance, duration, and elevation.</li>
+          <li>Generated platform outputs remain decision-support artifacts and require source review.</li>
+        </ul>
+      </div>
+    </section>
+
     <section class="section alt">
       <div class="section-header">
         <h2>What this does not claim</h2>
