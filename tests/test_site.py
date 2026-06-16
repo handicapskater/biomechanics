@@ -187,6 +187,25 @@ class SiteTests(unittest.TestCase):
         self.assertIn('rel="noopener noreferrer"', js)
         self.assertIn('const className = external ? \' class="external-link"\' : ""', js)
 
+    def test_more_menu_is_wired_and_styled(self) -> None:
+        js = site_header_js()
+        css = nav_css()
+        self.assertIn("primaryLinks", js)
+        self.assertIn("moreLinks", js)
+        self.assertIn('class="nav-more-button"', js)
+        self.assertIn('aria-expanded="false"', js)
+        self.assertIn('aria-controls="nav-more-menu"', js)
+        self.assertIn('class="nav-more-menu"', js)
+        self.assertIn("wireMoreMenu", js)
+        self.assertIn("button.addEventListener(\"click\"", js)
+        self.assertIn("menu.hidden = false", js)
+        self.assertIn("positionMenu", js)
+        self.assertIn("--nav-more-left", js)
+        for selector in (".nav-more-button", ".nav-more-menu", ".nav-more-menu[hidden]", ".nav-more-menu a"):
+            self.assertIn(selector, css)
+        self.assertIn("position: fixed", css)
+        self.assertIn("z-index: 100", css)
+
     def test_com_header_identity_and_cross_site_link(self) -> None:
         js = site_header_js()
         self.assertIn("HandicapSkater.com", js)
