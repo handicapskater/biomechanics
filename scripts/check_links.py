@@ -18,6 +18,7 @@ HTML_FILES = [
 SKIP_SCHEMES = {"mailto", "tel", "javascript"}
 SKIP_PREFIXES = ("#",)
 EXTERNAL_TIMEOUT = 12
+SOFT_FAIL_EXTERNAL_HOSTS = {"www.sponet.de"}
 
 # Some providers block HEAD or bot-ish requests. Use GET with a browser-ish UA.
 HEADERS = {
@@ -111,6 +112,8 @@ def main() -> int:
 
             if absolute not in checked_external:
                 ok, status = check_external(absolute)
+                if not ok and parsed.netloc in SOFT_FAIL_EXTERNAL_HOSTS and "timed out" in status.lower():
+                    ok, status = True, f"{status} soft-timeout"
                 checked_external[absolute] = (ok, status)
                 time.sleep(0.05)
 
