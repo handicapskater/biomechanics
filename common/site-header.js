@@ -16,8 +16,6 @@
         { href: "/videos/", label: "Videos", match: ["/videos/", "/videos/index.html"] },
         { href: "/evidence/strava-gps-skate-maps/", label: "GPS Maps", match: ["/evidence/strava-gps-skate-maps/"] },
         { href: "/precedent.html", label: "Precedent", match: ["/precedent.html"] },
-        // { href: "/references.htm", label: "References", match: ["/references.htm", "/references.html"] },
-        // { href: "/index.htm", label: "Legacy Site", match: ["/index.htm"] },
         { href: "https://handicapskater.org/", label: "Standards", match: [] }
       ]
     },
