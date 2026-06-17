@@ -68,7 +68,6 @@
         <article class="card"><h3>Standards site</h3><p>Doctrine and public standards for non-traditional mobility aid review.</p><a href="https://handicapskater.org/">Open standards site</a></article>
         <article class="card"><h3>Legal notebook</h3><p>Reproducible legal and biomechanics notebook context for ParaTransit burden.</p><a href="https://github.com/handicapskater/datascience/blob/main/legal/notebooks/NonTraditional_Mobility_Aid_Biomechanics_ParaTransit_Burden.ipynb" target="_blank" rel="noopener">Open legal notebook</a></article>
         <article class="card"><h3>Wearable notebook</h3><p>Wearable biomechanical and ParaTransit analysis with source linked activity context.</p><a href="https://github.com/handicapskater/datascience/blob/main/legal/notebooks/Wearable_Biomechanical_ParaTransit_Reproducible.ipynb" target="_blank" rel="noopener">Open wearable notebook</a></article>
-        <article class="card"><h3>Legacy notebook</h3><p>Older public data science page retained as archive context.</p><a href="/datascience.htm">Open legacy notebook page</a></article>
         <article class="card"><h3>FSICSS platform</h3><p>Prototype platform layer for FSI/CSS evidence, source maps, retrieval, and reviewer-safe summaries.</p><a href="/platform.html">Review FSICSS platform overview</a></article>
       </div>
     </section>
@@ -119,7 +118,7 @@
               <figcaption>Legacy pelvis model used to explain the injury and why walking became costly.</figcaption>
             </figure>
           </div>
-          <p><a href="/background.htm">Legacy injury background</a> | <a href="/pain.htm">Pain and physiological stress</a></p>
+          <p><a href="/pain.htm">Pain and physiological stress</a></p>
         </article>
 
         <article class="timeline-item">
@@ -211,7 +210,7 @@
               <figcaption>The useful accommodation information remained opaque to third parties.</figcaption>
             </figure>
           </div>
-          <p><a href="/overview.htm">Legacy homepage DMV explanation</a> | <a href="../common/doc/DMV-LicenseReinstatement.pdf">DMV reinstatement record</a></p>
+          <p><a href="../common/doc/DMV-LicenseReinstatement.pdf">DMV reinstatement record</a></p>
         </article>
 
         <article class="timeline-item">
@@ -265,12 +264,31 @@
   </main>
 
   <footer class="site-footer">
-    <div>
-      <a href="/index.htm">Legacy Site</a> |
-      <a href="/references.htm">References</a> |
-      <a href="/common/doc/WhyIRideAMotorcycleWithSkates.pdf">Why I ride a motorcycle with skates</a> |
-      <a href="/paratransit-burden.html">ParaTransit Burden</a>
+    <div class="footer-inner footer-stack">
+      <div class="footer-social" aria-label="Support and social links">
+        <a class="donate-button" href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai" target="_blank" rel="noopener noreferrer">Donate Now</a>
+        <a class="social-link" href="http://www.facebook.com/group.php?gid=44036411369" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+        <a class="social-link" href="https://twitter.com/handicapskater" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">X</a>
+        <a class="social-link" href="https://www.youtube.com/channel/UCv8NPazTzuPxE_YM8-MIReQ" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YouTube</a>
+        <a class="social-link" href="https://rumble.com/c/c-1635644" target="_blank" rel="noopener noreferrer" aria-label="Rumble">Rumble</a>
+        <a class="social-link" href="https://instagram.com/handicapskater" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+      </div>
+
+      <div class="footer-meta">
+        <a href="/common/copyright.htm" target="_blank" rel="noopener noreferrer">
+          Copyright © 2004 - <span class="current-year">2026</span>
+        </a>
+      </div>
+
+      <p class="footer-note">
+        HandicapSkater.com presents the public case study, wearable mobility evidence, notebooks, outreach, and platform direction.
+      </p>
     </div>
   </footer>
+  <script>
+    document.querySelectorAll(".current-year").forEach(function (node) {
+      node.textContent = new Date().getFullYear();
+    });
+  </script>
 </body>
 </html>

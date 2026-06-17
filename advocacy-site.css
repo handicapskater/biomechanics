@@ -449,7 +449,6 @@ details {
   border: 1px solid var(--line);
   border-radius: 8px;
   margin-top: 1rem;
-  padding: 0.85rem 1rem;
 }
 
 summary {
@@ -478,11 +477,12 @@ summary {
 .site-footer {
   background: #0b1d26;
   color: #d7e4e7;
-  padding: 2rem 1rem;
 }
 
 .site-footer div {
-  margin: 0 auto;
+  padding-top: 1rem;
+  text-align: center;
+  padding-bottom: 1rem;
   max-width: 1180px;
 }
 
