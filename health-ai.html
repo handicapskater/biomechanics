@@ -9,8 +9,11 @@
   <link rel="stylesheet" href="advocacy-site.css">
   <link rel="stylesheet" href="/common/css/site-chrome.css">
 </head>
-<body>
+<body class="site-com">
   <div id="site-header"></div>
+  <link rel="stylesheet" href="/common/css/site-tokens.css">
+  <link rel="stylesheet" href="/common/css/site-components.css">
+  <link rel="stylesheet" href="/common/css/site-pages.css">
   <script src="/common/site-header.js"></script>
   <main>
     <section class="hero"><div class="hero-inner"><p class="eyebrow">Wearable health case study</p><h1>Wearable Health Evidence for Mobility, Access, and Accommodation</h1><p class="lead">Consumer wearable ecosystems are powerful when they understand real bodies in real environments. This case asks whether wearables can detect when a system is forcing a disabled person into a harmful mobility mode.</p></div></section>
@@ -82,9 +85,9 @@
         </ul>
       </div>
       <div class="button-row">
-        <a class="btn primary" href="/data.html">Review metrics</a>
-        <a class="btn secondary" href="https://colab.research.google.com/github/handicapskater/datascience/blob/main/HandicapSkater-Public.ipynb" target="_blank" rel="noopener">Open public notebook</a>
-        <a class="btn secondary" href="https://handicapskater.org/">Standards guidance</a>
+        <a class="button button-primary" href="/data.html">Review metrics</a>
+        <a class="button button-secondary" href="https://colab.research.google.com/github/handicapskater/datascience/blob/main/HandicapSkater-Public.ipynb" target="_blank" rel="noopener">Open public notebook</a>
+        <a class="button button-secondary" href="https://handicapskater.org/">Standards guidance</a>
       </div>
     </section>
     <section class="section portfolio-band">
@@ -96,12 +99,7 @@
       </div>
     </section>
   </main>
-  <footer class="site-footer">
-    <div>
-      <a href="/index.htm">Legacy Site</a> |
-      <a href="/datascience.htm">Legacy data science page</a> |
-      <a href="/paratransit-burden.html">ParaTransit Burden</a>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
+  <script src="/common/site-footer.js"></script>
 </body>
 </html>

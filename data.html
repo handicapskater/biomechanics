@@ -9,9 +9,12 @@
   <link rel="stylesheet" href="advocacy-site.css">
   <link rel="stylesheet" href="/common/css/site-chrome.css">
 </head>
-<body>
+<body class="site-com">
   <a class="skip-link" href="#main">Skip to content</a>
   <div id="site-header"></div>
+  <link rel="stylesheet" href="/common/css/site-tokens.css">
+  <link rel="stylesheet" href="/common/css/site-components.css">
+  <link rel="stylesheet" href="/common/css/site-pages.css">
   <script src="/common/site-header.js"></script>
 
   <main id="main">
@@ -127,8 +130,8 @@
         </article>
       </div>
       <div class="button-row">
-        <a class="btn primary" href="/platform.html#evidence-observatory">Open platform and RAG overview</a>
-        <a class="btn secondary" href="/docs/source_linked_claim_map.md">Review source linked claim map</a>
+        <a class="button button-primary" href="/platform.html#evidence-observatory">Open platform and RAG overview</a>
+        <a class="button button-secondary" href="/docs/source_linked_claim_map.md">Review source linked claim map</a>
       </div>
     </section>
 
@@ -267,16 +270,7 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div>
-      <strong>HandicapSkater</strong>
-      <p>Public advocacy, biomechanics, data science, and health AI portfolio. This page keeps the Tableau story readable while preserving legacy technical and legal evidence.</p>
-      <p>
-        <a href="/datascience.htm">Legacy data science page</a> |
-        <a href="/health-ai.html">Health AI case study</a> |
-        <a href="/paratransit-burden.html">ParaTransit Burden</a>
-      </p>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
+  <script src="/common/site-footer.js"></script>
 </body>
 </html>

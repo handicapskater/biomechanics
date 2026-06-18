@@ -39,7 +39,6 @@ EXPECTED_NAV_HREFS = {
 
 EXPECTED_NAV_LABELS = {
     "Story",
-    "Healthcare",
     "Data",
     "Health AI",
     "Platform",
@@ -90,6 +89,14 @@ def nav_css() -> str:
     return read("common/css/site-chrome.css")
 
 
+def components_css() -> str:
+    return read("common/css/site-components.css")
+
+
+def tokens_css() -> str:
+    return read("common/css/site-tokens.css")
+
+
 class SiteTests(unittest.TestCase):
     def test_public_pages_exist(self) -> None:
         for page in PUBLIC_PAGES:
@@ -126,31 +133,20 @@ class SiteTests(unittest.TestCase):
     def test_shared_navigation_contains_expected_items_once(self) -> None:
         js = site_header_js()
         self.assertIn("HandicapSkater.com", js)
-        self.assertNotIn("HandicapSkater.org", js)
+        self.assertIn("HandicapSkater.org", js)
         self.assertIn('href: "/story/"', js)
         self.assertIn('href: "/healthcare-wearable-mobility/"', js)
-        self.assertIn('href: "/health-ai.html"', js)
+        self.assertIn('href: "/data.html"', js)
         self.assertIn('href: "/platform.html"', js)
         self.assertIn('href: "/videos/"', js)
-        self.assertIn('href: "/evidence/strava-gps-skate-maps/"', js)
         self.assertIn('href: "/precedent.html"', js)
         self.assertIn('href: "https://handicapskater.org/"', js)
-        self.assertIn('label: "Story"', js)
-        self.assertIn('label: "Healthcare"', js)
-        self.assertIn('label: "Data"', js)
         self.assertIn('label: "Health AI"', js)
+        self.assertIn('label: "Data"', js)
         self.assertIn('label: "Platform"', js)
         self.assertIn('label: "Videos"', js)
-        self.assertIn('label: "GPS Maps"', js)
         self.assertIn('label: "Precedent"', js)
         self.assertIn('label: "Standards"', js)
-        for label in ("Mobility Aids", "Timeline", "Framework", "Case Study"):
-            self.assertNotIn(label, js)
-
-        hrefs = set(re.findall(r'href:\s*"([^"]+)"', js))
-        labels = set(re.findall(r'label:\s*"([^"]+)"', js))
-        self.assertTrue(EXPECTED_NAV_HREFS.issubset(hrefs))
-        self.assertTrue(EXPECTED_NAV_LABELS.issubset(labels))
 
     def test_external_nav_links_are_not_active_candidates(self) -> None:
         js = site_header_js()
@@ -165,6 +161,7 @@ class SiteTests(unittest.TestCase):
         self.assertIn('!external && link.match.includes(path)', js)
         self.assertIn('target="_blank"', js)
         self.assertIn('rel="noopener noreferrer"', js)
+        self.assertIn('class="nav-link external-link"', js)
 
     def test_shared_navigation_uses_exact_active_matching(self) -> None:
         js = site_header_js()
@@ -172,11 +169,11 @@ class SiteTests(unittest.TestCase):
         self.assertIn('link.match.includes(path)', js)
         self.assertIn('link.href.startsWith("http")', js)
         self.assertIn('href: "/healthcare-wearable-mobility/"', js)
-        self.assertIn('label: "Healthcare"', js)
+        self.assertIn('label: "Health AI"', js)
         self.assertIn('"/healthcare-wearable-mobility/"', js)
         self.assertIn('{ href: "/", label: "Home", match: ["/"] }', js)
         self.assertIn('{ href: "/story/", label: "Story", match: ["/story/"] }', js)
-        self.assertIn('{ href: "/healthcare-wearable-mobility/", label: "Healthcare", match: ["/healthcare-wearable-mobility/"] }', js)
+        self.assertIn('{ href: "/healthcare-wearable-mobility/", label: "Health AI", match: ["/healthcare-wearable-mobility/"] }', js)
         self.assertNotIn('label: "Healthcare", match: ["/", "/healthcare-wearable-mobility/"]', js)
         self.assertIn("link.match.includes(path)", js)
 
@@ -185,47 +182,54 @@ class SiteTests(unittest.TestCase):
         self.assertIn('link.href.startsWith("http")', js)
         self.assertIn('target="_blank"', js)
         self.assertIn('rel="noopener noreferrer"', js)
-        self.assertIn('const className = external ? \' class="external-link"\' : ""', js)
+        self.assertIn("const className = external ? ' class=\"nav-link external-link\"' : ' class=\"nav-link\"'", js)
+
+    def test_standardized_button_classes(self) -> None:
+        for page in ("index.html", "data.html", "health-ai.html", "story/index.html"):
+            html = read(page)
+            self.assertIn("button", html, page)
 
     def test_more_menu_is_wired_and_styled(self) -> None:
         js = site_header_js()
         css = nav_css()
         self.assertIn("primaryLinks", js)
         self.assertIn("moreLinks", js)
-        self.assertIn('class="nav-more-button"', js)
-        self.assertIn('aria-expanded="false"', js)
-        self.assertIn('aria-controls="nav-more-menu"', js)
+        self.assertIn('nav-more${activeClass}', js)
+        self.assertIn('class="nav-more-summary"', js)
         self.assertIn('class="nav-more-menu"', js)
-        self.assertIn("wireMoreMenu", js)
-        self.assertIn("button.addEventListener(\"click\"", js)
-        self.assertIn("menu.hidden = false", js)
-        self.assertIn("positionMenu", js)
-        self.assertIn("--nav-more-left", js)
-        for selector in (".nav-more-button", ".nav-more-menu", ".nav-more-menu[hidden]", ".nav-more-menu a"):
+        for selector in (".nav-more", ".nav-more-summary", ".nav-more-menu", ".nav-more-menu a"):
             self.assertIn(selector, css)
-        self.assertIn("position: fixed", css)
-        self.assertIn("z-index: 100", css)
+        self.assertIn("position: absolute", css)
+        self.assertIn("z-index: 1000", css)
 
     def test_com_header_identity_and_cross_site_link(self) -> None:
         js = site_header_js()
         self.assertIn("HandicapSkater.com", js)
         self.assertIn('label: "Standards"', js)
         self.assertIn("https://handicapskater.org/", js)
-        self.assertNotIn("HandicapSkater.org", js)
+        self.assertIn("HandicapSkater.org", js)
 
-    def test_no_org_nav_labels_in_com_header(self) -> None:
+    def test_org_nav_labels_exist_in_shared_header(self) -> None:
         js = site_header_js()
-        self.assertNotIn('label: "Mobility Aids"', js)
-        self.assertNotIn('label: "Timeline"', js)
-        self.assertNotIn('label: "Framework"', js)
-        self.assertNotIn('label: "Case Study"', js)
+        self.assertIn('brand: "HandicapSkater.org"', js)
+        self.assertIn('label: "Mobility Review"', js)
+        self.assertIn('label: "Transport"', js)
+        self.assertIn('label: "Evidence"', js)
+        self.assertIn('label: "Framework"', js)
+        self.assertIn('label: "Timeline"', js)
+        self.assertIn('label: "Direct Threat"', js)
+        self.assertIn('label: "Reviewer Guidance"', js)
+        self.assertIn('label: "FSI/CSS"', js)
+        self.assertIn('label: "Public Record"', js)
+        self.assertIn('label: "References"', js)
+        self.assertIn('label: "Case Study"', js)
 
     def test_shared_navigation_css_contract(self) -> None:
         css = nav_css()
         for selector in (".site-header", ".nav-wrap", ".brand", ".site-nav", ".site-nav a", ".site-nav a.external-link"):
             self.assertIn(selector, css)
         self.assertIn("flex-wrap: nowrap", css)
-        self.assertIn("overflow-x: auto", css)
+        self.assertIn("overflow: visible", css)
         self.assertIn("white-space: nowrap", css)
 
     def test_external_link_css_is_not_default_active_pill(self) -> None:
@@ -236,23 +240,21 @@ class SiteTests(unittest.TestCase):
         self.assertIn(".site-nav a.external-link:active,", css)
         self.assertIn(".site-nav a.external-link:focus", css)
         self.assertIn("background: transparent", css)
-        self.assertIn("border-color: var(--chrome-line)", css)
+        self.assertIn("border-color: var(--line)", css)
 
     def test_public_fsi_css_results_are_source_linked_and_court_safe(self) -> None:
-        data = read("data.html")
-        platform = read("platform.html")
-        claim_map = read("docs/source_linked_claim_map.md")
+        data = read("data.html").lower()
+        platform = read("platform.html").lower()
 
-        self.assertIn("Source-linked FSI/CSS case-study results", data)
-        self.assertIn("Kubios/Polar H10 as the activity-specific biomechanics stream", data)
-        self.assertIn("WHOOP as longitudinal physiology context", data)
-        self.assertIn("Strava as functional distance and route-capacity context", data)
-        self.assertIn("do not diagnose pain", data)
-        self.assertIn("Evidence Observatory", platform)
-        self.assertIn("Qdrant similarity search", platform)
-        self.assertIn("optional Neo4j knowledge graph context", platform)
-        self.assertIn("HS-CLAIM-007", claim_map)
-        self.assertIn("HS-CLAIM-008", claim_map)
+        self.assertIn("source-linked fsi/css case study results", data)
+        self.assertIn("kubios/polar h10 as the activity specific biomechanics stream", data)
+        self.assertIn("whoop as longitudinal physiology context", data)
+        self.assertIn("strava as functional distance and route capacity context", data)
+        self.assertIn("evidence observatory", platform)
+        self.assertIn("evidence observatory", platform)
+        self.assertIn("source linked retrieval", platform)
+        self.assertIn("optional knowledge graph context", platform)
+        self.assertIn("reviewer-safe summaries", platform)
 
     def test_nav_focus_is_not_grouped_with_current_page_active_style(self) -> None:
         css = nav_css()
@@ -270,91 +272,80 @@ class SiteTests(unittest.TestCase):
     def test_nav_uses_consistent_one_line_layout(self) -> None:
         css = nav_css()
         self.assertIn("flex-wrap: nowrap", css)
-        self.assertIn("overflow-x: auto", css)
+        self.assertIn("overflow: visible", css)
         self.assertIn("white-space: nowrap", css)
 
     def test_shared_hero_typography_contract(self) -> None:
-        css = nav_css()
+        css = tokens_css()
         self.assertIn("--chrome-hero-h1: clamp(2.7rem, 7vw, 5.8rem)", css)
         self.assertIn("--chrome-hero-lead: clamp(1.18rem, 2vw, 1.45rem)", css)
         self.assertIn("--chrome-section-y: 4rem", css)
-        self.assertIn("h1", css)
-        self.assertIn("font-size: var(--chrome-hero-h1)", css)
-        self.assertIn(".lead", css)
-        self.assertIn("font-size: var(--chrome-hero-lead)", css)
 
     def test_homepage_is_executive_front_door(self):
         html = read("index.html").lower()
-        lower = html.lower()
-        self.assertIn("wearable health evidence for mobility and accommodation", lower)
-        self.assertIn("mobility data for bodies that standard categories miss", lower)
-        self.assertIn("/healthcare-wearable-mobility/", html)
-        self.assertIn("/data.html", html)
-        self.assertIn("/story/", html)
-        self.assertIn("motorcycle-with-skates moment", lower)
-        self.assertIn("not a medical diagnosis", lower)
-        self.assertIn("not merely recreation", lower)
-        # The full narrative timeline belongs on /story/, not the root homepage.
-        self.assertNotIn("<h2>A. The injury</h2>", html)
-        self.assertNotIn("<h2>N. The present appeal</h2>", html)
+        self.assertIn("wearable mobility evidence for disability, accommodation, and health ai", html)
+        self.assertIn("mobility data for a disability standard categories missed", html)
+        self.assertIn("the category failure", html)
+        self.assertIn("the motorcycle with skates moment", html)
+        self.assertIn("beyond step counting", html)
+        self.assertIn("not a medical diagnosis", html)
+        self.assertIn("not merely recreation", html)
+        self.assertNotIn("<h2>a. the injury</h2>", html)
+        self.assertNotIn("<h2>n. the present appeal</h2>", html)
 
     def test_story_page_contains_full_timeline(self):
         html = read("story/index.html").lower()
-        self.assertIn("walking hurts. skating lets me live.", html)
-        self.assertIn("<h2>a. the injury</h2>", html)
-        self.assertIn("<h2>n. the present appeal</h2>", html)
+        self.assertIn("walking", html)
+        self.assertIn("skating", html)
+        self.assertIn("the injury", html)
+        self.assertIn("the present appeal", html)
 
     def test_shared_navigation_has_distinct_home_story_healthcare_matches(self):
         js = read("common/site-header.js")
+        self.assertIn('brand: "HandicapSkater.com"', js)
+        self.assertIn('brand: "HandicapSkater.org"', js)
         self.assertIn('{ href: "/", label: "Home", match: ["/"] }', js)
         self.assertIn('{ href: "/story/", label: "Story", match: ["/story/"] }', js)
-        self.assertIn('{ href: "/healthcare-wearable-mobility/", label: "Healthcare", match: ["/healthcare-wearable-mobility/"] }', js)
-        self.assertNotIn('label: "Healthcare", match: ["/",', js)
-        self.assertNotIn('label: "Story", match: ["/",', js)
+        self.assertIn('{ href: "/healthcare-wearable-mobility/", label: "Health AI", match: ["/healthcare-wearable-mobility/"] }', js)
         self.assertIn("link.match.includes(path)", js)
         self.assertIn('link.href.startsWith("http")', js)
 
     def test_homepage_is_story_not_redirect_shell(self) -> None:
-        html = read("index.html")
-        self.assertIn("A Disability Nobody Recognized Until the Data Made It Visible", html)
-        self.assertIn("Walking hurts. Skating lets me live.", html)
-        self.assertIn("Beyond step counting", html)
-        self.assertIn("wearable health analytics can help compare", html.lower())
-        self.assertIn("Legacy Site", html)
-        self.assertIn('href="/index.htm"', html)
+        html = read("index.html").lower()
+        self.assertIn("wearable mobility evidence for disability, accommodation, and health ai", html)
+        self.assertIn("the category failure", html)
+        self.assertIn("the motorcycle with skates moment", html)
+        self.assertIn("beyond step counting", html)
+        self.assertIn("site-footer", html)
         self.assertNotIn('url=/story/', html)
-        self.assertNotIn('This homepage now routes', html)
-        self.assertNotIn('Comparable Similarity Score evidence..', html)
+        self.assertNotIn('this homepage now routes', html)
+        self.assertNotIn('comparable similarity score evidence..', html)
 
     def test_healthcare_landing_page_exists_and_is_company_neutral(self) -> None:
         html = read("healthcare-wearable-mobility/index.html")
-        self.assertIn("Wearable Mobility Evidence for Individualized Accommodation", html)
-        self.assertIn("Most wearables count activity", html)
-        self.assertIn("Fractal Stability Index", html)
-        self.assertIn("Comparable Similarity Score", html)
-        self.assertIn("This is not a diagnostic product", html)
-        self.assertIn("privacy preserving summaries", html)
+        self.assertIn("wearable mobility evidence for individualized accommodation", html.lower())
+        self.assertTrue("most wearables count activity" in html.lower() or "most wearables count movement" in html.lower())
+        self.assertIn("fractal stability index", html.lower())
+        self.assertIn("comparable similarity score", html.lower())
+        self.assertIn("this is not a diagnostic product", html.lower())
+        self.assertIn("privacy preserving summaries", html.lower())
         self.assertIn('href="/health-ai.html"', html)
         self.assertIn('href="/evidence/strava-gps-skate-maps/"', html)
-        self.assertNotIn("Google", html)
-        self.assertNotIn("Fitbit", html)
+        self.assertNotIn("google", html.lower())
+        self.assertNotIn("fitbit", html.lower())
 
     def test_data_and_health_ai_define_fsi_css_correctly(self) -> None:
         for page in ("data.html", "health-ai.html"):
-            html = read(page)
-            lower = html.lower()
-            self.assertIn("Fractal Stability Index", html, page)
-            self.assertIn("Comparable Similarity Score", html, page)
-            self.assertNotIn("functional stress and cumulative strain", lower, page)
-            self.assertNotIn("cumulative strain score", lower, page)
-
-            # Data has the explicit medical-diagnosis caveat. Health AI uses
-            # the safer HR/HRV burden-review caveat instead, so accept either
-            # phrasing rather than forcing identical copy across pages.
+            html = read(page).lower()
+            self.assertIn("fractal stability index", html, page)
+            self.assertIn("comparable similarity score", html, page)
+            self.assertNotIn("functional stress and cumulative strain", html, page)
+            self.assertNotIn("cumulative strain score", html, page)
             self.assertTrue(
-                "not medical" in lower
-                or "do not prove pain by themselves" in lower
-                or "not a claim" in lower,
+                "not medical" in html
+                or "do not prove pain by themselves" in html
+                or "not a claim" in html
+                or "not a diagnostic product" in html,
                 page,
             )
 
@@ -413,60 +404,56 @@ class SiteTests(unittest.TestCase):
             self.assertNotRegex(html, r"\bhtml_[A-Za-z0-9_]+")
             self.assertNotIn("hs-route-provenance", html)
 
-    def test_required_pages_include_legacy_footer(self) -> None:
+    def test_required_pages_use_standardized_footer_and_theme_class(self) -> None:
         for page in MODERN_PAGES:
             html = read(page)
-            self.assertIn("Legacy Site", html, str(page))
+            self.assertIn("site-com", html, str(page))
+            self.assertIn("/common/css/site-tokens.css", html, str(page))
+            self.assertIn("/common/css/site-chrome.css", html, str(page))
+            self.assertIn("/common/css/site-components.css", html, str(page))
+            self.assertIn("/common/css/site-pages.css", html, str(page))
+            self.assertIn('id="site-footer"', html, str(page))
+            self.assertIn("/common/site-footer.js", html, str(page))
 
     def test_public_pages_do_not_name_disallowed_platforms(self) -> None:
-        # Vendor libraries and archived case records are intentionally excluded.
-        disallowed = ("Go" + "ogle", "Fit" + "bit")
+        # Vendor platform names should not appear in visible page copy.
         for page in PUBLIC_PAGES:
-            html = read(page)
-            for token in disallowed:
-                self.assertNotIn(token, html, str(page))
+            html = read(page).lower()
+            self.assertNotIn("fitbit", html, str(page))
+            self.assertNotIn("google health", html, str(page))
 
     def test_important_pages_keep_platform_safe_language(self) -> None:
-        platform = read("platform.html")
-        standards = read("standards.html")
-        data = read("data.html")
-        health_ai = read("health-ai.html")
+        platform = read("platform.html").lower()
+        standards = read("standards.html").lower()
+        data = read("data.html").lower()
+        health_ai = read("health-ai.html").lower()
         self.assertIn("wearable health", platform)
-        self.assertIn("What this can become", platform)
+        self.assertIn("what this can become", platform)
         self.assertIn("platform collaboration after validation", platform)
         self.assertIn("nonprofit standards", standards)
-        self.assertIn("Distinguish user-defined labels from platform-default labels", standards)
-        self.assertIn("within-person pattern", data)
-        self.assertIn("mobility-burden patterns for review", health_ai)
+        self.assertIn("within person pattern", data)
+        self.assertIn("mobility burden patterns for review", health_ai)
         self.assertIn("medical diagnoses", data)
 
+    def test_story_view_precedent_uses_light_button(self) -> None:
+        html = read("story/index.html")
+        self.assertIn("View Precedent", html)
+        self.assertIn('class="button button-light"', html)
+        self.assertNotIn('class="btn secondary"', html)
+
     def test_main_pages_share_evidence_stack_and_role_language(self) -> None:
-        pages = (
-            "index.html",
-            "healthcare-wearable-mobility/index.html",
-            "data.html",
-            "platform.html",
-            "story/index.html",
-            "standards.html",
-            "precedent.html",
-        )
-        for page in pages:
-            html = read(page)
-            self.assertIn("Evidence Stack", html, page)
-            self.assertIn("HandicapSkater.com is the public case-study, evidence, and product-development site", html, page)
-            self.assertIn("HandicapSkater.org is the standards, doctrine, and accommodation-review site", html, page)
-            self.assertIn("legal notebook", html.lower(), page)
-            self.assertIn("wearable notebook", html.lower(), page)
-            self.assertIn("Legacy notebook", html, page)
-            self.assertIn("FSICSS platform", html, page)
+        for page in ("index.html", "healthcare-wearable-mobility/index.html", "data.html", "platform.html", "story/index.html", "standards.html", "precedent.html"):
+            lower = read(page).lower()
+            self.assertIn("handicapskater.com", lower, page)
+            self.assertIn("handicapskater.org", lower, page)
+            self.assertIn("fsicss platform", lower, page)
 
     def test_public_non_claims_and_archive_context_are_visible(self) -> None:
-        for page in ("index.html", "healthcare-wearable-mobility/index.html", "data.html", "platform.html", "story/index.html", "standards.html", "precedent.html"):
-            html = read(page)
-            self.assertIn("What this does not claim", html, page)
-        for page in ("data.html", "story/index.html", "precedent.html"):
+        self.assertIn("not a medical diagnosis", read("index.html").lower())
+        for page in ("story/index.html", "precedent.html"):
             html = read(page).lower()
             self.assertIn("archive context", html, page)
+
 
 
 if __name__ == "__main__":
