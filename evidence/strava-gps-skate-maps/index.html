@@ -9,9 +9,13 @@
   <link rel="stylesheet" href="../../advocacy-site.css">
   <link rel="stylesheet" href="/common/css/site-chrome.css">
 </head>
-<body>
+<body class="site-com">
   <a class="skip-link" href="#main">Skip to content</a>
   <div id="site-header"></div>
+  <link rel="stylesheet" href="/common/css/site-tokens.css">
+  <link rel="stylesheet" href="/common/css/site-chrome.css">
+  <link rel="stylesheet" href="/common/css/site-components.css">
+  <link rel="stylesheet" href="/common/css/site-pages.css">
   <script src="/common/site-header.js"></script>
 
   <main id="main">
@@ -96,7 +100,7 @@
             <p id="selected-route-help">Choose a route from the list to load the map preview.</p>
 
             <div class="button-row">
-              <a id="selected-route-open" class="btn secondary" href="#" target="_blank" rel="noopener" hidden>Open full map</a>
+              <a id="selected-route-open" class="button button-secondary" href="#" target="_blank" rel="noopener" hidden>Open full map</a>
             </div>
           </div>
 
@@ -460,20 +464,14 @@
         <p>The route-map HTML files are served from <code>/common/maps/</code>. The notebook source path reviewed for this page was <code>../datascience/HandicapSkater-Public.ipynb</code>.</p>
       </div>
       <div class="button-row">
-        <a class="btn primary" href="/data.html">Review wearable evidence</a>
-        <a class="btn secondary" href="/precedent.html">Review accommodation context</a>
+        <a class="button button-primary" href="/data.html">Review wearable evidence</a>
+        <a class="button button-secondary" href="/precedent.html">Review accommodation context</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div>
-      <a href="/index.htm">Legacy Site</a> |
-      <a href="/data.html">Data</a> |
-      <a href="/health-ai.html">Health AI case study</a> |
-      <a href="/paratransit-burden.html">ParaTransit Burden</a>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
+  <script src="/common/site-footer.js"></script>
   <script>
     (function () {
       const rawList = document.getElementById("route-map-list");

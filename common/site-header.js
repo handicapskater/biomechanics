@@ -19,7 +19,6 @@
         { href: "https://handicapskater.org/", label: "Standards", match: [] }
       ]
     },
-
     "handicapskater.org": {
       brand: "HandicapSkater.org",
       primaryLinks: [
@@ -31,7 +30,7 @@
         { href: "/accommodation-framework.html", label: "Framework", match: ["/accommodation-framework.html"] }
       ],
       moreLinks: [
-        { href: "/federal-timeline.html", label: "Timeline", match: ["/federal-timeline.html"] },
+        { href: "/dot-fta-doj-timeline.html", label: "Timeline", match: ["/dot-fta-doj-timeline.html"] },
         { href: "/direct-threat-analysis.html", label: "Direct Threat", match: ["/direct-threat-analysis.html"] },
         { href: "/reviewer-guidance.html", label: "Reviewer Guidance", match: ["/reviewer-guidance.html"] },
         { href: "/fsi-css-platform.html", label: "FSI/CSS", match: ["/fsi-css-platform.html"] },
@@ -45,16 +44,6 @@
   const fallback = menus["handicapskater.com"];
   const config = menus[host] || fallback;
 
-  function ensureChromeStylesheet() {
-    const href = "/common/css/site-chrome.css";
-    if (document.querySelector('link[href="' + href + '"]')) return;
-
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href = href;
-    document.head.appendChild(link);
-  }
-
   function normalizePath(pathname) {
     if (!pathname || pathname === "/index.html" || pathname === "/index.htm") return "/";
     if (pathname.endsWith("/index.html")) return pathname.replace(/index\.html$/, "");
@@ -62,41 +51,68 @@
     return pathname;
   }
 
-  function isExternal(link) {
-    return /^https?:\/\//i.test(link.href);
-  }
-
-  function isActive(link, path) {
-    if (isExternal(link)) return false;
-    return link.match.includes(path);
-  }
-
   function renderNavLink(link, path) {
-    const external = isExternal(link);
-    const active = isActive(link, path) ? ' aria-current="page"' : "";
+    const external = link.href.startsWith("http");
+    const active = !external && link.match.includes(path) ? ' aria-current="page"' : "";
     const attrs = external ? ' target="_blank" rel="noopener noreferrer"' : "";
-    const className = external ? ' class="external-link"' : "";
+    const className = external ? ' class="nav-link external-link"' : ' class="nav-link"';
     return `<a${className} href="${link.href}"${active}${attrs}>${link.label}</a>`;
   }
 
   function renderMoreMenu(links, path) {
-    const active = links.some((link) => isActive(link, path));
+    const active = links.some((link) => !link.href.startsWith("http") && link.match.includes(path));
     const activeClass = active ? " is-active" : "";
     const menuLinks = links.map((link) => renderNavLink(link, path)).join("");
 
     return `
-      <details class="hs-more${activeClass}">
-        <summary class="hs-more-summary">More</summary>
-        <div class="hs-more-menu">
+      <details class="nav-more${activeClass}">
+        <summary class="nav-more-summary">More</summary>
+        <div class="nav-more-menu">
           ${menuLinks}
         </div>
       </details>
     `;
   }
 
-  function renderSiteHeader() {
-    ensureChromeStylesheet();
+  function wireMoreMenuCloseBehavior() {
+    const details = document.querySelector(".nav-more");
+    if (!details) return;
 
+    const summary = details.querySelector(".nav-more-summary");
+    const menu = details.querySelector(".nav-more-menu");
+    if (!summary || !menu) return;
+
+    function closeMoreMenu() {
+      details.removeAttribute("open");
+    }
+
+    document.addEventListener("pointerdown", function (event) {
+      if (details.open && !details.contains(event.target)) closeMoreMenu();
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && details.open) {
+        closeMoreMenu();
+        summary.focus();
+      }
+    });
+
+    document.addEventListener("focusin", function (event) {
+      if (details.open && !details.contains(event.target)) closeMoreMenu();
+    });
+
+    menu.addEventListener("click", function (event) {
+      if (event.target.closest("a")) closeMoreMenu();
+    });
+
+    window.addEventListener("scroll", function () {
+      if (details.open) closeMoreMenu();
+    }, { passive: true });
+
+    window.addEventListener("resize", closeMoreMenu);
+  }
+
+  function renderSiteHeader() {
     const mount = document.getElementById("site-header");
     if (!mount) return;
 
@@ -108,13 +124,14 @@
       <header class="site-header" data-site-host="${host}">
         <div class="nav-wrap">
           <a class="brand" href="/">${config.brand}</a>
-          <nav class="site-nav" aria-label="Main navigation">
+          <nav class="site-nav" aria-label="Primary navigation">
             ${primaryNav}
             ${moreNav}
           </nav>
         </div>
       </header>
     `;
+
     wireMoreMenuCloseBehavior();
   }
 
@@ -123,49 +140,4 @@
   } else {
     renderSiteHeader();
   }
-
 })();
-
-function wireMoreMenuCloseBehavior() {
-  const details = document.querySelector(".hs-more");
-  if (!details) return;
-
-  const summary = details.querySelector(".hs-more-summary");
-  const menu = details.querySelector(".hs-more-menu");
-  if (!summary || !menu) return;
-
-  function closeMoreMenu() {
-    details.removeAttribute("open");
-  }
-
-  document.addEventListener("pointerdown", function (event) {
-    if (details.open && !details.contains(event.target)) {
-      closeMoreMenu();
-    }
-  });
-
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape" && details.open) {
-      closeMoreMenu();
-      summary.focus();
-    }
-  });
-
-  document.addEventListener("focusin", function (event) {
-    if (details.open && !details.contains(event.target)) {
-      closeMoreMenu();
-    }
-  });
-
-  menu.addEventListener("click", function (event) {
-    if (event.target.closest("a")) {
-      closeMoreMenu();
-    }
-  });
-
-  window.addEventListener("scroll", function () {
-    if (details.open) closeMoreMenu();
-  }, { passive: true });
-
-  window.addEventListener("resize", closeMoreMenu);
-}

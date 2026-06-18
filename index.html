@@ -9,9 +9,12 @@
   <link rel="stylesheet" href="/advocacy-site.css">
   <link rel="stylesheet" href="/common/css/site-chrome.css">
 </head>
-<body>
+<body class="site-com">
   <a class="skip-link" href="#main">Skip to content</a>
   <div id="site-header"></div>
+  <link rel="stylesheet" href="/common/css/site-tokens.css">
+  <link rel="stylesheet" href="/common/css/site-components.css">
+  <link rel="stylesheet" href="/common/css/site-pages.css">
   <script src="/common/site-header.js"></script>
 
   <main id="main">
@@ -23,12 +26,15 @@
           HandicapSkater is a real world case study showing how a non-traditional mobility aid became visible through medical records, accommodation history, GPS routes, WHOOP context, Strava mobility records, Kubios/Polar H10 HRV/RRI testing, accelerometer evidence, and source linked data science.
         </p>
         <p class="hero-copy">
-          The core issue is simple: for my documented pelvic, sacroiliac, and hip impairment, walking can impose painful ballistic burden while controlled inline skating provides functional mobility. The evidence supports individualized review. It is not a medical diagnosis, legal finding, or automated proof of pain by itself.
+          The core issue is simple: for my documented pelvic, sacroiliac, and hip impairment,
+          walking can impose painful ballistic burden while controlled inline skating provides
+          functional mobility. The evidence supports individualized review using medical records,
+          accommodation history, wearable signals, route records, and source-linked context.
         </p>
         <div class="button-row">
-          <a class="btn primary" href="/healthcare-wearable-mobility/">Healthcare / Wearable brief</a>
-          <a class="btn secondary" href="/data.html">Review evidence</a>
-          <a class="btn outline" href="/story/">Read the story</a>
+          <a class="button button-primary" href="/healthcare-wearable-mobility/">Healthcare / Wearable brief</a>
+          <a class="button button-secondary" href="/data.html">Review evidence</a>
+          <a class="button button-light" href="/story/">Read the story</a>
         </div>
       </div>
     </section>
@@ -86,9 +92,9 @@
           That moment exposes the platform problem: current systems cannot easily classify a disabled person shopping with prosthetic skates, transferring onto a motorcycle, and using the same device for mobility, transportation, and access.
         </p>
         <div class="button-row">
-          <a class="btn primary" href="https://www.reddit.com/r/HandicapSkater/comments/1qgt6r5/they_see_me_rollin_they_be_hatin" target="_blank" rel="noopener">View the motorcycle video</a>
-          <a class="btn secondary" href="/videos/">Review video evidence</a>
-          <a class="btn outline" href="/story/#h-why-i-began-riding-a-motorcycle-with-skates">Read the motorcycle history</a>
+          <a class="button button-primary" href="https://www.reddit.com/r/HandicapSkater/comments/1qgt6r5/they_see_me_rollin_they_be_hatin" target="_blank" rel="noopener">View the motorcycle video</a>
+          <a class="button button-secondary" href="/videos/">Review video evidence</a>
+          <a class="button button-light" href="/story/#h-why-i-began-riding-a-motorcycle-with-skates">Read the motorcycle history</a>
         </div>
       </div>
     </section>
@@ -184,7 +190,7 @@
       <div class="grid three">
         <article class="card">
           <h3>Healthcare brief</h3>
-          <p>Wearable mobility evidence framed for healthcare, accessibility, Fitbit/Google Health, and product teams.</p>
+          <p>Wearable mobility evidence framed for healthcare, accessibility, and product teams.</p>
           <a href="/healthcare-wearable-mobility/">Open healthcare brief</a>
         </article>
         <article class="card">
@@ -230,14 +236,7 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div>
-      <a href="/story/">Story</a> |
-      <a href="/healthcare-wearable-mobility/">Healthcare brief</a> |
-      <a href="/data.html">Data</a> |
-      <a href="/paratransit-burden.html">ParaTransit Burden</a> |
-      <a href="/videos/">Videos</a>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
+  <script src="/common/site-footer.js"></script>
 </body>
 </html>
