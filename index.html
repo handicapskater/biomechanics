@@ -26,16 +26,38 @@
           HandicapSkater is a real world case study showing how a non-traditional mobility aid became visible through medical records, accommodation history, GPS routes, WHOOP context, Strava mobility records, Kubios/Polar H10 HRV/RRI testing, accelerometer evidence, and source linked data science.
         </p>
         <p class="hero-copy">
-          The core issue is simple: for my documented pelvic, sacroiliac, and hip impairment,
-          walking can impose painful ballistic burden while controlled inline skating provides
+          The core issue is functional mobility: for my documented pelvic, sacroiliac, and hip impairment,
+          walking is active but ballistic, while controlled inline skating can provide
           functional mobility. The evidence supports individualized review using medical records,
-          accommodation history, wearable signals, route records, and source-linked context.
+          accommodation history, wearable signals, route records, and source linked context.
         </p>
         <div class="button-row">
           <a class="button button-primary" href="/healthcare-wearable-mobility/">Healthcare / Wearable brief</a>
           <a class="button button-secondary" href="/data.html">Review evidence</a>
           <a class="button button-light" href="/story/">Read the story</a>
         </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="section-header">
+        <h2>A Mobility Aid Evidence Record Built From Physiology, Motion, and Control</h2>
+        <p>
+          HandicapSkater is a within person mobility evidence record built from wearable data, motion
+          sensors, route history, videos, notebooks, and functional testing.
+        </p>
+        <p>
+          The current corpus separates physiologic burden, mechanical motion exposure, and body coupling.
+          HR, RMSSD, recovery context, HR per mile, distance per mean HR, duration tolerated, and RMSSD
+          deltas belong in the physiologic layer. ACC dynamic RMS, jerk RMS, shock spike rate, and
+          cumulative dynamic shock describe mechanical motion exposure at the sensor. Active controlled,
+          active ballistic, passive passenger, and recovery baseline describe body coupling and control.
+        </p>
+        <p>
+          Inline skating and motorcycle riding can show higher raw motion while remaining active controlled
+          mobility. Walking is active but ballistic. ParaTransit is passive imposed passenger exposure and
+          must be reviewed as more than generic transportation.
+        </p>
       </div>
     </section>
 
@@ -60,9 +82,9 @@
           </p>
         </article>
         <article class="card">
-          <h3>Not diagnosis by algorithm</h3>
+          <h3>Not decided by algorithm</h3>
           <p>
-            Wearable data supports review. It does not diagnose pain, decide disability status, or replace medical and factual context.
+            Wearable data supports review. It does not establish pain, decide disability status, or replace medical and factual context.
           </p>
         </article>
         <article class="card">
@@ -103,7 +125,7 @@
       <div class="section-header">
         <h2>Beyond step counting</h2>
         <p>
-          Most wearables count activity. This project asks the harder question: is the movement sustainable, harmful, accessible, or forced?
+          Most wearables count activity. This project asks the harder question: is the movement lower burden, higher burden, accessible, or forced?
         </p>
         <p>
           For disability, more steps are not always better. The goal is functional mobility, not conformity to walking.
@@ -120,27 +142,32 @@
         </article>
         <article class="card">
           <h3>Source linked review</h3>
-          <p>Evidence is organized so reviewers can separate source records, interpretation, metrics, caveats, and claims.</p>
+          <p>Evidence is organized so reviewers can separate source records, interpretation, metrics, limits, source quality, missing data, review boundaries, and claims.</p>
         </article>
       </div>
     </section>
 
     <section class="section">
       <div class="section-header">
-        <h2>Integrated evidence record</h2>
+        <h2>Integrated Evidence Record</h2>
         <p>
-          The public record combines medical history, accommodation documents, wearable data, GPS route maps, targeted sensor sessions, videos, legal access records, and biomechanics context. It is designed for careful review, not single metric proof.
+          The current refined mobility science corpus contains 2,171 records. Body coupling context
+          and physiologic efficiency fields exist for all records. RAG facets are expanded so records
+          can be reviewed by activity, coupling context, physiologic burden, mechanical exposure,
+          vehicle type, route context, audit status, and metric coverage.
+        </p>
+        <p>
+          The model separates physiologic burden, mechanical motion exposure, and body coupling. ACC,
+          jerk, and shock describe mechanical exposure at the sensor. They do not automatically equal
+          pain, physiologic burden, or disability burden.
         </p>
       </div>
       <div class="grid three">
-        <article class="card"><h3>3,453</h3><p>Included evidence events</p></article>
-        <article class="card"><h3>1,549</h3><p>Skating events</p></article>
-        <article class="card"><h3>133</h3><p>ParaTransit events</p></article>
-        <article class="card"><h3>950</h3><p>Baseline, recovery, and readiness records excluded from burden comparisons</p></article>
-        <article class="card"><h3>71</h3><p>Targeted RRI, accelerometer, FSI, and CSS capable records</p></article>
-        <article class="card"><h3>4,935</h3><p>Duplicate excluded records retained for audit</p></article>
+        <article class="card"><h3>2,171</h3><p>Current refined corpus records</p></article>
+        <article class="card"><h3>All records</h3><p>Body coupling context and physiologic efficiency fields exist for all records</p></article>
+        <article class="card"><h3>81</h3><p>Records with ACC shock component metrics</p></article>
       </div>
-      <p>Distance is functional mobility achieved, not automatic burden. A two mile skate and a several hundred foot walk should be compared by mobility achieved per burden unit, not by distance alone.</p>
+      <p>Impact shock index remains components only because no normalization baseline is defined.</p>
     </section>
 
     <section class="section alt">
@@ -153,7 +180,7 @@
         <article class="card"><h3>Standards site</h3><p>Non-traditional mobility aid standards, individualized review doctrine, regulatory timeline, and public accommodation framework.</p><a href="https://handicapskater.org/">Open standards site</a></article>
         <article class="card"><h3>Legal notebook</h3><p>Reproducible legal and biomechanics notebook context for walking, skating, ParaTransit burden, and non-traditional mobility aid review.</p><a href="https://github.com/handicapskater/datascience/blob/main/legal/notebooks/NonTraditional_Mobility_Aid_Biomechanics_ParaTransit_Burden.ipynb" target="_blank" rel="noopener">Open legal notebook</a></article>
         <article class="card"><h3>Wearable notebook</h3><p>Wearable biomechanical and ParaTransit analysis with source linked activity, HR/HRV/RRI, and burden context.</p><a href="https://github.com/handicapskater/datascience/blob/main/legal/notebooks/Wearable_Biomechanical_ParaTransit_Reproducible.ipynb" target="_blank" rel="noopener">Open wearable notebook</a></article>
-        <article class="card"><h3>FSICSS platform</h3><p>Prototype platform layer for organizing FSI/CSS evidence, source maps, retrieval, caveats, and reviewer safe summaries.</p><a href="/platform.html">Review FSICSS platform overview</a></article>
+        <article class="card"><h3>FSICSS platform</h3><p>Prototype platform layer for organizing FSI/CSS evidence, source maps, retrieval, limits, source quality, missing data, and reviewer safe summaries.</p><a href="/platform.html">Review FSICSS platform overview</a></article>
       </div>
     </section>
 
@@ -175,7 +202,7 @@
         </article>
         <article class="card">
           <h3>Responsible AI boundary</h3>
-          <p>The platform should support human review, traceability, provenance, and careful caveats.</p>
+          <p>The platform should support human review, traceability, provenance, and review boundaries.</p>
         </article>
       </div>
     </section>

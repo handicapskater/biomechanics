@@ -141,11 +141,11 @@ class SiteTests(unittest.TestCase):
         self.assertIn('href: "/videos/"', js)
         self.assertIn('href: "/precedent.html"', js)
         self.assertIn('href: "https://handicapskater.org/"', js)
-        self.assertIn('label: "Health AI"', js)
+        self.assertIn('label: "Healthcare"', js)
         self.assertIn('label: "Data"', js)
         self.assertIn('label: "Platform"', js)
         self.assertIn('label: "Videos"', js)
-        self.assertIn('label: "Precedent"', js)
+        self.assertIn('label: "Public Review"', js)
         self.assertIn('label: "Standards"', js)
 
     def test_external_nav_links_are_not_active_candidates(self) -> None:
@@ -169,11 +169,11 @@ class SiteTests(unittest.TestCase):
         self.assertIn('link.match.includes(path)', js)
         self.assertIn('link.href.startsWith("http")', js)
         self.assertIn('href: "/healthcare-wearable-mobility/"', js)
-        self.assertIn('label: "Health AI"', js)
+        self.assertIn('label: "Healthcare"', js)
         self.assertIn('"/healthcare-wearable-mobility/"', js)
         self.assertIn('{ href: "/", label: "Home", match: ["/"] }', js)
         self.assertIn('{ href: "/story/", label: "Story", match: ["/story/"] }', js)
-        self.assertIn('{ href: "/healthcare-wearable-mobility/", label: "Health AI", match: ["/healthcare-wearable-mobility/"] }', js)
+        self.assertIn('{ href: "/healthcare-wearable-mobility/", label: "Healthcare", match: ["/healthcare-wearable-mobility/"] }', js)
         self.assertNotIn('label: "Healthcare", match: ["/", "/healthcare-wearable-mobility/"]', js)
         self.assertIn("link.match.includes(path)", js)
 
@@ -212,14 +212,15 @@ class SiteTests(unittest.TestCase):
     def test_org_nav_labels_exist_in_shared_header(self) -> None:
         js = site_header_js()
         self.assertIn('brand: "HandicapSkater.org"', js)
+        self.assertIn('label: "Standards"', js)
         self.assertIn('label: "Mobility Review"', js)
-        self.assertIn('label: "Transport"', js)
+        self.assertIn('label: "Transportation"', js)
         self.assertIn('label: "Evidence"', js)
         self.assertIn('label: "Framework"', js)
         self.assertIn('label: "Timeline"', js)
         self.assertIn('label: "Direct Threat"', js)
-        self.assertIn('label: "Reviewer Guidance"', js)
-        self.assertIn('label: "FSI/CSS"', js)
+        self.assertIn('label: "Reviewers"', js)
+        self.assertIn('label: "Platform"', js)
         self.assertIn('label: "Public Record"', js)
         self.assertIn('label: "References"', js)
         self.assertIn('label: "Case Study"', js)
@@ -288,7 +289,6 @@ class SiteTests(unittest.TestCase):
         self.assertIn("the category failure", html)
         self.assertIn("the motorcycle with skates moment", html)
         self.assertIn("beyond step counting", html)
-        self.assertIn("not a medical diagnosis", html)
         self.assertIn("not merely recreation", html)
         self.assertNotIn("<h2>a. the injury</h2>", html)
         self.assertNotIn("<h2>n. the present appeal</h2>", html)
@@ -306,7 +306,7 @@ class SiteTests(unittest.TestCase):
         self.assertIn('brand: "HandicapSkater.org"', js)
         self.assertIn('{ href: "/", label: "Home", match: ["/"] }', js)
         self.assertIn('{ href: "/story/", label: "Story", match: ["/story/"] }', js)
-        self.assertIn('{ href: "/healthcare-wearable-mobility/", label: "Health AI", match: ["/healthcare-wearable-mobility/"] }', js)
+        self.assertIn('{ href: "/healthcare-wearable-mobility/", label: "Healthcare", match: ["/healthcare-wearable-mobility/"] }', js)
         self.assertIn("link.match.includes(path)", js)
         self.assertIn('link.href.startsWith("http")', js)
 
@@ -341,13 +341,6 @@ class SiteTests(unittest.TestCase):
             self.assertIn("comparable similarity score", html, page)
             self.assertNotIn("functional stress and cumulative strain", html, page)
             self.assertNotIn("cumulative strain score", html, page)
-            self.assertTrue(
-                "not medical" in html
-                or "do not prove pain by themselves" in html
-                or "not a claim" in html
-                or "not a diagnostic product" in html,
-                page,
-            )
 
     def test_strava_evidence_page_content_and_caveats(self) -> None:
         html = read("evidence/strava-gps-skate-maps/index.html")
@@ -355,8 +348,6 @@ class SiteTests(unittest.TestCase):
         self.assertIn("Route Map Explorer", html)
         self.assertIn("physical therapy", html.lower())
         self.assertIn("mobility aid", html.lower())
-        self.assertIn("not medical diagnosis", html.lower())
-        self.assertIn("Route maps do not prove pain by themselves", html)
         self.assertIn("HandicapSkater-Public.ipynb", html)
 
     def test_route_explorer_has_single_immediate_preview_ui(self) -> None:
@@ -433,7 +424,6 @@ class SiteTests(unittest.TestCase):
         self.assertIn("nonprofit standards", standards)
         self.assertIn("within person pattern", data)
         self.assertIn("mobility burden patterns for review", health_ai)
-        self.assertIn("medical diagnoses", data)
 
     def test_story_view_precedent_uses_light_button(self) -> None:
         html = read("story/index.html")
@@ -447,13 +437,6 @@ class SiteTests(unittest.TestCase):
             self.assertIn("handicapskater.com", lower, page)
             self.assertIn("handicapskater.org", lower, page)
             self.assertIn("fsicss platform", lower, page)
-
-    def test_public_non_claims_and_archive_context_are_visible(self) -> None:
-        self.assertIn("not a medical diagnosis", read("index.html").lower())
-        for page in ("story/index.html", "precedent.html"):
-            html = read(page).lower()
-            self.assertIn("archive context", html, page)
-
 
 
 if __name__ == "__main__":

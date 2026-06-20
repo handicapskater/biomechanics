@@ -9,6 +9,8 @@ From the repo root:
 ```sh
 cd /Users/troywilkes/repos/biomechanics
 python3 -m http.server 8080
+
+cloudflared tunnel --url http://localhost:8080
 ```
 
 Or run the helper script:
@@ -67,5 +69,8 @@ Run static link and public-copy checks:
 
 ```sh
 python3 scripts/check_site_links.py
+python3 scripts/check_links.py
 python3 -m unittest discover -s tests
+
+python3 -m unittest discover -s tests 2>&1 | pbcopy
 ```

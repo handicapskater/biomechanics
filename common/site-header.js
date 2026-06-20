@@ -7,15 +7,15 @@
       primaryLinks: [
         { href: "/", label: "Home", match: ["/"] },
         { href: "/story/", label: "Story", match: ["/story/"] },
-        { href: "/healthcare-wearable-mobility/", label: "Health AI", match: ["/healthcare-wearable-mobility/"] },
         { href: "/data.html", label: "Data", match: ["/data.html"] },
-        { href: "/paratransit-burden.html", label: "Transit", match: ["/paratransit-burden.html"] },
+        { href: "/paratransit-burden.html", label: "Transportation", match: ["/paratransit-burden.html"] },
+        { href: "/evidence/strava-gps-skate-maps/", label: "Evidence", match: ["/evidence/strava-gps-skate-maps/", "/videos/", "/videos/index.html", "/precedent.html", "/healthcare-wearable-mobility/"] },
         { href: "/platform.html", label: "Platform", match: ["/platform.html"] }
       ],
       moreLinks: [
+        { href: "/healthcare-wearable-mobility/", label: "Healthcare", match: ["/healthcare-wearable-mobility/"] },
         { href: "/videos/", label: "Videos", match: ["/videos/", "/videos/index.html"] },
-        { href: "/evidence/strava-gps-skate-maps/", label: "GPS Maps", match: ["/evidence/strava-gps-skate-maps/"] },
-        { href: "/precedent.html", label: "Precedent", match: ["/precedent.html"] },
+        { href: "/precedent.html", label: "Public Review", match: ["/precedent.html"] },
         { href: "https://handicapskater.org/", label: "Standards", match: [] }
       ]
     },
@@ -24,18 +24,18 @@
       primaryLinks: [
         { href: "/", label: "Home", match: ["/"] },
         { href: "/standards.html", label: "Standards", match: ["/standards.html"] },
-        { href: "/non-traditional-mobility-aids.html", label: "Mobility Review", match: ["/non-traditional-mobility-aids.html"] },
-        { href: "/transportation-accommodation.html", label: "Transport", match: ["/transportation-accommodation.html"] },
+        { href: "/transportation-accommodation.html", label: "Transportation", match: ["/transportation-accommodation.html"] },
         { href: "/evidence-standards.html", label: "Evidence", match: ["/evidence-standards.html"] },
-        { href: "/accommodation-framework.html", label: "Framework", match: ["/accommodation-framework.html"] }
+        { href: "/reviewer-guidance.html", label: "Reviewers", match: ["/reviewer-guidance.html"] },
+        { href: "/fsi-css-platform.html", label: "Platform", match: ["/fsi-css-platform.html"] }
       ],
       moreLinks: [
+        { href: "/non-traditional-mobility-aids.html", label: "Mobility Review", match: ["/non-traditional-mobility-aids.html"] },
+        { href: "/accommodation-framework.html", label: "Framework", match: ["/accommodation-framework.html"] },
         { href: "/dot-fta-doj-timeline.html", label: "Timeline", match: ["/dot-fta-doj-timeline.html"] },
         { href: "/direct-threat-analysis.html", label: "Direct Threat", match: ["/direct-threat-analysis.html"] },
-        { href: "/reviewer-guidance.html", label: "Reviewer Guidance", match: ["/reviewer-guidance.html"] },
-        { href: "/fsi-css-platform.html", label: "FSI/CSS", match: ["/fsi-css-platform.html"] },
         { href: "/public-record.html", label: "Public Record", match: ["/public-record.html"] },
-        { href: "/references.html", label: "References", match: ["/references.html", "/references.htm"] },
+        { href: "/references.html", label: "References", match: ["/references.html"] },
         { href: "https://handicapskater.com/", label: "Case Study", match: [] }
       ]
     }
