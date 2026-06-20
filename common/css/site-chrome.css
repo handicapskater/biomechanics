@@ -1,4 +1,10 @@
-/* Shared chrome for HandicapSkater.com */
+/* Shared chrome for HandicapSkater.com and HandicapSkater.org */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 html {
   scroll-padding-top: 5rem;
@@ -40,6 +46,8 @@ a:focus {
   top: 1rem;
 }
 
+/* Header */
+
 .site-header {
   position: sticky;
   top: 0;
@@ -50,7 +58,6 @@ a:focus {
 }
 
 .nav-wrap,
-.section,
 .hero-inner,
 .footer-inner,
 .container {
@@ -135,29 +142,35 @@ a:focus {
 
 .site-nav a:hover,
 .nav-more-summary:hover,
-.nav-more[open] .nav-more-summary {
+.nav-more[open] .nav-more-summary,
+.nav-more.is-active .nav-more-summary {
   background: var(--blue);
   border-color: var(--blue);
   color: #fff;
 }
+
+.site-nav a:focus-visible,
+.nav-more-summary:focus-visible {
+  outline: 3px solid var(--chrome-focus);
+  outline-offset: 2px;
+}
+
+/* More menu. This supports the existing <details class="nav-more"> header JS. */
 
 .nav-more {
   position: relative;
   display: inline-flex;
   align-items: center;
   flex: 0 0 auto;
-  margin-top: 0;
+  margin: 0;
   overflow: visible;
   background: transparent;
   border: 0;
 }
 
 .nav-more-summary {
-  margin-top: 0;
   border-color: var(--line);
-  border-radius: 8px;
   background: rgba(255, 255, 255, 0.35);
-  margin: 0;
   list-style: none;
   -webkit-appearance: none;
   appearance: none;
@@ -173,14 +186,14 @@ a:focus {
 }
 
 .nav-more-summary::after {
-  content: " ▾";
-  font-size: 0.82em;
+  content: "▾";
+  margin-left: 0.35rem;
+  font-size: 0.78em;
   line-height: 1;
-  margin-left: 0.12rem;
 }
 
 .nav-more[open] .nav-more-summary::after {
-  content: " ▴";
+  content: "▴";
 }
 
 .nav-more-menu {
@@ -199,47 +212,104 @@ a:focus {
   box-shadow: 0 18px 42px rgba(0, 0, 0, 0.38);
 }
 
-.nav-more-menu a,
-.nav-more-menu a:visited,
-.nav-more-menu a.external-link,
-.nav-more-menu a.external-link:visited {
+.nav-more-menu .nav-link,
+.nav-more-menu .nav-link:visited,
+.nav-more-menu .nav-link.external-link,
+.nav-more-menu .nav-link.external-link:visited {
   display: block;
-  height: auto;
   min-height: auto;
+  height: auto;
   padding: 0.58rem 0.7rem;
   border: 1px solid transparent;
   border-radius: 0.55rem;
   background: transparent;
   color: var(--chrome-menu-text);
+  line-height: 1.25;
   text-decoration: none;
   white-space: nowrap;
 }
 
-.nav-more-menu a:hover,
-.nav-more-menu a:focus-visible,
-.nav-more-menu a[aria-current="page"] {
+.nav-more-menu .nav-link:hover,
+.nav-more-menu .nav-link:focus-visible,
+.nav-more-menu .nav-link[aria-current="page"] {
   background: var(--chrome-menu-hover);
   border-color: rgba(154, 215, 255, 0.24);
   color: var(--chrome-menu-text);
   outline: none;
 }
 
-.site-nav a:focus-visible,
-.nav-more-summary:focus-visible {
-  outline: 3px solid var(--chrome-focus);
-  outline-offset: 2px;
-}
-
-.section,
-.hero-inner {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
+/* Hero */
 
 .hero {
   padding: 0;
   background: linear-gradient(120deg, var(--blue), var(--teal));
   color: #fff;
+}
+
+.hero-inner {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Full width alternating section bands.
+   JS may add or remove .alt, but these rules work manually too. */
+
+main > section.section {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding: var(--chrome-section-y, 4rem) 0;
+  background: var(--surface);
+  border-top: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+main > section.section.alt {
+  background: var(--surface-alt);
+}
+
+main > section.section > * {
+  width: min(var(--content), calc(100% - 2rem));
+  max-width: var(--content);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main > section.section > .card-grid,
+main > section.section > .grid {
+  width: min(var(--content), calc(100% - 2rem));
+}
+
+/* Typography helpers */
+
+.eyebrow {
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.hero .eyebrow {
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.22);
+}
+
+.section.alt .eyebrow {
+  color: var(--accent-deep);
+}
+
+.card .eyebrow {
+  color: var(--accent-strong);
+}
+
+/* Footer */
+
+.site-footer {
+  background: var(--ink);
+  color: #d9e6e4;
+  margin-top: 0;
 }
 
 .footer-inner {
@@ -250,19 +320,28 @@ a:focus {
   text-align: center;
 }
 
-.site-footer {
-  background: var(--ink);
-  color: #d9e6e4;
-}
-
 .footer-nav,
-.footer-social {
+.footer-social,
+.footer-links,
+.footer-meta {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 0.55rem 1rem;
+  text-align: center;
 }
 
+.footer-copy,
+.footer-description,
+.footer-note {
+  margin: 0 auto;
+  max-width: 72ch;
+  color: #d9e6e4;
+  text-align: center;
+}
+
+.site-footer a,
 .footer-nav a,
 .footer-social a {
   color: #fff;
@@ -270,15 +349,14 @@ a:focus {
   text-decoration: none;
 }
 
-.footer-copy,
-.footer-description {
-  margin: 0;
-}
-
 .site-footer a:hover,
 .site-footer a:focus-visible {
   color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
 }
+
+/* Mobile */
 
 @media (max-width: 900px) {
   .nav-wrap {
@@ -299,5 +377,11 @@ a:focus {
   .nav-more-menu {
     left: 0;
     right: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  body {
+    font-size: 17px;
   }
 }

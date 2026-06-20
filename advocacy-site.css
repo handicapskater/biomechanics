@@ -480,9 +480,9 @@ summary {
 }
 
 .site-footer div {
-  padding-top: 1rem;
+  /*padding-top: 1rem;*/
   text-align: center;
-  padding-bottom: 1rem;
+  /*padding-bottom: 1rem;*/
   max-width: 1180px;
 }
 

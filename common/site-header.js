@@ -6,37 +6,114 @@
       brand: "HandicapSkater.com",
       primaryLinks: [
         { href: "/", label: "Home", match: ["/"] },
+        {
+          href: "/healthcare-wearable-mobility/",
+          label: "Health AI",
+          match: ["/healthcare-wearable-mobility/"]
+        },
         { href: "/story/", label: "Story", match: ["/story/"] },
-        { href: "/healthcare-wearable-mobility/", label: "Health AI", match: ["/healthcare-wearable-mobility/"] },
-        { href: "/data.html", label: "Data", match: ["/data.html"] },
-        { href: "/paratransit-burden.html", label: "Transit", match: ["/paratransit-burden.html"] },
-        { href: "/platform.html", label: "Platform", match: ["/platform.html"] }
+        { href: "/biomechanics/", label: "Biomechanics", match: ["/biomechanics/"] },
+
+        /*
+          Keep Evidence focused on the evidence/data route only.
+          Do not include /videos/, /precedent.html, or other More routes here,
+          or Evidence will highlight when a More menu page is active.
+        */
+        {
+          href: "/data.html",
+          label: "Evidence",
+          match: ["/data.html"]
+        },
+
+        { href: "/platform.html", label: "Platform", match: ["/platform.html"] },
+        { href: "https://handicapskater.org/", label: "Standards", match: [] },
+
+        /*
+          More appears only because this object exists.
+          Remove this object if you want More hidden.
+        */
+        { key: "more", label: "More" }
       ],
       moreLinks: [
-        { href: "/videos/", label: "Videos", match: ["/videos/", "/videos/index.html"] },
-        { href: "/evidence/strava-gps-skate-maps/", label: "GPS Maps", match: ["/evidence/strava-gps-skate-maps/"] },
-        { href: "/precedent.html", label: "Precedent", match: ["/precedent.html"] },
-        { href: "https://handicapskater.org/", label: "Standards", match: [] }
+        {
+          href: "/evidence/strava-gps-skate-maps/",
+          label: "Strava Maps",
+          match: ["/evidence/strava-gps-skate-maps/"]
+        },
+        {
+          href: "/paratransit-burden.html",
+          label: "Transportation",
+          match: ["/paratransit-burden.html"]
+        },
+        {
+          href: "/videos/",
+          label: "Videos",
+          match: ["/videos/", "/videos/index.html"]
+        },
+        {
+          href: "/precedent.html",
+          label: "Public Review",
+          match: ["/precedent.html"]
+        }
       ]
     },
+
     "handicapskater.org": {
       brand: "HandicapSkater.org",
       primaryLinks: [
         { href: "/", label: "Home", match: ["/"] },
         { href: "/standards.html", label: "Standards", match: ["/standards.html"] },
-        { href: "/non-traditional-mobility-aids.html", label: "Mobility Review", match: ["/non-traditional-mobility-aids.html"] },
-        { href: "/transportation-accommodation.html", label: "Transport", match: ["/transportation-accommodation.html"] },
+        {
+          href: "/transportation-accommodation.html",
+          label: "Transportation",
+          match: ["/transportation-accommodation.html"]
+        },
         { href: "/evidence-standards.html", label: "Evidence", match: ["/evidence-standards.html"] },
-        { href: "/accommodation-framework.html", label: "Framework", match: ["/accommodation-framework.html"] }
+        { href: "/reviewer-guidance.html", label: "Reviewers", match: ["/reviewer-guidance.html"] },
+        { href: "/fsi-css-platform.html", label: "Platform", match: ["/fsi-css-platform.html"] },
+
+        /*
+          More appears only because this object exists.
+          Remove this object if you want More hidden.
+        */
+        { key: "more", label: "More" }
       ],
       moreLinks: [
-        { href: "/dot-fta-doj-timeline.html", label: "Timeline", match: ["/dot-fta-doj-timeline.html"] },
-        { href: "/direct-threat-analysis.html", label: "Direct Threat", match: ["/direct-threat-analysis.html"] },
-        { href: "/reviewer-guidance.html", label: "Reviewer Guidance", match: ["/reviewer-guidance.html"] },
-        { href: "/fsi-css-platform.html", label: "FSI/CSS", match: ["/fsi-css-platform.html"] },
-        { href: "/public-record.html", label: "Public Record", match: ["/public-record.html"] },
-        { href: "/references.html", label: "References", match: ["/references.html", "/references.htm"] },
-        { href: "https://handicapskater.com/", label: "Case Study", match: [] }
+        {
+          href: "/non-traditional-mobility-aids.html",
+          label: "Mobility Review",
+          match: ["/non-traditional-mobility-aids.html"]
+        },
+        {
+          href: "/accommodation-framework.html",
+          label: "Framework",
+          match: ["/accommodation-framework.html"]
+        },
+        {
+          href: "/dot-fta-doj-timeline.html",
+          label: "Timeline",
+          match: ["/dot-fta-doj-timeline.html"]
+        },
+        {
+          href: "/direct-threat-analysis.html",
+          label: "Direct Threat",
+          match: ["/direct-threat-analysis.html"]
+        },
+        {
+          href: "/public-record.html",
+          label: "Public Record",
+          match: ["/public-record.html"]
+        },
+        {
+          href: "/references.html",
+          label: "References",
+          match: ["/references.html"]
+        },
+        {
+          href: "https://handicapskater.com/",
+          label: "Case Study",
+          match: []
+        }
       ]
     }
   };
@@ -44,29 +121,64 @@
   const fallback = menus["handicapskater.com"];
   const config = menus[host] || fallback;
 
+  function isMoreLink(link) {
+    const key = String(link.key || link.id || link.label || "")
+        .trim()
+        .toLowerCase();
+
+    return key === "more";
+  }
+
   function normalizePath(pathname) {
-    if (!pathname || pathname === "/index.html" || pathname === "/index.htm") return "/";
-    if (pathname.endsWith("/index.html")) return pathname.replace(/index\.html$/, "");
-    if (pathname.endsWith("/index.htm")) return pathname.replace(/index\.htm$/, "");
+    if (!pathname || pathname === "/index.html" || pathname === "/index.htm") {
+      return "/";
+    }
+
+    if (pathname.endsWith("/index.html")) {
+      return pathname.replace(/index\.html$/, "");
+    }
+
+    if (pathname.endsWith("/index.htm")) {
+      return pathname.replace(/index\.htm$/, "");
+    }
+
     return pathname;
   }
 
-  function renderNavLink(link, path) {
-    const external = link.href.startsWith("http");
-    const active = !external && link.match.includes(path) ? ' aria-current="page"' : "";
-    const attrs = external ? ' target="_blank" rel="noopener noreferrer"' : "";
-    const className = external ? ' class="nav-link external-link"' : ' class="nav-link"';
-    return `<a${className} href="${link.href}"${active}${attrs}>${link.label}</a>`;
+  function linkMatchesPath(link, path) {
+    const href = link.href || "";
+    const match = Array.isArray(link.match) ? link.match : [];
+
+    if (href.startsWith("http")) {
+      return false;
+    }
+
+    return match.includes(path);
   }
 
-  function renderMoreMenu(links, path) {
-    const active = links.some((link) => !link.href.startsWith("http") && link.match.includes(path));
+  function renderNavLink(link, path) {
+    const href = link.href || "#";
+    const label = link.label || "";
+    const external = href.startsWith("http");
+    const active = linkMatchesPath(link, path) ? ' aria-current="page"' : "";
+    const attrs = external ? ' target="_blank" rel="noopener noreferrer"' : "";
+    const className = external ? ' class="nav-link external-link"' : ' class="nav-link"';
+
+    return `<a${className} href="${href}"${active}${attrs}>${label}</a>`;
+  }
+
+  function renderMoreMenu(label, links, path) {
+    if (!Array.isArray(links) || links.length === 0) {
+      return "";
+    }
+
+    const active = links.some((link) => linkMatchesPath(link, path));
     const activeClass = active ? " is-active" : "";
     const menuLinks = links.map((link) => renderNavLink(link, path)).join("");
 
     return `
       <details class="nav-more${activeClass}">
-        <summary class="nav-more-summary">More</summary>
+        <summary class="nav-more-summary">${label || "More"}</summary>
         <div class="nav-more-menu">
           ${menuLinks}
         </div>
@@ -74,65 +186,132 @@
     `;
   }
 
-  function wireMoreMenuCloseBehavior() {
-    const details = document.querySelector(".nav-more");
-    if (!details) return;
+  function renderPrimaryNav(path) {
+    const primaryLinks = Array.isArray(config.primaryLinks) ? config.primaryLinks : [];
+    const moreLinks = Array.isArray(config.moreLinks) ? config.moreLinks : [];
+    const moreConfig = primaryLinks.find(isMoreLink);
+    const shouldRenderMore = Boolean(moreConfig) && moreLinks.length > 0;
 
-    const summary = details.querySelector(".nav-more-summary");
-    const menu = details.querySelector(".nav-more-menu");
-    if (!summary || !menu) return;
+    return primaryLinks
+        .map((link) => {
+          if (isMoreLink(link)) {
+            if (!shouldRenderMore) {
+              return "";
+            }
 
-    function closeMoreMenu() {
+            return renderMoreMenu(link.label || "More", moreLinks, path);
+          }
+
+          return renderNavLink(link, path);
+        })
+        .join("");
+  }
+
+  function closeAllMoreMenus(root) {
+    const scope = root || document;
+
+    scope.querySelectorAll(".nav-more[open]").forEach((details) => {
       details.removeAttribute("open");
-    }
+    });
+  }
+
+  function wireMoreMenuCloseBehavior(root) {
+    const header = root || document;
+
+    header.querySelectorAll(".nav-more").forEach((details) => {
+      const summary = details.querySelector(".nav-more-summary");
+      const menu = details.querySelector(".nav-more-menu");
+
+      if (!summary || !menu) {
+        return;
+      }
+
+      menu.addEventListener("click", function (event) {
+        if (event.target.closest("a")) {
+          details.removeAttribute("open");
+        }
+      });
+    });
 
     document.addEventListener("pointerdown", function (event) {
-      if (details.open && !details.contains(event.target)) closeMoreMenu();
+      const openMenu = document.querySelector(".nav-more[open]");
+
+      if (!openMenu) {
+        return;
+      }
+
+      if (!openMenu.contains(event.target)) {
+        openMenu.removeAttribute("open");
+      }
     });
 
     document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape" && details.open) {
-        closeMoreMenu();
+      if (event.key !== "Escape") {
+        return;
+      }
+
+      const openMenu = document.querySelector(".nav-more[open]");
+      if (!openMenu) {
+        return;
+      }
+
+      const summary = openMenu.querySelector(".nav-more-summary");
+      openMenu.removeAttribute("open");
+
+      if (summary) {
         summary.focus();
       }
     });
 
     document.addEventListener("focusin", function (event) {
-      if (details.open && !details.contains(event.target)) closeMoreMenu();
+      const openMenu = document.querySelector(".nav-more[open]");
+
+      if (!openMenu) {
+        return;
+      }
+
+      if (!openMenu.contains(event.target)) {
+        openMenu.removeAttribute("open");
+      }
     });
 
-    menu.addEventListener("click", function (event) {
-      if (event.target.closest("a")) closeMoreMenu();
+    window.addEventListener(
+        "scroll",
+        function () {
+          closeAllMoreMenus(document);
+        },
+        { passive: true }
+    );
+
+    window.addEventListener("resize", function () {
+      closeAllMoreMenus(document);
     });
-
-    window.addEventListener("scroll", function () {
-      if (details.open) closeMoreMenu();
-    }, { passive: true });
-
-    window.addEventListener("resize", closeMoreMenu);
   }
 
   function renderSiteHeader() {
     const mount = document.getElementById("site-header");
-    if (!mount) return;
+    if (!mount) {
+      return;
+    }
 
     const path = normalizePath(window.location.pathname);
-    const primaryNav = config.primaryLinks.map((link) => renderNavLink(link, path)).join("");
-    const moreNav = renderMoreMenu(config.moreLinks, path);
+    const primaryNavHtml = renderPrimaryNav(path);
 
     mount.outerHTML = `
       <header class="site-header" data-site-host="${host}">
         <div class="nav-wrap">
           <a class="brand" href="/">${config.brand}</a>
           <nav class="site-nav" aria-label="Primary navigation">
-            ${primaryNav}
-            ${moreNav}
+            ${primaryNavHtml}
           </nav>
         </div>
       </header>
     `;
 
-    wireMoreMenuCloseBehavior();
+    const header = document.querySelector(".site-header[data-site-host]");
+    if (header) {
+      wireMoreMenuCloseBehavior(header);
+    }
   }
 
   if (document.readyState === "loading") {
@@ -141,3 +320,17 @@
     renderSiteHeader();
   }
 })();
+
+function normalizeSectionAlternation() {
+  const sections = Array.from(document.querySelectorAll("main > section.section"));
+
+  sections.forEach((section, index) => {
+    section.classList.toggle("alt", index % 2 === 1);
+  });
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", normalizeSectionAlternation);
+} else {
+  normalizeSectionAlternation();
+}

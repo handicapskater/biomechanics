@@ -9,6 +9,8 @@ From the repo root:
 ```sh
 cd /Users/troywilkes/repos/biomechanics
 python3 -m http.server 8080
+
+cloudflared tunnel --url http://localhost:8080
 ```
 
 Or run the helper script:
@@ -48,7 +50,7 @@ These URLs should return successfully when served from the repo root:
 The canonical story page is `/story/`, backed by `story/index.html`. The legacy `story.html` page redirects there. The canonical videos URL is `/videos/`, with legacy `videos.html` redirecting there.
 
 ## Public Positioning
-
+- Presentation Path: Start here (HomePage). Then read Story for the human record, Evidence for the corpus, and Platform for the AI architecture.
 - `HandicapSkater.com`: commercial AI/ML wearable data science platform positioning for wearable biometrics, HR/HRV/activity evidence, mobility accommodation analytics, AI/ML pattern detection, and platform potential.
 - `HandicapSkater.org`: nonprofit standards, civil rights, and accommodation framework for non-traditional mobility aid standards, evidence-based accommodation standards, public sector accessibility education, and fair access.
 - `data.html` and `datascience.htm`: public biomechanics proof layer. HR and HRV are supportive signals, not standalone proof of pain. FSI and CSS are proposed synthesized metrics, not medical diagnoses.
@@ -67,5 +69,8 @@ Run static link and public-copy checks:
 
 ```sh
 python3 scripts/check_site_links.py
+python3 scripts/check_links.py
 python3 -m unittest discover -s tests
+
+python3 -m unittest discover -s tests 2>&1 | pbcopy
 ```

@@ -19,12 +19,12 @@ HandicapSkater.com and the cross-repo source map.
 
 Use:
 
-- source-linked evidence
-- within-person pattern
+- source linked evidence
+- within person pattern
 - functional mobility
 - mobility burden
 - evidence organization
-- reviewer-safe summaries
+- reviewer safe summaries
 - corroborates the broader record
 - qualified reviewers
 

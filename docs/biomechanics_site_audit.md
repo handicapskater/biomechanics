@@ -83,13 +83,13 @@ Careful language now emphasized:
 - licensing or acquisition candidate
 - nonprofit standards
 - supportive evidence
-- within-person pattern
+- within person pattern
 - not medical advice
 - not legal advice
 
 HR/HRV/FSI/CSS framing:
 
-- HR and HRV are supportive within-person signals, not standalone proof of pain.
+- HR and HRV are supportive within person signals, not standalone proof of pain.
 - FSI and CSS are proposed synthesized metrics for functional stress and cumulative strain.
 - FSI and CSS are not medical diagnoses, clinical validation, legal rulings, or guaranteed accommodations.
 

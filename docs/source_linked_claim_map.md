@@ -7,16 +7,16 @@ records, or generated reports.
 
 ## Canonical Claim IDs
 
-| Claim ID | Public-safe claim |
-| --- | --- |
-| `HS-CLAIM-001` | Skating is documented as functional mobility support in this within-person record. |
-| `HS-CLAIM-002` | Walking burden should be reviewed by physiological and biomechanical context, not distance alone. |
-| `HS-CLAIM-003` | Some ParaTransit conditions are documented as higher-burden passive travel in the source-linked record. |
-| `HS-CLAIM-004` | Wearable, route, sensor, legal, and report artifacts corroborate the broader record; they are not interchangeable proof sources. |
-| `HS-CLAIM-005` | The FSICSS platform organizes evidence, metrics, retrieval, and caveats for review by qualified humans. |
-| `HS-CLAIM-006` | Public website, standards site, notebooks, and platform outputs should link to each other without blurring responsibilities. |
+| Claim ID | Public-safe claim                                                                                                                               |
+| --- |-------------------------------------------------------------------------------------------------------------------------------------------------|
+| `HS-CLAIM-001` | Skating is documented as functional mobility support in this within person record.                                                              |
+| `HS-CLAIM-002` | Walking burden should be reviewed by physiological and biomechanical context, not distance alone.                                               |
+| `HS-CLAIM-003` | Some ParaTransit conditions are documented as higher-burden passive travel in the source-linked record.                                         |
+| `HS-CLAIM-004` | Wearable, route, sensor, legal, and report artifacts corroborate the broader record; they are not interchangeable proof sources.                |
+| `HS-CLAIM-005` | The FSICSS platform organizes evidence, metrics, retrieval, and caveats for review by qualified humans.                                         |
+| `HS-CLAIM-006` | Public website, standards site, notebooks, and platform outputs should link to each other without blurring responsibilities.                    |
 | `HS-CLAIM-007` | Current FSI/CSS results are source-linked decision-support evidence and should be read as presumptive/directional where sample sizes are small. |
-| `HS-CLAIM-008` | Kubios/H10 is the activity-specific biomechanics stream; WHOOP and Strava provide longitudinal physiology and functional-capacity context. |
+| `HS-CLAIM-008` | Kubios/H10 is the activity-specific biomechanics stream; WHOOP and Strava provide longitudinal physiology and functional-capacity context.      |
 
 ## Public Page Map
 
@@ -34,15 +34,15 @@ records, or generated reports.
 
 Use:
 
-- source-linked evidence
-- within-person pattern
+- source linked evidence
+- within person pattern
 - functional mobility
 - mobility burden
 - corroborates the broader record
-- reviewer-safe summaries
+- reviewer safe summaries
 - qualified reviewers
 - presumptive/directional where sample sizes are small
-- activity-specific biomechanics
+- activity specific biomechanics
 
 Avoid:
 
