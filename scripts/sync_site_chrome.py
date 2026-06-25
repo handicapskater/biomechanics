@@ -33,7 +33,7 @@ SITES = {
         "links": [
             ("/", "Home", ["/"]),
             ("/standards.html", "Standards", ["/standards.html"]),
-            ("/non-traditional-mobility-aids.html", "Mobility Aids", ["/non-traditional-mobility-aids.html"]),
+            ("/non-standard-mobility-aids.html", "Mobility Aids", ["/non-standard-mobility-aids.html"]),
             ("/dot-fta-doj-timeline.html", "Timeline", ["/dot-fta-doj-timeline.html"]),
             ("/accommodation-framework.html", "Framework", ["/accommodation-framework.html"]),
             ("/direct-threat-analysis.html", "Direct Threat", ["/direct-threat-analysis.html"]),

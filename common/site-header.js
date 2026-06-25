@@ -80,9 +80,9 @@
       ],
       moreLinks: [
         {
-          href: "/non-traditional-mobility-aids.html",
+          href: "/non-standard-mobility-aids.html",
           label: "Mobility Review",
-          match: ["/non-traditional-mobility-aids.html"]
+          match: ["/non-standard-mobility-aids.html"]
         },
         {
           href: "/accommodation-framework.html",

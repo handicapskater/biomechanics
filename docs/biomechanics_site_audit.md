@@ -57,7 +57,7 @@ External links were not validated for remote availability during this audit.
 
 - nonprofit standards and accessibility mission
 - civil rights and public-sector education framework
-- non-traditional mobility aid standards
+- non-standard mobility aid standards
 - evidence-based accommodation standards
 - supportive documentation for fair access
 
