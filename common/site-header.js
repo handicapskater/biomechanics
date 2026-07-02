@@ -11,22 +11,20 @@
           label: "Health AI",
           match: ["/healthcare-wearable-mobility/"]
         },
-        { href: "/story/", label: "Story", match: ["/story/"] },
-        { href: "/biomechanics/", label: "Biomechanics", match: ["/biomechanics/"] },
-
-        /*
-          Keep Evidence focused on the evidence/data route only.
-          Do not include /videos/, /precedent.html, or other More routes here,
-          or Evidence will highlight when a More menu page is active.
-        */
         {
           href: "/data.html",
-          label: "Evidence",
+          label: "Data",
           match: ["/data.html"]
         },
-
         { href: "/platform.html", label: "Platform", match: ["/platform.html"] },
-        { href: "https://handicapskater.org/", label: "Standards", match: [] },
+        { href: "/story/", label: "Story", match: ["/story/"] },
+        { href: "/biomechanics/", label: "Biomechanics", match: ["/biomechanics/"] },
+        { href: "/precedent.html", label: "Precedent", match: ["/precedent.html"] },
+        {
+          href: "/paratransit-burden.html",
+          label: "ParaTransit",
+          match: ["/paratransit-burden.html"]
+        },
 
         /*
           More appears only because this object exists.
@@ -37,13 +35,8 @@
       moreLinks: [
         {
           href: "/evidence/strava-gps-skate-maps/",
-          label: "Strava Maps",
+          label: "Route Maps",
           match: ["/evidence/strava-gps-skate-maps/"]
-        },
-        {
-          href: "/paratransit-burden.html",
-          label: "Transportation",
-          match: ["/paratransit-burden.html"]
         },
         {
           href: "/videos/",
@@ -51,9 +44,9 @@
           match: ["/videos/", "/videos/index.html"]
         },
         {
-          href: "/precedent.html",
-          label: "Public Review",
-          match: ["/precedent.html"]
+          href: "https://handicapskater.org/",
+          label: "Standards site",
+          match: []
         }
       ]
     },

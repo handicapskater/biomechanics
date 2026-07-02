@@ -43,9 +43,10 @@ EXPECTED_NAV_LABELS = {
     "Health AI",
     "Platform",
     "Videos",
-    "GPS Maps",
+    "Route Maps",
     "Precedent",
     "Standards",
+    "ParaTransit",
 }
 
 
@@ -138,19 +139,20 @@ class SiteTests(unittest.TestCase):
         self.assertIn('href: "/healthcare-wearable-mobility/"', js)
         self.assertIn('href: "/data.html"', js)
         self.assertIn('href: "/platform.html"', js)
+        self.assertIn('href: "/paratransit-burden.html"', js)
         self.assertIn('href: "/videos/"', js)
         self.assertIn('href: "/precedent.html"', js)
         self.assertIn('href: "https://handicapskater.org/"', js)
         self.assertIn('label: "Health AI"', js)
         self.assertIn('label: "Story"', js)
         self.assertIn('label: "Biomechanics"', js)
-        self.assertIn('label: "Evidence"', js)
+        self.assertIn('label: "Data"', js)
         self.assertIn('label: "Platform"', js)
-        self.assertIn('label: "Standards"', js)
-        self.assertIn('label: "Strava Maps"', js)
-        self.assertIn('label: "Transportation"', js)
+        self.assertIn('label: "Standards site"', js)
+        self.assertIn('label: "Route Maps"', js)
+        self.assertIn('label: "ParaTransit"', js)
         self.assertIn('label: "Videos"', js)
-        self.assertIn('label: "Public Review"', js)
+        self.assertIn('label: "Precedent"', js)
 
     def test_external_nav_links_are_not_active_candidates(self) -> None:
         js = site_header_js()
