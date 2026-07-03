@@ -8,6 +8,175 @@
   <link rel="icon" href="/common/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../../advocacy-site.css">
   <link rel="stylesheet" href="/common/css/site-chrome.css">
+  <style>
+    .weather-evidence-summary {
+      margin: 1.5rem auto 2rem;
+      padding: 1.25rem;
+      border: 1px solid rgba(28, 78, 121, 0.2);
+      border-left: 0.35rem solid #1c5f8f;
+      border-radius: 0.5rem;
+      background: #f6fbff;
+      box-shadow: 0 0.5rem 1.4rem rgba(16, 38, 61, 0.08);
+    }
+
+    .weather-evidence-summary h3 {
+      margin: 0.2rem 0 0.5rem;
+    }
+
+    .weather-summary-stats {
+      display: grid;
+      gap: 0.75rem;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      margin-top: 1rem;
+    }
+
+    .weather-summary-stat {
+      padding: 0.75rem;
+      border-radius: 0.45rem;
+      background: #ffffff;
+      border: 1px solid rgba(28, 78, 121, 0.14);
+    }
+
+    .weather-summary-stat strong {
+      display: block;
+      color: #163e5c;
+      font-size: 1.25rem;
+      line-height: 1.15;
+    }
+
+    .weather-filter-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin: 0 auto 1.25rem;
+    }
+
+    .weather-filter-button.is-active {
+      background: #123a55;
+      border-color: #123a55;
+      color: #ffffff;
+    }
+
+    .weather-panel {
+      margin-top: 1rem;
+      padding: 1rem;
+      border: 1px solid rgba(17, 46, 68, 0.18);
+      border-radius: 0.5rem;
+      background: #ffffff;
+      box-shadow: 0 0.45rem 1.2rem rgba(16, 38, 61, 0.08);
+    }
+
+    .weather-panel--rain {
+      border-left: 0.35rem solid #0b7285;
+      background: #f3fbfc;
+    }
+
+    .weather-panel--substantial {
+      box-shadow: 0 0.45rem 1.2rem rgba(132, 72, 11, 0.12);
+    }
+
+    .weather-panel--inline {
+      margin: 0.55rem 0 0.85rem;
+      padding: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .selected-route-weather {
+      margin-top: 1.25rem;
+      width: 100%;
+    }
+
+    .weather-panel h4 {
+      margin: 0 0 0.65rem;
+    }
+
+    .weather-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .weather-badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 1.75rem;
+      padding: 0.22rem 0.55rem;
+      border-radius: 999px;
+      background: #e9eef2;
+      color: #1d3343;
+      font-size: 0.82rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .weather-badge--rain {
+      background: #0b7285;
+      color: #ffffff;
+    }
+
+    .weather-badge--daily-rain {
+      background: #d9eef4;
+      color: #174454;
+    }
+
+    .weather-badge--substantial {
+      background: #8a4b0f;
+      color: #ffffff;
+    }
+
+    .weather-metric-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr));
+      gap: 0.65rem;
+    }
+
+    .weather-metric {
+      padding: 0.65rem;
+      border-radius: 0.4rem;
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid rgba(17, 46, 68, 0.12);
+    }
+
+    .weather-metric-label {
+      display: block;
+      margin-bottom: 0.2rem;
+      color: #536473;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .weather-metric-value {
+      display: block;
+      color: #172d3d;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .weather-source-note {
+      margin: 0.85rem 0 0;
+      color: #4f6170;
+      font-size: 0.92rem;
+      line-height: 1.45;
+    }
+
+    .route-archive-raw li[hidden] {
+      display: none;
+    }
+
+    @media (max-width: 640px) {
+      .weather-filter-controls {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .weather-filter-controls .button {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body class="site-com">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -34,11 +203,11 @@
       </div>
       <div class="evidence-panel">
         <ul class="check-list">
-          <li>Route data is activity context, not a medical conclusion.</li>
-          <li>Route maps do not establish pain by themselves.</li>
+          <li>Route data is activity context.</li>
           <li>Maps should be read with wearable, HRV/RRI, ParaTransit, biomechanics, and legal accommodation context.</li>
           <li>The routes help show a functional mobility pattern, not isolated recreation.</li>
           <li>Distance is functional mobility achieved, not automatic burden.</li>
+          <li>Weather is determined by weather service showing rain, wind, and other environment factors.</li>
         </ul>
       </div>
     </section>
@@ -50,11 +219,6 @@
           Strava maps provide active controlled route and timing context. They show where skating
           happened, how long activity was tolerated, and how route completion fits the broader
           wearable record.
-        </p>
-        <p>
-          PT skating supports longer tolerated activity at lower HR than walking, without claiming
-          skating has no mechanical exposure. ACC, jerk, and shock components still require separate
-          mechanical motion exposure review when available.
         </p>
       </div>
     </section>
@@ -77,6 +241,20 @@
         <h2>Route Map Explorer</h2>
         <p>The following route-map pages are the complete HTML map set referenced by the public notebook section. Each map opens as an individual static route page.</p>
         <p>Search or filter the route archive, select a route, then preview it in-page or open the full map.</p>
+      </div>
+      <div id="weather-evidence-summary" class="weather-evidence-summary" hidden>
+        <p class="eyebrow">Weather context</p>
+        <h3>Weather-linked route evidence</h3>
+        <p id="weather-summary-text">Weather records are loading.</p>
+        <p class="weather-source-note">Weather records are used as route-context evidence. Rain is interpreted from both the full-day downtown station record and the 9 PM to midnight local hourly window. This rebuts categorical assumptions by documenting completed skate routes under recorded weather conditions; it does not claim rain is always safe.</p>
+        <div id="weather-summary-stats" class="weather-summary-stats" aria-label="Weather route evidence summary"></div>
+      </div>
+      <div class="weather-filter-controls" aria-label="Weather route filters">
+        <button type="button" class="button button-secondary weather-filter-button is-active" data-weather-filter="all">Show all</button>
+        <button type="button" class="button button-secondary weather-filter-button" data-weather-filter="rain-window">Rain 9 PM to midnight</button>
+        <button type="button" class="button button-secondary weather-filter-button" data-weather-filter="daily-rain">Daily rain</button>
+        <button type="button" class="button button-secondary weather-filter-button" data-weather-filter="substantial">Substantial weather</button>
+        <button type="button" class="button button-secondary weather-filter-button" data-weather-filter="no-rain">No recorded rain</button>
       </div>
       <div class="route-explorer-layout">
         <aside class="route-picker" aria-label="Route map search and selection">
@@ -134,6 +312,7 @@
           </div>
         </section>
       </div>
+      <div id="selected-route-weather" class="selected-route-weather" hidden></div>
 
       <details class="route-archive-raw">
 
@@ -476,12 +655,13 @@
     <section class="section alt">
       <div class="section-header">
         <h2>Source and Provenance</h2>
-        <p>This page is derived from the public datascience notebook <code>HandicapSkater-Public.ipynb</code>, section <em>Strava GPS Skate Maps for Physical Therapy</em>, and related route-map artifacts in the sibling datascience repository. It is provided as route/activity context for physical therapy and mobility aid use.</p>
-        <p>The route-map HTML files are served from <code>/common/maps/</code>. The notebook source path reviewed for this page was <code>../datascience/HandicapSkater-Public.ipynb</code>.</p>
+        <p>These route maps are derived from recorded HandicapSkater physical therapy skating activities and related GPS activity records. They provide route, distance, time, integrated weather, and movement context for documented mobility aid use.</p>
+        <p>The maps are included to show where skating occurred, how far the activity extended, and how repeated route patterns support review of skating as functional mobility rather than recreation alone.</p>
+        <p>Source materials include activity records, route map artifacts, timestamps, and related wearable evidence used for public review.</p>
       </div>
       <div class="button-row">
         <a class="button button-primary" href="/data.html">Review wearable evidence</a>
-        <a class="button button-secondary" href="/precedent.html">Review accommodation context</a>
+        <a class="button button-secondary" href="/precedent.html">Review standards context</a>
       </div>
     </section>
   </main>
@@ -490,25 +670,34 @@
   <script src="/common/site-footer.js"></script>
   <script>
     (function () {
+      const WEATHER_JSON_URL = "./data/strava_routes_weather_conditions_9pm_midnight.json";
       const rawList = document.getElementById("route-map-list");
       const searchInput = document.getElementById("route-search");
       const yearSelect = document.getElementById("route-year");
       const typeSelect = document.getElementById("route-type");
       const routeSelect = document.getElementById("route-select");
       const summary = document.getElementById("route-browser-summary");
+      const weatherSummary = document.getElementById("weather-evidence-summary");
+      const weatherSummaryText = document.getElementById("weather-summary-text");
+      const weatherSummaryStats = document.getElementById("weather-summary-stats");
+      const weatherFilterButtons = Array.from(document.querySelectorAll("[data-weather-filter]"));
 
       const selectedTitle = document.getElementById("selected-route-title");
       const selectedHelp = document.getElementById("selected-route-help");
       const selectedOpen = document.getElementById("selected-route-open");
+      const selectedWeather = document.getElementById("selected-route-weather");
       const emptyState = document.getElementById("route-map-empty");
       const frame = document.getElementById("route-map-frame");
 
-      if (!rawList || !searchInput || !yearSelect || !typeSelect || !routeSelect || !summary || !selectedTitle || !selectedHelp || !selectedOpen || !emptyState || !frame) {        console.warn("Route explorer did not initialize because required elements are missing.");
+      if (!rawList || !searchInput || !yearSelect || !typeSelect || !routeSelect || !summary || !selectedTitle || !selectedHelp || !selectedOpen || !selectedWeather || !emptyState || !frame) {
+        console.warn("Route explorer did not initialize because required elements are missing.");
         return;
       }
 
       const holidayPattern = /\b(xmas|christmas|new year|new year's|thanksgiving|holiday|halloween|easter|july|independence)\b/i;
       let selectedRoute = null;
+      let weatherFilter = "all";
+      let weatherLoaded = false;
 
       function getRouteType(text) {
         if (holidayPattern.test(text)) return "Holiday";
@@ -528,6 +717,143 @@
         return new URL(href, window.location.href).pathname;
       }
 
+      function normalizeRouteUrl(value) {
+        if (!value || value === "#") return "";
+        try {
+          const path = new URL(value, window.location.href).pathname;
+          return decodeURIComponent(path).toLowerCase();
+        } catch (error) {
+          return String(value).trim().toLowerCase();
+        }
+      }
+
+      function normalizeRouteTitle(value) {
+        return String(value || "")
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, " ")
+          .trim();
+      }
+
+      function getDateTitleParts(text) {
+        const match = String(text || "").match(/^(\d{4}-\d{2}-\d{2})\s+(.*)$/);
+        if (!match) return { date: "", title: normalizeRouteTitle(text) };
+        return { date: match[1], title: normalizeRouteTitle(match[2]) };
+      }
+
+      function weatherDateTitleKey(date, title) {
+        return `${date || ""}|${normalizeRouteTitle(title)}`;
+      }
+
+      function formatNumber(value, digits) {
+        if (value === null || value === undefined || value === "") return "unavailable";
+        const number = Number(value);
+        if (!Number.isFinite(number)) return "unavailable";
+        return number.toFixed(digits);
+      }
+
+      function metric(label, value) {
+        const item = document.createElement("div");
+        item.className = "weather-metric";
+
+        const labelElement = document.createElement("span");
+        labelElement.className = "weather-metric-label";
+        labelElement.textContent = label;
+
+        const valueElement = document.createElement("span");
+        valueElement.className = "weather-metric-value";
+        valueElement.textContent = value || "Unavailable";
+
+        item.append(labelElement, valueElement);
+        return item;
+      }
+
+      function sourceLabel(record) {
+        const hourlyName = record.weather_hourly_station_name || "hourly station unavailable";
+        const hourlyId = record.weather_hourly_station_id ? ` (${record.weather_hourly_station_id})` : "";
+        const dailyName = record.daily_station_name || "daily station unavailable";
+        const dailyId = record.daily_station_id ? ` (${record.daily_station_id})` : "";
+        const level = record.weather_evidence_level || "weather evidence level unavailable";
+        return `${hourlyName}${hourlyId}; ${dailyName}${dailyId}; ${level}`;
+      }
+
+      function hasRainSignal(record) {
+        const presentWeather = String(record.present_weather_summary || "");
+        const rainCategory = String(record.rain_category || "").toLowerCase();
+        return record.rain_between_9pm_midnight === true
+          || /\bRA\b/i.test(presentWeather)
+          || (rainCategory.includes("rain") && !rainCategory.startsWith("no recorded rain"));
+      }
+
+      function renderWeatherPanel(record, compact) {
+        const panel = document.createElement("article");
+        panel.className = "weather-panel";
+        const rainSignal = hasRainSignal(record);
+        if (rainSignal) panel.classList.add("weather-panel--rain");
+        if (record.substantial_weather_flag) panel.classList.add("weather-panel--substantial");
+        if (compact) panel.classList.add("weather-panel--inline");
+
+        const title = document.createElement("h4");
+        title.textContent = "Weather Evidence";
+
+        const badges = document.createElement("div");
+        badges.className = "weather-badges";
+
+        const primaryBadge = document.createElement("span");
+        primaryBadge.className = "weather-badge";
+        primaryBadge.textContent = record.weather_badge_label || "Weather record";
+        if (record.rain_between_9pm_midnight) {
+          primaryBadge.classList.add("weather-badge--rain");
+        } else if (record.downtown_daily_rain) {
+          primaryBadge.classList.add("weather-badge--daily-rain");
+        }
+        badges.appendChild(primaryBadge);
+
+        if (record.substantial_weather_flag) {
+          const substantialBadge = document.createElement("span");
+          substantialBadge.className = "weather-badge weather-badge--substantial";
+          substantialBadge.textContent = "Substantial weather";
+          badges.appendChild(substantialBadge);
+        }
+
+        if (rainSignal && !record.rain_between_9pm_midnight && !record.downtown_daily_rain) {
+          const codeBadge = document.createElement("span");
+          codeBadge.className = "weather-badge weather-badge--rain";
+          codeBadge.textContent = "Rain signal in weather codes";
+          badges.appendChild(codeBadge);
+        }
+
+        const grid = document.createElement("div");
+        grid.className = "weather-metric-grid";
+        grid.append(
+          metric("Temperature", record.temp_label),
+          metric("Wind", record.wind_label),
+          metric("Rain 9 PM to midnight", record.rain_window_label),
+          metric("Daily rain", record.daily_rain_label),
+          metric("Visibility", record.visibility_label),
+          metric("Source", sourceLabel(record))
+        );
+
+        const note = document.createElement("p");
+        note.className = "weather-source-note";
+        note.textContent = record.evidence_summary || "Weather record matched to this route.";
+
+        panel.append(title, badges, grid, note);
+        return panel;
+      }
+
+      function routeMatchesWeatherFilter(route) {
+        if (!weatherLoaded || weatherFilter === "all") return true;
+        const weather = route.weather;
+        if (!weather) return false;
+        if (weatherFilter === "rain-window") return weather.rain_between_9pm_midnight === true;
+        if (weatherFilter === "daily-rain") return weather.downtown_daily_rain === true;
+        if (weatherFilter === "substantial") return weather.substantial_weather_flag === true;
+        if (weatherFilter === "no-rain") {
+          return weather.rain_between_9pm_midnight !== true && weather.downtown_daily_rain !== true;
+        }
+        return true;
+      }
+
       const routes = Array.from(rawList.querySelectorAll("li")).map((li, index) => {
         const link = li.querySelector("a");
         const label = link ? link.textContent.trim() : li.textContent.trim();
@@ -535,8 +861,9 @@
         const href = link ? normalizeHref(link.getAttribute("href")) : "#";
         const year = getYear(text);
         const type = getRouteType(text);
+        const dateTitle = getDateTitleParts(text);
 
-        return { index, label, text, href, year, type };
+        return { index, label, text, href, year, type, element: li, date: dateTitle.date, routeTitleKey: dateTitle.title, weather: null };
       }).filter((route) => route.href && route.href !== "#");
 
       const years = Array.from(new Set(routes.map((route) => route.year)))
@@ -559,7 +886,7 @@
           const matchesQuery = !query || route.text.toLowerCase().includes(query);
           const matchesYear = !year || route.year === year;
           const matchesType = !type || route.type === type;
-          return matchesQuery && matchesYear && matchesType;
+          return matchesQuery && matchesYear && matchesType && routeMatchesWeatherFilter(route);
         });
       }
 
@@ -567,7 +894,12 @@
         const matches = filteredRoutes();
 
         routeSelect.innerHTML = "";
-        summary.textContent = `${matches.length} of ${routes.length} route maps shown`;
+        const weatherNote = weatherLoaded && weatherFilter !== "all" ? `, weather filter: ${weatherFilter.replace("-", " ")}` : "";
+        summary.textContent = `${matches.length} of ${routes.length} route maps shown${weatherNote}`;
+
+        for (const route of routes) {
+          route.element.hidden = !matches.some((match) => match.index === route.index);
+        }
 
         if (!matches.length) {
           const option = document.createElement("option");
@@ -580,7 +912,8 @@
         for (const route of matches) {
           const option = document.createElement("option");
           option.value = String(route.index);
-          option.textContent = `${route.label}  [${route.type}${route.year !== "Unknown" ? ", " + route.year : ""}]`;
+          const weatherLabel = route.weather ? `, ${route.weather.weather_badge_label}` : "";
+          option.textContent = `${route.label}  [${route.type}${route.year !== "Unknown" ? ", " + route.year : ""}${weatherLabel}]`;
 
           if (selectedRoute && selectedRoute.index === route.index) {
             option.selected = true;
@@ -601,6 +934,14 @@
         selectedOpen.href = fullMapUrl.pathname + fullMapUrl.search;
         selectedOpen.hidden = false;
 
+        selectedWeather.innerHTML = "";
+        if (route.weather) {
+          selectedWeather.appendChild(renderWeatherPanel(route.weather, false));
+          selectedWeather.hidden = false;
+        } else {
+          selectedWeather.hidden = true;
+        }
+
         emptyState.hidden = true;
         frame.hidden = false;
 
@@ -618,9 +959,120 @@
         renderOptions();
       }
 
+      function updateWeatherSummary(records, matchedCount) {
+        if (!weatherSummary || !weatherSummaryText || !weatherSummaryStats) return;
+        const rainWindowCount = records.filter((record) => record.rain_between_9pm_midnight === true).length;
+        const dailyRainCount = records.filter((record) => record.downtown_daily_rain === true).length;
+        const substantialCount = records.filter((record) => record.substantial_weather_flag === true).length;
+        const maxDailyPrecip = Math.max(...records.map((record) => Number(record.daily_precip_inches)).filter(Number.isFinite));
+        const maxWind = Math.max(...records.map((record) => Number(record.wind_speed_max_mph)).filter(Number.isFinite));
+        const gusts = records.map((record) => Number(record.wind_gust_max_mph)).filter(Number.isFinite);
+        const maxGust = gusts.length ? Math.max(...gusts) : null;
+
+        weatherSummaryText.textContent = `Weather-linked route evidence: ${matchedCount} skate routes matched to weather records, including ${rainWindowCount} routes with rain between 9 PM and midnight and ${dailyRainCount} routes with downtown daily rain.`;
+        weatherSummaryStats.innerHTML = "";
+
+        [
+          ["Matched routes", matchedCount],
+          ["9 PM-midnight rain", rainWindowCount],
+          ["Downtown daily rain", dailyRainCount],
+          ["Max daily precipitation", `${formatNumber(maxDailyPrecip, 2)} in`],
+          ["Max wind speed", `${formatNumber(maxWind, 1)} mph`],
+          ["Max wind gust", maxGust === null ? "unavailable" : `${formatNumber(maxGust, 1)} mph`],
+          ["Substantial weather", substantialCount],
+        ].forEach(([label, value]) => {
+          const stat = document.createElement("div");
+          stat.className = "weather-summary-stat";
+
+          const valueElement = document.createElement("strong");
+          valueElement.textContent = String(value);
+
+          const labelElement = document.createElement("span");
+          labelElement.textContent = label;
+
+          stat.append(valueElement, labelElement);
+          weatherSummaryStats.appendChild(stat);
+        });
+
+        weatherSummary.hidden = false;
+      }
+
+      function attachWeatherToRawList(route, weather) {
+        route.element.dataset.weatherDate = weather.date || route.date || "";
+        route.element.dataset.weatherRainWindow = String(weather.rain_between_9pm_midnight === true);
+        route.element.dataset.weatherDailyRain = String(weather.downtown_daily_rain === true);
+        route.element.dataset.weatherSubstantial = String(weather.substantial_weather_flag === true);
+        route.element.dataset.weatherFilter = weather.weather_severity || "none";
+        route.element.appendChild(renderWeatherPanel(weather, true));
+      }
+
+      function applyWeather(records) {
+        const byUrl = new Map();
+        const byDateTitle = new Map();
+        const matchedRecords = new Set();
+
+        for (const record of records) {
+          const urlKey = normalizeRouteUrl(record.route_url || record.route_url_path || "");
+          if (urlKey) byUrl.set(urlKey, record);
+          byDateTitle.set(weatherDateTitleKey(record.date, record.route_title), record);
+        }
+
+        let matchedCount = 0;
+        for (const route of routes) {
+          const urlKey = normalizeRouteUrl(route.href);
+          const fallbackKey = weatherDateTitleKey(route.date, route.label.replace(/^\d{4}-\d{2}-\d{2}\s+/, ""));
+          const weather = byUrl.get(urlKey) || byDateTitle.get(fallbackKey);
+          if (!weather) continue;
+          route.weather = weather;
+          matchedRecords.add(weather);
+          matchedCount += 1;
+          attachWeatherToRawList(route, weather);
+        }
+
+        weatherLoaded = true;
+        updateWeatherSummary(records, matchedCount);
+        renderOptions();
+        if (selectedRoute) {
+          selectRoute(selectedRoute, false);
+        }
+
+        const unmatched = records.filter((record) => !matchedRecords.has(record));
+        const debugWeather = new URL(window.location.href).searchParams.has("debugWeather");
+        const localHost = ["localhost", "127.0.0.1", ""].includes(window.location.hostname);
+        if (unmatched.length && (debugWeather || localHost)) {
+          console.warn("Weather records without a matching route card:", unmatched.slice(0, 10));
+        }
+      }
+
+      function loadWeather() {
+        fetch(WEATHER_JSON_URL, { cache: "no-store" })
+          .then((response) => {
+            if (!response.ok) throw new Error(`Weather JSON unavailable: ${response.status}`);
+            return response.json();
+          })
+          .then((payload) => {
+            const records = Array.isArray(payload.records) ? payload.records : [];
+            applyWeather(records);
+          })
+          .catch((error) => {
+            if (weatherSummary && weatherSummaryText) {
+              weatherSummaryText.textContent = "Weather records could not be loaded for this view. Route maps remain available.";
+              weatherSummary.hidden = false;
+            }
+            console.warn("Weather evidence layer did not load.", error);
+          });
+      }
+
       searchInput.addEventListener("input", renderOptions);
       yearSelect.addEventListener("change", renderOptions);
       typeSelect.addEventListener("change", renderOptions);
+      weatherFilterButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          weatherFilter = button.dataset.weatherFilter || "all";
+          weatherFilterButtons.forEach((item) => item.classList.toggle("is-active", item === button));
+          renderOptions();
+        });
+      });
 
       routeSelect.addEventListener("change", function () {
         const route = routes.find((item) => String(item.index) === routeSelect.value);
@@ -640,6 +1092,8 @@
           selectRoute(route, false);
         }
       }
+
+      loadWeather();
     })();
   </script>
 </body>
