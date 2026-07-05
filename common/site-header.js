@@ -6,19 +6,20 @@
       brand: "HandicapSkater.com",
       primaryLinks: [
         { href: "/", label: "Home", match: ["/"] },
-        {
-          href: "/healthcare-wearable-mobility/",
-          label: "Health AI",
-          match: ["/healthcare-wearable-mobility/"]
-        },
+        { href: "/pain.html", label: "Pain", match: ["/pain.html", "/pain.html"] },
+        { href: "/story/", label: "Story", match: ["/story/"] },
+        { href: "/biomechanics/", label: "Biomechanics", match: ["/biomechanics/"] },
         {
           href: "/data.html",
           label: "Data",
           match: ["/data.html"]
         },
+        {
+          href: "/healthcare-wearable-mobility/",
+          label: "Health AI",
+          match: ["/healthcare-wearable-mobility/"]
+        },
         { href: "/platform.html", label: "Platform", match: ["/platform.html"] },
-        { href: "/story/", label: "Story", match: ["/story/"] },
-        { href: "/biomechanics/", label: "Biomechanics", match: ["/biomechanics/"] },
         { href: "/precedent.html", label: "Precedent", match: ["/precedent.html"] },
         {
           href: "/paratransit-burden.html",
@@ -40,7 +41,7 @@
         },
         {
           href: "/videos/",
-          label: "Videos",
+          label: "Media",
           match: ["/videos/", "/videos/index.html"]
         },
         {

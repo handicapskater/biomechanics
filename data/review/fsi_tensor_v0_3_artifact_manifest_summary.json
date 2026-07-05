@@ -1,0 +1,129 @@
+{
+  "artifact_manifest_path": "reports/fsi_tensor_v0_3/source_index/fsi_tensor_v0_3_artifact_manifest_sha256.csv",
+  "artifacts_sample": [
+    {
+      "artifact_path": "reports/fsi_tensor_v0_3/figures/01_fsi_tensor_cohort_ranked_bar.png",
+      "bytes": 73524,
+      "modified_utc": "2026-07-04T18:19:34.891126+00:00",
+      "sha256": "8a37a4100e68b5ebd1176a0de7cc4489b35c693d3143e7f644c48d664a3dce3a"
+    },
+    {
+      "artifact_path": "reports/fsi_tensor_v0_3/figures/01_fsi_tensor_cohort_ranked_bar.svg",
+      "bytes": 40589,
+      "modified_utc": "2026-07-04T18:19:34.891538+00:00",
+      "sha256": "6684b4133fe50bc725c3cf0b6b7a50f5ff83965a63b8486c3a63f9b9dd0eb252"
+    },
+    {
+      "artifact_path": "reports/fsi_tensor_v0_3/figures/02_impact_pain_burden_proxy_ranked_bar.png",
+      "bytes": 72139,
+      "modified_utc": "2026-07-04T18:19:34.892023+00:00",
+      "sha256": "03c1c222c2eb2cdccf189c86243cc781de692a39eccd2a576e5f0739c2e29bff"
+    },
+    {
+      "artifact_path": "reports/fsi_tensor_v0_3/figures/02_impact_pain_burden_proxy_ranked_bar.svg",
+      "bytes": 38990,
+      "modified_utc": "2026-07-04T18:19:34.892340+00:00",
+      "sha256": "ac11b39f3417d2b4ac14aaeb55e8d7f1ce4343a8a477d22c67cb25eb006e15ca"
+    },
+    {
+      "artifact_path": "reports/fsi_tensor_v0_3/figures/03_functional_efficiency_ranked_bar.png",
+      "bytes": 75311,
+      "modified_utc": "2026-07-04T18:19:34.893133+00:00",
+      "sha256": "23a540896ad8c939bdb048fb737930e9c8786c35d8c5d4ec48860cd928f3a64a"
+    },
+    {
+      "artifact_path": "reports/fsi_tensor_v0_3/figures/03_functional_efficiency_ranked_bar.svg",
+      "bytes": 43026,
+      "modified_utc": "2026-07-04T18:19:34.893565+00:00",
+      "sha256": "3be8ef5d5de1ddf6d11a299197debe0a4091de1c669b540fde3ee9a426ff5ffc"
+    },
+    {
+      "artifact_path": "reports/fsi_tensor_v0_3/figures/04_walking_vs_mall_skating_burden_comparison.png",
+      "bytes": 43791,
+      "modified_utc": "2026-07-04T18:19:34.893966+00:00",
+      "sha256": "fec382205306d29ecbe3496ae131eeeb481ce951587b67a7997d90dfb5be8222"
+    },
+    {
+      "artifact_path": "reports/fsi_tensor_v0_3/figures/04_walking_vs_mall_skating_burden_comparison.svg",
+      "bytes": 28584,
+      "modified_utc": "2026-07-04T18:19:34.894310+00:00",
+      "sha256": "a00b4762439ac24605a5ba95851b5b1f7235b655fa446289f65697a35667da49"
+    },
+    {
+      "artifact_path": "reports/fsi_tensor_v0_3/figures/05_silverride_vs_bus_van_burden_comparison.png",
+      "bytes": 57017,
+      "modified_utc": "2026-07-04T18:19:34.895005+00:00",
+      "sha256": "5c3d30c40bad86c32dd502edeb5126341646103d13db64a900be5f8d796acade"
+    },
+    {
+      "artifact_path": "reports/fsi_tensor_v0_3/figures/05_silverride_vs_bus_van_burden_comparison.svg",
+      "bytes": 35153,
+      "modified_utc": "2026-07-04T18:19:34.895452+00:00",
+      "sha256": "2612cb08ea02b9ab6d4c380d09cce38c0d2b54158c9b0ac976106a5d5cf4f75a"
+    },
+    {
+      "artifact_path": "reports/fsi_tensor_v0_3/figures/06_motorcycle_vs_bus_van_active_coupling_comparison.png",
+      "bytes": 52838,
+      "modified_utc": "2026-07-04T18:19:34.896107+00:00",
+      "sha256": "0c22f7190b1b4dfe82229e54fdf4f1e2b4b114587d0ec5868c5b354e84487b4b"
+    },
+    {
+      "artifact_path": "reports/fsi_tensor_v0_3/figures/06_motorcycle_vs_bus_van_active_coupling_comparison.svg",
+      "bytes": 33850,
+      "modified_utc": "2026-07-04T18:19:34.896515+00:00",
+      "sha256": "40cd2912719bd93b0e26ab4c3c892d7d95c928236ecc583023bc4c12b0e31d3e"
+    },
+    {
+      "artifact_path": "reports/fsi_tensor_v0_3/figures/07_sensitivity_profile_score_ranges.png",
+      "bytes": 69668,
+      "modified_utc": "2026-07-04T18:19:34.897307+00:00",
+      "sha256": "05417e9c0a34b412d8011cc2c48bd09926ee5a322d1c4f69c4b7f15bb36245d2"
+    },
+    {
+      "artifact_path": "reports/fsi_tensor_v0_3/figures/07_sensitivity_profile_score_ranges.svg",
+      "bytes": 39035,
+      "modified_utc": "2026-07-04T18:19:34.897660+00:00",
+      "sha256": "8a96c04799b0d2130ad1a0d9ef93775aa2a5ba93e5528b8f7ba7a41b6e7bf3df"
+    },
+    {
+      "artifact_path": "reports/fsi_tensor_v0_3/figures/08_bootstrap_ci_fsi_tensor.png",
+      "bytes": 76062,
+      "modified_utc": "2026-07-04T18:19:34.898237+00:00",
+      "sha256": "8d7d19683a2ac82031b37ab2c752f1eafa5fe7fb261dd568701325e3eec1e24e"
+    },
+    {
+      "artifact_path": "reports/fsi_tensor_v0_3/figures/08_bootstrap_ci_fsi_tensor.svg",
+      "bytes": 46989,
+      "modified_utc": "2026-07-04T18:19:34.898878+00:00",
+      "sha256": "0dde6576a208af8240562a1edf19d9f16cd96f95a5ab1f905d67903fb06b0b39"
+    },
+    {
+      "artifact_path": "reports/fsi_tensor_v0_3/figures/09_leave_one_out_stability.png",
+      "bytes": 75787,
+      "modified_utc": "2026-07-04T18:19:34.899641+00:00",
+      "sha256": "a73391695a20dd7d3a257cb1cb04f90ffa2f6f85b5f1ccba9841ce894f0837d3"
+    },
+    {
+      "artifact_path": "reports/fsi_tensor_v0_3/figures/09_leave_one_out_stability.svg",
+      "bytes": 39910,
+      "modified_utc": "2026-07-04T18:19:34.899953+00:00",
+      "sha256": "3bb3071bbaf01cdc8bf4986e7d46beee62ef2f4989cfd022a47b9e20f526f712"
+    },
+    {
+      "artifact_path": "reports/fsi_tensor_v0_3/figures/10_cohort_separation_effect_sizes.png",
+      "bytes": 203368,
+      "modified_utc": "2026-07-04T18:19:34.901730+00:00",
+      "sha256": "dd62d47dab2e359c0877456cb882f53ac8f61dd39930302c2bd4ba99a4d2fb10"
+    },
+    {
+      "artifact_path": "reports/fsi_tensor_v0_3/figures/10_cohort_separation_effect_sizes.svg",
+      "bytes": 110397,
+      "modified_utc": "2026-07-04T18:19:34.902292+00:00",
+      "sha256": "4ce5ac3836766c7cad760e974a02afb3e9918aac4f52b5a8659bdb6bd7d6b9a6"
+    }
+  ],
+  "available": true,
+  "cohort_source_index_path": "reports/fsi_tensor_v0_3/source_index/fsi_tensor_v0_3_cohort_source_index.jsonl",
+  "hashed_artifacts_count": 54,
+  "session_source_index_path": "reports/fsi_tensor_v0_3/source_index/fsi_tensor_v0_3_session_source_index.jsonl"
+}

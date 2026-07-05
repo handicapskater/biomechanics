@@ -1,0 +1,86 @@
+{
+  "available": true,
+  "moves": [
+    {
+      "answer": "Key cohort separations are tested across multiple defensible weight profiles.",
+      "move": 1,
+      "rows_available": 10,
+      "skeptic_question": "Are the weights cooked?",
+      "source_file": "reports/fsi_tensor_v0_3/validation/move1_sensitivity_summary.csv",
+      "status": "Complete",
+      "title": "Sensitivity"
+    },
+    {
+      "answer": "Median cohort scores are resampled with uncertainty intervals.",
+      "move": 2,
+      "rows_available": 3,
+      "skeptic_question": "Do small samples break the conclusion?",
+      "source_file": "reports/fsi_tensor_v0_3/validation/move2_key_comparison_bootstrap.csv",
+      "status": "Complete",
+      "title": "Bootstrap"
+    },
+    {
+      "answer": "Each session is removed one at a time and cohort medians are recomputed.",
+      "move": 3,
+      "rows_available": 3,
+      "skeptic_question": "Is one unusual session driving the result?",
+      "source_file": "reports/fsi_tensor_v0_3/validation/move3_key_comparison_loo_summary.csv",
+      "status": "Complete",
+      "title": "Leave-one-out"
+    },
+    {
+      "answer": "Burden and functional output are separated.",
+      "move": 4,
+      "rows_available": 3,
+      "skeptic_question": "Are useful modalities being forced to look low burden?",
+      "source_file": "reports/fsi_tensor_v0_3/validation/move4_functional_efficiency_key_comparisons.csv",
+      "status": "Complete",
+      "title": "Functional efficiency"
+    },
+    {
+      "answer": "Nonparametric tests and effect sizes compare key cohorts.",
+      "move": 5,
+      "rows_available": 29,
+      "skeptic_question": "Are the cohorts meaningfully different?",
+      "source_file": "reports/fsi_tensor_v0_3/validation/move5_key_pairwise_summary.csv",
+      "status": "Complete",
+      "title": "Cohort separation"
+    },
+    {
+      "answer": "Outputs link to reviewer questions without making legal conclusions.",
+      "move": 6,
+      "rows_available": 2,
+      "skeptic_question": "How does this connect to risk review?",
+      "source_file": "reports/fsi_tensor_v0_3/validation/move6_direct_threat_rebuttal_linkage.csv",
+      "status": "Needs source attachment",
+      "title": "Evidence linkage"
+    },
+    {
+      "answer": "Cohort findings link to chronology and source attachment review.",
+      "move": 7,
+      "rows_available": 2,
+      "skeptic_question": "Is there real-world use history?",
+      "source_file": "reports/fsi_tensor_v0_3/validation/move7_incident_free_chronology_linkage.csv",
+      "status": "Needs source attachment",
+      "title": "Chronology/source linkage"
+    },
+    {
+      "answer": "Structured protocol fields connect evidence to actual-risk review.",
+      "move": 8,
+      "rows_available": 2,
+      "skeptic_question": "Can risk be handled without categorical exclusion?",
+      "source_file": "reports/fsi_tensor_v0_3/validation/move8_controlled_accommodation_protocol_linkage.csv",
+      "status": "Needs source attachment",
+      "title": "Protocol/source linkage"
+    },
+    {
+      "answer": "Formula, outputs, validation files, and hashes are version locked.",
+      "move": 9,
+      "rows_available": 1,
+      "skeptic_question": "Is the model a moving target?",
+      "source_file": "reports/fsi_tensor_v0_3/validation/move9_model_version_lock_summary.csv",
+      "status": "Complete",
+      "title": "Model/version/artifact lock"
+    }
+  ]
+}

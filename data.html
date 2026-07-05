@@ -8,6 +8,149 @@
   <link rel="icon" href="/common/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="advocacy-site.css">
   <link rel="stylesheet" href="/common/css/site-chrome.css">
+  <style>
+    .fsi-snapshot .section-header {
+      margin-bottom: 1.5rem;
+    }
+
+    .fsi-score-card-grid,
+    .fsi-validation-grid,
+    .fsi-key-findings {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin: 1.5rem auto;
+      max-width: var(--content, 1120px);
+      padding: 0 1rem;
+    }
+
+    .fsi-score-card,
+    .fsi-validation-card,
+    .fsi-finding-card {
+      background: var(--paper, #fff);
+      border: 1px solid var(--border, #d8e0e8);
+      border-radius: 8px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+      padding: 1rem;
+    }
+
+    .fsi-score-card h3,
+    .fsi-validation-card h3,
+    .fsi-finding-card h3 {
+      margin-top: 0;
+    }
+
+    .fsi-cohort-ranking,
+    .fsi-source-panel {
+      background: var(--paper, #fff);
+      border: 1px solid var(--border, #d8e0e8);
+      border-radius: 8px;
+      margin: 1.5rem auto;
+      max-width: var(--content, 1120px);
+      overflow: hidden;
+    }
+
+    .fsi-cohort-row {
+      align-items: center;
+      border-top: 1px solid var(--border, #d8e0e8);
+      display: grid;
+      gap: 0.75rem;
+      grid-template-columns: 3rem minmax(130px, 1.2fr) 4rem repeat(3, minmax(90px, 0.8fr)) minmax(180px, 1.5fr);
+      padding: 0.85rem 1rem;
+    }
+
+    .fsi-cohort-row:first-child {
+      border-top: 0;
+    }
+
+    .fsi-cohort-row.fsi-heading {
+      background: var(--panel-alt, #f4f7fb);
+      color: var(--muted, #475569);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .fsi-score-pill {
+      background: #edf5ff;
+      border: 1px solid #c5dcf8;
+      border-radius: 999px;
+      color: #123a63;
+      display: inline-flex;
+      font-weight: 700;
+      justify-content: center;
+      padding: 0.3rem 0.55rem;
+      white-space: nowrap;
+    }
+
+    .fsi-boundary-note,
+    .fsi-data-fallback {
+      background: #fff8e8;
+      border: 1px solid #efd18a;
+      border-radius: 8px;
+      margin: 1rem auto;
+      max-width: var(--content, 1120px);
+      padding: 1rem;
+    }
+
+    .fsi-kpi-strip {
+      display: grid;
+      gap: 0.75rem;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      margin: 1rem auto;
+      max-width: var(--content, 1120px);
+      padding: 0 1rem;
+    }
+
+    .fsi-kpi {
+      background: var(--panel-alt, #f4f7fb);
+      border-radius: 8px;
+      padding: 0.85rem;
+    }
+
+    .fsi-kpi strong {
+      display: block;
+      font-size: 1.45rem;
+    }
+
+    .fsi-source-panel {
+      padding: 1rem;
+    }
+
+    .fsi-source-grid {
+      display: grid;
+      gap: 0.75rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .fsi-source-grid div {
+      background: var(--panel-alt, #f4f7fb);
+      border-radius: 8px;
+      padding: 0.75rem;
+    }
+
+    .fsi-source-grid span {
+      display: block;
+      color: var(--muted, #475569);
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 860px) {
+      .fsi-cohort-row {
+        align-items: start;
+        grid-template-columns: 2.5rem minmax(0, 1fr);
+      }
+
+      .fsi-cohort-row > span:nth-child(n+3) {
+        grid-column: 2;
+      }
+
+      .fsi-cohort-row.fsi-heading {
+        display: none;
+      }
+    }
+  </style>
 </head>
 <body class="site-com">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -24,6 +167,87 @@
         <h1>Current Corpus Model</h1>
         <p class="lead">Wearable data helps explain why skating functions as my mobility aid, not recreation.</p>
         <p class="hero-copy">Walking is not simply low activity for me. In the record and in my wearable data, walking can be associated with elevated physiologic response, reduced function, and higher burden per unit of mobility. Skating can support longer tolerated activity at lower HR while still requiring separate review of mechanical motion exposure.</p>
+      </div>
+    </section>
+
+    <section class="section alt fsi-snapshot" id="fsi-data-science-evidence" aria-labelledby="fsi-snapshot-title">
+      <div class="section-header">
+        <p class="eyebrow">Source-indexed, validation-tested, audit-ready</p>
+        <h2 id="fsi-snapshot-title">Data Science Evidence Snapshot</h2>
+        <p>Source-indexed wearable and movement evidence comparing walking, skating, transport, and baseline cohorts.</p>
+        <p>These scores do not measure pain directly and do not make clinical or legal conclusions. They summarize within-person MSK burden patterns from wearable, movement, and source-indexed evidence.</p>
+      </div>
+
+      <div class="fsi-data-fallback" id="fsi-data-fallback" hidden>
+        <strong>Data snapshot unavailable.</strong>
+        <p>Run the FSI Tensor public review export pipeline to refresh data/review artifacts.</p>
+      </div>
+
+      <div class="fsi-score-card-grid" aria-label="FSI score explanations">
+        <article class="fsi-score-card">
+          <h3>FSI Tensor Burden</h3>
+          <p>What the body absorbs across physiology, mechanical shock, MSK load path, passive exposure, active control, and functional output.</p>
+        </article>
+        <article class="fsi-score-card">
+          <h3>Impact Burden Proxy</h3>
+          <p>Shock interpreted through physiology and MSK load path. This is not a direct pain measurement.</p>
+        </article>
+        <article class="fsi-score-card">
+          <h3>Functional Mobility Efficiency</h3>
+          <p>Useful mobility produced for the burden. This separates "hard" from "useful."</p>
+        </article>
+      </div>
+
+      <div class="fsi-kpi-strip" id="fsi-kpi-strip" aria-label="FSI public overview metrics"></div>
+
+      <div class="section-header">
+        <h2>Key Findings</h2>
+        <p>Concise findings are generated from the current public review JSON values.
+          <ul>
+            <li>Mall skating constitutes using skates around the mall limiting the ballistic component by not lifting the leg, but minute side-to-side movement to preserve momentum.</li>
+            <li>PT skating constitutes using skates with a minimal ballistic component, stepping lightly, for preservation of momentum.</li>
+          </ul>
+        </p>
+      </div>
+      <div class="fsi-key-findings" id="fsi-key-findings" aria-label="Key FSI Tensor findings"></div>
+
+      <div class="section-header">
+        <h2>Cohort Ranking</h2>
+        <p>Cohorts are sorted ascending by FSI Tensor v0.3 burden score.</p>
+      </div>
+      <div class="fsi-cohort-ranking" id="fsi-cohort-ranking" aria-label="FSI cohort ranking">
+        <div class="fsi-cohort-row fsi-heading">
+          <span>Rank</span>
+          <span>Cohort</span>
+          <span>n</span>
+          <span>FSI burden</span>
+          <span>Impact proxy</span>
+          <span>Band</span>
+          <span>Interpretation</span>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <h2>Validation and Audit Checks</h2>
+        <p>These checks test whether the model survives common criticisms: hand-picked weights, small samples, one unusual session, unclear functional output, weak cohort separation, and missing audit linkage.</p>
+      </div>
+      <div class="fsi-validation-grid" id="fsi-validation-grid" aria-label="FSI validation moves"></div>
+
+      <div class="section-header">
+        <h2>Source and Reproducibility</h2>
+        <p>The public snapshot is generated from the IoMT FSI Evidence Observatory platform. Full formulas, session outputs, source indexes, and hashes remain in the evidence platform artifacts.</p>
+      </div>
+      <div class="fsi-source-panel" id="fsi-source-panel" aria-label="FSI source and reproducibility status"></div>
+
+      <div class="fsi-boundary-note" id="fsi-boundary-note">
+        These scores do not measure pain directly and do not make clinical or legal conclusions. They summarize within-person MSK burden patterns from wearable, movement, and source-indexed evidence.
+      </div>
+
+      <div class="button-row">
+        <a class="button button-primary" href="/platform.html">Open full dashboard</a>
+        <a class="button button-secondary" href="/data/review/fsi_tensor_v0_3_autonomic_gated_cohort_summary.csv">Download cohort CSV</a>
+        <a class="button button-secondary" href="/data/review/fsi_tensor_v0_3_validation_summary.json">View validation summary</a>
+        <a class="button button-light" href="/data/review/fsi_tensor_v0_3_artifact_manifest_summary.json">View source artifacts</a>
       </div>
     </section>
 
@@ -68,7 +292,7 @@
     <section class="section">
       <div class="section-header">
         <h2>Why this dashboard exists</h2>
-        <p>I built this dashboard to show the functional difference between high burden walking, adaptive skating, motorcycle travel, wheelchair labeled use, ParaTransit, commuting, and other mobility contexts.</p>
+        <p>I built this dashboard to show the functional difference between high burden walking, adaptive skating, motorcycle travel, skates as a wheelchair labeled use, ParaTransit, commuting, and other mobility contexts.</p>
         <p>The goal is simple: make invisible mobility burden reviewable.</p>
       </div>
       <div class="grid four">
@@ -99,12 +323,12 @@
         <article class="card">
           <span class="tag">Record facts</span>
           <h3>Mobility modes differ</h3>
-          <p>The dashboard organizes walking, skating, wheelchair labeled use, motorcycle travel, ParaTransit, commuting, and related cohorts as distinct mobility contexts.</p>
+          <p>The dashboard organizes walking, skating, skates used as a wheelchair labeled use, motorcycle travel, ParaTransit, commuting, and related cohorts as distinct mobility contexts.</p>
         </article>
         <article class="card">
           <span class="tag">Interpretation</span>
           <h3>Within person burden matters</h3>
-          <p>The useful signal is not HR or HRV alone. It is the within person pattern across HR, HRV/RMSSD, RRI quality, duration, mobility mode, distance, recovery, and mechanical exposure.</p>
+          <p>The useful signal is not HR or HRV alone. It is the within person pattern across HR, HRV/RMSSD, raw beat-to-beat interval data (RRI) quality, duration, mobility mode, distance, recovery, and mechanical exposure.</p>
         </article>
         <article class="card">
           <span class="tag">Efficiency</span>
@@ -142,8 +366,8 @@
 
     <section class="section" id="fsicss-results">
       <div class="section-header">
-        <h2>Source-linked FSI/CSS case study results</h2>
-        <p>The current FSI/CSS work treats Kubios/Polar H10 as the activity specific biomechanics stream, WHOOP as longitudinal physiology context, and Strava as functional distance and route capacity context. The results are source linked decision support evidence for accommodation evaluation; they do not independently decide pain or legal entitlement.</p>
+        <h2>Source-linked FSI case study results</h2>
+        <p>The current FSI work treats Kubios/Polar H10 as the activity specific biomechanics stream, WHOOP as longitudinal physiology context, and Strava as functional distance and route capacity context. The results are source linked decision support evidence for accommodation evaluation; they do not independently decide pain or legal entitlement.</p>
       </div>
       <div class="grid three">
         <article class="card">
@@ -199,7 +423,7 @@
         <article class="metric"><strong>Activity category:</strong> skating, walking, wheelchair labeled use, motorcycle, ParaTransit, commuting, and related cohorts.</article>
         <article class="metric"><strong>Movement pattern:</strong> vertical versus horizontal dynamics where available.</article>
         <article class="metric"><strong>FSI:</strong> Fractal Stability Index, a proposed stability-pattern metric.</article>
-        <article class="metric"><strong>CSS:</strong> Comparable Similarity Score, a proposed similarity-to-reference framework.</article>
+        <article class="metric"><strong>CSS:</strong> Cohort Similarity Score, a proposed similarity-to-reference framework.</article>
       </div>
     </section>
 
@@ -276,5 +500,119 @@
 
   <div id="site-footer"></div>
   <script src="/common/site-footer.js"></script>
+  <script>
+    (function () {
+      var paths = {
+        overview: "/data/review/fsi_tensor_v0_3_public_overview.json",
+        cohorts: "/data/review/fsi_tensor_v0_3_autonomic_gated_cohort_summary.json",
+        validation: "/data/review/fsi_tensor_v0_3_validation_summary.json",
+        manifest: "/data/review/fsi_tensor_v0_3_artifact_manifest_summary.json"
+      };
+      function formatNumber(value, digits) {
+        var number = Number(value);
+        if (!Number.isFinite(number)) return "not available";
+        return number.toFixed(digits);
+      }
+      function text(value) {
+        return value === null || value === undefined || value === "" ? "not available" : String(value);
+      }
+      function fetchJson(path) {
+        return fetch(path, { cache: "no-store" }).then(function (response) {
+          if (!response.ok) throw new Error(path + " unavailable");
+          return response.json();
+        });
+      }
+      function renderKpis(overview) {
+        var target = document.getElementById("fsi-kpi-strip");
+        if (!target) return;
+        var items = [
+          ["Cohorts", overview.cohort_count],
+          ["Sessions", overview.session_count],
+          ["Validation moves", overview.validation_moves_complete_count + " / " + overview.validation_moves_expected_count],
+          ["Hashed artifacts", overview.hashed_artifacts_count]
+        ];
+        target.innerHTML = items.map(function (item) {
+          return '<article class="fsi-kpi"><span>' + item[0] + '</span><strong>' + text(item[1]) + '</strong></article>';
+        }).join("");
+      }
+      function renderFindings(overview) {
+        var target = document.getElementById("fsi-key-findings");
+        if (!target) return;
+        target.innerHTML = (overview.top_findings || []).slice(0, 5).map(function (finding, index) {
+          return '<article class="fsi-finding-card"><h3>Finding ' + (index + 1) + '</h3><p>' + text(finding) + '</p></article>';
+        }).join("");
+      }
+      function sortedRows(cohortPayload, overview) {
+        return (overview.cohort_rankings || cohortPayload.rows || []).slice().sort(function (left, right) {
+          return Number(left.fsi_tensor_v0_3_score_median || 999) - Number(right.fsi_tensor_v0_3_score_median || 999);
+        });
+      }
+      function renderRanking(cohortPayload, overview) {
+        var target = document.getElementById("fsi-cohort-ranking");
+        if (!target) return;
+        var rows = sortedRows(cohortPayload, overview);
+        var markup = rows.map(function (row, index) {
+          return [
+            '<div class="fsi-cohort-row">',
+            '<span><strong>#' + text(row.rank || index + 1) + '</strong></span>',
+            '<span><strong>' + text(row.cohort_label) + '</strong></span>',
+            '<span>' + text(row.n) + '</span>',
+            '<span class="fsi-score-pill">' + formatNumber(row.fsi_tensor_v0_3_score_median, 3) + '</span>',
+            '<span>' + formatNumber(row.impact_pain_burden_proxy_v0_3_median, 3) + '</span>',
+            '<span>' + text(row.burden_band_v0_3) + '</span>',
+            '<span>' + text(row.quick_interpretation) + '</span>',
+            '</div>'
+          ].join("");
+        }).join("");
+        target.insertAdjacentHTML("beforeend", markup);
+      }
+      function renderValidation(validation) {
+        var target = document.getElementById("fsi-validation-grid");
+        if (!target) return;
+        target.innerHTML = (validation.moves || []).map(function (move) {
+          return [
+            '<article class="fsi-validation-card">',
+            '<p class="eyebrow">Move ' + text(move.move) + '</p>',
+            '<h3>' + text(move.title) + '</h3>',
+            '<p><strong>Skeptic question:</strong> ' + text(move.skeptic_question) + '</p>',
+            '<p>' + text(move.answer || move.evidence_answer) + '</p>',
+            '<p><strong>Source:</strong> ' + text(move.source_file) + '</p>',
+            '<span class="fsi-score-pill">' + text(move.status) + '</span>',
+            '</article>'
+          ].join("");
+        }).join("");
+      }
+      function renderSourcePanel(overview, manifest) {
+        var target = document.getElementById("fsi-source-panel");
+        if (!target) return;
+        var sourcePaths = overview.source_paths || {};
+        var rows = [
+          ["Model id", overview.model_id],
+          ["Model version", overview.model_version],
+          ["Generated", overview.generated_at_utc],
+          ["Hashed artifacts", manifest.hashed_artifacts_count || overview.hashed_artifacts_count],
+          ["Cohort summary CSV", "data/review/fsi_tensor_v0_3_autonomic_gated_cohort_summary.csv"],
+          ["Validation summary", "data/review/fsi_tensor_v0_3_validation_summary.json"],
+          ["Source manifest", manifest.artifact_manifest_path || sourcePaths.source_index_dir]
+        ];
+        target.innerHTML = '<div class="fsi-source-grid">' + rows.map(function (row) {
+          return '<div><span>' + row[0] + '</span><strong>' + text(row[1]) + '</strong></div>';
+        }).join("") + '</div>';
+      }
+      Promise.all([fetchJson(paths.overview), fetchJson(paths.cohorts), fetchJson(paths.validation), fetchJson(paths.manifest)])
+        .then(function (payloads) {
+          renderKpis(payloads[0]);
+          renderFindings(payloads[0]);
+          renderRanking(payloads[1], payloads[0]);
+          renderValidation(payloads[2]);
+          renderSourcePanel(payloads[0], payloads[3]);
+        })
+        .catch(function (error) {
+          console.warn("FSI data snapshot unavailable", error);
+          var fallback = document.getElementById("fsi-data-fallback");
+          if (fallback) fallback.hidden = false;
+        });
+    })();
+  </script>
 </body>
 </html>

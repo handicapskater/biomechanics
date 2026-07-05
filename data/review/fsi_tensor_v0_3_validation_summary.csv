@@ -1,0 +1,10 @@
+move,title,skeptic_question,answer,status,source_file,rows_available
+1,Sensitivity,Are the weights cooked?,Key cohort separations are tested across multiple defensible weight profiles.,Complete,reports/fsi_tensor_v0_3/validation/move1_sensitivity_summary.csv,10
+2,Bootstrap,Do small samples break the conclusion?,Median cohort scores are resampled with uncertainty intervals.,Complete,reports/fsi_tensor_v0_3/validation/move2_key_comparison_bootstrap.csv,3
+3,Leave-one-out,Is one unusual session driving the result?,Each session is removed one at a time and cohort medians are recomputed.,Complete,reports/fsi_tensor_v0_3/validation/move3_key_comparison_loo_summary.csv,3
+4,Functional efficiency,Are useful modalities being forced to look low burden?,Burden and functional output are separated.,Complete,reports/fsi_tensor_v0_3/validation/move4_functional_efficiency_key_comparisons.csv,3
+5,Cohort separation,Are the cohorts meaningfully different?,Nonparametric tests and effect sizes compare key cohorts.,Complete,reports/fsi_tensor_v0_3/validation/move5_key_pairwise_summary.csv,29
+6,Evidence linkage,How does this connect to risk review?,Outputs link to reviewer questions without making legal conclusions.,Needs source attachment,reports/fsi_tensor_v0_3/validation/move6_direct_threat_rebuttal_linkage.csv,2
+7,Chronology/source linkage,Is there real-world use history?,Cohort findings link to chronology and source attachment review.,Needs source attachment,reports/fsi_tensor_v0_3/validation/move7_incident_free_chronology_linkage.csv,2
+8,Protocol/source linkage,Can risk be handled without categorical exclusion?,Structured protocol fields connect evidence to actual-risk review.,Needs source attachment,reports/fsi_tensor_v0_3/validation/move8_controlled_accommodation_protocol_linkage.csv,2
+9,Model/version/artifact lock,Is the model a moving target?,"Formula, outputs, validation files, and hashes are version locked.",Complete,reports/fsi_tensor_v0_3/validation/move9_model_version_lock_summary.csv,1
