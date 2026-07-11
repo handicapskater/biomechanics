@@ -20,6 +20,7 @@
           match: ["/healthcare-wearable-mobility/"]
         },
         { href: "/platform.html", label: "Platform", match: ["/platform.html"] },
+        { href: "/legal.html", label: "Legal", match: ["/legal.html"] },
         { href: "/precedent.html", label: "Precedent", match: ["/precedent.html"] },
         {
           href: "/paratransit-burden.html",
