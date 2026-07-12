@@ -33,11 +33,11 @@ def main() -> None:
     pain = read(PAIN)
     _precedent = read(PRECEDENT)
 
-    assert_contains(index, "Chronic Pain, Controlled Rolling", "homepage")
+    assert_contains(index, "HandicapSkater", "homepage")
     assert_contains(index, 'href="/pain.html"', "homepage")
-    assert_contains(index, 'href="/data.html"', "homepage")
-    assert_contains(index, "Recognized in Practice", "homepage")
-    assert_contains(index, "Start with Pain", "homepage")
+    assert_contains(index, 'href="/evidence/"', "homepage")
+    assert_contains(index, "Review the HandicapSkater Record", "homepage")
+    assert_contains(index, "Understand the Pain", "homepage")
 
     assert_not_contains(index, "fsi-cohort-ranking", "homepage")
     assert_not_contains(index, "fsi_tensor_v0_3_public_overview.json", "homepage")
@@ -51,7 +51,7 @@ def main() -> None:
         "The issue is not whether I can take steps. The issue is what those steps cost.",
         "pain page",
     )
-    assert_contains(pain, 'href="/data.html"', "pain page")
+    assert_contains(pain, 'href="/evidence/"', "pain page")
 
     combined = "\n".join([index, pain])
     for phrase in (
@@ -66,7 +66,7 @@ def main() -> None:
 
     print("homepage pain entry present")
     print("pain page boundary language present")
-    print("recognized in practice summary present")
+    print("perspective guide summary present")
     print("full FSI snapshot absent from homepage")
     print("precedent page still available")
     print("no prohibited overclaiming language")

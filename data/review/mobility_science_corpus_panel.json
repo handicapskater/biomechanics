@@ -1,0 +1,157 @@
+{
+  "cohort_summary": [
+    {
+      "canonical_cohort": "fns_sns_skating",
+      "median_avg_hr_bpm": 113.0,
+      "median_distance_mi": 18.175,
+      "median_duration_min": 160.06666666666666,
+      "n_episodic_sensor": 13,
+      "n_longitudinal_context": 501,
+      "n_records": 514
+    },
+    {
+      "canonical_cohort": "mall_skating",
+      "median_avg_hr_bpm": 76.79418580369301,
+      "median_distance_mi": 3.035,
+      "median_duration_min": 33.11666666666667,
+      "n_episodic_sensor": 12,
+      "n_longitudinal_context": 0,
+      "n_records": 12
+    },
+    {
+      "canonical_cohort": "motorcycle",
+      "median_avg_hr_bpm": 94.0,
+      "median_distance_mi": 119.19,
+      "median_duration_min": 136.45833333333331,
+      "n_episodic_sensor": 5,
+      "n_longitudinal_context": 303,
+      "n_records": 308
+    },
+    {
+      "canonical_cohort": "other_review",
+      "median_avg_hr_bpm": 74.0,
+      "median_distance_mi": 0.0,
+      "median_duration_min": 30.5,
+      "n_episodic_sensor": 0,
+      "n_longitudinal_context": 1058,
+      "n_records": 1058
+    },
+    {
+      "canonical_cohort": "paratransit_bus",
+      "median_avg_hr_bpm": 82.52308929823901,
+      "median_distance_mi": 39.129999999999995,
+      "median_duration_min": 40.4,
+      "n_episodic_sensor": 11,
+      "n_longitudinal_context": 0,
+      "n_records": 11
+    },
+    {
+      "canonical_cohort": "paratransit_sedan_or_taxi",
+      "median_avg_hr_bpm": 95.12742067664318,
+      "median_distance_mi": 38.785,
+      "median_duration_min": 37.57211666666667,
+      "n_episodic_sensor": 13,
+      "n_longitudinal_context": 0,
+      "n_records": 13
+    },
+    {
+      "canonical_cohort": "paratransit_silverride",
+      "median_avg_hr_bpm": 91.33183901508815,
+      "median_distance_mi": 21.54,
+      "median_duration_min": 30.887366666666665,
+      "n_episodic_sensor": 3,
+      "n_longitudinal_context": 0,
+      "n_records": 3
+    },
+    {
+      "canonical_cohort": "paratransit_unknown_vehicle",
+      "median_avg_hr_bpm": 87.0,
+      "median_distance_mi": 38.15,
+      "median_duration_min": 38.083333333333336,
+      "n_episodic_sensor": 0,
+      "n_longitudinal_context": 123,
+      "n_records": 123
+    },
+    {
+      "canonical_cohort": "paratransit_van",
+      "median_avg_hr_bpm": 78.0985919690211,
+      "median_distance_mi": 39.15,
+      "median_duration_min": 41.03413333333333,
+      "n_episodic_sensor": 3,
+      "n_longitudinal_context": 0,
+      "n_records": 3
+    },
+    {
+      "canonical_cohort": "pt_skating",
+      "median_avg_hr_bpm": 111.0,
+      "median_distance_mi": 17.9,
+      "median_duration_min": 141.06666666666666,
+      "n_episodic_sensor": 35,
+      "n_longitudinal_context": 314,
+      "n_records": 349
+    },
+    {
+      "canonical_cohort": "readiness_baseline",
+      "median_avg_hr_bpm": 53.08670829020733,
+      "median_distance_mi": null,
+      "median_duration_min": 2.998566666666667,
+      "n_episodic_sensor": 42,
+      "n_longitudinal_context": 0,
+      "n_records": 42
+    },
+    {
+      "canonical_cohort": "unknown_activity",
+      "median_avg_hr_bpm": 75.0,
+      "median_distance_mi": null,
+      "median_duration_min": 30.0,
+      "n_episodic_sensor": 0,
+      "n_longitudinal_context": 201,
+      "n_records": 201
+    },
+    {
+      "canonical_cohort": "walking",
+      "median_avg_hr_bpm": 116.0,
+      "median_distance_mi": 0.0,
+      "median_duration_min": 29.0,
+      "n_episodic_sensor": 13,
+      "n_longitudinal_context": 60,
+      "n_records": 73
+    },
+    {
+      "canonical_cohort": "wheelchair_pt",
+      "median_avg_hr_bpm": 103.0,
+      "median_distance_mi": 3.47,
+      "median_duration_min": 43.46666666666667,
+      "n_episodic_sensor": 0,
+      "n_longitudinal_context": 75,
+      "n_records": 75
+    }
+  ],
+  "declaration": "Within-person evidence model. Wearable signals estimate physiologic, MSK, movement, and transport burden; source artifacts and validation layers remain available for audit.",
+  "plain_english": "Before Kubios was available, the long-running evidence came from WHOOP and Strava. Kubios later added episodic HRV and accelerometer detail. The Mobility Science Corpus keeps both layers distinct and merges them for dashboard and RAG review.",
+  "sections": [
+    "Corpus Overview",
+    "Evidence Tiers",
+    "Longitudinal Metrics",
+    "Episodic Kubios Metrics",
+    "Same Day CSS Triplets",
+    "FSI/CSS Cohort Summary",
+    "Metric Coverage",
+    "RAG Evidence Facts",
+    "Source Audit"
+  ],
+  "source_audit": {
+    "corpus_path": "data/processed/latest/fsicss_mobility_science_corpus.jsonl",
+    "evidence_tier_counts": {
+      "episodic_sensor": 150,
+      "longitudinal_context": 2635
+    },
+    "longitudinal_review_path": "data/review/longitudinal_mobility_metrics.json",
+    "metric_scope_counts": {
+      "episodic_kubios": 150,
+      "longitudinal_whoop_strava": 2635
+    },
+    "record_count": 2785
+  },
+  "title": "Mobility Science Corpus"
+}

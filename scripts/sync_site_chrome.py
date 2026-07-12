@@ -18,7 +18,7 @@ SITES = {
             ("/", "Home", ["/"]),
             ("/story/", "Story", ["/story/"]),
             ("/healthcare-wearable-mobility/", "Healthcare", ["/healthcare-wearable-mobility/"]),
-            ("/data.html", "Data", ["/data.html"]),
+            ("/evidence/", "Data", ["/evidence/"]),
             ("/health-ai.html", "Health AI", ["/health-ai.html"]),
             ("/platform.html", "Platform", ["/platform.html"]),
             ("/videos/", "Videos", ["/videos/", "/videos/index.html"]),

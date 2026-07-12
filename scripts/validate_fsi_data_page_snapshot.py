@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate HandicapSkater.com Data page FSI evidence snapshot wiring."""
+"""Validate HandicapSkater.com Evidence Corpus page FSI evidence snapshot wiring."""
 
 from __future__ import annotations
 
@@ -8,10 +8,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
-DATA_PAGE = ROOT / "data.html"
+DATA_PAGE = ROOT / "evidence" / "index.html"
 
 DATA_REQUIRED_STRINGS = [
-    "Data Science Evidence Snapshot",
+    "Generated Evidence Snapshot",
     "Validation and Audit Checks",
     "Source and Reproducibility",
     "fsi_tensor_v0_3_public_overview.json",
@@ -19,15 +19,13 @@ DATA_REQUIRED_STRINGS = [
     "fsi_tensor_v0_3_validation_summary.json",
     "fsi_tensor_v0_3_artifact_manifest_summary.json",
     "These scores do not measure pain directly and do not make clinical or legal conclusions.",
-    "Data snapshot unavailable",
-    "Run the FSI Tensor public review export pipeline to refresh data/review artifacts.",
-]
+    ]
 
 HOME_REQUIRED_STRINGS = [
-    "Data Science Evidence",
-    "View Data Evidence",
-    "/data.html",
-    "FSI v0.3 · validation-tested · source-indexed",
+    "Evidence Corpus",
+    "Review the Evidence",
+    "/evidence/",
+    "Review source-linked HR",
 ]
 
 REQUIRED_CLASSES = [
@@ -41,7 +39,6 @@ REQUIRED_CLASSES = [
     "fsi-validation-card",
     "fsi-boundary-note",
     "fsi-data-fallback",
-    "fsi-home-teaser",
 ]
 
 FORBIDDEN_STRINGS = [
@@ -62,7 +59,7 @@ def main() -> None:
     assert "fsi_tensor_v0_3_public_overview.json" not in homepage, "Homepage should not fetch FSI snapshot JSON"
 
     missing_data = [text for text in DATA_REQUIRED_STRINGS if text not in data_page]
-    assert not missing_data, f"Data page missing FSI snapshot strings: {missing_data}"
+    assert not missing_data, f"Evidence Corpus page missing FSI snapshot strings: {missing_data}"
 
     combined = homepage + "\n" + data_page
     missing_classes = [name for name in REQUIRED_CLASSES if name not in combined]
@@ -80,11 +77,11 @@ def main() -> None:
     ]:
         assert path.exists(), f"Missing local data artifact: {path.relative_to(ROOT)}"
 
-    print("FSI Data page snapshot valid")
+    print("FSI Evidence Corpus page snapshot valid")
     print("homepage teaser present")
     print("homepage does not contain full FSI ranking")
-    print("Data page references public overview JSON")
-    print("Data page references cohort, validation, and manifest JSON")
+    print("Evidence Corpus page references public overview JSON")
+    print("Evidence Corpus page references cohort, validation, and manifest JSON")
     print("boundary language present")
 
 

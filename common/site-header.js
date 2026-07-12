@@ -6,27 +6,27 @@
       brand: "HandicapSkater.com",
       primaryLinks: [
         { href: "/", label: "Home", match: ["/"] },
-        { href: "/pain.html", label: "Pain", match: ["/pain.html", "/pain.html"] },
         { href: "/story/", label: "Story", match: ["/story/"] },
+        { href: "/pain.html", label: "Pain", match: ["/pain.html", "/pain.html"] },
         { href: "/biomechanics/", label: "Biomechanics", match: ["/biomechanics/"] },
         {
-          href: "/data.html",
-          label: "Data",
-          match: ["/data.html"]
+          href: "/evidence/",
+          label: "Evidence",
+          match: ["/evidence/", "/data.html"]
         },
+        {
+          href: "/paratransit-burden.html",
+          label: "ParaTransit",
+          match: ["/paratransit-burden.html"]
+        },
+        { href: "/legal.html", label: "Legal", match: ["/legal.html"] },
+        { href: "/precedent.html", label: "Precedent", match: ["/precedent.html"] },
         {
           href: "/healthcare-wearable-mobility/",
           label: "Health AI",
           match: ["/healthcare-wearable-mobility/"]
         },
         { href: "/platform.html", label: "Platform", match: ["/platform.html"] },
-        { href: "/legal.html", label: "Legal", match: ["/legal.html"] },
-        { href: "/precedent.html", label: "Precedent", match: ["/precedent.html"] },
-        {
-          href: "/paratransit-burden.html",
-          label: "ParaTransit",
-          match: ["/paratransit-burden.html"]
-        },
 
         /*
           More appears only because this object exists.

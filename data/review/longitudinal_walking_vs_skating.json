@@ -1,0 +1,38 @@
+{
+  "left_cohorts": [
+    "walking"
+  ],
+  "right_cohorts": [
+    "mall_skating",
+    "pt_skating",
+    "fns_sns_skating"
+  ],
+  "rows": [
+    {
+      "canonical_cohort": "walking",
+      "evidence_tier": "longitudinal_context",
+      "median_avg_hr_bpm": 104.5,
+      "median_daily_hrv_rmssd_ms": 38.0,
+      "median_distance_mi": 0.21,
+      "median_duration_min": 33.391666666666666,
+      "median_strain": 8.8,
+      "metric_scope": "longitudinal_whoop_strava",
+      "n_activities": 54,
+      "n_with_distance": 15,
+      "n_with_hr": 54
+    },
+    {
+      "canonical_cohort": "fns_sns_skating",
+      "evidence_tier": "longitudinal_context",
+      "median_avg_hr_bpm": 116.0,
+      "median_daily_hrv_rmssd_ms": 35.0,
+      "median_distance_mi": 18.23,
+      "median_duration_min": 109.88333333333333,
+      "median_strain": 13.0,
+      "metric_scope": "longitudinal_whoop_strava",
+      "n_activities": 1610,
+      "n_with_distance": 983,
+      "n_with_hr": 1069
+    }
+  ]
+}

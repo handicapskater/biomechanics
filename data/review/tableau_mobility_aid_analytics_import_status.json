@@ -1,0 +1,11 @@
+{
+  "extract_files": [],
+  "imported_cohorts": [],
+  "imported_date_max": null,
+  "imported_date_min": null,
+  "imported_rows": 0,
+  "local_extract_found": false,
+  "note": "Tableau Public is used as a historical analysis reference. The reproducible pipeline imports local CSV extracts or repo data, not the public visualization itself.",
+  "status": "missing_local_extract",
+  "tableau_url": "https://public.tableau.com/app/profile/troy.wilkes/viz/MobilityAidAnalytics/Analytics"
+}

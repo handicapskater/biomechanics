@@ -8,7 +8,7 @@ Primary public pages:
 
 - `/` and `/index.html`: legacy Angular/static shell for the biomechanics site. It now loads `advocacy-site.css` before the legacy `common/css/global.css` shell styles.
 - `/story/` and `/story/index.html`: public evidence narrative for disability history, biomechanics, access disputes, wearable evidence, and pending/disputed legal questions.
-- `/data.html`: Tableau/public data proof layer for mobility burden, HR/HRV, FSI, CSS, and accommodation relevance.
+- `/evidence/`: Tableau/public evidence corpus layer for mobility burden, HR/HRV, FSI, CSS, and accommodation relevance.
 - `/precedent.html`: public legal/accommodation summary with softened claim boundaries.
 - `/videos/` and `/videos/index.html`: public video and article evidence index.
 - `/platform.html`: first-class HandicapSkater.com commercial platform positioning page.
@@ -35,7 +35,7 @@ Active public-page local link audit found no broken local references in:
 - `videos.html`
 - `story/index.html`
 - `videos/index.html`
-- `data.html`
+- `evidence/index.html`
 - `precedent.html`
 - `health-ai.html`
 - `platform.html`
@@ -61,7 +61,7 @@ External links were not validated for remote availability during this audit.
 - evidence-based accommodation standards
 - supportive documentation for fair access
 
-The commercial platform language is intentionally separated from nonprofit standards/accessibility language on `/platform.html`, `/standards.html`, `/data.html`, `/precedent.html`, and `/health-ai.html`.
+The commercial platform language is intentionally separated from nonprofit standards/accessibility language on `/platform.html`, `/standards.html`, `/evidence/`, `/precedent.html`, and `/health-ai.html`.
 
 ## Claim-Safety Audit
 
@@ -104,7 +104,7 @@ Legal/accommodation framing:
 
 - Confirm `/platform.html` clearly represents HandicapSkater.com as the commercial platform/IP page.
 - Confirm `/standards.html` clearly represents HandicapSkater.org as the nonprofit standards/accessibility framework.
-- Confirm `/data.html` describes HR/HRV/FSI/CSS as supportive evidence, not diagnosis.
+- Confirm `/evidence/` describes HR/HRV/FSI/CSS as supportive evidence, not diagnosis.
 - Confirm `/precedent.html` preserves legal nuance and does not overstate outcomes.
 - Confirm `/story/` remains readable as the public evidence narrative.
 - Confirm `/story.html` and `/videos.html` redirect to canonical pages.
@@ -129,7 +129,7 @@ Result: port `8080` was already in use by a Python `SimpleHTTP` server. The exis
 - `http://localhost:8080/story/`
 - `http://localhost:8080/story/index.html`
 - `http://localhost:8080/story.html`
-- `http://localhost:8080/data.html`
+- `http://localhost:8080/evidence/`
 - `http://localhost:8080/precedent.html`
 - `http://localhost:8080/videos/`
 - `http://localhost:8080/videos/index.html`

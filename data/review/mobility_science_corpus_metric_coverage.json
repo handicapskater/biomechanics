@@ -1,0 +1,24 @@
+{
+  "rows": [
+    {
+      "coverage_count": 2225,
+      "metric": "avg_hr_bpm",
+      "row_count": 2785
+    },
+    {
+      "coverage_count": 1584,
+      "metric": "distance_mi",
+      "row_count": 2785
+    },
+    {
+      "coverage_count": 1682,
+      "metric": "kubios_rmssd_ms",
+      "row_count": 2785
+    },
+    {
+      "coverage_count": 2046,
+      "metric": "daily_hrv_rmssd_ms",
+      "row_count": 2785
+    }
+  ]
+}

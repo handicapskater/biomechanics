@@ -1,8 +1,8 @@
 # FSI Data Page Snapshot
 
-HandicapSkater.com keeps the homepage short. The homepage has only a compact Data Science Evidence teaser that links to `/data.html`.
+HandicapSkater.com keeps the homepage short. The homepage has only a compact Evidence Corpus teaser that links to `/evidence/`.
 
-The Data page displays the full FSI Tensor v0.3 public snapshot.
+The Evidence Corpus page displays the full FSI Tensor v0.3 public snapshot.
 
 ## Files Read By The Data Page
 
@@ -13,7 +13,7 @@ The Data page displays the full FSI Tensor v0.3 public snapshot.
 
 ## Refresh Command
 
-Run this from the FSICSS IoMT evidence platform repo:
+Run this from the FSI Evidence Observatory repo:
 
 ```bash
 python scripts/generate_fsi_tensor_v0_3_outputs.py

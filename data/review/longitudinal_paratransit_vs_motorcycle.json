@@ -1,0 +1,53 @@
+{
+  "left_cohorts": [
+    "paratransit_bus",
+    "paratransit_van",
+    "paratransit_sedan_or_taxi",
+    "paratransit_silverride",
+    "paratransit_unknown_vehicle"
+  ],
+  "right_cohorts": [
+    "motorcycle"
+  ],
+  "rows": [
+    {
+      "canonical_cohort": "paratransit_sedan_or_taxi",
+      "evidence_tier": "longitudinal_context",
+      "median_avg_hr_bpm": 84.0,
+      "median_daily_hrv_rmssd_ms": 34.0,
+      "median_distance_mi": null,
+      "median_duration_min": 30.0,
+      "median_strain": 4.1,
+      "metric_scope": "longitudinal_whoop_strava",
+      "n_activities": 25,
+      "n_with_distance": 0,
+      "n_with_hr": 25
+    },
+    {
+      "canonical_cohort": "paratransit_unknown_vehicle",
+      "evidence_tier": "longitudinal_context",
+      "median_avg_hr_bpm": 87.0,
+      "median_daily_hrv_rmssd_ms": 35.0,
+      "median_distance_mi": null,
+      "median_duration_min": 37.0,
+      "median_strain": 4.3,
+      "metric_scope": "longitudinal_whoop_strava",
+      "n_activities": 131,
+      "n_with_distance": 0,
+      "n_with_hr": 131
+    },
+    {
+      "canonical_cohort": "motorcycle",
+      "evidence_tier": "longitudinal_context",
+      "median_avg_hr_bpm": 95.0,
+      "median_daily_hrv_rmssd_ms": 41.0,
+      "median_distance_mi": 120.02,
+      "median_duration_min": 125.0,
+      "median_strain": 7.3,
+      "metric_scope": "longitudinal_whoop_strava",
+      "n_activities": 364,
+      "n_with_distance": 169,
+      "n_with_hr": 361
+    }
+  ]
+}

@@ -384,3 +384,9 @@ footer .copyright p {
 footer a {
   text-align: center;
 }
+
+.small-caps {
+  font-variant: small-caps;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.05em;
+}

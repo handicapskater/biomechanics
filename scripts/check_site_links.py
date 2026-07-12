@@ -15,7 +15,7 @@ PUBLIC_PAGES = [
     Path("videos.html"),
     Path("story/index.html"),
     Path("videos/index.html"),
-    Path("data.html"),
+    Path("evidence/index.html"),
     Path("precedent.html"),
     Path("health-ai.html"),
     Path("platform.html"),
@@ -89,7 +89,7 @@ def evidence_map_links() -> list[str]:
     return [
         url
         for _tag, attr, url in collect_refs(page)
-        if attr == "href" and url.startswith("/common/maps/") and url.endswith(".html")
+        if attr == "href" and (url.startswith("/maps/") or url.startswith("/common/maps/")) and url.endswith(".html")
     ]
 
 

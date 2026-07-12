@@ -15,7 +15,7 @@ MODERN_PAGES = [
     Path("index.html"),
     Path("story/index.html"),
     Path("healthcare-wearable-mobility/index.html"),
-    Path("data.html"),
+    Path("evidence/index.html"),
     Path("health-ai.html"),
     Path("precedent.html"),
     Path("videos/index.html"),
@@ -28,7 +28,7 @@ EXPECTED_NAV_HREFS = {
     "/",
     "/story/",
     "/healthcare-wearable-mobility/",
-    "/data.html",
+    "/evidence/",
     "/health-ai.html",
     "/platform.html",
     "/videos/",
@@ -137,7 +137,7 @@ class SiteTests(unittest.TestCase):
         self.assertIn("HandicapSkater.org", js)
         self.assertIn('href: "/story/"', js)
         self.assertIn('href: "/healthcare-wearable-mobility/"', js)
-        self.assertIn('href: "/data.html"', js)
+        self.assertIn('href: "/evidence/"', js)
         self.assertIn('href: "/platform.html"', js)
         self.assertIn('href: "/paratransit-burden.html"', js)
         self.assertIn('href: "/videos/"', js)
@@ -191,7 +191,7 @@ class SiteTests(unittest.TestCase):
         self.assertIn("const className = external ? ' class=\"nav-link external-link\"' : ' class=\"nav-link\"'", js)
 
     def test_standardized_button_classes(self) -> None:
-        for page in ("index.html", "data.html", "health-ai.html", "story/index.html"):
+        for page in ("index.html", "evidence/index.html", "health-ai.html", "story/index.html"):
             html = read(page)
             self.assertIn("button", html, page)
 
@@ -250,7 +250,7 @@ class SiteTests(unittest.TestCase):
         self.assertIn("border-color: var(--line)", css)
 
     def test_public_fsi_css_results_are_source_linked_and_court_safe(self) -> None:
-        data = read("data.html").lower()
+        data = read("evidence/index.html").lower()
         platform = read("platform.html").lower()
 
         self.assertIn("source-linked fsi/css case study results", data)
@@ -341,7 +341,7 @@ class SiteTests(unittest.TestCase):
         self.assertNotIn("fitbit", html.lower())
 
     def test_data_and_health_ai_define_fsi_css_correctly(self) -> None:
-        for page in ("data.html", "health-ai.html"):
+        for page in ("evidence/index.html", "health-ai.html"):
             html = read(page).lower()
             self.assertIn("fractal stability index", html, page)
             self.assertIn("comparable similarity score", html, page)
@@ -422,7 +422,7 @@ class SiteTests(unittest.TestCase):
     def test_important_pages_keep_platform_safe_language(self) -> None:
         platform = read("platform.html").lower()
         standards = read("standards.html").lower()
-        data = read("data.html").lower()
+        data = read("evidence/index.html").lower()
         health_ai = read("health-ai.html").lower()
         self.assertIn("wearable health", platform)
         self.assertIn("what this can become", platform)
@@ -438,7 +438,7 @@ class SiteTests(unittest.TestCase):
         self.assertNotIn('class="btn secondary"', html)
 
     def test_main_pages_share_evidence_stack_and_role_language(self) -> None:
-        for page in ("index.html", "healthcare-wearable-mobility/index.html", "data.html", "platform.html", "story/index.html", "standards.html", "precedent.html"):
+        for page in ("index.html", "healthcare-wearable-mobility/index.html", "evidence/index.html", "platform.html", "story/index.html", "standards.html", "precedent.html"):
             lower = read(page).lower()
             # self.assertIn("handicapskater.com", lower, page)
             # self.assertIn("handicapskater.org", lower, page)

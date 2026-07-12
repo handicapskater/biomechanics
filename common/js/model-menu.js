@@ -1,6 +1,6 @@
 menuData = [
         { name: 'story', url: '/story/', text: 'Story' },
-        { name: 'data', url: '/data.html', text: 'Data' },
+        { name: 'evidence-corpus', url: '/evidence/', text: 'Evidence Corpus' },
         { name: 'strava-pt-maps', url: '/evidence/strava-gps-skate-maps/', text: 'GPS Skate Maps' },
         { name: 'precedent', url: '/precedent.html', text: 'Precedent' },
         { name: 'videos', url: '/videos/', text: 'Videos' },

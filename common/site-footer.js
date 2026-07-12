@@ -15,6 +15,11 @@
   height: 22px;
   fill: currentColor;
 }
+.small-caps {
+  font-variant: small-caps;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.05em;
+}
 </style>
 <footer class="site-footer">
     <div class="footer-inner">
@@ -102,8 +107,8 @@
       </a>      
     </div>
 
-    <p class="footer-copy">Copyright © 2004 to 2026 HandicapSkater.</p>
-    <p class="footer-description">HandicapSkater separates physiologic burden, mechanical motion exposure, and body coupling so mobility aid review can preserve context. This site presents an individual within person evidence record and public case study.</p>
+    <p class="footer-copy">Copyright © 2004 to 2026 <span class="small-caps">HandicapSkater</span>.</p>
+    <p class="footer-description"><span class="small-caps">HandicapSkater</span> separates physiologic burden, mechanical motion exposure, and body coupling so mobility aid review can preserve context. This site presents an individual within person evidence record and public case study.</p>
   </div>
 </footer>
 `,
@@ -123,8 +128,8 @@
       <a href="https://handicapskater.com/" target="_blank" rel="noopener noreferrer">Case Study</a>
     </div>
 
-    <p class="footer-copy">Copyright © 2004 to 2026 HandicapSkater.org.</p>
-    <p class="footer-description">HandicapSkater separates physiologic burden, mechanical motion exposure, and body coupling so mobility aid review can preserve context. This site presents generalized review standards and evidence frameworks.</p>
+    <p class="footer-copy">Copyright © 2004 to 2026 <span class="small-caps">HandicapSkater</span>.org.</p>
+    <p class="footer-description"><span class="small-caps">HandicapSkater</span> separates physiologic burden, mechanical motion exposure, and body coupling so mobility aid review can preserve context. This site presents generalized review standards and evidence frameworks.</p>
   </div>
 </footer>
 `

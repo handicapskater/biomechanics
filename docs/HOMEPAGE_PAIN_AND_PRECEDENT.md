@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The HandicapSkater.com homepage now starts with chronic MSK pain because pain is the human and scientific impetus for the project. The homepage should stay concise: it introduces the movement problem, links to the Pain page, summarizes recognition records, and points to the Data page for generated evidence.
+The HandicapSkater.com homepage now starts with chronic MSK pain because pain is the human and scientific impetus for the project. The homepage should stay concise: it introduces the movement problem, links to the Pain page, summarizes recognition records, and points to the Evidence Corpus page for generated evidence.
 
 ## Page Roles
 
@@ -10,7 +10,7 @@ HandicapSkater.com explains the lived disability, pain, biomechanics, public sto
 
 HandicapSkater.org handles standards, non-standard mobility aid framing, policy structure, DMV/DOT/FTA context, and broader reviewer guidance.
 
-The FSICSS IoMT evidence platform handles the data science dashboard, FSI Tensor outputs, validation checks, source indexing, and audit artifacts.
+The FSI Evidence Observatory handles the data science dashboard, FSI Tensor outputs, validation checks, source indexing, and audit artifacts.
 
 ## Homepage
 
@@ -19,10 +19,10 @@ The homepage is the fast entry point. It should include:
 - Chronic MSK pain and controlled rolling as the core frame.
 - A short distinction between walking, skating, and passive transportation.
 - A concise "Recognized in Practice" summary of standards forming records.
-- A compact Data page teaser.
+- A compact Evidence Corpus teaser.
 - Links to Pain, Data, Precedent, and HandicapSkater.org.
 
-The homepage should not include the full FSI Tensor cohort ranking, validation card grid, or source artifact details. Those belong on `data.html`.
+The homepage should not include the full FSI Tensor cohort ranking, validation card grid, or source artifact details. Those belong on `/evidence/`.
 
 ## Pain Page
 
@@ -57,4 +57,4 @@ python scripts/validate_home_pain_precedent.py
 python scripts/validate_fsi_data_page_snapshot.py
 ```
 
-The validation checks that the homepage is pain-first, links to the Pain and Data pages, includes a concise recognition summary, keeps the full FSI snapshot off the homepage, and avoids unsupported pain, medical, and legal overclaiming.
+The validation checks that the homepage is pain-first, links to the Pain and Evidence Corpus pages, includes a concise recognition summary, keeps the full FSI snapshot off the homepage, and avoids unsupported pain, medical, and legal overclaiming.
