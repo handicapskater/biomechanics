@@ -151,6 +151,22 @@
     return match.includes(path);
   }
 
+  function renderHeaderLabel(label) {
+    if (String(label).toLowerCase() === "handicapskater.com") {
+      return `<span class="small-caps">handicapskater</span>.com`;
+    }
+
+    if (String(label).toLowerCase() === "handicapskater.org") {
+      return `<span class="small-caps">handicapskater</span>.org`;
+    }
+
+    if (String(label).toLowerCase() === "handicapskater") {
+      return `<span class="small-caps">handicapskater</span>`;
+    }
+
+    return label;
+  }
+
   function renderNavLink(link, path) {
     const href = link.href || "#";
     const label = link.label || "";
@@ -159,7 +175,10 @@
     const attrs = external ? ' target="_blank" rel="noopener noreferrer"' : "";
     const className = external ? ' class="nav-link external-link"' : ' class="nav-link"';
 
-    return `<a${className} href="${href}"${active}${attrs}>${label}</a>`;
+    // return `<a${className} href="${href}"${active}${attrs}>${label}</a>`;
+    const renderedLabel = renderHeaderLabel(label);
+
+    return `<a${className} href="${href}"${active}${attrs}>${renderedLabel}</a>`;
   }
 
   function renderMoreMenu(label, links, path) {

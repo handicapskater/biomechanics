@@ -436,8 +436,8 @@ h3 {
 }
 
 .callout {
-  background: #fff7e8;
-  border: 1px solid #e4c17a;
+  /*background: #fff7e8;*/
+  /*border: 1px solid #e4c17a;*/
   border-left: 6px solid var(--gold);
   border-radius: 8px;
   margin-top: 1rem;
