@@ -45,7 +45,7 @@ EXPECTED_NAV_LABELS = {
     "Health AI",
     "Platform",
     "Videos",
-    "Route Maps",
+    "Routes",
     "Pain",
     "Standards & Reviewer Guidance",
 }
@@ -234,7 +234,7 @@ class SiteTests(unittest.TestCase):
         data = read("evidence/index.html").lower()
         platform = read("platform/index.html").lower()
 
-        self.assertIn("source-linked fsi case study results", data)
+        self.assertIn("source-linked fsi/css results", data)
         self.assertIn("polar h10 and kubios", data)
         self.assertIn("whoop longitudinal records", data)
         self.assertIn("strava route records", data)
@@ -327,10 +327,10 @@ class SiteTests(unittest.TestCase):
 
     def test_strava_evidence_page_content_and_caveats(self) -> None:
         html = read("evidence/strava-gps-skate-maps/index.html")
-        self.assertIn("GPS Skate-Map Context", html)
+        self.assertIn("LONGITUDINAL MOBILITY RECORD", html)
         self.assertIn("Route Map Explorer", html)
         self.assertIn("what these routes add to the case study", html.lower())
-        self.assertIn("context rather than diagnosis", html.lower())
+        self.assertIn("does not directly locate pain or establish safety", html.lower())
         self.assertIn("data-publication-resource=\"longitudinal\"", html)
         self.assertNotIn("what a health or mobility reviewer should notice", html.lower())
 
