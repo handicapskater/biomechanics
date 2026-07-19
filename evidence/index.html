@@ -21,9 +21,9 @@
   <div id="site-header"></div>
 
   <main id="main">
-    <section class="hero evidence-hero">
+    <section class="hero hero--evidence evidence-hero">
       <div class="hero-inner">
-        <p class="eyebrow">INSPECTABLE WITHIN-PERSON EVIDENCE</p>
+        <p class="eyebrow hero-eyebrow">INSPECTABLE WITHIN-PERSON EVIDENCE</p>
         <h1>Evidence Map</h1>
         <p class="lead">Wearable physiology, route data, episodic measurements, repeated protocols, transportation context, and longitudinal evidence remain source-linked and reviewable.</p>
         <div class="hero-copy">
@@ -37,18 +37,21 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="snapshot-title">
-      <div class="section-header">
-        <p class="eyebrow">Approved evidence snapshot</p>
-        <h2 id="snapshot-title">A Public-Safe View of the Record</h2>
-        <p>The values below are rendered from the publication bundle. No browser code calculates scientific values or retrieves raw session records.</p>
+    <section class="section evidence-page-nav" aria-labelledby="evidence-page-nav-title">
+      <div class="section-header compact-section">
+        <p class="eyebrow">Evidence guide</p>
+        <h2 id="evidence-page-nav-title">Start with the Question</h2>
+        <p>The landing page gives a concise map. Dedicated evidence pages retain graph values, accessible tables, samples, units, dates, sources, and graph-specific limitations.</p>
       </div>
-      <div data-publication-facts="overview">
-        <div class="publication-unavailable" role="status"><strong>Loading approved values…</strong></div>
-      </div>
-      <div data-publication-status>
-        <div class="publication-unavailable" role="status">Publication status is being checked.</div>
-      </div>
+      <nav class="page-anchor-nav" aria-label="Evidence page sections">
+        <a href="#four-evidence-views">Four views</a>
+        <a href="#key-findings">Key findings</a>
+        <a href="#corpus-contains">Corpus</a>
+        <a href="#corpus-model">Evidence model</a>
+        <a href="#fsi-results">FSI / CSS</a>
+        <a href="#validation-audit">Validation</a>
+        <a href="#how-to-read">Review sequence</a>
+      </nav>
     </section>
 
     <section class="section alt" id="four-evidence-views">
@@ -85,64 +88,17 @@
       </div>
     </section>
 
-    <section class="section" id="corpus-contains">
-      <div class="section-header">
-        <p class="eyebrow">What the Corpus Contains</p>
-        <h2>Sources, Activities, and Context</h2>
-        <p>The public pages summarize an evidence corpus without exposing private raw sessions. Source authority and reconciliation determine what can be compared.</p>
-      </div>
-      <div class="grid three">
-        <article class="card"><h3>WHOOP longitudinal records</h3><p>Activity, strain, heart-rate context, sleep, readiness, and overnight recovery trends across time.</p></article>
-        <article class="card"><h3>Strava route records</h3><p>Activity, route, distance, duration, speed, and repeated functional-travel context.</p></article>
-        <article class="card"><h3>Polar H10 and Kubios</h3><p>Episodic RRI, HRV/RMSSD, ECG, acceleration, and movement context for targeted sessions.</p></article>
-        <article class="card"><h3>Movement cohorts</h3><p>Walking, PT skating, Mall skating, and FNS/SNS skating are preserved as distinct contexts rather than flattened into “exercise.”</p></article>
-        <article class="card"><h3>Transportation cohorts</h3><p>ParaTransit sedan/taxi or SilverRide, bus, van, motorcycle, and unknown-vehicle records preserve vehicle and body-coupling context.</p></article>
-        <article class="card"><h3>Other functional context</h3><p>Readiness baseline and wheelchair/PT context remain distinct where relevant and authorized.</p></article>
-        <article class="card"><h3>Source authority</h3><p>Original labels, canonical cohort mapping, manual review, and reconciliation decisions remain traceable.</p></article>
-        <article class="card"><h3>Missingness</h3><p>A missing month, metric, route, or sample is not treated as zero and is not inferred by the website.</p></article>
-        <article class="card"><h3>Publication boundary</h3><p>Only allowlisted public summaries and graph payloads reach this site; raw private records remain outside the bundle.</p></article>
-      </div>
-    </section>
-
-    <section class="section alt" id="corpus-model">
-      <div class="section-header">
-        <p class="eyebrow">Current Corpus Model</p>
-        <h2>Layered Evidence, Not One Flattened Score</h2>
-        <p>The model keeps evidence layers separate long enough to preserve their meaning, then reconciles only approved relationships for review.</p>
-      </div>
-      <ol class="layered-model" aria-label="Current evidence corpus layers">
-        <li><strong>Longitudinal context</strong><span>Repeated activity and recovery patterns across time.</span></li>
-        <li><strong>Episodic measurement</strong><span>Higher-specificity session evidence from RRI, HRV, ECG, and acceleration.</span></li>
-        <li><strong>Movement cohort</strong><span>Walking and distinct skating contexts with preserved source labels.</span></li>
-        <li><strong>Transportation cohort</strong><span>Vehicle, passenger or active-control state, posture, and body coupling.</span></li>
-        <li><strong>Repeated protocol</strong><span>Accepted stage sequences reviewed without inferring missing membership.</span></li>
-        <li><strong>Source reconciliation</strong><span>Time, labels, duplicates, provenance, and authority resolved before interpretation.</span></li>
-        <li><strong>Validation</strong><span>Units, samples, missingness, parity, safety, and formula identity checked.</span></li>
-        <li><strong>Publication layer</strong><span>Approved summaries and graph payloads synchronized to render-only websites.</span></li>
-      </ol>
-    </section>
-
-    <section class="section" id="longitudinal-episodic">
-      <div class="section-header">
-        <p class="eyebrow">Longitudinal + Episodic Evidence</p>
-        <h2>Connected Without Becoming Interchangeable</h2>
-        <p>Earlier dashboard work aimed to connect long-term activity with targeted sessions. The present architecture preserves that analytical intent through versioned bundle resources rather than a live embedded dashboard.</p>
-      </div>
-      <div class="grid three">
-        <article class="card"><p class="tag">Longitudinal</p><h3>WHOOP</h3><p>Shows activity and overnight recovery context across time. Recovery HRV/RMSSD is not session HRV.</p></article>
-        <article class="card"><p class="tag">Route and output</p><h3>Strava</h3><p>Shows route, distance, duration, speed, repeated mobility, and geographic context.</p></article>
-        <article class="card"><p class="tag">Episodic</p><h3>Polar H10 + Kubios</h3><p>Shows targeted session RRI, HRV/RMSSD, ECG, acceleration, and movement evidence where available.</p></article>
-      </div>
-      <div data-publication-resource="longitudinal">
-        <div class="publication-unavailable" role="status">Loading approved longitudinal scope…</div>
-      </div>
-    </section>
-
-    <section class="section alt" id="key-findings">
+    <section class="section" id="key-findings">
       <div class="section-header">
         <p class="eyebrow">Key Findings</p>
-        <h2>Publication-Backed and Sample-Dependent</h2>
-        <p>Each finding below is rendered from its approved resource. It is within-person, source-linked, sample-dependent, and not universal.</p>
+        <h2>Findings First, Technical Depth on Demand</h2>
+        <p>Each finding is rendered from an approved publication resource and remains tied to its sample scope. The measurements describe physiological and movement response; they do not directly locate pain.</p>
+      </div>
+      <div data-publication-facts="overview">
+        <div class="publication-unavailable" role="status"><strong>Loading approved values…</strong></div>
+      </div>
+      <div data-publication-status>
+        <div class="publication-unavailable" role="status">Publication status is being checked.</div>
       </div>
       <div class="publication-finding-stack">
         <article class="card"><h3>Functional mobility</h3><div data-publication-resource="mobility-comparison"><div class="publication-unavailable" role="status">Loading approved mobility finding…</div></div></article>
@@ -151,47 +107,65 @@
       </div>
     </section>
 
-    <section class="section" id="cohort-comparison">
+    <section class="section alt" id="corpus-contains">
       <div class="section-header">
-        <p class="eyebrow">Cohort Comparison</p>
-        <h2>Named Metrics, Visible Samples—Not a Universal Ranking</h2>
-        <p>The publication contract does not authorize a single composite ranking of all mobility and transportation cohorts. The site therefore compares cohorts only within a named supplied metric and preserves each metric's units and sample count.</p>
+        <p class="eyebrow">What the Corpus Contains</p>
+        <h2>Sources, Activities, and Context</h2>
+        <p>The public pages summarize a source-linked corpus without exposing private raw sessions.</p>
       </div>
       <div class="grid three">
-        <article class="card"><h3>Useful mobility</h3><p>Distance values can be ordered within the supplied mobility graph, but distance alone is output rather than burden.</p><a class="text-link" href="/evidence/mobility-comparison/#mobility-graph">Open mobility values</a></article>
-        <article class="card"><h3>Observed burden</h3><p>Absolute and normalized burden answer different questions; unequal exposure remains visible.</p><a class="text-link" href="/evidence/mobility-comparison/">Compare burden measures</a></article>
-        <article class="card"><h3>Transportation profiles</h3><p>FSI and component measurements retain separate samples and qualifications for each vehicle context.</p><a class="text-link" href="/evidence/transportation/">Compare transport profiles</a></article>
+        <article class="card"><p class="tag">Longitudinal</p><h3>WHOOP</h3><p>WHOOP longitudinal records supply activity, strain, sleep, readiness, and overnight recovery context across time. WHOOP recovery HRV/RMSSD is not session HRV.</p></article>
+        <article class="card"><p class="tag">Routes + output</p><h3>Strava</h3><p>Strava route records supply activity, route, distance, duration, speed, and repeated functional-travel context.</p></article>
+        <article class="card"><p class="tag">Episodic</p><h3>Polar H10 and Kubios</h3><p>Targeted RRI, HRV/RMSSD, ECG, acceleration, and movement context where available.</p></article>
+        <article class="card"><h3>Movement cohorts</h3><p>Walking, PT skating, Mall skating, and FNS/SNS skating remain distinct rather than becoming one “exercise” label.</p></article>
+        <article class="card"><h3>Transportation cohorts</h3><p>Sedan/taxi or SilverRide, bus, van, motorcycle, and unknown-vehicle records retain vehicle and body-coupling context.</p></article>
+        <article class="card"><h3>Source authority</h3><p>Original labels, canonical mapping, manual review, reconciliation decisions, and missingness remain traceable.</p></article>
+      </div>
+      <details class="technical-disclosure">
+        <summary>Read corpus scope, missingness, and publication detail</summary>
+        <div class="grid three disclosure-grid">
+          <article><h3>Other functional context</h3><p>Readiness baseline and wheelchair/PT context remain distinct where relevant and authorized.</p></article>
+          <article><h3>Missingness</h3><p>A missing month, metric, route, or sample is not treated as zero and is not inferred by the website.</p></article>
+          <article><h3>Public projection</h3><p>Only allowlisted summaries and graph payloads reach this site; raw private records remain outside the bundle.</p></article>
+        </div>
+      </details>
+      <div data-publication-resource="longitudinal">
+        <div class="publication-unavailable" role="status">Loading approved longitudinal scope…</div>
       </div>
     </section>
 
-    <section class="section alt" id="validation-audit">
+    <section class="section" id="corpus-model">
       <div class="section-header">
-        <p class="eyebrow">Validation and Audit Checks</p>
-        <h2>What Must Survive Review</h2>
-        <p>Credibility depends as much on what is rejected, missing, qualified, or source-limited as on the values that are shown.</p>
+        <p class="eyebrow">How the Evidence Model Works</p>
+        <h2>Layered Evidence, Not One Flattened Score</h2>
+        <p>Evidence stays separate long enough to preserve its meaning, then approved relationships are reconciled for review.</p>
       </div>
-      <div class="grid three audit-grid">
-        <article class="card"><h3>Source authority</h3><p>Use the designated source for each field and preserve original labels and provenance.</p></article>
-        <article class="card"><h3>Duplicate handling</h3><p>Retain audit history while preventing duplicate observations from silently changing analytical samples.</p></article>
-        <article class="card"><h3>Time reconciliation</h3><p>Preserve timestamps, timezone context, and the rules used to relate records across sources.</p></article>
-        <article class="card"><h3>Sample requirements</h3><p>Show the applicable sample count and retain explicit small-sample qualifications.</p></article>
-        <article class="card"><h3>Missingness</h3><p>Unavailable evidence remains unavailable; it is neither fabricated nor silently treated as zero.</p></article>
-        <article class="card"><h3>Unit checks</h3><p>Keep supplied units visible and compare like with like.</p></article>
-        <article class="card"><h3>Parity checks</h3><p>Published values must match the server-side Evidence Observatory presentation.</p></article>
-        <article class="card"><h3>Publication safety</h3><p>Public bundles exclude raw signals, private identifiers, local paths, and browser scientific computation.</p></article>
-        <article class="card"><h3>Date and limitations</h3><p>Every interpretation remains tied to a data-through date and visible limitations.</p></article>
-      </div>
+      <ol class="layered-model" aria-label="Current evidence corpus layers">
+        <li><strong>Longitudinal context</strong><span>Repeated activity and recovery patterns across time.</span></li>
+        <li><strong>Episodic measurement</strong><span>Session-specific RRI, HRV, ECG, acceleration, and movement evidence.</span></li>
+        <li><strong>Movement + transport cohorts</strong><span>Preserved source labels, classification provenance, vehicle, posture, and body coupling.</span></li>
+        <li><strong>Repeated protocol</strong><span>Accepted stage sequences reviewed without inferring missing membership.</span></li>
+        <li><strong>Source reconciliation</strong><span>Time, labels, duplicates, provenance, and authority resolved before interpretation.</span></li>
+        <li><strong>Validation</strong><span>Units, samples, missingness, parity, safety, and scientific identity checked.</span></li>
+        <li><strong>Publication layer</strong><span>Approved summaries and graphs synchronized to render-only websites.</span></li>
+        <li><strong>Human review</strong><span>Interpretation stays connected to function, context, and lived experience.</span></li>
+      </ol>
     </section>
 
-    <section class="section" id="fsi-results">
+    <section class="section alt" id="fsi-results">
       <div class="section-header">
-        <p class="eyebrow">Source-Linked FSI Case Study Results</p>
+        <p class="eyebrow">Source-Linked FSI/CSS Results</p>
         <h2>FSI, CSS, and Tensor Remain Distinct</h2>
-        <p>Fractal Stability Index is used only in its named authoritative scope. It is not a pain score. Cohort Similarity Score answers a similarity question under an established CSS scope. Tensor v0.3 is the frozen multidimensional model identity.</p>
-        <p>The transportation evidence page exposes approved FSI values with their separate FSI sample counts and component samples. The website does not reconstruct FSI from displayed components.</p>
+        <p>Fractal Stability Index (FSI) is used only in its named scope. Cohort Similarity Score (CSS) answers a similarity question under an established cohort-comparison scope. Tensor v0.3 remains the frozen multidimensional model identity.</p>
+        <p>The publication contract does not authorize a universal cohort ranking or browser-side reconstruction. Values retain their named metrics, units, and metric-specific sample counts.</p>
       </div>
       <div data-publication-identities="scientific-identities">
         <div class="publication-unavailable" role="status">Loading approved scientific identities…</div>
+      </div>
+      <div class="grid three cohort-summary-grid">
+        <article class="card"><h3>Useful mobility</h3><p>Distance is functional output, not burden by itself.</p><a class="text-link" href="/evidence/mobility-comparison/#mobility-graph">Open mobility values</a></article>
+        <article class="card"><h3>Observed burden</h3><p>Absolute and normalized burden answer different questions; unequal exposure remains visible.</p><a class="text-link" href="/evidence/mobility-comparison/">Compare burden measures</a></article>
+        <article class="card"><h3>Transportation profiles</h3><p>FSI and component observations retain separate samples and qualifications.</p><a class="text-link" href="/evidence/transportation/">Compare transport profiles</a></article>
       </div>
       <div class="button-row">
         <a class="button button-primary" href="/evidence/transportation/">Review published FSI context</a>
@@ -199,20 +173,26 @@
       </div>
     </section>
 
-    <section class="section alt" id="what-it-shows">
+    <section class="section" id="validation-audit">
       <div class="section-header">
-        <p class="eyebrow">What the Evidence Shows</p>
-        <h2>Different Sources Answer Different Questions</h2>
+        <p class="eyebrow">Validation and Audit</p>
+        <h2>Credibility Includes What Was Rejected or Left Missing</h2>
+        <p>Graph limitations remain attached to the graphs. Technical audit checks are available here without interrupting the findings-first reading path.</p>
       </div>
-      <div class="grid two">
-        <article class="card"><h3>Walking versus skating</h3><p>Functional output and observed burden must be read together; a short activity can have low total burden because it ended after little useful mobility.</p></article>
-        <article class="card"><h3>Repeated protocol direction</h3><p>Stage patterns can move toward, away from, or remain unchanged relative to another stage depending on the metric.</p></article>
-        <article class="card"><h3>Transportation body coupling</h3><p>Active control and passive passenger exposure are distinct contexts; vehicle label alone does not explain the whole profile.</p></article>
-        <article class="card"><h3>Longitudinal context</h3><p>Repeated activity and route records corroborate sustained mobility across time while controlled protocols remain stronger comparisons.</p></article>
-      </div>
+      <details class="technical-disclosure">
+        <summary>Open validation and audit checks</summary>
+        <div class="grid three audit-grid disclosure-grid">
+          <article><h3>Source authority</h3><p>Designated sources, original labels, classification provenance, and reconciliation decisions remain traceable.</p></article>
+          <article><h3>Duplicates + time</h3><p>Audit history, timestamps, timezone context, and cross-source reconciliation rules remain explicit.</p></article>
+          <article><h3>Samples + units</h3><p>Metric-specific sample counts, small-sample qualifications, and supplied units remain visible.</p></article>
+          <article><h3>Missingness</h3><p>Unavailable evidence remains unavailable rather than becoming zero or an inferred value.</p></article>
+          <article><h3>Parity + safety</h3><p>Published values match the server-side presentation; public bundles exclude private signals, identifiers, and local paths.</p></article>
+          <article><h3>Date + limitations</h3><p>Interpretation remains tied to data-through dates, source distinctions, and graph-specific limitations.</p></article>
+        </div>
+      </details>
     </section>
 
-    <section class="section" id="how-to-read">
+    <section class="section alt" id="how-to-read">
       <div class="section-header">
         <p class="eyebrow">How to Read the Evidence Corpus</p>
         <h2>A Review Sequence</h2>
@@ -229,20 +209,11 @@
       </ol>
     </section>
 
-    <section class="section alt" id="wearable-teams">
-      <div class="section-header">
-        <p class="eyebrow">Why This Matters to Wearable Health and Mobility-Intelligence Teams</p>
-        <h2>Context Is Part of the Signal</h2>
-        <p>Wearable context preservation, mobility classification, multimodal sensor fusion, within-person baselines, longitudinal and episodic integration, transportation context, provenance, explainable evidence systems, and human review all affect whether a mobility record remains meaningful.</p>
-        <p>This case does not claim a clinically validated product or commercial partnership. It shows a concrete design problem: personalized mobility intelligence should preserve what the person was doing, how the body was coupled to it, where the signal came from, and what the evidence cannot establish.</p>
-        <a class="text-link" href="/health-ai/">Explore the Health AI and mobility-intelligence brief</a>
-      </div>
-    </section>
-
     <section class="section">
-      <div class="notice">
-        <strong>Evidence boundary</strong>
-        <p>Wearables estimate physiologic, autonomic, musculoskeletal, movement, impact, and transport burden. They do not directly measure pain. Results are within-person evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.</p>
+      <div class="button-row">
+        <a class="button button-primary" href="/evidence/mobility-comparison/">Begin with functional mobility</a>
+        <a class="button button-secondary" href="/health-ai/">Explore Health AI</a>
+        <a class="button button-light" href="https://handicapskater.org/evidence-review/">Reviewer guidance</a>
       </div>
     </section>
   </main>

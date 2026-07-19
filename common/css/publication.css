@@ -1,6 +1,19 @@
 .publication-shell {
+  min-width: 0;
   max-width: var(--content, 1120px);
   margin: 0 auto;
+}
+
+[data-publication-resource],
+[data-publication-graph],
+[data-publication-identities],
+.publication-resource,
+.publication-graph,
+.publication-graph-visual,
+.publication-details,
+.publication-table-wrap {
+  min-width: 0;
+  max-width: 100%;
 }
 
 .publication-status,
@@ -245,6 +258,7 @@
 }
 
 .publication-timeline-row {
+  min-width: 0;
   display: grid;
   grid-template-columns: minmax(8.5rem, 0.35fr) minmax(12rem, 1fr);
   gap: 0.75rem;
@@ -252,11 +266,14 @@
 }
 
 .publication-timeline-label {
+  min-width: 0;
+  overflow-wrap: anywhere;
   font-size: 0.84rem;
   font-weight: 850;
 }
 
 .publication-timeline-bars {
+  min-width: 0;
   display: flex;
   align-items: end;
   gap: 2px;
@@ -403,8 +420,18 @@
     grid-template-columns: 1fr;
   }
 
+  .publication-timeline-row > * {
+    width: 100%;
+    min-width: 0;
+  }
+
   .publication-timeline-bars {
     min-height: 4.5rem;
+    gap: 1px;
+  }
+
+  .publication-timeline-bar {
+    min-width: 0;
   }
 }
 

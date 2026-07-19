@@ -19,9 +19,9 @@
   <div id="site-header"></div>
 
   <main id="main">
-    <section class="hero health-ai-hero">
+    <section class="hero hero--platform health-ai-hero">
       <div class="hero-inner">
-        <p class="eyebrow">WEARABLE HEALTH AND MOBILITY INTELLIGENCE</p>
+        <p class="eyebrow hero-eyebrow">WEARABLE HEALTH AND MOBILITY INTELLIGENCE</p>
         <h1>Context Is the Missing Sensor</h1>
         <p class="lead">Wearables capture signals. The harder problem is preserving what the person was doing, how the body was moving, how transportation affected it, and what the signal can actually support.</p>
         <div class="hero-copy">
@@ -39,13 +39,13 @@
       <div class="section-header">
         <p class="eyebrow">The Context Problem</p>
         <h2>A Signal Without Activity Context Can Be Misread</h2>
-        <p>The same heart-rate or HRV value can mean different things during pain-limited walking, controlled skating, motorcycle riding, passive passenger transportation, recovery, illness, heat, or emotional stress.</p>
+        <p>The same heart-rate or HRV value can mean different things during pain-limited walking, controlled skating, motorcycle riding, passive passenger transportation, recovery, illness, heat, or emotional stress. A sensor may record the value perfectly while losing the reason it matters.</p>
         <p>Default labels such as “walking,” “exercise,” “recreation,” and “transportation” can also hide the actual mobility function. For some disabled people, fewer steps and more rolling movement may represent better function rather than lower engagement.</p>
       </div>
       <div class="grid three">
-        <article class="card"><h3>Activity context</h3><p>Preserve what the person was doing rather than interpreting a signal from the sensor stream alone.</p></article>
-        <article class="card"><h3>Mobility function</h3><p>Distinguish exercise, transportation, therapy, daily access, and assistive movement even when they share a platform label.</p></article>
-        <article class="card"><h3>Human account</h3><p>Let the person explain pain, intent, equipment, environment, and what changed—without replacing their account with an automated label.</p></article>
+        <article class="card"><p class="tag">Heart rate</p><h3>Demand without cause</h3><p>An elevated value cannot identify whether the context was useful skating, pain-limited walking, heat, waiting, or transportation stress.</p></article>
+        <article class="card"><p class="tag">Step count</p><h3>Volume without function</h3><p>Fewer steps may reflect inactivity—or a successful shift to rolling mobility that preserved access with less walking.</p></article>
+        <article class="card"><p class="tag">HRV / RMSSD</p><h3>One label, different time scales</h3><p>Overnight recovery and targeted session HRV answer different questions even when a product interface gives them similar names.</p></article>
       </div>
     </section>
 
@@ -105,17 +105,30 @@
 
     <section class="section alt" id="opportunities">
       <div class="section-header">
-        <p class="eyebrow">Opportunities for Wearable and Mobility Teams</p>
+        <p class="eyebrow">Opportunities for Wearable Teams</p>
         <h2>Design Questions Worth Testing</h2>
-        <p>These are research and product questions, not claims of clinical validation, commercial readiness, partnership, or endorsement.</p>
+        <p>Within-person evidence makes the context problem concrete enough to test rather than leaving it as a generic personalization goal.</p>
       </div>
       <div class="grid three">
         <article class="card"><h3>Context-preserving classification</h3><p>Reconcile device labels with user-confirmed mobility function and environment.</p></article>
         <article class="card"><h3>Multimodal sensor fusion</h3><p>Connect physiology, routes, motion, transportation, and documents without erasing source roles.</p></article>
         <article class="card"><h3>Personalized mobility intelligence</h3><p>Use within-person baselines and repeatability rather than treating step volume as the only positive outcome.</p></article>
-        <article class="card"><h3>Transportation analytics</h3><p>Preserve vehicle, body-coupling, posture, route, and exposure context.</p></article>
         <article class="card"><h3>Explainable evidence systems</h3><p>Make provenance, samples, units, missingness, and limitations visible to reviewers.</p></article>
         <article class="card"><h3>User-controlled summaries</h3><p>Explore privacy-preserving ways for people to share relevant functional context with clinicians, accessibility teams, researchers, or agencies.</p></article>
+        <article class="card"><h3>Timing-aware interpretation</h3><p>Keep overnight recovery, active-session physiology, and post-activity response distinct.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="mobility-team-opportunities">
+      <div class="section-header">
+        <p class="eyebrow">Opportunities for Mobility and Transportation Teams</p>
+        <h2>Treat the Trip as a Movement Environment</h2>
+        <p>Mobility intelligence can preserve what happens before boarding, how the body couples to a vehicle, what the route imposes, and whether useful function remains after arrival.</p>
+      </div>
+      <div class="grid three">
+        <article class="card"><h3>Transportation analytics</h3><p>Preserve vehicle, body-coupling, posture, route, exposure, and shared-ride context.</p></article>
+        <article class="card"><h3>Alternative-mode comparison</h3><p>Compare walking, rolling, seated travel, rail, and active-control transport by function and burden rather than convention alone.</p></article>
+        <article class="card"><h3>Accessible route design</h3><p>Connect pickup, waiting, transfers, aid handling, ride duration, destination function, and recovery.</p></article>
       </div>
     </section>
 
@@ -124,7 +137,8 @@
         <p class="eyebrow">Research and Collaboration</p>
         <h2>A Concrete Case for Responsible Review</h2>
         <p>This record may support carefully scoped research in wearable context preservation, mobility classification, multimodal evidence, transportation exposure, accessibility, explainability, source provenance, and human-in-the-loop review.</p>
-        <p>Any collaboration would require explicit scope, privacy review, validation, and agreement. This page does not imply a current relationship with a wearable, healthcare, transportation, research, or technology organization.</p>
+        <p>Potential collaboration begins with an explicit research question, privacy scope, validation plan, and agreement about what each source can support.</p>
+        <p><a class="text-link" href="mailto:handicapskater@gmail.com?subject=Mobility%20intelligence%20research%20collaboration">Discuss a scoped research collaboration</a></p>
       </div>
     </section>
 
@@ -138,12 +152,8 @@
         <a class="button button-primary" href="/platform/">Explore the platform</a>
         <a class="button button-secondary" href="/evidence/">Review the evidence map</a>
         <a class="button button-secondary" href="/evidence/longitudinal/">Longitudinal evidence</a>
-        <a class="button button-light" href="/evidence/transportation/">Transportation evidence</a>
+        <a class="button button-secondary" href="/evidence/transportation/">Transportation evidence</a>
       </div>
-    </section>
-
-    <section class="section">
-      <div class="notice"><strong>Boundary</strong><p>This is a research and product-design case study. It does not diagnose, directly measure pain, establish clinical validation, prove causation, or claim a commercial partnership.</p></div>
     </section>
   </main>
 

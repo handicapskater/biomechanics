@@ -18,10 +18,11 @@
             "/evidence/longitudinal/"
           ]
         },
-        { href: "/access/", label: "Access", match: ["/access/"] },
+        { href: "/pain/", label: "Pain", match: ["/pain/"] },
+        { href: "/platform/", label: "Observatory", match: ["/platform/"] },
         {
           href: "/evidence/strava-gps-skate-maps/",
-          label: "Route Maps",
+          label: "Routes",
           match: ["/evidence/strava-gps-skate-maps/"]
         },
         {
@@ -29,7 +30,6 @@
           label: "Health AI",
           match: ["/health-ai/"]
         },
-        { href: "/platform/", label: "Platform", match: ["/platform/"] },
 
         /*
           More appears only because this object exists.
@@ -38,11 +38,7 @@
         { key: "more", label: "More" }
       ],
       moreLinks: [
-        {
-          href: "/pain/",
-          label: "Pain",
-          match: ["/pain/"]
-        },
+        { href: "/access/", label: "Access", match: ["/access/"] },
         {
           href: "/videos/",
           label: "Videos",
