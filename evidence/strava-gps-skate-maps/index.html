@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Strava GPS skate maps for physical therapy and mobility aid context from the public HandicapSkater datascience notebook.">
-  <title>Strava GPS Skate Maps for Physical Therapy | HandicapSkater</title>
+  <meta name="description" content="A preserved Route Map Explorer showing approved public Strava route, distance, duration, weather, and longitudinal mobility context.">
+  <title>Route Map Explorer | HandicapSkater</title>
+  <link rel="canonical" href="https://handicapskater.com/evidence/strava-gps-skate-maps/">
   <link rel="icon" href="/common/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../../advocacy-site.css">
   <link rel="stylesheet" href="/common/css/site-chrome.css">
@@ -178,22 +179,44 @@
     }
   </style>
 </head>
-<body class="site-com">
+<body class="site-com page-route-maps">
   <a class="skip-link" href="#main">Skip to content</a>
   <div id="site-header"></div>
   <link rel="stylesheet" href="/common/css/site-tokens.css">
   <link rel="stylesheet" href="/common/css/site-chrome.css">
   <link rel="stylesheet" href="/common/css/site-components.css">
   <link rel="stylesheet" href="/common/css/site-pages.css">
-  <script src="/common/site-header.js"></script>
+  <link rel="stylesheet" href="/common/css/publication.css">
+  <script src="/common/site-header.js" defer></script>
+  <script src="/common/evidence-publication.js" defer></script>
 
   <main id="main">
-    <section class="hero">
+    <section class="hero route-maps-hero">
       <div class="hero-inner">
-        <p class="eyebrow">Route and functional mobility evidence</p>
-        <h1>Strava GPS Skate Maps for Physical Therapy</h1>
-        <p class="lead">COVID-era and long-term skate routes document repeated real-world skating used as physical therapy, functional mobility, and mobility-aid context.</p>
+        <p class="eyebrow">STRAVA ROUTE AND DISTANCE CONTEXT</p>
+        <h1>GPS Skate-Map Context</h1>
+        <p class="lead">A working Route Map Explorer preserves repeated real-world skating, distance, duration, weather, and geographic context within the longitudinal mobility record.</p>
+        <div class="hero-copy">
+          <p>Routes show where functional movement happened and how it repeated over time. They provide context rather than diagnosis and do not replace controlled within-person comparisons.</p>
+        </div>
+        <div class="button-row">
+          <a class="button button-primary" href="#route-browser">Open the Route Map Explorer</a>
+          <a class="button button-secondary" href="/evidence/longitudinal/">Review longitudinal evidence</a>
+          <a class="button button-light" href="/videos/">Watch mobility demonstrations</a>
+        </div>
       </div>
+    </section>
+
+    <section class="section route-publication-scope">
+      <div class="section-header">
+        <p class="eyebrow">Source-linked longitudinal scope</p>
+        <h2>What Strava Adds to the Evidence Corpus</h2>
+        <p>Strava contributes activity, route, distance, duration, speed, and repeated functional-travel context. It does not supply session HRV and a route does not directly measure pain.</p>
+      </div>
+      <div data-publication-resource="longitudinal">
+        <div class="publication-unavailable" role="status">Loading approved longitudinal scope…</div>
+      </div>
+      <div class="notice"><strong>Location boundary</strong><p>This page restores the previously public explorer and its existing approved route links. It does not add new precise locations or index unreviewed map archives.</p></div>
     </section>
 
     <section class="section">
@@ -225,15 +248,19 @@
 
     <section class="section">
       <div class="section-header">
-        <h2>What a health or mobility reviewer should notice</h2>
-        <p>These routes show repeated, real-world physical therapy skating over time. They document distance, duration, route consistency, and functional mobility. They are not offered as medical conclusions or pain proof by themselves. They show the lived movement pattern that wearable and targeted sensor evidence can contextualize.</p>
+        <p class="eyebrow">What These Routes Add to the Case Study</p>
+        <h2>Repeated Mobility in the Real World</h2>
+        <p>The explorer documents distance, duration, route continuity, and repeated controlled inline skating across time. It supplies geographic and environmental context for longitudinal wearable records without turning a route into a clinical or legal conclusion.</p>
       </div>
       <div class="grid three">
-        <article class="card"><h3>COVID-era route continuity</h3><p>Repeated routes show physical therapy skating continued as a practical mobility pattern during a disrupted period.</p></article>
-        <article class="card"><h3>Long-distance functional mobility</h3><p>Distance, duration, and route consistency help show that the routes are part of a functional mobility pattern, not isolated recreation.</p></article>
-        <article class="card"><h3>Why ParaTransit matters</h3><p>Transportation to and from physical therapy skating is part of the accommodation context, not a separate recreational errand.</p></article>
-        <article class="card"><h3>Functional Mobility Efficiency</h3><p>The maps show mobility achieved. The data question is how much physiological and mechanical exposure was required to achieve that mobility.</p></article>
+        <article class="card"><h3>Repeated functional mobility</h3><p>Routes show that controlled skating occurred repeatedly in ordinary environments rather than only as an isolated demonstration.</p></article>
+        <article class="card"><h3>Distance and duration</h3><p>Route output helps describe useful mobility achieved and how long activity continued.</p></article>
+        <article class="card"><h3>Longitudinal context</h3><p>Dates and route patterns help place wearable activity and recovery records in a broader timeline.</p></article>
+        <article class="card"><h3>Transportation connection</h3><p>Travel to and from skating is part of the personal mobility environment, not automatically a separate recreational trip.</p></article>
+        <article class="card"><h3>Environmental context</h3><p>Weather and geographic context may help explain a route, but do not establish safety for other people, routes, or conditions.</p></article>
+        <article class="card"><h3>Evidence limitation</h3><p>Maps show route completion. They do not diagnose pain, identify burden by themselves, or replace the publication-backed comparisons.</p></article>
       </div>
+      <p><a class="text-link" href="https://handicapskater.org/evidence-review/">Generalized route-review guidance is maintained on HandicapSkater.org.</a></p>
     </section>
 
     <section class="section route-explorer" id="route-browser">
@@ -246,7 +273,7 @@
         <p class="eyebrow">Weather context</p>
         <h3>Weather-linked route evidence</h3>
         <p id="weather-summary-text">Weather records are loading.</p>
-        <p class="weather-source-note">Weather records are used as route-context evidence. Rain is interpreted from both the full-day downtown station record and the 9 PM to midnight local hourly window. This rebuts categorical assumptions by documenting completed skate routes under recorded weather conditions; it does not claim rain is always safe.</p>
+        <p class="weather-source-note">Weather records are used as route-context evidence. Rain is interpreted from both the full-day downtown station record and the 9 PM to midnight local hourly window. Completed routes provide historical context; they do not establish safety for other people, routes, or weather conditions.</p>
         <div id="weather-summary-stats" class="weather-summary-stats" aria-label="Weather route evidence summary"></div>
       </div>
       <div class="weather-filter-controls" aria-label="Weather route filters">
@@ -655,13 +682,13 @@
     <section class="section alt">
       <div class="section-header">
         <h2>Source and Provenance</h2>
-        <p>These route maps are derived from recorded HandicapSkater physical therapy skating activities and related GPS activity records. They provide route, distance, time, integrated weather, and movement context for documented mobility aid use.</p>
+        <p>These route maps come from previously public HandicapSkater skating activities and related GPS activity records. They provide route, distance, time, integrated weather, and movement context for documented mobility-aid use.</p>
         <p>The maps are included to show where skating occurred, how far the activity extended, and how repeated route patterns support review of skating as functional mobility rather than recreation alone.</p>
         <p>Source materials include activity records, route map artifacts, timestamps, and related wearable evidence used for public review.</p>
       </div>
       <div class="button-row">
-        <a class="button button-primary" href="/evidence/">Review wearable evidence</a>
-        <a class="button button-secondary" href="/precedent.html">Review standards context</a>
+        <a class="button button-primary" href="/evidence/longitudinal/">Review longitudinal evidence</a>
+        <a class="button button-secondary" href="https://handicapskater.org/evidence-review/">Review generalized evidence guidance</a>
       </div>
     </section>
   </main>

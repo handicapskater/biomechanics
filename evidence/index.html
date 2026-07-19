@@ -3,781 +3,251 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Source-linked wearable, movement, route, transportation, and legal-review evidence supporting HandicapSkater's non-standard mobility aid record.">
-  <title>Evidence Corpus | HandicapSkater</title>
+  <meta name="description" content="An evidence map for publication-backed functional mobility, repeated protocols, transportation, and longitudinal context in one within-person case study.">
+  <title>Evidence Map | HandicapSkater</title>
+  <link rel="canonical" href="https://handicapskater.com/evidence/">
   <link rel="icon" href="/common/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/advocacy-site.css">
-  <link rel="stylesheet" href="/common/css/site-chrome.css">
-  <style>
-    .fsi-snapshot .section-header {
-      margin-bottom: 1.5rem;
-    }
-
-    .fsi-score-card-grid,
-    .fsi-validation-grid,
-    .fsi-key-findings {
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      margin: 1.5rem auto;
-      max-width: var(--content, 1120px);
-      padding: 0 1rem;
-    }
-
-    .fsi-score-card,
-    .fsi-validation-card,
-    .fsi-finding-card {
-      background: var(--paper, #fff);
-      border: 1px solid var(--border, #d8e0e8);
-      border-radius: 8px;
-      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
-      padding: 1rem;
-    }
-
-    .fsi-score-card h3,
-    .fsi-validation-card h3,
-    .fsi-finding-card h3 {
-      margin-top: 0;
-    }
-
-    .fsi-cohort-ranking,
-    .fsi-source-panel {
-      background: var(--paper, #fff);
-      border: 1px solid var(--border, #d8e0e8);
-      border-radius: 8px;
-      margin: 1.5rem auto;
-      max-width: var(--content, 1120px);
-      overflow: hidden;
-    }
-
-    .fsi-cohort-row {
-      align-items: center;
-      border-top: 1px solid var(--border, #d8e0e8);
-      display: grid;
-      gap: 0.75rem;
-      grid-template-columns: 3rem minmax(130px, 1.2fr) 4rem repeat(3, minmax(90px, 0.8fr)) minmax(180px, 1.5fr);
-      padding: 0.85rem 1rem;
-    }
-
-    .fsi-cohort-row:first-child {
-      border-top: 0;
-    }
-
-    .fsi-cohort-row.fsi-heading {
-      background: var(--panel-alt, #f4f7fb);
-      color: var(--muted, #475569);
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-    }
-
-    .fsi-score-pill {
-      background: #edf5ff;
-      border: 1px solid #c5dcf8;
-      border-radius: 999px;
-      color: #123a63;
-      display: inline-flex;
-      font-weight: 700;
-      justify-content: center;
-      padding: 0.3rem 0.55rem;
-      white-space: nowrap;
-    }
-
-    .fsi-boundary-note,
-    .fsi-data-fallback {
-      background: #fff8e8;
-      border: 1px solid #efd18a;
-      border-radius: 8px;
-      margin: 1rem auto;
-      max-width: var(--content, 1120px);
-      padding: 1rem;
-    }
-
-    .fsi-kpi-strip {
-      display: grid;
-      gap: 0.75rem;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      margin: 1rem auto;
-      max-width: var(--content, 1120px);
-      padding: 0 1rem;
-    }
-
-    .fsi-kpi {
-      background: var(--panel-alt, #f4f7fb);
-      border-radius: 8px;
-      padding: 0.85rem;
-    }
-
-    .fsi-kpi strong {
-      display: block;
-      font-size: 1.45rem;
-    }
-
-    .fsi-source-panel {
-      padding: 1rem;
-    }
-
-    .fsi-source-grid {
-      display: grid;
-      gap: 0.75rem;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
-
-    .fsi-source-grid div {
-      background: var(--panel-alt, #f4f7fb);
-      border-radius: 8px;
-      padding: 0.75rem;
-    }
-
-    .fsi-source-grid span {
-      display: block;
-      color: var(--muted, #475569);
-      font-size: 0.82rem;
-    }
-
-    @media (max-width: 860px) {
-      .fsi-cohort-row {
-        align-items: start;
-        grid-template-columns: 2.5rem minmax(0, 1fr);
-      }
-
-      .fsi-cohort-row > span:nth-child(n+3) {
-        grid-column: 2;
-      }
-
-      .fsi-cohort-row.fsi-heading {
-        display: none;
-      }
-    }
-  </style>
-</head>
-<body class="site-com">
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div id="site-header"></div>
   <link rel="stylesheet" href="/common/css/site-tokens.css">
+  <link rel="stylesheet" href="/common/css/site-chrome.css">
   <link rel="stylesheet" href="/common/css/site-components.css">
   <link rel="stylesheet" href="/common/css/site-pages.css">
-  <script src="/common/site-header.js"></script>
+  <link rel="stylesheet" href="/common/css/publication.css">
+  <script src="/common/site-header.js" defer></script>
+  <script src="/common/evidence-publication.js" defer></script>
+</head>
+<body class="site-com page-evidence">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
 
   <main id="main">
-    <section class="hero">
+    <section class="hero evidence-hero">
       <div class="hero-inner">
-        <p class="eyebrow">Evidence corpus</p>
-        <h1>Evidence Corpus</h1>
-        <p class="lead">This page organizes the public <span class="small-caps">HandicapSkater</span> evidence corpus: wearable physiology, HR, HRV/RMSSD, RRI, ACC motion exposure, route records, movement cohorts, transportation burden, and source-linked review artifacts.</p>
-        <p class="hero-copy">Public source-linked evidence supporting the <span class="small-caps">HandicapSkater</span> mobility-aid record.</p>
-        <div class="callout">The evidence corpus does not directly measure pain, diagnose a condition, or decide legal entitlement. It supports within-person review of mobility burden across walking, skating, transportation, and recovery context.</div>
+        <p class="eyebrow">INSPECTABLE WITHIN-PERSON EVIDENCE</p>
+        <h1>Evidence Map</h1>
+        <p class="lead">Wearable physiology, route data, episodic measurements, repeated protocols, transportation context, and longitudinal evidence remain source-linked and reviewable.</p>
+        <div class="hero-copy">
+          <p>The evidence is organized by the question each source can answer. Approved website values come from the synchronized publication bundle, with samples, units, dates, source labels, and limitations kept beside the interpretation.</p>
+        </div>
         <div class="button-row">
-          <a class="button button-primary" href="/pain.html">Review Pain Basis</a>
-          <a class="button button-secondary" href="/biomechanics/">Review Biomechanics</a>
-          <a class="button button-secondary" href="/legal.html">Review Legal Record</a>
-          <a class="button button-light" href="/evidence/strava-gps-skate-maps/">Review Routes</a>
+          <a class="button button-primary" href="#four-evidence-views">Explore the four evidence views</a>
+          <a class="button button-secondary" href="#how-to-read">How to read the record</a>
+          <a class="button button-light" href="https://handicapskater.org/evidence-review/">Standards &amp; Reviewer Guidance</a>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" aria-labelledby="snapshot-title">
       <div class="section-header">
-        <h2>What the corpus contains</h2>
-        <p>The Evidence Corpus separates source-linked evidence by role so reviewers can see what each stream contributes.</p>
+        <p class="eyebrow">Approved evidence snapshot</p>
+        <h2 id="snapshot-title">A Public-Safe View of the Record</h2>
+        <p>The values below are rendered from the publication bundle. No browser code calculates scientific values or retrieves raw session records.</p>
+      </div>
+      <div data-publication-facts="overview">
+        <div class="publication-unavailable" role="status"><strong>Loading approved values…</strong></div>
+      </div>
+      <div data-publication-status>
+        <div class="publication-unavailable" role="status">Publication status is being checked.</div>
+      </div>
+    </section>
+
+    <section class="section alt" id="four-evidence-views">
+      <div class="section-header">
+        <p class="eyebrow">Four Evidence Views</p>
+        <h2>Different Questions Need Different Comparisons</h2>
+        <p>Each dedicated page renders one authoritative graph projection and its accessible source table. The landing page supplies the map; the dedicated pages supply the detailed values.</p>
+      </div>
+      <div class="grid two evidence-view-grid">
+        <article class="card evidence-view-card">
+          <p class="tag">1 · Functional Mobility</p>
+          <h3>Walking versus controlled inline skating</h3>
+          <p>Review useful distance, duration context, absolute observed burden, normalized burden, functional output per burden, samples, and limitations.</p>
+          <a class="text-link" href="/evidence/mobility-comparison/">Review functional mobility</a>
+        </article>
+        <article class="card evidence-view-card">
+          <p class="tag">2 · Repeated Protocol</p>
+          <h3>Mall Skate → Walk → PT Skate</h3>
+          <p>Review accepted protocol dates and metric-specific stage profiles. Mixed direction is preserved and is not relabeled as a Cohort Similarity Score.</p>
+          <a class="text-link" href="/evidence/repeated-protocol/">Review the repeated protocol</a>
+        </article>
+        <article class="card evidence-view-card">
+          <p class="tag">3 · Transportation Context</p>
+          <h3>Body coupling and vehicle conditions</h3>
+          <p>Review SilverRide, sedan/taxi, motorcycle, bus, and van context with component samples, FSI samples, units, and qualifications.</p>
+          <a class="text-link" href="/evidence/transportation/">Review transportation context</a>
+        </article>
+        <article class="card evidence-view-card">
+          <p class="tag">4 · Longitudinal Context</p>
+          <h3>Activity, routes, and recovery over time</h3>
+          <p>Review WHOOP activity and overnight recovery, Strava routes and functional travel, and the separate role of Kubios episodic sessions.</p>
+          <a class="text-link" href="/evidence/longitudinal/">Review longitudinal context</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="corpus-contains">
+      <div class="section-header">
+        <p class="eyebrow">What the Corpus Contains</p>
+        <h2>Sources, Activities, and Context</h2>
+        <p>The public pages summarize an evidence corpus without exposing private raw sessions. Source authority and reconciliation determine what can be compared.</p>
       </div>
       <div class="grid three">
-        <article class="card"><h3>Wearable physiology</h3><p>HR, HRV/RMSSD, RRI, recovery context, and longitudinal physiology signals.</p></article>
-        <article class="card"><h3>Motion exposure</h3><p>ACC, vibration, impact, jerk, and shock components used to review movement burden.</p></article>
-        <article class="card"><h3>Route context</h3><p>GPS route maps, distance, time, weather context, and repeated mobility records.</p></article>
-        <article class="card"><h3>Movement cohorts</h3><p>Walking, skating, ParaTransit, motorcycle, wheelchair, and recovery contexts.</p></article>
-        <article class="card"><h3>Legal review context</h3><p>Source-linked records, exhibits, review artifacts, and access-history references.</p></article>
-        <article class="card"><h3>FSI review layer</h3><p>Fractal Stability Index uses a Cohort Similarity Score (CSS) to organize burden and cohort comparison evidence.</p></article>
+        <article class="card"><h3>WHOOP longitudinal records</h3><p>Activity, strain, heart-rate context, sleep, readiness, and overnight recovery trends across time.</p></article>
+        <article class="card"><h3>Strava route records</h3><p>Activity, route, distance, duration, speed, and repeated functional-travel context.</p></article>
+        <article class="card"><h3>Polar H10 and Kubios</h3><p>Episodic RRI, HRV/RMSSD, ECG, acceleration, and movement context for targeted sessions.</p></article>
+        <article class="card"><h3>Movement cohorts</h3><p>Walking, PT skating, Mall skating, and FNS/SNS skating are preserved as distinct contexts rather than flattened into “exercise.”</p></article>
+        <article class="card"><h3>Transportation cohorts</h3><p>ParaTransit sedan/taxi or SilverRide, bus, van, motorcycle, and unknown-vehicle records preserve vehicle and body-coupling context.</p></article>
+        <article class="card"><h3>Other functional context</h3><p>Readiness baseline and wheelchair/PT context remain distinct where relevant and authorized.</p></article>
+        <article class="card"><h3>Source authority</h3><p>Original labels, canonical cohort mapping, manual review, and reconciliation decisions remain traceable.</p></article>
+        <article class="card"><h3>Missingness</h3><p>A missing month, metric, route, or sample is not treated as zero and is not inferred by the website.</p></article>
+        <article class="card"><h3>Publication boundary</h3><p>Only allowlisted public summaries and graph payloads reach this site; raw private records remain outside the bundle.</p></article>
       </div>
     </section>
 
-    <section class="section alt">
+    <section class="section alt" id="corpus-model">
       <div class="section-header">
-        <h2>Current Corpus Model</h2>
-        <p>
-          The refined corpus contains 2,171 records. Body coupling context exists for all records.
-          Physiologic efficiency exists for all records. RAG facets are expanded. Eighty one records
-          have ACC shock component metrics. The impact shock index remains components only because no
-          normalization baseline is defined.
-        </p>
-        <p>
-          Walking median HR is 130 bpm, PT skating median HR is 113 bpm, and mall skating median HR is
-          78.6 bpm. Walking duration median is 40 min, mall skating duration median is 33.7 min, and PT
-          skating duration median is 143.5 min. Walking versus mall skating is the cleanest duration
-          comparable physiologic contrast. PT skating supports longer tolerated activity at lower HR
-          than walking.
-        </p>
-        <p>
-          Active ballistic median HR is 130 bpm, active controlled median HR is 109 bpm, passive
-          passenger median HR is 88 bpm, and recovery baseline median HR is 53.1 bpm. Controlled
-          walking versus PT skating subset still needs manual audit.
-        </p>
+        <p class="eyebrow">Current Corpus Model</p>
+        <h2>Layered Evidence, Not One Flattened Score</h2>
+        <p>The model keeps evidence layers separate long enough to preserve their meaning, then reconciles only approved relationships for review.</p>
+      </div>
+      <ol class="layered-model" aria-label="Current evidence corpus layers">
+        <li><strong>Longitudinal context</strong><span>Repeated activity and recovery patterns across time.</span></li>
+        <li><strong>Episodic measurement</strong><span>Higher-specificity session evidence from RRI, HRV, ECG, and acceleration.</span></li>
+        <li><strong>Movement cohort</strong><span>Walking and distinct skating contexts with preserved source labels.</span></li>
+        <li><strong>Transportation cohort</strong><span>Vehicle, passenger or active-control state, posture, and body coupling.</span></li>
+        <li><strong>Repeated protocol</strong><span>Accepted stage sequences reviewed without inferring missing membership.</span></li>
+        <li><strong>Source reconciliation</strong><span>Time, labels, duplicates, provenance, and authority resolved before interpretation.</span></li>
+        <li><strong>Validation</strong><span>Units, samples, missingness, parity, safety, and formula identity checked.</span></li>
+        <li><strong>Publication layer</strong><span>Approved summaries and graph payloads synchronized to render-only websites.</span></li>
+      </ol>
+    </section>
+
+    <section class="section" id="longitudinal-episodic">
+      <div class="section-header">
+        <p class="eyebrow">Longitudinal + Episodic Evidence</p>
+        <h2>Connected Without Becoming Interchangeable</h2>
+        <p>Earlier dashboard work aimed to connect long-term activity with targeted sessions. The present architecture preserves that analytical intent through versioned bundle resources rather than a live embedded dashboard.</p>
       </div>
       <div class="grid three">
-        <article class="card">
-          <h3>Physiologic burden</h3>
-          <p>HR, RMSSD, recovery context, HR per mile, distance per mean HR, duration tolerated, and RMSSD deltas when available.</p>
-        </article>
-        <article class="card">
-          <h3>Mechanical motion exposure</h3>
-          <p>ACC dynamic RMS, jerk RMS, shock spike rate, and cumulative dynamic shock. These quantify motion exposure at the sensor, not pain by themselves.</p>
-        </article>
-        <article class="card">
-          <h3>Body coupling and control</h3>
-          <p>Active controlled, active ballistic, passive passenger, and recovery baseline describe how the body is coupled to the activity or vehicle.</p>
-        </article>
+        <article class="card"><p class="tag">Longitudinal</p><h3>WHOOP</h3><p>Shows activity and overnight recovery context across time. Recovery HRV/RMSSD is not session HRV.</p></article>
+        <article class="card"><p class="tag">Route and output</p><h3>Strava</h3><p>Shows route, distance, duration, speed, repeated mobility, and geographic context.</p></article>
+        <article class="card"><p class="tag">Episodic</p><h3>Polar H10 + Kubios</h3><p>Shows targeted session RRI, HRV/RMSSD, ECG, acceleration, and movement evidence where available.</p></article>
+      </div>
+      <div data-publication-resource="longitudinal">
+        <div class="publication-unavailable" role="status">Loading approved longitudinal scope…</div>
       </div>
     </section>
 
-    <section class="section" id="mobility-science-corpus" aria-labelledby="mobility-science-corpus-title">
+    <section class="section alt" id="key-findings">
       <div class="section-header">
-        <p class="eyebrow">Longitudinal + episodic evidence</p>
-        <h2 id="mobility-science-corpus-title">Mobility Science Corpus</h2>
-        <p>
-          The current public corpus keeps historical WHOOP and Strava mobility-pattern evidence distinct
-          from episodic Kubios / Polar H10 session evidence, then merges both layers for reviewer-safe
-          summaries. WHOOP recovery HRV is daily recovery context, not session-level Kubios HRV.
-        </p>
+        <p class="eyebrow">Key Findings</p>
+        <h2>Publication-Backed and Sample-Dependent</h2>
+        <p>Each finding below is rendered from its approved resource. It is within-person, source-linked, sample-dependent, and not universal.</p>
       </div>
-
-      <div class="grid four" id="mobility-corpus-kpis" aria-label="Mobility Science Corpus counts"></div>
-
-      <div class="grid three">
-        <article class="card">
-          <span class="tag">Longitudinal context</span>
-          <h3>WHOOP + Strava</h3>
-          <p>Historical WHOOP and Strava records preserve activity patterns across skating, walking, ParaTransit, motorcycle, recovery, and other mobility contexts before Kubios was available.</p>
-        </article>
-        <article class="card">
-          <span class="tag">Episodic sensors</span>
-          <h3>Kubios / Polar H10</h3>
-          <p>Kubios adds session-level RRI, RMSSD, ECG, and ACC detail where available. It is the higher-specificity episodic layer for same-day and activity-specific comparisons.</p>
-        </article>
-        <article class="card">
-          <span class="tag">Merged review</span>
-          <h3>FSI Evidence Observatory</h3>
-          <p>FSI is the Fractal Stability Index. CSS is the Cohort Similarity Score layer used to strengthen cohort comparison without redefining FSI.</p>
-        </article>
-      </div>
-
-      <div class="section-header compact">
-        <h3>Longitudinal cohort summary</h3>
-        <p>These rows summarize the historical WHOOP/Strava mobility-pattern layer. They do not invent Kubios shock metrics for historical records.</p>
-      </div>
-      <div class="table-wrap" id="longitudinal-summary-wrap" hidden>
-        <table class="evidence-table">
-          <caption>Longitudinal WHOOP/Strava cohort summary</caption>
-          <thead>
-            <tr>
-              <th scope="col">Cohort</th>
-              <th scope="col">Activities</th>
-              <th scope="col">Median HR</th>
-              <th scope="col">Median duration</th>
-              <th scope="col">Median distance</th>
-              <th scope="col">Median strain</th>
-            </tr>
-          </thead>
-          <tbody id="longitudinal-summary-body"></tbody>
-        </table>
-      </div>
-
-      <div class="evidence-panel" id="tableau-import-status" aria-live="polite"></div>
-
-      <div class="button-row">
-        <a class="button button-primary" href="/data/review/mobility_science_corpus_panel.json">Open corpus panel JSON</a>
-        <a class="button button-secondary" href="/data/review/longitudinal_mobility_metrics.json">Open longitudinal metrics JSON</a>
-        <a class="button button-light" href="/data/review/tableau_mobility_aid_analytics_import_status.json">Open Tableau import status</a>
+      <div class="publication-finding-stack">
+        <article class="card"><h3>Functional mobility</h3><div data-publication-resource="mobility-comparison"><div class="publication-unavailable" role="status">Loading approved mobility finding…</div></div></article>
+        <article class="card"><h3>Repeated protocol</h3><div data-publication-resource="repeated-protocol"><div class="publication-unavailable" role="status">Loading approved protocol finding…</div></div></article>
+        <article class="card"><h3>Transportation context</h3><div data-publication-resource="transportation"><div class="publication-unavailable" role="status">Loading approved transportation finding…</div></div></article>
       </div>
     </section>
 
-
-    <section class="section alt fsi-snapshot" id="fsi-data-science-evidence" aria-labelledby="fsi-snapshot-title">
+    <section class="section" id="cohort-comparison">
       <div class="section-header">
-        <p class="eyebrow">Source-indexed, validation-tested, audit-ready</p>
-        <h2 id="fsi-snapshot-title">Generated Evidence Snapshot</h2>
-        <p>Source-indexed wearable and movement evidence comparing walking, skating, transport, and baseline cohorts.</p>
-        <p>These scores do not measure pain directly and do not make clinical or legal conclusions. They summarize within-person MSK burden patterns from wearable, movement, and source-indexed evidence.</p>
-      </div>
-
-      <div class="fsi-data-fallback" id="fsi-data-fallback" hidden>
-        <strong>Generated FSI/CSS snapshot refresh</strong>
-        <p>The generated FSI/CSS public snapshot is being refreshed. The stable corpus summary above preserves the current reviewed evidence model and public corpus facts.</p>
-      </div>
-
-      <div class="fsi-score-card-grid" aria-label="FSI score explanations">
-        <article class="fsi-score-card">
-          <h3>FSI Tensor Burden</h3>
-          <p>What the body absorbs across physiology, mechanical shock, MSK load path, passive exposure, active control, and functional output.</p>
-        </article>
-        <article class="fsi-score-card">
-          <h3>Impact Burden Proxy</h3>
-          <p>Shock interpreted through physiology and MSK load path. This is not a direct pain measurement.</p>
-        </article>
-        <article class="fsi-score-card">
-          <h3>Functional Mobility Efficiency</h3>
-          <p>Useful mobility produced for the burden. This separates "hard" from "useful."</p>
-        </article>
-      </div>
-
-      <div class="fsi-kpi-strip" id="fsi-kpi-strip" aria-label="FSI public overview metrics"></div>
-
-      <div class="section-header">
-        <h2>Key Findings</h2>
-        <p>Concise findings are generated from the current public review JSON values.
-          <ul>
-            <li>Mall skating constitutes using skates around the mall limiting the ballistic component by not lifting the leg, but minute side-to-side movement to preserve momentum.</li>
-            <li>PT skating constitutes using skates with a minimal ballistic component, stepping lightly, for preservation of momentum.</li>
-          </ul>
-        </p>
-      </div>
-      <div class="fsi-key-findings" id="fsi-key-findings" aria-label="Key FSI Tensor findings"></div>
-
-      <div class="section-header">
-        <h2>Cohort Ranking</h2>
-        <p>Cohorts are sorted ascending by FSI Tensor v0.3 burden score.</p>
-      </div>
-      <div class="fsi-cohort-ranking" id="fsi-cohort-ranking" aria-label="FSI cohort ranking">
-        <div class="fsi-cohort-row fsi-heading">
-          <span>Rank</span>
-          <span>Cohort</span>
-          <span>n</span>
-          <span>FSI burden</span>
-          <span>Impact proxy</span>
-          <span>Band</span>
-          <span>Interpretation</span>
-        </div>
-      </div>
-
-      <div class="section-header">
-        <h2>Validation and Audit Checks</h2>
-        <p>These checks test whether the model survives common criticisms: hand-picked weights, small samples, one unusual session, unclear functional output, weak cohort separation, and missing audit linkage.</p>
-      </div>
-      <div class="fsi-validation-grid" id="fsi-validation-grid" aria-label="FSI validation moves"></div>
-
-      <div class="section-header">
-        <h2>Source and Reproducibility</h2>
-        <p>The public snapshot is generated from the FSI Evidence Observatory. CSS enhances cohort comparison through Comparable Similarity Score outputs. Full formulas, session outputs, source indexes, and hashes remain in the evidence platform artifacts.</p>
-      </div>
-      <div class="fsi-source-panel" id="fsi-source-panel" aria-label="FSI source and reproducibility status"></div>
-
-      <div class="fsi-boundary-note" id="fsi-boundary-note">
-        These scores do not measure pain directly and do not make clinical or legal conclusions. They summarize within-person MSK burden patterns from wearable, movement, and source-indexed evidence.
-      </div>
-
-      <div class="button-row">
-        <a class="button button-primary" href="/platform.html">Open FSI Evidence Observatory</a>
-        <a class="button button-secondary" href="/data/review/fsi_tensor_v0_3_autonomic_gated_cohort_summary.csv">Download cohort CSV</a>
-        <a class="button button-secondary" href="/data/review/fsi_tensor_v0_3_validation_summary.json">View validation summary</a>
-        <a class="button button-light" href="/data/review/fsi_tensor_v0_3_artifact_manifest_summary.json">View source artifacts</a>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-header">
-        <h2>Why this evidence corpus exists</h2>
-        <p>I built this evidence corpus to show the functional difference between high burden walking, adaptive skating, motorcycle travel, skates as a wheelchair labeled use, ParaTransit, commuting, and other mobility contexts.</p>
-        <p>The goal is simple: make invisible mobility burden reviewable.</p>
-      </div>
-      <div class="grid four">
-        <article class="card">
-          <span class="tag">Burden</span>
-          <h3>Walking can impose higher burden</h3>
-          <p>For my pelvic/SI/hip disability, walking can be associated with higher physiologic and functional burden even when distance is short.</p>
-        </article>
-        <article class="card">
-          <span class="tag">Function</span>
-          <h3>Skating can preserve mobility</h3>
-          <p>Inline skates support smoother, more horizontal movement and may reduce the repeated impact pattern that makes walking difficult in this within person record.</p>
-        </article>
-        <article class="card">
-          <span class="tag">Access</span>
-          <h3>Forced alternatives can increase burden</h3>
-          <p>When public systems deny skates, the alternatives can include high burden walking, unstable ParaTransit rides, or unnecessary wheelchair use.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section alt">
-      <div class="section-header">
-        <h2>What the Evidence Shows</h2>
-        <p>The Evidence Corpus is the public evidence layer. It connects skating as a lower burden mobility aid, walking and ParaTransit burden, wearable HR/HRV evidence, FSI/CSS metrics, physiologic burden context, and accommodation relevance.</p>
+        <p class="eyebrow">Cohort Comparison</p>
+        <h2>Named Metrics, Visible Samples—Not a Universal Ranking</h2>
+        <p>The publication contract does not authorize a single composite ranking of all mobility and transportation cohorts. The site therefore compares cohorts only within a named supplied metric and preserves each metric's units and sample count.</p>
       </div>
       <div class="grid three">
-        <article class="card">
-          <span class="tag">Record facts</span>
-          <h3>Mobility modes differ</h3>
-          <p>The dashboard organizes walking, skating, skates used as a wheelchair labeled use, motorcycle travel, ParaTransit, commuting, and related cohorts as distinct mobility contexts.</p>
-        </article>
-        <article class="card">
-          <span class="tag">Interpretation</span>
-          <h3>Within person burden matters</h3>
-          <p>The useful signal is not HR or HRV alone. It is the within person pattern across HR, HRV/RMSSD, raw beat-to-beat interval data (RRI) quality, duration, mobility mode, distance, recovery, and mechanical exposure.</p>
-        </article>
-        <article class="card">
-          <span class="tag">Efficiency</span>
-          <h3>Functional Mobility Efficiency</h3>
-          <p>Distance is mobility achieved, not automatic burden. Functional Mobility Efficiency asks how much useful mobility is achieved per unit of physiological and mechanical exposure.</p>
-        </article>
-<!--        <article class="card">-->
-<!--          <span class="tag">Proposed metrics</span>-->
-<!--          <h3>FSI and CSS</h3>-->
-<!--          <p>FSI is the Fractal Stability Index, and CSS is the Comparable Similarity Score. They are proposed analytical metrics for comparing movement stability, similarity, and functional burden patterns across mobility contexts. They are not standalone determinations by themselves.</p>-->
-<!--        </article>-->
+        <article class="card"><h3>Useful mobility</h3><p>Distance values can be ordered within the supplied mobility graph, but distance alone is output rather than burden.</p><a class="text-link" href="/evidence/mobility-comparison/#mobility-graph">Open mobility values</a></article>
+        <article class="card"><h3>Observed burden</h3><p>Absolute and normalized burden answer different questions; unequal exposure remains visible.</p><a class="text-link" href="/evidence/mobility-comparison/">Compare burden measures</a></article>
+        <article class="card"><h3>Transportation profiles</h3><p>FSI and component measurements retain separate samples and qualifications for each vehicle context.</p><a class="text-link" href="/evidence/transportation/">Compare transport profiles</a></article>
       </div>
     </section>
 
-    <section class="section section-alt">
-      <div class="container">
-        <h2>ParaTransit burden is part of the mobility evidence</h2>
-
-        <p>
-          Functional Mobility Efficiency applies to transportation as well as ambulation. A ParaTransit
-          ride should not be judged only by whether a vehicle arrived. It should be reviewed by the
-          access achieved and the physiologic, mechanical exposure, posture, motion, and duration burden
-          imposed.
-        </p>
-
-        <p>
-          The ParaTransit Burden page explains why cutaway buses, vans, back seat shared sedans,
-          SilverRide/front seat service, rail, and direct routing are not functionally equivalent for my
-          documented pelvic/SI/hip disability.
-        </p>
-
-        <a class="button" href="/paratransit-burden.html">Review ParaTransit Burden</a>
-      </div>
-    </section>
-
-    <section class="section" id="fsicss-results">
+    <section class="section alt" id="validation-audit">
       <div class="section-header">
-        <h2>Source-linked FSI case study results</h2>
-        <p>The current FSI work treats Kubios/Polar H10 as the activity specific biomechanics stream, WHOOP as longitudinal physiology context, and Strava as functional distance and route capacity context. The results are source linked decision support evidence for accommodation evaluation; they do not independently decide pain or legal entitlement.</p>
+        <p class="eyebrow">Validation and Audit Checks</p>
+        <h2>What Must Survive Review</h2>
+        <p>Credibility depends as much on what is rejected, missing, qualified, or source-limited as on the values that are shown.</p>
       </div>
-      <div class="grid three">
-        <article class="card">
-          <span class="tag">Skating vs walking</span>
-          <h3>Dynamic burden</h3>
-          <p>FSI compares dynamic burden instability using features such as vertical dynamic ratio, movement variability, peaks per minute, and impact shock. Long skating distance is treated as functional capacity unless paired with high impact, high physiologic burden, or low activity specific HRV.</p>
-        </article>
-        <article class="card">
-          <span class="tag">Sedan vs bus/cutaway/van</span>
-          <h3>Passive mechanical burden</h3>
-          <p>Vehicle comparisons emphasize vertical RMS, peak absolute acceleration, peak-to-peak motion, jerk, movement standard deviation, and cumulative impact shock. SilverRide/front seat/direct service is the current lower burden transportation reference. Generic sedan service should not be treated as automatically effective when it is back seat-only, shared, prolonged, posture-constraining, or mechanically harsh.</p>
-        </article>
-        <article class="card">
-          <span class="tag">Evidence hierarchy</span>
-          <h3>Kubios first, context preserved</h3>
-          <p>Kubios/H10 provides the highest specificity for per-activity HRV/RRI and accelerometer burden. WHOOP and Strava corroborate longitudinal heart-rate patterns, recovery context, distance, duration, and functional mobility capacity.</p>
-        </article>
+      <div class="grid three audit-grid">
+        <article class="card"><h3>Source authority</h3><p>Use the designated source for each field and preserve original labels and provenance.</p></article>
+        <article class="card"><h3>Duplicate handling</h3><p>Retain audit history while preventing duplicate observations from silently changing analytical samples.</p></article>
+        <article class="card"><h3>Time reconciliation</h3><p>Preserve timestamps, timezone context, and the rules used to relate records across sources.</p></article>
+        <article class="card"><h3>Sample requirements</h3><p>Show the applicable sample count and retain explicit small-sample qualifications.</p></article>
+        <article class="card"><h3>Missingness</h3><p>Unavailable evidence remains unavailable; it is neither fabricated nor silently treated as zero.</p></article>
+        <article class="card"><h3>Unit checks</h3><p>Keep supplied units visible and compare like with like.</p></article>
+        <article class="card"><h3>Parity checks</h3><p>Published values must match the server-side Evidence Observatory presentation.</p></article>
+        <article class="card"><h3>Publication safety</h3><p>Public bundles exclude raw signals, private identifiers, local paths, and browser scientific computation.</p></article>
+        <article class="card"><h3>Date and limitations</h3><p>Every interpretation remains tied to a data-through date and visible limitations.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="fsi-results">
+      <div class="section-header">
+        <p class="eyebrow">Source-Linked FSI Case Study Results</p>
+        <h2>FSI, CSS, and Tensor Remain Distinct</h2>
+        <p>Fractal Stability Index is used only in its named authoritative scope. It is not a pain score. Cohort Similarity Score answers a similarity question under an established CSS scope. Tensor v0.3 is the frozen multidimensional model identity.</p>
+        <p>The transportation evidence page exposes approved FSI values with their separate FSI sample counts and component samples. The website does not reconstruct FSI from displayed components.</p>
+      </div>
+      <div data-publication-identities="scientific-identities">
+        <div class="publication-unavailable" role="status">Loading approved scientific identities…</div>
       </div>
       <div class="button-row">
-        <a class="button button-primary" href="/platform.html#evidence-observatory">Open FSI Evidence Observatory overview</a>
-        <a class="button button-secondary" href="/docs/source_linked_claim_map.md">Review source linked claim map</a>
+        <a class="button button-primary" href="/evidence/transportation/">Review published FSI context</a>
+        <a class="button button-secondary" href="/platform/">Understand the Evidence Observatory</a>
       </div>
     </section>
 
-    <section class="section alt" aria-labelledby="dashboard-title">
+    <section class="section alt" id="what-it-shows">
       <div class="section-header">
-        <h2 id="dashboard-title">Walking can impose burden. Skating can preserve mobility.</h2>
-        <p>Wearable and activity data compare high burden walking, adaptive skating, motorcycle travel, wheelchair labeled use, ParaTransit, commuting, and forced alternatives.</p>
+        <p class="eyebrow">What the Evidence Shows</p>
+        <h2>Different Sources Answer Different Questions</h2>
       </div>
-      <p class="tableau-context">The embedded Tableau Public workbook is a visual evidence summary. Use it to compare activity cohorts, distance, duration, heart-rate burden, and recovery signals. If the embed does not load, open the public dashboard directly.</p>
-      <div class="tableau-frame" role="region" aria-label="Embedded Tableau Public dashboard for HandicapSkater mobility burden analysis">
-        <iframe
-          title="HandicapSkaterAnalysis Tableau Public mobility burden dashboard"
-          src="https://public.tableau.com/views/MobilityAidAnalytics/Analytics?:showVizHome=no&:embed=true&:display_count=n&:origin=viz_share_link"
-          loading="lazy"
-          allowfullscreen>
-        </iframe>
+      <div class="grid two">
+        <article class="card"><h3>Walking versus skating</h3><p>Functional output and observed burden must be read together; a short activity can have low total burden because it ended after little useful mobility.</p></article>
+        <article class="card"><h3>Repeated protocol direction</h3><p>Stage patterns can move toward, away from, or remain unchanged relative to another stage depending on the metric.</p></article>
+        <article class="card"><h3>Transportation body coupling</h3><p>Active control and passive passenger exposure are distinct contexts; vehicle label alone does not explain the whole profile.</p></article>
+        <article class="card"><h3>Longitudinal context</h3><p>Repeated activity and route records corroborate sustained mobility across time while controlled protocols remain stronger comparisons.</p></article>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="how-to-read">
       <div class="section-header">
-        <h2>How to read this evidence corpus</h2>
-        <p>Start by comparing walking and skating. Distance alone does not tell the story. The key question is how much physiologic and mechanical exposure is required to move.</p>
-        <p>A short high burden walk can impose more burden than a longer skate because skating changes the mechanics of movement. A 2 mile skate and a several hundred foot walk should be compared by functional mobility achieved per burden unit, not by distance alone.</p>
+        <p class="eyebrow">How to Read the Evidence Corpus</p>
+        <h2>A Review Sequence</h2>
       </div>
-      <div class="grid three">
-        <article class="metric"><strong>Distance:</strong> functional mobility achieved.</article>
-        <article class="metric"><strong>Duration:</strong> how long the burden lasts.</article>
-        <article class="metric"><strong>Heart rate:</strong> cardiovascular load during movement, transit, or forced alternatives.</article>
-        <article class="metric"><strong>HR zones:</strong> time spent in higher exertion or stress zones.</article>
-        <article class="metric"><strong>HRV/RMSSD:</strong> autonomic regulation where available, not standalone pain proof.</article>
-        <article class="metric"><strong>Activity category:</strong> skating, walking, wheelchair labeled use, motorcycle, ParaTransit, commuting, and related cohorts.</article>
-        <article class="metric"><strong>Movement pattern:</strong> vertical versus horizontal dynamics where available.</article>
-        <article class="metric"><strong>FSI:</strong> Fractal Stability Index, a proposed stability-pattern metric.</article>
-        <article class="metric"><strong>CSS:</strong> Comparable Similarity Score, a proposed similarity-to-reference framework.</article>
-      </div>
+      <ol class="review-sequence">
+        <li><strong>Identify the source.</strong><span>Know whether the observation comes from WHOOP, Strava, Polar H10/Kubios, documentary history, or another authority.</span></li>
+        <li><strong>Identify the cohort.</strong><span>Confirm the activity, vehicle, body-coupling state, and classification provenance.</span></li>
+        <li><strong>Inspect the sample count.</strong><span>Small and unequal samples require explicit qualification.</span></li>
+        <li><strong>Inspect the units.</strong><span>Distance, duration, acceleration, ratios, and unitless indexes answer different questions.</span></li>
+        <li><strong>Inspect limitations and missingness.</strong><span>Unavailable evidence should remain unavailable.</span></li>
+        <li><strong>Compare like with like.</strong><span>Do not collapse output, absolute burden, normalized burden, or similarity into one label.</span></li>
+        <li><strong>Separate longitudinal and episodic evidence.</strong><span>Overnight recovery context is not a targeted session measurement.</span></li>
+        <li><strong>Keep the conclusion personal.</strong><span>This case may illustrate a review method; it does not establish a universal result.</span></li>
+      </ol>
     </section>
 
-    <section class="section alt">
+    <section class="section alt" id="wearable-teams">
       <div class="section-header">
-        <h2>Key findings</h2>
-        <p>The corpus is evidence, not a standalone medical or legal ruling. The pattern matters because mobility aids should be evaluated by function, not appearance.</p>
-      </div>
-      <div class="evidence-panel">
-        <ul class="check-list">
-          <li>Skating supports longer functional mobility with a more sustainable burden pattern.</li>
-          <li>Walking can produce disproportionate physiological burden relative to distance.</li>
-          <li>ParaTransit and forced alternatives may create passive stress, especially when rides are long, unstable, shared, or mechanically harsh.</li>
-          <li>Distance should be treated as functional output, not burden by itself.</li>
-          <li>The data supports individualized review of mobility aids by function, not appearance.</li>
-          <li>This is a real world wearable health AI case study and accommodation evidence layer.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section section">
-      <div class="section-header">
-        <h2>Why this matters to wearable health and mobility-intelligence teams</h2>
-        <p>Most wearables count activity. This project asks a harder question: is the movement lower burden, higher burden, accessible, or forced?</p>
-        <p><span class="small-caps">HandicapSkater</span>.com is the research and product development layer for wearable mobility evidence, activity label reconciliation, assistive mobility analytics, and privacy preserving evidence summaries.</p>
-        <p><span class="small-caps">HandicapSkater</span>.org is positioned as the standards and civil-rights framework that can translate evidence into fair access language.</p>
-      </div>
-      <div class="grid three">
-        <article class="card">
-          <h3>Beyond step counting</h3>
-          <p>A disabled person may need fewer steps, not more. The metric should be functional mobility, not conformity to walking.</p>
-        </article>
-        <article class="card">
-          <h3>Adaptive mobility analytics</h3>
-          <p>The evidence corpus compares skating, walking, motorcycle travel, wheelchair labeled use, ParaTransit, and commuting as different mobility cohorts.</p>
-        </article>
-        <article class="card">
-          <h3>Human-centered AI</h3>
-          <p>The project combines wearable data, biomechanics, legal context, and lived experience to show platform potential for disability aware AI without claiming any current platform partnership.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section alt">
-      <div class="section-header">
-        <h2>Evidence Stack</h2>
-        <p><span class="small-caps">HandicapSkater</span>.com is the public case study, evidence, and product development site. <span class="small-caps">HandicapSkater</span>.org is the standards, doctrine, and accommodation-review site. The notebooks and FSI Evidence Observatory preserve the reproducible evidence and prototype layer.</p>
-      </div>
-      <div class="grid three">
-        <article class="card"><h3>Public site</h3><p>Evidence Corpus, healthcare brief, story, route maps, platform framing, and precedent summary.</p><a href="/">Open public site</a></article>
-        <article class="card"><h3>Standards site</h3><p>Public standards and doctrine for reviewing non-standard mobility aids.</p><a href="https://handicapskater.org/">Open standards site</a></article>
-        <article class="card"><h3>Evidence notebook</h3><p>Reproducible legal and biomechanics notebook context for ParaTransit burden.</p><a href="https://github.com/handicapskater/datascience/blob/main/legal/notebooks/NonTraditional_Mobility_Aid_Biomechanics_ParaTransit_Burden.ipynb" target="_blank" rel="noopener">Open Evidence notebook</a></article>
-        <article class="card"><h3>Wearable notebook</h3><p>Wearable biomechanical and ParaTransit analysis with source linked activity context.</p><a href="https://github.com/handicapskater/datascience/blob/main/legal/notebooks/Wearable_Biomechanical_ParaTransit_Reproducible.ipynb" target="_blank" rel="noopener">Open wearable notebook</a></article>
-        <article class="card"><h3>FSI Evidence Observatory</h3><p>Prototype evidence layer for Fractal Stability Index, source maps, retrieval, audit status, source quality, missing data, and reviewer-safe summaries. CSS strengthens the cohort-comparison evidence layer.</p><a href="/platform.html">Review FSI Evidence Observatory overview</a></article>
+        <p class="eyebrow">Why This Matters to Wearable Health and Mobility-Intelligence Teams</p>
+        <h2>Context Is Part of the Signal</h2>
+        <p>Wearable context preservation, mobility classification, multimodal sensor fusion, within-person baselines, longitudinal and episodic integration, transportation context, provenance, explainable evidence systems, and human review all affect whether a mobility record remains meaningful.</p>
+        <p>This case does not claim a clinically validated product or commercial partnership. It shows a concrete design problem: personalized mobility intelligence should preserve what the person was doing, how the body was coupled to it, where the signal came from, and what the evidence cannot establish.</p>
+        <a class="text-link" href="/health-ai/">Explore the Health AI and mobility-intelligence brief</a>
       </div>
     </section>
 
     <section class="section">
-      <div class="section-header">
-        <h2>From data to access</h2>
-        <p>This corpus is not a standalone medical or legal ruling. It is evidence that helps explain why skates function as a non-standard mobility aid and why denial of that aid can create reviewable burden.</p>
-      </div>
-      <div class="grid three">
-        <article class="card"><h3>Public story</h3><p>The plain English timeline of the disability, mobility aid, and public-access record.</p><a href="/story/">Read the story</a></article>
-        <article class="card"><h3>Precedent</h3><p>Agency, court, DMV, and accommodation records summarized for public review.</p><a href="/precedent.html">View precedent</a></article>
-        <article class="card"><h3>Videos</h3><p>Video evidence and public documentation of access disputes and mobility use.</p><a href="/videos/">Open videos and evidence</a></article>
-        <article class="card"><h3>Health AI case study</h3><p>Why this is relevant to consumer wearable analytics, mobility intelligence, and disability aware AI.</p><a href="/health-ai.html">Read Health AI case study</a></article>
-        <article class="card"><h3>Strava GPS skate maps</h3><p>COVID-era and long term skate routes showing physical therapy and mobility aid context.</p><a href="/evidence/strava-gps-skate-maps/">Open route maps</a></article>
-        <article class="card"><h3>Colab notebook</h3><p>Reproducible Python analysis for public biometric data science review.</p><a href="https://colab.research.google.com/github/handicapskater/datascience/blob/main/HandicapSkater-Public.ipynb" target="_blank" rel="noopener">Launch public notebook</a></article>
-        <article class="card"><h3>Standards guidance</h3><p>For standards, doctrine, and public guidance on non-standard mobility aids, visit <span class="small-caps">HandicapSkater</span>.org.</p><a target="_blank" href="https://handicapskater.org/">Open <span class="small-caps">HandicapSkater</span>.org</a></article>
+      <div class="notice">
+        <strong>Evidence boundary</strong>
+        <p>Wearables estimate physiologic, autonomic, musculoskeletal, movement, impact, and transport burden. They do not directly measure pain. Results are within-person evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.</p>
       </div>
     </section>
   </main>
 
   <div id="site-footer"></div>
   <script src="/common/site-footer.js"></script>
-  <script>
-    (function () {
-      var paths = {
-        overview: "/data/review/fsi_tensor_v0_3_public_overview.json",
-        cohorts: "/data/review/fsi_tensor_v0_3_autonomic_gated_cohort_summary.json",
-        validation: "/data/review/fsi_tensor_v0_3_validation_summary.json",
-        manifest: "/data/review/fsi_tensor_v0_3_artifact_manifest_summary.json",
-        longitudinal: "/data/review/longitudinal_mobility_metrics.json",
-        longitudinalSummary: "/data/review/longitudinal_cohort_summary.json",
-        corpusPanel: "/data/review/mobility_science_corpus_panel.json",
-        metricCoverage: "/data/review/mobility_science_corpus_metric_coverage.json",
-        tableauStatus: "/data/review/tableau_mobility_aid_analytics_import_status.json"
-      };
-      function formatNumber(value, digits) {
-        var number = Number(value);
-        if (!Number.isFinite(number)) return "not available";
-        return number.toFixed(digits);
-      }
-      function text(value) {
-        return value === null || value === undefined || value === "" ? "not available" : String(value);
-      }
-      function fetchJson(path) {
-        return fetch(path, { cache: "no-store" }).then(function (response) {
-          if (!response.ok) throw new Error(path + " unavailable");
-          return response.json();
-        });
-      }
-      function renderKpis(overview) {
-        var target = document.getElementById("fsi-kpi-strip");
-        if (!target) return;
-        var items = [
-          ["Cohorts", overview.cohort_count],
-          ["Sessions", overview.session_count],
-          ["Validation moves", overview.validation_moves_complete_count + " / " + overview.validation_moves_expected_count],
-          ["Hashed artifacts", overview.hashed_artifacts_count]
-        ];
-        target.innerHTML = items.map(function (item) {
-          return '<article class="fsi-kpi"><span>' + item[0] + '</span><strong>' + text(item[1]) + '</strong></article>';
-        }).join("");
-      }
-      function renderFindings(overview) {
-        var target = document.getElementById("fsi-key-findings");
-        if (!target) return;
-        target.innerHTML = (overview.top_findings || []).slice(0, 5).map(function (finding, index) {
-          return '<article class="fsi-finding-card"><h3>Finding ' + (index + 1) + '</h3><p>' + text(finding) + '</p></article>';
-        }).join("");
-      }
-      function sortedRows(cohortPayload, overview) {
-        return (overview.cohort_rankings || cohortPayload.rows || []).slice().sort(function (left, right) {
-          return Number(left.fsi_tensor_v0_3_score_median || 999) - Number(right.fsi_tensor_v0_3_score_median || 999);
-        });
-      }
-      function renderRanking(cohortPayload, overview) {
-        var target = document.getElementById("fsi-cohort-ranking");
-        if (!target) return;
-        var rows = sortedRows(cohortPayload, overview);
-        if (!rows.length) {
-          target.hidden = true;
-          var rankingHeader = target.previousElementSibling;
-          if (rankingHeader) rankingHeader.hidden = true;
-          return;
-        }
-        var markup = rows.map(function (row, index) {
-          return [
-            '<div class="fsi-cohort-row">',
-            '<span><strong>#' + text(row.rank || index + 1) + '</strong></span>',
-            '<span><strong>' + text(row.cohort_label) + '</strong></span>',
-            '<span>' + text(row.n) + '</span>',
-            '<span class="fsi-score-pill">' + formatNumber(row.fsi_tensor_v0_3_score_median, 3) + '</span>',
-            '<span>' + formatNumber(row.impact_pain_burden_proxy_v0_3_median, 3) + '</span>',
-            '<span>' + text(row.burden_band_v0_3) + '</span>',
-            '<span>' + text(row.quick_interpretation) + '</span>',
-            '</div>'
-          ].join("");
-        }).join("");
-        target.insertAdjacentHTML("beforeend", markup);
-      }
-      function renderValidation(validation) {
-        var target = document.getElementById("fsi-validation-grid");
-        if (!target) return;
-        target.innerHTML = (validation.moves || []).map(function (move) {
-          return [
-            '<article class="fsi-validation-card">',
-            '<p class="eyebrow">Move ' + text(move.move) + '</p>',
-            '<h3>' + text(move.title) + '</h3>',
-            '<p><strong>Skeptic question:</strong> ' + text(move.skeptic_question) + '</p>',
-            '<p>' + text(move.answer || move.evidence_answer) + '</p>',
-            '<p><strong>Source:</strong> ' + text(move.source_file) + '</p>',
-            '<span class="fsi-score-pill">' + text(move.status) + '</span>',
-            '</article>'
-          ].join("");
-        }).join("");
-      }
-      function renderSourcePanel(overview, manifest) {
-        var target = document.getElementById("fsi-source-panel");
-        if (!target) return;
-        var sourcePaths = overview.source_paths || {};
-        var rows = [
-          ["Model id", overview.model_id],
-          ["Model version", overview.model_version],
-          ["Generated", overview.generated_at_utc],
-          ["Hashed artifacts", manifest.hashed_artifacts_count || overview.hashed_artifacts_count],
-          ["Cohort summary CSV", "data/review/fsi_tensor_v0_3_autonomic_gated_cohort_summary.csv"],
-          ["Validation summary", "data/review/fsi_tensor_v0_3_validation_summary.json"],
-          ["Source manifest", manifest.artifact_manifest_path || sourcePaths.source_index_dir]
-        ];
-        target.innerHTML = '<div class="fsi-source-grid">' + rows.map(function (row) {
-          return '<div><span>' + row[0] + '</span><strong>' + text(row[1]) + '</strong></div>';
-        }).join("") + '</div>';
-      }
-      function formatMaybe(value, digits, suffix) {
-        var number = Number(value);
-        if (!Number.isFinite(number)) return "not available";
-        return number.toFixed(digits) + (suffix || "");
-      }
-      function renderMobilityCorpus(longitudinal, longitudinalSummary, corpusPanel, metricCoverage, tableauStatus) {
-        var kpis = document.getElementById("mobility-corpus-kpis");
-        var summaryBody = document.getElementById("longitudinal-summary-body");
-        var summaryWrap = document.getElementById("longitudinal-summary-wrap");
-        var tableau = document.getElementById("tableau-import-status");
-        var cohortSummary = corpusPanel && Array.isArray(corpusPanel.cohort_summary) ? corpusPanel.cohort_summary : [];
-        var tierCounts = corpusPanel && corpusPanel.source_audit && corpusPanel.source_audit.evidence_tier_counts ? corpusPanel.source_audit.evidence_tier_counts : {};
-        var metricRows = metricCoverage && Array.isArray(metricCoverage.rows) ? metricCoverage.rows : [];
-        if (kpis) {
-          var items = [
-            ["Longitudinal rows", longitudinal && (longitudinal.full_row_count || longitudinal.row_count)],
-            ["Merged corpus rows", corpusPanel && corpusPanel.row_count],
-            ["Longitudinal context", tierCounts.longitudinal_context],
-            ["Episodic sensor rows", tierCounts.episodic_sensor],
-            ["Cohorts", cohortSummary.length],
-            ["Metric coverage rows", metricRows.length]
-          ];
-          kpis.innerHTML = items.map(function (item) {
-            return '<article class="fsi-kpi"><span>' + item[0] + '</span><strong>' + text(item[1]) + '</strong></article>';
-          }).join("");
-        }
-        if (summaryBody && summaryWrap) {
-          var rows = longitudinalSummary && Array.isArray(longitudinalSummary.rows) ? longitudinalSummary.rows : [];
-          rows = rows.filter(function (row) {
-            return ["walking", "fns_sns_skating", "pt_skating", "motorcycle", "paratransit_unknown_vehicle", "paratransit_sedan_or_taxi"].indexOf(row.canonical_cohort) !== -1;
-          }).slice(0, 8);
-          if (rows.length) {
-            summaryBody.innerHTML = rows.map(function (row) {
-              return [
-                '<tr>',
-                '<th scope="row">' + text(row.canonical_cohort) + '</th>',
-                '<td>' + text(row.n_activities) + '</td>',
-                '<td>' + formatMaybe(row.median_avg_hr_bpm, 1, " bpm") + '</td>',
-                '<td>' + formatMaybe(row.median_duration_min, 1, " min") + '</td>',
-                '<td>' + formatMaybe(row.median_distance_mi, 2, " mi") + '</td>',
-                '<td>' + formatMaybe(row.median_strain, 1, "") + '</td>',
-                '</tr>'
-              ].join("");
-            }).join("");
-            summaryWrap.hidden = false;
-          }
-        }
-        if (tableau && tableauStatus) {
-          var status = text(tableauStatus.status).replace(/_/g, " ");
-          tableau.innerHTML = [
-            '<h3>Tableau-era import status</h3>',
-            '<p>The historical Tableau Mobility Aid Analytics workbook is preserved as an analysis reference. The reproducible corpus imports local CSV extracts or repo data when available; it does not depend on live Tableau scraping.</p>',
-            '<p><strong>Status:</strong> ' + status + '. <strong>Imported rows:</strong> ' + text(tableauStatus.imported_rows) + '.</p>',
-            '<p><a class="text-link" href="' + text(tableauStatus.tableau_url) + '" target="_blank" rel="noopener noreferrer">Open historical Tableau workbook</a></p>'
-          ].join("");
-        }
-      }
-      Promise.all([fetchJson(paths.longitudinal), fetchJson(paths.longitudinalSummary), fetchJson(paths.corpusPanel), fetchJson(paths.metricCoverage), fetchJson(paths.tableauStatus)])
-        .then(function (payloads) {
-          renderMobilityCorpus(payloads[0], payloads[1], payloads[2], payloads[3], payloads[4]);
-        })
-        .catch(function (error) {
-          console.warn("Mobility Science Corpus refresh pending", error);
-        });
-      Promise.all([fetchJson(paths.overview), fetchJson(paths.cohorts), fetchJson(paths.validation), fetchJson(paths.manifest)])
-        .then(function (payloads) {
-          renderKpis(payloads[0]);
-          renderFindings(payloads[0]);
-          renderRanking(payloads[1], payloads[0]);
-          renderValidation(payloads[2]);
-          renderSourcePanel(payloads[0], payloads[3]);
-        })
-        .catch(function (error) {
-          console.warn("Evidence snapshot refresh pending", error);
-          var fallback = document.getElementById("fsi-data-fallback");
-          if (fallback) fallback.hidden = false;
-          ["fsi-kpi-strip", "fsi-key-findings", "fsi-cohort-ranking", "fsi-validation-grid", "fsi-source-panel"].forEach(function (id) {
-            var node = document.getElementById(id);
-            if (node) node.hidden = true;
-          });
-          var ranking = document.getElementById("fsi-cohort-ranking");
-          if (ranking && ranking.previousElementSibling) ranking.previousElementSibling.hidden = true;
-        });
-    })();
-  </script>
 </body>
 </html>

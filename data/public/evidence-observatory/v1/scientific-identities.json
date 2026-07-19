@@ -1,0 +1,90 @@
+{
+  "accessibility": {
+    "plain_language_summary": "FSI means Fractal Stability Index, CSS means Cohort Similarity Score, and Tensor v0.3 remains a separately versioned identity in the Evidence Observatory.",
+    "sample_counts_visible": false,
+    "screen_reader_summary": "FSI means Fractal Stability Index, CSS means Cohort Similarity Score, and Tensor v0.3 remains a separately versioned identity in the Evidence Observatory.",
+    "table_available": true,
+    "units_visible": false
+  },
+  "approved_values": {
+    "css": {
+      "identities": [
+        "css_cohort_review",
+        "css_same_day_triplet"
+      ],
+      "name": "Cohort Similarity Score",
+      "plain_language": "CSS records the entities compared and their similarity under a named formula; descriptive return direction is not CSS.",
+      "question": "How similar are the defined entities under an established CSS scope?"
+    },
+    "css_role": "CSS means Cohort Similarity Score and remains distinct from FSI and Tensor v0.3.",
+    "fsi": {
+      "identity": "fsi_tensor_v0_3",
+      "name": "Fractal Stability Index",
+      "plain_language": "FSI summarizes the established within-person fractal stability result while preserving scope, sample size, components, and formula version.",
+      "question": "How does the persisted stability/burden pattern compare within this record?"
+    },
+    "identity_disclosures": {
+      "css": "Descriptive return-toward-Mall direction is not Cohort Similarity Score.",
+      "fsi": "Fractal Stability Index remains distinct. The legacy cohort-relative burden ratio is not FSI."
+    },
+    "identity_locks": [
+      "legacy_cohort_relative_burden_ratio_v1 is not FSI",
+      "descriptive return-toward-Mall is not CSS",
+      "generic vector similarity is not canonical CSS"
+    ],
+    "platform_label": "FSI/CSS Evidence Observatory",
+    "tensor": {
+      "available_axes": [],
+      "identity": "fsi_tensor_v0_3",
+      "missing_axes": [
+        "component_detail_not_exposed_by_summary_view"
+      ],
+      "name": "Tensor v0.3",
+      "plain_language": "Tensor v0.3 is frozen. Its persisted output is shown without fabricating axes not exposed by the source view.",
+      "question": "What does the frozen multidimensional model output for its persisted scope?",
+      "version": "0.3"
+    }
+  },
+  "conclusion_strength": "not_applicable",
+  "content_hash": "9d2a3281e48d63ed4db599ba5164dd10ea88c29c6df8df595cb90bbb9125bb1c",
+  "data_through_date": "2026-07-09",
+  "destination": "handicapskater.com",
+  "evidence_scope": "Public identity and version explanation only.",
+  "formula_identities": [],
+  "intended_route": "/platform/",
+  "limitations": [
+    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are within-person evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+  ],
+  "plain_language_finding": "FSI means Fractal Stability Index, CSS means Cohort Similarity Score, and Tensor v0.3 remains a separately versioned identity in the Evidence Observatory.",
+  "relation_identities": [],
+  "resource_id": "scientific-identities",
+  "resource_version": "fsi_publication_resource.v1",
+  "sample_counts": {},
+  "short_title": "Scientific identities",
+  "source_contracts": [
+    {
+      "contract": "observatory_mcp_resource.v1",
+      "version": "observatory_bundle.v1"
+    },
+    {
+      "contract": "evidence_observatory_presentation.v1",
+      "version": "evidence_observatory_presentation.v1"
+    },
+    {
+      "contract": "scientific_consumer_contract.v1.0.0",
+      "version": "scientific_consumer_contract.v1.0.0"
+    },
+    {
+      "contract": "observatory_graph.v1",
+      "version": "observatory_graph.v1"
+    }
+  ],
+  "source_labels": [
+    "Fractal Stability Index",
+    "Cohort Similarity Score",
+    "Tensor v0.3"
+  ],
+  "summary": "FSI, CSS, and Tensor v0.3 remain separately versioned scientific identities.",
+  "title": "FSI, CSS, and Tensor identities",
+  "units": []
+}

@@ -5,7 +5,7 @@ import unittest
 class LinkTests(unittest.TestCase):
     def test_site_links(self):
         result = subprocess.run(
-            [sys.executable, "scripts/check_links.py"],
+            [sys.executable, "scripts/check_site_links.py"],
             text=True,
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,

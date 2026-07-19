@@ -11,16 +11,28 @@ ROOT = Path(__file__).resolve().parents[1]
 
 PUBLIC_PAGES = [
     Path("index.html"),
+    Path("story/index.html"),
+    Path("pain/index.html"),
+    Path("biomechanics/index.html"),
+    Path("evidence/index.html"),
+    Path("evidence/mobility-comparison/index.html"),
+    Path("evidence/repeated-protocol/index.html"),
+    Path("evidence/transportation/index.html"),
+    Path("evidence/longitudinal/index.html"),
+    Path("evidence/strava-gps-skate-maps/index.html"),
+    Path("health-ai/index.html"),
+    Path("platform/index.html"),
+    Path("access/index.html"),
+    Path("videos/index.html"),
+    # Representative compatibility shells remain part of the static route set.
     Path("story.html"),
     Path("videos.html"),
-    Path("story/index.html"),
-    Path("videos/index.html"),
-    Path("evidence/index.html"),
     Path("precedent.html"),
     Path("health-ai.html"),
     Path("platform.html"),
     Path("standards.html"),
-    Path("evidence/strava-gps-skate-maps/index.html"),
+    Path("paratransit-burden.html"),
+    Path("healthcare-wearable-mobility/index.html"),
 ]
 
 SAMPLED_MAP_PAGES = [

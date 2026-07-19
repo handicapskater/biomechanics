@@ -128,7 +128,280 @@
   font-variant: small-caps;
 }
 
+/* Slice 10E selective content restoration */
+.perspective-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.perspective-card,
+.source-link-card,
+.biomech-links .card,
+.story-links .card,
+.evidence-view-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.perspective-card .text-link,
+.source-link-card .text-link,
+.biomech-links .text-link,
+.story-links .text-link,
+.evidence-view-card .text-link {
+  margin-top: auto;
+  padding-top: 0.9rem;
+}
+
+.compact-section,
+.story-copy,
+.biomech-copy,
+.human-conclusion {
+  max-width: 880px;
+}
+
+.visual-story-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: center;
+}
+
+.human-figure,
+.architecture-figure {
+  margin: 0;
+}
+
+.human-figure {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 4px);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.human-figure img {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+}
+
+.human-figure figcaption,
+.architecture-figure figcaption {
+  padding: 0.9rem 1rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.pull-quote {
+  max-width: 860px;
+  margin: 2rem 0 0;
+  padding: 1.2rem 1.4rem;
+  border-left: 6px solid var(--gold);
+  background: var(--panel-alt);
+  font-size: clamp(1.25rem, 2.5vw, 1.7rem);
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.human-conclusion {
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border-left: 8px solid var(--gold);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.biomech-copy {
+  align-self: center;
+}
+
+.biomech-note,
+.story-note {
+  max-width: 860px;
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--teal);
+  font-size: 0.96rem;
+}
+
+.biomech-media {
+  margin: 0;
+}
+
+.biomech-media img {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+}
+
+.biomech-media figcaption {
+  margin-top: 0.8rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.plane-grid {
+  align-items: stretch;
+}
+
+.plane-grid figure {
+  text-align: center;
+}
+
+.source-line {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.layered-model,
+.review-sequence,
+.architecture-flow {
+  counter-reset: evidence-step;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.layered-model li,
+.review-sequence li,
+.architecture-flow li {
+  counter-increment: evidence-step;
+  position: relative;
+  min-height: 7.5rem;
+  padding: 1.15rem 1.15rem 1.15rem 4rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.layered-model li::before,
+.review-sequence li::before,
+.architecture-flow li::before {
+  content: counter(evidence-step);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: grid;
+  width: 2.2rem;
+  height: 2.2rem;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--blue);
+  color: #fff;
+  font-weight: 900;
+}
+
+.layered-model strong,
+.review-sequence strong,
+.architecture-flow strong,
+.layered-model span,
+.review-sequence span,
+.architecture-flow span {
+  display: block;
+}
+
+.layered-model span,
+.review-sequence span,
+.architecture-flow span {
+  margin-top: 0.4rem;
+  color: var(--muted);
+}
+
+.architecture-figure {
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 4px);
+  background: linear-gradient(145deg, #f8fbfa, #e5f0ef);
+}
+
+.architecture-flow {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.architecture-flow li {
+  min-height: 10rem;
+}
+
+.identity-boundary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.identity-boundary p {
+  margin: 0;
+  padding: 1rem;
+  border-left: 4px solid var(--teal);
+  background: var(--panel-alt);
+}
+
+.publication-finding-stack {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.publication-finding-stack > .card {
+  padding: clamp(1rem, 3vw, 1.6rem);
+}
+
+.home-hero {
+  background: linear-gradient(115deg, rgba(11, 42, 58, 0.97), rgba(3, 92, 105, 0.82)), url("/common/images/HandicapSkater-Hayabusa-Full.jpeg") center 43% / cover;
+}
+
+.story-hero {
+  background: linear-gradient(115deg, rgba(18, 44, 61, 0.97), rgba(24, 91, 95, 0.78)), url("/common/images/HandicapSkater-Hayabusa-Full.jpeg") center 58% / cover;
+}
+
+.pain-hero {
+  background: linear-gradient(120deg, #532c36, #17485a);
+}
+
+.biomechanics-hero {
+  background: linear-gradient(120deg, #163c45, #1f6b67);
+}
+
+.evidence-hero {
+  background: linear-gradient(120deg, #152f4b, #0a6c78);
+}
+
+.health-ai-hero {
+  background: linear-gradient(120deg, #26345c, #126c78);
+}
+
+.platform-hero {
+  background: linear-gradient(120deg, #102b47, #194f70);
+}
+
+.access-hero {
+  background: linear-gradient(115deg, rgba(48, 34, 27, 0.96), rgba(99, 68, 34, 0.8)), url("/common/images/HandicapSkater-H2-Skates.png") center 42% / cover;
+}
+
+.route-maps-hero {
+  background: linear-gradient(120deg, #173b56, #0a706d);
+}
+
+.biomechanics-hero h1,
+.health-ai-hero h1,
+.platform-hero h1,
+.access-hero h1,
+.route-maps-hero h1 {
+  font-size: clamp(2.6rem, 7vw, 5.6rem);
+}
+
 @media (max-width: 760px) {
+  .site-com .hero h1.small-caps {
+    font-size: clamp(2rem, 10.5vw, 2.8rem);
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+  }
+
   .image-row {
     flex-direction: column;
     align-items: center;
@@ -151,5 +424,73 @@
 
   .comparison-block {
     flex-basis: 100%;
+  }
+
+  .perspective-grid,
+  .visual-story-grid,
+  .layered-model,
+  .review-sequence,
+  .architecture-flow,
+  .identity-boundary {
+    grid-template-columns: 1fr;
+  }
+
+  .visual-story-grid {
+    gap: 1.25rem;
+  }
+
+  .human-figure img {
+    max-height: 380px;
+  }
+
+  .layered-model li,
+  .review-sequence li,
+  .architecture-flow li {
+    min-height: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 11pt;
+  }
+
+  .site-header,
+  .site-footer,
+  .button-row {
+    display: none !important;
+  }
+
+  .hero {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .hero .eyebrow,
+  .hero a {
+    color: #000 !important;
+  }
+
+  .section,
+  .hero-inner {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .card,
+  .notice,
+  figure,
+  .architecture-flow li,
+  .layered-model li,
+  .review-sequence li {
+    break-inside: avoid;
+    box-shadow: none;
+  }
+
+  .human-figure img,
+  .biomech-media img {
+    max-height: 260px;
   }
 }

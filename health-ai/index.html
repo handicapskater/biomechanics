@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A wearable health and mobility-intelligence case study about preserving activity, movement, transportation, source, and human context.">
+  <title>Context Is the Missing Sensor | HandicapSkater</title>
+  <link rel="canonical" href="https://handicapskater.com/health-ai/">
+  <link rel="icon" href="/common/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/advocacy-site.css">
+  <link rel="stylesheet" href="/common/css/site-tokens.css">
+  <link rel="stylesheet" href="/common/css/site-chrome.css">
+  <link rel="stylesheet" href="/common/css/site-components.css">
+  <link rel="stylesheet" href="/common/css/site-pages.css">
+  <script src="/common/site-header.js" defer></script>
+</head>
+<body class="site-com page-health-ai">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="hero health-ai-hero">
+      <div class="hero-inner">
+        <p class="eyebrow">WEARABLE HEALTH AND MOBILITY INTELLIGENCE</p>
+        <h1>Context Is the Missing Sensor</h1>
+        <p class="lead">Wearables capture signals. The harder problem is preserving what the person was doing, how the body was moving, how transportation affected it, and what the signal can actually support.</p>
+        <div class="hero-copy">
+          <p>This individual case study connects longitudinal wearables, routes, targeted episodic sensors, movement cohorts, transportation context, documentary history, and human review without treating them as interchangeable evidence.</p>
+        </div>
+        <div class="button-row">
+          <a class="button button-primary" href="/evidence/">Review the evidence map</a>
+          <a class="button button-secondary" href="/platform/">Explore the Evidence Observatory</a>
+          <a class="button button-light" href="/biomechanics/">Understand movement context</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="context-problem">
+      <div class="section-header">
+        <p class="eyebrow">The Context Problem</p>
+        <h2>A Signal Without Activity Context Can Be Misread</h2>
+        <p>The same heart-rate or HRV value can mean different things during pain-limited walking, controlled skating, motorcycle riding, passive passenger transportation, recovery, illness, heat, or emotional stress.</p>
+        <p>Default labels such as “walking,” “exercise,” “recreation,” and “transportation” can also hide the actual mobility function. For some disabled people, fewer steps and more rolling movement may represent better function rather than lower engagement.</p>
+      </div>
+      <div class="grid three">
+        <article class="card"><h3>Activity context</h3><p>Preserve what the person was doing rather than interpreting a signal from the sensor stream alone.</p></article>
+        <article class="card"><h3>Mobility function</h3><p>Distinguish exercise, transportation, therapy, daily access, and assistive movement even when they share a platform label.</p></article>
+        <article class="card"><h3>Human account</h3><p>Let the person explain pain, intent, equipment, environment, and what changed—without replacing their account with an automated label.</p></article>
+      </div>
+    </section>
+
+    <section class="section alt" id="longitudinal-episodic-ai">
+      <div class="section-header">
+        <p class="eyebrow">Longitudinal Plus Episodic Evidence</p>
+        <h2>Keep the Time Scales Distinct but Connected</h2>
+        <p>Longitudinal records can show sustained patterns, while episodic sensors can add specificity to a targeted activity or protocol. Combining them responsibly means retaining their different source scopes.</p>
+      </div>
+      <div class="grid three">
+        <article class="card"><p class="tag">Longitudinal</p><h3>WHOOP activity and recovery</h3><p>Repeated activity, strain, sleep, and overnight recovery context support trend review across time.</p></article>
+        <article class="card"><p class="tag">Functional travel</p><h3>Strava routes and output</h3><p>Route, distance, duration, speed, and repeated mobility add real-world functional context.</p></article>
+        <article class="card"><p class="tag">Episodic</p><h3>Polar H10 and Kubios</h3><p>Targeted RRI, HRV/RMSSD, ECG, acceleration, and movement evidence add session-specific detail where available.</p></article>
+      </div>
+      <p class="callout">WHOOP overnight recovery HRV/RMSSD is not Kubios session HRV. Connection should preserve source identity rather than flattening both into a generic “HRV” feature.</p>
+      <p><a class="text-link" href="/evidence/longitudinal/">Review the source-separated longitudinal view</a></p>
+    </section>
+
+    <section class="section" id="movement-transport-context">
+      <div class="section-header">
+        <p class="eyebrow">Movement and Transportation Context</p>
+        <h2>Mobility Does Not Stop at the Activity Label</h2>
+        <p>Walking, controlled inline skating, motorcycle control, and passenger transportation couple the body to movement differently. Vehicle, seat, posture, route, duration, vibration, impact, and the person's ability to control or interrupt exposure can all matter.</p>
+      </div>
+      <div class="grid two">
+        <article class="card"><h3>Movement sequence</h3><p>Walking and skating use different support and propulsion strategies. A classifier should not infer one from the other.</p><a class="text-link" href="/biomechanics/">See the movement context</a></article>
+        <article class="card"><h3>Body coupling</h3><p>Active controlled movement and passive passenger exposure can create different profiles even when both appear under a broad mobility category.</p><a class="text-link" href="/evidence/transportation/">Review transportation context</a></article>
+      </div>
+    </section>
+
+    <section class="section alt" id="cohorts-matter">
+      <div class="section-header">
+        <p class="eyebrow">Why Cohorts Matter</p>
+        <h2>Compare Like with Like Before Looking for Patterns</h2>
+        <p>Within-person baselines and carefully defined cohorts can preserve activity, movement, sensor, transportation, and recovery context. They also make missingness and small samples visible.</p>
+      </div>
+      <div class="grid three">
+        <article class="card"><h3>Preserve source labels</h3><p>Keep platform labels and user-confirmed context so classification provenance can be reviewed.</p></article>
+        <article class="card"><h3>Use within-person baselines</h3><p>Personal patterns may be more informative than forcing every person into a population-average activity model.</p></article>
+        <article class="card"><h3>Do not infer membership</h3><p>Insufficient or ambiguous records should remain review-required rather than silently joining a cohort.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="explainable-architecture">
+      <div class="section-header">
+        <p class="eyebrow">Explainable Evidence Architecture</p>
+        <h2>Provenance and Boundaries Are Product Features</h2>
+        <p>The FSI/CSS Evidence Observatory reconciles source-linked evidence on the server side. A consistent evidence interface and versioned publication contract let public websites display approved values without querying the warehouse or recomputing science.</p>
+      </div>
+      <div class="grid three">
+        <article class="card"><h3>Fractal Stability Index</h3><p>FSI answers its named stability question within an established scope. It is not a pain score.</p></article>
+        <article class="card"><h3>Cohort Similarity Score</h3><p>CSS answers a similarity question only under an established cohort-comparison scope.</p></article>
+        <article class="card"><h3>Tensor v0.3</h3><p>Tensor v0.3 is the frozen multidimensional model identity. It is not another label for FSI or CSS.</p></article>
+      </div>
+      <p class="callout">Human review remains necessary. An explainable evidence system should show source, units, samples, missingness, limitations, and the path from observation to interpretation.</p>
+    </section>
+
+    <section class="section alt" id="opportunities">
+      <div class="section-header">
+        <p class="eyebrow">Opportunities for Wearable and Mobility Teams</p>
+        <h2>Design Questions Worth Testing</h2>
+        <p>These are research and product questions, not claims of clinical validation, commercial readiness, partnership, or endorsement.</p>
+      </div>
+      <div class="grid three">
+        <article class="card"><h3>Context-preserving classification</h3><p>Reconcile device labels with user-confirmed mobility function and environment.</p></article>
+        <article class="card"><h3>Multimodal sensor fusion</h3><p>Connect physiology, routes, motion, transportation, and documents without erasing source roles.</p></article>
+        <article class="card"><h3>Personalized mobility intelligence</h3><p>Use within-person baselines and repeatability rather than treating step volume as the only positive outcome.</p></article>
+        <article class="card"><h3>Transportation analytics</h3><p>Preserve vehicle, body-coupling, posture, route, and exposure context.</p></article>
+        <article class="card"><h3>Explainable evidence systems</h3><p>Make provenance, samples, units, missingness, and limitations visible to reviewers.</p></article>
+        <article class="card"><h3>User-controlled summaries</h3><p>Explore privacy-preserving ways for people to share relevant functional context with clinicians, accessibility teams, researchers, or agencies.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="research-collaboration">
+      <div class="section-header">
+        <p class="eyebrow">Research and Collaboration</p>
+        <h2>A Concrete Case for Responsible Review</h2>
+        <p>This record may support carefully scoped research in wearable context preservation, mobility classification, multimodal evidence, transportation exposure, accessibility, explainability, source provenance, and human-in-the-loop review.</p>
+        <p>Any collaboration would require explicit scope, privacy review, validation, and agreement. This page does not imply a current relationship with a wearable, healthcare, transportation, research, or technology organization.</p>
+      </div>
+    </section>
+
+    <section class="section alt" id="review-observatory">
+      <div class="section-header">
+        <p class="eyebrow">Review the Evidence Observatory</p>
+        <h2>Move from Product Question to Inspectable Evidence</h2>
+        <p>The public platform page explains how sources are reconciled, how FSI, CSS, and Tensor remain separate, and how publication contracts protect the websites from scientific drift.</p>
+      </div>
+      <div class="button-row">
+        <a class="button button-primary" href="/platform/">Explore the platform</a>
+        <a class="button button-secondary" href="/evidence/">Review the evidence map</a>
+        <a class="button button-secondary" href="/evidence/longitudinal/">Longitudinal evidence</a>
+        <a class="button button-light" href="/evidence/transportation/">Transportation evidence</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="notice"><strong>Boundary</strong><p>This is a research and product-design case study. It does not diagnose, directly measure pain, establish clinical validation, prove causation, or claim a commercial partnership.</p></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="/common/site-footer.js"></script>
+</body>
+</html>

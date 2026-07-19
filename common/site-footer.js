@@ -23,6 +23,15 @@
 </style>
 <footer class="site-footer">
     <div class="footer-inner">
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="/story/">Story</a>
+      <a href="/biomechanics/">Movement</a>
+      <a href="/evidence/">Evidence</a>
+      <a href="/access/">Access</a>
+      <a href="/platform/">Evidence Observatory</a>
+      <a href="/health-ai/">Health AI</a>
+      <a href="https://handicapskater.org/standards/" target="_blank" rel="noopener noreferrer">Standards &amp; Reviewer Guidance</a>
+    </nav>
     <div class="footer-social" aria-label="Support and social links">
       <a href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai" target="_blank" rel="noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg"

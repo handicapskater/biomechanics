@@ -1,0 +1,102 @@
+{
+  "accessibility": {
+    "plain_language_summary": "Public source summaries preserve contract, relation, and limitation identity without exposing local paths or raw signals.",
+    "sample_counts_visible": false,
+    "screen_reader_summary": "Public source summaries preserve contract, relation, and limitation identity without exposing local paths or raw signals.",
+    "table_available": true,
+    "units_visible": false
+  },
+  "approved_values": {
+    "guardrails": {
+      "absolute_paths_exposed": false,
+      "arbitrary_sql": false,
+      "publication": false,
+      "raw_signal_arrays_exposed": false,
+      "writes": false
+    },
+    "lineage_row_count": 852,
+    "migration_count": 11,
+    "source_contracts": [
+      {
+        "content_hash": "d5bb9057dc7ff6440eca5bf4e37d6e097d683574623c3c485ad9909847915943",
+        "row_count": 852,
+        "source_relation": "v_scientific_evidence"
+      },
+      {
+        "content_hash": "0bc998bd2e7539b3f0de77cfdc5bb3a05e11dc7f3bf3d794c4fa37988b809c6c",
+        "row_count": 22,
+        "source_relation": "v_fsi_summary"
+      },
+      {
+        "content_hash": "55f271731ff55bd00825f27884f78872ed94a410899c122c2f9bc4ccc71f30c5",
+        "row_count": 31,
+        "source_relation": "v_css_summary"
+      },
+      {
+        "content_hash": "44fbb11a310e4f2ee25750abe221c53731552791bff5af9b6132f4549d307d32",
+        "row_count": 22,
+        "source_relation": "v_tensor_summary"
+      },
+      {
+        "content_hash": "533592756ddfeb753925b9171eebd64b4b52c54f94b5ba843a55f146143313be",
+        "row_count": 852,
+        "source_relation": "v_scientific_quality"
+      },
+      {
+        "content_hash": "5b1f5b733e6fab677ff2089fcf9aa26e52919a209175e54326560763f9ec22e9",
+        "row_count": 45,
+        "source_relation": "v_scientific_triplets"
+      },
+      {
+        "content_hash": "2e8ac17e5b9f0f9cc7e52b0f39521819a503ce7096d60973375fda9ff57dbf77",
+        "row_count": 60,
+        "source_relation": "v_scientific_longitudinal"
+      },
+      {
+        "content_hash": "15a4bf76af7e28d83b9b58689708fc4530216a5f03be8595e500198445897bfa",
+        "row_count": 7,
+        "source_relation": "v_scientific_metric_coverage"
+      }
+    ]
+  },
+  "conclusion_strength": "not_applicable",
+  "content_hash": "7f688955b16937ace52539530469ab58f68f1a6d42101e53b8bedd123c68b0c7",
+  "data_through_date": "2026-07-09",
+  "destination": "handicapskater.com",
+  "evidence_scope": "Public-safe provenance summary; no raw source records.",
+  "formula_identities": [],
+  "intended_route": "/evidence/",
+  "limitations": [
+    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are within-person evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+  ],
+  "plain_language_finding": "Public source summaries preserve contract, relation, and limitation identity without exposing local paths or raw signals.",
+  "relation_identities": [],
+  "resource_id": "sources",
+  "resource_version": "fsi_publication_resource.v1",
+  "sample_counts": {},
+  "short_title": "Sources",
+  "source_contracts": [
+    {
+      "contract": "observatory_mcp_resource.v1",
+      "version": "observatory_bundle.v1"
+    },
+    {
+      "contract": "evidence_observatory_presentation.v1",
+      "version": "evidence_observatory_presentation.v1"
+    },
+    {
+      "contract": "scientific_consumer_contract.v1.0.0",
+      "version": "scientific_consumer_contract.v1.0.0"
+    },
+    {
+      "contract": "observatory_graph.v1",
+      "version": "observatory_graph.v1"
+    }
+  ],
+  "source_labels": [
+    "Canonical scientific quality and coverage views"
+  ],
+  "summary": "Versioned contracts and public-safe source categories support reproducibility.",
+  "title": "Source and audit summary",
+  "units": []
+}

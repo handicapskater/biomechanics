@@ -1,0 +1,1787 @@
+{
+  "accessibility": {
+    "plain_language_summary": "The repeated protocol shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged; no universal return claim is made.",
+    "sample_counts_visible": true,
+    "screen_reader_summary": "Four accepted dates are shown as three-stage Mall Skate, Walk, and PT Skate profiles. Metric-specific directions remain mixed and reciprocal CSS rows are omitted from the default view.",
+    "table_available": true,
+    "units_visible": true
+  },
+  "approved_values": {
+    "accepted_protocols": [
+      {
+        "css_connectors": [
+          {
+            "distance": 0.5594792768738659,
+            "formula_version": "css_same_day_triplet.v1",
+            "left_label": "Walk",
+            "left_role": "walk",
+            "quality": "valid",
+            "right_label": "PT Skate",
+            "right_role": "pt",
+            "score": 0.6412396848290292,
+            "unit": "unitless_similarity_0_to_1"
+          },
+          {
+            "distance": 0.8199080008111594,
+            "formula_version": "css_same_day_triplet.v1",
+            "left_label": "Mall Skate",
+            "left_role": "mall",
+            "quality": "valid",
+            "right_label": "Walk",
+            "right_role": "walk",
+            "score": 0.5494783250330706,
+            "unit": "unitless_similarity_0_to_1"
+          },
+          {
+            "distance": 0.847472250552087,
+            "formula_version": "css_same_day_triplet.v1",
+            "left_label": "Mall Skate",
+            "left_role": "mall",
+            "quality": "valid",
+            "right_label": "PT Skate",
+            "right_role": "pt",
+            "score": 0.5412801192013392,
+            "unit": "unitless_similarity_0_to_1"
+          }
+        ],
+        "date": "2026-07-05",
+        "direction_counts": {
+          "away_from_mall": 13,
+          "toward_mall": 4,
+          "unavailable": 0,
+          "unchanged": 0
+        },
+        "direction_groups": {
+          "away_from_mall": [
+            "magnitude_dynamic_g_rms",
+            "vertical_dynamic_g_rms",
+            "horizontal_dynamic_g_rms",
+            "stillness_fraction",
+            "vertical_jerk_rms_g_per_s",
+            "magnitude_jerk_rms_g_per_s",
+            "movement_fraction",
+            "cumulative_dynamic_shock_per_min",
+            "shock_spike_rate_per_min",
+            "sdnn_ms",
+            "rmssd_ms",
+            "mean_hr_bpm",
+            "median_hr_bpm"
+          ],
+          "toward_mall": [
+            "duration_seconds",
+            "vertical_to_horizontal_dynamic_rms_ratio",
+            "impact_rate_per_min",
+            "distance_miles"
+          ],
+          "unavailable": [],
+          "unchanged": []
+        },
+        "late_strava_status": "joined",
+        "protocol_version": "mall_walk_pt.v1",
+        "stages": [
+          {
+            "distance": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "valid",
+              "unit": "miles",
+              "value": 3.27
+            },
+            "duration": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 1931.0
+            },
+            "fsi": {
+              "status": "metric_not_exposed_for_triplet_stage",
+              "value": null
+            },
+            "label": "Mall Skate",
+            "metrics": {
+              "cumulative_dynamic_shock_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g*s/min",
+                "value": 2.1843857750710436
+              },
+              "distance_miles": {
+                "formula_version": "source_supplied_distance.v1",
+                "quality": "valid",
+                "unit": "miles",
+                "value": 3.27
+              },
+              "duration_seconds": {
+                "formula_version": "episodic_kubios_metrics.v1.0.0",
+                "quality": "valid",
+                "unit": "s",
+                "value": 1931.0
+              },
+              "magnitude_jerk_rms_g_per_s": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g/s",
+                "value": 0.5906551160287685
+              },
+              "shock_spike_rate_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "count/min",
+                "value": 23.826857160190496
+              },
+              "vertical_dynamic_g_rms": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g",
+                "value": 0.05158522954970856
+              }
+            },
+            "quality": [
+              "valid"
+            ],
+            "role": "mall"
+          },
+          {
+            "distance": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "valid",
+              "unit": "miles",
+              "value": 0.26
+            },
+            "duration": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 327.0
+            },
+            "fsi": {
+              "status": "metric_not_exposed_for_triplet_stage",
+              "value": null
+            },
+            "label": "Walk",
+            "metrics": {
+              "cumulative_dynamic_shock_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g*s/min",
+                "value": 5.8055150592573925
+              },
+              "distance_miles": {
+                "formula_version": "source_supplied_distance.v1",
+                "quality": "valid",
+                "unit": "miles",
+                "value": 0.26
+              },
+              "duration_seconds": {
+                "formula_version": "episodic_kubios_metrics.v1.0.0",
+                "quality": "valid",
+                "unit": "s",
+                "value": 327.0
+              },
+              "magnitude_jerk_rms_g_per_s": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g/s",
+                "value": 1.1353973060858273
+              },
+              "shock_spike_rate_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "count/min",
+                "value": 28.60759493670886
+              },
+              "vertical_dynamic_g_rms": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g",
+                "value": 0.12620161185850665
+              }
+            },
+            "quality": [
+              "valid"
+            ],
+            "role": "walk"
+          },
+          {
+            "distance": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "valid",
+              "unit": "miles",
+              "value": 2.96
+            },
+            "duration": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 1050.0
+            },
+            "fsi": {
+              "status": "metric_not_exposed_for_triplet_stage",
+              "value": null
+            },
+            "label": "PT Skate",
+            "metrics": {
+              "cumulative_dynamic_shock_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g*s/min",
+                "value": 6.076523683686936
+              },
+              "distance_miles": {
+                "formula_version": "source_supplied_distance.v1",
+                "quality": "valid",
+                "unit": "miles",
+                "value": 2.96
+              },
+              "duration_seconds": {
+                "formula_version": "episodic_kubios_metrics.v1.0.0",
+                "quality": "valid",
+                "unit": "s",
+                "value": 1050.0
+              },
+              "magnitude_jerk_rms_g_per_s": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g/s",
+                "value": 1.4022795973471656
+              },
+              "shock_spike_rate_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "count/min",
+                "value": 29.601082932758715
+              },
+              "vertical_dynamic_g_rms": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g",
+                "value": 0.1397323763960435
+              }
+            },
+            "quality": [
+              "valid"
+            ],
+            "role": "pt"
+          }
+        ],
+        "unequal_distance_disclosure": "Mall, walking, and PT stages retain their source-supplied unequal distances; equal exposure is not assumed."
+      },
+      {
+        "css_connectors": [
+          {
+            "distance": 0.5988020915796496,
+            "formula_version": "css_same_day_triplet.v1",
+            "left_label": "Walk",
+            "left_role": "walk",
+            "quality": "valid",
+            "right_label": "PT Skate",
+            "right_role": "pt",
+            "score": 0.6254682835772245,
+            "unit": "unitless_similarity_0_to_1"
+          },
+          {
+            "distance": 0.7332397197492384,
+            "formula_version": "css_same_day_triplet.v1",
+            "left_label": "Mall Skate",
+            "left_role": "mall",
+            "quality": "valid",
+            "right_label": "Walk",
+            "right_role": "walk",
+            "score": 0.576954236973451,
+            "unit": "unitless_similarity_0_to_1"
+          },
+          {
+            "distance": 0.897885378796086,
+            "formula_version": "css_same_day_triplet.v1",
+            "left_label": "Mall Skate",
+            "left_role": "mall",
+            "quality": "valid",
+            "right_label": "PT Skate",
+            "right_role": "pt",
+            "score": 0.5269022097816808,
+            "unit": "unitless_similarity_0_to_1"
+          }
+        ],
+        "date": "2026-07-06",
+        "direction_counts": {
+          "away_from_mall": 12,
+          "toward_mall": 4,
+          "unavailable": 1,
+          "unchanged": 0
+        },
+        "direction_groups": {
+          "away_from_mall": [
+            "magnitude_dynamic_g_rms",
+            "vertical_dynamic_g_rms",
+            "horizontal_dynamic_g_rms",
+            "stillness_fraction",
+            "vertical_jerk_rms_g_per_s",
+            "magnitude_jerk_rms_g_per_s",
+            "movement_fraction",
+            "cumulative_dynamic_shock_per_min",
+            "rmssd_ms",
+            "sdnn_ms",
+            "mean_hr_bpm",
+            "median_hr_bpm"
+          ],
+          "toward_mall": [
+            "duration_seconds",
+            "vertical_to_horizontal_dynamic_rms_ratio",
+            "shock_spike_rate_per_min",
+            "impact_rate_per_min"
+          ],
+          "unavailable": [
+            "distance_miles"
+          ],
+          "unchanged": []
+        },
+        "late_strava_status": "no_matching_strava_activity",
+        "protocol_version": "mall_walk_pt.v1",
+        "stages": [
+          {
+            "distance": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "unavailable",
+              "unit": "miles",
+              "value": null
+            },
+            "duration": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 2063.0
+            },
+            "fsi": {
+              "status": "metric_not_exposed_for_triplet_stage",
+              "value": null
+            },
+            "label": "Mall Skate",
+            "metrics": {
+              "cumulative_dynamic_shock_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g*s/min",
+                "value": 2.140320913030632
+              },
+              "distance_miles": {
+                "formula_version": "source_supplied_distance.v1",
+                "quality": "unavailable",
+                "unit": "miles",
+                "value": null
+              },
+              "duration_seconds": {
+                "formula_version": "episodic_kubios_metrics.v1.0.0",
+                "quality": "valid",
+                "unit": "s",
+                "value": 2063.0
+              },
+              "magnitude_jerk_rms_g_per_s": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g/s",
+                "value": 0.607662314585683
+              },
+              "shock_spike_rate_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "count/min",
+                "value": 25.2612488125054
+              },
+              "vertical_dynamic_g_rms": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g",
+                "value": 0.050869758399328176
+              }
+            },
+            "quality": [
+              "unavailable",
+              "valid"
+            ],
+            "role": "mall"
+          },
+          {
+            "distance": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "unavailable",
+              "unit": "miles",
+              "value": null
+            },
+            "duration": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 337.0
+            },
+            "fsi": {
+              "status": "metric_not_exposed_for_triplet_stage",
+              "value": null
+            },
+            "label": "Walk",
+            "metrics": {
+              "cumulative_dynamic_shock_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g*s/min",
+                "value": 5.7112189370490425
+              },
+              "distance_miles": {
+                "formula_version": "source_supplied_distance.v1",
+                "quality": "unavailable",
+                "unit": "miles",
+                "value": null
+              },
+              "duration_seconds": {
+                "formula_version": "episodic_kubios_metrics.v1.0.0",
+                "quality": "valid",
+                "unit": "s",
+                "value": 337.0
+              },
+              "magnitude_jerk_rms_g_per_s": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g/s",
+                "value": 1.0969256592716383
+              },
+              "shock_spike_rate_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "count/min",
+                "value": 29.5863004408274
+              },
+              "vertical_dynamic_g_rms": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g",
+                "value": 0.12536251370843082
+              }
+            },
+            "quality": [
+              "unavailable",
+              "valid"
+            ],
+            "role": "walk"
+          },
+          {
+            "distance": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "unavailable",
+              "unit": "miles",
+              "value": null
+            },
+            "duration": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 1092.0
+            },
+            "fsi": {
+              "status": "metric_not_exposed_for_triplet_stage",
+              "value": null
+            },
+            "label": "PT Skate",
+            "metrics": {
+              "cumulative_dynamic_shock_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g*s/min",
+                "value": 6.0313197046256235
+              },
+              "distance_miles": {
+                "formula_version": "source_supplied_distance.v1",
+                "quality": "unavailable",
+                "unit": "miles",
+                "value": null
+              },
+              "duration_seconds": {
+                "formula_version": "episodic_kubios_metrics.v1.0.0",
+                "quality": "valid",
+                "unit": "s",
+                "value": 1092.0
+              },
+              "magnitude_jerk_rms_g_per_s": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g/s",
+                "value": 1.2872407626762206
+              },
+              "shock_spike_rate_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "count/min",
+                "value": 28.13021702838063
+              },
+              "vertical_dynamic_g_rms": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g",
+                "value": 0.13713831396230983
+              }
+            },
+            "quality": [
+              "unavailable",
+              "valid"
+            ],
+            "role": "pt"
+          }
+        ],
+        "unequal_distance_disclosure": "Mall, walking, and PT stages retain their source-supplied unequal distances; equal exposure is not assumed."
+      },
+      {
+        "css_connectors": [
+          {
+            "distance": 0.5908599007802747,
+            "formula_version": "css_same_day_triplet.v1",
+            "left_label": "Walk",
+            "left_role": "walk",
+            "quality": "valid",
+            "right_label": "PT Skate",
+            "right_role": "pt",
+            "score": 0.6285908642926548,
+            "unit": "unitless_similarity_0_to_1"
+          },
+          {
+            "distance": 0.8109378907474205,
+            "formula_version": "css_same_day_triplet.v1",
+            "left_label": "Mall Skate",
+            "left_role": "mall",
+            "quality": "valid",
+            "right_label": "PT Skate",
+            "right_role": "pt",
+            "score": 0.5522000534139105,
+            "unit": "unitless_similarity_0_to_1"
+          },
+          {
+            "distance": 0.8462262200877754,
+            "formula_version": "css_same_day_triplet.v1",
+            "left_label": "Mall Skate",
+            "left_role": "mall",
+            "quality": "valid",
+            "right_label": "Walk",
+            "right_role": "walk",
+            "score": 0.5416454327858354,
+            "unit": "unitless_similarity_0_to_1"
+          }
+        ],
+        "date": "2026-07-07",
+        "direction_counts": {
+          "away_from_mall": 10,
+          "toward_mall": 6,
+          "unavailable": 1,
+          "unchanged": 0
+        },
+        "direction_groups": {
+          "away_from_mall": [
+            "vertical_dynamic_g_rms",
+            "horizontal_dynamic_g_rms",
+            "stillness_fraction",
+            "magnitude_jerk_rms_g_per_s",
+            "vertical_jerk_rms_g_per_s",
+            "movement_fraction",
+            "cumulative_dynamic_shock_per_min",
+            "shock_spike_rate_per_min",
+            "mean_hr_bpm",
+            "median_hr_bpm"
+          ],
+          "toward_mall": [
+            "duration_seconds",
+            "magnitude_dynamic_g_rms",
+            "vertical_to_horizontal_dynamic_rms_ratio",
+            "impact_rate_per_min",
+            "rmssd_ms",
+            "sdnn_ms"
+          ],
+          "unavailable": [
+            "distance_miles"
+          ],
+          "unchanged": []
+        },
+        "late_strava_status": "pending_weekly_download",
+        "protocol_version": "mall_walk_pt.v1",
+        "stages": [
+          {
+            "distance": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "unavailable",
+              "unit": "miles",
+              "value": null
+            },
+            "duration": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 2056.0
+            },
+            "fsi": {
+              "status": "metric_not_exposed_for_triplet_stage",
+              "value": null
+            },
+            "label": "Mall Skate",
+            "metrics": {
+              "cumulative_dynamic_shock_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g*s/min",
+                "value": 2.064294666430339
+              },
+              "distance_miles": {
+                "formula_version": "source_supplied_distance.v1",
+                "quality": "unavailable",
+                "unit": "miles",
+                "value": null
+              },
+              "duration_seconds": {
+                "formula_version": "episodic_kubios_metrics.v1.0.0",
+                "quality": "valid",
+                "unit": "s",
+                "value": 2056.0
+              },
+              "magnitude_jerk_rms_g_per_s": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g/s",
+                "value": 0.735219324142032
+              },
+              "shock_spike_rate_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "count/min",
+                "value": 28.15938022003341
+              },
+              "vertical_dynamic_g_rms": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g",
+                "value": 0.04946651320855935
+              }
+            },
+            "quality": [
+              "unavailable",
+              "valid"
+            ],
+            "role": "mall"
+          },
+          {
+            "distance": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "unavailable",
+              "unit": "miles",
+              "value": null
+            },
+            "duration": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 369.0
+            },
+            "fsi": {
+              "status": "metric_not_exposed_for_triplet_stage",
+              "value": null
+            },
+            "label": "Walk",
+            "metrics": {
+              "cumulative_dynamic_shock_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g*s/min",
+                "value": 5.55520352561702
+              },
+              "distance_miles": {
+                "formula_version": "source_supplied_distance.v1",
+                "quality": "unavailable",
+                "unit": "miles",
+                "value": null
+              },
+              "duration_seconds": {
+                "formula_version": "episodic_kubios_metrics.v1.0.0",
+                "quality": "valid",
+                "unit": "s",
+                "value": 369.0
+              },
+              "magnitude_jerk_rms_g_per_s": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g/s",
+                "value": 1.1152569231957008
+              },
+              "shock_spike_rate_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "count/min",
+                "value": 30.114226375908615
+              },
+              "vertical_dynamic_g_rms": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g",
+                "value": 0.12634899559174578
+              }
+            },
+            "quality": [
+              "unavailable",
+              "valid"
+            ],
+            "role": "walk"
+          },
+          {
+            "distance": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "unavailable",
+              "unit": "miles",
+              "value": null
+            },
+            "duration": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 1078.0
+            },
+            "fsi": {
+              "status": "metric_not_exposed_for_triplet_stage",
+              "value": null
+            },
+            "label": "PT Skate",
+            "metrics": {
+              "cumulative_dynamic_shock_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g*s/min",
+                "value": 5.588748531747921
+              },
+              "distance_miles": {
+                "formula_version": "source_supplied_distance.v1",
+                "quality": "unavailable",
+                "unit": "miles",
+                "value": null
+              },
+              "duration_seconds": {
+                "formula_version": "episodic_kubios_metrics.v1.0.0",
+                "quality": "valid",
+                "unit": "s",
+                "value": 1078.0
+              },
+              "magnitude_jerk_rms_g_per_s": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g/s",
+                "value": 1.3735566721645014
+              },
+              "shock_spike_rate_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "count/min",
+                "value": 32.191158086146146
+              },
+              "vertical_dynamic_g_rms": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g",
+                "value": 0.12776367391373683
+              }
+            },
+            "quality": [
+              "unavailable",
+              "valid"
+            ],
+            "role": "pt"
+          }
+        ],
+        "unequal_distance_disclosure": "Mall, walking, and PT stages retain their source-supplied unequal distances; equal exposure is not assumed."
+      },
+      {
+        "css_connectors": [
+          {
+            "distance": 0.5582410810133657,
+            "formula_version": "css_same_day_triplet.v1",
+            "left_label": "Walk",
+            "left_role": "walk",
+            "quality": "valid",
+            "right_label": "PT Skate",
+            "right_role": "pt",
+            "score": 0.6417492210830903,
+            "unit": "unitless_similarity_0_to_1"
+          },
+          {
+            "distance": 0.7649702891724811,
+            "formula_version": "css_same_day_triplet.v1",
+            "left_label": "Mall Skate",
+            "left_role": "mall",
+            "quality": "valid",
+            "right_label": "Walk",
+            "right_role": "walk",
+            "score": 0.5665817754183597,
+            "unit": "unitless_similarity_0_to_1"
+          },
+          {
+            "distance": 0.8725198623602355,
+            "formula_version": "css_same_day_triplet.v1",
+            "left_label": "Mall Skate",
+            "left_role": "mall",
+            "quality": "valid",
+            "right_label": "PT Skate",
+            "right_role": "pt",
+            "score": 0.5340397290843903,
+            "unit": "unitless_similarity_0_to_1"
+          }
+        ],
+        "date": "2026-07-08",
+        "direction_counts": {
+          "away_from_mall": 12,
+          "toward_mall": 4,
+          "unavailable": 1,
+          "unchanged": 0
+        },
+        "direction_groups": {
+          "away_from_mall": [
+            "magnitude_dynamic_g_rms",
+            "vertical_dynamic_g_rms",
+            "horizontal_dynamic_g_rms",
+            "stillness_fraction",
+            "magnitude_jerk_rms_g_per_s",
+            "movement_fraction",
+            "vertical_jerk_rms_g_per_s",
+            "cumulative_dynamic_shock_per_min",
+            "rmssd_ms",
+            "sdnn_ms",
+            "mean_hr_bpm",
+            "median_hr_bpm"
+          ],
+          "toward_mall": [
+            "duration_seconds",
+            "vertical_to_horizontal_dynamic_rms_ratio",
+            "shock_spike_rate_per_min",
+            "impact_rate_per_min"
+          ],
+          "unavailable": [
+            "distance_miles"
+          ],
+          "unchanged": []
+        },
+        "late_strava_status": "pending_weekly_download",
+        "protocol_version": "mall_walk_pt.v1",
+        "stages": [
+          {
+            "distance": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "unavailable",
+              "unit": "miles",
+              "value": null
+            },
+            "duration": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 2135.0
+            },
+            "fsi": {
+              "status": "metric_not_exposed_for_triplet_stage",
+              "value": null
+            },
+            "label": "Mall Skate",
+            "metrics": {
+              "cumulative_dynamic_shock_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g*s/min",
+                "value": 2.0895196212986793
+              },
+              "distance_miles": {
+                "formula_version": "source_supplied_distance.v1",
+                "quality": "unavailable",
+                "unit": "miles",
+                "value": null
+              },
+              "duration_seconds": {
+                "formula_version": "episodic_kubios_metrics.v1.0.0",
+                "quality": "valid",
+                "unit": "s",
+                "value": 2135.0
+              },
+              "magnitude_jerk_rms_g_per_s": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g/s",
+                "value": 0.7694139040040985
+              },
+              "shock_spike_rate_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "count/min",
+                "value": 25.22533977564918
+              },
+              "vertical_dynamic_g_rms": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g",
+                "value": 0.05062696962970238
+              }
+            },
+            "quality": [
+              "unavailable",
+              "valid"
+            ],
+            "role": "mall"
+          },
+          {
+            "distance": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "unavailable",
+              "unit": "miles",
+              "value": null
+            },
+            "duration": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 374.0
+            },
+            "fsi": {
+              "status": "metric_not_exposed_for_triplet_stage",
+              "value": null
+            },
+            "label": "Walk",
+            "metrics": {
+              "cumulative_dynamic_shock_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g*s/min",
+                "value": 5.776993315199847
+              },
+              "distance_miles": {
+                "formula_version": "source_supplied_distance.v1",
+                "quality": "unavailable",
+                "unit": "miles",
+                "value": null
+              },
+              "duration_seconds": {
+                "formula_version": "episodic_kubios_metrics.v1.0.0",
+                "quality": "valid",
+                "unit": "s",
+                "value": 374.0
+              },
+              "magnitude_jerk_rms_g_per_s": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g/s",
+                "value": 1.0971236641265576
+              },
+              "shock_spike_rate_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "count/min",
+                "value": 29.986052998605295
+              },
+              "vertical_dynamic_g_rms": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g",
+                "value": 0.1224656036647771
+              }
+            },
+            "quality": [
+              "unavailable",
+              "valid"
+            ],
+            "role": "walk"
+          },
+          {
+            "distance": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "unavailable",
+              "unit": "miles",
+              "value": null
+            },
+            "duration": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 1138.0
+            },
+            "fsi": {
+              "status": "metric_not_exposed_for_triplet_stage",
+              "value": null
+            },
+            "label": "PT Skate",
+            "metrics": {
+              "cumulative_dynamic_shock_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g*s/min",
+                "value": 6.304701120099959
+              },
+              "distance_miles": {
+                "formula_version": "source_supplied_distance.v1",
+                "quality": "unavailable",
+                "unit": "miles",
+                "value": null
+              },
+              "duration_seconds": {
+                "formula_version": "episodic_kubios_metrics.v1.0.0",
+                "quality": "valid",
+                "unit": "s",
+                "value": 1138.0
+              },
+              "magnitude_jerk_rms_g_per_s": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g/s",
+                "value": 1.195812356532236
+              },
+              "shock_spike_rate_per_min": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "count/min",
+                "value": 27.281191806331467
+              },
+              "vertical_dynamic_g_rms": {
+                "formula_version": "kubios_acc_session_metrics.v1",
+                "quality": "valid",
+                "unit": "g",
+                "value": 0.14073728436967511
+              }
+            },
+            "quality": [
+              "unavailable",
+              "valid"
+            ],
+            "role": "pt"
+          }
+        ],
+        "unequal_distance_disclosure": "Mall, walking, and PT stages retain their source-supplied unequal distances; equal exposure is not assumed."
+      }
+    ],
+    "accepted_triplet_count": 4,
+    "protocol": [
+      {
+        "description": "controlled, step-free skating comparator",
+        "label": "Mall Skate",
+        "role": "mall"
+      },
+      {
+        "description": "pain-limited ballistic gait exposure",
+        "label": "Walk",
+        "role": "walk"
+      },
+      {
+        "description": "controlled skating after the walking stage",
+        "label": "PT Skate",
+        "role": "pt"
+      }
+    ],
+    "repeated_direction_summary": [
+      {
+        "accepted_triplet_count": 4,
+        "direction_consistency": "walking_higher_than_mall",
+        "direction_consistency_count": 2,
+        "direction_consistency_fraction": 0.5,
+        "formula_version": "triplet_repeated_validation.v1|kubios_rri_time_domain_metrics.v1",
+        "mall_iqr": 19.11151706088194,
+        "mall_median": 30.105477914961828,
+        "mall_pt_paired_date_count": 4,
+        "mall_q1": 21.213252810282416,
+        "mall_q3": 40.32476987116436,
+        "mall_sample_count": 4,
+        "mall_walk_paired_date_count": 4,
+        "metric_name": "rmssd_ms",
+        "paired_date_count": 4,
+        "pt_away_from_mall_count": 3,
+        "pt_iqr": 11.608749432510201,
+        "pt_median": 27.763173317568473,
+        "pt_q1": 20.792723030784835,
+        "pt_q3": 32.401472463295036,
+        "pt_return_toward_mall_count": 1,
+        "pt_sample_count": 4,
+        "pt_unchanged_count": 0,
+        "quality_coverage_fraction": 1.0,
+        "quality_eligible_date_count": 4,
+        "triplet_sample_count": 4,
+        "unit": "ms",
+        "walk_iqr": 17.607006793594667,
+        "walk_median": 27.972374717899232,
+        "walk_pt_paired_date_count": 4,
+        "walk_q1": 18.48789002520464,
+        "walk_q3": 36.094896818799306,
+        "walk_sample_count": 4,
+        "walking_higher_than_mall_count": 2,
+        "walking_higher_than_pt_count": 3,
+        "walking_lower_than_mall_count": 2,
+        "walking_lower_than_pt_count": 1
+      },
+      {
+        "accepted_triplet_count": 4,
+        "direction_consistency": "walking_higher_than_mall",
+        "direction_consistency_count": 2,
+        "direction_consistency_fraction": 0.5,
+        "formula_version": "triplet_repeated_validation.v1|kubios_rri_time_domain_metrics.v1",
+        "mall_iqr": 3.278991397036947,
+        "mall_median": 76.87761635065254,
+        "mall_pt_paired_date_count": 4,
+        "mall_q1": 74.91975291991477,
+        "mall_q3": 78.19874431695172,
+        "mall_sample_count": 4,
+        "mall_walk_paired_date_count": 4,
+        "metric_name": "median_hr_bpm",
+        "paired_date_count": 4,
+        "pt_away_from_mall_count": 4,
+        "pt_iqr": 2.8652189635376004,
+        "pt_median": 98.12259306803594,
+        "pt_q1": 96.57166774475857,
+        "pt_q3": 99.43688670829617,
+        "pt_return_toward_mall_count": 0,
+        "pt_sample_count": 4,
+        "pt_unchanged_count": 0,
+        "quality_coverage_fraction": 1.0,
+        "quality_eligible_date_count": 4,
+        "triplet_sample_count": 4,
+        "unit": "bpm",
+        "walk_iqr": 1.9583527343798437,
+        "walk_median": 76.3896993036916,
+        "walk_pt_paired_date_count": 4,
+        "walk_q1": 75.3138661585024,
+        "walk_q3": 77.27221889288225,
+        "walk_sample_count": 4,
+        "walking_higher_than_mall_count": 2,
+        "walking_higher_than_pt_count": 0,
+        "walking_lower_than_mall_count": 2,
+        "walking_lower_than_pt_count": 4
+      },
+      {
+        "accepted_triplet_count": 4,
+        "direction_consistency": "walking_higher_than_mall",
+        "direction_consistency_count": 2,
+        "direction_consistency_fraction": 0.5,
+        "formula_version": "triplet_repeated_validation.v1|kubios_rri_time_domain_metrics.v1",
+        "mall_iqr": 3.316624913250365,
+        "mall_median": 76.69015330892108,
+        "mall_pt_paired_date_count": 4,
+        "mall_q1": 74.69092514393242,
+        "mall_q3": 78.00755005718278,
+        "mall_sample_count": 4,
+        "mall_walk_paired_date_count": 4,
+        "metric_name": "mean_hr_bpm",
+        "paired_date_count": 4,
+        "pt_away_from_mall_count": 4,
+        "pt_iqr": 2.6529491521353776,
+        "pt_median": 96.29196705496975,
+        "pt_q1": 94.75273823304347,
+        "pt_q3": 97.40568738517885,
+        "pt_return_toward_mall_count": 0,
+        "pt_sample_count": 4,
+        "pt_unchanged_count": 0,
+        "quality_coverage_fraction": 1.0,
+        "quality_eligible_date_count": 4,
+        "triplet_sample_count": 4,
+        "unit": "bpm",
+        "walk_iqr": 2.531776552080487,
+        "walk_median": 75.18393438737658,
+        "walk_pt_paired_date_count": 4,
+        "walk_q1": 73.8417353533323,
+        "walk_q3": 76.37351190541278,
+        "walk_sample_count": 4,
+        "walking_higher_than_mall_count": 2,
+        "walking_higher_than_pt_count": 0,
+        "walking_lower_than_mall_count": 2,
+        "walking_lower_than_pt_count": 4
+      },
+      {
+        "accepted_triplet_count": 4,
+        "direction_consistency": "walking_higher_than_mall",
+        "direction_consistency_count": 4,
+        "direction_consistency_fraction": 1.0,
+        "formula_version": "triplet_repeated_validation.v1|kubios_acc_session_metrics.v1",
+        "mall_iqr": 0.0007117706625066403,
+        "mall_median": 0.05074836401451528,
+        "mall_pt_paired_date_count": 4,
+        "mall_q1": 0.05033685552441663,
+        "mall_q3": 0.05104862618692327,
+        "mall_sample_count": 4,
+        "mall_walk_paired_date_count": 4,
+        "metric_name": "vertical_dynamic_g_rms",
+        "paired_date_count": 4,
+        "pt_away_from_mall_count": 4,
+        "pt_iqr": 0.005188949439284801,
+        "pt_median": 0.13843534517917666,
+        "pt_q1": 0.1347946539501666,
+        "pt_q3": 0.1399836033894514,
+        "pt_return_toward_mall_count": 0,
+        "pt_sample_count": 4,
+        "pt_unchanged_count": 0,
+        "quality_coverage_fraction": 1.0,
+        "quality_eligible_date_count": 4,
+        "triplet_sample_count": 4,
+        "unit": "g",
+        "walk_iqr": 0.0016001715942990241,
+        "walk_median": 0.12578206278346873,
+        "walk_pt_paired_date_count": 4,
+        "walk_q1": 0.12463828619751739,
+        "walk_q3": 0.12623845779181642,
+        "walk_sample_count": 4,
+        "walking_higher_than_mall_count": 4,
+        "walking_higher_than_pt_count": 0,
+        "walking_lower_than_mall_count": 0,
+        "walking_lower_than_pt_count": 4
+      },
+      {
+        "accepted_triplet_count": 4,
+        "direction_consistency": "walking_higher_than_mall",
+        "direction_consistency_count": 4,
+        "direction_consistency_fraction": 1.0,
+        "formula_version": "triplet_repeated_validation.v1|kubios_acc_session_metrics.v1",
+        "mall_iqr": 0.0009218509071435427,
+        "mall_median": 0.04855286533796567,
+        "mall_pt_paired_date_count": 4,
+        "mall_q1": 0.048058938332598486,
+        "mall_q3": 0.04898078923974203,
+        "mall_sample_count": 4,
+        "mall_walk_paired_date_count": 4,
+        "metric_name": "magnitude_dynamic_g_rms",
+        "paired_date_count": 4,
+        "pt_away_from_mall_count": 3,
+        "pt_iqr": 0.005755495097976682,
+        "pt_median": 0.13668431603185627,
+        "pt_q1": 0.13286601475571935,
+        "pt_q3": 0.13862150985369603,
+        "pt_return_toward_mall_count": 1,
+        "pt_sample_count": 4,
+        "pt_unchanged_count": 0,
+        "quality_coverage_fraction": 1.0,
+        "quality_eligible_date_count": 4,
+        "triplet_sample_count": 4,
+        "unit": "g",
+        "walk_iqr": 0.000659531465716956,
+        "walk_median": 0.13191637286188068,
+        "walk_pt_paired_date_count": 4,
+        "walk_q1": 0.131816205232559,
+        "walk_q3": 0.13247573669827595,
+        "walk_sample_count": 4,
+        "walking_higher_than_mall_count": 4,
+        "walking_higher_than_pt_count": 1,
+        "walking_lower_than_mall_count": 0,
+        "walking_lower_than_pt_count": 3
+      },
+      {
+        "accepted_triplet_count": 4,
+        "direction_consistency": "walking_higher_than_mall",
+        "direction_consistency_count": 4,
+        "direction_consistency_fraction": 1.0,
+        "formula_version": "triplet_repeated_validation.v1|kubios_acc_session_metrics.v1",
+        "mall_iqr": 0.0037786149380392153,
+        "mall_median": 0.7928745087674139,
+        "mall_pt_paired_date_count": 4,
+        "mall_q1": 0.7908366884383192,
+        "mall_q3": 0.7946153033763584,
+        "mall_sample_count": 4,
+        "mall_walk_paired_date_count": 4,
+        "metric_name": "movement_fraction",
+        "paired_date_count": 4,
+        "pt_away_from_mall_count": 4,
+        "pt_iqr": 0.008559547076053553,
+        "pt_median": 0.9063496411509806,
+        "pt_q1": 0.9017492824990578,
+        "pt_q3": 0.9103088295751114,
+        "pt_return_toward_mall_count": 0,
+        "pt_sample_count": 4,
+        "pt_unchanged_count": 0,
+        "quality_coverage_fraction": 1.0,
+        "quality_eligible_date_count": 4,
+        "triplet_sample_count": 4,
+        "unit": "fraction",
+        "walk_iqr": 0.015274176451651078,
+        "walk_median": 0.8650058125975622,
+        "walk_pt_paired_date_count": 4,
+        "walk_q1": 0.8546123664182341,
+        "walk_q3": 0.8698865428698852,
+        "walk_sample_count": 4,
+        "walking_higher_than_mall_count": 4,
+        "walking_higher_than_pt_count": 0,
+        "walking_lower_than_mall_count": 0,
+        "walking_lower_than_pt_count": 4
+      },
+      {
+        "accepted_triplet_count": 4,
+        "direction_consistency": "walking_higher_than_mall",
+        "direction_consistency_count": 4,
+        "direction_consistency_fraction": 1.0,
+        "formula_version": "triplet_repeated_validation.v1|kubios_acc_session_metrics.v1",
+        "mall_iqr": 0.00516668721847581,
+        "mall_median": 0.11464087951903013,
+        "mall_pt_paired_date_count": 4,
+        "mall_q1": 0.11314481071693612,
+        "mall_q3": 0.11831149793541193,
+        "mall_sample_count": 4,
+        "mall_walk_paired_date_count": 4,
+        "metric_name": "horizontal_dynamic_g_rms",
+        "paired_date_count": 4,
+        "pt_away_from_mall_count": 4,
+        "pt_iqr": 0.004506607618657205,
+        "pt_median": 0.2060113575283553,
+        "pt_q1": 0.2028696751634649,
+        "pt_q3": 0.2073762827821221,
+        "pt_return_toward_mall_count": 0,
+        "pt_sample_count": 4,
+        "pt_unchanged_count": 0,
+        "quality_coverage_fraction": 1.0,
+        "quality_eligible_date_count": 4,
+        "triplet_sample_count": 4,
+        "unit": "g",
+        "walk_iqr": 0.004570050291337724,
+        "walk_median": 0.16630486260720673,
+        "walk_pt_paired_date_count": 4,
+        "walk_q1": 0.1632079775590285,
+        "walk_q3": 0.16777802785036622,
+        "walk_sample_count": 4,
+        "walking_higher_than_mall_count": 4,
+        "walking_higher_than_pt_count": 0,
+        "walking_lower_than_mall_count": 0,
+        "walking_lower_than_pt_count": 4
+      },
+      {
+        "accepted_triplet_count": 4,
+        "direction_consistency": "walking_higher_than_mall",
+        "direction_consistency_count": 4,
+        "direction_consistency_fraction": 1.0,
+        "formula_version": "triplet_repeated_validation.v1|kubios_acc_session_metrics.v1",
+        "mall_iqr": 0.02803419669443874,
+        "mall_median": 0.43658512851092207,
+        "mall_pt_paired_date_count": 4,
+        "mall_q1": 0.42169096603710954,
+        "mall_q3": 0.4497251627315483,
+        "mall_sample_count": 4,
+        "mall_walk_paired_date_count": 4,
+        "metric_name": "vertical_to_horizontal_dynamic_rms_ratio",
+        "paired_date_count": 4,
+        "pt_away_from_mall_count": 0,
+        "pt_iqr": 0.02039402515108324,
+        "pt_median": 0.6695665770558307,
+        "pt_q1": 0.6582763072133511,
+        "pt_q3": 0.6786703323644343,
+        "pt_return_toward_mall_count": 4,
+        "pt_sample_count": 4,
+        "pt_unchanged_count": 0,
+        "quality_coverage_fraction": 1.0,
+        "quality_eligible_date_count": 4,
+        "triplet_sample_count": 4,
+        "unit": "ratio",
+        "walk_iqr": 0.023456387742724183,
+        "walk_median": 0.7563371603254359,
+        "walk_pt_paired_date_count": 4,
+        "walk_q1": 0.7467491675606166,
+        "walk_q3": 0.7702055553033408,
+        "walk_sample_count": 4,
+        "walking_higher_than_mall_count": 4,
+        "walking_higher_than_pt_count": 4,
+        "walking_lower_than_mall_count": 0,
+        "walking_lower_than_pt_count": 0
+      },
+      {
+        "accepted_triplet_count": 4,
+        "direction_consistency": "walking_higher_than_mall",
+        "direction_consistency_count": 4,
+        "direction_consistency_fraction": 1.0,
+        "formula_version": "triplet_repeated_validation.v1|kubios_acc_session_metrics.v1",
+        "mall_iqr": 0.06812374595914061,
+        "mall_median": 2.1149202671646554,
+        "mall_pt_paired_date_count": 4,
+        "mall_q1": 2.083213382581594,
+        "mall_q3": 2.1513371285407348,
+        "mall_sample_count": 4,
+        "mall_walk_paired_date_count": 4,
+        "metric_name": "cumulative_dynamic_shock_per_min",
+        "paired_date_count": 4,
+        "pt_away_from_mall_count": 4,
+        "pt_iqr": 0.2128911313839943,
+        "pt_median": 6.05392169415628,
+        "pt_q1": 5.920676911406198,
+        "pt_q3": 6.133568042790192,
+        "pt_return_toward_mall_count": 0,
+        "pt_sample_count": 4,
+        "pt_unchanged_count": 0,
+        "quality_coverage_fraction": 1.0,
+        "quality_eligible_date_count": 4,
+        "triplet_sample_count": 4,
+        "unit": "g*s/min",
+        "walk_iqr": 0.11190866702319635,
+        "walk_median": 5.744106126124445,
+        "walk_pt_paired_date_count": 4,
+        "walk_q1": 5.672215084191037,
+        "walk_q3": 5.784123751214233,
+        "walk_sample_count": 4,
+        "walking_higher_than_mall_count": 4,
+        "walking_higher_than_pt_count": 0,
+        "walking_lower_than_mall_count": 0,
+        "walking_lower_than_pt_count": 4
+      },
+      {
+        "accepted_triplet_count": 4,
+        "direction_consistency": "walking_higher_than_mall",
+        "direction_consistency_count": 4,
+        "direction_consistency_fraction": 1.0,
+        "formula_version": "triplet_repeated_validation.v1|kubios_acc_session_metrics.v1",
+        "mall_iqr": 0.14035745416109424,
+        "mall_median": 0.6714408193638575,
+        "mall_pt_paired_date_count": 4,
+        "mall_q1": 0.6034105149464544,
+        "mall_q3": 0.7437679691075486,
+        "mall_sample_count": 4,
+        "mall_walk_paired_date_count": 4,
+        "metric_name": "magnitude_jerk_rms_g_per_s",
+        "paired_date_count": 4,
+        "pt_away_from_mall_count": 4,
+        "pt_iqr": 0.116353742319943,
+        "pt_median": 1.330398717420361,
+        "pt_q1": 1.2643836611402244,
+        "pt_q3": 1.3807374034601674,
+        "pt_return_toward_mall_count": 0,
+        "pt_sample_count": 4,
+        "pt_unchanged_count": 0,
+        "quality_coverage_fraction": 1.0,
+        "quality_eligible_date_count": 4,
+        "triplet_sample_count": 4,
+        "unit": "g/s",
+        "walk_iqr": 0.023217856005404602,
+        "walk_median": 1.1061902936611292,
+        "walk_pt_paired_date_count": 4,
+        "walk_q1": 1.0970741629128278,
+        "walk_q3": 1.1202920189182324,
+        "walk_sample_count": 4,
+        "walking_higher_than_mall_count": 4,
+        "walking_higher_than_pt_count": 0,
+        "walking_lower_than_mall_count": 0,
+        "walking_lower_than_pt_count": 4
+      },
+      {
+        "accepted_triplet_count": 4,
+        "direction_consistency": "walking_higher_than_mall",
+        "direction_consistency_count": 4,
+        "direction_consistency_fraction": 1.0,
+        "formula_version": "triplet_repeated_validation.v1|kubios_acc_session_metrics.v1",
+        "mall_iqr": 0.19340252944892178,
+        "mall_median": 0.6832674829611827,
+        "mall_pt_paired_date_count": 4,
+        "mall_q1": 0.5992343154920046,
+        "mall_q3": 0.7926368449409263,
+        "mall_sample_count": 4,
+        "mall_walk_paired_date_count": 4,
+        "metric_name": "vertical_jerk_rms_g_per_s",
+        "paired_date_count": 4,
+        "pt_away_from_mall_count": 4,
+        "pt_iqr": 0.10111016484866653,
+        "pt_median": 1.2944369438388759,
+        "pt_q1": 1.2484674954043293,
+        "pt_q3": 1.3495776602529959,
+        "pt_return_toward_mall_count": 0,
+        "pt_sample_count": 4,
+        "pt_unchanged_count": 0,
+        "quality_coverage_fraction": 1.0,
+        "quality_eligible_date_count": 4,
+        "triplet_sample_count": 4,
+        "unit": "g/s",
+        "walk_iqr": 0.03126394186420001,
+        "walk_median": 1.0949848525689299,
+        "walk_pt_paired_date_count": 4,
+        "walk_q1": 1.0794584374470788,
+        "walk_q3": 1.1107223793112788,
+        "walk_sample_count": 4,
+        "walking_higher_than_mall_count": 4,
+        "walking_higher_than_pt_count": 0,
+        "walking_lower_than_mall_count": 0,
+        "walking_lower_than_pt_count": 4
+      },
+      {
+        "accepted_triplet_count": 4,
+        "direction_consistency": "walking_higher_than_mall",
+        "direction_consistency_count": 4,
+        "direction_consistency_fraction": 1.0,
+        "formula_version": "triplet_repeated_validation.v1|kubios_acc_session_metrics.v1",
+        "mall_iqr": 1.1100625426028934,
+        "mall_median": 25.243294294077288,
+        "mall_pt_paired_date_count": 4,
+        "mall_q1": 24.87571912178451,
+        "mall_q3": 25.985781664387403,
+        "mall_sample_count": 4,
+        "mall_walk_paired_date_count": 4,
+        "metric_name": "shock_spike_rate_per_min",
+        "paired_date_count": 4,
+        "pt_away_from_mall_count": 2,
+        "pt_iqr": 2.3306409982372323,
+        "pt_median": 28.86564998056967,
+        "pt_q1": 27.91796072286834,
+        "pt_q3": 30.248601721105572,
+        "pt_return_toward_mall_count": 2,
+        "pt_sample_count": 4,
+        "pt_unchanged_count": 0,
+        "quality_coverage_fraction": 1.0,
+        "quality_eligible_date_count": 4,
+        "triplet_sample_count": 4,
+        "unit": "count/min",
+        "walk_iqr": 0.6764722781333568,
+        "walk_median": 29.786176719716348,
+        "walk_pt_paired_date_count": 4,
+        "walk_q1": 29.341624064797767,
+        "walk_q3": 30.018096342931123,
+        "walk_sample_count": 4,
+        "walking_higher_than_mall_count": 4,
+        "walking_higher_than_pt_count": 2,
+        "walking_lower_than_mall_count": 0,
+        "walking_lower_than_pt_count": 2
+      },
+      {
+        "accepted_triplet_count": 4,
+        "direction_consistency": "walking_higher_than_mall",
+        "direction_consistency_count": 4,
+        "direction_consistency_fraction": 1.0,
+        "formula_version": "triplet_repeated_validation.v1|kubios_rri_time_domain_metrics.v1",
+        "mall_iqr": 8.073095184186254,
+        "mall_median": 35.655808073332295,
+        "mall_pt_paired_date_count": 4,
+        "mall_q1": 31.663384873992687,
+        "mall_q3": 39.73648005817894,
+        "mall_sample_count": 4,
+        "mall_walk_paired_date_count": 4,
+        "metric_name": "sdnn_ms",
+        "paired_date_count": 4,
+        "pt_away_from_mall_count": 3,
+        "pt_iqr": 3.0444550455901265,
+        "pt_median": 56.19030427994871,
+        "pt_q1": 54.822308781889404,
+        "pt_q3": 57.86676382747953,
+        "pt_return_toward_mall_count": 1,
+        "pt_sample_count": 4,
+        "pt_unchanged_count": 0,
+        "quality_coverage_fraction": 1.0,
+        "quality_eligible_date_count": 4,
+        "triplet_sample_count": 4,
+        "unit": "ms",
+        "walk_iqr": 5.977555787268088,
+        "walk_median": 52.22118274600817,
+        "walk_pt_paired_date_count": 4,
+        "walk_q1": 49.90646168394025,
+        "walk_q3": 55.88401747120834,
+        "walk_sample_count": 4,
+        "walking_higher_than_mall_count": 4,
+        "walking_higher_than_pt_count": 1,
+        "walking_lower_than_mall_count": 0,
+        "walking_lower_than_pt_count": 3
+      },
+      {
+        "accepted_triplet_count": 4,
+        "direction_consistency": "walking_lower_than_mall",
+        "direction_consistency_count": 1,
+        "direction_consistency_fraction": 1.0,
+        "formula_version": "triplet_repeated_validation.v1|source_supplied_distance.v1",
+        "mall_iqr": 0.0,
+        "mall_median": 3.27,
+        "mall_pt_paired_date_count": 1,
+        "mall_q1": 3.27,
+        "mall_q3": 3.27,
+        "mall_sample_count": 1,
+        "mall_walk_paired_date_count": 1,
+        "metric_name": "distance_miles",
+        "paired_date_count": 1,
+        "pt_away_from_mall_count": 0,
+        "pt_iqr": 0.0,
+        "pt_median": 2.96,
+        "pt_q1": 2.96,
+        "pt_q3": 2.96,
+        "pt_return_toward_mall_count": 1,
+        "pt_sample_count": 1,
+        "pt_unchanged_count": 0,
+        "quality_coverage_fraction": 0.25,
+        "quality_eligible_date_count": 1,
+        "triplet_sample_count": 4,
+        "unit": "miles",
+        "walk_iqr": 0.0,
+        "walk_median": 0.26,
+        "walk_pt_paired_date_count": 1,
+        "walk_q1": 0.26,
+        "walk_q3": 0.26,
+        "walk_sample_count": 1,
+        "walking_higher_than_mall_count": 0,
+        "walking_higher_than_pt_count": 0,
+        "walking_lower_than_mall_count": 1,
+        "walking_lower_than_pt_count": 1
+      },
+      {
+        "accepted_triplet_count": 4,
+        "direction_consistency": "walking_lower_than_mall",
+        "direction_consistency_count": 4,
+        "direction_consistency_fraction": 1.0,
+        "formula_version": "triplet_repeated_validation.v1|episodic_kubios_metrics.v1.0.0",
+        "mall_iqr": 56.25,
+        "mall_median": 2059.5,
+        "mall_pt_paired_date_count": 4,
+        "mall_q1": 2024.75,
+        "mall_q3": 2081.0,
+        "mall_sample_count": 4,
+        "mall_walk_paired_date_count": 4,
+        "metric_name": "duration_seconds",
+        "paired_date_count": 4,
+        "pt_away_from_mall_count": 0,
+        "pt_iqr": 32.5,
+        "pt_median": 1085.0,
+        "pt_q1": 1071.0,
+        "pt_q3": 1103.5,
+        "pt_return_toward_mall_count": 4,
+        "pt_sample_count": 4,
+        "pt_unchanged_count": 0,
+        "quality_coverage_fraction": 1.0,
+        "quality_eligible_date_count": 4,
+        "triplet_sample_count": 4,
+        "unit": "s",
+        "walk_iqr": 35.75,
+        "walk_median": 353.0,
+        "walk_pt_paired_date_count": 4,
+        "walk_q1": 334.5,
+        "walk_q3": 370.25,
+        "walk_sample_count": 4,
+        "walking_higher_than_mall_count": 0,
+        "walking_higher_than_pt_count": 0,
+        "walking_lower_than_mall_count": 4,
+        "walking_lower_than_pt_count": 4
+      },
+      {
+        "accepted_triplet_count": 4,
+        "direction_consistency": "walking_lower_than_mall",
+        "direction_consistency_count": 4,
+        "direction_consistency_fraction": 1.0,
+        "formula_version": "triplet_repeated_validation.v1|kubios_acc_session_metrics.v1",
+        "mall_iqr": 0.00377861493803916,
+        "mall_median": 0.20712549123258606,
+        "mall_pt_paired_date_count": 4,
+        "mall_q1": 0.20538469662364156,
+        "mall_q3": 0.20916331156168072,
+        "mall_sample_count": 4,
+        "mall_walk_paired_date_count": 4,
+        "metric_name": "stillness_fraction",
+        "paired_date_count": 4,
+        "pt_away_from_mall_count": 4,
+        "pt_iqr": 0.00855954707605347,
+        "pt_median": 0.09365035884901934,
+        "pt_q1": 0.08969117042488867,
+        "pt_q3": 0.09825071750094214,
+        "pt_return_toward_mall_count": 0,
+        "pt_sample_count": 4,
+        "pt_unchanged_count": 0,
+        "quality_coverage_fraction": 1.0,
+        "quality_eligible_date_count": 4,
+        "triplet_sample_count": 4,
+        "unit": "fraction",
+        "walk_iqr": 0.015274176451650995,
+        "walk_median": 0.1349941874024378,
+        "walk_pt_paired_date_count": 4,
+        "walk_q1": 0.13011345713011482,
+        "walk_q3": 0.14538763358176582,
+        "walk_sample_count": 4,
+        "walking_higher_than_mall_count": 0,
+        "walking_higher_than_pt_count": 4,
+        "walking_lower_than_mall_count": 4,
+        "walking_lower_than_pt_count": 0
+      },
+      {
+        "accepted_triplet_count": 4,
+        "direction_consistency": "walking_lower_than_mall",
+        "direction_consistency_count": 4,
+        "direction_consistency_fraction": 1.0,
+        "formula_version": "triplet_repeated_validation.v1|kubios_acc_session_metrics.v1",
+        "mall_iqr": 20.199558136028216,
+        "mall_median": 78.4285259138866,
+        "mall_pt_paired_date_count": 4,
+        "mall_q1": 67.36123736368432,
+        "mall_q3": 87.56079549971254,
+        "mall_sample_count": 4,
+        "mall_walk_paired_date_count": 4,
+        "metric_name": "impact_rate_per_min",
+        "paired_date_count": 4,
+        "pt_away_from_mall_count": 0,
+        "pt_iqr": 7.889677635548281,
+        "pt_median": 63.78688083653428,
+        "pt_q1": 60.73986705695978,
+        "pt_q3": 68.62954469250806,
+        "pt_return_toward_mall_count": 4,
+        "pt_sample_count": 4,
+        "pt_unchanged_count": 0,
+        "quality_coverage_fraction": 1.0,
+        "quality_eligible_date_count": 4,
+        "triplet_sample_count": 4,
+        "unit": "count/min",
+        "walk_iqr": 4.018197993072349,
+        "walk_median": 47.74234272692118,
+        "walk_pt_paired_date_count": 4,
+        "walk_q1": 45.77919491375809,
+        "walk_q3": 49.79739290683044,
+        "walk_sample_count": 4,
+        "walking_higher_than_mall_count": 0,
+        "walking_higher_than_pt_count": 0,
+        "walking_lower_than_mall_count": 4,
+        "walking_lower_than_pt_count": 4
+      }
+    ],
+    "stage_fsi_status": "metric_not_exposed_for_triplet_stage"
+  },
+  "conclusion_strength": "supports_with_qualification",
+  "content_hash": "75bf2f3861d450c773ea0216211b3293f1247492a569b9d4234f50f3730f1005",
+  "data_through_date": "2026-07-09",
+  "destination": "handicapskater.com",
+  "evidence_scope": "Accepted, review-gated same-day within-person protocols.",
+  "formula_identities": [
+    "css_same_day_triplet.v1",
+    "episodic_kubios_metrics.v1.0.0",
+    "kubios_acc_session_metrics.v1",
+    "kubios_rri_time_domain_metrics.v1",
+    "mall_walk_pt.v1",
+    "scientific_evidence_persistence.v1.0.0",
+    "source_supplied_distance.v1",
+    "triplet_return_toward_mall.v1|episodic_kubios_metrics.v1.0.0",
+    "triplet_return_toward_mall.v1|kubios_acc_session_metrics.v1",
+    "triplet_return_toward_mall.v1|kubios_rri_time_domain_metrics.v1",
+    "triplet_return_toward_mall.v1|source_supplied_distance.v1"
+  ],
+  "intended_route": "/evidence/repeated-protocol/",
+  "limitations": [
+    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are within-person evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+  ],
+  "plain_language_finding": "The repeated protocol shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged; no universal return claim is made.",
+  "relation_identities": [
+    "v_triplet_stage_metric_detail",
+    "v_triplet_return_toward_mall",
+    "v_scientific_triplets"
+  ],
+  "resource_id": "repeated-protocol",
+  "resource_version": "fsi_publication_resource.v1",
+  "sample_counts": {
+    "accepted_triplets": 4
+  },
+  "short_title": "Repeated protocol",
+  "source_contracts": [
+    {
+      "contract": "observatory_mcp_resource.v1",
+      "version": "observatory_bundle.v1"
+    },
+    {
+      "contract": "evidence_observatory_presentation.v1",
+      "version": "evidence_observatory_presentation.v1"
+    },
+    {
+      "contract": "scientific_consumer_contract.v1.0.0",
+      "version": "scientific_consumer_contract.v1.0.0"
+    },
+    {
+      "contract": "observatory_graph.v1",
+      "version": "observatory_graph.v1"
+    }
+  ],
+  "source_labels": [
+    "Accepted Mall → Walk → PT Skate protocol",
+    "Kubios/Polar H10",
+    "Strava"
+  ],
+  "summary": "The repeated protocol shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged; no universal return claim is made.",
+  "title": "Repeated Mall → Walk → PT Skate protocol",
+  "units": [
+    "count/min",
+    "g",
+    "g*s/min",
+    "g/s",
+    "miles",
+    "s"
+  ]
+}

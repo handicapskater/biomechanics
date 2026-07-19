@@ -1,0 +1,1766 @@
+{
+  "accessible_table": [
+    {
+      "css_connectors": [
+        {
+          "distance": 0.5594792768738659,
+          "formula_version": "css_same_day_triplet.v1",
+          "left_label": "Walk",
+          "left_role": "walk",
+          "quality": "valid",
+          "right_label": "PT Skate",
+          "right_role": "pt",
+          "score": 0.6412396848290292,
+          "unit": "unitless_similarity_0_to_1"
+        },
+        {
+          "distance": 0.8199080008111594,
+          "formula_version": "css_same_day_triplet.v1",
+          "left_label": "Mall Skate",
+          "left_role": "mall",
+          "quality": "valid",
+          "right_label": "Walk",
+          "right_role": "walk",
+          "score": 0.5494783250330706,
+          "unit": "unitless_similarity_0_to_1"
+        },
+        {
+          "distance": 0.847472250552087,
+          "formula_version": "css_same_day_triplet.v1",
+          "left_label": "Mall Skate",
+          "left_role": "mall",
+          "quality": "valid",
+          "right_label": "PT Skate",
+          "right_role": "pt",
+          "score": 0.5412801192013392,
+          "unit": "unitless_similarity_0_to_1"
+        }
+      ],
+      "date": "2026-07-05",
+      "direction_counts": {
+        "away_from_mall": 13,
+        "toward_mall": 4,
+        "unavailable": 0,
+        "unchanged": 0
+      },
+      "direction_groups": {
+        "away_from_mall": [
+          "magnitude_dynamic_g_rms",
+          "vertical_dynamic_g_rms",
+          "horizontal_dynamic_g_rms",
+          "stillness_fraction",
+          "vertical_jerk_rms_g_per_s",
+          "magnitude_jerk_rms_g_per_s",
+          "movement_fraction",
+          "cumulative_dynamic_shock_per_min",
+          "shock_spike_rate_per_min",
+          "sdnn_ms",
+          "rmssd_ms",
+          "mean_hr_bpm",
+          "median_hr_bpm"
+        ],
+        "toward_mall": [
+          "duration_seconds",
+          "vertical_to_horizontal_dynamic_rms_ratio",
+          "impact_rate_per_min",
+          "distance_miles"
+        ],
+        "unavailable": [],
+        "unchanged": []
+      },
+      "late_strava_status": "joined",
+      "protocol_version": "mall_walk_pt.v1",
+      "stages": [
+        {
+          "distance": {
+            "formula_version": "source_supplied_distance.v1",
+            "quality": "valid",
+            "unit": "miles",
+            "value": 3.27
+          },
+          "duration": {
+            "formula_version": "episodic_kubios_metrics.v1.0.0",
+            "quality": "valid",
+            "unit": "s",
+            "value": 1931.0
+          },
+          "fsi": {
+            "status": "metric_not_exposed_for_triplet_stage",
+            "value": null
+          },
+          "label": "Mall Skate",
+          "metrics": {
+            "cumulative_dynamic_shock_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g*s/min",
+              "value": 2.1843857750710436
+            },
+            "distance_miles": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "valid",
+              "unit": "miles",
+              "value": 3.27
+            },
+            "duration_seconds": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 1931.0
+            },
+            "magnitude_jerk_rms_g_per_s": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g/s",
+              "value": 0.5906551160287685
+            },
+            "shock_spike_rate_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "count/min",
+              "value": 23.826857160190496
+            },
+            "vertical_dynamic_g_rms": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g",
+              "value": 0.05158522954970856
+            }
+          },
+          "quality": [
+            "valid"
+          ],
+          "role": "mall"
+        },
+        {
+          "distance": {
+            "formula_version": "source_supplied_distance.v1",
+            "quality": "valid",
+            "unit": "miles",
+            "value": 0.26
+          },
+          "duration": {
+            "formula_version": "episodic_kubios_metrics.v1.0.0",
+            "quality": "valid",
+            "unit": "s",
+            "value": 327.0
+          },
+          "fsi": {
+            "status": "metric_not_exposed_for_triplet_stage",
+            "value": null
+          },
+          "label": "Walk",
+          "metrics": {
+            "cumulative_dynamic_shock_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g*s/min",
+              "value": 5.8055150592573925
+            },
+            "distance_miles": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "valid",
+              "unit": "miles",
+              "value": 0.26
+            },
+            "duration_seconds": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 327.0
+            },
+            "magnitude_jerk_rms_g_per_s": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g/s",
+              "value": 1.1353973060858273
+            },
+            "shock_spike_rate_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "count/min",
+              "value": 28.60759493670886
+            },
+            "vertical_dynamic_g_rms": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g",
+              "value": 0.12620161185850665
+            }
+          },
+          "quality": [
+            "valid"
+          ],
+          "role": "walk"
+        },
+        {
+          "distance": {
+            "formula_version": "source_supplied_distance.v1",
+            "quality": "valid",
+            "unit": "miles",
+            "value": 2.96
+          },
+          "duration": {
+            "formula_version": "episodic_kubios_metrics.v1.0.0",
+            "quality": "valid",
+            "unit": "s",
+            "value": 1050.0
+          },
+          "fsi": {
+            "status": "metric_not_exposed_for_triplet_stage",
+            "value": null
+          },
+          "label": "PT Skate",
+          "metrics": {
+            "cumulative_dynamic_shock_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g*s/min",
+              "value": 6.076523683686936
+            },
+            "distance_miles": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "valid",
+              "unit": "miles",
+              "value": 2.96
+            },
+            "duration_seconds": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 1050.0
+            },
+            "magnitude_jerk_rms_g_per_s": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g/s",
+              "value": 1.4022795973471656
+            },
+            "shock_spike_rate_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "count/min",
+              "value": 29.601082932758715
+            },
+            "vertical_dynamic_g_rms": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g",
+              "value": 0.1397323763960435
+            }
+          },
+          "quality": [
+            "valid"
+          ],
+          "role": "pt"
+        }
+      ],
+      "unequal_distance_disclosure": "Mall, walking, and PT stages retain their source-supplied unequal distances; equal exposure is not assumed."
+    },
+    {
+      "css_connectors": [
+        {
+          "distance": 0.5988020915796496,
+          "formula_version": "css_same_day_triplet.v1",
+          "left_label": "Walk",
+          "left_role": "walk",
+          "quality": "valid",
+          "right_label": "PT Skate",
+          "right_role": "pt",
+          "score": 0.6254682835772245,
+          "unit": "unitless_similarity_0_to_1"
+        },
+        {
+          "distance": 0.7332397197492384,
+          "formula_version": "css_same_day_triplet.v1",
+          "left_label": "Mall Skate",
+          "left_role": "mall",
+          "quality": "valid",
+          "right_label": "Walk",
+          "right_role": "walk",
+          "score": 0.576954236973451,
+          "unit": "unitless_similarity_0_to_1"
+        },
+        {
+          "distance": 0.897885378796086,
+          "formula_version": "css_same_day_triplet.v1",
+          "left_label": "Mall Skate",
+          "left_role": "mall",
+          "quality": "valid",
+          "right_label": "PT Skate",
+          "right_role": "pt",
+          "score": 0.5269022097816808,
+          "unit": "unitless_similarity_0_to_1"
+        }
+      ],
+      "date": "2026-07-06",
+      "direction_counts": {
+        "away_from_mall": 12,
+        "toward_mall": 4,
+        "unavailable": 1,
+        "unchanged": 0
+      },
+      "direction_groups": {
+        "away_from_mall": [
+          "magnitude_dynamic_g_rms",
+          "vertical_dynamic_g_rms",
+          "horizontal_dynamic_g_rms",
+          "stillness_fraction",
+          "vertical_jerk_rms_g_per_s",
+          "magnitude_jerk_rms_g_per_s",
+          "movement_fraction",
+          "cumulative_dynamic_shock_per_min",
+          "rmssd_ms",
+          "sdnn_ms",
+          "mean_hr_bpm",
+          "median_hr_bpm"
+        ],
+        "toward_mall": [
+          "duration_seconds",
+          "vertical_to_horizontal_dynamic_rms_ratio",
+          "shock_spike_rate_per_min",
+          "impact_rate_per_min"
+        ],
+        "unavailable": [
+          "distance_miles"
+        ],
+        "unchanged": []
+      },
+      "late_strava_status": "no_matching_strava_activity",
+      "protocol_version": "mall_walk_pt.v1",
+      "stages": [
+        {
+          "distance": {
+            "formula_version": "source_supplied_distance.v1",
+            "quality": "unavailable",
+            "unit": "miles",
+            "value": null
+          },
+          "duration": {
+            "formula_version": "episodic_kubios_metrics.v1.0.0",
+            "quality": "valid",
+            "unit": "s",
+            "value": 2063.0
+          },
+          "fsi": {
+            "status": "metric_not_exposed_for_triplet_stage",
+            "value": null
+          },
+          "label": "Mall Skate",
+          "metrics": {
+            "cumulative_dynamic_shock_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g*s/min",
+              "value": 2.140320913030632
+            },
+            "distance_miles": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "unavailable",
+              "unit": "miles",
+              "value": null
+            },
+            "duration_seconds": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 2063.0
+            },
+            "magnitude_jerk_rms_g_per_s": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g/s",
+              "value": 0.607662314585683
+            },
+            "shock_spike_rate_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "count/min",
+              "value": 25.2612488125054
+            },
+            "vertical_dynamic_g_rms": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g",
+              "value": 0.050869758399328176
+            }
+          },
+          "quality": [
+            "unavailable",
+            "valid"
+          ],
+          "role": "mall"
+        },
+        {
+          "distance": {
+            "formula_version": "source_supplied_distance.v1",
+            "quality": "unavailable",
+            "unit": "miles",
+            "value": null
+          },
+          "duration": {
+            "formula_version": "episodic_kubios_metrics.v1.0.0",
+            "quality": "valid",
+            "unit": "s",
+            "value": 337.0
+          },
+          "fsi": {
+            "status": "metric_not_exposed_for_triplet_stage",
+            "value": null
+          },
+          "label": "Walk",
+          "metrics": {
+            "cumulative_dynamic_shock_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g*s/min",
+              "value": 5.7112189370490425
+            },
+            "distance_miles": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "unavailable",
+              "unit": "miles",
+              "value": null
+            },
+            "duration_seconds": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 337.0
+            },
+            "magnitude_jerk_rms_g_per_s": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g/s",
+              "value": 1.0969256592716383
+            },
+            "shock_spike_rate_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "count/min",
+              "value": 29.5863004408274
+            },
+            "vertical_dynamic_g_rms": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g",
+              "value": 0.12536251370843082
+            }
+          },
+          "quality": [
+            "unavailable",
+            "valid"
+          ],
+          "role": "walk"
+        },
+        {
+          "distance": {
+            "formula_version": "source_supplied_distance.v1",
+            "quality": "unavailable",
+            "unit": "miles",
+            "value": null
+          },
+          "duration": {
+            "formula_version": "episodic_kubios_metrics.v1.0.0",
+            "quality": "valid",
+            "unit": "s",
+            "value": 1092.0
+          },
+          "fsi": {
+            "status": "metric_not_exposed_for_triplet_stage",
+            "value": null
+          },
+          "label": "PT Skate",
+          "metrics": {
+            "cumulative_dynamic_shock_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g*s/min",
+              "value": 6.0313197046256235
+            },
+            "distance_miles": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "unavailable",
+              "unit": "miles",
+              "value": null
+            },
+            "duration_seconds": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 1092.0
+            },
+            "magnitude_jerk_rms_g_per_s": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g/s",
+              "value": 1.2872407626762206
+            },
+            "shock_spike_rate_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "count/min",
+              "value": 28.13021702838063
+            },
+            "vertical_dynamic_g_rms": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g",
+              "value": 0.13713831396230983
+            }
+          },
+          "quality": [
+            "unavailable",
+            "valid"
+          ],
+          "role": "pt"
+        }
+      ],
+      "unequal_distance_disclosure": "Mall, walking, and PT stages retain their source-supplied unequal distances; equal exposure is not assumed."
+    },
+    {
+      "css_connectors": [
+        {
+          "distance": 0.5908599007802747,
+          "formula_version": "css_same_day_triplet.v1",
+          "left_label": "Walk",
+          "left_role": "walk",
+          "quality": "valid",
+          "right_label": "PT Skate",
+          "right_role": "pt",
+          "score": 0.6285908642926548,
+          "unit": "unitless_similarity_0_to_1"
+        },
+        {
+          "distance": 0.8109378907474205,
+          "formula_version": "css_same_day_triplet.v1",
+          "left_label": "Mall Skate",
+          "left_role": "mall",
+          "quality": "valid",
+          "right_label": "PT Skate",
+          "right_role": "pt",
+          "score": 0.5522000534139105,
+          "unit": "unitless_similarity_0_to_1"
+        },
+        {
+          "distance": 0.8462262200877754,
+          "formula_version": "css_same_day_triplet.v1",
+          "left_label": "Mall Skate",
+          "left_role": "mall",
+          "quality": "valid",
+          "right_label": "Walk",
+          "right_role": "walk",
+          "score": 0.5416454327858354,
+          "unit": "unitless_similarity_0_to_1"
+        }
+      ],
+      "date": "2026-07-07",
+      "direction_counts": {
+        "away_from_mall": 10,
+        "toward_mall": 6,
+        "unavailable": 1,
+        "unchanged": 0
+      },
+      "direction_groups": {
+        "away_from_mall": [
+          "vertical_dynamic_g_rms",
+          "horizontal_dynamic_g_rms",
+          "stillness_fraction",
+          "magnitude_jerk_rms_g_per_s",
+          "vertical_jerk_rms_g_per_s",
+          "movement_fraction",
+          "cumulative_dynamic_shock_per_min",
+          "shock_spike_rate_per_min",
+          "mean_hr_bpm",
+          "median_hr_bpm"
+        ],
+        "toward_mall": [
+          "duration_seconds",
+          "magnitude_dynamic_g_rms",
+          "vertical_to_horizontal_dynamic_rms_ratio",
+          "impact_rate_per_min",
+          "rmssd_ms",
+          "sdnn_ms"
+        ],
+        "unavailable": [
+          "distance_miles"
+        ],
+        "unchanged": []
+      },
+      "late_strava_status": "pending_weekly_download",
+      "protocol_version": "mall_walk_pt.v1",
+      "stages": [
+        {
+          "distance": {
+            "formula_version": "source_supplied_distance.v1",
+            "quality": "unavailable",
+            "unit": "miles",
+            "value": null
+          },
+          "duration": {
+            "formula_version": "episodic_kubios_metrics.v1.0.0",
+            "quality": "valid",
+            "unit": "s",
+            "value": 2056.0
+          },
+          "fsi": {
+            "status": "metric_not_exposed_for_triplet_stage",
+            "value": null
+          },
+          "label": "Mall Skate",
+          "metrics": {
+            "cumulative_dynamic_shock_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g*s/min",
+              "value": 2.064294666430339
+            },
+            "distance_miles": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "unavailable",
+              "unit": "miles",
+              "value": null
+            },
+            "duration_seconds": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 2056.0
+            },
+            "magnitude_jerk_rms_g_per_s": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g/s",
+              "value": 0.735219324142032
+            },
+            "shock_spike_rate_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "count/min",
+              "value": 28.15938022003341
+            },
+            "vertical_dynamic_g_rms": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g",
+              "value": 0.04946651320855935
+            }
+          },
+          "quality": [
+            "unavailable",
+            "valid"
+          ],
+          "role": "mall"
+        },
+        {
+          "distance": {
+            "formula_version": "source_supplied_distance.v1",
+            "quality": "unavailable",
+            "unit": "miles",
+            "value": null
+          },
+          "duration": {
+            "formula_version": "episodic_kubios_metrics.v1.0.0",
+            "quality": "valid",
+            "unit": "s",
+            "value": 369.0
+          },
+          "fsi": {
+            "status": "metric_not_exposed_for_triplet_stage",
+            "value": null
+          },
+          "label": "Walk",
+          "metrics": {
+            "cumulative_dynamic_shock_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g*s/min",
+              "value": 5.55520352561702
+            },
+            "distance_miles": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "unavailable",
+              "unit": "miles",
+              "value": null
+            },
+            "duration_seconds": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 369.0
+            },
+            "magnitude_jerk_rms_g_per_s": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g/s",
+              "value": 1.1152569231957008
+            },
+            "shock_spike_rate_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "count/min",
+              "value": 30.114226375908615
+            },
+            "vertical_dynamic_g_rms": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g",
+              "value": 0.12634899559174578
+            }
+          },
+          "quality": [
+            "unavailable",
+            "valid"
+          ],
+          "role": "walk"
+        },
+        {
+          "distance": {
+            "formula_version": "source_supplied_distance.v1",
+            "quality": "unavailable",
+            "unit": "miles",
+            "value": null
+          },
+          "duration": {
+            "formula_version": "episodic_kubios_metrics.v1.0.0",
+            "quality": "valid",
+            "unit": "s",
+            "value": 1078.0
+          },
+          "fsi": {
+            "status": "metric_not_exposed_for_triplet_stage",
+            "value": null
+          },
+          "label": "PT Skate",
+          "metrics": {
+            "cumulative_dynamic_shock_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g*s/min",
+              "value": 5.588748531747921
+            },
+            "distance_miles": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "unavailable",
+              "unit": "miles",
+              "value": null
+            },
+            "duration_seconds": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 1078.0
+            },
+            "magnitude_jerk_rms_g_per_s": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g/s",
+              "value": 1.3735566721645014
+            },
+            "shock_spike_rate_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "count/min",
+              "value": 32.191158086146146
+            },
+            "vertical_dynamic_g_rms": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g",
+              "value": 0.12776367391373683
+            }
+          },
+          "quality": [
+            "unavailable",
+            "valid"
+          ],
+          "role": "pt"
+        }
+      ],
+      "unequal_distance_disclosure": "Mall, walking, and PT stages retain their source-supplied unequal distances; equal exposure is not assumed."
+    },
+    {
+      "css_connectors": [
+        {
+          "distance": 0.5582410810133657,
+          "formula_version": "css_same_day_triplet.v1",
+          "left_label": "Walk",
+          "left_role": "walk",
+          "quality": "valid",
+          "right_label": "PT Skate",
+          "right_role": "pt",
+          "score": 0.6417492210830903,
+          "unit": "unitless_similarity_0_to_1"
+        },
+        {
+          "distance": 0.7649702891724811,
+          "formula_version": "css_same_day_triplet.v1",
+          "left_label": "Mall Skate",
+          "left_role": "mall",
+          "quality": "valid",
+          "right_label": "Walk",
+          "right_role": "walk",
+          "score": 0.5665817754183597,
+          "unit": "unitless_similarity_0_to_1"
+        },
+        {
+          "distance": 0.8725198623602355,
+          "formula_version": "css_same_day_triplet.v1",
+          "left_label": "Mall Skate",
+          "left_role": "mall",
+          "quality": "valid",
+          "right_label": "PT Skate",
+          "right_role": "pt",
+          "score": 0.5340397290843903,
+          "unit": "unitless_similarity_0_to_1"
+        }
+      ],
+      "date": "2026-07-08",
+      "direction_counts": {
+        "away_from_mall": 12,
+        "toward_mall": 4,
+        "unavailable": 1,
+        "unchanged": 0
+      },
+      "direction_groups": {
+        "away_from_mall": [
+          "magnitude_dynamic_g_rms",
+          "vertical_dynamic_g_rms",
+          "horizontal_dynamic_g_rms",
+          "stillness_fraction",
+          "magnitude_jerk_rms_g_per_s",
+          "movement_fraction",
+          "vertical_jerk_rms_g_per_s",
+          "cumulative_dynamic_shock_per_min",
+          "rmssd_ms",
+          "sdnn_ms",
+          "mean_hr_bpm",
+          "median_hr_bpm"
+        ],
+        "toward_mall": [
+          "duration_seconds",
+          "vertical_to_horizontal_dynamic_rms_ratio",
+          "shock_spike_rate_per_min",
+          "impact_rate_per_min"
+        ],
+        "unavailable": [
+          "distance_miles"
+        ],
+        "unchanged": []
+      },
+      "late_strava_status": "pending_weekly_download",
+      "protocol_version": "mall_walk_pt.v1",
+      "stages": [
+        {
+          "distance": {
+            "formula_version": "source_supplied_distance.v1",
+            "quality": "unavailable",
+            "unit": "miles",
+            "value": null
+          },
+          "duration": {
+            "formula_version": "episodic_kubios_metrics.v1.0.0",
+            "quality": "valid",
+            "unit": "s",
+            "value": 2135.0
+          },
+          "fsi": {
+            "status": "metric_not_exposed_for_triplet_stage",
+            "value": null
+          },
+          "label": "Mall Skate",
+          "metrics": {
+            "cumulative_dynamic_shock_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g*s/min",
+              "value": 2.0895196212986793
+            },
+            "distance_miles": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "unavailable",
+              "unit": "miles",
+              "value": null
+            },
+            "duration_seconds": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 2135.0
+            },
+            "magnitude_jerk_rms_g_per_s": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g/s",
+              "value": 0.7694139040040985
+            },
+            "shock_spike_rate_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "count/min",
+              "value": 25.22533977564918
+            },
+            "vertical_dynamic_g_rms": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g",
+              "value": 0.05062696962970238
+            }
+          },
+          "quality": [
+            "unavailable",
+            "valid"
+          ],
+          "role": "mall"
+        },
+        {
+          "distance": {
+            "formula_version": "source_supplied_distance.v1",
+            "quality": "unavailable",
+            "unit": "miles",
+            "value": null
+          },
+          "duration": {
+            "formula_version": "episodic_kubios_metrics.v1.0.0",
+            "quality": "valid",
+            "unit": "s",
+            "value": 374.0
+          },
+          "fsi": {
+            "status": "metric_not_exposed_for_triplet_stage",
+            "value": null
+          },
+          "label": "Walk",
+          "metrics": {
+            "cumulative_dynamic_shock_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g*s/min",
+              "value": 5.776993315199847
+            },
+            "distance_miles": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "unavailable",
+              "unit": "miles",
+              "value": null
+            },
+            "duration_seconds": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 374.0
+            },
+            "magnitude_jerk_rms_g_per_s": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g/s",
+              "value": 1.0971236641265576
+            },
+            "shock_spike_rate_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "count/min",
+              "value": 29.986052998605295
+            },
+            "vertical_dynamic_g_rms": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g",
+              "value": 0.1224656036647771
+            }
+          },
+          "quality": [
+            "unavailable",
+            "valid"
+          ],
+          "role": "walk"
+        },
+        {
+          "distance": {
+            "formula_version": "source_supplied_distance.v1",
+            "quality": "unavailable",
+            "unit": "miles",
+            "value": null
+          },
+          "duration": {
+            "formula_version": "episodic_kubios_metrics.v1.0.0",
+            "quality": "valid",
+            "unit": "s",
+            "value": 1138.0
+          },
+          "fsi": {
+            "status": "metric_not_exposed_for_triplet_stage",
+            "value": null
+          },
+          "label": "PT Skate",
+          "metrics": {
+            "cumulative_dynamic_shock_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g*s/min",
+              "value": 6.304701120099959
+            },
+            "distance_miles": {
+              "formula_version": "source_supplied_distance.v1",
+              "quality": "unavailable",
+              "unit": "miles",
+              "value": null
+            },
+            "duration_seconds": {
+              "formula_version": "episodic_kubios_metrics.v1.0.0",
+              "quality": "valid",
+              "unit": "s",
+              "value": 1138.0
+            },
+            "magnitude_jerk_rms_g_per_s": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g/s",
+              "value": 1.195812356532236
+            },
+            "shock_spike_rate_per_min": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "count/min",
+              "value": 27.281191806331467
+            },
+            "vertical_dynamic_g_rms": {
+              "formula_version": "kubios_acc_session_metrics.v1",
+              "quality": "valid",
+              "unit": "g",
+              "value": 0.14073728436967511
+            }
+          },
+          "quality": [
+            "unavailable",
+            "valid"
+          ],
+          "role": "pt"
+        }
+      ],
+      "unequal_distance_disclosure": "Mall, walking, and PT stages retain their source-supplied unequal distances; equal exposure is not assumed."
+    }
+  ],
+  "alt_text": "Four accepted dates are shown as three-stage Mall Skate, Walk, and PT Skate profiles. Metric-specific directions remain mixed and reciprocal CSS rows are omitted from the default view.",
+  "content_hash": "22a3e789181d63db6e5045e96a49e6c0d71b054b416d4668f551299bbb93c7a6",
+  "data_through_date": "2026-07-09",
+  "destination": "handicapskater.com",
+  "formula_identities": [
+    "css_same_day_triplet.v1",
+    "episodic_kubios_metrics.v1.0.0",
+    "kubios_acc_session_metrics.v1",
+    "kubios_rri_time_domain_metrics.v1",
+    "mall_walk_pt.v1",
+    "scientific_evidence_persistence.v1.0.0",
+    "source_supplied_distance.v1",
+    "triplet_return_toward_mall.v1|episodic_kubios_metrics.v1.0.0",
+    "triplet_return_toward_mall.v1|kubios_acc_session_metrics.v1",
+    "triplet_return_toward_mall.v1|kubios_rri_time_domain_metrics.v1",
+    "triplet_return_toward_mall.v1|source_supplied_distance.v1"
+  ],
+  "graph_contract_version": "fsi_publication_graph.v1",
+  "graph_id": "accepted_triplet_stage_profiles",
+  "intended_route": "/evidence/repeated-protocol/",
+  "interpretation": "The repeated protocol shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged; no universal return claim is made.",
+  "limitations": [
+    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are within-person evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+  ],
+  "long_description": "The repeated protocol shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged; no universal return claim is made. CSS connectors show three unique stage pairs; reciprocal and identity rows are audit-only. Return direction is descriptive, not Cohort Similarity Score. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are within-person evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "output_asset_names": [
+    "graphs/accepted_triplet_stage_profiles.json"
+  ],
+  "qualifications": [
+    "CSS connectors show three unique stage pairs; reciprocal and identity rows are audit-only.",
+    "Return direction is descriptive, not Cohort Similarity Score."
+  ],
+  "relation_identities": [
+    "v_triplet_stage_metric_detail",
+    "v_triplet_return_toward_mall",
+    "v_scientific_triplets"
+  ],
+  "sample_counts": {
+    "accepted_triplets": 4
+  },
+  "series": [
+    {
+      "date": "2026-07-05",
+      "metric": "distance_miles",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "miles",
+          "value": 3.27
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "miles",
+          "value": 0.26
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "miles",
+          "value": 2.96
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "metric": "duration_seconds",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "s",
+          "value": 1931.0
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "s",
+          "value": 327.0
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "s",
+          "value": 1050.0
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "metric": "vertical_dynamic_g_rms",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "g",
+          "value": 0.05158522954970856
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "g",
+          "value": 0.12620161185850665
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "g",
+          "value": 0.1397323763960435
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "g/s",
+          "value": 0.5906551160287685
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "g/s",
+          "value": 1.1353973060858273
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "g/s",
+          "value": 1.4022795973471656
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "metric": "shock_spike_rate_per_min",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "count/min",
+          "value": 23.826857160190496
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "count/min",
+          "value": 28.60759493670886
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "count/min",
+          "value": 29.601082932758715
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "g*s/min",
+          "value": 2.1843857750710436
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "g*s/min",
+          "value": 5.8055150592573925
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "g*s/min",
+          "value": 6.076523683686936
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "metric": "distance_miles",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "unavailable",
+          "stage": "mall",
+          "unit": "miles",
+          "value": null
+        },
+        {
+          "label": "Walk",
+          "quality": "unavailable",
+          "stage": "walk",
+          "unit": "miles",
+          "value": null
+        },
+        {
+          "label": "PT Skate",
+          "quality": "unavailable",
+          "stage": "pt",
+          "unit": "miles",
+          "value": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "metric": "duration_seconds",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "s",
+          "value": 2063.0
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "s",
+          "value": 337.0
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "s",
+          "value": 1092.0
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "metric": "vertical_dynamic_g_rms",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "g",
+          "value": 0.050869758399328176
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "g",
+          "value": 0.12536251370843082
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "g",
+          "value": 0.13713831396230983
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "g/s",
+          "value": 0.607662314585683
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "g/s",
+          "value": 1.0969256592716383
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "g/s",
+          "value": 1.2872407626762206
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "metric": "shock_spike_rate_per_min",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "count/min",
+          "value": 25.2612488125054
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "count/min",
+          "value": 29.5863004408274
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "count/min",
+          "value": 28.13021702838063
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "g*s/min",
+          "value": 2.140320913030632
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "g*s/min",
+          "value": 5.7112189370490425
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "g*s/min",
+          "value": 6.0313197046256235
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "metric": "distance_miles",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "unavailable",
+          "stage": "mall",
+          "unit": "miles",
+          "value": null
+        },
+        {
+          "label": "Walk",
+          "quality": "unavailable",
+          "stage": "walk",
+          "unit": "miles",
+          "value": null
+        },
+        {
+          "label": "PT Skate",
+          "quality": "unavailable",
+          "stage": "pt",
+          "unit": "miles",
+          "value": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "metric": "duration_seconds",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "s",
+          "value": 2056.0
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "s",
+          "value": 369.0
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "s",
+          "value": 1078.0
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "metric": "vertical_dynamic_g_rms",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "g",
+          "value": 0.04946651320855935
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "g",
+          "value": 0.12634899559174578
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "g",
+          "value": 0.12776367391373683
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "g/s",
+          "value": 0.735219324142032
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "g/s",
+          "value": 1.1152569231957008
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "g/s",
+          "value": 1.3735566721645014
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "metric": "shock_spike_rate_per_min",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "count/min",
+          "value": 28.15938022003341
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "count/min",
+          "value": 30.114226375908615
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "count/min",
+          "value": 32.191158086146146
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "g*s/min",
+          "value": 2.064294666430339
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "g*s/min",
+          "value": 5.55520352561702
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "g*s/min",
+          "value": 5.588748531747921
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "metric": "distance_miles",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "unavailable",
+          "stage": "mall",
+          "unit": "miles",
+          "value": null
+        },
+        {
+          "label": "Walk",
+          "quality": "unavailable",
+          "stage": "walk",
+          "unit": "miles",
+          "value": null
+        },
+        {
+          "label": "PT Skate",
+          "quality": "unavailable",
+          "stage": "pt",
+          "unit": "miles",
+          "value": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "metric": "duration_seconds",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "s",
+          "value": 2135.0
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "s",
+          "value": 374.0
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "s",
+          "value": 1138.0
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "metric": "vertical_dynamic_g_rms",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "g",
+          "value": 0.05062696962970238
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "g",
+          "value": 0.1224656036647771
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "g",
+          "value": 0.14073728436967511
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "g/s",
+          "value": 0.7694139040040985
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "g/s",
+          "value": 1.0971236641265576
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "g/s",
+          "value": 1.195812356532236
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "metric": "shock_spike_rate_per_min",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "count/min",
+          "value": 25.22533977564918
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "count/min",
+          "value": 29.986052998605295
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "count/min",
+          "value": 27.281191806331467
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "points": [
+        {
+          "label": "Mall Skate",
+          "quality": "valid",
+          "stage": "mall",
+          "unit": "g*s/min",
+          "value": 2.0895196212986793
+        },
+        {
+          "label": "Walk",
+          "quality": "valid",
+          "stage": "walk",
+          "unit": "g*s/min",
+          "value": 5.776993315199847
+        },
+        {
+          "label": "PT Skate",
+          "quality": "valid",
+          "stage": "pt",
+          "unit": "g*s/min",
+          "value": 6.304701120099959
+        }
+      ]
+    }
+  ],
+  "source_contracts": [
+    {
+      "contract": "observatory_mcp_resource.v1",
+      "version": "observatory_bundle.v1"
+    },
+    {
+      "contract": "evidence_observatory_presentation.v1",
+      "version": "evidence_observatory_presentation.v1"
+    },
+    {
+      "contract": "scientific_consumer_contract.v1.0.0",
+      "version": "scientific_consumer_contract.v1.0.0"
+    },
+    {
+      "contract": "observatory_graph.v1",
+      "version": "observatory_graph.v1"
+    }
+  ],
+  "source_labels": [
+    "Accepted Mall → Walk → PT Skate protocol",
+    "Kubios/Polar H10",
+    "Strava"
+  ],
+  "title": "Repeated Mall → Walk → PT Skate protocol",
+  "units": [
+    "count/min",
+    "g",
+    "g*s/min",
+    "g/s",
+    "miles",
+    "s"
+  ]
+}
