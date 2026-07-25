@@ -26,28 +26,41 @@ MODERN_PAGES = [
 
 EXPECTED_NAV_HREFS = {
     "/story/",
+    "/pain/",
     "/biomechanics/",
     "/evidence/",
+    "/evidence/mobility-comparison/",
+    "/evidence/repeated-protocol/",
+    "/evidence/transportation/",
+    "/evidence/longitudinal/",
+    "/evidence/strava-gps-skate-maps/",
     "/access/",
     "/platform/",
-    "/pain/",
     "/health-ai/",
     "/videos/",
-    "/evidence/strava-gps-skate-maps/",
     "https://handicapskater.org/standards/",
 }
 
 EXPECTED_NAV_LABELS = {
     "Story",
+    "Pain",
     "Movement",
     "Evidence",
-    "Access",
-    "Health AI",
+    "Transportation",
     "Platform",
+    "More",
     "Videos",
-    "Routes",
-    "Pain",
-    "Standards & Reviewer Guidance",
+    "Evidence Overview",
+    "Functional Mobility",
+    "Repeated Protocol",
+    "Transportation Context",
+    "Longitudinal Evidence",
+    "Route Map Explorer",
+    "Evidence Corpus",
+    "FSI / CSS Context",
+    "Validation and Audit",
+    "Mobility Intelligence / Health AI",
+    "Standards & Reviewer Guidance on HandicapSkater.org",
 }
 
 
@@ -136,6 +149,7 @@ class SiteTests(unittest.TestCase):
         js = site_header_js()
         self.assertIn("HandicapSkater.com", js)
         self.assertIn("HandicapSkater.org", js)
+        self.assertIn('<a class="brand" href="/"${brandCurrent}${brandAriaLabel}>', js)
         for href in EXPECTED_NAV_HREFS:
             self.assertIn(f'href: "{href}"', js)
         for label in EXPECTED_NAV_LABELS:
@@ -161,8 +175,12 @@ class SiteTests(unittest.TestCase):
         self.assertIn('normalizePath', js)
         self.assertIn('return match.includes(path)', js)
         self.assertIn('href: "/health-ai/"', js)
-        self.assertIn('label: "Health AI"', js)
+        self.assertIn('label: "Mobility Intelligence / Health AI"', js)
+        self.assertIn('brandHomeControl: true', js)
+        self.assertIn('config.brandHomeControl && path === "/"', js)
+        self.assertIn('aria-label="${config.brand} home"', js)
         self.assertIn('{ href: "/story/", label: "Story", match: ["/story/"] }', js)
+        self.assertIn('{ href: "/pain/", label: "Pain", match: ["/pain/"] }', js)
         self.assertIn('{ href: "/biomechanics/", label: "Movement", match: ["/biomechanics/"] }', js)
         self.assertNotIn('"/healthcare-wearable-mobility/"', js)
 
@@ -182,10 +200,11 @@ class SiteTests(unittest.TestCase):
         js = site_header_js()
         css = nav_css()
         self.assertIn("primaryLinks", js)
-        self.assertIn("moreLinks", js)
+        self.assertIn("menuGroups", js)
+        self.assertIn("renderNavMenu", js)
         self.assertIn('nav-more${activeClass}', js)
         self.assertIn('class="nav-more-summary"', js)
-        self.assertIn('class="nav-more-menu"', js)
+        self.assertIn('nav-more-menu${groupedClass}', js)
         for selector in (".nav-more", ".nav-more-summary", ".nav-more-menu"):
             self.assertIn(selector, css)
         self.assertIn("position: absolute", css)
@@ -194,7 +213,7 @@ class SiteTests(unittest.TestCase):
     def test_com_header_identity_and_cross_site_link(self) -> None:
         js = site_header_js()
         self.assertIn("HandicapSkater.com", js)
-        self.assertIn('label: "Standards & Reviewer Guidance"', js)
+        self.assertIn('label: "Standards & Reviewer Guidance on HandicapSkater.org"', js)
         self.assertIn("https://handicapskater.org/standards/", js)
         self.assertIn("HandicapSkater.org", js)
 
@@ -202,20 +221,23 @@ class SiteTests(unittest.TestCase):
         js = site_header_js()
         self.assertIn('brand: "HandicapSkater.org"', js)
         self.assertIn('label: "Standards"', js)
-        self.assertIn('label: "Mobility Review"', js)
+        self.assertIn('label: "Mobility-Aid Principles"', js)
+        self.assertIn('label: "Safety Review"', js)
         self.assertIn('label: "Transportation"', js)
-        self.assertIn('label: "Evidence Review"', js)
+        self.assertIn('label: "Evidence Review Method"', js)
         self.assertIn('label: "Evidence Quality"', js)
-        self.assertIn('label: "Timeline"', js)
-        self.assertIn('label: "Direct Threat"', js)
-        self.assertIn('label: "Reviewers"', js)
+        self.assertIn('label: "DOT / FTA / DOJ Timeline"', js)
+        self.assertIn('label: "Direct-Threat Analysis"', js)
+        self.assertIn('label: "Reviewer Guidance"', js)
         self.assertIn('label: "References"', js)
-        self.assertIn('label: "Individual Case Study & Evidence"', js)
+        self.assertIn('label: "Individual Case Study & Evidence on HandicapSkater.com"', js)
 
     def test_shared_navigation_css_contract(self) -> None:
         css = nav_css()
         for selector in (".site-header", ".nav-wrap", ".brand", ".site-nav", ".site-nav a", ".site-nav a.external-link"):
             self.assertIn(selector, css)
+        self.assertIn('.brand[aria-current="page"]', css)
+        self.assertIn(".brand:focus-visible", css)
         self.assertIn("flex-wrap: nowrap", css)
         self.assertIn("overflow: visible", css)
         self.assertIn("white-space: nowrap", css)
@@ -276,6 +298,96 @@ class SiteTests(unittest.TestCase):
         self.assertIn("function before appearance", html)
         self.assertNotIn("<h2>a. the injury</h2>", html)
         self.assertNotIn("<h2>n. the present appeal</h2>", html)
+
+    def test_homepage_review_cards_follow_public_narrative_order(self) -> None:
+        html = read("index.html")
+        section = html[html.index('id="choose-a-perspective"'):html.index('id="visual-evidence"')]
+        cards = re.findall(r'<article class="card perspective-card"[^>]*>(.*?)</article>', section, re.DOTALL)
+        titles = [re.search(r"<h3>([^<]+)</h3>", card).group(1) for card in cards]
+        self.assertEqual(
+            titles,
+            [
+                "Personal Story",
+                "Pain and Functional Context",
+                "Movement Context",
+                "Evidence",
+                "Friday Night Skate Routes",
+                "Mobility Intelligence",
+                "Generalized Standards",
+            ],
+        )
+        self.assertEqual(len(cards), 7)
+        self.assertNotIn("Health AI Observatory", section)
+        self.assertNotIn("Measured Evidence", section)
+        for term in (
+            "Explore the Evidence",
+            "Repeated San Francisco Mobility",
+            "commonly approximately 12 miles",
+            "actual route values vary",
+            "Friday and Saturday night skating",
+            "Wearable Mobility Science and Health AI",
+            "functional burden",
+            "adaptation across disability and aging",
+            "Open the Route Map Explorer",
+        ):
+            self.assertIn(term, section)
+
+    def test_evidence_menu_and_shared_local_navigation_use_canonical_routes(self) -> None:
+        js = site_header_js()
+        expected_menu_labels = (
+            "Start Here",
+            "Evidence Overview",
+            "How to Read the Evidence",
+            "Evidence Views",
+            "Functional Mobility",
+            "Repeated Protocol",
+            "Transportation Context",
+            "Longitudinal Evidence",
+            "Supporting Records",
+            "Route Map Explorer",
+            "Evidence Corpus",
+            "FSI / CSS Context",
+            "Validation and Audit",
+        )
+        positions = [js.index(f'"{label}"') for label in expected_menu_labels]
+        self.assertEqual(positions, sorted(positions))
+        for href in (
+            "/evidence/",
+            "/evidence/mobility-comparison/",
+            "/evidence/repeated-protocol/",
+            "/evidence/transportation/",
+            "/evidence/longitudinal/",
+            "/evidence/strava-gps-skate-maps/",
+            "/evidence/#corpus-contains",
+            "/evidence/#fsi-results",
+            "/evidence/#validation-audit",
+        ):
+            self.assertIn(f'href: "{href}"', js)
+
+        self.assertIn('class="evidence-local-nav"', js)
+        self.assertIn('aria-label="Evidence section navigation"', js)
+        for label in ("Overview", "Functional Mobility", "Repeated Protocol", "Transportation", "Longitudinal", "Routes", "Corpus", "Validation"):
+            self.assertIn(f'label: "{label}"', js)
+        self.assertIn(".evidence-local-nav", nav_css())
+        self.assertNotIn("page-anchor-nav", read("evidence/index.html"))
+
+    def test_primary_navigation_uses_requested_order_and_canonical_urls(self) -> None:
+        js = site_header_js()
+        com_config = js[js.index('"handicapskater.com"'):js.index('"handicapskater.org"')]
+        ordered = (
+            'label: "Story"',
+            'label: "Pain"',
+            'label: "Movement"',
+            'label: "Evidence"',
+            'label: "Transportation"',
+            'label: "Platform"',
+            'label: "More"',
+        )
+        positions = [com_config.index(label) for label in ordered]
+        self.assertEqual(positions, sorted(positions))
+        self.assertNotIn('label: "Home"', com_config)
+        self.assertIn("brandHomeControl: true", com_config)
+        self.assertNotRegex(com_config, r'href: "/[^\"]+\.html')
 
     def test_story_page_contains_full_timeline(self):
         html = read("story/index.html").lower()

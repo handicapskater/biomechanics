@@ -126,15 +126,15 @@
   <div class="footer-inner">
     <nav class="footer-nav" aria-label="Footer navigation">
       <a href="/">Home</a>
-      <a href="/standards.html">Standards</a>
-      <a href="/non-standard-mobility-aids.html">Mobility Review</a>
-      <a href="/evidence-standards.html">Evidence</a>
-      <a href="/fsi-css-platform.html">FSI/CSS</a>
-      <a href="/references.html">References</a>
+      <a href="/standards/">Standards</a>
+      <a href="/non-standard-mobility-aids/">Mobility Review</a>
+      <a href="/evidence-review/">Evidence</a>
+      <a href="/evidence-quality/">FSI/CSS</a>
+      <a href="/references/">References</a>
     </nav>
 
     <div class="footer-social">
-      <a href="https://handicapskater.com/" target="_blank" rel="noopener noreferrer">Case Study</a>
+      <a href="https://handicapskater.com/evidence/" target="_blank" rel="noopener noreferrer">Individual Case Study &amp; Evidence on HandicapSkater.com</a>
     </div>
 
     <p class="footer-copy">Copyright © 2004 to 2026 <span class="small-caps">HandicapSkater</span>.org.</p>
