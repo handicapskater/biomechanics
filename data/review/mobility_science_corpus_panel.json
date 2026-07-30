@@ -5,18 +5,18 @@
       "median_avg_hr_bpm": 113.0,
       "median_distance_mi": 18.175,
       "median_duration_min": 160.06666666666666,
-      "n_episodic_sensor": 13,
+      "n_episodic_sensor": 19,
       "n_longitudinal_context": 501,
-      "n_records": 514
+      "n_records": 520
     },
     {
       "canonical_cohort": "mall_skating",
-      "median_avg_hr_bpm": 76.79418580369301,
+      "median_avg_hr_bpm": 76.20883114748251,
       "median_distance_mi": 3.035,
-      "median_duration_min": 33.11666666666667,
-      "n_episodic_sensor": 12,
+      "median_duration_min": 33.86666666666667,
+      "n_episodic_sensor": 22,
       "n_longitudinal_context": 0,
-      "n_records": 12
+      "n_records": 22
     },
     {
       "canonical_cohort": "motorcycle",
@@ -40,10 +40,10 @@
       "canonical_cohort": "paratransit_bus",
       "median_avg_hr_bpm": 82.52308929823901,
       "median_distance_mi": 39.129999999999995,
-      "median_duration_min": 40.4,
-      "n_episodic_sensor": 11,
+      "median_duration_min": 42.773066666666665,
+      "n_episodic_sensor": 13,
       "n_longitudinal_context": 0,
-      "n_records": 11
+      "n_records": 13
     },
     {
       "canonical_cohort": "paratransit_sedan_or_taxi",
@@ -56,48 +56,48 @@
     },
     {
       "canonical_cohort": "paratransit_silverride",
-      "median_avg_hr_bpm": 91.33183901508815,
+      "median_avg_hr_bpm": 93.23771124434396,
       "median_distance_mi": 21.54,
-      "median_duration_min": 30.887366666666665,
-      "n_episodic_sensor": 3,
+      "median_duration_min": 32.720124999999996,
+      "n_episodic_sensor": 4,
       "n_longitudinal_context": 0,
-      "n_records": 3
+      "n_records": 4
     },
     {
       "canonical_cohort": "paratransit_unknown_vehicle",
-      "median_avg_hr_bpm": 87.0,
+      "median_avg_hr_bpm": 87.5,
       "median_distance_mi": 38.15,
-      "median_duration_min": 38.083333333333336,
+      "median_duration_min": 37.875,
       "n_episodic_sensor": 0,
-      "n_longitudinal_context": 123,
-      "n_records": 123
+      "n_longitudinal_context": 132,
+      "n_records": 132
     },
     {
       "canonical_cohort": "paratransit_van",
-      "median_avg_hr_bpm": 78.0985919690211,
+      "median_avg_hr_bpm": 84.4176500517074,
       "median_distance_mi": 39.15,
-      "median_duration_min": 41.03413333333333,
-      "n_episodic_sensor": 3,
+      "median_duration_min": 38.6504,
+      "n_episodic_sensor": 4,
       "n_longitudinal_context": 0,
-      "n_records": 3
+      "n_records": 4
     },
     {
       "canonical_cohort": "pt_skating",
-      "median_avg_hr_bpm": 111.0,
+      "median_avg_hr_bpm": 110.0,
       "median_distance_mi": 17.9,
-      "median_duration_min": 141.06666666666666,
-      "n_episodic_sensor": 35,
-      "n_longitudinal_context": 314,
-      "n_records": 349
+      "median_duration_min": 139.10833333333335,
+      "n_episodic_sensor": 45,
+      "n_longitudinal_context": 327,
+      "n_records": 372
     },
     {
       "canonical_cohort": "readiness_baseline",
-      "median_avg_hr_bpm": 53.08670829020733,
+      "median_avg_hr_bpm": 53.013403036106496,
       "median_distance_mi": null,
-      "median_duration_min": 2.998566666666667,
-      "n_episodic_sensor": 42,
+      "median_duration_min": 2.9982166666666665,
+      "n_episodic_sensor": 55,
       "n_longitudinal_context": 0,
-      "n_records": 42
+      "n_records": 55
     },
     {
       "canonical_cohort": "unknown_activity",
@@ -110,12 +110,12 @@
     },
     {
       "canonical_cohort": "walking",
-      "median_avg_hr_bpm": 116.0,
+      "median_avg_hr_bpm": 92.0,
       "median_distance_mi": 0.0,
-      "median_duration_min": 29.0,
-      "n_episodic_sensor": 13,
-      "n_longitudinal_context": 60,
-      "n_records": 73
+      "median_duration_min": 20.0,
+      "n_episodic_sensor": 23,
+      "n_longitudinal_context": 66,
+      "n_records": 89
     },
     {
       "canonical_cohort": "wheelchair_pt",
@@ -143,15 +143,15 @@
   "source_audit": {
     "corpus_path": "data/processed/latest/fsicss_mobility_science_corpus.jsonl",
     "evidence_tier_counts": {
-      "episodic_sensor": 150,
-      "longitudinal_context": 2635
+      "episodic_sensor": 203,
+      "longitudinal_context": 2663
     },
     "longitudinal_review_path": "data/review/longitudinal_mobility_metrics.json",
     "metric_scope_counts": {
-      "episodic_kubios": 150,
-      "longitudinal_whoop_strava": 2635
+      "episodic_kubios": 203,
+      "longitudinal_whoop_strava": 2663
     },
-    "record_count": 2785
+    "record_count": 2866
   },
   "title": "Mobility Science Corpus"
 }

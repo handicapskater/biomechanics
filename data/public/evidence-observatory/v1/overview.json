@@ -21,14 +21,14 @@
             "absolute_burden_unit": "g*s",
             "burden_per_mile": 565.5651079569027,
             "burden_per_mile_unit": "g*s/mile",
-            "burden_per_minute": 5.7112189370490425,
+            "burden_per_minute": 5.828217706030042,
             "burden_per_minute_unit": "g*s/min",
-            "burden_sample_count": 15,
+            "burden_sample_count": 23,
             "cohort": "walking",
-            "data_through_date": "2026-07-13",
+            "data_through_date": "2026-07-23",
             "distance_miles": 0.235,
             "distance_sample_count": 6,
-            "duration_minutes": 5.9,
+            "duration_minutes": 21.516000000000002,
             "formula_version": "kubios_acc_session_metrics.v1",
             "fsi": 0.3198144301470399,
             "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
@@ -40,18 +40,18 @@
             "quality": "kubios|kubios+strava+whoop|kubios+whoop"
           },
           {
-            "absolute_burden": 287.58790259244915,
+            "absolute_burden": 294.9673626969087,
             "absolute_burden_unit": "g*s",
             "burden_per_mile": 96.6771696415732,
             "burden_per_mile_unit": "g*s/mile",
             "burden_per_minute": 2.1340065337131304,
             "burden_per_minute_unit": "g*s/min",
-            "burden_sample_count": 14,
+            "burden_sample_count": 22,
             "cohort": "mall_skating",
-            "data_through_date": "2026-07-13",
+            "data_through_date": "2026-07-23",
             "distance_miles": 3.035,
             "distance_sample_count": 8,
-            "duration_minutes": 34.325,
+            "duration_minutes": 37.58333333333333,
             "formula_version": "kubios_acc_session_metrics.v1",
             "fsi": 0.174258973931154,
             "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
@@ -63,18 +63,18 @@
             "quality": "kubios|kubios+strava+whoop|kubios+whoop"
           },
           {
-            "absolute_burden": 407.9838516624019,
+            "absolute_burden": 402.3214340427696,
             "absolute_burden_unit": "g*s",
             "burden_per_mile": 139.58864514467683,
             "burden_per_mile_unit": "g*s/mile",
             "burden_per_minute": 5.905874126938405,
             "burden_per_minute_unit": "g*s/min",
-            "burden_sample_count": 38,
+            "burden_sample_count": 46,
             "cohort": "pt_skating",
-            "data_through_date": "2026-07-13",
+            "data_through_date": "2026-07-23",
             "distance_miles": 2.93,
             "distance_sample_count": 30,
-            "duration_minutes": 17.116666666666667,
+            "duration_minutes": 17.425,
             "formula_version": "kubios_acc_session_metrics.v1",
             "fsi": 0.2513641736370124,
             "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
@@ -86,18 +86,18 @@
             "quality": "kubios|kubios+strava+whoop|kubios+whoop"
           },
           {
-            "absolute_burden": 2881.5017764714325,
+            "absolute_burden": 3013.183522047997,
             "absolute_burden_unit": "g*s",
             "burden_per_mile": 147.30223466525183,
             "burden_per_mile_unit": "g*s/mile",
-            "burden_per_minute": 4.635215821802628,
+            "burden_per_minute": 4.676316637597762,
             "burden_per_minute_unit": "g*s/min",
-            "burden_sample_count": 15,
+            "burden_sample_count": 19,
             "cohort": "fns_sns_skating",
-            "data_through_date": "2026-07-11",
+            "data_through_date": "2026-07-24",
             "distance_miles": 19.43,
             "distance_sample_count": 13,
-            "duration_minutes": 179.23333333333332,
+            "duration_minutes": 180.33333333333334,
             "formula_version": "kubios_acc_session_metrics.v1",
             "fsi": 0.3012970333074775,
             "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
@@ -119,10 +119,10 @@
         "graph_id": "accepted_triplet_stage_profiles",
         "id": "repeated-protocol",
         "key_values": {
-          "accepted_triplets": 4
+          "accepted_triplets": 15
         },
         "qualification": "PT direction remains metric specific, not universal.",
-        "result": "4 accepted Mall → Walk → PT Skate sequences provide repeated within-person comparison.",
+        "result": "15 accepted Mall → Walk → PT Skate sequences provide repeated within-person comparison.",
         "title": "The protocol repeated across accepted dates"
       },
       {
@@ -767,9 +767,9 @@
       },
       {
         "label": "Accepted repeated protocols",
-        "sample_count": 4,
+        "sample_count": 15,
         "unit": "accepted dates",
-        "value": 4
+        "value": 15
       },
       {
         "label": "Evidence date range",
@@ -783,7 +783,7 @@
     ]
   },
   "conclusion_strength": "supports_with_qualification",
-  "content_hash": "806b59ce6083966d5207c790041c8616f6ffd8f02a755b9c0ff9246e571f4803",
+  "content_hash": "ce05370e2f4970d64a0e69e71ae44fbd521f3a6c7d96c0664953677574c00cb3",
   "data_through_date": "2026-07-09",
   "destination": "handicapskater.com",
   "evidence_scope": "Within-person individual mobility evidence.",
@@ -807,10 +807,10 @@
   "resource_id": "overview",
   "resource_version": "fsi_publication_resource.v1",
   "sample_counts": {
-    "fns_sns_skating": 15,
-    "mall_skating": 14,
-    "pt_skating": 38,
-    "walking": 15
+    "fns_sns_skating": 19,
+    "mall_skating": 22,
+    "pt_skating": 46,
+    "walking": 23
   },
   "short_title": "Overview",
   "source_contracts": [

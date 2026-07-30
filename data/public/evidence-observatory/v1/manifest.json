@@ -1,27 +1,27 @@
 {
-  "bundle_id": "handicapskater-com-v1-af8cd15fd77ee393",
-  "content_hash": "af8cd15fd77ee393ae65426baa9b5e35b1d5ce4a1a0c191f2de599b7228288cb",
+  "bundle_id": "handicapskater-com-v1-e27090a0263e6cfa",
+  "content_hash": "e27090a0263e6cfa647ba384aa5cd68e04141441e639cad7c084eb701a26c6a1",
   "data_through_date": "2026-07-09",
   "destination": "handicapskater.com",
-  "generated_at_utc": "2026-07-17T00:02:13.329478Z",
+  "generated_at_utc": "2026-07-27T00:42:18.510525Z",
   "generator_version": "fsi_publication_exporter.v1",
   "graph_count": 4,
   "graphs": [
     {
-      "byte_size": 11062,
-      "content_hash": "442117b81b9d25c88a3eabb33efde835d9cd3070403a72ad1c2713c31d61b1e2",
+      "byte_size": 11071,
+      "content_hash": "ec289faf3cffebc2a3cec8e7178791de682646aa6efcf76021f8123c11369545",
       "graph_id": "mobility_output_and_burden",
       "media_type": "application/json",
       "path": "graphs/mobility_output_and_burden.json",
-      "sha256": "80daff41ef74711d8ae4430586ea2ce4470973bdeae3a965ba0fdb24ec001511"
+      "sha256": "9af5b1c13dcce43cb6b6324182c51969324d325b4ac67d97d3df986cedd92a34"
     },
     {
-      "byte_size": 51729,
-      "content_hash": "22a3e789181d63db6e5045e96a49e6c0d71b054b416d4668f551299bbb93c7a6",
+      "byte_size": 185111,
+      "content_hash": "e6f3bf89f33eeb1918800083e74a463f2003591321c73468a41ec8f46ea66b3b",
       "graph_id": "accepted_triplet_stage_profiles",
       "media_type": "application/json",
       "path": "graphs/accepted_triplet_stage_profiles.json",
-      "sha256": "dfa0ccf7298db6e288a2299a5431c1add66878a236302694f34efade8edbd0c7"
+      "sha256": "5e0971cac4d9f69762c65d066faa0d829f92463e718b92c3364524417411dbc0"
     },
     {
       "byte_size": 22103,
@@ -91,28 +91,28 @@
   "resource_count": 8,
   "resources": [
     {
-      "byte_size": 35466,
-      "content_hash": "806b59ce6083966d5207c790041c8616f6ffd8f02a755b9c0ff9246e571f4803",
+      "byte_size": 35481,
+      "content_hash": "ce05370e2f4970d64a0e69e71ae44fbd521f3a6c7d96c0664953677574c00cb3",
       "media_type": "application/json",
       "path": "overview.json",
       "resource_id": "overview",
-      "sha256": "94e50e1fb8f27a42443dbd4166ae74b39735a894f829585b174ff2d6e46483d9"
+      "sha256": "dc1076c617379c31510cbb5c00daef2cd1ff772d9027d68ce2b14489d162f519"
     },
     {
-      "byte_size": 11146,
-      "content_hash": "ed40ade56dff4597cc278051724e2f8614d7a8276943533821f030a2dd33dbcf",
+      "byte_size": 11168,
+      "content_hash": "4ea220a735c64880e2a67d75ad94d794d3db932a93879c819932a9df8fa58d43",
       "media_type": "application/json",
       "path": "mobility-comparison.json",
       "resource_id": "mobility-comparison",
-      "sha256": "767b3982d2c616161ec90d3203a37315102d089f11a02547449af50c07b9d674"
+      "sha256": "5576257f63ff3aeabb14caf33cebe2fc02de1dc8ac1a7b8bda466528af6c49ae"
     },
     {
-      "byte_size": 64608,
-      "content_hash": "75bf2f3861d450c773ea0216211b3293f1247492a569b9d4234f50f3730f1005",
+      "byte_size": 163447,
+      "content_hash": "86bdd0f0bbd133c933164e1001a98c3fef6380e0d134702b37c3b4d166265e12",
       "media_type": "application/json",
       "path": "repeated-protocol.json",
       "resource_id": "repeated-protocol",
-      "sha256": "33a7b99d52bda32bbc25547194942ca2f163780c6da7ffe2db97876ed7559eea"
+      "sha256": "d23dc028520e570c8de86fae2e471a9e04a6372eddc574b2ae989a995918b528"
     },
     {
       "byte_size": 15875,
@@ -147,12 +147,12 @@
       "sha256": "98e516bf0e0979a0d856dbe9efe4ccdf41129d4e2847457808fee04e2cde5fbd"
     },
     {
-      "byte_size": 3834,
-      "content_hash": "7f688955b16937ace52539530469ab58f68f1a6d42101e53b8bedd123c68b0c7",
+      "byte_size": 3836,
+      "content_hash": "56db622c9b3d31d3b0bca3b38ca6c24c76cb2d1e073bd753b984c8ca8cdec3b8",
       "media_type": "application/json",
       "path": "sources.json",
       "resource_id": "sources",
-      "sha256": "a6927d7be253144e8beef0ed751314cfc894ccdc3407adaec2bf5038190984f1"
+      "sha256": "0896a2a19d15161e3eee9c78c07f6dd7e787c08b7763689a1ee2e3c7b5dab94e"
     }
   ],
   "safety": {
