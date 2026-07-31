@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import json
 import re
+from datetime import datetime
 from pathlib import Path
 
 
@@ -29,7 +30,19 @@ REQUIRED_FIELDS = {
     "rain_window_label",
     "daily_rain_label",
     "evidence_summary",
+    "activity_id",
+    "activity_start_local",
+    "weather_source",
+    "weather_provider",
+    "weather_station",
+    "weather_coverage_status",
+    "weather_missing_reason",
 }
+
+ROUTE_RE = re.compile(
+    r'<li><a href="/maps/(?P<filename>[^"]+-(?P<activity_id>\d+)\.html)">'
+    r"(?P<label>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} - .*?)</a></li>"
+)
 
 
 def contains_nan_string(value: object) -> bool:
@@ -60,7 +73,9 @@ def main() -> None:
     for index, record in enumerate(records, start=1):
         missing = REQUIRED_FIELDS - set(record)
         if missing:
-            raise SystemExit(f"Record {index} is missing required fields: {sorted(missing)}")
+            raise SystemExit(
+                f"Record {index} is missing required fields: {sorted(missing)}"
+            )
 
     if not any(record.get("rain_between_9pm_midnight") is True for record in records):
         raise SystemExit("Expected at least one rain_between_9pm_midnight=true record")
@@ -76,7 +91,45 @@ def main() -> None:
     if contains_nan_string(payload):
         raise SystemExit("JSON contains a raw NaN string")
 
-    print(f"Validated {len(records)} Strava weather records")
+    index_path = ROOT / "evidence/strava-gps-skate-maps/index.html"
+    index_text = index_path.read_text(encoding="utf-8")
+    listed = list(ROUTE_RE.finditer(index_text))
+    if len(listed) != len(records):
+        raise SystemExit(
+            f"Route/weather count mismatch: routes={len(listed)} weather={len(records)}"
+        )
+    route_ids = []
+    for match in listed:
+        local_start = datetime.strptime(match.group("label")[:19], "%Y-%m-%d %H:%M:%S")
+        if local_start.weekday() not in {4, 5}:
+            raise SystemExit(
+                f"Non-Friday/Saturday route remains: {match.group('label')}"
+            )
+        route_ids.append(match.group("activity_id"))
+
+    weather_ids = [str(record.get("activity_id") or "") for record in records]
+    if route_ids != weather_ids:
+        raise SystemExit("Route and weather activity IDs are not aligned in row order")
+    for index, record in enumerate(records, start=1):
+        coverage = record.get("weather_coverage_status")
+        if coverage not in {
+            "legacy_fixed_local_window",
+            "activity_time_point_observation",
+            "unavailable",
+        }:
+            raise SystemExit(
+                f"Record {index} has invalid weather coverage status: {coverage}"
+            )
+        if coverage == "unavailable" and not record.get("weather_missing_reason"):
+            raise SystemExit(f"Record {index} lacks an explicit weather missing reason")
+
+    missing = sum(
+        record.get("weather_coverage_status") == "unavailable" for record in records
+    )
+    print(
+        f"Validated {len(records)} Friday/Saturday Strava weather records "
+        f"({missing} explicitly unavailable)"
+    )
 
 
 if __name__ == "__main__":

@@ -44,6 +44,7 @@ NUMERIC_FIELDS = {
     "weather_hourly_station_lon",
     "daily_station_lat",
     "daily_station_lon",
+    "precipitation_intensity_inches_per_hour",
 }
 
 
@@ -150,6 +151,10 @@ def temp_label(row: dict[str, object]) -> str:
     low = row.get("temp_min_f")
     high = row.get("temp_max_f")
     category = row.get("temp_category") or "uncategorized"
+    if row.get("weather_coverage_status") == "unavailable":
+        return "Temperature unavailable"
+    if row.get("weather_coverage_status") == "activity_time_point_observation":
+        return f"{fmt_number(mean)}°F activity-time observation"
     if mean is None and low is None and high is None:
         return f"Temperature unavailable, {category}"
     return f"{fmt_number(mean)}°F mean, {fmt_number(low, 0)}-{fmt_number(high, 0)}°F, {category}"
@@ -160,11 +165,30 @@ def wind_label(row: dict[str, object]) -> str:
     max_wind = row.get("wind_speed_max_mph")
     gust = row.get("wind_gust_max_mph")
     category = row.get("wind_category") or "uncategorized"
+    if row.get("weather_coverage_status") == "unavailable":
+        return "Wind unavailable"
+    if row.get("weather_coverage_status") == "activity_time_point_observation":
+        gust_text = (
+            "gust unavailable" if gust is None else f"{fmt_number(gust)} mph gust"
+        )
+        return f"{fmt_number(mean)} mph activity-time wind, {gust_text}"
     gust_text = "gust unavailable" if gust is None else f"{fmt_number(gust)} mph gust"
     return f"{fmt_number(mean)} mph mean, {fmt_number(max_wind)} mph max, {gust_text}, {category}"
 
 
 def rain_window_label(row: dict[str, object]) -> str:
+    coverage = row.get("weather_coverage_status")
+    if coverage == "unavailable":
+        return "Precipitation unavailable"
+    if coverage == "activity_time_point_observation":
+        intensity = row.get("precipitation_intensity_inches_per_hour")
+        if intensity is None:
+            return "Precipitation unavailable at activity-time observation"
+        return (
+            f"Activity-time precipitation intensity: {fmt_precip(intensity)} in/hour"
+            if float(intensity) > 0
+            else "No precipitation at activity-time observation"
+        )
     if row.get("rain_between_9pm_midnight"):
         return (
             "Rain 9 PM-midnight: "
@@ -181,6 +205,10 @@ def rain_window_label(row: dict[str, object]) -> str:
 
 
 def daily_rain_label(row: dict[str, object]) -> str:
+    if row.get("weather_coverage_status") == "activity_time_point_observation":
+        return "Daily precipitation unavailable"
+    if row.get("weather_coverage_status") == "unavailable":
+        return "Daily precipitation unavailable"
     if row.get("downtown_daily_rain"):
         return (
             "Daily rain: "
@@ -195,11 +223,19 @@ def daily_rain_label(row: dict[str, object]) -> str:
 
 
 def visibility_label(row: dict[str, object]) -> str:
+    if row.get("weather_coverage_status") == "unavailable":
+        return "Visibility unavailable"
+    if row.get("weather_coverage_status") == "activity_time_point_observation":
+        return (
+            f"{fmt_number(row.get('visibility_min_miles'))} mi activity-time visibility"
+        )
     category = row.get("visibility_category") or "uncategorized"
     return f"{fmt_number(row.get('visibility_min_miles'))} mi min, {category}"
 
 
 def badge_label(row: dict[str, object]) -> str:
+    if row.get("weather_coverage_status") == "unavailable":
+        return "Weather unavailable"
     if row.get("rain_between_9pm_midnight"):
         return "Rain during skate window"
     if row.get("downtown_daily_rain"):
@@ -208,6 +244,8 @@ def badge_label(row: dict[str, object]) -> str:
 
 
 def severity(row: dict[str, object]) -> str:
+    if row.get("weather_coverage_status") == "unavailable":
+        return "unavailable"
     if row.get("rain_between_9pm_midnight"):
         return "rain_window"
     if row.get("downtown_daily_rain"):
@@ -225,7 +263,12 @@ def evidence_summary(row: dict[str, object]) -> str:
     temp = temp_label(row)
     wind = wind_label(row)
     visibility = visibility_label(row)
-    return f"{date} {title}: {rain}; {daily}; {temp}; {wind}; {visibility}."
+    source = row.get("weather_source") or "Weather source unavailable"
+    coverage = row.get("weather_coverage_status") or "coverage unspecified"
+    return (
+        f"{date} {title}: {rain}; {daily}; {temp}; {wind}; {visibility}. "
+        f"Source: {source}; coverage: {coverage}."
+    )
 
 
 def normalize_row(raw: dict[str, str]) -> dict[str, object]:
