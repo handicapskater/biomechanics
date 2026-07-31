@@ -167,6 +167,12 @@
       display: none;
     }
 
+    html,
+    .page-route-maps {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
     @media (max-width: 640px) {
       .weather-filter-controls {
         align-items: stretch;
@@ -286,7 +292,7 @@
               <select id="route-select" size="12" aria-label="Filtered route map results"></select>
             </label>
           </div>
-          <p id="route-browser-summary" class="route-browser-summary">Loading route maps...</p>
+          <p id="route-browser-summary" class="route-browser-summary" aria-live="polite">Enhanced route controls are loading. The complete direct-link archive remains available below.</p>
         </aside>
         <section class="route-preview-panel" aria-label="Selected route map preview">
           <div class="route-preview-card">
@@ -308,6 +314,7 @@
                     id="route-map-frame"
                     title="Selected GPS skate route map"
                     loading="lazy"
+                    scrolling="no"
                     referrerpolicy="no-referrer-when-downgrade"
                     hidden></iframe>
           </div>
@@ -886,6 +893,8 @@
   <script src="/common/site-footer.js"></script>
   <script>
     (function () {
+      function initializeRouteExplorer() {
+      try {
       const WEATHER_JSON_URL = "./data/strava_routes_weather_conditions_9pm_midnight.json";
       const rawList = document.getElementById("route-map-list");
       const searchInput = document.getElementById("route-search");
@@ -914,6 +923,14 @@
       let selectedRoute = null;
       let weatherFilter = "all";
       let weatherLoaded = false;
+      let frameLoadTimer = null;
+      let resizeTimer = null;
+      const coarsePointer = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
+
+      if (coarsePointer) {
+        routeSelect.removeAttribute("size");
+        routeSelect.dataset.touchNative = "true";
+      }
 
       function getRouteType(text) {
         if (holidayPattern.test(text)) return "Holiday";
@@ -1082,6 +1099,11 @@
         return { index, label, text, href, year, type, element: li, date: dateTitle.date, routeTitleKey: dateTitle.title, weather: null };
       }).filter((route) => route.href && route.href !== "#");
 
+      if (!routes.length) {
+        summary.textContent = "Enhanced route data is unavailable. Use the complete direct-link archive below.";
+        return;
+      }
+
       const years = Array.from(new Set(routes.map((route) => route.year)))
               .filter((year) => year !== "Unknown")
               .sort();
@@ -1108,13 +1130,14 @@
 
       function renderOptions() {
         const matches = filteredRoutes();
+        const matchIndexes = new Set(matches.map((route) => route.index));
 
         routeSelect.innerHTML = "";
         const weatherNote = weatherLoaded && weatherFilter !== "all" ? `, weather filter: ${weatherFilter.replace("-", " ")}` : "";
         summary.textContent = `${matches.length} of ${routes.length} route maps shown${weatherNote}`;
 
         for (const route of routes) {
-          route.element.hidden = !matches.some((match) => match.index === route.index);
+          route.element.hidden = !matchIndexes.has(route.index);
         }
 
         if (!matches.length) {
@@ -1139,15 +1162,59 @@
         }
       }
 
+      function routePreviewUrl(route) {
+        const url = new URL(route.href, window.location.href);
+        url.searchParams.set("v", "mobilefix1");
+        return url.pathname + url.search;
+      }
+
+      function refreshPreviewSize() {
+        if (frame.hidden) return;
+        const height = Math.max(360, Math.min(window.innerHeight * 0.68, 720));
+        frame.style.height = `${Math.round(height)}px`;
+        frame.style.minHeight = `${Math.round(height)}px`;
+        try {
+          frame.contentWindow.dispatchEvent(new Event("resize"));
+        } catch (error) {
+          // The full-map link remains the fallback if the child document is unavailable.
+        }
+      }
+
+      function showPreviewFailure() {
+        if (!selectedRoute) return;
+        selectedHelp.textContent = "The in-page preview could not be confirmed. Open full map remains available for this exact route.";
+      }
+
+      frame.addEventListener("load", function () {
+        window.clearTimeout(frameLoadTimer);
+        let mapDocumentLoaded = false;
+        try {
+          mapDocumentLoaded = Boolean(frame.contentDocument && frame.contentDocument.querySelector(".folium-map"));
+        } catch (error) {
+          mapDocumentLoaded = false;
+        }
+        if (!mapDocumentLoaded) {
+          showPreviewFailure();
+          return;
+        }
+        if (selectedRoute) {
+          selectedHelp.textContent = `${selectedRoute.type} route${selectedRoute.year !== "Unknown" ? " from " + selectedRoute.year : ""}. The map preview is loaded below. Use Open full map for a dedicated page.`;
+        }
+        refreshPreviewSize();
+      });
+      frame.addEventListener("error", function () {
+        window.clearTimeout(frameLoadTimer);
+        showPreviewFailure();
+      });
+
       function selectRoute(route, updateUrl) {
         selectedRoute = route;
 
         selectedTitle.textContent = route.label;
         selectedHelp.textContent = `${route.type} route${route.year !== "Unknown" ? " from " + route.year : ""}. The map preview is loaded below. Use Open full map for a dedicated page.`;
 
-        const fullMapUrl = new URL(route.href, window.location.href);
-        fullMapUrl.searchParams.set("v", "popupfix3");
-        selectedOpen.href = fullMapUrl.pathname + fullMapUrl.search;
+        const previewUrl = routePreviewUrl(route);
+        selectedOpen.href = previewUrl;
         selectedOpen.hidden = false;
 
         selectedWeather.innerHTML = "";
@@ -1161,10 +1228,10 @@
         emptyState.hidden = true;
         frame.hidden = false;
 
-        // Cache-bust the iframe so stale map HTML does not keep showing old popup shells.
-        const mapUrl = new URL(route.href, window.location.href);
-        mapUrl.searchParams.set("v", "popupfix3");
-        frame.src = mapUrl.pathname + mapUrl.search;
+        window.clearTimeout(frameLoadTimer);
+        frame.src = previewUrl;
+        refreshPreviewSize();
+        frameLoadTimer = window.setTimeout(showPreviewFailure, 12000);
 
         if (updateUrl) {
           const url = new URL(window.location.href);
@@ -1242,7 +1309,7 @@
           route.weather = weather;
           matchedRecords.add(weather);
           matchedCount += 1;
-          attachWeatherToRawList(route, weather);
+          if (!coarsePointer) attachWeatherToRawList(route, weather);
         }
 
         weatherLoaded = true;
@@ -1297,6 +1364,13 @@
         }
       });
 
+      function schedulePreviewRefresh() {
+        window.clearTimeout(resizeTimer);
+        resizeTimer = window.setTimeout(refreshPreviewSize, 150);
+      }
+      window.addEventListener("resize", schedulePreviewRefresh);
+      window.addEventListener("orientationchange", schedulePreviewRefresh);
+
       renderOptions();
 
       const initialRouteParam = new URL(window.location.href).searchParams.get("route");
@@ -1310,6 +1384,20 @@
       }
 
       loadWeather();
+      } catch (error) {
+        const fallbackSummary = document.getElementById("route-browser-summary");
+        if (fallbackSummary) {
+          fallbackSummary.textContent = "Enhanced route controls could not load. Use the complete direct-link archive below.";
+        }
+        console.warn("Route explorer initialization failed.", error);
+      }
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initializeRouteExplorer, { once: true });
+      } else {
+        initializeRouteExplorer();
+      }
     })();
   </script>
 </body>

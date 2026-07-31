@@ -480,6 +480,12 @@ class SiteTests(unittest.TestCase):
             self.assertIn("OpenStreetMap", html, str(page))
             self.assertIn("L.map", html, str(page))
 
+    def test_all_generated_route_maps_have_mobile_viewport(self) -> None:
+        pages = sorted((ROOT / "common/maps").glob("*.html"))
+        self.assertGreaterEqual(len(pages), 542)
+        for page in pages:
+            self.assertIn('<meta name="viewport"', page.read_text(errors="ignore"), str(page))
+
     def test_route_maps_have_no_folium_popup_variables(self) -> None:
         map_dir = ROOT / "common/maps"
         self.assertTrue(map_dir.exists())

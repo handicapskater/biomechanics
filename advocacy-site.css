@@ -564,6 +564,8 @@ summary {
   background: rgba(255, 255, 255, 0.08);
   color: inherit;
   font: inherit;
+  min-height: 44px;
+  max-width: 100%;
 }
 
 .route-browser-summary {
@@ -779,6 +781,8 @@ summary {
 .route-map-frame-wrap {
   position: relative;
   min-height: 320px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .route-map-frame-wrap iframe {
@@ -821,6 +825,25 @@ summary {
 
   .route-map-frame-wrap iframe {
     min-height: 68vh;
+  }
+
+  .route-explorer,
+  .route-explorer-layout,
+  .route-picker,
+  .route-preview-panel {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+@media (pointer: coarse) {
+  #route-select[data-touch-native="true"] {
+    min-height: 44px;
+    height: 44px;
+  }
+
+  .route-map-frame-wrap iframe {
+    pointer-events: none;
   }
 }
 
