@@ -1,6 +1,6 @@
 {
   "available": true,
-  "model_boundary_note": "These scores do not measure pain directly and do not make clinical or legal conclusions. They summarize within-person MSK burden patterns from wearable, movement, and source-indexed evidence.",
+  "model_boundary_note": "These scores do not measure pain directly and do not make clinical or legal conclusions. They summarize N-of-1 MSK burden patterns from wearable, movement, and source-indexed evidence.",
   "rows": [
     {
       "active_control_loss_axis_median": 0.05,

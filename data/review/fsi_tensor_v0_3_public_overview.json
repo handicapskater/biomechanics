@@ -364,7 +364,7 @@
       "right_impact_burden_proxy_median": 0.578742333
     }
   ],
-  "model_boundary_note": "These scores do not measure pain directly and do not make clinical or legal conclusions. They summarize within-person MSK burden patterns from wearable, movement, and source-indexed evidence.",
+  "model_boundary_note": "These scores do not measure pain directly and do not make clinical or legal conclusions. They summarize N-of-1 MSK burden patterns from wearable, movement, and source-indexed evidence.",
   "model_id": "fsi_tensor_msk_autonomic_gated_burden",
   "model_version": 0.3,
   "session_count": 123,

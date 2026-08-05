@@ -1,6 +1,6 @@
 {
   "accessibility": {
-    "plain_language_summary": "Controlled inline skating enabled substantially more useful mobility than pain-limited walking in this within-person record.",
+    "plain_language_summary": "Controlled inline skating enabled substantially more useful mobility than pain-limited walking in this N-of-1 scientific record.",
     "sample_counts_visible": true,
     "screen_reader_summary": "Four aligned panels compare walking, Mall skating, PT skating, and FNS/SNS skating. Walking has the shortest median distance and the highest median cumulative shock per mile.",
     "table_available": true,
@@ -101,7 +101,7 @@
         "quality": "kubios|kubios+strava+whoop"
       }
     ],
-    "central_finding": "Controlled inline skating enabled substantially more useful mobility than pain-limited walking in this within-person record.",
+    "central_finding": "Controlled inline skating enabled substantially more useful mobility than pain-limited walking in this N-of-1 scientific record.",
     "cohorts": [
       {
         "absolute_burden": 132.5473346239453,
@@ -200,10 +200,10 @@
     "unequal_distance_disclosure": "The cohorts and protocol stages cover unequal distances; source-supplied distance remains visible beside every normalized value."
   },
   "conclusion_strength": "supports",
-  "content_hash": "4ea220a735c64880e2a67d75ad94d794d3db932a93879c819932a9df8fa58d43",
+  "content_hash": "b2bd4feade25db791ba295c9e43c5d0d195d85a4712970ec238194eab10c7a27",
   "data_through_date": "2026-07-09",
   "destination": "handicapskater.com",
-  "evidence_scope": "Within-person cohort summaries with unequal exposure disclosed.",
+  "evidence_scope": "N-of-1 cohort summaries with unequal exposure disclosed.",
   "formula_identities": [
     "body_coupling_mapping.v1",
     "fsi_tensor_v0_3_msk_autonomic_gated_burden",
@@ -214,9 +214,9 @@
   ],
   "intended_route": "/evidence/mobility-comparison/",
   "limitations": [
-    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are within-person evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
   ],
-  "plain_language_finding": "Controlled inline skating enabled substantially more useful mobility than pain-limited walking in this within-person record.",
+  "plain_language_finding": "Controlled inline skating enabled substantially more useful mobility than pain-limited walking in this N-of-1 scientific record.",
   "relation_identities": [
     "v_body_coupling_cohort_comparison",
     "v_fsi_summary"
@@ -252,7 +252,7 @@
     "Kubios/Polar H10 episodic sessions",
     "Strava activity context"
   ],
-  "summary": "Controlled inline skating enabled substantially more useful mobility than pain-limited walking in this within-person record.",
+  "summary": "Controlled inline skating enabled substantially more useful mobility than pain-limited walking in this N-of-1 scientific record.",
   "title": "Walking versus controlled inline skating",
   "units": [
     "miles",

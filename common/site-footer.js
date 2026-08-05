@@ -117,7 +117,7 @@
     </div>
 
     <p class="footer-copy">Copyright © 2004 to 2026 <span class="small-caps">HandicapSkater</span>.</p>
-    <p class="footer-description"><span class="small-caps">HandicapSkater</span> separates physiologic burden, mechanical motion exposure, and body coupling so mobility aid review can preserve context. This site presents an individual within person evidence record and public case study.</p>
+    <p class="footer-description"><span class="small-caps">HandicapSkater</span> separates physiologic burden, mechanical motion exposure, and body coupling so mobility aid review can preserve context. This site presents an N-of-1 scientific record and public case study.</p>
   </div>
 </footer>
 `,
@@ -134,7 +134,7 @@
     </nav>
 
     <div class="footer-social">
-      <a href="https://handicapskater.com/evidence/" target="_blank" rel="noopener noreferrer">Individual Case Study &amp; Evidence on HandicapSkater.com</a>
+      <a href="https://handicapskater.com/evidence/" target="_blank" rel="noopener noreferrer">N-of-1 Case Study &amp; Evidence on HandicapSkater.com</a>
     </div>
 
     <p class="footer-copy">Copyright © 2004 to 2026 <span class="small-caps">HandicapSkater</span>.org.</p>

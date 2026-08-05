@@ -18,7 +18,7 @@ replacements = {
     "platform-default": "platform default",
     "user-confirmed": "user confirmed",
     "activity-specific": "activity specific",
-    "within-person": "within person",
+    "N-of-1": "N-of-1",
     "mode-specific": "mode specific",
     "back-seat": "back seat",
     "front-seat": "front seat",

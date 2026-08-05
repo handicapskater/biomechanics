@@ -235,6 +235,63 @@
     mount.appendChild(wrapper);
   }
 
+  function renderHypothesisRegistry(mount, payload) {
+    const values = payload.approved_values || {};
+    const hypotheses = values.canonical_hypotheses;
+    if (!Array.isArray(hypotheses) || hypotheses.map(function (item) { return item.hypothesis_id; }).join(",") !== "H1,H2,H3,H4,H5,H6") {
+      throw new Error("Canonical hypothesis registry unavailable");
+    }
+    mount.replaceChildren();
+    mount.dataset.state = "ready";
+    const wrapper = element("div", "publication-hypothesis-registry");
+    wrapper.appendChild(element("p", "publication-finding", payload.plain_language_finding));
+    wrapper.appendChild(element("p", "publication-meta", "Registry " + values.registry_version + " · " + payload.evidence_scope));
+    const grid = element("div", "publication-hypothesis-grid");
+    hypotheses.forEach(function (hypothesis) {
+      const card = element("article", "publication-hypothesis-card");
+      card.appendChild(element("p", "publication-hypothesis-id", hypothesis.hypothesis_id + " · " + hypothesis.review_status));
+      card.appendChild(element("h3", "", hypothesis.title));
+      card.appendChild(element("p", "publication-question", hypothesis.scientific_question));
+      card.appendChild(element("p", "", hypothesis.background));
+      const metrics = element("div", "publication-chips");
+      (hypothesis.primary_metrics || []).forEach(function (metric) { metrics.appendChild(element("span", "publication-chip", "Primary: " + metric)); });
+      (hypothesis.derived_metrics || []).forEach(function (metric) { metrics.appendChild(element("span", "publication-chip", "Derived: " + metric)); });
+      card.appendChild(metrics);
+      const details = element("details", "publication-details");
+      details.appendChild(element("summary", "", "Open protocol, figures, interpretation, and limitations"));
+      [
+        ["Inclusion rules", hypothesis.inclusion_rules],
+        ["Exclusion rules", hypothesis.exclusion_rules],
+        ["Statistical strategy", hypothesis.statistical_strategy],
+        ["Interpretation rules", hypothesis.interpretation_rules],
+        ["Limitations", hypothesis.limitations]
+      ].forEach(function (section) {
+        details.appendChild(element("h4", "", section[0]));
+        appendList(details, section[1], "publication-source-list");
+      });
+      details.appendChild(element("h4", "", "Required figures"));
+      appendList(details, (hypothesis.required_figures || []).map(function (figure) {
+        return "Level " + figure.level + " · " + String(figure.figure_type).replaceAll("_", " ") + " · " + (figure.metrics || []).join(", ");
+      }), "publication-source-list");
+      details.appendChild(element("p", "", "Scientific relevance: " + hypothesis.scientific_relevance));
+      details.appendChild(element("p", "", "Accommodation relevance: " + hypothesis.accommodation_relevance));
+      card.appendChild(details);
+      grid.appendChild(card);
+    });
+    wrapper.appendChild(grid);
+    const interpretation = element("section", "publication-registry-interpretation");
+    interpretation.appendChild(element("h3", "", "Required conclusion order"));
+    const ordered = element("ol", "publication-source-list");
+    (values.conclusion_contract || []).forEach(function (item) {
+      ordered.appendChild(element("li", "", item.label + ": " + item.rule));
+    });
+    interpretation.appendChild(ordered);
+    interpretation.appendChild(element("h3", "", "Prohibited conclusions"));
+    appendList(interpretation, values.prohibited_conclusions, "publication-limitation-list");
+    wrapper.appendChild(interpretation);
+    mount.appendChild(wrapper);
+  }
+
   function renderIdentities(mount, payload) {
     const values = payload.approved_values || {};
     mount.replaceChildren();
@@ -575,6 +632,11 @@
         .then(function (payload) { renderResource(mount, payload); })
         .catch(function () { unavailable(mount); });
     });
+    document.querySelectorAll("[data-publication-hypothesis-registry]").forEach(function (mount) {
+      resource(manifest, mount.dataset.publicationHypothesisRegistry)
+        .then(function (payload) { renderHypothesisRegistry(mount, payload); })
+        .catch(function () { unavailable(mount); });
+    });
     document.querySelectorAll("[data-publication-identities]").forEach(function (mount) {
       resource(manifest, mount.dataset.publicationIdentities)
         .then(function (payload) { renderIdentities(mount, payload); })
@@ -594,7 +656,7 @@
       .catch(function () {
         document
           .querySelectorAll(
-            "[data-publication-status], [data-publication-facts], [data-publication-resource], [data-publication-identities], [data-publication-graph]"
+            "[data-publication-status], [data-publication-facts], [data-publication-resource], [data-publication-hypothesis-registry], [data-publication-identities], [data-publication-graph]"
           )
           .forEach(function (mount) { unavailable(mount); });
       });

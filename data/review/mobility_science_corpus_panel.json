@@ -127,7 +127,7 @@
       "n_records": 75
     }
   ],
-  "declaration": "Within-person evidence model. Wearable signals estimate physiologic, MSK, movement, and transport burden; source artifacts and validation layers remain available for audit.",
+  "declaration": "N-of-1 evidence model. Wearable signals estimate physiologic, MSK, movement, and transport burden; source artifacts and validation layers remain available for audit.",
   "plain_english": "Before Kubios was available, the long-running evidence came from WHOOP and Strava. Kubios later added episodic HRV and accelerometer detail. The Mobility Science Corpus keeps both layers distinct and merges them for dashboard and RAG review.",
   "sections": [
     "Corpus Overview",

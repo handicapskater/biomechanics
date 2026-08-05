@@ -20,7 +20,7 @@ HandicapSkater.com and the cross-repo source map.
 Use:
 
 - source linked evidence
-- within person pattern
+- N-of-1 pattern
 - functional mobility
 - mobility burden
 - evidence organization

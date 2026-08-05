@@ -230,7 +230,7 @@ class SiteTests(unittest.TestCase):
         self.assertIn('label: "Direct-Threat Analysis"', js)
         self.assertIn('label: "Reviewer Guidance"', js)
         self.assertIn('label: "References"', js)
-        self.assertIn('label: "Individual Case Study & Evidence on HandicapSkater.com"', js)
+        self.assertIn('label: "N-of-1 Case Study & Evidence on HandicapSkater.com"', js)
 
     def test_shared_navigation_css_contract(self) -> None:
         css = nav_css()
@@ -292,7 +292,7 @@ class SiteTests(unittest.TestCase):
 
     def test_homepage_is_executive_front_door(self):
         html = read("index.html").lower()
-        self.assertIn("individual within-person mobility case study", html)
+        self.assertIn("n-of-1 mobility case study", html)
         self.assertIn("choose a perspective", html)
         self.assertIn("what looks like a stunt is the access story", html)
         self.assertIn("function before appearance", html)
@@ -408,7 +408,7 @@ class SiteTests(unittest.TestCase):
 
     def test_homepage_is_story_not_redirect_shell(self) -> None:
         html = read("index.html").lower()
-        self.assertIn("one person's long-running record", html)
+        self.assertIn("a longitudinal n-of-1 scientific record", html)
         self.assertIn("visual evidence", html)
         self.assertIn("generalized standards", html)
         self.assertIn("site-footer", html)
@@ -436,6 +436,17 @@ class SiteTests(unittest.TestCase):
             self.assertNotIn("comparable similarity score", html, page)
             self.assertNotIn("functional stress and cumulative strain", html, page)
             self.assertNotIn("cumulative strain score", html, page)
+
+    def test_evidence_page_renders_canonical_hypothesis_registry_from_bundle(self) -> None:
+        html = read("evidence/index.html")
+        reader = read("common/evidence-publication.js")
+        self.assertIn('data-publication-hypothesis-registry="hypothesis-registry"', html)
+        self.assertIn("Canonical Scientific Contract", html)
+        self.assertIn("renderHypothesisRegistry", reader)
+        self.assertIn('"H1,H2,H3,H4,H5,H6"', reader)
+        self.assertIn("Required conclusion order", reader)
+        self.assertNotIn("calculateFsi", reader)
+        self.assertNotIn("calculateCss", reader)
 
     def test_strava_evidence_page_content_and_caveats(self) -> None:
         html = read("evidence/strava-gps-skate-maps/index.html")
@@ -524,7 +535,7 @@ class SiteTests(unittest.TestCase):
         self.assertIn("what the system does not claim", platform)
         self.assertIn("publication contract", platform)
         self.assertIn("standards &amp; reviewer guidance", standards)
-        self.assertIn("within-person", data)
+        self.assertIn("n-of-1", data)
         self.assertIn("context is the missing sensor", health_ai)
 
     def test_story_links_to_access_and_recognition_history(self) -> None:

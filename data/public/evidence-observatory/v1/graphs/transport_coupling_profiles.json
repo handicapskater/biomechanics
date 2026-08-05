@@ -297,7 +297,7 @@
     }
   ],
   "alt_text": "Aligned transport panels compare SilverRide, sedan or taxi, motorcycle, bus, and van. SilverRide has one persisted FSI observation; component summaries have their own sample counts. Motorcycle changes direction across metrics.",
-  "content_hash": "d0a79b166406d769160a4681c3b749d855dfe27baea39c182947503b741a7a31",
+  "content_hash": "f594e3be36ed985d0e58671f422b40d14c44ee37b8302bf7be2079c9c7a55866",
   "data_through_date": "2026-07-09",
   "destination": "handicapskater.com",
   "formula_identities": [
@@ -314,9 +314,9 @@
   "intended_route": "/evidence/transportation/",
   "interpretation": "SilverRide has a favorable observed FSI pattern with n=1 qualification. Motorcycle is a distinct active-control context with mixed component results. Van has the highest displayed FSI among these transport cohorts.",
   "limitations": [
-    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are within-person evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
   ],
-  "long_description": "SilverRide has a favorable observed FSI pattern with n=1 qualification. Motorcycle is a distinct active-control context with mixed component results. Van has the highest displayed FSI among these transport cohorts. FSI and component sample sizes differ and are labeled separately. No transport pattern is a universal safety or superiority claim. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are within-person evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "long_description": "SilverRide has a favorable observed FSI pattern with n=1 qualification. Motorcycle is a distinct active-control context with mixed component results. Van has the highest displayed FSI among these transport cohorts. FSI and component sample sizes differ and are labeled separately. No transport pattern is a universal safety or superiority claim. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
   "output_asset_names": [
     "graphs/transport_coupling_profiles.json"
   ],

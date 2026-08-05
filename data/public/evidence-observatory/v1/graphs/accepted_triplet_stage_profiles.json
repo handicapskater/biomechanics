@@ -3913,7 +3913,7 @@
     }
   ],
   "alt_text": "Four accepted dates are shown as three-stage Mall Skate, Walk, and PT Skate profiles. Metric-specific directions remain mixed and reciprocal CSS rows are omitted from the default view.",
-  "content_hash": "e6f3bf89f33eeb1918800083e74a463f2003591321c73468a41ec8f46ea66b3b",
+  "content_hash": "d9cb765f53359bf99cdf4e5f7df46f2febdc61b896637fcb2af47fd3e3765397",
   "data_through_date": "2026-07-09",
   "destination": "handicapskater.com",
   "formula_identities": [
@@ -3934,9 +3934,9 @@
   "intended_route": "/evidence/repeated-protocol/",
   "interpretation": "The repeated protocol shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged; no universal return claim is made.",
   "limitations": [
-    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are within-person evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
   ],
-  "long_description": "The repeated protocol shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged; no universal return claim is made. CSS connectors show three unique stage pairs; reciprocal and identity rows are audit-only. Return direction is descriptive, not Cohort Similarity Score. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are within-person evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "long_description": "The repeated protocol shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged; no universal return claim is made. CSS connectors show three unique stage pairs; reciprocal and identity rows are audit-only. Return direction is descriptive, not Cohort Similarity Score. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
   "output_asset_names": [
     "graphs/accepted_triplet_stage_profiles.json"
   ],

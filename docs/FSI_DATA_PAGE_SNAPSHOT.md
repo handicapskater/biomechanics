@@ -38,4 +38,4 @@ python scripts/validate_fsi_data_page_snapshot.py
 
 ## Boundary
 
-The snapshot summarizes within-person evidence. It does not measure pain directly and does not make clinical or legal conclusions.
+The snapshot summarizes N-of-1 evidence. It does not measure pain directly and does not make clinical or legal conclusions.

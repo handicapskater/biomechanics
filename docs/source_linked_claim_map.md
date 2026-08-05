@@ -9,7 +9,7 @@ records, or generated reports.
 
 | Claim ID | Public-safe claim                                                                                                                               |
 | --- |-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `HS-CLAIM-001` | Skating is documented as functional mobility support in this within person record.                                                              |
+| `HS-CLAIM-001` | Skating is documented as functional mobility support in this N-of-1 scientific record.                                                              |
 | `HS-CLAIM-002` | Walking burden should be reviewed by physiological and biomechanical context, not distance alone.                                               |
 | `HS-CLAIM-003` | Some ParaTransit conditions are documented as higher-burden passive travel in the source-linked record.                                         |
 | `HS-CLAIM-004` | Wearable, route, sensor, legal, and report artifacts corroborate the broader record; they are not interchangeable proof sources.                |
@@ -35,7 +35,7 @@ records, or generated reports.
 Use:
 
 - source linked evidence
-- within person pattern
+- N-of-1 pattern
 - functional mobility
 - mobility burden
 - corroborates the broader record

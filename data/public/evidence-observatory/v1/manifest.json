@@ -1,6 +1,6 @@
 {
-  "bundle_id": "handicapskater-com-v1-e27090a0263e6cfa",
-  "content_hash": "e27090a0263e6cfa647ba384aa5cd68e04141441e639cad7c084eb701a26c6a1",
+  "bundle_id": "handicapskater-com-v1-a84e98b6350c41ff",
+  "content_hash": "a84e98b6350c41ffd742b6def8f9362eab919b642a555a916f4b39271012eebc",
   "data_through_date": "2026-07-09",
   "destination": "handicapskater.com",
   "generated_at_utc": "2026-07-27T00:42:18.510525Z",
@@ -8,36 +8,36 @@
   "graph_count": 4,
   "graphs": [
     {
-      "byte_size": 11071,
-      "content_hash": "ec289faf3cffebc2a3cec8e7178791de682646aa6efcf76021f8123c11369545",
+      "byte_size": 11057,
+      "content_hash": "41a3897ad1c5187118eeaef306b930f28e1aec648cee7239e1e87f22af0f2b20",
       "graph_id": "mobility_output_and_burden",
       "media_type": "application/json",
       "path": "graphs/mobility_output_and_burden.json",
-      "sha256": "9af5b1c13dcce43cb6b6324182c51969324d325b4ac67d97d3df986cedd92a34"
+      "sha256": "9869cb6a90ed162f39c287672b3846aff0c09141bb5710a9f8e7129b850f86b2"
     },
     {
-      "byte_size": 185111,
-      "content_hash": "e6f3bf89f33eeb1918800083e74a463f2003591321c73468a41ec8f46ea66b3b",
+      "byte_size": 185097,
+      "content_hash": "d9cb765f53359bf99cdf4e5f7df46f2febdc61b896637fcb2af47fd3e3765397",
       "graph_id": "accepted_triplet_stage_profiles",
       "media_type": "application/json",
       "path": "graphs/accepted_triplet_stage_profiles.json",
-      "sha256": "5e0971cac4d9f69762c65d066faa0d829f92463e718b92c3364524417411dbc0"
+      "sha256": "3239ec0f9e1179cc83fe76d7a40e108b1eded3986e6fdecc2c34d5a343f7dd34"
     },
     {
-      "byte_size": 22103,
-      "content_hash": "d0a79b166406d769160a4681c3b749d855dfe27baea39c182947503b741a7a31",
+      "byte_size": 22089,
+      "content_hash": "f594e3be36ed985d0e58671f422b40d14c44ee37b8302bf7be2079c9c7a55866",
       "graph_id": "transport_coupling_profiles",
       "media_type": "application/json",
       "path": "graphs/transport_coupling_profiles.json",
-      "sha256": "5a093bf8bff48ce851667663f8ef437c1a99d3c635948d0e666f62ed9c7c7d69"
+      "sha256": "6d5a023a5466b156620b53e31607da0405f82e08105358c76d363ca723056131"
     },
     {
-      "byte_size": 119376,
-      "content_hash": "51dd4d6d8f4f3eb395072d2bbeb9748151bcb35f193e2a8695fd02c42c559c16",
+      "byte_size": 119362,
+      "content_hash": "0322fbefac86d7cb54d4d2f755df929f9d9f9dfb693c1615d261b6f6bf323823",
       "graph_id": "longitudinal_activity_context",
       "media_type": "application/json",
       "path": "graphs/longitudinal_activity_context.json",
-      "sha256": "ea2e31a75c264fa834ae46c0e7a91179321e213f372c3716742b8008bd9261c8"
+      "sha256": "4b2d91c9b2da91140dba99af5eb1d2ac5983f7e94a0020f2abaaa6acdfad12f4"
     }
   ],
   "limitation_count": 1,
@@ -47,6 +47,7 @@
     "graphs/longitudinal_activity_context.json",
     "graphs/mobility_output_and_burden.json",
     "graphs/transport_coupling_profiles.json",
+    "hypothesis-registry.json",
     "limitations.json",
     "longitudinal.json",
     "mobility-comparison.json",
@@ -88,71 +89,79 @@
   },
   "publication_contract": "fsicss_publication_bundle",
   "publication_contract_version": "fsicss_publication_bundle.v1",
-  "resource_count": 8,
+  "resource_count": 9,
   "resources": [
     {
-      "byte_size": 35481,
-      "content_hash": "ce05370e2f4970d64a0e69e71ae44fbd521f3a6c7d96c0664953677574c00cb3",
+      "byte_size": 35473,
+      "content_hash": "a95a2bc0a5a233ac359d7475c9cea9512a982e2d45b5e8f330bdadbb42a8cb06",
       "media_type": "application/json",
       "path": "overview.json",
       "resource_id": "overview",
-      "sha256": "dc1076c617379c31510cbb5c00daef2cd1ff772d9027d68ce2b14489d162f519"
+      "sha256": "706ce7209e452f8a808da2b553ba91682e53a38b3e3d069ac8f71922b05b6e1a"
     },
     {
-      "byte_size": 11168,
-      "content_hash": "4ea220a735c64880e2a67d75ad94d794d3db932a93879c819932a9df8fa58d43",
+      "byte_size": 11170,
+      "content_hash": "b2bd4feade25db791ba295c9e43c5d0d195d85a4712970ec238194eab10c7a27",
       "media_type": "application/json",
       "path": "mobility-comparison.json",
       "resource_id": "mobility-comparison",
-      "sha256": "5576257f63ff3aeabb14caf33cebe2fc02de1dc8ac1a7b8bda466528af6c49ae"
+      "sha256": "22285a2e045d201d443050964f2444c5e8261fd5dd9f4473203ec6ad197b7d21"
     },
     {
-      "byte_size": 163447,
-      "content_hash": "86bdd0f0bbd133c933164e1001a98c3fef6380e0d134702b37c3b4d166265e12",
+      "byte_size": 163433,
+      "content_hash": "00da9b6259ae035223a602ef9433e0e3ab02b51b6e9f4142d1d7cc3da3454c70",
       "media_type": "application/json",
       "path": "repeated-protocol.json",
       "resource_id": "repeated-protocol",
-      "sha256": "d23dc028520e570c8de86fae2e471a9e04a6372eddc574b2ae989a995918b528"
+      "sha256": "2dfc5f4e784b93909652a5bb225b9c590a0aa1b4ee69742347c3133a8e03e8ff"
     },
     {
-      "byte_size": 15875,
-      "content_hash": "480da057180350ebed40acc24017e835acf8b6bc39eb44d32609b4114d79cd6a",
+      "byte_size": 15861,
+      "content_hash": "e306785e6c160b37481145176cb7b4101e1770bad5fce7332be56cf12168c466",
       "media_type": "application/json",
       "path": "transportation.json",
       "resource_id": "transportation",
-      "sha256": "f52a5f742f3610dfd0f28039440636db42842d3cbd89b7c0e85f96ebedc41ef6"
+      "sha256": "87747188820fdc08655c492cd38b1ecac598ffeb2d5997a84b1e9ed7d3cc7255"
     },
     {
-      "byte_size": 145728,
-      "content_hash": "4d7f7947194a8be7c3a4dd9ae0f0229b2b790e1edd85d02d6e59b2adc0ac3acd",
+      "byte_size": 145721,
+      "content_hash": "f46303ab1abbcd753cdb548ec274c3b35921e416ecc849874eea5c255918d581",
       "media_type": "application/json",
       "path": "longitudinal.json",
       "resource_id": "longitudinal",
-      "sha256": "d07dce0044b50334f7eb0a381baadbd4265b996e47bc2268aec84831066d047c"
+      "sha256": "18d15c145d09e5905766130239682e54591d2239e4c96bb7fc309f57b7f5a79c"
     },
     {
-      "byte_size": 4031,
-      "content_hash": "9d2a3281e48d63ed4db599ba5164dd10ea88c29c6df8df595cb90bbb9125bb1c",
+      "byte_size": 4017,
+      "content_hash": "ae2795caca5f91a93fb4388e2100a1a6554d7932f72944d1e8af3b38791240c8",
       "media_type": "application/json",
       "path": "scientific-identities.json",
       "resource_id": "scientific-identities",
-      "sha256": "c55e94a191e06a03ac3d19b1e99ec7d5d675453bd7562714f648f154a4fdba69"
+      "sha256": "81004504ed728b3eab00ef224bd9d1f13814501a055e986eeaefda491c09c98a"
     },
     {
-      "byte_size": 2511,
-      "content_hash": "801cc489088741024b9690ea06c2f525d655e108d77f223d5a5141f6f9f8ba64",
+      "byte_size": 40497,
+      "content_hash": "2e23c6f7cfbe734a1b6f7944043c01ccfb2464647895988c1860c0b716ed854b",
+      "media_type": "application/json",
+      "path": "hypothesis-registry.json",
+      "resource_id": "hypothesis-registry",
+      "sha256": "99984e623f4697d835616b7950a2c99458961e84920fc0271ac2e50bf9b60913"
+    },
+    {
+      "byte_size": 2497,
+      "content_hash": "392f02a3723771e4d5eaf32d708f850f2f4ebd27097374a8b85372a956a50b05",
       "media_type": "application/json",
       "path": "limitations.json",
       "resource_id": "limitations",
-      "sha256": "98e516bf0e0979a0d856dbe9efe4ccdf41129d4e2847457808fee04e2cde5fbd"
+      "sha256": "7875ae95ceae1ed697ff836758ea90ca3f6b785a7d9410e4b99819a9c18775b6"
     },
     {
-      "byte_size": 3836,
-      "content_hash": "56db622c9b3d31d3b0bca3b38ca6c24c76cb2d1e073bd753b984c8ca8cdec3b8",
+      "byte_size": 3829,
+      "content_hash": "665160a52ab697e31cbd31cef03a023164d7ca5c9027b8dfa9471f810af4f24b",
       "media_type": "application/json",
       "path": "sources.json",
       "resource_id": "sources",
-      "sha256": "0896a2a19d15161e3eee9c78c07f6dd7e787c08b7763689a1ee2e3c7b5dab94e"
+      "sha256": "b85664ebefc6e692026ed1401d6b73c08a1b831b7fc850f604da0fa11f27305d"
     }
   ],
   "safety": {
@@ -187,7 +196,7 @@
   "source_resource_version": "observatory_bundle.v1",
   "status": "ok",
   "validation": {
-    "parity_check_count": 44,
+    "parity_check_count": 46,
     "parity_mismatch_count": 0,
     "safety_error_count": 0,
     "safety_finding_count": 0,

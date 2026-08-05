@@ -1,13 +1,13 @@
 {
   "accessibility": {
-    "plain_language_summary": "Controlled inline skating enabled substantially more useful mobility than pain-limited walking in this within-person record.",
+    "plain_language_summary": "Controlled inline skating enabled substantially more useful mobility than pain-limited walking in this N-of-1 scientific record.",
     "sample_counts_visible": true,
     "screen_reader_summary": "Four aligned panels compare walking, Mall skating, PT skating, and FNS/SNS skating. Walking has the shortest median distance and the highest median cumulative shock per mile.",
     "table_available": true,
     "units_visible": true
   },
   "approved_values": {
-    "central_finding": "Controlled inline skating enabled substantially more useful mobility than pain-limited walking in this within-person record.",
+    "central_finding": "Controlled inline skating enabled substantially more useful mobility than pain-limited walking in this N-of-1 scientific record.",
     "central_finding_emphasis": "useful mobility",
     "findings": [
       {
@@ -109,8 +109,8 @@
             "quality": "kubios|kubios+strava+whoop"
           }
         ],
-        "qualification": "Within-person cohort summaries; unequal distances remain visible.",
-        "result": "Controlled inline skating enabled substantially more useful mobility than pain-limited walking in this within-person record.",
+        "qualification": "N-of-1 cohort summaries; unequal distances remain visible.",
+        "result": "Controlled inline skating enabled substantially more useful mobility than pain-limited walking in this N-of-1 scientific record.",
         "title": "Useful mobility changed the comparison"
       },
       {
@@ -122,7 +122,7 @@
           "accepted_triplets": 15
         },
         "qualification": "PT direction remains metric specific, not universal.",
-        "result": "15 accepted Mall → Walk → PT Skate sequences provide repeated within-person comparison.",
+        "result": "15 accepted Mall → Walk → PT Skate sequences provide repeated N-of-1 comparison.",
         "title": "The protocol repeated across accepted dates"
       },
       {
@@ -783,10 +783,10 @@
     ]
   },
   "conclusion_strength": "supports_with_qualification",
-  "content_hash": "ce05370e2f4970d64a0e69e71ae44fbd521f3a6c7d96c0664953677574c00cb3",
+  "content_hash": "a95a2bc0a5a233ac359d7475c9cea9512a982e2d45b5e8f330bdadbb42a8cb06",
   "data_through_date": "2026-07-09",
   "destination": "handicapskater.com",
-  "evidence_scope": "Within-person individual mobility evidence.",
+  "evidence_scope": "N-of-1 individual mobility evidence.",
   "formula_identities": [
     "body_coupling_mapping.v1",
     "fsi_tensor_v0_3_msk_autonomic_gated_burden",
@@ -797,9 +797,9 @@
   ],
   "intended_route": "/",
   "limitations": [
-    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are within-person evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
   ],
-  "plain_language_finding": "Controlled inline skating enabled substantially more useful mobility than pain-limited walking in this within-person record.",
+  "plain_language_finding": "Controlled inline skating enabled substantially more useful mobility than pain-limited walking in this N-of-1 scientific record.",
   "relation_identities": [
     "v_body_coupling_cohort_comparison",
     "v_fsi_summary"
@@ -835,7 +835,7 @@
     "Canonical scientific reviewer views",
     "Evidence Observatory"
   ],
-  "summary": "Controlled inline skating enabled substantially more useful mobility than pain-limited walking in this within-person record.",
+  "summary": "Controlled inline skating enabled substantially more useful mobility than pain-limited walking in this N-of-1 scientific record.",
   "title": "FSI/CSS Evidence Observatory public case-study overview",
   "units": [
     "miles",
