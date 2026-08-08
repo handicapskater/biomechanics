@@ -3,36 +3,36 @@
     {
       "css_connectors": [
         {
-          "distance": 0.5594792768738659,
+          "distance": 0.49735450428646133,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Walk",
           "left_role": "walk",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.6412396848290292,
+          "score": 0.6678445198764289,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.8199080008111594,
+          "distance": 0.7480444488333833,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "Walk",
           "right_role": "walk",
-          "score": 0.5494783250330706,
+          "score": 0.5720678330962259,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.847472250552087,
+          "distance": 0.8983351020569486,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.5412801192013392,
+          "score": 0.5267773845178578,
           "unit": "unitless_similarity_0_to_1"
         }
       ],
@@ -76,7 +76,7 @@
             "formula_version": "source_supplied_distance.v1",
             "quality": "valid",
             "unit": "miles",
-            "value": 3.27
+            "value": 2.0319459357353056
           },
           "duration": {
             "formula_version": "episodic_kubios_metrics.v1.0.0",
@@ -100,7 +100,7 @@
               "formula_version": "source_supplied_distance.v1",
               "quality": "valid",
               "unit": "miles",
-              "value": 3.27
+              "value": 2.0319459357353056
             },
             "duration_seconds": {
               "formula_version": "episodic_kubios_metrics.v1.0.0",
@@ -137,7 +137,7 @@
             "formula_version": "source_supplied_distance.v1",
             "quality": "valid",
             "unit": "miles",
-            "value": 0.26
+            "value": 0.1639798576314324
           },
           "duration": {
             "formula_version": "episodic_kubios_metrics.v1.0.0",
@@ -161,7 +161,7 @@
               "formula_version": "source_supplied_distance.v1",
               "quality": "valid",
               "unit": "miles",
-              "value": 0.26
+              "value": 0.1639798576314324
             },
             "duration_seconds": {
               "formula_version": "episodic_kubios_metrics.v1.0.0",
@@ -198,7 +198,7 @@
             "formula_version": "source_supplied_distance.v1",
             "quality": "valid",
             "unit": "miles",
-            "value": 2.96
+            "value": 1.844043287202736
           },
           "duration": {
             "formula_version": "episodic_kubios_metrics.v1.0.0",
@@ -222,7 +222,7 @@
               "formula_version": "source_supplied_distance.v1",
               "quality": "valid",
               "unit": "miles",
-              "value": 2.96
+              "value": 1.844043287202736
             },
             "duration_seconds": {
               "formula_version": "episodic_kubios_metrics.v1.0.0",
@@ -260,36 +260,36 @@
     {
       "css_connectors": [
         {
-          "distance": 0.5988020915796496,
+          "distance": 0.5438919192722815,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Walk",
           "left_role": "walk",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.6254682835772245,
+          "score": 0.6477137340490474,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.7332397197492384,
+          "distance": 0.7195195761909792,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "Walk",
           "right_role": "walk",
-          "score": 0.576954236973451,
+          "score": 0.5815577873298574,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.897885378796086,
+          "distance": 0.8909187929617037,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.5269022097816808,
+          "score": 0.528843440406937,
           "unit": "unitless_similarity_0_to_1"
         }
       ],
@@ -521,36 +521,36 @@
     {
       "css_connectors": [
         {
-          "distance": 0.5908599007802747,
+          "distance": 0.5545152143827913,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Walk",
           "left_role": "walk",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.6285908642926548,
+          "score": 0.6432873675006407,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.8109378907474205,
-          "formula_version": "css_same_day_triplet.v1",
-          "left_label": "Mall Skate",
-          "left_role": "mall",
-          "quality": "valid",
-          "right_label": "PT Skate",
-          "right_role": "pt",
-          "score": 0.5522000534139105,
-          "unit": "unitless_similarity_0_to_1"
-        },
-        {
-          "distance": 0.8462262200877754,
+          "distance": 0.7489813050935455,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "Walk",
           "right_role": "walk",
-          "score": 0.5416454327858354,
+          "score": 0.5717614002435059,
+          "unit": "unitless_similarity_0_to_1"
+        },
+        {
+          "distance": 0.8492697066357474,
+          "formula_version": "css_same_day_triplet.v1",
+          "left_label": "Mall Skate",
+          "left_role": "mall",
+          "quality": "valid",
+          "right_label": "PT Skate",
+          "right_role": "pt",
+          "score": 0.540754004898092,
           "unit": "unitless_similarity_0_to_1"
         }
       ],
@@ -782,36 +782,36 @@
     {
       "css_connectors": [
         {
-          "distance": 0.5582410810133657,
+          "distance": 0.4940911341134919,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Walk",
           "left_role": "walk",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.6417492210830903,
+          "score": 0.6693032152910423,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.7649702891724811,
+          "distance": 0.7424087979308629,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "Walk",
           "right_role": "walk",
-          "score": 0.5665817754183597,
+          "score": 0.573918130571606,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.8725198623602355,
+          "distance": 0.8891675217629317,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.5340397290843903,
+          "score": 0.5293336818890582,
           "unit": "unitless_similarity_0_to_1"
         }
       ],
@@ -1043,36 +1043,36 @@
     {
       "css_connectors": [
         {
-          "distance": 0.5904316364599212,
+          "distance": 0.6037908802526036,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Walk",
           "left_role": "walk",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.6287601284302042,
+          "score": 0.6235226875978344,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.7942904536079781,
+          "distance": 0.7540628494200213,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "Walk",
           "right_role": "walk",
-          "score": 0.5573233686826955,
+          "score": 0.5701049995618166,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.8411436117709372,
+          "distance": 0.8419739458096219,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.543140683652663,
+          "score": 0.5428958440345689,
           "unit": "unitless_similarity_0_to_1"
         }
       ],
@@ -1304,36 +1304,36 @@
     {
       "css_connectors": [
         {
-          "distance": 0.5936767234734589,
+          "distance": 0.5618980850170113,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Walk",
           "left_role": "walk",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.6274798303011383,
+          "score": 0.640246639388836,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.8320542660967161,
-          "formula_version": "css_same_day_triplet.v1",
-          "left_label": "Mall Skate",
-          "left_role": "mall",
-          "quality": "valid",
-          "right_label": "PT Skate",
-          "right_role": "pt",
-          "score": 0.5458353600685368,
-          "unit": "unitless_similarity_0_to_1"
-        },
-        {
-          "distance": 0.836198856105288,
+          "distance": 0.7504806495031756,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "Walk",
           "right_role": "walk",
-          "score": 0.5446033236950562,
+          "score": 0.5712716677466967,
+          "unit": "unitless_similarity_0_to_1"
+        },
+        {
+          "distance": 0.8534764808327411,
+          "formula_version": "css_same_day_triplet.v1",
+          "left_label": "Mall Skate",
+          "left_role": "mall",
+          "quality": "valid",
+          "right_label": "PT Skate",
+          "right_role": "pt",
+          "score": 0.5395266734383993,
           "unit": "unitless_similarity_0_to_1"
         }
       ],
@@ -1565,36 +1565,36 @@
     {
       "css_connectors": [
         {
-          "distance": 0.5745319441150813,
+          "distance": 0.5755626921253647,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Walk",
           "left_role": "walk",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.6351093756703806,
+          "score": 0.6346938811117976,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.7446557119086044,
+          "distance": 0.7631113881369137,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "Walk",
           "right_role": "walk",
-          "score": 0.5731789906594397,
+          "score": 0.5671791395192017,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.8678892404320687,
+          "distance": 0.8419990549764892,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.5353636491683447,
+          "score": 0.5428884435626183,
           "unit": "unitless_similarity_0_to_1"
         }
       ],
@@ -1826,36 +1826,36 @@
     {
       "css_connectors": [
         {
-          "distance": 0.6118354492557699,
+          "distance": 0.6177408567981088,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Walk",
           "left_role": "walk",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.6204107252149891,
+          "score": 0.6181459754804216,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.8066783387868942,
+          "distance": 0.7696127530658213,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "Walk",
           "right_role": "walk",
-          "score": 0.5535019591099191,
+          "score": 0.5650953850030288,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.8308715398581584,
+          "distance": 0.811997952295587,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.5461879647096771,
+          "score": 0.5518770033559466,
           "unit": "unitless_similarity_0_to_1"
         }
       ],
@@ -2087,36 +2087,36 @@
     {
       "css_connectors": [
         {
-          "distance": 0.5726005921223368,
+          "distance": 0.558073813922388,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Walk",
           "left_role": "walk",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.6358893701358896,
+          "score": 0.6418181161023048,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.8168378325999619,
-          "formula_version": "css_same_day_triplet.v1",
-          "left_label": "Mall Skate",
-          "left_role": "mall",
-          "quality": "valid",
-          "right_label": "PT Skate",
-          "right_role": "pt",
-          "score": 0.5504068563835238,
-          "unit": "unitless_similarity_0_to_1"
-        },
-        {
-          "distance": 0.8437116273726757,
+          "distance": 0.8078473783809995,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "Walk",
           "right_role": "walk",
-          "score": 0.5423841696030409,
+          "score": 0.5531440385722939,
+          "unit": "unitless_similarity_0_to_1"
+        },
+        {
+          "distance": 0.8492744086924195,
+          "formula_version": "css_same_day_triplet.v1",
+          "left_label": "Mall Skate",
+          "left_role": "mall",
+          "quality": "valid",
+          "right_label": "PT Skate",
+          "right_role": "pt",
+          "score": 0.5407526299501855,
           "unit": "unitless_similarity_0_to_1"
         }
       ],
@@ -2348,36 +2348,36 @@
     {
       "css_connectors": [
         {
-          "distance": 0.5946963661833772,
+          "distance": 0.573551261619766,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Walk",
           "left_role": "walk",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.6270786221162105,
+          "score": 0.6355051941368788,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.7798690585578654,
+          "distance": 0.7382930059235361,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "Walk",
           "right_role": "walk",
-          "score": 0.5618390831571889,
+          "score": 0.57527700830201,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.864352888824185,
+          "distance": 0.8707947996389902,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.5363791404483957,
+          "score": 0.5345321679282898,
           "unit": "unitless_similarity_0_to_1"
         }
       ],
@@ -2609,36 +2609,36 @@
     {
       "css_connectors": [
         {
-          "distance": 0.5371852386947044,
+          "distance": 0.5453295576768689,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Walk",
           "left_role": "walk",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.6505396843708612,
+          "score": 0.6471111582847895,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.7780030369968185,
-          "formula_version": "css_same_day_triplet.v1",
-          "left_label": "Mall Skate",
-          "left_role": "mall",
-          "quality": "valid",
-          "right_label": "PT Skate",
-          "right_role": "pt",
-          "score": 0.5624287356050165,
-          "unit": "unitless_similarity_0_to_1"
-        },
-        {
-          "distance": 0.8642466293807942,
+          "distance": 0.7599733700866488,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "Walk",
           "right_role": "walk",
-          "score": 0.5364097133071647,
+          "score": 0.5681904152622304,
+          "unit": "unitless_similarity_0_to_1"
+        },
+        {
+          "distance": 0.8839642061929518,
+          "formula_version": "css_same_day_triplet.v1",
+          "left_label": "Mall Skate",
+          "left_role": "mall",
+          "quality": "valid",
+          "right_label": "PT Skate",
+          "right_role": "pt",
+          "score": 0.5307956471321525,
           "unit": "unitless_similarity_0_to_1"
         }
       ],
@@ -2870,36 +2870,36 @@
     {
       "css_connectors": [
         {
-          "distance": 0.5753485369986713,
+          "distance": 0.5582803845482402,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Walk",
           "left_role": "walk",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.6347801623031205,
+          "score": 0.6417330346424845,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.7612641550589194,
+          "distance": 0.7830463456532751,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "Walk",
           "right_role": "walk",
-          "score": 0.5677740031940565,
+          "score": 0.5608379178913707,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.8331411633360382,
+          "distance": 0.8413307301266499,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.5455117259928592,
+          "score": 0.5430854890100152,
           "unit": "unitless_similarity_0_to_1"
         }
       ],
@@ -3131,36 +3131,36 @@
     {
       "css_connectors": [
         {
-          "distance": 0.6043360006844303,
+          "distance": 0.5606536857138155,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Walk",
           "left_role": "walk",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.623310827391137,
+          "score": 0.6407571450053109,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.8092061822516289,
-          "formula_version": "css_same_day_triplet.v1",
-          "left_label": "Mall Skate",
-          "left_role": "mall",
-          "quality": "valid",
-          "right_label": "PT Skate",
-          "right_role": "pt",
-          "score": 0.5527285998743716,
-          "unit": "unitless_similarity_0_to_1"
-        },
-        {
-          "distance": 0.8305063335144335,
+          "distance": 0.8101637819934051,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "Walk",
           "right_role": "walk",
-          "score": 0.5462969352747749,
+          "score": 0.5524361993911793,
+          "unit": "unitless_similarity_0_to_1"
+        },
+        {
+          "distance": 0.8210210268172176,
+          "formula_version": "css_same_day_triplet.v1",
+          "left_label": "Mall Skate",
+          "left_role": "mall",
+          "quality": "valid",
+          "right_label": "PT Skate",
+          "right_role": "pt",
+          "score": 0.5491424784631955,
           "unit": "unitless_similarity_0_to_1"
         }
       ],
@@ -3392,36 +3392,36 @@
     {
       "css_connectors": [
         {
-          "distance": 0.5481706486633463,
+          "distance": 0.5965632299103849,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Walk",
           "left_role": "walk",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.6459236266127226,
+          "score": 0.6263453781634004,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.8107624553407234,
+          "distance": 0.8094196715694592,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "Walk",
           "right_role": "walk",
-          "score": 0.5522535532203943,
+          "score": 0.5526633846821271,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.848596275141224,
+          "distance": 0.8489384078131654,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.5409509980342272,
+          "score": 0.540850898966803,
           "unit": "unitless_similarity_0_to_1"
         }
       ],
@@ -3653,36 +3653,36 @@
     {
       "css_connectors": [
         {
-          "distance": 0.6719267901944582,
+          "distance": 0.6449121798027044,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Walk",
           "left_role": "walk",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.5981123132094152,
+          "score": 0.6079351908744106,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.7240535545883513,
+          "distance": 0.700884700163796,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "Walk",
           "right_role": "walk",
-          "score": 0.580028385625624,
+          "score": 0.5879293287215174,
           "unit": "unitless_similarity_0_to_1"
         },
         {
-          "distance": 0.8292228028551011,
+          "distance": 0.8239177158267421,
           "formula_version": "css_same_day_triplet.v1",
           "left_label": "Mall Skate",
           "left_role": "mall",
           "quality": "valid",
           "right_label": "PT Skate",
           "right_role": "pt",
-          "score": 0.5466802613870615,
+          "score": 0.5482703475725175,
           "unit": "unitless_similarity_0_to_1"
         }
       ],
@@ -3912,17 +3912,20 @@
       "unequal_distance_disclosure": "Mall, walking, and PT stages retain their source-supplied unequal distances; equal exposure is not assumed."
     }
   ],
-  "alt_text": "Four accepted dates are shown as three-stage Mall Skate, Walk, and PT Skate profiles. Metric-specific directions remain mixed and reciprocal CSS rows are omitted from the default view.",
-  "content_hash": "d9cb765f53359bf99cdf4e5f7df46f2febdc61b896637fcb2af47fd3e3765397",
-  "data_through_date": "2026-07-09",
+  "alt_text": "15 accepted dates are shown as three-stage Mall Skate, Walk, and PT Skate profiles. Metric-specific directions remain mixed and reciprocal CSS rows are omitted from the default view.",
+  "content_hash": "dea5351dba66eb71f3e93fa4552af145e7597b0a807f0c92581716b5614fa4f6",
+  "data_through_date": "2026-07-30",
   "destination": "handicapskater.com",
   "formula_identities": [
+    "css_cohort_review_robust_distance.v1",
+    "css_raw_pairwise.v1",
     "css_same_day_triplet.v1",
     "episodic_kubios_metrics.v1.0.0",
+    "fsi_tensor_v0_3_msk_autonomic_gated_burden",
     "kubios_acc_session_metrics.v1",
     "kubios_rri_time_domain_metrics.v1",
-    "mall_walk_pt.v1",
-    "scientific_evidence_persistence.v1.0.0",
+    "mall_walk_pt.same_day.v1",
+    "scientific_evidence_persistence.v2.0.1",
     "source_supplied_distance.v1",
     "triplet_return_toward_mall.v1|episodic_kubios_metrics.v1.0.0",
     "triplet_return_toward_mall.v1|kubios_acc_session_metrics.v1",
@@ -3931,19 +3934,23 @@
   ],
   "graph_contract_version": "fsi_publication_graph.v1",
   "graph_id": "accepted_triplet_stage_profiles",
+  "graph_type": "stage_small_multiples",
   "intended_route": "/evidence/repeated-protocol/",
   "interpretation": "The repeated protocol shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged; no universal return claim is made.",
   "limitations": [
     "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
   ],
   "long_description": "The repeated protocol shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged; no universal return claim is made. CSS connectors show three unique stage pairs; reciprocal and identity rows are audit-only. Return direction is descriptive, not Cohort Similarity Score. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "matrix": [],
   "output_asset_names": [
     "graphs/accepted_triplet_stage_profiles.json"
   ],
+  "panels": [],
   "qualifications": [
     "CSS connectors show three unique stage pairs; reciprocal and identity rows are audit-only.",
     "Return direction is descriptive, not Cohort Similarity Score."
   ],
+  "ranking": [],
   "relation_identities": [
     "v_triplet_stage_metric_detail",
     "v_triplet_return_toward_mall",
@@ -3962,21 +3969,21 @@
           "quality": "valid",
           "stage": "mall",
           "unit": "miles",
-          "value": 3.27
+          "value": 2.0319459357353056
         },
         {
           "label": "Walk",
           "quality": "valid",
           "stage": "walk",
           "unit": "miles",
-          "value": 0.26
+          "value": 0.1639798576314324
         },
         {
           "label": "PT Skate",
           "quality": "valid",
           "stage": "pt",
           "unit": "miles",
-          "value": 2.96
+          "value": 1.844043287202736
         }
       ]
     },

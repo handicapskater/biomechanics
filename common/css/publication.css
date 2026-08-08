@@ -154,6 +154,43 @@
   font-weight: 800;
 }
 
+.publication-conclusion-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.publication-conclusion-grid section {
+  padding: 0.85rem;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--teal);
+  background: var(--panel-alt);
+}
+
+.publication-conclusion-grid h4,
+.publication-conclusion-grid p {
+  margin: 0;
+}
+
+.publication-conclusion-grid p {
+  margin-top: 0.4rem;
+  line-height: 1.55;
+}
+
+.publication-figure-index,
+.publication-provenance {
+  overflow-wrap: anywhere;
+}
+
+.publication-provenance {
+  max-height: 18rem;
+  overflow: auto;
+  padding: 0.8rem;
+  background: var(--panel-alt);
+  white-space: pre-wrap;
+}
+
 .publication-graph {
   margin-top: 1.5rem;
   padding: clamp(1rem, 3vw, 1.6rem);
@@ -236,6 +273,11 @@
     color-mix(in srgb, var(--teal) 72%, #fff) 7px,
     color-mix(in srgb, var(--teal) 72%, #fff) 14px
   );
+}
+
+.publication-bar-negative {
+  margin-left: auto;
+  background: repeating-linear-gradient(135deg, #8a3d36, #8a3d36 7px, #c98b80 7px, #c98b80 14px);
 }
 
 .publication-bar-value {
@@ -444,7 +486,8 @@
   .evidence-map,
   .identity-grid,
   .publication-hypothesis-grid,
-  .publication-graph-panels {
+  .publication-graph-panels,
+  .publication-conclusion-grid {
     grid-template-columns: 1fr;
   }
 

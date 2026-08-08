@@ -1,0 +1,4269 @@
+{
+  "accessible_table": [
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 69.79962916054888,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 18.810467543834847,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 88.61009670438372,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-19",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 2.0575386378834963,
+      "walk_value": 71.85716779843237
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 77.421456329664,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 22.42611284352344,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 99.84756917318744,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-22",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 1.3350299530361838,
+      "walk_value": 76.08642637662781
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 77.27550796513158,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 14.711561849078237,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 91.98706981420982,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-07",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 4.57174956531334,
+      "walk_value": 72.70375839981824
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 74.71837852267747,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 25.573093568086307,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 100.29147209076378,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-15",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 1.9786802117604765,
+      "walk_value": 76.69705873443795
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 74.60566708915334,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 17.067235829412553,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 91.6729029185659,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-23",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 4.740316673590613,
+      "walk_value": 69.86535041556273
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 76.54523204723978,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 16.3106768099684,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 92.85590885720818,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-20",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 2.7508797255606794,
+      "walk_value": 73.7943523216791
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 72.79183961311614,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 15.427155039169932,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 88.21899465228607,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-13",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 2.8378135142189933,
+      "walk_value": 69.95402609889715
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 70.44930461759796,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 26.4600017863535,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 96.90930640395146,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-08",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 5.697503152651564,
+      "walk_value": 76.14680777024952
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 78.03068437669926,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 19.175062634832074,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 97.20574701153133,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-16",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 0.8848289180312179,
+      "walk_value": 77.14585545866804
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 76.10479865271057,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 19.56982905327746,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 95.67462770598803,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-06",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 0.9488256581919785,
+      "walk_value": 77.05362431090255
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 75.36081054194278,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 17.822938352375985,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 93.18374889431877,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-09",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 1.6969854528041282,
+      "walk_value": 73.66382508913865
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 73.96690938305554,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 24.400745255128413,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 98.36765463818395,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-21",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 2.1384073142751276,
+      "walk_value": 76.10531669733066
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 79.54525860830283,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 13.958089639653736,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 93.50334824795657,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-14",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 5.987878585246662,
+      "walk_value": 73.55738002305617
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 70.14368687502777,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 18.68423320576477,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 88.82792008079254,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-12",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 1.7590164912463564,
+      "walk_value": 71.90270336627412
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 80.20367633333639,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 18.69115399552463,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 98.89483032886102,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-05",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 5.982615328832736,
+      "walk_value": 74.22106100450365
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 28.228270522037658,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 6.161105830579412,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 34.38937635261707,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-19",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 1.6856658579105641,
+      "walk_value": 29.913936379948222
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 40.60829367504565,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 22.88440046958392,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 17.72389320546173,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-22",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 18.143863960280164,
+      "walk_value": 22.464429714765487
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 22.837881879860596,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 10.041280234007871,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 32.87916211386847,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-07",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 13.222676288610494,
+      "walk_value": 36.06055816847109
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 16.92949491760276,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.24197726789696006,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 16.6875176497058,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-15",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 6.806933884062669,
+      "walk_value": 23.73642880166543
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 18.939732233497022,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 6.78923158566835,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 25.728963819165372,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-23",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 2.155020067362031,
+      "walk_value": 16.78471216613499
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 16.1440608515529,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 8.622163856456705,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 24.766224708009606,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-20",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 3.5372796446622807,
+      "walk_value": 19.68134049621518
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 29.141365006524417,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 8.61045690143429,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 20.530908105090127,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-13",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 13.75009835595563,
+      "walk_value": 15.391266650568786
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 16.339365601547872,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 6.944738453818516,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 23.284104055366388,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-08",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 3.544825665779502,
+      "walk_value": 19.884191267327374
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 32.44325382779772,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 16.742600883909763,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 15.700652943887956,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-16",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 2.637700530282718,
+      "walk_value": 29.805553297515
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 37.37307395006306,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 5.130831370292498,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 32.24224257977056,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-06",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 1.1751611802790976,
+      "walk_value": 36.19791276978396
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 33.82384392283608,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 11.070250386676186,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 22.753593536159897,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-09",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 15.231576342115773,
+      "walk_value": 18.59226758072031
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 27.90963622864362,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 8.305005416109182,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 19.604630812534438,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-21",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 18.672557197781387,
+      "walk_value": 46.58219342642501
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 18.15203033482681,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 1.4061319021227625,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 19.558162236949574,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-14",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 39.88994424734199,
+      "walk_value": 58.0419745821688
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 17.530469342601776,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 4.8684350154700375,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 22.398904358071814,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-12",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 2.443921958245072,
+      "walk_value": 15.086547384356704
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 49.17985763446825,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 35.86127767742808,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 13.318579957040168,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-05",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 34.880871335631824,
+      "walk_value": 14.298986298836429
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 37.274645654436235,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 15.289192831245757,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 52.56383848568199,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-19",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 15.735510180895439,
+      "walk_value": 53.01015583533167
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 35.407279530141906,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 12.305771556680732,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 47.71305108682264,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-22",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 13.781122461918628,
+      "walk_value": 49.188401992060534
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 31.870353697663056,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 24.768100566772368,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 56.638454264435424,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-07",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 30.62555736495741,
+      "walk_value": 62.495911062620465
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 26.311451270223106,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 22.43121515645019,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 48.742666426673296,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-15",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 9.759449788549357,
+      "walk_value": 36.07090105877246
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 28.86384862211467,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 36.98723357832293,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 65.8510822004376,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-23",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 11.998441160284361,
+      "walk_value": 40.86228978239903
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 36.428446191496484,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 23.600042637434605,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 60.02848882893109,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-20",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 13.379880647389918,
+      "walk_value": 49.8083268388864
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 32.88391625313923,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 32.17262435085057,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 65.0565406039898,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-13",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 17.298320399647572,
+      "walk_value": 50.182236652786806
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 31.042478402981583,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 21.020293838190018,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 52.0627722411716,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-08",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 16.296430678943256,
+      "walk_value": 47.33890908192484
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 32.130154018145454,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 29.679291823946848,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 61.8094458420923,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-16",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 13.435974331937402,
+      "walk_value": 45.566128350082856
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 40.622132885711125,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 15.120021409750876,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 55.742154295462,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-06",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 10.140179665567594,
+      "walk_value": 50.76231255127872
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 33.81913613623869,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 19.685023460688008,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 53.5041595969267,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-09",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 5.773373648700641,
+      "walk_value": 39.59250978493933
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 29.9710523078358,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 16.743170838295047,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 46.71422314613085,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-21",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 15.25284878739858,
+      "walk_value": 45.22390109523438
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 21.354977798279506,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 33.72767288855048,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 55.082650686829986,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-14",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 42.955049663622944,
+      "walk_value": 64.31002746190245
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 37.349883218479214,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 21.884179974170976,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 59.23406319265019,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-12",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 16.60750456678297,
+      "walk_value": 53.957387785262185
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 39.44126244900154,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 22.11043006761031,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 61.55169251661185,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-05",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 14.238790491736083,
+      "walk_value": 53.680052940737625
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.04938023919461015,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.0720751623751868,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.12145540156979695,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-19",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.08227673508133915,
+      "walk_value": 0.1316569742759493
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.05272922836595677,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.09764808082567263,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.1503773091916294,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-22",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.08478622474096241,
+      "walk_value": 0.13751545310691918
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.04946651320855935,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.07829716070517748,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.12776367391373683,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-07",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.07688248238318643,
+      "walk_value": 0.12634899559174578
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.04922681480139578,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.09123613070218893,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.1404629455035847,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-15",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.08606217173926882,
+      "walk_value": 0.1352889865406646
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.05284855563788535,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.08401238911172623,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.13686094474961158,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-23",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.07948180322079806,
+      "walk_value": 0.1323303588586834
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.050639005636686836,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.08207400117913843,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.13271300681582526,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-20",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.08867096159817048,
+      "walk_value": 0.1393099672348573
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.05048184476093001,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.07446225198516422,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.12494409674609423,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-13",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.08608792666970369,
+      "walk_value": 0.1365697714306337
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.05062696962970238,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.09011031473997273,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.14073728436967511,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-08",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.07183863403507472,
+      "walk_value": 0.1224656036647771
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.05167310724689018,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.09115179940076401,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.14282490664765418,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-16",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.0915097884590445,
+      "walk_value": 0.14318289570593468
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.050869758399328176,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.08626855556298166,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.13713831396230983,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-06",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.07449275530910265,
+      "walk_value": 0.12536251370843082
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.04901936218557167,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.09367327123455244,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.14269263342012412,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-09",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.09155243654727208,
+      "walk_value": 0.14057179873284376
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.051736546014571484,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.07718213278574595,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.12891867880031743,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-21",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.08023292323101336,
+      "walk_value": 0.13196946924558484
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.050724501932425385,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.08205320765753893,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.13277770958996432,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-14",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.08195401631619556,
+      "walk_value": 0.13267851824862095
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.04910309102299101,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.0811056830010021,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.1302087740239931,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-12",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.07525202257632045,
+      "walk_value": 0.12435511359931146
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.05158522954970856,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.08814714684633493,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.1397323763960435,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-05",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.07461638230879808,
+      "walk_value": 0.12620161185850665
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 26.223487661962533,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 6.581541557091835,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 32.80502921905437,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-19",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 1.9964172044845974,
+      "walk_value": 28.21990486644713
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 24.98282710629275,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.6838976627503008,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 25.66672476904305,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-22",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 4.9700458318983,
+      "walk_value": 29.95287293819105
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 28.15938022003341,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 4.031777866112737,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 32.191158086146146,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-07",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 1.954846155875206,
+      "walk_value": 30.114226375908615
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 23.542569155412103,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 4.873579912910877,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 28.41614906832298,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-15",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 5.885076632924829,
+      "walk_value": 29.427645788336932
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 26.207201804734574,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 1.4160989479898412,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 27.623300752724415,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-23",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 4.414206241242439,
+      "walk_value": 30.621408045977013
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 23.714165261382796,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 1.7803672364670646,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 25.49453249784986,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-20",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 8.616592648845305,
+      "walk_value": 32.3307579102281
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 27.29818012132524,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.5468007533265755,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 26.751379367998666,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-13",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 0.3336192584592901,
+      "walk_value": 26.96456086286595
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 25.22533977564918,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 2.0558520306822885,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 27.281191806331467,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-08",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 4.760713222956117,
+      "walk_value": 29.986052998605295
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 24.98285910181694,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 2.2020535016789218,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 27.18491260349586,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-16",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 4.094555404007938,
+      "walk_value": 29.077414505824876
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 25.2612488125054,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 2.868968215875231,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 28.13021702838063,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-06",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 4.325051628322001,
+      "walk_value": 29.5863004408274
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 27.196494101234343,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 1.092425107774826,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 26.104068993459517,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-09",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 1.6289369332484185,
+      "walk_value": 28.82543103448276
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 24.8149792776791,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 3.177133205174126,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 27.992112482853226,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-21",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 6.975316316297473,
+      "walk_value": 31.790295593976573
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 26.199414156926313,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 2.913883287538763,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 29.113297444465076,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-14",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 1.14229175620817,
+      "walk_value": 27.341705913134483
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 25.54492978375118,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 3.6454448013602487,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 29.190374585111428,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-12",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 5.721354739437977,
+      "walk_value": 31.266284523189157
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 23.826857160190496,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 5.774225772568219,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 29.601082932758715,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-07-05",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 4.7807377765183645,
+      "walk_value": 28.60759493670886
+    }
+  ],
+  "alt_text": "Stage-value panels compare Mall, Walk, and PT across accepted dates. The accessible table includes the canonical closer-to-Mall classification for each available metric.",
+  "content_hash": "204d65f6e7bf0435414422b84b5ad989672c50415c7d65beba1732f651f448cb",
+  "data_through_date": "2026-07-30",
+  "destination": "handicapskater.com",
+  "formula_identities": [
+    "kubios_acc_session_metrics.v1",
+    "kubios_rri_time_domain_metrics.v1"
+  ],
+  "graph_contract_version": "fsi_publication_graph.v1",
+  "graph_id": "return_toward_mall_profile",
+  "graph_type": "return_profile_panels",
+  "intended_route": "/evidence/repeated-protocol/",
+  "interpretation": "PT is numerically closer to Mall for some metrics and dates and farther for others; the label is descriptive and is not CSS or clinical recovery.",
+  "limitations": [
+    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+  ],
+  "long_description": "PT is numerically closer to Mall for some metrics and dates and farther for others; the label is descriptive and is not CSS or clinical recovery. The canonical return-toward-Mall classification is shown in the accessible table. No pain-relief, causal, or clinical-recovery claim is made. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "matrix": [],
+  "output_asset_names": [
+    "graphs/return_toward_mall_profile.json"
+  ],
+  "panels": [
+    {
+      "series": [
+        {
+          "label": "Mall Skate",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "bpm",
+              "value": 69.79962916054888
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "bpm",
+              "value": 77.421456329664
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "bpm",
+              "value": 77.27550796513158
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "bpm",
+              "value": 74.71837852267747
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "bpm",
+              "value": 74.60566708915334
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "bpm",
+              "value": 76.54523204723978
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "bpm",
+              "value": 72.79183961311614
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "bpm",
+              "value": 70.44930461759796
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "bpm",
+              "value": 78.03068437669926
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "bpm",
+              "value": 76.10479865271057
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "bpm",
+              "value": 75.36081054194278
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "bpm",
+              "value": 73.96690938305554
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "bpm",
+              "value": 79.54525860830283
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "bpm",
+              "value": 70.14368687502777
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "bpm",
+              "value": 80.20367633333639
+            }
+          ]
+        },
+        {
+          "label": "Walk",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "bpm",
+              "value": 71.85716779843237
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "bpm",
+              "value": 76.08642637662781
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "bpm",
+              "value": 72.70375839981824
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "bpm",
+              "value": 76.69705873443795
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "bpm",
+              "value": 69.86535041556273
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "bpm",
+              "value": 73.7943523216791
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "bpm",
+              "value": 69.95402609889715
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "bpm",
+              "value": 76.14680777024952
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "bpm",
+              "value": 77.14585545866804
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "bpm",
+              "value": 77.05362431090255
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "bpm",
+              "value": 73.66382508913865
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "bpm",
+              "value": 76.10531669733066
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "bpm",
+              "value": 73.55738002305617
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "bpm",
+              "value": 71.90270336627412
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "bpm",
+              "value": 74.22106100450365
+            }
+          ]
+        },
+        {
+          "label": "PT Skate",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "bpm",
+              "value": 88.61009670438372
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "bpm",
+              "value": 99.84756917318744
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "bpm",
+              "value": 91.98706981420982
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "bpm",
+              "value": 100.29147209076378
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "bpm",
+              "value": 91.6729029185659
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "bpm",
+              "value": 92.85590885720818
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "bpm",
+              "value": 88.21899465228607
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "bpm",
+              "value": 96.90930640395146
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "bpm",
+              "value": 97.20574701153133
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "bpm",
+              "value": 95.67462770598803
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "bpm",
+              "value": 93.18374889431877
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "bpm",
+              "value": 98.36765463818395
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "bpm",
+              "value": 93.50334824795657
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "bpm",
+              "value": 88.82792008079254
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "bpm",
+              "value": 98.89483032886102
+            }
+          ]
+        }
+      ],
+      "title": "Mean heart rate",
+      "unit": "bpm"
+    },
+    {
+      "series": [
+        {
+          "label": "Mall Skate",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "ms",
+              "value": 28.228270522037658
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "ms",
+              "value": 40.60829367504565
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "ms",
+              "value": 22.837881879860596
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "ms",
+              "value": 16.92949491760276
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "ms",
+              "value": 18.939732233497022
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "ms",
+              "value": 16.1440608515529
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "ms",
+              "value": 29.141365006524417
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "ms",
+              "value": 16.339365601547872
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "ms",
+              "value": 32.44325382779772
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "ms",
+              "value": 37.37307395006306
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "ms",
+              "value": 33.82384392283608
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "ms",
+              "value": 27.90963622864362
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "ms",
+              "value": 18.15203033482681
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "ms",
+              "value": 17.530469342601776
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "ms",
+              "value": 49.17985763446825
+            }
+          ]
+        },
+        {
+          "label": "Walk",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "ms",
+              "value": 29.913936379948222
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "ms",
+              "value": 22.464429714765487
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "ms",
+              "value": 36.06055816847109
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "ms",
+              "value": 23.73642880166543
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "ms",
+              "value": 16.78471216613499
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "ms",
+              "value": 19.68134049621518
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "ms",
+              "value": 15.391266650568786
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "ms",
+              "value": 19.884191267327374
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "ms",
+              "value": 29.805553297515
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "ms",
+              "value": 36.19791276978396
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "ms",
+              "value": 18.59226758072031
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "ms",
+              "value": 46.58219342642501
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "ms",
+              "value": 58.0419745821688
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "ms",
+              "value": 15.086547384356704
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "ms",
+              "value": 14.298986298836429
+            }
+          ]
+        },
+        {
+          "label": "PT Skate",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "ms",
+              "value": 34.38937635261707
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "ms",
+              "value": 17.72389320546173
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "ms",
+              "value": 32.87916211386847
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "ms",
+              "value": 16.6875176497058
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "ms",
+              "value": 25.728963819165372
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "ms",
+              "value": 24.766224708009606
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "ms",
+              "value": 20.530908105090127
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "ms",
+              "value": 23.284104055366388
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "ms",
+              "value": 15.700652943887956
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "ms",
+              "value": 32.24224257977056
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "ms",
+              "value": 22.753593536159897
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "ms",
+              "value": 19.604630812534438
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "ms",
+              "value": 19.558162236949574
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "ms",
+              "value": 22.398904358071814
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "ms",
+              "value": 13.318579957040168
+            }
+          ]
+        }
+      ],
+      "title": "Session RMSSD",
+      "unit": "ms"
+    },
+    {
+      "series": [
+        {
+          "label": "Mall Skate",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "ms",
+              "value": 37.274645654436235
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "ms",
+              "value": 35.407279530141906
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "ms",
+              "value": 31.870353697663056
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "ms",
+              "value": 26.311451270223106
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "ms",
+              "value": 28.86384862211467
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "ms",
+              "value": 36.428446191496484
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "ms",
+              "value": 32.88391625313923
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "ms",
+              "value": 31.042478402981583
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "ms",
+              "value": 32.130154018145454
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "ms",
+              "value": 40.622132885711125
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "ms",
+              "value": 33.81913613623869
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "ms",
+              "value": 29.9710523078358
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "ms",
+              "value": 21.354977798279506
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "ms",
+              "value": 37.349883218479214
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "ms",
+              "value": 39.44126244900154
+            }
+          ]
+        },
+        {
+          "label": "Walk",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "ms",
+              "value": 53.01015583533167
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "ms",
+              "value": 49.188401992060534
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "ms",
+              "value": 62.495911062620465
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "ms",
+              "value": 36.07090105877246
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "ms",
+              "value": 40.86228978239903
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "ms",
+              "value": 49.8083268388864
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "ms",
+              "value": 50.182236652786806
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "ms",
+              "value": 47.33890908192484
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "ms",
+              "value": 45.566128350082856
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "ms",
+              "value": 50.76231255127872
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "ms",
+              "value": 39.59250978493933
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "ms",
+              "value": 45.22390109523438
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "ms",
+              "value": 64.31002746190245
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "ms",
+              "value": 53.957387785262185
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "ms",
+              "value": 53.680052940737625
+            }
+          ]
+        },
+        {
+          "label": "PT Skate",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "ms",
+              "value": 52.56383848568199
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "ms",
+              "value": 47.71305108682264
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "ms",
+              "value": 56.638454264435424
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "ms",
+              "value": 48.742666426673296
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "ms",
+              "value": 65.8510822004376
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "ms",
+              "value": 60.02848882893109
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "ms",
+              "value": 65.0565406039898
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "ms",
+              "value": 52.0627722411716
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "ms",
+              "value": 61.8094458420923
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "ms",
+              "value": 55.742154295462
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "ms",
+              "value": 53.5041595969267
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "ms",
+              "value": 46.71422314613085
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "ms",
+              "value": 55.082650686829986
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "ms",
+              "value": 59.23406319265019
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "ms",
+              "value": 61.55169251661185
+            }
+          ]
+        }
+      ],
+      "title": "Session SDNN",
+      "unit": "ms"
+    },
+    {
+      "series": [
+        {
+          "label": "Mall Skate",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "count/min",
+              "value": 26.223487661962533
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "count/min",
+              "value": 24.98282710629275
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "count/min",
+              "value": 28.15938022003341
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "count/min",
+              "value": 23.542569155412103
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "count/min",
+              "value": 26.207201804734574
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "count/min",
+              "value": 23.714165261382796
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "count/min",
+              "value": 27.29818012132524
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "count/min",
+              "value": 25.22533977564918
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "count/min",
+              "value": 24.98285910181694
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "count/min",
+              "value": 25.2612488125054
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "count/min",
+              "value": 27.196494101234343
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "count/min",
+              "value": 24.8149792776791
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "count/min",
+              "value": 26.199414156926313
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "count/min",
+              "value": 25.54492978375118
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "count/min",
+              "value": 23.826857160190496
+            }
+          ]
+        },
+        {
+          "label": "Walk",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "count/min",
+              "value": 28.21990486644713
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "count/min",
+              "value": 29.95287293819105
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "count/min",
+              "value": 30.114226375908615
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "count/min",
+              "value": 29.427645788336932
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "count/min",
+              "value": 30.621408045977013
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "count/min",
+              "value": 32.3307579102281
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "count/min",
+              "value": 26.96456086286595
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "count/min",
+              "value": 29.986052998605295
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "count/min",
+              "value": 29.077414505824876
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "count/min",
+              "value": 29.5863004408274
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "count/min",
+              "value": 28.82543103448276
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "count/min",
+              "value": 31.790295593976573
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "count/min",
+              "value": 27.341705913134483
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "count/min",
+              "value": 31.266284523189157
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "count/min",
+              "value": 28.60759493670886
+            }
+          ]
+        },
+        {
+          "label": "PT Skate",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "count/min",
+              "value": 32.80502921905437
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "count/min",
+              "value": 25.66672476904305
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "count/min",
+              "value": 32.191158086146146
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "count/min",
+              "value": 28.41614906832298
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "count/min",
+              "value": 27.623300752724415
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "count/min",
+              "value": 25.49453249784986
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "count/min",
+              "value": 26.751379367998666
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "count/min",
+              "value": 27.281191806331467
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "count/min",
+              "value": 27.18491260349586
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "count/min",
+              "value": 28.13021702838063
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "count/min",
+              "value": 26.104068993459517
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "count/min",
+              "value": 27.992112482853226
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "count/min",
+              "value": 29.113297444465076
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "count/min",
+              "value": 29.190374585111428
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "count/min",
+              "value": 29.601082932758715
+            }
+          ]
+        }
+      ],
+      "title": "Shock spike rate",
+      "unit": "count/min"
+    },
+    {
+      "series": [
+        {
+          "label": "Mall Skate",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "g",
+              "value": 0.04938023919461015
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "g",
+              "value": 0.05272922836595677
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "g",
+              "value": 0.04946651320855935
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "g",
+              "value": 0.04922681480139578
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "g",
+              "value": 0.05284855563788535
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "g",
+              "value": 0.050639005636686836
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "g",
+              "value": 0.05048184476093001
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "g",
+              "value": 0.05062696962970238
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "g",
+              "value": 0.05167310724689018
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "g",
+              "value": 0.050869758399328176
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "g",
+              "value": 0.04901936218557167
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "g",
+              "value": 0.051736546014571484
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "g",
+              "value": 0.050724501932425385
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "g",
+              "value": 0.04910309102299101
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "g",
+              "value": 0.05158522954970856
+            }
+          ]
+        },
+        {
+          "label": "Walk",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "g",
+              "value": 0.1316569742759493
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "g",
+              "value": 0.13751545310691918
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "g",
+              "value": 0.12634899559174578
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "g",
+              "value": 0.1352889865406646
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "g",
+              "value": 0.1323303588586834
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "g",
+              "value": 0.1393099672348573
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "g",
+              "value": 0.1365697714306337
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "g",
+              "value": 0.1224656036647771
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "g",
+              "value": 0.14318289570593468
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "g",
+              "value": 0.12536251370843082
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "g",
+              "value": 0.14057179873284376
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "g",
+              "value": 0.13196946924558484
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "g",
+              "value": 0.13267851824862095
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "g",
+              "value": 0.12435511359931146
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "g",
+              "value": 0.12620161185850665
+            }
+          ]
+        },
+        {
+          "label": "PT Skate",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "g",
+              "value": 0.12145540156979695
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "g",
+              "value": 0.1503773091916294
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "g",
+              "value": 0.12776367391373683
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "g",
+              "value": 0.1404629455035847
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "g",
+              "value": 0.13686094474961158
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "g",
+              "value": 0.13271300681582526
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "g",
+              "value": 0.12494409674609423
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "g",
+              "value": 0.14073728436967511
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "g",
+              "value": 0.14282490664765418
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "g",
+              "value": 0.13713831396230983
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "g",
+              "value": 0.14269263342012412
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "g",
+              "value": 0.12891867880031743
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "g",
+              "value": 0.13277770958996432
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "g",
+              "value": 0.1302087740239931
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "g",
+              "value": 0.1397323763960435
+            }
+          ]
+        }
+      ],
+      "title": "Vertical dynamic RMS",
+      "unit": "g"
+    }
+  ],
+  "qualifications": [
+    "The canonical return-toward-Mall classification is shown in the accessible table.",
+    "No pain-relief, causal, or clinical-recovery claim is made."
+  ],
+  "ranking": [],
+  "relation_identities": [
+    "v_canonical_triplet_return_toward_mall_detail"
+  ],
+  "sample_counts": {
+    "mean_hr_bpm": 15,
+    "rmssd_ms": 15,
+    "sdnn_ms": 15,
+    "shock_spike_rate_per_min": 15,
+    "vertical_dynamic_g_rms": 15
+  },
+  "series": [
+    {
+      "points": [],
+      "series": [
+        {
+          "label": "Mall Skate",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "bpm",
+              "value": 69.79962916054888
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "bpm",
+              "value": 77.421456329664
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "bpm",
+              "value": 77.27550796513158
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "bpm",
+              "value": 74.71837852267747
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "bpm",
+              "value": 74.60566708915334
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "bpm",
+              "value": 76.54523204723978
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "bpm",
+              "value": 72.79183961311614
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "bpm",
+              "value": 70.44930461759796
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "bpm",
+              "value": 78.03068437669926
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "bpm",
+              "value": 76.10479865271057
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "bpm",
+              "value": 75.36081054194278
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "bpm",
+              "value": 73.96690938305554
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "bpm",
+              "value": 79.54525860830283
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "bpm",
+              "value": 70.14368687502777
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "bpm",
+              "value": 80.20367633333639
+            }
+          ]
+        },
+        {
+          "label": "Walk",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "bpm",
+              "value": 71.85716779843237
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "bpm",
+              "value": 76.08642637662781
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "bpm",
+              "value": 72.70375839981824
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "bpm",
+              "value": 76.69705873443795
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "bpm",
+              "value": 69.86535041556273
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "bpm",
+              "value": 73.7943523216791
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "bpm",
+              "value": 69.95402609889715
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "bpm",
+              "value": 76.14680777024952
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "bpm",
+              "value": 77.14585545866804
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "bpm",
+              "value": 77.05362431090255
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "bpm",
+              "value": 73.66382508913865
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "bpm",
+              "value": 76.10531669733066
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "bpm",
+              "value": 73.55738002305617
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "bpm",
+              "value": 71.90270336627412
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "bpm",
+              "value": 74.22106100450365
+            }
+          ]
+        },
+        {
+          "label": "PT Skate",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "bpm",
+              "value": 88.61009670438372
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "bpm",
+              "value": 99.84756917318744
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "bpm",
+              "value": 91.98706981420982
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "bpm",
+              "value": 100.29147209076378
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "bpm",
+              "value": 91.6729029185659
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "bpm",
+              "value": 92.85590885720818
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "bpm",
+              "value": 88.21899465228607
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "bpm",
+              "value": 96.90930640395146
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "bpm",
+              "value": 97.20574701153133
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "bpm",
+              "value": 95.67462770598803
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "bpm",
+              "value": 93.18374889431877
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "bpm",
+              "value": 98.36765463818395
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "bpm",
+              "value": 93.50334824795657
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "bpm",
+              "value": 88.82792008079254
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "bpm",
+              "value": 98.89483032886102
+            }
+          ]
+        }
+      ],
+      "series_id": "mean_hr_bpm",
+      "title": "Mean heart rate",
+      "unit": "bpm"
+    },
+    {
+      "points": [],
+      "series": [
+        {
+          "label": "Mall Skate",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "ms",
+              "value": 28.228270522037658
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "ms",
+              "value": 40.60829367504565
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "ms",
+              "value": 22.837881879860596
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "ms",
+              "value": 16.92949491760276
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "ms",
+              "value": 18.939732233497022
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "ms",
+              "value": 16.1440608515529
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "ms",
+              "value": 29.141365006524417
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "ms",
+              "value": 16.339365601547872
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "ms",
+              "value": 32.44325382779772
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "ms",
+              "value": 37.37307395006306
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "ms",
+              "value": 33.82384392283608
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "ms",
+              "value": 27.90963622864362
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "ms",
+              "value": 18.15203033482681
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "ms",
+              "value": 17.530469342601776
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "ms",
+              "value": 49.17985763446825
+            }
+          ]
+        },
+        {
+          "label": "Walk",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "ms",
+              "value": 29.913936379948222
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "ms",
+              "value": 22.464429714765487
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "ms",
+              "value": 36.06055816847109
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "ms",
+              "value": 23.73642880166543
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "ms",
+              "value": 16.78471216613499
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "ms",
+              "value": 19.68134049621518
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "ms",
+              "value": 15.391266650568786
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "ms",
+              "value": 19.884191267327374
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "ms",
+              "value": 29.805553297515
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "ms",
+              "value": 36.19791276978396
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "ms",
+              "value": 18.59226758072031
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "ms",
+              "value": 46.58219342642501
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "ms",
+              "value": 58.0419745821688
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "ms",
+              "value": 15.086547384356704
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "ms",
+              "value": 14.298986298836429
+            }
+          ]
+        },
+        {
+          "label": "PT Skate",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "ms",
+              "value": 34.38937635261707
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "ms",
+              "value": 17.72389320546173
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "ms",
+              "value": 32.87916211386847
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "ms",
+              "value": 16.6875176497058
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "ms",
+              "value": 25.728963819165372
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "ms",
+              "value": 24.766224708009606
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "ms",
+              "value": 20.530908105090127
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "ms",
+              "value": 23.284104055366388
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "ms",
+              "value": 15.700652943887956
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "ms",
+              "value": 32.24224257977056
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "ms",
+              "value": 22.753593536159897
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "ms",
+              "value": 19.604630812534438
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "ms",
+              "value": 19.558162236949574
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "ms",
+              "value": 22.398904358071814
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "ms",
+              "value": 13.318579957040168
+            }
+          ]
+        }
+      ],
+      "series_id": "rmssd_ms",
+      "title": "Session RMSSD",
+      "unit": "ms"
+    },
+    {
+      "points": [],
+      "series": [
+        {
+          "label": "Mall Skate",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "ms",
+              "value": 37.274645654436235
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "ms",
+              "value": 35.407279530141906
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "ms",
+              "value": 31.870353697663056
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "ms",
+              "value": 26.311451270223106
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "ms",
+              "value": 28.86384862211467
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "ms",
+              "value": 36.428446191496484
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "ms",
+              "value": 32.88391625313923
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "ms",
+              "value": 31.042478402981583
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "ms",
+              "value": 32.130154018145454
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "ms",
+              "value": 40.622132885711125
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "ms",
+              "value": 33.81913613623869
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "ms",
+              "value": 29.9710523078358
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "ms",
+              "value": 21.354977798279506
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "ms",
+              "value": 37.349883218479214
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "ms",
+              "value": 39.44126244900154
+            }
+          ]
+        },
+        {
+          "label": "Walk",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "ms",
+              "value": 53.01015583533167
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "ms",
+              "value": 49.188401992060534
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "ms",
+              "value": 62.495911062620465
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "ms",
+              "value": 36.07090105877246
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "ms",
+              "value": 40.86228978239903
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "ms",
+              "value": 49.8083268388864
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "ms",
+              "value": 50.182236652786806
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "ms",
+              "value": 47.33890908192484
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "ms",
+              "value": 45.566128350082856
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "ms",
+              "value": 50.76231255127872
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "ms",
+              "value": 39.59250978493933
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "ms",
+              "value": 45.22390109523438
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "ms",
+              "value": 64.31002746190245
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "ms",
+              "value": 53.957387785262185
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "ms",
+              "value": 53.680052940737625
+            }
+          ]
+        },
+        {
+          "label": "PT Skate",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "ms",
+              "value": 52.56383848568199
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "ms",
+              "value": 47.71305108682264
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "ms",
+              "value": 56.638454264435424
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "ms",
+              "value": 48.742666426673296
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "ms",
+              "value": 65.8510822004376
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "ms",
+              "value": 60.02848882893109
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "ms",
+              "value": 65.0565406039898
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "ms",
+              "value": 52.0627722411716
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "ms",
+              "value": 61.8094458420923
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "ms",
+              "value": 55.742154295462
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "ms",
+              "value": 53.5041595969267
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "ms",
+              "value": 46.71422314613085
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "ms",
+              "value": 55.082650686829986
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "ms",
+              "value": 59.23406319265019
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "ms",
+              "value": 61.55169251661185
+            }
+          ]
+        }
+      ],
+      "series_id": "sdnn_ms",
+      "title": "Session SDNN",
+      "unit": "ms"
+    },
+    {
+      "points": [],
+      "series": [
+        {
+          "label": "Mall Skate",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "count/min",
+              "value": 26.223487661962533
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "count/min",
+              "value": 24.98282710629275
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "count/min",
+              "value": 28.15938022003341
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "count/min",
+              "value": 23.542569155412103
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "count/min",
+              "value": 26.207201804734574
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "count/min",
+              "value": 23.714165261382796
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "count/min",
+              "value": 27.29818012132524
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "count/min",
+              "value": 25.22533977564918
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "count/min",
+              "value": 24.98285910181694
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "count/min",
+              "value": 25.2612488125054
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "count/min",
+              "value": 27.196494101234343
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "count/min",
+              "value": 24.8149792776791
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "count/min",
+              "value": 26.199414156926313
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "count/min",
+              "value": 25.54492978375118
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "count/min",
+              "value": 23.826857160190496
+            }
+          ]
+        },
+        {
+          "label": "Walk",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "count/min",
+              "value": 28.21990486644713
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "count/min",
+              "value": 29.95287293819105
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "count/min",
+              "value": 30.114226375908615
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "count/min",
+              "value": 29.427645788336932
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "count/min",
+              "value": 30.621408045977013
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "count/min",
+              "value": 32.3307579102281
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "count/min",
+              "value": 26.96456086286595
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "count/min",
+              "value": 29.986052998605295
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "count/min",
+              "value": 29.077414505824876
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "count/min",
+              "value": 29.5863004408274
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "count/min",
+              "value": 28.82543103448276
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "count/min",
+              "value": 31.790295593976573
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "count/min",
+              "value": 27.341705913134483
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "count/min",
+              "value": 31.266284523189157
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "count/min",
+              "value": 28.60759493670886
+            }
+          ]
+        },
+        {
+          "label": "PT Skate",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "count/min",
+              "value": 32.80502921905437
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "count/min",
+              "value": 25.66672476904305
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "count/min",
+              "value": 32.191158086146146
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "count/min",
+              "value": 28.41614906832298
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "count/min",
+              "value": 27.623300752724415
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "count/min",
+              "value": 25.49453249784986
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "count/min",
+              "value": 26.751379367998666
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "count/min",
+              "value": 27.281191806331467
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "count/min",
+              "value": 27.18491260349586
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "count/min",
+              "value": 28.13021702838063
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "count/min",
+              "value": 26.104068993459517
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "count/min",
+              "value": 27.992112482853226
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "count/min",
+              "value": 29.113297444465076
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "count/min",
+              "value": 29.190374585111428
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "count/min",
+              "value": 29.601082932758715
+            }
+          ]
+        }
+      ],
+      "series_id": "shock_spike_rate_per_min",
+      "title": "Shock spike rate",
+      "unit": "count/min"
+    },
+    {
+      "points": [],
+      "series": [
+        {
+          "label": "Mall Skate",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "g",
+              "value": 0.04938023919461015
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "g",
+              "value": 0.05272922836595677
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "g",
+              "value": 0.04946651320855935
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "g",
+              "value": 0.04922681480139578
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "g",
+              "value": 0.05284855563788535
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "g",
+              "value": 0.050639005636686836
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "g",
+              "value": 0.05048184476093001
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "g",
+              "value": 0.05062696962970238
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "g",
+              "value": 0.05167310724689018
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "g",
+              "value": 0.050869758399328176
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "g",
+              "value": 0.04901936218557167
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "g",
+              "value": 0.051736546014571484
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "g",
+              "value": 0.050724501932425385
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "g",
+              "value": 0.04910309102299101
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "g",
+              "value": 0.05158522954970856
+            }
+          ]
+        },
+        {
+          "label": "Walk",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "g",
+              "value": 0.1316569742759493
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "g",
+              "value": 0.13751545310691918
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "g",
+              "value": 0.12634899559174578
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "g",
+              "value": 0.1352889865406646
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "g",
+              "value": 0.1323303588586834
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "g",
+              "value": 0.1393099672348573
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "g",
+              "value": 0.1365697714306337
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "g",
+              "value": 0.1224656036647771
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "g",
+              "value": 0.14318289570593468
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "g",
+              "value": 0.12536251370843082
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "g",
+              "value": 0.14057179873284376
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "g",
+              "value": 0.13196946924558484
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "g",
+              "value": 0.13267851824862095
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "g",
+              "value": 0.12435511359931146
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "g",
+              "value": 0.12620161185850665
+            }
+          ]
+        },
+        {
+          "label": "PT Skate",
+          "points": [
+            {
+              "date": "2026-07-19",
+              "unit": "g",
+              "value": 0.12145540156979695
+            },
+            {
+              "date": "2026-07-22",
+              "unit": "g",
+              "value": 0.1503773091916294
+            },
+            {
+              "date": "2026-07-07",
+              "unit": "g",
+              "value": 0.12776367391373683
+            },
+            {
+              "date": "2026-07-15",
+              "unit": "g",
+              "value": 0.1404629455035847
+            },
+            {
+              "date": "2026-07-23",
+              "unit": "g",
+              "value": 0.13686094474961158
+            },
+            {
+              "date": "2026-07-20",
+              "unit": "g",
+              "value": 0.13271300681582526
+            },
+            {
+              "date": "2026-07-13",
+              "unit": "g",
+              "value": 0.12494409674609423
+            },
+            {
+              "date": "2026-07-08",
+              "unit": "g",
+              "value": 0.14073728436967511
+            },
+            {
+              "date": "2026-07-16",
+              "unit": "g",
+              "value": 0.14282490664765418
+            },
+            {
+              "date": "2026-07-06",
+              "unit": "g",
+              "value": 0.13713831396230983
+            },
+            {
+              "date": "2026-07-09",
+              "unit": "g",
+              "value": 0.14269263342012412
+            },
+            {
+              "date": "2026-07-21",
+              "unit": "g",
+              "value": 0.12891867880031743
+            },
+            {
+              "date": "2026-07-14",
+              "unit": "g",
+              "value": 0.13277770958996432
+            },
+            {
+              "date": "2026-07-12",
+              "unit": "g",
+              "value": 0.1302087740239931
+            },
+            {
+              "date": "2026-07-05",
+              "unit": "g",
+              "value": 0.1397323763960435
+            }
+          ]
+        }
+      ],
+      "series_id": "vertical_dynamic_g_rms",
+      "title": "Vertical dynamic RMS",
+      "unit": "g"
+    }
+  ],
+  "source_contracts": [
+    {
+      "contract": "observatory_mcp_resource.v1",
+      "version": "observatory_bundle.v1"
+    },
+    {
+      "contract": "evidence_observatory_presentation.v1",
+      "version": "evidence_observatory_presentation.v1"
+    },
+    {
+      "contract": "scientific_consumer_contract.v1.0.0",
+      "version": "scientific_consumer_contract.v1.0.0"
+    },
+    {
+      "contract": "observatory_graph.v1",
+      "version": "observatory_graph.v1"
+    }
+  ],
+  "source_labels": [
+    "Accepted Mall → Walk → PT Skate protocol",
+    "Kubios/Polar H10",
+    "Strava"
+  ],
+  "title": "Return-toward-Mall profile",
+  "units": [
+    "bpm",
+    "count/min",
+    "g",
+    "ms"
+  ]
+}

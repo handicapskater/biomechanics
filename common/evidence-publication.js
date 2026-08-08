@@ -253,10 +253,28 @@
       card.appendChild(element("h3", "", hypothesis.title));
       card.appendChild(element("p", "publication-question", hypothesis.scientific_question));
       card.appendChild(element("p", "", hypothesis.background));
+      const cohorts = element("div", "publication-chips");
+      (hypothesis.comparison_cohorts || []).forEach(function (cohort) { cohorts.appendChild(element("span", "publication-chip", "Cohort: " + String(cohort).replaceAll("_", " "))); });
+      card.appendChild(cohorts);
       const metrics = element("div", "publication-chips");
       (hypothesis.primary_metrics || []).forEach(function (metric) { metrics.appendChild(element("span", "publication-chip", "Primary: " + metric)); });
       (hypothesis.derived_metrics || []).forEach(function (metric) { metrics.appendChild(element("span", "publication-chip", "Derived: " + metric)); });
       card.appendChild(metrics);
+      const conclusions = element("div", "publication-conclusion-grid");
+      [
+        ["Observed Result", hypothesis.observed_result],
+        ["Integrated Interpretation", hypothesis.integrated_interpretation],
+        ["Scope", hypothesis.scope],
+        ["Accommodation Relevance", hypothesis.accommodation_relevance]
+      ].forEach(function (section) {
+        const block = element("section", "");
+        block.appendChild(element("h4", "", section[0]));
+        block.appendChild(element("p", "", section[1]));
+        conclusions.appendChild(block);
+      });
+      card.appendChild(conclusions);
+      card.appendChild(element("h4", "", "Publication figures"));
+      appendList(card, (hypothesis.publication_figure_ids || []).map(function (figureId) { return String(figureId).replaceAll("_", " ") + " · " + figureId; }), "publication-source-list publication-figure-index");
       const details = element("details", "publication-details");
       details.appendChild(element("summary", "", "Open protocol, figures, interpretation, and limitations"));
       [
@@ -274,7 +292,9 @@
         return "Level " + figure.level + " · " + String(figure.figure_type).replaceAll("_", " ") + " · " + (figure.metrics || []).join(", ");
       }), "publication-source-list");
       details.appendChild(element("p", "", "Scientific relevance: " + hypothesis.scientific_relevance));
-      details.appendChild(element("p", "", "Accommodation relevance: " + hypothesis.accommodation_relevance));
+      details.appendChild(element("h4", "", "Provenance"));
+      details.appendChild(element("pre", "publication-provenance", JSON.stringify(hypothesis.provenance || {}, null, 2)));
+      details.appendChild(element("p", "", "Review status: " + hypothesis.review_status));
       card.appendChild(details);
       grid.appendChild(card);
     });
@@ -338,10 +358,15 @@
     const bars = element("div", "publication-bars");
     points.forEach(function (point) {
       const row = element("div", "publication-bar-row");
-      row.appendChild(element("span", "publication-bar-label", point.label || point.id || point.stage));
+      row.appendChild(element("span", "publication-bar-label", point.label || point.id || point.stage || point.date || "Observed value"));
       const track = element("div", "publication-bar-track");
       const bar = element("div", "publication-bar");
-      setBarSize(bar, point.value, maximum);
+      if (Number(point.value) < 0) {
+        setBarSize(bar, Math.abs(Number(point.value)), Math.max(maximum, Math.abs(Number(point.value))));
+        bar.classList.add("publication-bar-negative");
+      } else {
+        setBarSize(bar, point.value, maximum);
+      }
       bar.setAttribute("aria-hidden", "true");
       track.appendChild(bar);
       const value = element(
@@ -377,7 +402,13 @@
       });
     }
     series.forEach(function (item) {
-      panels.appendChild(barPanel(item, item.date || ""));
+      if (Array.isArray(item.series) && item.series.length) {
+        item.series.forEach(function (nested) {
+          panels.appendChild(barPanel({ title: item.title + " · " + (nested.label || nested.id), unit: item.unit, points: nested.points || [] }, ""));
+        });
+      } else {
+        panels.appendChild(barPanel(item, item.date || ""));
+      }
     });
     return panels;
   }
@@ -517,19 +548,13 @@
         rows: rows
       };
     }
+    const genericRows = payload.accessible_table || [];
+    const genericColumns = genericRows.length && genericRows[0] && typeof genericRows[0] === "object"
+      ? Object.keys(genericRows[0]).map(function (key) { return [key, key.replaceAll("_", " ")]; })
+      : [];
     return {
-      columns: [
-        ["canonical_cohort", "Cohort"],
-        ["period_start_local", "Period"],
-        ["activity_count", "Activities"],
-        ["total_distance_miles", "Distance (miles)"],
-        ["activity_frequency_per_week", "Activities/week"],
-        ["event_count", "Event n"],
-        ["source_coverage", "Source scope"],
-        ["quality_status", "Quality"],
-        ["data_end_date", "Data through"]
-      ],
-      rows: payload.accessible_table || []
+      columns: genericColumns,
+      rows: genericRows
     };
   }
 
@@ -592,6 +617,8 @@
       panels.appendChild(longitudinalPanel(payload, "total_distance_miles", "Monthly useful distance", "miles"));
       panels.appendChild(longitudinalPanel(payload, "activity_frequency_per_week", "Activity frequency", "activities/week"));
       visual.appendChild(panels);
+    } else if (payload.graph_type === "similarity_matrix" || payload.graph_type === "coverage_matrix") {
+      visual.appendChild(renderTable(payload));
     } else {
       visual.appendChild(graphPanels(payload));
     }

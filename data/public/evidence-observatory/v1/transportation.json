@@ -1,8 +1,8 @@
 {
   "accessibility": {
-    "plain_language_summary": "SilverRide has a favorable observed FSI pattern with n=1 qualification. Motorcycle is a distinct active-control context with mixed component results. Van has the highest displayed FSI among these transport cohorts.",
+    "plain_language_summary": "SilverRide has a favorable observed FSI pattern with n=5 qualification. Motorcycle is a distinct active-control context with mixed component results. Van has the highest displayed FSI among these transport cohorts.",
     "sample_counts_visible": true,
-    "screen_reader_summary": "Aligned transport panels compare SilverRide, sedan or taxi, motorcycle, bus, and van. SilverRide has one persisted FSI observation; component summaries have their own sample counts. Motorcycle changes direction across metrics.",
+    "screen_reader_summary": "Aligned transport panels compare SilverRide, sedan or taxi, motorcycle, bus, and van. SilverRide has 5 persisted FSI observations; component summaries have their own sample counts. Motorcycle changes direction across metrics.",
     "table_available": true,
     "units_visible": true
   },
@@ -11,58 +11,58 @@
       {
         "body_coupling_class": "supported_transport",
         "cohort": "paratransit_silverride",
-        "component_sample_count": 4,
-        "data_through_date": "2026-07-10",
-        "duration_minutes": 87.066,
-        "fsi": 0.347108584985204,
+        "component_sample_count": 5,
+        "data_through_date": "2026-07-25",
+        "duration_minutes": 110.532,
+        "fsi": 0.4003111707497405,
         "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
-        "fsi_sample_count": 1,
+        "fsi_sample_count": 5,
         "label": "SilverRide",
         "metrics": {
           "cumulative_dynamic_shock": {
             "formula_version": "kubios_acc_session_metrics.v1",
-            "q1": 2.2478858848679995,
-            "q3": 2.5859495128223293,
-            "quality_count": 4,
-            "sample_count": 4,
+            "q1": 2.405452944700275,
+            "q3": 2.582290231375131,
+            "quality_count": 5,
+            "sample_count": 5,
             "unit": "g*s/min",
-            "value": 2.493871588037703
+            "value": 2.5065342122371383
           },
           "magnitude_jerk_rms_g_per_s": {
             "formula_version": "kubios_acc_session_metrics.v1",
-            "q1": 0.5579494632075889,
-            "q3": 0.6922583150266143,
-            "quality_count": 4,
-            "sample_count": 4,
+            "q1": 0.5647345277058942,
+            "q3": 0.7624510110360462,
+            "quality_count": 5,
+            "sample_count": 5,
             "unit": "g/s",
-            "value": 0.6167976386980156
+            "value": 0.668860749690137
           },
           "shock_spike_count": {
             "formula_version": "kubios_acc_session_metrics.v1",
-            "q1": 22.020388619365853,
-            "q3": 25.298451232768336,
-            "quality_count": 4,
-            "sample_count": 4,
+            "q1": 22.563089963398188,
+            "q3": 25.879718490083174,
+            "quality_count": 5,
+            "sample_count": 5,
             "unit": "count/min",
-            "value": 22.851853729820732
+            "value": 23.14061749624328
           },
           "vertical_dynamic_g_rms": {
             "formula_version": "kubios_acc_session_metrics.v1",
-            "q1": 0.10792613644953622,
-            "q3": 0.11421812810894592,
-            "quality_count": 4,
-            "sample_count": 4,
+            "q1": 0.1114590324444233,
+            "q3": 0.1165032660592085,
+            "quality_count": 5,
+            "sample_count": 5,
             "unit": "g",
-            "value": 0.11245772395164086
+            "value": 0.1134564154588584
           },
           "vertical_to_horizontal_dynamic_rms_ratio": {
             "formula_version": "kubios_acc_session_metrics.v1",
-            "q1": 0.9937226972981629,
-            "q3": 1.0303669186608064,
-            "quality_count": 4,
-            "sample_count": 4,
+            "q1": 1.0019371394554366,
+            "q3": 1.0798363744258754,
+            "quality_count": 5,
+            "sample_count": 5,
             "unit": "ratio",
-            "value": 1.0079071197639435
+            "value": 1.0138771000724502
           }
         },
         "source_coverage": "kubios|kubios+strava+whoop"
@@ -73,7 +73,7 @@
         "component_sample_count": 13,
         "data_through_date": "2026-07-04",
         "duration_minutes": 37.083333333333336,
-        "fsi": 0.43551659037684204,
+        "fsi": 0.44756504292136823,
         "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
         "fsi_sample_count": 13,
         "label": "ParaTransit sedan/taxi",
@@ -132,9 +132,9 @@
         "component_sample_count": 6,
         "data_through_date": "2026-05-19",
         "duration_minutes": 32.79166666666667,
-        "fsi": 0.355116266686967,
+        "fsi": 0.40767594127939344,
         "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
-        "fsi_sample_count": 5,
+        "fsi_sample_count": 6,
         "label": "Motorcycle",
         "metrics": {
           "cumulative_dynamic_shock": {
@@ -188,58 +188,58 @@
       {
         "body_coupling_class": "passive_upright",
         "cohort": "paratransit_bus",
-        "component_sample_count": 13,
-        "data_through_date": "2026-07-11",
-        "duration_minutes": 43.56666666666667,
-        "fsi": 0.4858686686415168,
+        "component_sample_count": 15,
+        "data_through_date": "2026-07-26",
+        "duration_minutes": 46.416666666666664,
+        "fsi": 0.45043451023970166,
         "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
-        "fsi_sample_count": 11,
+        "fsi_sample_count": 15,
         "label": "ParaTransit bus",
         "metrics": {
           "cumulative_dynamic_shock": {
             "formula_version": "kubios_acc_session_metrics.v1",
-            "q1": 4.513002417483619,
-            "q3": 4.857212702161298,
-            "quality_count": 13,
-            "sample_count": 13,
+            "q1": 4.454617829188429,
+            "q3": 4.913235204757072,
+            "quality_count": 15,
+            "sample_count": 15,
             "unit": "g*s/min",
             "value": 4.642731663998724
           },
           "magnitude_jerk_rms_g_per_s": {
             "formula_version": "kubios_acc_session_metrics.v1",
-            "q1": 1.0641986684554452,
-            "q3": 1.362023877741415,
-            "quality_count": 13,
-            "sample_count": 13,
+            "q1": 1.1133148539196096,
+            "q3": 1.3834250555750223,
+            "quality_count": 15,
+            "sample_count": 15,
             "unit": "g/s",
             "value": 1.1971846094987502
           },
           "shock_spike_count": {
             "formula_version": "kubios_acc_session_metrics.v1",
-            "q1": 22.933287085212164,
-            "q3": 27.33473378458985,
-            "quality_count": 13,
-            "sample_count": 13,
+            "q1": 22.080601842781157,
+            "q3": 27.26302792898683,
+            "quality_count": 15,
+            "sample_count": 15,
             "unit": "count/min",
-            "value": 27.0536568886887
+            "value": 27.003855411421387
           },
           "vertical_dynamic_g_rms": {
             "formula_version": "kubios_acc_session_metrics.v1",
-            "q1": 0.16754527557995183,
-            "q3": 0.18758616580367382,
-            "quality_count": 13,
-            "sample_count": 13,
+            "q1": 0.16750384516186612,
+            "q3": 0.18522128169096563,
+            "quality_count": 15,
+            "sample_count": 15,
             "unit": "g",
-            "value": 0.1771802104536997
+            "value": 0.1753918503332274
           },
           "vertical_to_horizontal_dynamic_rms_ratio": {
             "formula_version": "kubios_acc_session_metrics.v1",
-            "q1": 1.2450252492944,
-            "q3": 1.3037847367737643,
-            "quality_count": 13,
-            "sample_count": 13,
+            "q1": 1.2378830986965008,
+            "q3": 1.2960171214157432,
+            "quality_count": 15,
+            "sample_count": 15,
             "unit": "ratio",
-            "value": 1.2826518912203602
+            "value": 1.2810931924074251
           }
         },
         "source_coverage": "kubios|kubios+strava+whoop"
@@ -250,9 +250,9 @@
         "component_sample_count": 4,
         "data_through_date": "2026-07-11",
         "duration_minutes": 59.766666666666666,
-        "fsi": 0.580277332989438,
+        "fsi": 0.572705337118042,
         "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
-        "fsi_sample_count": 3,
+        "fsi_sample_count": 4,
         "label": "ParaTransit van",
         "metrics": {
           "cumulative_dynamic_shock": {
@@ -309,7 +309,6 @@
         "cohorts": [
           "walking"
         ],
-        "id": "active_ballistic",
         "label": "Active ballistic",
         "mechanism": "repeated foot-strike loading"
       },
@@ -320,7 +319,6 @@
           "fns_sns_skating",
           "motorcycle"
         ],
-        "id": "active_controlled",
         "label": "Active controlled",
         "mechanism": "continuous active steering and balance"
       },
@@ -329,7 +327,6 @@
           "paratransit_bus",
           "paratransit_van"
         ],
-        "id": "passive_upright",
         "label": "Passive upright",
         "mechanism": "vehicle input transmitted through upright seating"
       },
@@ -338,7 +335,6 @@
           "paratransit_silverride",
           "paratransit_sedan_or_taxi"
         ],
-        "id": "supported_transport",
         "label": "Supported transport",
         "mechanism": "greater seating and vehicle support"
       },
@@ -346,14 +342,13 @@
         "cohorts": [
           "readiness_baseline"
         ],
-        "id": "recovery_context",
         "label": "Recovery context",
         "mechanism": "overnight context rather than transport exposure"
       }
     ],
     "interpretations": {
       "motorcycle": "Distinct actively controlled coupling pattern with mixed component results, not universal superiority.",
-      "silverride": "Favorable observed FSI pattern with n=1 qualification; component summaries use separately labeled samples.",
+      "silverride": "Favorable observed FSI pattern with n=5 qualification; component summaries use separately labeled samples.",
       "van": "Highest displayed FSI among the current compared transport cohorts."
     },
     "not_exposed": [
@@ -361,8 +356,8 @@
     ]
   },
   "conclusion_strength": "mixed",
-  "content_hash": "e306785e6c160b37481145176cb7b4101e1770bad5fce7332be56cf12168c466",
-  "data_through_date": "2026-07-09",
+  "content_hash": "f258ccc88eba46677c7ec0c35b18dfe26f2d40652f005015ba4161b2f5ad48c2",
+  "data_through_date": "2026-07-30",
   "destination": "handicapskater.com",
   "evidence_scope": "N-of-1 transport cohort summaries with component and FSI counts separated.",
   "formula_identities": [
@@ -372,13 +367,13 @@
     "metric_specific_distance_normalization.v1|kubios_acc_session_metrics.v1",
     "metric_specific_functional_output_per_burden.v1|kubios_acc_session_metrics.v1",
     "not_applicable",
-    "scientific_evidence_persistence.v1.0.0"
+    "scientific_evidence_persistence.v2.0.1"
   ],
   "intended_route": "/evidence/transportation/",
   "limitations": [
     "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
   ],
-  "plain_language_finding": "SilverRide has a favorable observed FSI pattern with n=1 qualification. Motorcycle is a distinct active-control context with mixed component results. Van has the highest displayed FSI among these transport cohorts.",
+  "plain_language_finding": "SilverRide has a favorable observed FSI pattern with n=5 qualification. Motorcycle is a distinct active-control context with mixed component results. Van has the highest displayed FSI among these transport cohorts.",
   "relation_identities": [
     "v_transport_body_coupling_comparison",
     "v_fsi_summary"
@@ -388,23 +383,23 @@
   "sample_counts": {
     "motorcycle": {
       "components": 6,
-      "fsi": 5
+      "fsi": 6
     },
     "paratransit_bus": {
-      "components": 13,
-      "fsi": 11
+      "components": 15,
+      "fsi": 15
     },
     "paratransit_sedan_or_taxi": {
       "components": 13,
       "fsi": 13
     },
     "paratransit_silverride": {
-      "components": 4,
-      "fsi": 1
+      "components": 5,
+      "fsi": 5
     },
     "paratransit_van": {
       "components": 4,
-      "fsi": 3
+      "fsi": 4
     }
   },
   "short_title": "Transportation",
@@ -430,7 +425,7 @@
     "Kubios/Polar H10 transport sessions",
     "Canonical body-coupling mapping"
   ],
-  "summary": "SilverRide has a favorable observed FSI pattern with n=1 qualification. Motorcycle is a distinct active-control context with mixed component results. Van has the highest displayed FSI among these transport cohorts.",
+  "summary": "SilverRide has a favorable observed FSI pattern with n=5 qualification. Motorcycle is a distinct active-control context with mixed component results. Van has the highest displayed FSI among these transport cohorts.",
   "title": "Transportation and body coupling",
   "units": [
     "count/min",
