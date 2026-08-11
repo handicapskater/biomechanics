@@ -1,0 +1,319 @@
+{
+  "bundle_id": "handicapskater-com-v1-69273be026908006",
+  "content_hash": "69273be026908006df077f008e8b8658160a16b007fd037de3f0dcea9e80a337",
+  "data_through_date": "2026-08-06",
+  "destination": "handicapskater.com",
+  "generated_at_utc": "2026-08-09T01:51:40.117396Z",
+  "generator_version": "fsi_publication_exporter.v1",
+  "graph_count": 16,
+  "graphs": [
+    {
+      "byte_size": 14212,
+      "content_hash": "c59bd18bf8911a4c4cf509e116ff3cc402cebe0ceefca77ab1d944811f3b6f85",
+      "graph_id": "mobility_output_and_burden",
+      "media_type": "application/json",
+      "path": "graphs/mobility_output_and_burden.json",
+      "sha256": "3d4fb21b1ef899361f1cffecf1998886fe14a548ca14d2dba9444cb9a59216b7"
+    },
+    {
+      "byte_size": 206747,
+      "content_hash": "bfe4caa7b6892854c2a4eca3a4f336fda30b016d6e8394d84d4e5fdac58f7a17",
+      "graph_id": "accepted_triplet_stage_profiles",
+      "media_type": "application/json",
+      "path": "graphs/accepted_triplet_stage_profiles.json",
+      "sha256": "e66de2a76fd8d0577b49bcc83473895161a6b4b5d3dbd0d5372756ad23fbb4fc"
+    },
+    {
+      "byte_size": 380007,
+      "content_hash": "b43aded02ddd7db734e52aed76a270646f450dfb6e6354d4d335235b92aa389e",
+      "graph_id": "triplet_paired_comparisons",
+      "media_type": "application/json",
+      "path": "graphs/triplet_paired_comparisons.json",
+      "sha256": "94530edec6afb96b0a0d2963199e36d63918d4909316d45d4a7947442c71b989"
+    },
+    {
+      "byte_size": 149734,
+      "content_hash": "063999f404284cfef63e23064834dfe278726f59ed985b9b0854dcc241d4fb4a",
+      "graph_id": "return_toward_mall_profile",
+      "media_type": "application/json",
+      "path": "graphs/return_toward_mall_profile.json",
+      "sha256": "45cc8a0634781de40c68dfdf655f5e32a40bcbc3bb504c91700f4dac232b145c"
+    },
+    {
+      "byte_size": 47295,
+      "content_hash": "6c2c6f03037cc4f0286706652b876803b5c59cf53bf6b21715508da09c7cd080",
+      "graph_id": "functional_output_vs_burden_authoritative_miles",
+      "media_type": "application/json",
+      "path": "graphs/functional_output_vs_burden_authoritative_miles.json",
+      "sha256": "1357cdbd912c408eeceffc9aed70db74d923356c45dd62eac30f07654309856e"
+    },
+    {
+      "byte_size": 408941,
+      "content_hash": "2719bf020a01dc03732c838599094cd99dee58cd16faa6817dd6d87897d084d2",
+      "graph_id": "mechanical_burden_distributions",
+      "media_type": "application/json",
+      "path": "graphs/mechanical_burden_distributions.json",
+      "sha256": "dd66fe9bb3f6919bc3d21978cdf4ad6d86d1eab17c9b6e7862cace67f7b33afb"
+    },
+    {
+      "byte_size": 302349,
+      "content_hash": "3c62d65cfd3e18ae2f2e894bbd89d0e2eb85455a9233e626d234cee0b9b3f0c1",
+      "graph_id": "autonomic_metric_distributions",
+      "media_type": "application/json",
+      "path": "graphs/autonomic_metric_distributions.json",
+      "sha256": "0872126f7d5c512182b4033d30562f3efce79a3f4379039a866ad93716725c29"
+    },
+    {
+      "byte_size": 670541,
+      "content_hash": "b1b5fcc085c9a24eb3727fb9466dd5b31c5aada9ff959925e034cc4cb77e50a1",
+      "graph_id": "fsi_distributions",
+      "media_type": "application/json",
+      "path": "graphs/fsi_distributions.json",
+      "sha256": "52f0e8bfe2958758fb1688b9b322d18e249aecb84fbb3acac3c84be28b498212"
+    },
+    {
+      "byte_size": 144191,
+      "content_hash": "733628def1ad54553709bc9e2d2e5e384e85389072b655e338946dfeb64cd463",
+      "graph_id": "css_similarity_matrix_ranking",
+      "media_type": "application/json",
+      "path": "graphs/css_similarity_matrix_ranking.json",
+      "sha256": "b5dc71ccae354b7a8dd3df53f368b5bdf317cabb3c365b54aa950a89d4e663fb"
+    },
+    {
+      "byte_size": 35532,
+      "content_hash": "403a4c9247c34475ddd333f1ef8b532b5e3f1cb07fa29a29048c0b4a4997870e",
+      "graph_id": "readiness_before_activity_context",
+      "media_type": "application/json",
+      "path": "graphs/readiness_before_activity_context.json",
+      "sha256": "ada4637df62e744a7a075f4305e09525a9a1e854ae3c2a33f2732ac1f40c6e05"
+    },
+    {
+      "byte_size": 890433,
+      "content_hash": "62af0fbce0a8fad09ac3e8912806e09fda0b2b2e28ea7e08be7e5934615b7733",
+      "graph_id": "fns_sns_sustained_skating_context",
+      "media_type": "application/json",
+      "path": "graphs/fns_sns_sustained_skating_context.json",
+      "sha256": "6f59a725c63155cc02f909a8880e1319afeeee6df1e6676b477de8fbb00171ae"
+    },
+    {
+      "byte_size": 28218,
+      "content_hash": "304ad20a230d6bd71370dd046c2b3db0b6a3f5f6b4586ce29b1af26af02a6a87",
+      "graph_id": "transport_coupling_profiles",
+      "media_type": "application/json",
+      "path": "graphs/transport_coupling_profiles.json",
+      "sha256": "632153e419816bff931d1427f5d8c621ef5d2292ae8d9b9ceab5d197bf9a5144"
+    },
+    {
+      "byte_size": 648318,
+      "content_hash": "bcafcfc696ce2f0de430c7ee8b3f0030b3cdc70548d402925cfcbc1c06f05776",
+      "graph_id": "transportation_body_coupling_comparison",
+      "media_type": "application/json",
+      "path": "graphs/transportation_body_coupling_comparison.json",
+      "sha256": "21fb6ccbf16ca0ad4a82c1438c5b2095f8b39d83f19845e99e77223da4e1e9e4"
+    },
+    {
+      "byte_size": 172824,
+      "content_hash": "6d74964cce7e2051e40a711b7708b2702ff881d3debc5f6db6414aa12f03cb76",
+      "graph_id": "longitudinal_activity_context",
+      "media_type": "application/json",
+      "path": "graphs/longitudinal_activity_context.json",
+      "sha256": "b57181f6f057c2141e212933e24e1a83063a2b40536b8482d35af502cf34b4b1"
+    },
+    {
+      "byte_size": 2935784,
+      "content_hash": "8c9791e8bf8409d6f27d639f3754891e6a4e28baaabb57c69cd50ffc15f4b4f6",
+      "graph_id": "route_weather_context",
+      "media_type": "application/json",
+      "path": "graphs/route_weather_context.json",
+      "sha256": "722c984889edfa12e089733bf291d85cd8b9921446008854572ade50503871ab"
+    },
+    {
+      "byte_size": 69444,
+      "content_hash": "134b0ccb9c19ab2bf92e4733728d5dd1707971869b4a1ad5e3761892cb7c8d67",
+      "graph_id": "source_metric_coverage_matrix",
+      "media_type": "application/json",
+      "path": "graphs/source_metric_coverage_matrix.json",
+      "sha256": "12cc7c4fe8bfbe76443dafda6c6e4d69c0627cdf22a1269fb00e43417d27c78e"
+    }
+  ],
+  "limitation_count": 1,
+  "limitation_resource": "limitations.json",
+  "managed_files": [
+    "graphs/accepted_triplet_stage_profiles.json",
+    "graphs/autonomic_metric_distributions.json",
+    "graphs/css_similarity_matrix_ranking.json",
+    "graphs/fns_sns_sustained_skating_context.json",
+    "graphs/fsi_distributions.json",
+    "graphs/functional_output_vs_burden_authoritative_miles.json",
+    "graphs/longitudinal_activity_context.json",
+    "graphs/mechanical_burden_distributions.json",
+    "graphs/mobility_output_and_burden.json",
+    "graphs/readiness_before_activity_context.json",
+    "graphs/return_toward_mall_profile.json",
+    "graphs/route_weather_context.json",
+    "graphs/source_metric_coverage_matrix.json",
+    "graphs/transport_coupling_profiles.json",
+    "graphs/transportation_body_coupling_comparison.json",
+    "graphs/triplet_paired_comparisons.json",
+    "hypothesis-registry.json",
+    "limitations.json",
+    "longitudinal.json",
+    "mobility-comparison.json",
+    "overview.json",
+    "repeated-protocol.json",
+    "scientific-identities.json",
+    "sources.json",
+    "transportation.json"
+  ],
+  "provenance": {
+    "platform_naming": {
+      "css_role": "Cohort Similarity Score remains distinct from FSI and Tensor v0.3",
+      "public_transition_name": "FSI/CSS Evidence Observatory",
+      "scientific_score_identities_remain_distinct": true
+    },
+    "scientific_recomputation": false,
+    "server_side_projection": true,
+    "source_contracts": [
+      {
+        "contract": "observatory_mcp_resource.v1",
+        "version": "observatory_bundle.v1"
+      },
+      {
+        "contract": "evidence_observatory_presentation.v1",
+        "version": "evidence_observatory_presentation.v1"
+      },
+      {
+        "contract": "scientific_consumer_contract.v1.0.0",
+        "version": "scientific_consumer_contract.v1.0.0"
+      },
+      {
+        "contract": "observatory_graph.v1",
+        "version": "observatory_graph.v1"
+      }
+    ],
+    "source_resource": "observatory_bundle",
+    "warehouse_mutation": false,
+    "website_synchronization": false
+  },
+  "publication_contract": "fsicss_publication_bundle",
+  "publication_contract_version": "fsicss_publication_bundle.v1",
+  "resource_count": 9,
+  "resources": [
+    {
+      "byte_size": 35596,
+      "content_hash": "21fc29c731ebc7573e4a658ac561e974af8a3c690035fc4efa4240fcf1630f33",
+      "media_type": "application/json",
+      "path": "overview.json",
+      "resource_id": "overview",
+      "sha256": "35c95954b18e3ac1ef68d654bfa33b473f0b95d3f24d5efc5972892cd7eb4942"
+    },
+    {
+      "byte_size": 11264,
+      "content_hash": "5128a9958c442cdae9567ebfb27b971b1c24051f0f330a636eab65943df72542",
+      "media_type": "application/json",
+      "path": "mobility-comparison.json",
+      "resource_id": "mobility-comparison",
+      "sha256": "4a1bb307a3be5441a25e0ec2560edc0869a21c72342eea8da818c80e72735571"
+    },
+    {
+      "byte_size": 180075,
+      "content_hash": "a3f3078a8534d62004c7f08a6ccc0530f79011fdec4a0e949dcba1f12ae67f50",
+      "media_type": "application/json",
+      "path": "repeated-protocol.json",
+      "resource_id": "repeated-protocol",
+      "sha256": "ea86ac9c7c80ed74b62b7ec5325b321e8ddfefee03ce049df733eade0c1dc5eb"
+    },
+    {
+      "byte_size": 15688,
+      "content_hash": "70060e541da044ecb37d0c0dd908bad33763ac4a92ea542ae2c33f18c9539a89",
+      "media_type": "application/json",
+      "path": "transportation.json",
+      "resource_id": "transportation",
+      "sha256": "4b2a0786b508e26560c103c576332c432f66b4ac79043219e7e2b2dc8dc764d7"
+    },
+    {
+      "byte_size": 147406,
+      "content_hash": "1c17bf296b7122ac2d50e7409e38ed0da6eb462ed6c7432cc747ca6840d431d1",
+      "media_type": "application/json",
+      "path": "longitudinal.json",
+      "resource_id": "longitudinal",
+      "sha256": "fa16e50936185e930320d5daf9b9916fda5c74051e299438e39b7380314644a5"
+    },
+    {
+      "byte_size": 4045,
+      "content_hash": "931218050987a38a286de23056a2e003e2d0f0059d789f6d9553acc925308ca8",
+      "media_type": "application/json",
+      "path": "scientific-identities.json",
+      "resource_id": "scientific-identities",
+      "sha256": "d41fa26a6246bd22042d3852c416570bd8106d79c9d09cf7acf711eb63464934"
+    },
+    {
+      "byte_size": 45237,
+      "content_hash": "bc608f0ec57d476597efc0d788e43e48fa7544c9039fe5eea916427f26336f30",
+      "media_type": "application/json",
+      "path": "hypothesis-registry.json",
+      "resource_id": "hypothesis-registry",
+      "sha256": "1bb288c03f1520e62ac91b143ff673f8bc9e72e23b8e97cd09c1007834c2da1f"
+    },
+    {
+      "byte_size": 2497,
+      "content_hash": "2e054ff047911d1107467d41703fc68886b699d70476b2aa000b1fb70a2a5a93",
+      "media_type": "application/json",
+      "path": "limitations.json",
+      "resource_id": "limitations",
+      "sha256": "8891d836bb4a3bb0808f36fd02f75df57cd8280fc976d0a78beeac038b6390bb"
+    },
+    {
+      "byte_size": 3836,
+      "content_hash": "8a0f167b89e98053509b4a5ac5b822b954a3f55e46539fe571665a22c7ca5798",
+      "media_type": "application/json",
+      "path": "sources.json",
+      "resource_id": "sources",
+      "sha256": "43931cb3902c6eb1053604c7c61b851083803085286f08ed93487c07a46a761c"
+    }
+  ],
+  "safety": {
+    "browser_mcp_dependency": false,
+    "contains_absolute_paths": false,
+    "contains_private_identifiers": false,
+    "contains_raw_signals": false,
+    "scientific_recomputation": false,
+    "warehouse_mutation": false
+  },
+  "source_contract_version": "observatory_mcp_resource.v1",
+  "source_contracts": [
+    {
+      "contract": "observatory_mcp_resource.v1",
+      "version": "observatory_bundle.v1"
+    },
+    {
+      "contract": "evidence_observatory_presentation.v1",
+      "version": "evidence_observatory_presentation.v1"
+    },
+    {
+      "contract": "scientific_consumer_contract.v1.0.0",
+      "version": "scientific_consumer_contract.v1.0.0"
+    },
+    {
+      "contract": "observatory_graph.v1",
+      "version": "observatory_graph.v1"
+    }
+  ],
+  "source_lineage_resource": "sources.json",
+  "source_resource": "observatory_bundle",
+  "source_resource_version": "observatory_bundle.v1",
+  "status": "ok",
+  "validation": {
+    "parity_check_count": 118,
+    "parity_mismatch_count": 0,
+    "safety_error_count": 0,
+    "safety_finding_count": 0,
+    "semantic_hash_excludes": [
+      "generated_at_utc",
+      "content_hash",
+      "bundle_id"
+    ],
+    "status": "passed",
+    "strict_finite_json": true
+  }
+}

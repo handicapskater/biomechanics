@@ -1,0 +1,2611 @@
+{
+  "accessible_table": [
+    {
+      "available_count": 22,
+      "domain": "episodic_metric",
+      "expected_count": 22,
+      "key": "fns_sns_skating",
+      "metric": "mean_hr_bpm",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 22,
+      "domain": "episodic_metric",
+      "expected_count": 22,
+      "key": "fns_sns_skating",
+      "metric": "rmssd_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 22,
+      "domain": "episodic_metric",
+      "expected_count": 22,
+      "key": "fns_sns_skating",
+      "metric": "sdnn_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 22,
+      "domain": "episodic_metric",
+      "expected_count": 22,
+      "key": "fns_sns_skating",
+      "metric": "vertical_dynamic_g_rms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 22,
+      "domain": "episodic_metric",
+      "expected_count": 22,
+      "key": "fns_sns_skating",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 22,
+      "domain": "episodic_metric",
+      "expected_count": 22,
+      "key": "fns_sns_skating",
+      "metric": "shock_spike_rate_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 22,
+      "domain": "episodic_metric",
+      "expected_count": 22,
+      "key": "fns_sns_skating",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 22,
+      "key": "fns_sns_skating",
+      "metric": "stress_index_unavailable",
+      "missing_count": 22,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 22,
+      "key": "fns_sns_skating",
+      "metric": "sns_index_unavailable",
+      "missing_count": 22,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 22,
+      "key": "fns_sns_skating",
+      "metric": "pns_index_unavailable",
+      "missing_count": 22,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 32,
+      "domain": "episodic_metric",
+      "expected_count": 32,
+      "key": "mall_skating",
+      "metric": "mean_hr_bpm",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 32,
+      "domain": "episodic_metric",
+      "expected_count": 32,
+      "key": "mall_skating",
+      "metric": "rmssd_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 32,
+      "domain": "episodic_metric",
+      "expected_count": 32,
+      "key": "mall_skating",
+      "metric": "sdnn_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 32,
+      "domain": "episodic_metric",
+      "expected_count": 32,
+      "key": "mall_skating",
+      "metric": "vertical_dynamic_g_rms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 32,
+      "domain": "episodic_metric",
+      "expected_count": 32,
+      "key": "mall_skating",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 32,
+      "domain": "episodic_metric",
+      "expected_count": 32,
+      "key": "mall_skating",
+      "metric": "shock_spike_rate_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 32,
+      "domain": "episodic_metric",
+      "expected_count": 32,
+      "key": "mall_skating",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 32,
+      "key": "mall_skating",
+      "metric": "stress_index_unavailable",
+      "missing_count": 32,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 32,
+      "key": "mall_skating",
+      "metric": "sns_index_unavailable",
+      "missing_count": 32,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 32,
+      "key": "mall_skating",
+      "metric": "pns_index_unavailable",
+      "missing_count": 32,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "motorcycle",
+      "metric": "mean_hr_bpm",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "motorcycle",
+      "metric": "rmssd_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "motorcycle",
+      "metric": "sdnn_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "motorcycle",
+      "metric": "vertical_dynamic_g_rms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "motorcycle",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "motorcycle",
+      "metric": "shock_spike_rate_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "motorcycle",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "motorcycle",
+      "metric": "stress_index_unavailable",
+      "missing_count": 6,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "motorcycle",
+      "metric": "sns_index_unavailable",
+      "missing_count": 6,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "motorcycle",
+      "metric": "pns_index_unavailable",
+      "missing_count": 6,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 15,
+      "domain": "episodic_metric",
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "mean_hr_bpm",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 15,
+      "domain": "episodic_metric",
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "rmssd_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 15,
+      "domain": "episodic_metric",
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "sdnn_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 15,
+      "domain": "episodic_metric",
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "vertical_dynamic_g_rms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 15,
+      "domain": "episodic_metric",
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 15,
+      "domain": "episodic_metric",
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "shock_spike_rate_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 15,
+      "domain": "episodic_metric",
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "stress_index_unavailable",
+      "missing_count": 15,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "sns_index_unavailable",
+      "missing_count": 15,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "pns_index_unavailable",
+      "missing_count": 15,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 20,
+      "domain": "episodic_metric",
+      "expected_count": 20,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "mean_hr_bpm",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 20,
+      "domain": "episodic_metric",
+      "expected_count": 20,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "rmssd_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 20,
+      "domain": "episodic_metric",
+      "expected_count": 20,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "sdnn_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 20,
+      "domain": "episodic_metric",
+      "expected_count": 20,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "vertical_dynamic_g_rms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 20,
+      "domain": "episodic_metric",
+      "expected_count": 20,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 20,
+      "domain": "episodic_metric",
+      "expected_count": 20,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "shock_spike_rate_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 20,
+      "domain": "episodic_metric",
+      "expected_count": 20,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 20,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "stress_index_unavailable",
+      "missing_count": 20,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 20,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "sns_index_unavailable",
+      "missing_count": 20,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 20,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "pns_index_unavailable",
+      "missing_count": 20,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "paratransit_silverride",
+      "metric": "mean_hr_bpm",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "paratransit_silverride",
+      "metric": "rmssd_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "paratransit_silverride",
+      "metric": "sdnn_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "paratransit_silverride",
+      "metric": "vertical_dynamic_g_rms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "paratransit_silverride",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "paratransit_silverride",
+      "metric": "shock_spike_rate_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "paratransit_silverride",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "paratransit_silverride",
+      "metric": "stress_index_unavailable",
+      "missing_count": 6,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "paratransit_silverride",
+      "metric": "sns_index_unavailable",
+      "missing_count": 6,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "paratransit_silverride",
+      "metric": "pns_index_unavailable",
+      "missing_count": 6,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 4,
+      "domain": "episodic_metric",
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "mean_hr_bpm",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 4,
+      "domain": "episodic_metric",
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "rmssd_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 4,
+      "domain": "episodic_metric",
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "sdnn_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 4,
+      "domain": "episodic_metric",
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "vertical_dynamic_g_rms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 4,
+      "domain": "episodic_metric",
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 4,
+      "domain": "episodic_metric",
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "shock_spike_rate_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 4,
+      "domain": "episodic_metric",
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "stress_index_unavailable",
+      "missing_count": 4,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "sns_index_unavailable",
+      "missing_count": 4,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "pns_index_unavailable",
+      "missing_count": 4,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 55,
+      "domain": "episodic_metric",
+      "expected_count": 56,
+      "key": "pt_skating",
+      "metric": "mean_hr_bpm",
+      "missing_count": 1,
+      "status": "available"
+    },
+    {
+      "available_count": 55,
+      "domain": "episodic_metric",
+      "expected_count": 56,
+      "key": "pt_skating",
+      "metric": "rmssd_ms",
+      "missing_count": 1,
+      "status": "available"
+    },
+    {
+      "available_count": 55,
+      "domain": "episodic_metric",
+      "expected_count": 56,
+      "key": "pt_skating",
+      "metric": "sdnn_ms",
+      "missing_count": 1,
+      "status": "available"
+    },
+    {
+      "available_count": 55,
+      "domain": "episodic_metric",
+      "expected_count": 56,
+      "key": "pt_skating",
+      "metric": "vertical_dynamic_g_rms",
+      "missing_count": 1,
+      "status": "available"
+    },
+    {
+      "available_count": 55,
+      "domain": "episodic_metric",
+      "expected_count": 56,
+      "key": "pt_skating",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "missing_count": 1,
+      "status": "available"
+    },
+    {
+      "available_count": 55,
+      "domain": "episodic_metric",
+      "expected_count": 56,
+      "key": "pt_skating",
+      "metric": "shock_spike_rate_per_min",
+      "missing_count": 1,
+      "status": "available"
+    },
+    {
+      "available_count": 55,
+      "domain": "episodic_metric",
+      "expected_count": 56,
+      "key": "pt_skating",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "missing_count": 1,
+      "status": "available"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 56,
+      "key": "pt_skating",
+      "metric": "stress_index_unavailable",
+      "missing_count": 56,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 56,
+      "key": "pt_skating",
+      "metric": "sns_index_unavailable",
+      "missing_count": 56,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 56,
+      "key": "pt_skating",
+      "metric": "pns_index_unavailable",
+      "missing_count": 56,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 63,
+      "domain": "episodic_metric",
+      "expected_count": 63,
+      "key": "readiness_baseline",
+      "metric": "mean_hr_bpm",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 63,
+      "domain": "episodic_metric",
+      "expected_count": 63,
+      "key": "readiness_baseline",
+      "metric": "rmssd_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 63,
+      "domain": "episodic_metric",
+      "expected_count": 63,
+      "key": "readiness_baseline",
+      "metric": "sdnn_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 61,
+      "domain": "episodic_metric",
+      "expected_count": 63,
+      "key": "readiness_baseline",
+      "metric": "vertical_dynamic_g_rms",
+      "missing_count": 2,
+      "status": "available"
+    },
+    {
+      "available_count": 61,
+      "domain": "episodic_metric",
+      "expected_count": 63,
+      "key": "readiness_baseline",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "missing_count": 2,
+      "status": "available"
+    },
+    {
+      "available_count": 61,
+      "domain": "episodic_metric",
+      "expected_count": 63,
+      "key": "readiness_baseline",
+      "metric": "shock_spike_rate_per_min",
+      "missing_count": 2,
+      "status": "available"
+    },
+    {
+      "available_count": 61,
+      "domain": "episodic_metric",
+      "expected_count": 63,
+      "key": "readiness_baseline",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "missing_count": 2,
+      "status": "available"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 63,
+      "key": "readiness_baseline",
+      "metric": "stress_index_unavailable",
+      "missing_count": 63,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 63,
+      "key": "readiness_baseline",
+      "metric": "sns_index_unavailable",
+      "missing_count": 63,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 63,
+      "key": "readiness_baseline",
+      "metric": "pns_index_unavailable",
+      "missing_count": 63,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 33,
+      "domain": "episodic_metric",
+      "expected_count": 33,
+      "key": "walking",
+      "metric": "mean_hr_bpm",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 33,
+      "domain": "episodic_metric",
+      "expected_count": 33,
+      "key": "walking",
+      "metric": "rmssd_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 33,
+      "domain": "episodic_metric",
+      "expected_count": 33,
+      "key": "walking",
+      "metric": "sdnn_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 33,
+      "domain": "episodic_metric",
+      "expected_count": 33,
+      "key": "walking",
+      "metric": "vertical_dynamic_g_rms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 33,
+      "domain": "episodic_metric",
+      "expected_count": 33,
+      "key": "walking",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 33,
+      "domain": "episodic_metric",
+      "expected_count": 33,
+      "key": "walking",
+      "metric": "shock_spike_rate_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 33,
+      "domain": "episodic_metric",
+      "expected_count": 33,
+      "key": "walking",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 33,
+      "key": "walking",
+      "metric": "stress_index_unavailable",
+      "missing_count": 33,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 33,
+      "key": "walking",
+      "metric": "sns_index_unavailable",
+      "missing_count": 33,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 33,
+      "key": "walking",
+      "metric": "pns_index_unavailable",
+      "missing_count": 33,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 117,
+      "coverage_pct": 70.038911,
+      "domain": "scientific_input",
+      "expected_count": 257,
+      "key": "readiness",
+      "metric": "v_effective_event_readiness",
+      "missing_count": 77,
+      "not_applicable_count": 63,
+      "partial_count": 0,
+      "status": "source_coverage"
+    },
+    {
+      "available_count": 129,
+      "coverage_pct": 50.194553,
+      "domain": "scientific_input",
+      "expected_count": 257,
+      "key": "effective_event",
+      "metric": "v_effective_mobility_events",
+      "missing_count": 128,
+      "not_applicable_count": 0,
+      "partial_count": 0,
+      "status": "source_coverage"
+    },
+    {
+      "available_count": 253,
+      "coverage_pct": 98.44358,
+      "domain": "scientific_input",
+      "expected_count": 257,
+      "key": "episodic_metrics",
+      "metric": "v_canonical_episodic_event_detail",
+      "missing_count": 0,
+      "not_applicable_count": 0,
+      "partial_count": 4,
+      "status": "source_coverage"
+    },
+    {
+      "available_count": 43,
+      "coverage_pct": 88.326848,
+      "domain": "scientific_input",
+      "expected_count": 257,
+      "key": "cohort_context",
+      "metric": "v_canonical_sustained_sf_skating_context|v_canonical_transportation_context",
+      "missing_count": 30,
+      "not_applicable_count": 184,
+      "partial_count": 0,
+      "status": "source_coverage"
+    },
+    {
+      "available_count": 45,
+      "coverage_pct": 100.0,
+      "domain": "scientific_input",
+      "expected_count": 257,
+      "key": "triplet",
+      "metric": "v_canonical_triplet_stage_detail",
+      "missing_count": 0,
+      "not_applicable_count": 212,
+      "partial_count": 0,
+      "status": "source_coverage"
+    },
+    {
+      "available_count": 86,
+      "coverage_pct": 57.976654,
+      "domain": "scientific_input",
+      "expected_count": 257,
+      "key": "distance_authority",
+      "metric": "v_event_distance_authority",
+      "missing_count": 108,
+      "not_applicable_count": 63,
+      "partial_count": 0,
+      "status": "source_coverage"
+    },
+    {
+      "available_count": 99,
+      "coverage_pct": 63.035019,
+      "domain": "scientific_input",
+      "expected_count": 257,
+      "key": "longitudinal_metrics",
+      "metric": "v_longitudinal_mobility_metrics",
+      "missing_count": 95,
+      "not_applicable_count": 63,
+      "partial_count": 0,
+      "status": "source_coverage"
+    },
+    {
+      "available_count": 129,
+      "coverage_pct": 50.194553,
+      "domain": "scientific_persistence",
+      "expected_count": 257,
+      "key": "effective_event",
+      "metric": "input",
+      "missing_count": 128,
+      "status": "persisted"
+    },
+    {
+      "available_count": 135,
+      "coverage_pct": 100.0,
+      "domain": "scientific_persistence",
+      "expected_count": 135,
+      "key": "css_same_day_triplet",
+      "metric": "css",
+      "missing_count": 0,
+      "status": "persisted"
+    },
+    {
+      "available_count": 149,
+      "coverage_pct": 57.976654,
+      "domain": "scientific_persistence",
+      "expected_count": 257,
+      "key": "distance_authority",
+      "metric": "input",
+      "missing_count": 108,
+      "status": "persisted"
+    },
+    {
+      "available_count": 162,
+      "coverage_pct": 63.035019,
+      "domain": "scientific_persistence",
+      "expected_count": 257,
+      "key": "longitudinal_metrics",
+      "metric": "input",
+      "missing_count": 95,
+      "status": "persisted"
+    },
+    {
+      "available_count": 180,
+      "coverage_pct": 70.038911,
+      "domain": "scientific_persistence",
+      "expected_count": 257,
+      "key": "readiness",
+      "metric": "input",
+      "missing_count": 77,
+      "status": "persisted"
+    },
+    {
+      "available_count": 227,
+      "coverage_pct": 88.326848,
+      "domain": "scientific_persistence",
+      "expected_count": 257,
+      "key": "cohort_context",
+      "metric": "input",
+      "missing_count": 30,
+      "status": "persisted"
+    },
+    {
+      "available_count": 253,
+      "coverage_pct": 98.44358,
+      "domain": "scientific_persistence",
+      "expected_count": 257,
+      "key": "episodic_metrics",
+      "metric": "input",
+      "missing_count": 4,
+      "status": "persisted"
+    },
+    {
+      "available_count": 257,
+      "coverage_pct": 100.0,
+      "domain": "scientific_persistence",
+      "expected_count": 257,
+      "key": "triplet",
+      "metric": "input",
+      "missing_count": 0,
+      "status": "persisted"
+    },
+    {
+      "available_count": 267,
+      "coverage_pct": 100.0,
+      "domain": "scientific_persistence",
+      "expected_count": 267,
+      "key": "css_cohort_review",
+      "metric": "css",
+      "missing_count": 0,
+      "status": "persisted"
+    },
+    {
+      "available_count": 267,
+      "coverage_pct": 99.7752808988764,
+      "domain": "scientific_persistence",
+      "expected_count": 267,
+      "key": "fsi_tensor_v0_3",
+      "metric": "fsi",
+      "missing_count": 3,
+      "status": "persisted"
+    },
+    {
+      "available_count": 267,
+      "coverage_pct": 46.15064502704967,
+      "domain": "scientific_persistence",
+      "expected_count": 267,
+      "key": "fsi_tensor_v0_3",
+      "metric": "tensor",
+      "missing_count": 257,
+      "status": "persisted"
+    },
+    {
+      "available_count": 32896,
+      "coverage_pct": 100.0,
+      "domain": "scientific_persistence",
+      "expected_count": 32896,
+      "key": "css_raw_pairwise",
+      "metric": "css",
+      "missing_count": 0,
+      "status": "persisted"
+    },
+    {
+      "available_count": 8,
+      "conflict_count": 0,
+      "domain": "fns_sns_subtype",
+      "episodic_count": 0,
+      "expected_count": 8,
+      "key": "ENS",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 0,
+      "readiness_count": 6,
+      "route_count": 8,
+      "status": "context_coverage",
+      "weather_count": 8
+    },
+    {
+      "available_count": 168,
+      "conflict_count": 0,
+      "domain": "fns_sns_subtype",
+      "episodic_count": 8,
+      "expected_count": 172,
+      "key": "FNS",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 4,
+      "readiness_count": 156,
+      "route_count": 168,
+      "status": "context_coverage",
+      "weather_count": 161
+    },
+    {
+      "available_count": 181,
+      "conflict_count": 0,
+      "domain": "fns_sns_subtype",
+      "episodic_count": 5,
+      "expected_count": 184,
+      "key": "SNS",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 3,
+      "readiness_count": 158,
+      "route_count": 181,
+      "status": "context_coverage",
+      "weather_count": 179
+    },
+    {
+      "available_count": 1,
+      "conflict_count": 0,
+      "domain": "fns_sns_subtype",
+      "episodic_count": 0,
+      "expected_count": 1,
+      "key": "XMS",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 0,
+      "readiness_count": 1,
+      "route_count": 1,
+      "status": "context_coverage",
+      "weather_count": 1
+    },
+    {
+      "available_count": 2,
+      "conflict_count": 0,
+      "domain": "fns_sns_subtype",
+      "episodic_count": 0,
+      "expected_count": 2,
+      "key": "XNS",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 0,
+      "readiness_count": 0,
+      "route_count": 2,
+      "status": "context_coverage",
+      "weather_count": 2
+    },
+    {
+      "available_count": 211,
+      "conflict_count": 0,
+      "domain": "fns_sns_subtype",
+      "episodic_count": 0,
+      "expected_count": 211,
+      "key": "unspecified",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 0,
+      "readiness_count": 203,
+      "route_count": 211,
+      "status": "context_coverage",
+      "weather_count": 185
+    },
+    {
+      "available_count": 101,
+      "conflict_count": 0,
+      "domain": "transport_cohort",
+      "episodic_count": 0,
+      "expected_count": 117,
+      "key": "paratransit",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 16,
+      "readiness_count": 97,
+      "route_count": 101,
+      "status": "context_coverage",
+      "weather_count": 92
+    },
+    {
+      "available_count": 10,
+      "conflict_count": 0,
+      "domain": "transport_cohort",
+      "episodic_count": 10,
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 5,
+      "readiness_count": 8,
+      "route_count": 10,
+      "status": "context_coverage",
+      "weather_count": 10
+    },
+    {
+      "available_count": 10,
+      "conflict_count": 0,
+      "domain": "transport_cohort",
+      "episodic_count": 11,
+      "expected_count": 13,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 3,
+      "readiness_count": 11,
+      "route_count": 10,
+      "status": "context_coverage",
+      "weather_count": 10
+    },
+    {
+      "available_count": 3,
+      "conflict_count": 0,
+      "domain": "transport_cohort",
+      "episodic_count": 3,
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 1,
+      "readiness_count": 2,
+      "route_count": 3,
+      "status": "context_coverage",
+      "weather_count": 3
+    },
+    {
+      "available_count": 2,
+      "conflict_count": 1,
+      "domain": "transport_cohort",
+      "episodic_count": 2,
+      "expected_count": 5,
+      "key": "paratransit_silverride",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 3,
+      "readiness_count": 4,
+      "route_count": 2,
+      "status": "context_coverage",
+      "weather_count": 2
+    },
+    {
+      "available_count": 205,
+      "conflict_count": 2,
+      "domain": "transport_cohort",
+      "episodic_count": 4,
+      "expected_count": 210,
+      "key": "motorcycle",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 5,
+      "readiness_count": 194,
+      "route_count": 205,
+      "status": "context_coverage",
+      "weather_count": 184
+    }
+  ],
+  "alt_text": "A coverage matrix lists expected, available, partial, missing, and not-applicable counts for canonical inputs, supported episodic metrics, v2 scientific persistence, and route, weather, readiness, and cohort context.",
+  "content_hash": "134b0ccb9c19ab2bf92e4733728d5dd1707971869b4a1ad5e3761892cb7c8d67",
+  "data_through_date": "2026-08-06",
+  "destination": "handicapskater.com",
+  "formula_identities": [
+    "scientific_evidence_persistence.v2.0.1"
+  ],
+  "graph_contract_version": "fsi_publication_graph.v1",
+  "graph_id": "source_metric_coverage_matrix",
+  "graph_type": "coverage_matrix",
+  "intended_route": "/evidence/",
+  "interpretation": "Coverage is evidence about availability, not a substitute value. Unsupported Stress/SNS/PNS indices are marked unavailable and have no published measurements.",
+  "limitations": [
+    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+  ],
+  "long_description": "Coverage is evidence about availability, not a substitute value. Unsupported Stress/SNS/PNS indices are marked unavailable and have no published measurements. Every row shows n and missingness; zero availability is not imputed. Stress Index, SNS Index, and PNS Index remain explicitly unavailable rather than plotted as values. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "matrix": [
+    {
+      "available_count": 22,
+      "domain": "episodic_metric",
+      "expected_count": 22,
+      "key": "fns_sns_skating",
+      "metric": "mean_hr_bpm",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 22,
+      "domain": "episodic_metric",
+      "expected_count": 22,
+      "key": "fns_sns_skating",
+      "metric": "rmssd_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 22,
+      "domain": "episodic_metric",
+      "expected_count": 22,
+      "key": "fns_sns_skating",
+      "metric": "sdnn_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 22,
+      "domain": "episodic_metric",
+      "expected_count": 22,
+      "key": "fns_sns_skating",
+      "metric": "vertical_dynamic_g_rms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 22,
+      "domain": "episodic_metric",
+      "expected_count": 22,
+      "key": "fns_sns_skating",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 22,
+      "domain": "episodic_metric",
+      "expected_count": 22,
+      "key": "fns_sns_skating",
+      "metric": "shock_spike_rate_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 22,
+      "domain": "episodic_metric",
+      "expected_count": 22,
+      "key": "fns_sns_skating",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 22,
+      "key": "fns_sns_skating",
+      "metric": "stress_index_unavailable",
+      "missing_count": 22,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 22,
+      "key": "fns_sns_skating",
+      "metric": "sns_index_unavailable",
+      "missing_count": 22,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 22,
+      "key": "fns_sns_skating",
+      "metric": "pns_index_unavailable",
+      "missing_count": 22,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 32,
+      "domain": "episodic_metric",
+      "expected_count": 32,
+      "key": "mall_skating",
+      "metric": "mean_hr_bpm",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 32,
+      "domain": "episodic_metric",
+      "expected_count": 32,
+      "key": "mall_skating",
+      "metric": "rmssd_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 32,
+      "domain": "episodic_metric",
+      "expected_count": 32,
+      "key": "mall_skating",
+      "metric": "sdnn_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 32,
+      "domain": "episodic_metric",
+      "expected_count": 32,
+      "key": "mall_skating",
+      "metric": "vertical_dynamic_g_rms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 32,
+      "domain": "episodic_metric",
+      "expected_count": 32,
+      "key": "mall_skating",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 32,
+      "domain": "episodic_metric",
+      "expected_count": 32,
+      "key": "mall_skating",
+      "metric": "shock_spike_rate_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 32,
+      "domain": "episodic_metric",
+      "expected_count": 32,
+      "key": "mall_skating",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 32,
+      "key": "mall_skating",
+      "metric": "stress_index_unavailable",
+      "missing_count": 32,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 32,
+      "key": "mall_skating",
+      "metric": "sns_index_unavailable",
+      "missing_count": 32,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 32,
+      "key": "mall_skating",
+      "metric": "pns_index_unavailable",
+      "missing_count": 32,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "motorcycle",
+      "metric": "mean_hr_bpm",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "motorcycle",
+      "metric": "rmssd_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "motorcycle",
+      "metric": "sdnn_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "motorcycle",
+      "metric": "vertical_dynamic_g_rms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "motorcycle",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "motorcycle",
+      "metric": "shock_spike_rate_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "motorcycle",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "motorcycle",
+      "metric": "stress_index_unavailable",
+      "missing_count": 6,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "motorcycle",
+      "metric": "sns_index_unavailable",
+      "missing_count": 6,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "motorcycle",
+      "metric": "pns_index_unavailable",
+      "missing_count": 6,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 15,
+      "domain": "episodic_metric",
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "mean_hr_bpm",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 15,
+      "domain": "episodic_metric",
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "rmssd_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 15,
+      "domain": "episodic_metric",
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "sdnn_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 15,
+      "domain": "episodic_metric",
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "vertical_dynamic_g_rms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 15,
+      "domain": "episodic_metric",
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 15,
+      "domain": "episodic_metric",
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "shock_spike_rate_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 15,
+      "domain": "episodic_metric",
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "stress_index_unavailable",
+      "missing_count": 15,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "sns_index_unavailable",
+      "missing_count": 15,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "pns_index_unavailable",
+      "missing_count": 15,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 20,
+      "domain": "episodic_metric",
+      "expected_count": 20,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "mean_hr_bpm",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 20,
+      "domain": "episodic_metric",
+      "expected_count": 20,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "rmssd_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 20,
+      "domain": "episodic_metric",
+      "expected_count": 20,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "sdnn_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 20,
+      "domain": "episodic_metric",
+      "expected_count": 20,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "vertical_dynamic_g_rms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 20,
+      "domain": "episodic_metric",
+      "expected_count": 20,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 20,
+      "domain": "episodic_metric",
+      "expected_count": 20,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "shock_spike_rate_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 20,
+      "domain": "episodic_metric",
+      "expected_count": 20,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 20,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "stress_index_unavailable",
+      "missing_count": 20,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 20,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "sns_index_unavailable",
+      "missing_count": 20,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 20,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "pns_index_unavailable",
+      "missing_count": 20,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "paratransit_silverride",
+      "metric": "mean_hr_bpm",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "paratransit_silverride",
+      "metric": "rmssd_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "paratransit_silverride",
+      "metric": "sdnn_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "paratransit_silverride",
+      "metric": "vertical_dynamic_g_rms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "paratransit_silverride",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "paratransit_silverride",
+      "metric": "shock_spike_rate_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 6,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "paratransit_silverride",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "paratransit_silverride",
+      "metric": "stress_index_unavailable",
+      "missing_count": 6,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "paratransit_silverride",
+      "metric": "sns_index_unavailable",
+      "missing_count": 6,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 6,
+      "key": "paratransit_silverride",
+      "metric": "pns_index_unavailable",
+      "missing_count": 6,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 4,
+      "domain": "episodic_metric",
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "mean_hr_bpm",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 4,
+      "domain": "episodic_metric",
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "rmssd_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 4,
+      "domain": "episodic_metric",
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "sdnn_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 4,
+      "domain": "episodic_metric",
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "vertical_dynamic_g_rms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 4,
+      "domain": "episodic_metric",
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 4,
+      "domain": "episodic_metric",
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "shock_spike_rate_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 4,
+      "domain": "episodic_metric",
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "stress_index_unavailable",
+      "missing_count": 4,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "sns_index_unavailable",
+      "missing_count": 4,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "pns_index_unavailable",
+      "missing_count": 4,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 55,
+      "domain": "episodic_metric",
+      "expected_count": 56,
+      "key": "pt_skating",
+      "metric": "mean_hr_bpm",
+      "missing_count": 1,
+      "status": "available"
+    },
+    {
+      "available_count": 55,
+      "domain": "episodic_metric",
+      "expected_count": 56,
+      "key": "pt_skating",
+      "metric": "rmssd_ms",
+      "missing_count": 1,
+      "status": "available"
+    },
+    {
+      "available_count": 55,
+      "domain": "episodic_metric",
+      "expected_count": 56,
+      "key": "pt_skating",
+      "metric": "sdnn_ms",
+      "missing_count": 1,
+      "status": "available"
+    },
+    {
+      "available_count": 55,
+      "domain": "episodic_metric",
+      "expected_count": 56,
+      "key": "pt_skating",
+      "metric": "vertical_dynamic_g_rms",
+      "missing_count": 1,
+      "status": "available"
+    },
+    {
+      "available_count": 55,
+      "domain": "episodic_metric",
+      "expected_count": 56,
+      "key": "pt_skating",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "missing_count": 1,
+      "status": "available"
+    },
+    {
+      "available_count": 55,
+      "domain": "episodic_metric",
+      "expected_count": 56,
+      "key": "pt_skating",
+      "metric": "shock_spike_rate_per_min",
+      "missing_count": 1,
+      "status": "available"
+    },
+    {
+      "available_count": 55,
+      "domain": "episodic_metric",
+      "expected_count": 56,
+      "key": "pt_skating",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "missing_count": 1,
+      "status": "available"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 56,
+      "key": "pt_skating",
+      "metric": "stress_index_unavailable",
+      "missing_count": 56,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 56,
+      "key": "pt_skating",
+      "metric": "sns_index_unavailable",
+      "missing_count": 56,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 56,
+      "key": "pt_skating",
+      "metric": "pns_index_unavailable",
+      "missing_count": 56,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 63,
+      "domain": "episodic_metric",
+      "expected_count": 63,
+      "key": "readiness_baseline",
+      "metric": "mean_hr_bpm",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 63,
+      "domain": "episodic_metric",
+      "expected_count": 63,
+      "key": "readiness_baseline",
+      "metric": "rmssd_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 63,
+      "domain": "episodic_metric",
+      "expected_count": 63,
+      "key": "readiness_baseline",
+      "metric": "sdnn_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 61,
+      "domain": "episodic_metric",
+      "expected_count": 63,
+      "key": "readiness_baseline",
+      "metric": "vertical_dynamic_g_rms",
+      "missing_count": 2,
+      "status": "available"
+    },
+    {
+      "available_count": 61,
+      "domain": "episodic_metric",
+      "expected_count": 63,
+      "key": "readiness_baseline",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "missing_count": 2,
+      "status": "available"
+    },
+    {
+      "available_count": 61,
+      "domain": "episodic_metric",
+      "expected_count": 63,
+      "key": "readiness_baseline",
+      "metric": "shock_spike_rate_per_min",
+      "missing_count": 2,
+      "status": "available"
+    },
+    {
+      "available_count": 61,
+      "domain": "episodic_metric",
+      "expected_count": 63,
+      "key": "readiness_baseline",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "missing_count": 2,
+      "status": "available"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 63,
+      "key": "readiness_baseline",
+      "metric": "stress_index_unavailable",
+      "missing_count": 63,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 63,
+      "key": "readiness_baseline",
+      "metric": "sns_index_unavailable",
+      "missing_count": 63,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 63,
+      "key": "readiness_baseline",
+      "metric": "pns_index_unavailable",
+      "missing_count": 63,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 33,
+      "domain": "episodic_metric",
+      "expected_count": 33,
+      "key": "walking",
+      "metric": "mean_hr_bpm",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 33,
+      "domain": "episodic_metric",
+      "expected_count": 33,
+      "key": "walking",
+      "metric": "rmssd_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 33,
+      "domain": "episodic_metric",
+      "expected_count": 33,
+      "key": "walking",
+      "metric": "sdnn_ms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 33,
+      "domain": "episodic_metric",
+      "expected_count": 33,
+      "key": "walking",
+      "metric": "vertical_dynamic_g_rms",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 33,
+      "domain": "episodic_metric",
+      "expected_count": 33,
+      "key": "walking",
+      "metric": "magnitude_jerk_rms_g_per_s",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 33,
+      "domain": "episodic_metric",
+      "expected_count": 33,
+      "key": "walking",
+      "metric": "shock_spike_rate_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 33,
+      "domain": "episodic_metric",
+      "expected_count": 33,
+      "key": "walking",
+      "metric": "cumulative_dynamic_shock_per_min",
+      "missing_count": 0,
+      "status": "available"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 33,
+      "key": "walking",
+      "metric": "stress_index_unavailable",
+      "missing_count": 33,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 33,
+      "key": "walking",
+      "metric": "sns_index_unavailable",
+      "missing_count": 33,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 0,
+      "domain": "episodic_metric",
+      "expected_count": 33,
+      "key": "walking",
+      "metric": "pns_index_unavailable",
+      "missing_count": 33,
+      "status": "unavailable"
+    },
+    {
+      "available_count": 117,
+      "coverage_pct": 70.038911,
+      "domain": "scientific_input",
+      "expected_count": 257,
+      "key": "readiness",
+      "metric": "v_effective_event_readiness",
+      "missing_count": 77,
+      "not_applicable_count": 63,
+      "partial_count": 0,
+      "status": "source_coverage"
+    },
+    {
+      "available_count": 129,
+      "coverage_pct": 50.194553,
+      "domain": "scientific_input",
+      "expected_count": 257,
+      "key": "effective_event",
+      "metric": "v_effective_mobility_events",
+      "missing_count": 128,
+      "not_applicable_count": 0,
+      "partial_count": 0,
+      "status": "source_coverage"
+    },
+    {
+      "available_count": 253,
+      "coverage_pct": 98.44358,
+      "domain": "scientific_input",
+      "expected_count": 257,
+      "key": "episodic_metrics",
+      "metric": "v_canonical_episodic_event_detail",
+      "missing_count": 0,
+      "not_applicable_count": 0,
+      "partial_count": 4,
+      "status": "source_coverage"
+    },
+    {
+      "available_count": 43,
+      "coverage_pct": 88.326848,
+      "domain": "scientific_input",
+      "expected_count": 257,
+      "key": "cohort_context",
+      "metric": "v_canonical_sustained_sf_skating_context|v_canonical_transportation_context",
+      "missing_count": 30,
+      "not_applicable_count": 184,
+      "partial_count": 0,
+      "status": "source_coverage"
+    },
+    {
+      "available_count": 45,
+      "coverage_pct": 100.0,
+      "domain": "scientific_input",
+      "expected_count": 257,
+      "key": "triplet",
+      "metric": "v_canonical_triplet_stage_detail",
+      "missing_count": 0,
+      "not_applicable_count": 212,
+      "partial_count": 0,
+      "status": "source_coverage"
+    },
+    {
+      "available_count": 86,
+      "coverage_pct": 57.976654,
+      "domain": "scientific_input",
+      "expected_count": 257,
+      "key": "distance_authority",
+      "metric": "v_event_distance_authority",
+      "missing_count": 108,
+      "not_applicable_count": 63,
+      "partial_count": 0,
+      "status": "source_coverage"
+    },
+    {
+      "available_count": 99,
+      "coverage_pct": 63.035019,
+      "domain": "scientific_input",
+      "expected_count": 257,
+      "key": "longitudinal_metrics",
+      "metric": "v_longitudinal_mobility_metrics",
+      "missing_count": 95,
+      "not_applicable_count": 63,
+      "partial_count": 0,
+      "status": "source_coverage"
+    },
+    {
+      "available_count": 129,
+      "coverage_pct": 50.194553,
+      "domain": "scientific_persistence",
+      "expected_count": 257,
+      "key": "effective_event",
+      "metric": "input",
+      "missing_count": 128,
+      "status": "persisted"
+    },
+    {
+      "available_count": 135,
+      "coverage_pct": 100.0,
+      "domain": "scientific_persistence",
+      "expected_count": 135,
+      "key": "css_same_day_triplet",
+      "metric": "css",
+      "missing_count": 0,
+      "status": "persisted"
+    },
+    {
+      "available_count": 149,
+      "coverage_pct": 57.976654,
+      "domain": "scientific_persistence",
+      "expected_count": 257,
+      "key": "distance_authority",
+      "metric": "input",
+      "missing_count": 108,
+      "status": "persisted"
+    },
+    {
+      "available_count": 162,
+      "coverage_pct": 63.035019,
+      "domain": "scientific_persistence",
+      "expected_count": 257,
+      "key": "longitudinal_metrics",
+      "metric": "input",
+      "missing_count": 95,
+      "status": "persisted"
+    },
+    {
+      "available_count": 180,
+      "coverage_pct": 70.038911,
+      "domain": "scientific_persistence",
+      "expected_count": 257,
+      "key": "readiness",
+      "metric": "input",
+      "missing_count": 77,
+      "status": "persisted"
+    },
+    {
+      "available_count": 227,
+      "coverage_pct": 88.326848,
+      "domain": "scientific_persistence",
+      "expected_count": 257,
+      "key": "cohort_context",
+      "metric": "input",
+      "missing_count": 30,
+      "status": "persisted"
+    },
+    {
+      "available_count": 253,
+      "coverage_pct": 98.44358,
+      "domain": "scientific_persistence",
+      "expected_count": 257,
+      "key": "episodic_metrics",
+      "metric": "input",
+      "missing_count": 4,
+      "status": "persisted"
+    },
+    {
+      "available_count": 257,
+      "coverage_pct": 100.0,
+      "domain": "scientific_persistence",
+      "expected_count": 257,
+      "key": "triplet",
+      "metric": "input",
+      "missing_count": 0,
+      "status": "persisted"
+    },
+    {
+      "available_count": 267,
+      "coverage_pct": 100.0,
+      "domain": "scientific_persistence",
+      "expected_count": 267,
+      "key": "css_cohort_review",
+      "metric": "css",
+      "missing_count": 0,
+      "status": "persisted"
+    },
+    {
+      "available_count": 267,
+      "coverage_pct": 99.7752808988764,
+      "domain": "scientific_persistence",
+      "expected_count": 267,
+      "key": "fsi_tensor_v0_3",
+      "metric": "fsi",
+      "missing_count": 3,
+      "status": "persisted"
+    },
+    {
+      "available_count": 267,
+      "coverage_pct": 46.15064502704967,
+      "domain": "scientific_persistence",
+      "expected_count": 267,
+      "key": "fsi_tensor_v0_3",
+      "metric": "tensor",
+      "missing_count": 257,
+      "status": "persisted"
+    },
+    {
+      "available_count": 32896,
+      "coverage_pct": 100.0,
+      "domain": "scientific_persistence",
+      "expected_count": 32896,
+      "key": "css_raw_pairwise",
+      "metric": "css",
+      "missing_count": 0,
+      "status": "persisted"
+    },
+    {
+      "available_count": 8,
+      "conflict_count": 0,
+      "domain": "fns_sns_subtype",
+      "episodic_count": 0,
+      "expected_count": 8,
+      "key": "ENS",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 0,
+      "readiness_count": 6,
+      "route_count": 8,
+      "status": "context_coverage",
+      "weather_count": 8
+    },
+    {
+      "available_count": 168,
+      "conflict_count": 0,
+      "domain": "fns_sns_subtype",
+      "episodic_count": 8,
+      "expected_count": 172,
+      "key": "FNS",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 4,
+      "readiness_count": 156,
+      "route_count": 168,
+      "status": "context_coverage",
+      "weather_count": 161
+    },
+    {
+      "available_count": 181,
+      "conflict_count": 0,
+      "domain": "fns_sns_subtype",
+      "episodic_count": 5,
+      "expected_count": 184,
+      "key": "SNS",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 3,
+      "readiness_count": 158,
+      "route_count": 181,
+      "status": "context_coverage",
+      "weather_count": 179
+    },
+    {
+      "available_count": 1,
+      "conflict_count": 0,
+      "domain": "fns_sns_subtype",
+      "episodic_count": 0,
+      "expected_count": 1,
+      "key": "XMS",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 0,
+      "readiness_count": 1,
+      "route_count": 1,
+      "status": "context_coverage",
+      "weather_count": 1
+    },
+    {
+      "available_count": 2,
+      "conflict_count": 0,
+      "domain": "fns_sns_subtype",
+      "episodic_count": 0,
+      "expected_count": 2,
+      "key": "XNS",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 0,
+      "readiness_count": 0,
+      "route_count": 2,
+      "status": "context_coverage",
+      "weather_count": 2
+    },
+    {
+      "available_count": 211,
+      "conflict_count": 0,
+      "domain": "fns_sns_subtype",
+      "episodic_count": 0,
+      "expected_count": 211,
+      "key": "unspecified",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 0,
+      "readiness_count": 203,
+      "route_count": 211,
+      "status": "context_coverage",
+      "weather_count": 185
+    },
+    {
+      "available_count": 101,
+      "conflict_count": 0,
+      "domain": "transport_cohort",
+      "episodic_count": 0,
+      "expected_count": 117,
+      "key": "paratransit",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 16,
+      "readiness_count": 97,
+      "route_count": 101,
+      "status": "context_coverage",
+      "weather_count": 92
+    },
+    {
+      "available_count": 10,
+      "conflict_count": 0,
+      "domain": "transport_cohort",
+      "episodic_count": 10,
+      "expected_count": 15,
+      "key": "paratransit_bus",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 5,
+      "readiness_count": 8,
+      "route_count": 10,
+      "status": "context_coverage",
+      "weather_count": 10
+    },
+    {
+      "available_count": 10,
+      "conflict_count": 0,
+      "domain": "transport_cohort",
+      "episodic_count": 11,
+      "expected_count": 13,
+      "key": "paratransit_sedan_or_taxi",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 3,
+      "readiness_count": 11,
+      "route_count": 10,
+      "status": "context_coverage",
+      "weather_count": 10
+    },
+    {
+      "available_count": 3,
+      "conflict_count": 0,
+      "domain": "transport_cohort",
+      "episodic_count": 3,
+      "expected_count": 4,
+      "key": "paratransit_van",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 1,
+      "readiness_count": 2,
+      "route_count": 3,
+      "status": "context_coverage",
+      "weather_count": 3
+    },
+    {
+      "available_count": 2,
+      "conflict_count": 1,
+      "domain": "transport_cohort",
+      "episodic_count": 2,
+      "expected_count": 5,
+      "key": "paratransit_silverride",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 3,
+      "readiness_count": 4,
+      "route_count": 2,
+      "status": "context_coverage",
+      "weather_count": 2
+    },
+    {
+      "available_count": 205,
+      "conflict_count": 2,
+      "domain": "transport_cohort",
+      "episodic_count": 4,
+      "expected_count": 210,
+      "key": "motorcycle",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 5,
+      "readiness_count": 194,
+      "route_count": 205,
+      "status": "context_coverage",
+      "weather_count": 184
+    }
+  ],
+  "output_asset_names": [
+    "graphs/source_metric_coverage_matrix.json"
+  ],
+  "panels": [],
+  "qualifications": [
+    "Every row shows n and missingness; zero availability is not imputed.",
+    "Stress Index, SNS Index, and PNS Index remain explicitly unavailable rather than plotted as values."
+  ],
+  "ranking": [],
+  "relation_identities": [
+    "v_episodic_completion_coverage",
+    "v_scientific_source_coverage",
+    "v_scientific_persistence_coverage",
+    "v_canonical_cohort_context_coverage"
+  ],
+  "sample_counts": {
+    "coverage_rows": 131
+  },
+  "series": [],
+  "source_contracts": [
+    {
+      "contract": "observatory_mcp_resource.v1",
+      "version": "observatory_bundle.v1"
+    },
+    {
+      "contract": "evidence_observatory_presentation.v1",
+      "version": "evidence_observatory_presentation.v1"
+    },
+    {
+      "contract": "scientific_consumer_contract.v1.0.0",
+      "version": "scientific_consumer_contract.v1.0.0"
+    },
+    {
+      "contract": "observatory_graph.v1",
+      "version": "observatory_graph.v1"
+    }
+  ],
+  "source_labels": [
+    "Canonical scientific quality and coverage views"
+  ],
+  "title": "Source and metric coverage matrix",
+  "units": [
+    "count",
+    "percent"
+  ]
+}
