@@ -26,6 +26,7 @@ function renderSiteHeader(config) {
   ensureChromeStylesheet();
   const path = normalizePath(window.location.pathname);
   const nav = config.links.map((link) => renderNavLink(link, path)).join("");
+  const brandCurrent = path === "/" ? ' aria-current="page"' : "";
   const mount = document.getElementById("site-header");
   if (!mount) {
     return;
@@ -33,7 +34,7 @@ function renderSiteHeader(config) {
   mount.outerHTML = `
   <header class="site-header">
     <div class="nav-wrap">
-      <a class="brand" href="/">${config.brand}</a>
+      <a class="brand" href="/"${brandCurrent}>${config.brand}</a>
       <nav class="site-nav" aria-label="Main navigation">${nav}</nav>
     </div>
   </header>`;

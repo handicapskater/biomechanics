@@ -3549,8 +3549,8 @@
     "late_strava_binding": "Pending weekly Strava links are a coverage state, not evidence of data loss."
   },
   "conclusion_strength": "supports_with_qualification",
-  "content_hash": "1c17bf296b7122ac2d50e7409e38ed0da6eb462ed6c7432cc747ca6840d431d1",
-  "data_through_date": "2026-08-06",
+  "content_hash": "08ddaa3e49396c9d6f9e895a9a30634785c8e1b1838ec5b62c0cf7784420a436",
+  "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
   "evidence_scope": "Aggregate WHOOP and Strava longitudinal context; not a session-HRV substitution.",
   "formula_identities": [

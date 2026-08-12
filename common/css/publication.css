@@ -228,6 +228,58 @@
   font-size: 1.08rem;
 }
 
+.publication-graph-panels-single { grid-template-columns: 1fr; }
+.publication-line-chart { display: block; width: 100%; min-height: 20rem; overflow: visible; }
+.publication-grid-line { stroke: color-mix(in srgb, currentColor 18%, transparent); stroke-width: 1; }
+.publication-axis-label { fill: var(--muted); font-size: 12px; }
+.publication-series { stroke-width: 2.5; vector-effect: non-scaling-stroke; }
+.publication-trend { stroke-width: 1.25; stroke-dasharray: 4 3; vector-effect: non-scaling-stroke; opacity: .82; }
+.publication-point { stroke: var(--panel, #fff); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+.publication-series-0 { stroke: #147d92; fill: none; }
+.publication-series-1 { stroke: #c7512f; fill: none; }
+.publication-series-2 { stroke: #6f5aa8; fill: none; }
+.publication-series-3 { stroke: #62733e; fill: none; }
+/*.publication-series-0 { stroke: #147d92; fill: #147d92; }*/
+/*.publication-series-1 { stroke: #c7512f; fill: #c7512f; }*/
+/*.publication-series-2 { stroke: #6f5aa8; fill: #6f5aa8; }*/
+/*.publication-series-3 { stroke: #62733e; fill: #62733e; }*/
+.publication-line-legend { display: flex; flex-wrap: wrap; gap: .55rem 1rem; margin-top: .35rem; }
+.publication-legend-item::before { content: ""; display: inline-block; width: .75rem; height: .75rem; margin-right: .35rem; border-radius: 50%; background: currentColor; }
+.publication-legend-0 { color: #147d92; } .publication-legend-1 { color: #c7512f; }
+.publication-legend-2 { color: #6f5aa8; } .publication-legend-3 { color: #62733e; }
+.publication-axis-note { color: var(--muted); font-size: .82rem; text-align: center; }
+.publication-metric-select { max-width: 24rem; width: 100%; margin: 0 0 1rem; padding: .65rem .75rem; border: 1px solid currentColor; border-radius: .35rem; background: var(--panel); color: inherit; }
+.publication-duration-detail { width: 100%; }
+.publication-box-row { display: grid; grid-template-columns: minmax(8.5rem, 1.2fr) minmax(10rem, 3fr) auto; gap: .75rem; align-items: center; margin: .8rem 0; }
+.publication-box-plot { position: relative; height: 1.2rem; border-bottom: 1px solid var(--line); }
+.publication-box { position: absolute; top: .18rem; height: .82rem; min-width: 2px; border: 2px solid #147d92; background: color-mix(in srgb, #147d92 22%, transparent); }
+.publication-median { position: absolute; top: 0; width: 3px; height: 1.2rem; background: #c7512f; }
+.publication-raw-point { position: absolute; top: .42rem; width: .42rem; height: .42rem; margin-left: -.21rem; border-radius: 50%; background: #334e68; border: 1px solid var(--panel, #fff); }
+.publication-distribution-chart { display: block; width: 100%; min-height: 14rem; overflow: visible; }
+.publication-whisker { stroke: #64748b; stroke-width: 2; }
+.publication-median-line { stroke: #c7512f; stroke-width: 3; }
+.publication-raw-point-svg { fill: #147d92; stroke: var(--panel, #fff); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+.publication-box-value { white-space: nowrap; font-size: .82rem; }
+
+.coverage-overview { margin: 0 0 2rem; padding: clamp(1rem, 3vw, 1.6rem); border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: var(--shadow); }
+.coverage-overview-header { max-width: 68ch; }
+.coverage-overview-header h2 { margin-top: .2rem; }
+.coverage-overview-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; margin: 1.25rem 0; }
+.coverage-overview-stats article { display: grid; gap: .2rem; padding: .85rem; border-left: 3px solid var(--teal); background: var(--panel-alt); }
+.coverage-overview-stats strong { font-size: clamp(1.35rem, 3vw, 2rem); line-height: 1; }
+.coverage-overview-stats span { color: var(--muted); font-size: .78rem; }
+.coverage-overview-charts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.coverage-overview-panel { padding: 1rem; border: 1px solid var(--line); border-radius: calc(var(--radius) - 2px); background: var(--panel-alt); }
+.coverage-overview-panel h3 { margin: 0; }
+.coverage-overview-bars { display: grid; gap: .65rem; margin-top: 1rem; }
+.coverage-overview-row { display: grid; grid-template-columns: minmax(8.5rem, 1fr) minmax(7rem, 2fr) auto; gap: .65rem; align-items: center; }
+.coverage-overview-label { font-size: .82rem; font-weight: 750; }
+.coverage-overview-track { height: .8rem; overflow: hidden; border-radius: 999px; background: color-mix(in srgb, var(--line) 55%, transparent); }
+.coverage-overview-track i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--teal), #147d92); }
+.coverage-overview-row strong { min-width: 2.5rem; text-align: right; font-size: .82rem; }
+.coverage-overview-unit { margin: .9rem 0 0; color: var(--muted); font-size: .72rem; }
+.coverage-overview-interpretation { margin: 1rem 0 .4rem; padding: .9rem 1rem; border-left: 3px solid var(--teal); background: var(--panel-alt); font-weight: 650; line-height: 1.55; }
+
 .publication-unit {
   margin: 0 0 0.9rem;
   color: var(--muted);
@@ -413,18 +465,6 @@
   background: var(--panel);
 }
 
-.route-breadcrumbs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
-}
-
-.route-breadcrumbs span[aria-hidden="true"] {
-  color: var(--muted);
-}
-
 .visually-hidden {
   position: absolute !important;
   width: 1px !important;
@@ -469,6 +509,8 @@
 }
 
 @media (max-width: 860px) {
+  .coverage-overview-charts { grid-template-columns: 1fr; }
+  .coverage-overview-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .publication-facts,
   .evidence-map,
   .identity-grid,
@@ -482,6 +524,11 @@
 }
 
 @media (max-width: 620px) {
+  .coverage-overview-stats { grid-template-columns: 1fr 1fr; }
+  .coverage-overview-row { grid-template-columns: 1fr auto; gap: .3rem .6rem; }
+  .coverage-overview-track { grid-column: 1 / -1; grid-row: 2; }
+  .publication-box-row { grid-template-columns: 1fr; gap: .25rem; }
+  .publication-box-plot { min-height: 1.2rem; }
   .publication-facts,
   .evidence-map,
   .identity-grid,
@@ -572,3 +619,4 @@
     position: static;
   }
 }
+.publication-planned-comparator{margin:1rem 0;padding:1rem 1.15rem;border:2px dashed #a66a19;border-radius:.65rem;background:transparent}.publication-planned-status{font-weight:800;letter-spacing:.05em;color:#81500f}.publication-inspect-link{display:inline-block;margin:.8rem 0 1.2rem;font-weight:750}

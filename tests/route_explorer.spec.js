@@ -4,6 +4,12 @@ const path = require("node:path");
 
 const explorer = "/evidence/strava-gps-skate-maps/#route-browser";
 
+test("route and weather graph presentation is absent", async ({ page }) => {
+  await page.goto(explorer);
+  await expect(page.getByRole("heading", { name: "Route and Weather Context", exact: true })).toHaveCount(0);
+  await expect(page.locator('[data-publication-graph="route_weather_context"]')).toHaveCount(0);
+});
+
 test("loads the embedded manifest and filters immediately", async ({ page }) => {
   await page.goto(explorer);
   await expect(page.locator("#route-browser-summary")).toContainText("route maps shown");

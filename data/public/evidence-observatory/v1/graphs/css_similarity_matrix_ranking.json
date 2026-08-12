@@ -893,18 +893,25 @@
     }
   ],
   "alt_text": "A CSS matrix and ordered ranking list median similarity for canonical cohort pairs with pair counts, component coverage, quality, and distance.",
-  "content_hash": "733628def1ad54553709bc9e2d2e5e384e85389072b655e338946dfeb64cd463",
-  "data_through_date": "2026-08-06",
+  "claim_class": null,
+  "claim_classes": {},
+  "content_hash": "0d033d0acb8cbdc8f5521796234b955643447905fcf953abdd511d291885308b",
+  "coverage": {},
+  "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
+  "evidence": {},
+  "finding": null,
   "formula_identities": [
     "css_raw_pairwise.v1",
-    "scientific_evidence_persistence.v2.0.1"
+    "scientific_evidence_persistence.v2.0.2"
   ],
+  "functional_meaning": null,
   "graph_contract_version": "fsi_publication_graph.v1",
   "graph_id": "css_similarity_matrix_ranking",
   "graph_type": "similarity_matrix",
   "intended_route": "/platform/",
   "interpretation": "Higher persisted CSS indicates greater similarity under the unchanged raw-pairwise formula; descriptive return-toward-Mall direction remains a separate contract.",
+  "limitation": null,
   "limitations": [
     "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
   ],
@@ -925,7 +932,7 @@
       "quality_statuses": "valid",
       "result_count": 367,
       "right_cohort": "mall_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 734
@@ -945,7 +952,7 @@
       "quality_statuses": "valid",
       "result_count": 617,
       "right_cohort": "pt_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 1234
@@ -965,7 +972,7 @@
       "quality_statuses": "valid",
       "result_count": 14,
       "right_cohort": "paratransit_van",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 28
@@ -985,7 +992,7 @@
       "quality_statuses": "valid",
       "result_count": 724,
       "right_cohort": "readiness_baseline",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 1448
@@ -1005,7 +1012,7 @@
       "quality_statuses": "valid",
       "result_count": 358,
       "right_cohort": "walking",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 716
@@ -1025,7 +1032,7 @@
       "quality_statuses": "valid",
       "result_count": 224,
       "right_cohort": "paratransit_sedan_or_taxi",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 448
@@ -1045,7 +1052,7 @@
       "quality_statuses": "valid",
       "result_count": 205,
       "right_cohort": "paratransit_bus",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 410
@@ -1065,7 +1072,7 @@
       "quality_statuses": "valid",
       "result_count": 72,
       "right_cohort": "paratransit_silverride",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 144
@@ -1085,7 +1092,7 @@
       "quality_statuses": "valid",
       "result_count": 83,
       "right_cohort": "motorcycle",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 166
@@ -1105,7 +1112,7 @@
       "quality_statuses": "valid",
       "result_count": 231,
       "right_cohort": "fns_sns_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 462
@@ -1125,7 +1132,7 @@
       "quality_statuses": "valid",
       "result_count": 17,
       "right_cohort": "paratransit_van",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 34
@@ -1145,7 +1152,7 @@
       "quality_statuses": "valid",
       "result_count": 293,
       "right_cohort": "paratransit_bus",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 586
@@ -1165,7 +1172,7 @@
       "quality_statuses": "valid",
       "result_count": 337,
       "right_cohort": "fns_sns_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 674
@@ -1185,7 +1192,7 @@
       "quality_statuses": "valid",
       "result_count": 321,
       "right_cohort": "paratransit_sedan_or_taxi",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 642
@@ -1205,7 +1212,7 @@
       "quality_statuses": "valid",
       "result_count": 107,
       "right_cohort": "paratransit_silverride",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 214
@@ -1225,7 +1232,7 @@
       "quality_statuses": "valid",
       "result_count": 122,
       "right_cohort": "motorcycle",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 244
@@ -1245,7 +1252,7 @@
       "quality_statuses": "valid",
       "result_count": 511,
       "right_cohort": "walking",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 1022
@@ -1265,7 +1272,7 @@
       "quality_statuses": "valid",
       "result_count": 1019,
       "right_cohort": "readiness_baseline",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 2038
@@ -1285,7 +1292,7 @@
       "quality_statuses": "valid",
       "result_count": 877,
       "right_cohort": "pt_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 1754
@@ -1305,7 +1312,7 @@
       "quality_statuses": "valid",
       "result_count": 496,
       "right_cohort": "mall_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 992
@@ -1325,7 +1332,7 @@
       "quality_statuses": "valid",
       "result_count": 70,
       "right_cohort": "mall_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 140
@@ -1345,7 +1352,7 @@
       "quality_statuses": "valid",
       "result_count": 47,
       "right_cohort": "paratransit_bus",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 94
@@ -1365,7 +1372,7 @@
       "quality_statuses": "valid",
       "result_count": 46,
       "right_cohort": "paratransit_sedan_or_taxi",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 92
@@ -1385,7 +1392,7 @@
       "quality_statuses": "valid",
       "result_count": 121,
       "right_cohort": "pt_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 242
@@ -1405,7 +1412,7 @@
       "quality_statuses": "valid",
       "result_count": 49,
       "right_cohort": "fns_sns_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 98
@@ -1425,7 +1432,7 @@
       "quality_statuses": "valid",
       "result_count": 14,
       "right_cohort": "paratransit_silverride",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 28
@@ -1445,7 +1452,7 @@
       "quality_statuses": "valid",
       "result_count": 73,
       "right_cohort": "walking",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 146
@@ -1465,7 +1472,7 @@
       "quality_statuses": "valid",
       "result_count": 146,
       "right_cohort": "readiness_baseline",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 292
@@ -1485,7 +1492,7 @@
       "quality_statuses": "valid",
       "result_count": 15,
       "right_cohort": "motorcycle",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 30
@@ -1505,7 +1512,7 @@
       "quality_statuses": "valid",
       "result_count": 187,
       "right_cohort": "mall_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 374
@@ -1525,7 +1532,7 @@
       "quality_statuses": "valid",
       "result_count": 334,
       "right_cohort": "pt_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 668
@@ -1545,7 +1552,7 @@
       "quality_statuses": "valid",
       "result_count": 399,
       "right_cohort": "readiness_baseline",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 798
@@ -1565,7 +1572,7 @@
       "quality_statuses": "valid",
       "result_count": 195,
       "right_cohort": "walking",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 390
@@ -1585,7 +1592,7 @@
       "quality_statuses": "valid",
       "result_count": 8,
       "right_cohort": "paratransit_van",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 16
@@ -1605,7 +1612,7 @@
       "quality_statuses": "valid",
       "result_count": 35,
       "right_cohort": "paratransit_silverride",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 70
@@ -1625,7 +1632,7 @@
       "quality_statuses": "valid",
       "result_count": 43,
       "right_cohort": "motorcycle",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 86
@@ -1645,7 +1652,7 @@
       "quality_statuses": "valid",
       "result_count": 105,
       "right_cohort": "paratransit_bus",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 210
@@ -1665,7 +1672,7 @@
       "quality_statuses": "valid",
       "result_count": 115,
       "right_cohort": "paratransit_sedan_or_taxi",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 230
@@ -1685,7 +1692,7 @@
       "quality_statuses": "valid",
       "result_count": 125,
       "right_cohort": "fns_sns_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 250
@@ -1705,7 +1712,7 @@
       "quality_statuses": "valid",
       "result_count": 319,
       "right_cohort": "mall_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 638
@@ -1725,7 +1732,7 @@
       "quality_statuses": "valid",
       "result_count": 60,
       "right_cohort": "paratransit_silverride",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 120
@@ -1745,7 +1752,7 @@
       "quality_statuses": "valid",
       "result_count": 74,
       "right_cohort": "motorcycle",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 148
@@ -1765,7 +1772,7 @@
       "quality_statuses": "valid",
       "result_count": 544,
       "right_cohort": "pt_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 1088
@@ -1785,7 +1792,7 @@
       "quality_statuses": "valid",
       "result_count": 13,
       "right_cohort": "paratransit_van",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 26
@@ -1805,7 +1812,7 @@
       "quality_statuses": "valid",
       "result_count": 640,
       "right_cohort": "readiness_baseline",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 1280
@@ -1825,7 +1832,7 @@
       "quality_statuses": "valid",
       "result_count": 185,
       "right_cohort": "paratransit_bus",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 370
@@ -1845,7 +1852,7 @@
       "quality_statuses": "valid",
       "result_count": 190,
       "right_cohort": "paratransit_sedan_or_taxi",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 380
@@ -1865,7 +1872,7 @@
       "quality_statuses": "valid",
       "result_count": 216,
       "right_cohort": "fns_sns_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 432
@@ -1885,7 +1892,7 @@
       "quality_statuses": "valid",
       "result_count": 324,
       "right_cohort": "walking",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 648
@@ -1905,7 +1912,7 @@
       "quality_statuses": "valid",
       "result_count": 2,
       "right_cohort": "paratransit_van",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 4
@@ -1925,7 +1932,7 @@
       "quality_statuses": "valid",
       "result_count": 85,
       "right_cohort": "mall_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 170
@@ -1945,7 +1952,7 @@
       "quality_statuses": "valid",
       "result_count": 55,
       "right_cohort": "paratransit_bus",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 110
@@ -1965,7 +1972,7 @@
       "quality_statuses": "valid",
       "result_count": 153,
       "right_cohort": "pt_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 306
@@ -1985,7 +1992,7 @@
       "quality_statuses": "valid",
       "result_count": 15,
       "right_cohort": "paratransit_silverride",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 30
@@ -2005,7 +2012,7 @@
       "quality_statuses": "valid",
       "result_count": 60,
       "right_cohort": "paratransit_sedan_or_taxi",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 120
@@ -2025,7 +2032,7 @@
       "quality_statuses": "valid",
       "result_count": 89,
       "right_cohort": "walking",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 178
@@ -2045,7 +2052,7 @@
       "quality_statuses": "valid",
       "result_count": 60,
       "right_cohort": "fns_sns_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 120
@@ -2065,7 +2072,7 @@
       "quality_statuses": "valid",
       "result_count": 22,
       "right_cohort": "motorcycle",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 44
@@ -2085,7 +2092,7 @@
       "quality_statuses": "valid",
       "result_count": 177,
       "right_cohort": "readiness_baseline",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 354
@@ -2105,7 +2112,7 @@
       "quality_statuses": "valid",
       "result_count": 111,
       "right_cohort": "mall_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 222
@@ -2125,7 +2132,7 @@
       "quality_statuses": "valid",
       "result_count": 182,
       "right_cohort": "pt_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 364
@@ -2145,7 +2152,7 @@
       "quality_statuses": "valid",
       "result_count": 216,
       "right_cohort": "readiness_baseline",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 432
@@ -2165,7 +2172,7 @@
       "quality_statuses": "valid",
       "result_count": 6,
       "right_cohort": "paratransit_van",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 12
@@ -2185,7 +2192,7 @@
       "quality_statuses": "valid",
       "result_count": 102,
       "right_cohort": "walking",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 204
@@ -2205,7 +2212,7 @@
       "quality_statuses": "valid",
       "result_count": 22,
       "right_cohort": "paratransit_silverride",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 44
@@ -2225,7 +2232,7 @@
       "quality_statuses": "valid",
       "result_count": 24,
       "right_cohort": "motorcycle",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 48
@@ -2245,7 +2252,7 @@
       "quality_statuses": "valid",
       "result_count": 67,
       "right_cohort": "paratransit_sedan_or_taxi",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 134
@@ -2265,7 +2272,7 @@
       "quality_statuses": "valid",
       "result_count": 74,
       "right_cohort": "fns_sns_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 148
@@ -2285,7 +2292,7 @@
       "quality_statuses": "valid",
       "result_count": 52,
       "right_cohort": "paratransit_bus",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 104
@@ -2305,7 +2312,7 @@
       "quality_statuses": "valid",
       "result_count": 42,
       "right_cohort": "paratransit_van",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 84
@@ -2325,7 +2332,7 @@
       "quality_statuses": "valid",
       "result_count": 506,
       "right_cohort": "paratransit_bus",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 1012
@@ -2345,7 +2352,7 @@
       "quality_statuses": "valid",
       "result_count": 576,
       "right_cohort": "paratransit_sedan_or_taxi",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 1152
@@ -2365,7 +2372,7 @@
       "quality_statuses": "valid",
       "result_count": 615,
       "right_cohort": "fns_sns_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 1230
@@ -2385,7 +2392,7 @@
       "quality_statuses": "valid",
       "result_count": 215,
       "right_cohort": "motorcycle",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 430
@@ -2405,7 +2412,7 @@
       "quality_statuses": "valid",
       "result_count": 183,
       "right_cohort": "paratransit_silverride",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 366
@@ -2425,7 +2432,7 @@
       "quality_statuses": "valid",
       "result_count": 915,
       "right_cohort": "mall_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 1830
@@ -2445,7 +2452,7 @@
       "quality_statuses": "valid",
       "result_count": 919,
       "right_cohort": "walking",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 1838
@@ -2465,7 +2472,7 @@
       "quality_statuses": "valid",
       "result_count": 1540,
       "right_cohort": "pt_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 3080
@@ -2485,7 +2492,7 @@
       "quality_statuses": "valid",
       "result_count": 1856,
       "right_cohort": "readiness_baseline",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 3712
@@ -2505,7 +2512,7 @@
       "quality_statuses": "valid",
       "result_count": 36,
       "right_cohort": "paratransit_van",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 72
@@ -2525,7 +2532,7 @@
       "quality_statuses": "valid",
       "result_count": 546,
       "right_cohort": "paratransit_bus",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 1092
@@ -2545,7 +2552,7 @@
       "quality_statuses": "valid",
       "result_count": 997,
       "right_cohort": "mall_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 1994
@@ -2565,7 +2572,7 @@
       "quality_statuses": "valid",
       "result_count": 201,
       "right_cohort": "paratransit_silverride",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 402
@@ -2585,7 +2592,7 @@
       "quality_statuses": "valid",
       "result_count": 1000,
       "right_cohort": "walking",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 2000
@@ -2605,7 +2612,7 @@
       "quality_statuses": "valid",
       "result_count": 232,
       "right_cohort": "motorcycle",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 464
@@ -2625,7 +2632,7 @@
       "quality_statuses": "valid",
       "result_count": 662,
       "right_cohort": "fns_sns_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 1324
@@ -2645,7 +2652,7 @@
       "quality_statuses": "valid",
       "result_count": 1672,
       "right_cohort": "pt_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 3344
@@ -2665,7 +2672,7 @@
       "quality_statuses": "valid",
       "result_count": 620,
       "right_cohort": "paratransit_sedan_or_taxi",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 1240
@@ -2685,7 +2692,7 @@
       "quality_statuses": "valid",
       "result_count": 1953,
       "right_cohort": "readiness_baseline",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 3906
@@ -2705,7 +2712,7 @@
       "quality_statuses": "valid",
       "result_count": 30,
       "right_cohort": "paratransit_van",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 60
@@ -2725,7 +2732,7 @@
       "quality_statuses": "valid",
       "result_count": 300,
       "right_cohort": "paratransit_bus",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 600
@@ -2745,7 +2752,7 @@
       "quality_statuses": "valid",
       "result_count": 545,
       "right_cohort": "mall_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 1090
@@ -2765,7 +2772,7 @@
       "quality_statuses": "valid",
       "result_count": 125,
       "right_cohort": "motorcycle",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 250
@@ -2785,7 +2792,7 @@
       "quality_statuses": "valid",
       "result_count": 336,
       "right_cohort": "paratransit_sedan_or_taxi",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 672
@@ -2805,7 +2812,7 @@
       "quality_statuses": "valid",
       "result_count": 109,
       "right_cohort": "paratransit_silverride",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 218
@@ -2825,7 +2832,7 @@
       "quality_statuses": "valid",
       "result_count": 929,
       "right_cohort": "pt_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 1858
@@ -2845,7 +2852,7 @@
       "quality_statuses": "valid",
       "result_count": 528,
       "right_cohort": "walking",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 1056
@@ -2865,7 +2872,7 @@
       "quality_statuses": "valid",
       "result_count": 368,
       "right_cohort": "fns_sns_skating",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 736
@@ -2885,20 +2892,23 @@
       "quality_statuses": "valid",
       "result_count": 1079,
       "right_cohort": "readiness_baseline",
-      "scientific_metric_version": "scientific_evidence_persistence.v2.0.1",
+      "scientific_metric_version": "scientific_evidence_persistence.v2.0.2",
       "scientific_scope": "episodic_sensor",
       "scope_type": "canonical_session_pair",
       "total_sample_count": 2158
     }
   ],
+  "missingness": [],
   "output_asset_names": [
     "graphs/css_similarity_matrix_ranking.json"
   ],
   "panels": [],
+  "planned_comparator": null,
   "qualifications": [
     "Every cell is an existing persisted cohort summary; no matrix value is recomputed in publication.",
     "Cell n and component coverage remain visible."
   ],
+  "question": null,
   "ranking": [
     {
       "component_coverage_pct": 100.0,
@@ -3795,6 +3805,7 @@
   "relation_identities": [
     "v_css_summary"
   ],
+  "repeatability": [],
   "sample_counts": {
     "fns_sns_skating:fns_sns_skating": 231,
     "fns_sns_skating:mall_skating": 367,

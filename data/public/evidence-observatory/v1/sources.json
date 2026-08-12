@@ -14,54 +14,54 @@
       "raw_signal_arrays_exposed": false,
       "writes": false
     },
-    "lineage_row_count": 33832,
-    "migration_count": 23,
+    "lineage_row_count": 33913,
+    "migration_count": 28,
     "source_contracts": [
       {
-        "content_hash": "ae3dfc284bbb6e90c9ea34076241c8e581928bb7fe5ceebde673b2c02d1cd3b1",
-        "row_count": 33832,
+        "content_hash": "e61609fcb63babbba301fdac74936379a0b3027dcb6b8d3f7da57ba20caec303",
+        "row_count": 33913,
         "source_relation": "v_scientific_evidence"
       },
       {
-        "content_hash": "64266aef0629bbd157b95778ab4ff3853031561f1a12da8afea2ee44ecac0d0f",
+        "content_hash": "daf17447d07582e41b14c2a904c74b16c5106b86c80e33b1064d670780314097",
         "row_count": 20,
         "source_relation": "v_fsi_summary"
       },
       {
-        "content_hash": "2dc9a0254ca849705c5424d0fe7f4a60dac2763d69ec5ebae51b272271d1af49",
+        "content_hash": "da5bbc15463e64dab4e61c1c05b18cf846fde74d1060dd552c6e21d1750b2f05",
         "row_count": 128,
         "source_relation": "v_css_summary"
       },
       {
-        "content_hash": "0d5d60bb99be9e4ecfc9912472a48fbd8d93c3345878d6814b97619c5874ed76",
+        "content_hash": "97187b1dd3e9bbcb839144abce9cfadae606786801e3d089324ba0dc81154cb9",
         "row_count": 20,
         "source_relation": "v_tensor_summary"
       },
       {
-        "content_hash": "9b501df89368591b3f1ad5ef8114a1c1c2a0e74c50ac893ea12ee9a032cd83ce",
-        "row_count": 33832,
+        "content_hash": "00190178ddd29b79f6ec565459558ef27254a8208acfc41a732b1bbb1fb2c5fc",
+        "row_count": 33913,
         "source_relation": "v_scientific_quality"
       },
       {
-        "content_hash": "a9a5920cc50d6d86930f660eee74046226e05e4bf051e05f000d2bbf560d5b2c",
-        "row_count": 315,
+        "content_hash": "fe222f2d2bfdae50ccd61b01ca2c0ea67fe486ac8fb98809910fed3471eed7f6",
+        "row_count": 516,
         "source_relation": "v_scientific_triplets"
       },
       {
-        "content_hash": "3f3f4838fbcd6754fc7c850b04bdf9d22132b23442b21e82d62d503bef12e1c7",
-        "row_count": 342,
+        "content_hash": "9d387f6f97f0e573ef0934605a2d6beac5c014566455d9148733010c1d6e7c5c",
+        "row_count": 543,
         "source_relation": "v_scientific_longitudinal"
       },
       {
-        "content_hash": "c555c4e37bd1437fd7865472a0a388d9135c8800a0badd7ab442759026b679f1",
+        "content_hash": "11a9a13f3fdd4593dc7fbb5551e0790b929b29e60e4f244c1923c02c50028d9a",
         "row_count": 7,
         "source_relation": "v_scientific_metric_coverage"
       }
     ]
   },
   "conclusion_strength": "not_applicable",
-  "content_hash": "8a0f167b89e98053509b4a5ac5b822b954a3f55e46539fe571665a22c7ca5798",
-  "data_through_date": "2026-08-06",
+  "content_hash": "6dcb55bcfd2b1bf14f567651df3ce01c8aa70c2c67b09e401e5733ea2b6ec2a5",
+  "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
   "evidence_scope": "Public-safe provenance summary; no raw source records.",
   "formula_identities": [],

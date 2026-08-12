@@ -901,25 +901,25 @@
       "status": "unavailable"
     },
     {
-      "available_count": 117,
-      "coverage_pct": 70.038911,
+      "available_count": 165,
+      "coverage_pct": 88.715953,
       "domain": "scientific_input",
       "expected_count": 257,
       "key": "readiness",
       "metric": "v_effective_event_readiness",
-      "missing_count": 77,
+      "missing_count": 29,
       "not_applicable_count": 63,
       "partial_count": 0,
       "status": "source_coverage"
     },
     {
-      "available_count": 129,
-      "coverage_pct": 50.194553,
+      "available_count": 182,
+      "coverage_pct": 70.817121,
       "domain": "scientific_input",
       "expected_count": 257,
       "key": "effective_event",
       "metric": "v_effective_mobility_events",
-      "missing_count": 128,
+      "missing_count": 75,
       "not_applicable_count": 0,
       "partial_count": 0,
       "status": "source_coverage"
@@ -937,26 +937,26 @@
       "status": "source_coverage"
     },
     {
-      "available_count": 43,
-      "coverage_pct": 88.326848,
+      "available_count": 66,
+      "coverage_pct": 97.276265,
       "domain": "scientific_input",
       "expected_count": 257,
       "key": "cohort_context",
       "metric": "v_canonical_sustained_sf_skating_context|v_canonical_transportation_context",
-      "missing_count": 30,
+      "missing_count": 7,
       "not_applicable_count": 184,
       "partial_count": 0,
       "status": "source_coverage"
     },
     {
-      "available_count": 45,
+      "available_count": 75,
       "coverage_pct": 100.0,
       "domain": "scientific_input",
       "expected_count": 257,
       "key": "triplet",
       "metric": "v_canonical_triplet_stage_detail",
       "missing_count": 0,
-      "not_applicable_count": 212,
+      "not_applicable_count": 182,
       "partial_count": 0,
       "status": "source_coverage"
     },
@@ -985,26 +985,6 @@
       "status": "source_coverage"
     },
     {
-      "available_count": 129,
-      "coverage_pct": 50.194553,
-      "domain": "scientific_persistence",
-      "expected_count": 257,
-      "key": "effective_event",
-      "metric": "input",
-      "missing_count": 128,
-      "status": "persisted"
-    },
-    {
-      "available_count": 135,
-      "coverage_pct": 100.0,
-      "domain": "scientific_persistence",
-      "expected_count": 135,
-      "key": "css_same_day_triplet",
-      "metric": "css",
-      "missing_count": 0,
-      "status": "persisted"
-    },
-    {
       "available_count": 149,
       "coverage_pct": 57.976654,
       "domain": "scientific_persistence",
@@ -1025,23 +1005,43 @@
       "status": "persisted"
     },
     {
-      "available_count": 180,
-      "coverage_pct": 70.038911,
+      "available_count": 182,
+      "coverage_pct": 70.817121,
+      "domain": "scientific_persistence",
+      "expected_count": 257,
+      "key": "effective_event",
+      "metric": "input",
+      "missing_count": 75,
+      "status": "persisted"
+    },
+    {
+      "available_count": 216,
+      "coverage_pct": 100.0,
+      "domain": "scientific_persistence",
+      "expected_count": 216,
+      "key": "css_same_day_triplet",
+      "metric": "css",
+      "missing_count": 0,
+      "status": "persisted"
+    },
+    {
+      "available_count": 228,
+      "coverage_pct": 88.715953,
       "domain": "scientific_persistence",
       "expected_count": 257,
       "key": "readiness",
       "metric": "input",
-      "missing_count": 77,
+      "missing_count": 29,
       "status": "persisted"
     },
     {
-      "available_count": 227,
-      "coverage_pct": 88.326848,
+      "available_count": 250,
+      "coverage_pct": 97.276265,
       "domain": "scientific_persistence",
       "expected_count": 257,
       "key": "cohort_context",
       "metric": "input",
-      "missing_count": 30,
+      "missing_count": 7,
       "status": "persisted"
     },
     {
@@ -1119,32 +1119,32 @@
       "weather_count": 8
     },
     {
-      "available_count": 168,
+      "available_count": 174,
+      "conflict_count": 0,
+      "domain": "fns_sns_subtype",
+      "episodic_count": 13,
+      "expected_count": 174,
+      "key": "FNS",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 0,
+      "readiness_count": 157,
+      "route_count": 174,
+      "status": "context_coverage",
+      "weather_count": 167
+    },
+    {
+      "available_count": 187,
       "conflict_count": 0,
       "domain": "fns_sns_subtype",
       "episodic_count": 8,
-      "expected_count": 172,
-      "key": "FNS",
-      "metric": "distance_route_weather_readiness_context",
-      "missing_count": 4,
-      "readiness_count": 156,
-      "route_count": 168,
-      "status": "context_coverage",
-      "weather_count": 161
-    },
-    {
-      "available_count": 181,
-      "conflict_count": 0,
-      "domain": "fns_sns_subtype",
-      "episodic_count": 5,
-      "expected_count": 184,
+      "expected_count": 187,
       "key": "SNS",
       "metric": "distance_route_weather_readiness_context",
-      "missing_count": 3,
-      "readiness_count": 158,
-      "route_count": 181,
+      "missing_count": 0,
+      "readiness_count": 159,
+      "route_count": 187,
       "status": "context_coverage",
-      "weather_count": 179
+      "weather_count": 185
     },
     {
       "available_count": 1,
@@ -1193,70 +1193,56 @@
       "conflict_count": 0,
       "domain": "transport_cohort",
       "episodic_count": 0,
-      "expected_count": 117,
+      "expected_count": 105,
       "key": "paratransit",
       "metric": "distance_route_weather_readiness_context",
-      "missing_count": 16,
-      "readiness_count": 97,
+      "missing_count": 4,
+      "readiness_count": 89,
       "route_count": 101,
       "status": "context_coverage",
       "weather_count": 92
     },
     {
-      "available_count": 10,
+      "available_count": 15,
       "conflict_count": 0,
       "domain": "transport_cohort",
-      "episodic_count": 10,
-      "expected_count": 15,
+      "episodic_count": 14,
+      "expected_count": 16,
       "key": "paratransit_bus",
       "metric": "distance_route_weather_readiness_context",
-      "missing_count": 5,
+      "missing_count": 1,
       "readiness_count": 8,
-      "route_count": 10,
+      "route_count": 15,
       "status": "context_coverage",
-      "weather_count": 10
+      "weather_count": 15
     },
     {
-      "available_count": 10,
+      "available_count": 19,
       "conflict_count": 0,
       "domain": "transport_cohort",
-      "episodic_count": 11,
-      "expected_count": 13,
+      "episodic_count": 18,
+      "expected_count": 22,
       "key": "paratransit_sedan_or_taxi",
       "metric": "distance_route_weather_readiness_context",
       "missing_count": 3,
-      "readiness_count": 11,
-      "route_count": 10,
+      "readiness_count": 16,
+      "route_count": 19,
       "status": "context_coverage",
-      "weather_count": 10
+      "weather_count": 19
     },
     {
-      "available_count": 3,
+      "available_count": 4,
       "conflict_count": 0,
       "domain": "transport_cohort",
-      "episodic_count": 3,
+      "episodic_count": 4,
       "expected_count": 4,
       "key": "paratransit_van",
       "metric": "distance_route_weather_readiness_context",
-      "missing_count": 1,
+      "missing_count": 0,
       "readiness_count": 2,
-      "route_count": 3,
+      "route_count": 4,
       "status": "context_coverage",
-      "weather_count": 3
-    },
-    {
-      "available_count": 2,
-      "conflict_count": 1,
-      "domain": "transport_cohort",
-      "episodic_count": 2,
-      "expected_count": 5,
-      "key": "paratransit_silverride",
-      "metric": "distance_route_weather_readiness_context",
-      "missing_count": 3,
-      "readiness_count": 4,
-      "route_count": 2,
-      "status": "context_coverage",
-      "weather_count": 2
+      "weather_count": 4
     },
     {
       "available_count": 205,
@@ -1271,20 +1257,41 @@
       "route_count": 205,
       "status": "context_coverage",
       "weather_count": 184
+    },
+    {
+      "available_count": 5,
+      "conflict_count": 2,
+      "domain": "transport_cohort",
+      "episodic_count": 5,
+      "expected_count": 7,
+      "key": "paratransit_silverride",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 2,
+      "readiness_count": 5,
+      "route_count": 5,
+      "status": "context_coverage",
+      "weather_count": 5
     }
   ],
   "alt_text": "A coverage matrix lists expected, available, partial, missing, and not-applicable counts for canonical inputs, supported episodic metrics, v2 scientific persistence, and route, weather, readiness, and cohort context.",
-  "content_hash": "134b0ccb9c19ab2bf92e4733728d5dd1707971869b4a1ad5e3761892cb7c8d67",
-  "data_through_date": "2026-08-06",
+  "claim_class": null,
+  "claim_classes": {},
+  "content_hash": "ae97a1261e662c0d45c6060e1db7be80d6b91ebd898feaf9c853ca83a586ad22",
+  "coverage": {},
+  "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
+  "evidence": {},
+  "finding": null,
   "formula_identities": [
-    "scientific_evidence_persistence.v2.0.1"
+    "scientific_evidence_persistence.v2.0.2"
   ],
+  "functional_meaning": null,
   "graph_contract_version": "fsi_publication_graph.v1",
   "graph_id": "source_metric_coverage_matrix",
   "graph_type": "coverage_matrix",
   "intended_route": "/evidence/",
   "interpretation": "Coverage is evidence about availability, not a substitute value. Unsupported Stress/SNS/PNS indices are marked unavailable and have no published measurements.",
+  "limitation": null,
   "limitations": [
     "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
   ],
@@ -2191,25 +2198,25 @@
       "status": "unavailable"
     },
     {
-      "available_count": 117,
-      "coverage_pct": 70.038911,
+      "available_count": 165,
+      "coverage_pct": 88.715953,
       "domain": "scientific_input",
       "expected_count": 257,
       "key": "readiness",
       "metric": "v_effective_event_readiness",
-      "missing_count": 77,
+      "missing_count": 29,
       "not_applicable_count": 63,
       "partial_count": 0,
       "status": "source_coverage"
     },
     {
-      "available_count": 129,
-      "coverage_pct": 50.194553,
+      "available_count": 182,
+      "coverage_pct": 70.817121,
       "domain": "scientific_input",
       "expected_count": 257,
       "key": "effective_event",
       "metric": "v_effective_mobility_events",
-      "missing_count": 128,
+      "missing_count": 75,
       "not_applicable_count": 0,
       "partial_count": 0,
       "status": "source_coverage"
@@ -2227,26 +2234,26 @@
       "status": "source_coverage"
     },
     {
-      "available_count": 43,
-      "coverage_pct": 88.326848,
+      "available_count": 66,
+      "coverage_pct": 97.276265,
       "domain": "scientific_input",
       "expected_count": 257,
       "key": "cohort_context",
       "metric": "v_canonical_sustained_sf_skating_context|v_canonical_transportation_context",
-      "missing_count": 30,
+      "missing_count": 7,
       "not_applicable_count": 184,
       "partial_count": 0,
       "status": "source_coverage"
     },
     {
-      "available_count": 45,
+      "available_count": 75,
       "coverage_pct": 100.0,
       "domain": "scientific_input",
       "expected_count": 257,
       "key": "triplet",
       "metric": "v_canonical_triplet_stage_detail",
       "missing_count": 0,
-      "not_applicable_count": 212,
+      "not_applicable_count": 182,
       "partial_count": 0,
       "status": "source_coverage"
     },
@@ -2275,26 +2282,6 @@
       "status": "source_coverage"
     },
     {
-      "available_count": 129,
-      "coverage_pct": 50.194553,
-      "domain": "scientific_persistence",
-      "expected_count": 257,
-      "key": "effective_event",
-      "metric": "input",
-      "missing_count": 128,
-      "status": "persisted"
-    },
-    {
-      "available_count": 135,
-      "coverage_pct": 100.0,
-      "domain": "scientific_persistence",
-      "expected_count": 135,
-      "key": "css_same_day_triplet",
-      "metric": "css",
-      "missing_count": 0,
-      "status": "persisted"
-    },
-    {
       "available_count": 149,
       "coverage_pct": 57.976654,
       "domain": "scientific_persistence",
@@ -2315,23 +2302,43 @@
       "status": "persisted"
     },
     {
-      "available_count": 180,
-      "coverage_pct": 70.038911,
+      "available_count": 182,
+      "coverage_pct": 70.817121,
+      "domain": "scientific_persistence",
+      "expected_count": 257,
+      "key": "effective_event",
+      "metric": "input",
+      "missing_count": 75,
+      "status": "persisted"
+    },
+    {
+      "available_count": 216,
+      "coverage_pct": 100.0,
+      "domain": "scientific_persistence",
+      "expected_count": 216,
+      "key": "css_same_day_triplet",
+      "metric": "css",
+      "missing_count": 0,
+      "status": "persisted"
+    },
+    {
+      "available_count": 228,
+      "coverage_pct": 88.715953,
       "domain": "scientific_persistence",
       "expected_count": 257,
       "key": "readiness",
       "metric": "input",
-      "missing_count": 77,
+      "missing_count": 29,
       "status": "persisted"
     },
     {
-      "available_count": 227,
-      "coverage_pct": 88.326848,
+      "available_count": 250,
+      "coverage_pct": 97.276265,
       "domain": "scientific_persistence",
       "expected_count": 257,
       "key": "cohort_context",
       "metric": "input",
-      "missing_count": 30,
+      "missing_count": 7,
       "status": "persisted"
     },
     {
@@ -2409,32 +2416,32 @@
       "weather_count": 8
     },
     {
-      "available_count": 168,
+      "available_count": 174,
+      "conflict_count": 0,
+      "domain": "fns_sns_subtype",
+      "episodic_count": 13,
+      "expected_count": 174,
+      "key": "FNS",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 0,
+      "readiness_count": 157,
+      "route_count": 174,
+      "status": "context_coverage",
+      "weather_count": 167
+    },
+    {
+      "available_count": 187,
       "conflict_count": 0,
       "domain": "fns_sns_subtype",
       "episodic_count": 8,
-      "expected_count": 172,
-      "key": "FNS",
-      "metric": "distance_route_weather_readiness_context",
-      "missing_count": 4,
-      "readiness_count": 156,
-      "route_count": 168,
-      "status": "context_coverage",
-      "weather_count": 161
-    },
-    {
-      "available_count": 181,
-      "conflict_count": 0,
-      "domain": "fns_sns_subtype",
-      "episodic_count": 5,
-      "expected_count": 184,
+      "expected_count": 187,
       "key": "SNS",
       "metric": "distance_route_weather_readiness_context",
-      "missing_count": 3,
-      "readiness_count": 158,
-      "route_count": 181,
+      "missing_count": 0,
+      "readiness_count": 159,
+      "route_count": 187,
       "status": "context_coverage",
-      "weather_count": 179
+      "weather_count": 185
     },
     {
       "available_count": 1,
@@ -2483,70 +2490,56 @@
       "conflict_count": 0,
       "domain": "transport_cohort",
       "episodic_count": 0,
-      "expected_count": 117,
+      "expected_count": 105,
       "key": "paratransit",
       "metric": "distance_route_weather_readiness_context",
-      "missing_count": 16,
-      "readiness_count": 97,
+      "missing_count": 4,
+      "readiness_count": 89,
       "route_count": 101,
       "status": "context_coverage",
       "weather_count": 92
     },
     {
-      "available_count": 10,
+      "available_count": 15,
       "conflict_count": 0,
       "domain": "transport_cohort",
-      "episodic_count": 10,
-      "expected_count": 15,
+      "episodic_count": 14,
+      "expected_count": 16,
       "key": "paratransit_bus",
       "metric": "distance_route_weather_readiness_context",
-      "missing_count": 5,
+      "missing_count": 1,
       "readiness_count": 8,
-      "route_count": 10,
+      "route_count": 15,
       "status": "context_coverage",
-      "weather_count": 10
+      "weather_count": 15
     },
     {
-      "available_count": 10,
+      "available_count": 19,
       "conflict_count": 0,
       "domain": "transport_cohort",
-      "episodic_count": 11,
-      "expected_count": 13,
+      "episodic_count": 18,
+      "expected_count": 22,
       "key": "paratransit_sedan_or_taxi",
       "metric": "distance_route_weather_readiness_context",
       "missing_count": 3,
-      "readiness_count": 11,
-      "route_count": 10,
+      "readiness_count": 16,
+      "route_count": 19,
       "status": "context_coverage",
-      "weather_count": 10
+      "weather_count": 19
     },
     {
-      "available_count": 3,
+      "available_count": 4,
       "conflict_count": 0,
       "domain": "transport_cohort",
-      "episodic_count": 3,
+      "episodic_count": 4,
       "expected_count": 4,
       "key": "paratransit_van",
       "metric": "distance_route_weather_readiness_context",
-      "missing_count": 1,
+      "missing_count": 0,
       "readiness_count": 2,
-      "route_count": 3,
+      "route_count": 4,
       "status": "context_coverage",
-      "weather_count": 3
-    },
-    {
-      "available_count": 2,
-      "conflict_count": 1,
-      "domain": "transport_cohort",
-      "episodic_count": 2,
-      "expected_count": 5,
-      "key": "paratransit_silverride",
-      "metric": "distance_route_weather_readiness_context",
-      "missing_count": 3,
-      "readiness_count": 4,
-      "route_count": 2,
-      "status": "context_coverage",
-      "weather_count": 2
+      "weather_count": 4
     },
     {
       "available_count": 205,
@@ -2561,16 +2554,33 @@
       "route_count": 205,
       "status": "context_coverage",
       "weather_count": 184
+    },
+    {
+      "available_count": 5,
+      "conflict_count": 2,
+      "domain": "transport_cohort",
+      "episodic_count": 5,
+      "expected_count": 7,
+      "key": "paratransit_silverride",
+      "metric": "distance_route_weather_readiness_context",
+      "missing_count": 2,
+      "readiness_count": 5,
+      "route_count": 5,
+      "status": "context_coverage",
+      "weather_count": 5
     }
   ],
+  "missingness": [],
   "output_asset_names": [
     "graphs/source_metric_coverage_matrix.json"
   ],
   "panels": [],
+  "planned_comparator": null,
   "qualifications": [
     "Every row shows n and missingness; zero availability is not imputed.",
     "Stress Index, SNS Index, and PNS Index remain explicitly unavailable rather than plotted as values."
   ],
+  "question": null,
   "ranking": [],
   "relation_identities": [
     "v_episodic_completion_coverage",
@@ -2578,6 +2588,7 @@
     "v_scientific_persistence_coverage",
     "v_canonical_cohort_context_coverage"
   ],
+  "repeatability": [],
   "sample_counts": {
     "coverage_rows": 131
   },

@@ -3005,23 +3005,31 @@
     }
   ],
   "alt_text": "Monthly time series show activity frequency and distance for walking, Mall skating, PT skating, and FNS/SNS skating. Missing months are omitted rather than plotted as zero.",
-  "content_hash": "6d74964cce7e2051e40a711b7708b2702ff881d3debc5f6db6414aa12f03cb76",
-  "data_through_date": "2026-08-06",
+  "claim_class": null,
+  "claim_classes": {},
+  "content_hash": "ef6a989e4c6cb00aab05d65af655319404a4bb5685f7de7785e8809766e8a109",
+  "coverage": {},
+  "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
+  "evidence": {},
+  "finding": null,
   "formula_identities": [
     "body_coupling_mapping.v1",
     "longitudinal_whoop_strava_metrics.v1.0.0"
   ],
+  "functional_meaning": null,
   "graph_contract_version": "fsi_publication_graph.v1",
   "graph_id": "longitudinal_activity_context",
   "graph_type": "time_series_small_multiples",
   "intended_route": "/evidence/longitudinal/",
   "interpretation": "Longitudinal WHOOP and Strava records corroborate sustained skating activity across time; the accepted repeated protocol remains the stronger controlled comparison.",
+  "limitation": null,
   "limitations": [
     "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
   ],
   "long_description": "Longitudinal WHOOP and Strava records corroborate sustained skating activity across time; the accepted repeated protocol remains the stronger controlled comparison. Missing months are not zero-filled. Pending weekly Strava binding is a coverage state, not data loss. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
   "matrix": [],
+  "missingness": [],
   "output_asset_names": [
     "graphs/longitudinal_activity_context.json"
   ],
@@ -3997,14 +4005,17 @@
       "unit": "activities/week"
     }
   ],
+  "planned_comparator": null,
   "qualifications": [
     "Missing months are not zero-filled.",
     "Pending weekly Strava binding is a coverage state, not data loss."
   ],
+  "question": null,
   "ranking": [],
   "relation_identities": [
     "v_longitudinal_cohort_summary"
   ],
+  "repeatability": [],
   "sample_counts": {
     "fns_sns_skating": 573,
     "mall_skating": 12,
