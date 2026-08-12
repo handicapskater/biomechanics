@@ -3,6 +3,36 @@
   const mount = document.getElementById("site-footer");
   if (!mount) return;
 
+  const normalizePath = (pathname) => {
+    if (!pathname || pathname === "/index.html") return "/";
+    return pathname.endsWith("/index.html") ? pathname.replace(/index\.html$/, "") : pathname;
+  };
+  const journey = [
+    { href: "/story/", label: "Access Story", related: "https://handicapskater.org/non-standard-mobility-aids/" },
+    { href: "/story/#scientific-method", path: "/story/", label: "Scientific Method Applied to Mobility", related: "https://handicapskater.org/hypothesis-registry/" },
+    { href: "/story/#timeline", path: "/story/", label: "Timeline", related: "https://handicapskater.org/federal-source-anchors/" },
+    { href: "/pain/", label: "Walking Is Ballistic", related: "https://handicapskater.org/actual-risk/" },
+    { href: "/biomechanics/", label: "Biomechanics", related: "https://handicapskater.org/body-coupling/" },
+    { href: "/evidence/strava-gps-skate-maps/", label: "Route Explorer", related: "https://handicapskater.org/actual-risk/" },
+    { href: "/access/", label: "Transportation Recognition", related: "https://handicapskater.org/direct-threat-analysis/" },
+    { href: "/health-ai/", label: "Mobility Intelligence / Health AI", related: "https://handicapskater.org/hypothesis-registry/" }
+  ];
+
+  function renderJourney() {
+    const path = normalizePath(window.location.pathname);
+    let index = journey.findIndex((item) => (item.path || item.href) === path);
+    if (path === "/") index = 0;
+    if (index < 0) return "";
+    const previous = journey[Math.max(0, index - 1)];
+    const next = journey[Math.min(journey.length - 1, index + 1)];
+    return `<nav class="sequence-nav" aria-label="Continue through the HandicapSkater story">
+      <a href="${previous.href}"><span>Previous</span>${previous.label}</a>
+      <a href="${next.href}"><span>Next</span>${next.label}</a>
+      <a href="${journey[index].related}"><span>Related Principle</span>HandicapSkater.org</a>
+      <a href="/platform/"><span>Explore Evidence</span>Evidence Observatory</a>
+    </nav>`;
+  }
+
   const footers = {
     "handicapskater.com": `
 <style type="text/css">
@@ -144,5 +174,5 @@
 `
   };
 
-  mount.innerHTML = footers[host] || footers["handicapskater.com"];
+  mount.innerHTML = renderJourney() + (footers[host] || footers["handicapskater.com"]);
 })();

@@ -6,56 +6,7 @@
     "/evidence/mobility-comparison/",
     "/evidence/repeated-protocol/",
     "/evidence/transportation/",
-    "/evidence/longitudinal/",
-    "/evidence/strava-gps-skate-maps/"
-  ];
-
-  const comEvidenceGroups = [
-    {
-      label: "Start Here",
-      links: [
-        { href: "/evidence/", label: "Evidence Overview", match: ["/evidence/"] },
-        { href: "/evidence/#how-to-read", label: "How to Read the Evidence", match: [] }
-      ]
-    },
-    {
-      label: "Evidence Views",
-      links: [
-        {
-          href: "/evidence/mobility-comparison/",
-          label: "Functional Mobility",
-          match: ["/evidence/mobility-comparison/"]
-        },
-        {
-          href: "/evidence/repeated-protocol/",
-          label: "Repeated Protocol",
-          match: ["/evidence/repeated-protocol/"]
-        },
-        {
-          href: "/evidence/transportation/",
-          label: "Transportation Context",
-          match: ["/evidence/transportation/"]
-        },
-        {
-          href: "/evidence/longitudinal/",
-          label: "Longitudinal Evidence",
-          match: ["/evidence/longitudinal/"]
-        }
-      ]
-    },
-    {
-      label: "Supporting Records",
-      links: [
-        {
-          href: "/evidence/strava-gps-skate-maps/",
-          label: "Route Map Explorer",
-          match: ["/evidence/strava-gps-skate-maps/"]
-        },
-        { href: "/evidence/#corpus-contains", label: "Evidence Corpus", match: [] },
-        { href: "/evidence/#fsi-results", label: "FSI / CSS Context", match: [] },
-        { href: "/evidence/#validation-audit", label: "Validation and Audit", match: [] }
-      ]
-    }
+    "/evidence/longitudinal/"
   ];
 
   const menus = {
@@ -63,21 +14,49 @@
       brand: "HandicapSkater.com",
       brandHomeControl: true,
       primaryLinks: [
-        { href: "/story/", label: "Story", match: ["/story/"] },
-        { href: "/pain/", label: "Pain", match: ["/pain/"] },
-        { href: "/biomechanics/", label: "Movement", match: ["/biomechanics/"] },
+        { href: "/story/", label: "Access Story", match: ["/story/"] },
         {
-          key: "evidence",
-          label: "Evidence",
-          match: comEvidenceRoutes,
-          menuGroups: comEvidenceGroups
+          key: "story-record",
+          label: "Story Record",
+          match: ["/story/", "/pain/"],
+          menuGroups: [
+            {
+              links: [
+                { href: "/story/#scientific-method", label: "Scientific Method Applied to Mobility", match: [] },
+                { href: "/story/#timeline", label: "Timeline", match: [] },
+                { href: "/pain/", label: "Walking Is Ballistic", match: ["/pain/"] }
+              ]
+            }
+          ]
         },
-        { href: "/access/", label: "Transportation", match: ["/access/"] },
-        { href: "/platform/", label: "Platform", match: ["/platform/"] },
+        {
+          key: "movement",
+          label: "Biomechanics",
+          match: ["/biomechanics/"],
+          menuGroups: [
+            {
+              links: [
+                { href: "/biomechanics/#pelvic-structure", label: "Pelvic Structure", match: [] },
+                { href: "/biomechanics/#pelvic-kinematic-chain", label: "Pelvic Kinematic Chain", match: [] },
+                { href: "/biomechanics/#movement-planes", label: "3D Movement", match: [] },
+                { href: "/biomechanics/#walking-load-path", label: "Walking Load Path", match: [] },
+                { href: "/biomechanics/#controlled-rolling", label: "Controlled Rolling", match: [] },
+                { href: "/biomechanics/#controlled-propulsion", label: "Controlled Propulsion", match: [] },
+                { href: "/biomechanics/#double-push", label: "Double Push", match: [] }
+              ]
+            }
+          ]
+        },
+        {
+          href: "/evidence/strava-gps-skate-maps/",
+          label: "Route Explorer",
+          match: ["/evidence/strava-gps-skate-maps/"]
+        },
+        { href: "/access/", label: "Transportation Recognition", match: ["/access/"] },
         {
           key: "more",
           label: "More",
-          match: ["/health-ai/", "/videos/"],
+          match: ["/health-ai/", "/platform/", "/videos/", ...comEvidenceRoutes],
           menuGroups: [
             {
               links: [
@@ -85,6 +64,11 @@
                   href: "/health-ai/",
                   label: "Mobility Intelligence / Health AI",
                   match: ["/health-ai/"]
+                },
+                {
+                  href: "/platform/",
+                  label: "Explore Evidence Observatory",
+                  match: ["/platform/", ...comEvidenceRoutes]
                 },
                 { href: "/videos/", label: "Videos", match: ["/videos/", "/videos/index.html"] },
                 {
@@ -96,36 +80,6 @@
             }
           ]
         }
-      ],
-      evidenceLocalLinks: [
-        { href: "/evidence/", label: "Overview", match: ["/evidence/"] },
-        {
-          href: "/evidence/mobility-comparison/",
-          label: "Functional Mobility",
-          match: ["/evidence/mobility-comparison/"]
-        },
-        {
-          href: "/evidence/repeated-protocol/",
-          label: "Repeated Protocol",
-          match: ["/evidence/repeated-protocol/"]
-        },
-        {
-          href: "/evidence/transportation/",
-          label: "Transportation",
-          match: ["/evidence/transportation/"]
-        },
-        {
-          href: "/evidence/longitudinal/",
-          label: "Longitudinal",
-          match: ["/evidence/longitudinal/"]
-        },
-        {
-          href: "/evidence/strava-gps-skate-maps/",
-          label: "Routes",
-          match: ["/evidence/strava-gps-skate-maps/"]
-        },
-        { href: "/evidence/#corpus-contains", label: "Corpus", match: [] },
-        { href: "/evidence/#validation-audit", label: "Validation", match: [] }
       ]
     },
 
@@ -343,23 +297,18 @@
         .join("");
   }
 
-  function renderEvidenceLocalNav(path) {
-    const links = Array.isArray(config.evidenceLocalLinks) ? config.evidenceLocalLinks : [];
-    if (links.length === 0 || !(path === "/evidence/" || path.startsWith("/evidence/"))) {
+  function renderEvidenceAuthority(path) {
+    if (host !== "handicapskater.com") {
       return "";
     }
-
-    const navLinks = links
-        .map((link) => {
-          const active = linkMatchesPath(link, path) ? ' aria-current="page"' : "";
-          return `<a class="evidence-local-link" href="${link.href}"${active}>${link.label}</a>`;
-        })
-        .join("");
-
+    const compatibility = comEvidenceRoutes.includes(path)
+      ? " This compatibility view is a synchronized projection; the Observatory remains authoritative."
+      : "";
     return `
-      <nav class="evidence-local-nav" aria-label="Evidence section navigation">
-        <div class="evidence-local-nav-inner">${navLinks}</div>
-      </nav>
+      <aside class="evidence-authority-strip" aria-label="Scientific evidence authority">
+        <span>Scientific evidence authority</span>
+        <a href="/platform/">Evidence Observatory</a>${compatibility}
+      </aside>
     `;
   }
 
@@ -463,7 +412,7 @@
 
     const path = normalizePath(window.location.pathname);
     const primaryNavHtml = renderPrimaryNav(path);
-    const evidenceLocalNavHtml = renderEvidenceLocalNav(path);
+    const evidenceAuthorityHtml = renderEvidenceAuthority(path);
     const brandCurrent = config.brandHomeControl && path === "/" ? ' aria-current="page"' : "";
     const brandLabel = renderHeaderLabel(config.brand);
     const brandAriaLabel = config.brandHomeControl ? ` aria-label="${config.brand} home"` : "";
@@ -477,7 +426,7 @@
           </nav>
         </div>
       </header>
-      ${evidenceLocalNavHtml}
+      ${evidenceAuthorityHtml}
     `;
 
     const header = document.querySelector(".site-header[data-site-host]");

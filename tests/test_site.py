@@ -26,13 +26,16 @@ MODERN_PAGES = [
 
 EXPECTED_NAV_HREFS = {
     "/story/",
+    "/story/#scientific-method",
+    "/story/#timeline",
     "/pain/",
-    "/biomechanics/",
-    "/evidence/",
-    "/evidence/mobility-comparison/",
-    "/evidence/repeated-protocol/",
-    "/evidence/transportation/",
-    "/evidence/longitudinal/",
+    "/biomechanics/#pelvic-structure",
+    "/biomechanics/#pelvic-kinematic-chain",
+    "/biomechanics/#movement-planes",
+    "/biomechanics/#walking-load-path",
+    "/biomechanics/#controlled-rolling",
+    "/biomechanics/#controlled-propulsion",
+    "/biomechanics/#double-push",
     "/evidence/strava-gps-skate-maps/",
     "/access/",
     "/platform/",
@@ -42,23 +45,24 @@ EXPECTED_NAV_HREFS = {
 }
 
 EXPECTED_NAV_LABELS = {
-    "Story",
-    "Pain",
-    "Movement",
-    "Evidence",
-    "Transportation",
-    "Platform",
+    "Access Story",
+    "Story Record",
+    "Scientific Method Applied to Mobility",
+    "Timeline",
+    "Walking Is Ballistic",
+    "Biomechanics",
+    "Pelvic Structure",
+    "Pelvic Kinematic Chain",
+    "3D Movement",
+    "Walking Load Path",
+    "Controlled Rolling",
+    "Controlled Propulsion",
+    "Double Push",
+    "Route Explorer",
+    "Transportation Recognition",
     "More",
     "Videos",
-    "Evidence Overview",
-    "Functional Mobility",
-    "Repeated Protocol",
-    "Transportation Context",
-    "Longitudinal Evidence",
-    "Route Map Explorer",
-    "Evidence Corpus",
-    "FSI / CSS Context",
-    "Validation and Audit",
+    "Explore Evidence Observatory",
     "Mobility Intelligence / Health AI",
     "Standards & Reviewer Guidance on HandicapSkater.org",
 }
@@ -113,6 +117,16 @@ def tokens_css() -> str:
 
 
 class SiteTests(unittest.TestCase):
+    def test_story_sequence_navigation_is_accessible_and_complete(self) -> None:
+        footer = read("common/site-footer.js")
+        css = nav_css()
+        for label in ("Previous", "Next", "Related Principle", "Explore Evidence"):
+            self.assertIn(label, footer)
+        self.assertIn('class="sequence-nav"', footer)
+        self.assertIn('aria-label="Continue through the HandicapSkater story"', footer)
+        self.assertIn(".sequence-nav", css)
+        self.assertIn(".sequence-nav a:focus-visible", css)
+
     def test_public_pages_exist(self) -> None:
         for page in PUBLIC_PAGES:
             self.assertTrue((ROOT / page).exists(), str(page))
@@ -179,9 +193,9 @@ class SiteTests(unittest.TestCase):
         self.assertIn('brandHomeControl: true', js)
         self.assertIn('config.brandHomeControl && path === "/"', js)
         self.assertIn('aria-label="${config.brand} home"', js)
-        self.assertIn('{ href: "/story/", label: "Story", match: ["/story/"] }', js)
-        self.assertIn('{ href: "/pain/", label: "Pain", match: ["/pain/"] }', js)
-        self.assertIn('{ href: "/biomechanics/", label: "Movement", match: ["/biomechanics/"] }', js)
+        self.assertIn('{ href: "/story/", label: "Access Story", match: ["/story/"] }', js)
+        self.assertIn('{ href: "/pain/", label: "Walking Is Ballistic", match: ["/pain/"] }', js)
+        self.assertIn('label: "Biomechanics"', js)
         self.assertNotIn('"/healthcare-wearable-mobility/"', js)
 
     def test_shared_navigation_external_link_behavior(self) -> None:
@@ -293,9 +307,9 @@ class SiteTests(unittest.TestCase):
     def test_homepage_is_executive_front_door(self):
         html = read("index.html").lower()
         self.assertIn("n-of-1 mobility case study", html)
-        self.assertIn("choose a perspective", html)
+        self.assertIn("human story, in order", html)
         self.assertIn("what looks like a stunt is the access story", html)
-        self.assertIn("function before appearance", html)
+        self.assertIn("scientific findings remain owned by the evidence observatory", html)
         self.assertNotIn("<h2>a. the injury</h2>", html)
         self.assertNotIn("<h2>n. the present appeal</h2>", html)
 
@@ -307,80 +321,44 @@ class SiteTests(unittest.TestCase):
         self.assertEqual(
             titles,
             [
-                "Personal Story",
-                "Pain and Functional Context",
-                "Movement Context",
-                "Evidence",
-                "Friday Night Skate Routes",
-                "Mobility Intelligence",
-                "Generalized Standards",
+                "Access Story",
+                "Scientific Method Applied to Mobility",
+                "Timeline",
+                "Walking Is Ballistic",
+                "Biomechanics",
+                "Route Explorer",
+                "Transportation Recognition",
+                "Mobility Intelligence / Health AI",
             ],
         )
-        self.assertEqual(len(cards), 7)
-        self.assertNotIn("Health AI Observatory", section)
-        self.assertNotIn("Measured Evidence", section)
+        self.assertEqual(len(cards), 8)
         for term in (
-            "Explore the Evidence",
-            "Repeated San Francisco Mobility",
-            "commonly approximately 12 miles",
-            "actual route values vary",
-            "Friday and Saturday night skating",
-            "Wearable Mobility Science and Health AI",
-            "functional burden",
-            "adaptation across disability and aging",
-            "Open the Route Map Explorer",
+            "Scientific findings remain owned by the Evidence Observatory",
+            "Orthopedic context",
+            "3D movement",
+            "Repeated real-world mobility",
+            "Open the Route Explorer",
         ):
             self.assertIn(term, section)
 
-    def test_evidence_menu_and_shared_local_navigation_use_canonical_routes(self) -> None:
+    def test_scientific_routes_defer_to_the_observatory_authority_strip(self) -> None:
         js = site_header_js()
-        expected_menu_labels = (
-            "Start Here",
-            "Evidence Overview",
-            "How to Read the Evidence",
-            "Evidence Views",
-            "Functional Mobility",
-            "Repeated Protocol",
-            "Transportation Context",
-            "Longitudinal Evidence",
-            "Supporting Records",
-            "Route Map Explorer",
-            "Evidence Corpus",
-            "FSI / CSS Context",
-            "Validation and Audit",
-        )
-        positions = [js.index(f'"{label}"') for label in expected_menu_labels]
-        self.assertEqual(positions, sorted(positions))
-        for href in (
-            "/evidence/",
-            "/evidence/mobility-comparison/",
-            "/evidence/repeated-protocol/",
-            "/evidence/transportation/",
-            "/evidence/longitudinal/",
-            "/evidence/strava-gps-skate-maps/",
-            "/evidence/#corpus-contains",
-            "/evidence/#fsi-results",
-            "/evidence/#validation-audit",
-        ):
-            self.assertIn(f'href: "{href}"', js)
-
-        self.assertIn('class="evidence-local-nav"', js)
-        self.assertIn('aria-label="Evidence section navigation"', js)
-        for label in ("Overview", "Functional Mobility", "Repeated Protocol", "Transportation", "Longitudinal", "Routes", "Corpus", "Validation"):
-            self.assertIn(f'label: "{label}"', js)
-        self.assertIn(".evidence-local-nav", nav_css())
+        self.assertIn('class="evidence-authority-strip"', js)
+        self.assertIn('aria-label="Scientific evidence authority"', js)
+        self.assertIn('href="/platform/">Evidence Observatory', js)
+        self.assertIn("compatibility view is a synchronized projection", js)
+        self.assertIn(".evidence-authority-strip", nav_css())
         self.assertNotIn("page-anchor-nav", read("evidence/index.html"))
 
     def test_primary_navigation_uses_requested_order_and_canonical_urls(self) -> None:
         js = site_header_js()
         com_config = js[js.index('"handicapskater.com"'):js.index('"handicapskater.org"')]
         ordered = (
-            'label: "Story"',
-            'label: "Pain"',
-            'label: "Movement"',
-            'label: "Evidence"',
-            'label: "Transportation"',
-            'label: "Platform"',
+            'label: "Access Story"',
+            'label: "Story Record"',
+            'label: "Biomechanics"',
+            'label: "Route Explorer"',
+            'label: "Transportation Recognition"',
             'label: "More"',
         )
         positions = [com_config.index(label) for label in ordered]
@@ -402,7 +380,7 @@ class SiteTests(unittest.TestCase):
         js = read("common/site-header.js")
         self.assertIn('brand: "HandicapSkater.com"', js)
         self.assertIn('brand: "HandicapSkater.org"', js)
-        self.assertIn('{ href: "/story/", label: "Story", match: ["/story/"] }', js)
+        self.assertIn('{ href: "/story/", label: "Access Story", match: ["/story/"] }', js)
         self.assertIn('href: "/health-ai/"', js)
         self.assertIn('return match.includes(path)', js)
 
