@@ -619,4 +619,4 @@
     position: static;
   }
 }
-.publication-planned-comparator{margin:1rem 0;padding:1rem 1.15rem;border:2px dashed #a66a19;border-radius:.65rem;background:transparent}.publication-planned-status{font-weight:800;letter-spacing:.05em;color:#81500f}.publication-inspect-link{display:inline-block;margin:.8rem 0 1.2rem;font-weight:750}
+.publication-planned-comparator{margin:1rem 0;padding:1rem 1.15rem;border:2px dashed var(--teal);border-radius:.65rem;background:transparent}.publication-planned-status{font-weight:800;letter-spacing:.05em;color:var(--accent-deep)}.publication-inspect-link{display:inline-block;margin:.8rem 0 1.2rem;font-weight:750}

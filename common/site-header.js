@@ -64,7 +64,7 @@
 
   function renderHeaderLabel(label) {
     if (String(label).toLowerCase() === "handicapskater.com") {
-      return `<span class="small-caps">handicapskater</span>.com`;
+      return "HandicapSkater.com";
     }
 
     if (String(label).toLowerCase() === "handicapskater.org") {

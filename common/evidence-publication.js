@@ -909,7 +909,14 @@
     }
 
     const inspect = element("a", "publication-inspect-link", "Inspect in Evidence Observatory");
-    inspect.href = "https://evidence.handicapskater.com/#" + encodeURIComponent(payload.graph_id);
+    const inspectTargets = {
+      walking_vs_mall_accumulated_mechanical_load: "/evidence/mobility-comparison/#mobility-graph",
+      triplet_functional_output_context: "/evidence/mobility-comparison/#functional-output",
+      accepted_triplet_stage_profiles: "/evidence/repeated-protocol/",
+      transportation_body_coupling_comparison: "/evidence/transportation/#transport-graph",
+      fns_sns_longitudinal_functional_capacity: "/evidence/longitudinal/#longitudinal-graph",
+    };
+    inspect.href = inspectTargets[payload.graph_id] || "/evidence/";
     figure.appendChild(inspect);
 
     const qualifications = element("div", "publication-meta");

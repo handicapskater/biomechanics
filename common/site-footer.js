@@ -3,6 +3,37 @@
   const mount = document.getElementById("site-footer");
   if (!mount) return;
 
+  const eyebrowRules = [
+    [/federal|primary source|authority/i, "Primary authority"],
+    [/hypothesis|scientific method|studied/i, "Research method"],
+    [/route|provenance|source-linked|evidence/i, "Evidence context"],
+    [/walking|rolling|pelvic|propulsion|mechanical|body coupled/i, "Movement mechanics"],
+    [/transportation/i, "Transportation context"],
+    [/longitudinal|WHOOP|physical-therapy/i, "Longitudinal context"],
+    [/risk|threat|qualification/i, "Risk review"],
+    [/framework|written record|decision|review/i, "Review framework"],
+    [/function|mobility aid|inline skates/i, "Functional mobility"],
+    [/MCP|mobility intelligence/i, "System context"],
+    [/story|what happened|matters/i, "Case context"],
+    [/.*/, "Key context"],
+  ];
+
+  const addSectionEyebrows = () => {
+    document.querySelectorAll("main section h2").forEach((heading) => {
+      if (heading.parentElement.querySelector(":scope > .eyebrow")) return;
+      const eyebrow = document.createElement("p");
+      eyebrow.className = "eyebrow";
+      eyebrow.textContent = eyebrowRules.find(([pattern]) => pattern.test(heading.textContent))[1];
+      heading.before(eyebrow);
+    });
+  };
+
+  addSectionEyebrows();
+  new MutationObserver(addSectionEyebrows).observe(document.querySelector("main"), {
+    childList: true,
+    subtree: true,
+  });
+
   const footers = {
     "handicapskater.com": `
 <footer class="site-footer">

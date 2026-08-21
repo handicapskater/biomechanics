@@ -34,9 +34,9 @@
 .btn,
 .button-ghost,
 .btn.outline {
-  background: transparent;
-  border-color: transparent;
-  color: var(--blue);
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
 }
 
 .button-primary,
@@ -48,14 +48,23 @@
 
 .button-secondary,
 .btn.secondary {
-  background: transparent;
-  border-color: var(--line);
-  color: var(--ink);
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
 }
 
 .button-light {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.28);
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
+}
+
+.button:visited,
+.btn:visited,
+.button-primary:visited,
+.button-secondary:visited,
+.button-light:visited,
+.button-ghost:visited {
   color: #fff;
 }
 

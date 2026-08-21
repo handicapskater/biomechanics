@@ -2851,9 +2851,9 @@
   "interpretation": "PT is numerically closer to Mall for some metrics and dates and farther for others; the label is descriptive and is not CSS or clinical recovery.",
   "limitation": null,
   "limitations": [
-    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. Results are N-of-1 evidence and provides the basis for evolutionary investigation."
   ],
-  "long_description": "PT is numerically closer to Mall for some metrics and dates and farther for others; the label is descriptive and is not CSS or clinical recovery. The canonical return-toward-Mall classification is shown in the accessible table. No pain-relief, causal, or clinical-recovery claim is made. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "long_description": "PT is numerically closer to Mall for some metrics and dates and farther for others; the label is descriptive and is not CSS or clinical recovery. The canonical return-toward-Mall classification is shown in the accessible table. No pain-relief, causal, or clinical-recovery claim is made. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. Results are N-of-1 evidence and provides the basis for evolutionary investigation.",
   "matrix": [],
   "missingness": [],
   "output_asset_names": [

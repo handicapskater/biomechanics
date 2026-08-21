@@ -563,8 +563,14 @@
 .transport-environment-flow li {
   position: relative;
   padding: 1rem 1.1rem;
-  border-left: 4px solid var(--gold);
+  border-left: 4px solid var(--teal);
   background: var(--panel-alt);
+}
+
+.standards-link,
+.standards-link:visited {
+  color: var(--teal);
+  text-decoration-color: var(--teal);
 }
 
 .transport-environment-flow strong,
@@ -873,7 +879,9 @@
 /* Public demonstration: question-led homepage story. */
 .home-hero .hero-inner {
   max-width: var(--content);
-  min-height: clamp(34rem, 70vw, 46rem);
+  min-height: clamp(20rem, 32vw, 26rem);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .home-hero .hero-summary {
@@ -1138,8 +1146,15 @@
 }
 
 .access-hero {
-  --hero-image: url("/common/images/HandicapSkater-H2-Skates.png");
-  background-position: center 42%;
+  --hero-image: url("/common/images/HandicapSkater-Hayabusa-Full.jpeg");
+  background-position: center;
+}
+
+.hero {
+  --hero-start: rgba(16, 48, 65, 0.97);
+  --hero-end: rgba(11, 101, 108, 0.88);
+  --hero-image: url("/common/images/HandicapSkater-Hayabusa-Full.jpeg");
+  background-position: center;
 }
 
 @media (max-width: 760px) {
@@ -1282,6 +1297,18 @@
   .architecture-flow li {
     min-height: 0;
   }
+}
+
+.documentary-card,
+.signal-qualification,
+.innovation-note,
+.human-conclusion,
+.chain-transition,
+.chain-transaction,
+.callout,
+.notice.publication-limitations,
+.graph-qualification {
+  border-left: 5px solid var(--teal);
 }
 
 @media print {
