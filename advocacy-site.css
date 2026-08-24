@@ -859,3 +859,8 @@ summary {
 [hidden] {
   display: none !important;
 }
+
+.publication-link-row { margin: 1rem 0 0; }
+.acceleration-card { max-width: 46rem; margin-top: 1.25rem; padding: 1.25rem; border: 1px solid rgba(255, 255, 255, .3); background: rgba(255, 255, 255, .08); }
+.acceleration-card h3 { margin: .25rem 0 .5rem; }
+.acceleration-card p { margin: .5rem 0; }

@@ -94,6 +94,20 @@ def tokens_css() -> str:
 
 
 class SiteTests(unittest.TestCase):
+    def test_homepage_evidence_highlights_use_approved_publication_artifacts(self) -> None:
+        home = read("index.html")
+        renderer = read("common/evidence-publication.js")
+        acceleration = read("common/acceleration-summary.js")
+        self.assertIn('data-publication-graph="functional_output_vs_burden_authoritative_miles"', home)
+        self.assertIn('data-publication-graph="transportation_body_coupling_comparison"', home)
+        self.assertIn("evidence-publication.js", home)
+        self.assertIn("apple_silicon_acceleration_summary.json", acceleration)
+        self.assertIn("speedup_vs_numpy.toFixed(2)", acceleration)
+        self.assertNotIn("acc measures pain", home.lower())
+        self.assertIn("RMSSD coupling remains unsupported", home)
+        self.assertIn("Evidence Observatory—the only scientific source", home)
+        self.assertIn("Accessible values supplied by the publication graph payload.", renderer)
+
     def test_footer_has_no_sequence_or_related_navigation(self) -> None:
         footer = read("common/site-footer.js")
         css = nav_css()
