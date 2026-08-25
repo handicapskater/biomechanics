@@ -244,7 +244,7 @@
   "alt_text": "MIXED/INCONCLUSIVE: overall multiclass discrimination separates from permutation nulls, while incremental-over-baseline values include both gains and losses.",
   "claim_class": "INTERPRETATION",
   "claim_classes": {},
-  "content_hash": "cf5106233c5c43b6384a976f5b4f2edf7c8698bd8a6017910ea279c2f875bd79",
+  "content_hash": "4c675b11cb990986331d330fa7112848a31f35f5f671810df707ef868b914df3",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -313,6 +313,124 @@
   ],
   "title": "H2/H13 context increment",
   "units": [
-    "balanced_accuracy"
-  ]
+    "percentage_points"
+  ],
+  "visual": {
+    "baseline_rows_plotted": false,
+    "groups": [
+      {
+        "label": "Gradient Boosting",
+        "model": "gradient_boosted_trees",
+        "tiers": [
+          {
+            "incremental_balanced_accuracy": -0.11313565549676663,
+            "label": "Sensor only",
+            "tier": "sensor_only"
+          },
+          {
+            "incremental_balanced_accuracy": -0.055081569664903074,
+            "label": "Sensor + context",
+            "tier": "sensor_plus_context"
+          },
+          {
+            "incremental_balanced_accuracy": -0.05446428571428574,
+            "label": "Mechanical",
+            "tier": "baseline_mechanical"
+          },
+          {
+            "incremental_balanced_accuracy": -0.046527777777777835,
+            "label": "Mechanical + physiology",
+            "tier": "baseline_mechanical_physiology"
+          }
+        ]
+      },
+      {
+        "label": "LDA",
+        "model": "linear_discriminant",
+        "tiers": [
+          {
+            "incremental_balanced_accuracy": -0.009611992945326442,
+            "label": "Sensor only",
+            "tier": "sensor_only"
+          },
+          {
+            "incremental_balanced_accuracy": 0.02716049382716046,
+            "label": "Sensor + context",
+            "tier": "sensor_plus_context"
+          },
+          {
+            "incremental_balanced_accuracy": 0.02716049382716046,
+            "label": "Mechanical",
+            "tier": "baseline_mechanical"
+          },
+          {
+            "incremental_balanced_accuracy": 0.04567901234567895,
+            "label": "Mechanical + physiology",
+            "tier": "baseline_mechanical_physiology"
+          }
+        ]
+      },
+      {
+        "label": "Logistic",
+        "model": "logistic_regression",
+        "tiers": [
+          {
+            "incremental_balanced_accuracy": -0.001352145796590265,
+            "label": "Sensor only",
+            "tier": "sensor_only"
+          },
+          {
+            "incremental_balanced_accuracy": 0.00864197530864197,
+            "label": "Sensor + context",
+            "tier": "sensor_plus_context"
+          },
+          {
+            "incremental_balanced_accuracy": 0.01851851851851849,
+            "label": "Mechanical",
+            "tier": "baseline_mechanical"
+          },
+          {
+            "incremental_balanced_accuracy": 0.005529835390946536,
+            "label": "Mechanical + physiology",
+            "tier": "baseline_mechanical_physiology"
+          }
+        ]
+      },
+      {
+        "label": "Random Forest",
+        "model": "random_forest",
+        "tiers": [
+          {
+            "incremental_balanced_accuracy": -0.04191651969429744,
+            "label": "Sensor only",
+            "tier": "sensor_only"
+          },
+          {
+            "incremental_balanced_accuracy": 0.012022339800117576,
+            "label": "Sensor + context",
+            "tier": "sensor_plus_context"
+          },
+          {
+            "incremental_balanced_accuracy": 0.009964726631393361,
+            "label": "Mechanical",
+            "tier": "baseline_mechanical"
+          },
+          {
+            "incremental_balanced_accuracy": 0.03395061728395066,
+            "label": "Mechanical + physiology",
+            "tier": "baseline_mechanical_physiology"
+          }
+        ]
+      }
+    ],
+    "layout": "four_model_small_multiples",
+    "visual_contract_version": "hypothesis_ml_scientific_figure.v1.0.0",
+    "x_axis": {
+      "format": "percentage_points",
+      "label": "Incremental balanced accuracy",
+      "max_pp": 12,
+      "min_pp": -12,
+      "zero": 0
+    }
+  }
 }

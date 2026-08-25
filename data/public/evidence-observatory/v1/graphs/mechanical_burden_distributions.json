@@ -1420,7 +1420,7 @@
   "alt_text": "Per-session distributions show vertical dynamic RMS, magnitude jerk RMS, shock-spike rate, and cumulative dynamic shock per minute by canonical cohort, with available and missing counts.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "14ebe2fa41485918712cddd1a1165088ca06ed3c47bfc9d2a4e5288a47281958",
+  "content_hash": "b66a25e30a47360a24baf4b479e8de3964acaa9138cb1488cabb59f932872134",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -14416,5 +14416,6 @@
     "g",
     "g*s/min",
     "g/s"
-  ]
+  ],
+  "visual": {}
 }

@@ -2833,7 +2833,7 @@
   "alt_text": "Stage-value panels compare Mall, Walk, and PT across accepted dates. The accessible table includes the canonical closer-to-Mall classification for each available metric.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "ecbace25a6c1b61533da8ea65fbb4b5250e04a2cba45c7b285dafaab84607eaa",
+  "content_hash": "101cb102058db4cf867c9491dda36877ab15d0fd38ad2968c572ad68562458b6",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -6820,5 +6820,6 @@
     "count/min",
     "g",
     "ms"
-  ]
+  ],
+  "visual": {}
 }

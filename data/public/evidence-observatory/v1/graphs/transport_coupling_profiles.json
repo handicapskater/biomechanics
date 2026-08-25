@@ -299,7 +299,7 @@
   "alt_text": "Aligned transport panels compare SilverRide, sedan or taxi, motorcycle, bus, and van. SilverRide has 6 persisted FSI observations; component summaries have their own sample counts. Motorcycle changes direction across metrics.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "561fa340b09d68e71344034e7b73f248ceefca1633d689125c3b71ad97e6a71c",
+  "content_hash": "095cfeddeca22d0ffbc9ba43b1342c70f0f5f3872336bca84fcfe722f9ede0e5",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -942,5 +942,6 @@
     "g/s",
     "ratio",
     "unitless_index"
-  ]
+  ],
+  "visual": {}
 }

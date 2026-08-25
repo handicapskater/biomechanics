@@ -2376,7 +2376,7 @@
     "repeatability": "MEASURED",
     "values": "DERIVED"
   },
-  "content_hash": "9f9a6c99569a0ea4bb6cf6f6ee78b94e29376291065dee71b8a2ad8c305d67db",
+  "content_hash": "bf50e9f626fc19f52f8be0e3b07b5e97f3cdaae85db6b5e0fdac0e24a31ba36c",
   "coverage": {
     "covered_stages": 74,
     "covered_triplets": 25
@@ -3528,5 +3528,6 @@
   "title": "Mechanical burden normalized by functional output",
   "units": [
     "g*s/mile"
-  ]
+  ],
+  "visual": {}
 }

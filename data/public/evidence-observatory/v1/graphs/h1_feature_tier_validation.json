@@ -1,118 +1,69 @@
 {
   "accessible_table": [
     {
-      "activity_n": 62,
-      "balanced_accuracy": 1.0,
-      "date_n": 37,
-      "decision": "reject",
-      "empirical_p": 0.001,
-      "feature_tier": "functional_only",
-      "model": "gradient_boosted_trees",
-      "null_median": 0.478125,
-      "task_id": "walking_vs_mall"
-    },
-    {
-      "activity_n": 62,
-      "balanced_accuracy": 1.0,
-      "date_n": 37,
-      "decision": "reject",
-      "empirical_p": 0.001,
-      "feature_tier": "mechanical_only",
-      "model": "gradient_boosted_trees",
-      "null_median": 0.4666666666666667,
-      "task_id": "walking_vs_mall"
-    },
-    {
-      "activity_n": 62,
-      "balanced_accuracy": 0.8864583333333333,
-      "date_n": 37,
-      "decision": "reject",
-      "empirical_p": 0.001,
-      "feature_tier": "physiology_only",
-      "model": "gradient_boosted_trees",
-      "null_median": 0.48125,
-      "task_id": "walking_vs_mall"
-    },
-    {
-      "activity_n": 62,
-      "balanced_accuracy": 1.0,
-      "date_n": 37,
-      "decision": "reject",
-      "empirical_p": 0.001,
-      "feature_tier": "mechanical_plus_physiology",
-      "model": "gradient_boosted_trees",
-      "null_median": 0.48125,
-      "task_id": "walking_vs_mall"
-    },
-    {
-      "activity_n": 62,
-      "balanced_accuracy": 1.0,
-      "date_n": 37,
-      "decision": "reject",
-      "empirical_p": 0.001,
-      "feature_tier": "all_eligible",
-      "model": "gradient_boosted_trees",
-      "null_median": 0.48333333333333334,
-      "task_id": "walking_vs_mall"
-    },
-    {
-      "activity_n": 84,
-      "balanced_accuracy": 1.0,
-      "date_n": 53,
-      "decision": "reject",
-      "empirical_p": 0.001,
-      "feature_tier": "functional_only",
-      "model": "gradient_boosted_trees",
-      "null_median": 0.48518518518518516,
-      "task_id": "walking_vs_pt"
-    },
-    {
-      "activity_n": 84,
-      "balanced_accuracy": 1.0,
-      "date_n": 53,
-      "decision": "reject",
-      "empirical_p": 0.001,
-      "feature_tier": "mechanical_only",
-      "model": "linear_discriminant",
-      "null_median": 0.48703703703703705,
-      "task_id": "walking_vs_pt"
-    },
-    {
-      "activity_n": 84,
+      "activity_n": 51,
       "balanced_accuracy": 0.9833333333333334,
-      "date_n": 53,
-      "decision": "reject",
-      "empirical_p": 0.001,
-      "feature_tier": "physiology_only",
-      "model": "linear_discriminant",
-      "null_median": 0.48703703703703705,
-      "task_id": "walking_vs_pt"
-    },
-    {
-      "activity_n": 84,
-      "balanced_accuracy": 1.0,
-      "date_n": 53,
-      "decision": "reject",
-      "empirical_p": 0.001,
-      "feature_tier": "mechanical_plus_physiology",
-      "model": "linear_discriminant",
-      "null_median": 0.49444444444444446,
-      "task_id": "walking_vs_pt"
-    },
-    {
-      "activity_n": 84,
-      "balanced_accuracy": 1.0,
-      "date_n": 53,
+      "date_grouped_balanced_accuracy": 0.9833333333333334,
+      "date_n": 51,
       "decision": "reject",
       "empirical_p": 0.001,
       "feature_tier": "all_eligible",
       "model": "gradient_boosted_trees",
-      "null_median": 0.4925925925925926,
-      "task_id": "walking_vs_pt"
+      "null_median": 0.4785714285714286,
+      "task_id": "walking_vs_fns_sns"
     },
     {
       "activity_n": 51,
       "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 51,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "all_eligible",
+      "model": "linear_discriminant",
+      "null_median": 0.49047619047619045,
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "activity_n": 51,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 51,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "all_eligible",
+      "model": "logistic_regression",
+      "null_median": 0.4976190476190476,
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "activity_n": 51,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 51,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "all_eligible",
+      "model": "random_forest",
+      "null_median": 0.49047619047619045,
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "activity_n": 51,
+      "balanced_accuracy": 0.9833333333333334,
+      "date_grouped_balanced_accuracy": 0.9666666666666667,
+      "date_n": 51,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "functional_only",
+      "model": "gradient_boosted_trees",
+      "null_median": 0.4666666666666667,
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "activity_n": 51,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
       "date_n": 51,
       "decision": "reject",
       "empirical_p": 0.001,
@@ -124,6 +75,31 @@
     {
       "activity_n": 51,
       "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 51,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "functional_only",
+      "model": "logistic_regression",
+      "null_median": 0.5142857142857142,
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "activity_n": 51,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 51,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "functional_only",
+      "model": "random_forest",
+      "null_median": 0.4880952380952381,
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "activity_n": 51,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
       "date_n": 51,
       "decision": "reject",
       "empirical_p": 0.001,
@@ -135,17 +111,43 @@
     {
       "activity_n": 51,
       "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
       "date_n": 51,
       "decision": "reject",
       "empirical_p": 0.001,
-      "feature_tier": "physiology_only",
-      "model": "gradient_boosted_trees",
-      "null_median": 0.47619047619047616,
+      "feature_tier": "mechanical_only",
+      "model": "linear_discriminant",
+      "null_median": 0.4833333333333333,
       "task_id": "walking_vs_fns_sns"
     },
     {
       "activity_n": 51,
       "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 51,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_only",
+      "model": "logistic_regression",
+      "null_median": 0.4976190476190476,
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "activity_n": 51,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 51,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_only",
+      "model": "random_forest",
+      "null_median": 0.49047619047619045,
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "activity_n": 51,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
       "date_n": 51,
       "decision": "reject",
       "empirical_p": 0.001,
@@ -157,19 +159,572 @@
     {
       "activity_n": 51,
       "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
       "date_n": 51,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_plus_physiology",
+      "model": "linear_discriminant",
+      "null_median": 0.49047619047619045,
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "activity_n": 51,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 51,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_plus_physiology",
+      "model": "logistic_regression",
+      "null_median": 0.5047619047619047,
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "activity_n": 51,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 51,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_plus_physiology",
+      "model": "random_forest",
+      "null_median": 0.49047619047619045,
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "activity_n": 51,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 51,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "physiology_only",
+      "model": "gradient_boosted_trees",
+      "null_median": 0.47619047619047616,
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "activity_n": 51,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 51,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "physiology_only",
+      "model": "linear_discriminant",
+      "null_median": 0.4738095238095238,
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "activity_n": 51,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 51,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "physiology_only",
+      "model": "logistic_regression",
+      "null_median": 0.5023809523809524,
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "activity_n": 51,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 51,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "physiology_only",
+      "model": "random_forest",
+      "null_median": 0.4928571428571428,
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "activity_n": 62,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 0.984375,
+      "date_n": 37,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "all_eligible",
+      "model": "gradient_boosted_trees",
+      "null_median": 0.48333333333333334,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 62,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 0.984375,
+      "date_n": 37,
       "decision": "reject",
       "empirical_p": 0.001,
       "feature_tier": "all_eligible",
       "model": "linear_discriminant",
-      "null_median": 0.49047619047619045,
-      "task_id": "walking_vs_fns_sns"
+      "null_median": 0.496875,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 62,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 37,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "all_eligible",
+      "model": "logistic_regression",
+      "null_median": 0.5,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 62,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 37,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "all_eligible",
+      "model": "random_forest",
+      "null_median": 0.4979166666666667,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 62,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 0.984375,
+      "date_n": 37,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "functional_only",
+      "model": "gradient_boosted_trees",
+      "null_median": 0.478125,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 62,
+      "balanced_accuracy": 0.96875,
+      "date_grouped_balanced_accuracy": 0.96875,
+      "date_n": 37,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "functional_only",
+      "model": "linear_discriminant",
+      "null_median": 0.4552083333333333,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 62,
+      "balanced_accuracy": 0.984375,
+      "date_grouped_balanced_accuracy": 0.96875,
+      "date_n": 37,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "functional_only",
+      "model": "logistic_regression",
+      "null_median": 0.53125,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 62,
+      "balanced_accuracy": 0.96875,
+      "date_grouped_balanced_accuracy": 0.96875,
+      "date_n": 37,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "functional_only",
+      "model": "random_forest",
+      "null_median": 0.49895833333333334,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 62,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 37,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_only",
+      "model": "gradient_boosted_trees",
+      "null_median": 0.4666666666666667,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 62,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 37,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_only",
+      "model": "linear_discriminant",
+      "null_median": 0.48333333333333334,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 62,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 37,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_only",
+      "model": "logistic_regression",
+      "null_median": 0.49895833333333334,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 62,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 37,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_only",
+      "model": "random_forest",
+      "null_median": 0.49895833333333334,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 62,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 37,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_plus_physiology",
+      "model": "gradient_boosted_trees",
+      "null_median": 0.48125,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 62,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 37,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_plus_physiology",
+      "model": "linear_discriminant",
+      "null_median": 0.484375,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 62,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 37,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_plus_physiology",
+      "model": "logistic_regression",
+      "null_median": 0.49895833333333334,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 62,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 37,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_plus_physiology",
+      "model": "random_forest",
+      "null_median": 0.4979166666666667,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 62,
+      "balanced_accuracy": 0.8864583333333333,
+      "date_grouped_balanced_accuracy": 0.853125,
+      "date_n": 37,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "physiology_only",
+      "model": "gradient_boosted_trees",
+      "null_median": 0.48125,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 62,
+      "balanced_accuracy": 0.8541666666666667,
+      "date_grouped_balanced_accuracy": 0.853125,
+      "date_n": 37,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "physiology_only",
+      "model": "linear_discriminant",
+      "null_median": 0.4822916666666667,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 62,
+      "balanced_accuracy": 0.8708333333333333,
+      "date_grouped_balanced_accuracy": 0.8864583333333333,
+      "date_n": 37,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "physiology_only",
+      "model": "logistic_regression",
+      "null_median": 0.5,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 62,
+      "balanced_accuracy": 0.8052083333333333,
+      "date_grouped_balanced_accuracy": 0.8697916666666667,
+      "date_n": 37,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "physiology_only",
+      "model": "random_forest",
+      "null_median": 0.48541666666666666,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 84,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 53,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "all_eligible",
+      "model": "gradient_boosted_trees",
+      "null_median": 0.4925925925925926,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 84,
+      "balanced_accuracy": 0.9907407407407407,
+      "date_grouped_balanced_accuracy": 0.9907407407407407,
+      "date_n": 53,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "all_eligible",
+      "model": "linear_discriminant",
+      "null_median": 0.4925925925925926,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 84,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 53,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "all_eligible",
+      "model": "logistic_regression",
+      "null_median": 0.5018518518518519,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 84,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 53,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "all_eligible",
+      "model": "random_forest",
+      "null_median": 0.4925925925925926,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 84,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 53,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "functional_only",
+      "model": "gradient_boosted_trees",
+      "null_median": 0.48518518518518516,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 84,
+      "balanced_accuracy": 0.9907407407407407,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 53,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "functional_only",
+      "model": "linear_discriminant",
+      "null_median": 0.4981481481481481,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 84,
+      "balanced_accuracy": 0.9907407407407407,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 53,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "functional_only",
+      "model": "logistic_regression",
+      "null_median": 0.5148148148148148,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 84,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 53,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "functional_only",
+      "model": "random_forest",
+      "null_median": 0.49444444444444446,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 84,
+      "balanced_accuracy": 0.8722222222222222,
+      "date_grouped_balanced_accuracy": 0.8962962962962964,
+      "date_n": 53,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_only",
+      "model": "gradient_boosted_trees",
+      "null_median": 0.48888888888888893,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 84,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 53,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_only",
+      "model": "linear_discriminant",
+      "null_median": 0.48703703703703705,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 84,
+      "balanced_accuracy": 0.9462962962962963,
+      "date_grouped_balanced_accuracy": 0.9555555555555555,
+      "date_n": 53,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_only",
+      "model": "logistic_regression",
+      "null_median": 0.49444444444444446,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 84,
+      "balanced_accuracy": 0.8962962962962964,
+      "date_grouped_balanced_accuracy": 0.9296296296296296,
+      "date_n": 53,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_only",
+      "model": "random_forest",
+      "null_median": 0.4907407407407407,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 84,
+      "balanced_accuracy": 0.9574074074074075,
+      "date_grouped_balanced_accuracy": 0.9574074074074075,
+      "date_n": 53,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_plus_physiology",
+      "model": "gradient_boosted_trees",
+      "null_median": 0.48518518518518516,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 84,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 0.9907407407407407,
+      "date_n": 53,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_plus_physiology",
+      "model": "linear_discriminant",
+      "null_median": 0.49444444444444446,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 84,
+      "balanced_accuracy": 0.9833333333333334,
+      "date_grouped_balanced_accuracy": 0.9833333333333334,
+      "date_n": 53,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_plus_physiology",
+      "model": "logistic_regression",
+      "null_median": 0.5018518518518519,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 84,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 53,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "mechanical_plus_physiology",
+      "model": "random_forest",
+      "null_median": 0.4981481481481481,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 84,
+      "balanced_accuracy": 0.9574074074074075,
+      "date_grouped_balanced_accuracy": 0.9407407407407408,
+      "date_n": 53,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "physiology_only",
+      "model": "gradient_boosted_trees",
+      "null_median": 0.48518518518518516,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 84,
+      "balanced_accuracy": 0.9833333333333334,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 53,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "physiology_only",
+      "model": "linear_discriminant",
+      "null_median": 0.48703703703703705,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 84,
+      "balanced_accuracy": 0.9666666666666667,
+      "date_grouped_balanced_accuracy": 0.9666666666666667,
+      "date_n": 53,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "physiology_only",
+      "model": "logistic_regression",
+      "null_median": 0.5,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 84,
+      "balanced_accuracy": 0.9574074074074075,
+      "date_grouped_balanced_accuracy": 0.9814814814814814,
+      "date_n": 53,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "physiology_only",
+      "model": "random_forest",
+      "null_median": 0.5,
+      "task_id": "walking_vs_pt"
     }
   ],
   "alt_text": "Yes in this completed N-of-1 result set: every mechanical-only H1 model/task combination rejected its group-preserving permutation null, with duration and distance excluded.",
   "claim_class": "INTERPRETATION",
   "claim_classes": {},
-  "content_hash": "90ed08e61c26aa8f69acf4f545c437dba26b6346d572115961dc701af69b184a",
+  "content_hash": "f0f67c4895de3d5cb88f7ebc0d06082ca05b9783bc98812dc29233799ca67e34",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -241,5 +796,635 @@
   "title": "H1 feature-tier validation",
   "units": [
     "balanced_accuracy"
-  ]
+  ],
+  "visual": {
+    "groups": [
+      {
+        "label": "Walking vs Mall",
+        "task": "walking_vs_mall",
+        "tiers": [
+          {
+            "label": "Functional",
+            "model_points": [
+              {
+                "date_grouped_balanced_accuracy": 0.96875,
+                "decision": "reject",
+                "label": "Logistic",
+                "model": "logistic_regression",
+                "value": 0.984375
+              },
+              {
+                "date_grouped_balanced_accuracy": 0.96875,
+                "decision": "reject",
+                "label": "LDA",
+                "model": "linear_discriminant",
+                "value": 0.96875
+              },
+              {
+                "date_grouped_balanced_accuracy": 0.96875,
+                "decision": "reject",
+                "label": "Random Forest",
+                "model": "random_forest",
+                "value": 0.96875
+              },
+              {
+                "date_grouped_balanced_accuracy": 0.984375,
+                "decision": "reject",
+                "label": "Gradient Boosting",
+                "model": "gradient_boosted_trees",
+                "value": 1.0
+              }
+            ],
+            "null_median": 0.48854166666666665,
+            "observed": {
+              "max": 1.0,
+              "median": 0.9765625,
+              "min": 0.96875
+            },
+            "tier": "functional_only"
+          },
+          {
+            "label": "Mechanical",
+            "model_points": [
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Logistic",
+                "model": "logistic_regression",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "LDA",
+                "model": "linear_discriminant",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Random Forest",
+                "model": "random_forest",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Gradient Boosting",
+                "model": "gradient_boosted_trees",
+                "value": 1.0
+              }
+            ],
+            "null_median": 0.49114583333333334,
+            "observed": {
+              "max": 1.0,
+              "median": 1.0,
+              "min": 1.0
+            },
+            "tier": "mechanical_only"
+          },
+          {
+            "label": "Physiology",
+            "model_points": [
+              {
+                "date_grouped_balanced_accuracy": 0.8864583333333333,
+                "decision": "reject",
+                "label": "Logistic",
+                "model": "logistic_regression",
+                "value": 0.8708333333333333
+              },
+              {
+                "date_grouped_balanced_accuracy": 0.853125,
+                "decision": "reject",
+                "label": "LDA",
+                "model": "linear_discriminant",
+                "value": 0.8541666666666667
+              },
+              {
+                "date_grouped_balanced_accuracy": 0.8697916666666667,
+                "decision": "reject",
+                "label": "Random Forest",
+                "model": "random_forest",
+                "value": 0.8052083333333333
+              },
+              {
+                "date_grouped_balanced_accuracy": 0.853125,
+                "decision": "reject",
+                "label": "Gradient Boosting",
+                "model": "gradient_boosted_trees",
+                "value": 0.8864583333333333
+              }
+            ],
+            "null_median": 0.4838541666666667,
+            "observed": {
+              "max": 0.8864583333333333,
+              "median": 0.8625,
+              "min": 0.8052083333333333
+            },
+            "tier": "physiology_only"
+          },
+          {
+            "label": "Mechanical + physiology",
+            "model_points": [
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Logistic",
+                "model": "logistic_regression",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "LDA",
+                "model": "linear_discriminant",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Random Forest",
+                "model": "random_forest",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Gradient Boosting",
+                "model": "gradient_boosted_trees",
+                "value": 1.0
+              }
+            ],
+            "null_median": 0.49114583333333334,
+            "observed": {
+              "max": 1.0,
+              "median": 1.0,
+              "min": 1.0
+            },
+            "tier": "mechanical_plus_physiology"
+          },
+          {
+            "label": "All eligible",
+            "model_points": [
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Logistic",
+                "model": "logistic_regression",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 0.984375,
+                "decision": "reject",
+                "label": "LDA",
+                "model": "linear_discriminant",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Random Forest",
+                "model": "random_forest",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 0.984375,
+                "decision": "reject",
+                "label": "Gradient Boosting",
+                "model": "gradient_boosted_trees",
+                "value": 1.0
+              }
+            ],
+            "null_median": 0.49739583333333337,
+            "observed": {
+              "max": 1.0,
+              "median": 1.0,
+              "min": 1.0
+            },
+            "tier": "all_eligible"
+          }
+        ]
+      },
+      {
+        "label": "Walking vs PT",
+        "task": "walking_vs_pt",
+        "tiers": [
+          {
+            "label": "Functional",
+            "model_points": [
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Logistic",
+                "model": "logistic_regression",
+                "value": 0.9907407407407407
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "LDA",
+                "model": "linear_discriminant",
+                "value": 0.9907407407407407
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Random Forest",
+                "model": "random_forest",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Gradient Boosting",
+                "model": "gradient_boosted_trees",
+                "value": 1.0
+              }
+            ],
+            "null_median": 0.4962962962962963,
+            "observed": {
+              "max": 1.0,
+              "median": 0.9953703703703703,
+              "min": 0.9907407407407407
+            },
+            "tier": "functional_only"
+          },
+          {
+            "label": "Mechanical",
+            "model_points": [
+              {
+                "date_grouped_balanced_accuracy": 0.9555555555555555,
+                "decision": "reject",
+                "label": "Logistic",
+                "model": "logistic_regression",
+                "value": 0.9462962962962963
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "LDA",
+                "model": "linear_discriminant",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 0.9296296296296296,
+                "decision": "reject",
+                "label": "Random Forest",
+                "model": "random_forest",
+                "value": 0.8962962962962964
+              },
+              {
+                "date_grouped_balanced_accuracy": 0.8962962962962964,
+                "decision": "reject",
+                "label": "Gradient Boosting",
+                "model": "gradient_boosted_trees",
+                "value": 0.8722222222222222
+              }
+            ],
+            "null_median": 0.4898148148148148,
+            "observed": {
+              "max": 1.0,
+              "median": 0.9212962962962963,
+              "min": 0.8722222222222222
+            },
+            "tier": "mechanical_only"
+          },
+          {
+            "label": "Physiology",
+            "model_points": [
+              {
+                "date_grouped_balanced_accuracy": 0.9666666666666667,
+                "decision": "reject",
+                "label": "Logistic",
+                "model": "logistic_regression",
+                "value": 0.9666666666666667
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "LDA",
+                "model": "linear_discriminant",
+                "value": 0.9833333333333334
+              },
+              {
+                "date_grouped_balanced_accuracy": 0.9814814814814814,
+                "decision": "reject",
+                "label": "Random Forest",
+                "model": "random_forest",
+                "value": 0.9574074074074075
+              },
+              {
+                "date_grouped_balanced_accuracy": 0.9407407407407408,
+                "decision": "reject",
+                "label": "Gradient Boosting",
+                "model": "gradient_boosted_trees",
+                "value": 0.9574074074074075
+              }
+            ],
+            "null_median": 0.4935185185185185,
+            "observed": {
+              "max": 0.9833333333333334,
+              "median": 0.962037037037037,
+              "min": 0.9574074074074075
+            },
+            "tier": "physiology_only"
+          },
+          {
+            "label": "Mechanical + physiology",
+            "model_points": [
+              {
+                "date_grouped_balanced_accuracy": 0.9833333333333334,
+                "decision": "reject",
+                "label": "Logistic",
+                "model": "logistic_regression",
+                "value": 0.9833333333333334
+              },
+              {
+                "date_grouped_balanced_accuracy": 0.9907407407407407,
+                "decision": "reject",
+                "label": "LDA",
+                "model": "linear_discriminant",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Random Forest",
+                "model": "random_forest",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 0.9574074074074075,
+                "decision": "reject",
+                "label": "Gradient Boosting",
+                "model": "gradient_boosted_trees",
+                "value": 0.9574074074074075
+              }
+            ],
+            "null_median": 0.4962962962962963,
+            "observed": {
+              "max": 1.0,
+              "median": 0.9916666666666667,
+              "min": 0.9574074074074075
+            },
+            "tier": "mechanical_plus_physiology"
+          },
+          {
+            "label": "All eligible",
+            "model_points": [
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Logistic",
+                "model": "logistic_regression",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 0.9907407407407407,
+                "decision": "reject",
+                "label": "LDA",
+                "model": "linear_discriminant",
+                "value": 0.9907407407407407
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Random Forest",
+                "model": "random_forest",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Gradient Boosting",
+                "model": "gradient_boosted_trees",
+                "value": 1.0
+              }
+            ],
+            "null_median": 0.4925925925925926,
+            "observed": {
+              "max": 1.0,
+              "median": 1.0,
+              "min": 0.9907407407407407
+            },
+            "tier": "all_eligible"
+          }
+        ]
+      },
+      {
+        "label": "Walking vs FNS/SNS",
+        "task": "walking_vs_fns_sns",
+        "tiers": [
+          {
+            "label": "Functional",
+            "model_points": [
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Logistic",
+                "model": "logistic_regression",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "LDA",
+                "model": "linear_discriminant",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Random Forest",
+                "model": "random_forest",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 0.9666666666666667,
+                "decision": "reject",
+                "label": "Gradient Boosting",
+                "model": "gradient_boosted_trees",
+                "value": 0.9833333333333334
+              }
+            ],
+            "null_median": 0.4797619047619047,
+            "observed": {
+              "max": 1.0,
+              "median": 1.0,
+              "min": 0.9833333333333334
+            },
+            "tier": "functional_only"
+          },
+          {
+            "label": "Mechanical",
+            "model_points": [
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Logistic",
+                "model": "logistic_regression",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "LDA",
+                "model": "linear_discriminant",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Random Forest",
+                "model": "random_forest",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Gradient Boosting",
+                "model": "gradient_boosted_trees",
+                "value": 1.0
+              }
+            ],
+            "null_median": 0.48690476190476184,
+            "observed": {
+              "max": 1.0,
+              "median": 1.0,
+              "min": 1.0
+            },
+            "tier": "mechanical_only"
+          },
+          {
+            "label": "Physiology",
+            "model_points": [
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Logistic",
+                "model": "logistic_regression",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "LDA",
+                "model": "linear_discriminant",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Random Forest",
+                "model": "random_forest",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Gradient Boosting",
+                "model": "gradient_boosted_trees",
+                "value": 1.0
+              }
+            ],
+            "null_median": 0.48452380952380947,
+            "observed": {
+              "max": 1.0,
+              "median": 1.0,
+              "min": 1.0
+            },
+            "tier": "physiology_only"
+          },
+          {
+            "label": "Mechanical + physiology",
+            "model_points": [
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Logistic",
+                "model": "logistic_regression",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "LDA",
+                "model": "linear_discriminant",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Random Forest",
+                "model": "random_forest",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Gradient Boosting",
+                "model": "gradient_boosted_trees",
+                "value": 1.0
+              }
+            ],
+            "null_median": 0.49047619047619045,
+            "observed": {
+              "max": 1.0,
+              "median": 1.0,
+              "min": 1.0
+            },
+            "tier": "mechanical_plus_physiology"
+          },
+          {
+            "label": "All eligible",
+            "model_points": [
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Logistic",
+                "model": "logistic_regression",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "LDA",
+                "model": "linear_discriminant",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 1.0,
+                "decision": "reject",
+                "label": "Random Forest",
+                "model": "random_forest",
+                "value": 1.0
+              },
+              {
+                "date_grouped_balanced_accuracy": 0.9833333333333334,
+                "decision": "reject",
+                "label": "Gradient Boosting",
+                "model": "gradient_boosted_trees",
+                "value": 0.9833333333333334
+              }
+            ],
+            "null_median": 0.49047619047619045,
+            "observed": {
+              "max": 1.0,
+              "median": 1.0,
+              "min": 0.9833333333333334
+            },
+            "tier": "all_eligible"
+          }
+        ]
+      }
+    ],
+    "layout": "three_task_small_multiples",
+    "visual_contract_version": "hypothesis_ml_scientific_figure.v1.0.0",
+    "x_axis": {
+      "format": "percent",
+      "label": "Held-out balanced accuracy",
+      "max": 1.0,
+      "min": 0.4
+    }
+  }
 }

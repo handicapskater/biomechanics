@@ -1072,7 +1072,7 @@
   "alt_text": "Per-session distributions show mean heart rate, RMSSD, and SDNN by canonical cohort. Stress Index, SNS Index, and PNS Index are unavailable in source exports and have no plotted values.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "9baf9a96f2b8cbaa85a7d7afbd337b8e154475d1599cc0861546b2cf3947b431",
+  "content_hash": "864a66f809b488a1e4c04408f6a39eda695750245c70030100c56adf5ff6dea9",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -10906,5 +10906,6 @@
   "units": [
     "bpm",
     "ms"
-  ]
+  ],
+  "visual": {}
 }

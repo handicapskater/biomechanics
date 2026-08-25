@@ -333,7 +333,7 @@
     "repeatability": "MEASURED",
     "values": "MEASURED"
   },
-  "content_hash": "bb5e2e052cbc765cb134e8fbada104a327bc015aeddfbf2a8907c464b367d85f",
+  "content_hash": "248714101fbc91cea2f1f6deddfd9ead212cd1b08e5e27526e6955c58634e5dd",
   "coverage": {
     "cumulative_dynamic_shock_per_min": 25
   },
@@ -791,5 +791,6 @@
   "title": "Walking versus controlled rolling: accumulated mechanical load",
   "units": [
     "g*s/min"
-  ]
+  ],
+  "visual": {}
 }

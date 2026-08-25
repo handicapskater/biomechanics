@@ -1276,7 +1276,7 @@
   "alt_text": "A coverage matrix lists expected, available, partial, missing, and not-applicable counts for canonical inputs, supported episodic metrics, v2 scientific persistence, and route, weather, readiness, and cohort context.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "ae97a1261e662c0d45c6060e1db7be80d6b91ebd898feaf9c853ca83a586ad22",
+  "content_hash": "40255a5899f5847e89b6ddd9b7f6ba4ab82855ebe8a8619865fc393bb6259bf3",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -2618,5 +2618,6 @@
   "units": [
     "count",
     "percent"
-  ]
+  ],
+  "visual": {}
 }

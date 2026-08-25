@@ -11664,7 +11664,7 @@
   "alt_text": "A 583-event sustained-skating timeline shows available distance, duration, Kubios heart rate, and session RMSSD by preserved FNS, SNS, ENS, XNS, XMS, or unspecified subtype.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "84504191948608fb8a844c1d55a4ce3de1ebe2502787caf13c30f50243719e60",
+  "content_hash": "4d9c6f9993c4e4b22f1bf38a4a945d624e40fc3c67b0a9dc78697512a6364769",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -26346,5 +26346,6 @@
     "s",
     "bpm",
     "ms"
-  ]
+  ],
+  "visual": {}
 }

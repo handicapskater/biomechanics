@@ -124,7 +124,7 @@
   "alt_text": "Held-out balanced accuracy, date-grouped balanced accuracy, and the permutation-null median remain visible for every reported task/model combination. This sensitivity supports discrimination assessment only and does not establish causation.",
   "claim_class": "INTERPRETATION",
   "claim_classes": {},
-  "content_hash": "3b19a96715700c528ecfcfe1dc5c0f7a120bd4290935d408bab6f7c6dcb3c420",
+  "content_hash": "610f798290f24c7d0670b8033951be242b119f6ad0519e40a48ba21eaabd5204",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -192,5 +192,157 @@
   "title": "Exposure-blind mechanical H1 sensitivity",
   "units": [
     "balanced_accuracy"
-  ]
+  ],
+  "visual": {
+    "excluded_feature_classes": [
+      "duration",
+      "distance",
+      "cumulative",
+      "count",
+      "rate"
+    ],
+    "inference": {
+      "date_cluster_bootstraps": 2000,
+      "empirical_p": 0.001,
+      "rejected_null_n": 12,
+      "requested_permutations": 999,
+      "tested_null_n": 12
+    },
+    "layout": "three_task_range_points",
+    "rows": [
+      {
+        "label": "Walking vs Mall",
+        "model_points": [
+          {
+            "date_grouped_balanced_accuracy": 1.0,
+            "decision": "reject",
+            "label": "Logistic",
+            "model": "logistic_regression",
+            "value": 1.0
+          },
+          {
+            "date_grouped_balanced_accuracy": 1.0,
+            "decision": "reject",
+            "label": "LDA",
+            "model": "linear_discriminant",
+            "value": 1.0
+          },
+          {
+            "date_grouped_balanced_accuracy": 1.0,
+            "decision": "reject",
+            "label": "Random Forest",
+            "model": "random_forest",
+            "value": 1.0
+          },
+          {
+            "date_grouped_balanced_accuracy": 1.0,
+            "decision": "reject",
+            "label": "Gradient Boosting",
+            "model": "gradient_boosted_trees",
+            "value": 1.0
+          }
+        ],
+        "null_median": 0.4901041666666667,
+        "observed": {
+          "max": 1.0,
+          "median": 1.0,
+          "min": 1.0
+        },
+        "task": "walking_vs_mall"
+      },
+      {
+        "label": "Walking vs PT",
+        "model_points": [
+          {
+            "date_grouped_balanced_accuracy": 0.9203703703703704,
+            "decision": "reject",
+            "label": "Logistic",
+            "model": "logistic_regression",
+            "value": 0.9296296296296296
+          },
+          {
+            "date_grouped_balanced_accuracy": 0.9833333333333334,
+            "decision": "reject",
+            "label": "LDA",
+            "model": "linear_discriminant",
+            "value": 0.9833333333333334
+          },
+          {
+            "date_grouped_balanced_accuracy": 0.8407407407407408,
+            "decision": "reject",
+            "label": "Random Forest",
+            "model": "random_forest",
+            "value": 0.812962962962963
+          },
+          {
+            "date_grouped_balanced_accuracy": 0.7574074074074073,
+            "decision": "reject",
+            "label": "Gradient Boosting",
+            "model": "gradient_boosted_trees",
+            "value": 0.7407407407407407
+          }
+        ],
+        "null_median": 0.4925925925925926,
+        "observed": {
+          "max": 0.9833333333333334,
+          "median": 0.8712962962962962,
+          "min": 0.7407407407407407
+        },
+        "task": "walking_vs_pt"
+      },
+      {
+        "label": "Walking vs FNS/SNS",
+        "model_points": [
+          {
+            "date_grouped_balanced_accuracy": 0.9428571428571428,
+            "decision": "reject",
+            "label": "Logistic",
+            "model": "logistic_regression",
+            "value": 0.9190476190476191
+          },
+          {
+            "date_grouped_balanced_accuracy": 0.9119047619047619,
+            "decision": "reject",
+            "label": "LDA",
+            "model": "linear_discriminant",
+            "value": 0.8952380952380952
+          },
+          {
+            "date_grouped_balanced_accuracy": 0.8785714285714286,
+            "decision": "reject",
+            "label": "Random Forest",
+            "model": "random_forest",
+            "value": 0.8452380952380952
+          },
+          {
+            "date_grouped_balanced_accuracy": 0.8452380952380952,
+            "decision": "reject",
+            "label": "Gradient Boosting",
+            "model": "gradient_boosted_trees",
+            "value": 0.861904761904762
+          }
+        ],
+        "null_median": 0.4809523809523809,
+        "observed": {
+          "max": 0.9190476190476191,
+          "median": 0.8785714285714286,
+          "min": 0.8452380952380952
+        },
+        "task": "walking_vs_fns_sns"
+      }
+    ],
+    "strict_features": [
+      "Magnitude RMS",
+      "Vertical RMS",
+      "Magnitude jerk RMS",
+      "Vertical jerk RMS"
+    ],
+    "visual_contract_version": "hypothesis_ml_scientific_figure.v1.0.0",
+    "x_axis": {
+      "format": "percent",
+      "label": "Held-out balanced accuracy",
+      "max": 1.0,
+      "min": 0.4
+    }
+  }
 }

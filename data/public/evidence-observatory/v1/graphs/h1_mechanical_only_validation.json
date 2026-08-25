@@ -136,7 +136,7 @@
   "alt_text": "Mechanical-only discrimination remains above the permutation-null reference across Walking versus Mall, PT, and FNS/SNS tasks; date-grouped scores are shown as a separate audit.",
   "claim_class": "INTERPRETATION",
   "claim_classes": {},
-  "content_hash": "9f7c71df2bebe31fb23a15c22eb9d5044b6b29d4d6f1c898eede807a121dade7",
+  "content_hash": "cd685fcddec9c962fc1fd5ebcdc38ff137935eed49370929832d94ef9386a1ca",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -208,5 +208,137 @@
   "title": "H1 mechanical-only validation",
   "units": [
     "balanced_accuracy"
-  ]
+  ],
+  "visual": {
+    "layout": "three_task_range_points",
+    "rows": [
+      {
+        "label": "Walking vs Mall",
+        "model_points": [
+          {
+            "date_grouped_balanced_accuracy": 1.0,
+            "decision": "reject",
+            "label": "Logistic",
+            "model": "logistic_regression",
+            "value": 1.0
+          },
+          {
+            "date_grouped_balanced_accuracy": 1.0,
+            "decision": "reject",
+            "label": "LDA",
+            "model": "linear_discriminant",
+            "value": 1.0
+          },
+          {
+            "date_grouped_balanced_accuracy": 1.0,
+            "decision": "reject",
+            "label": "Random Forest",
+            "model": "random_forest",
+            "value": 1.0
+          },
+          {
+            "date_grouped_balanced_accuracy": 1.0,
+            "decision": "reject",
+            "label": "Gradient Boosting",
+            "model": "gradient_boosted_trees",
+            "value": 1.0
+          }
+        ],
+        "null_median": 0.49114583333333334,
+        "observed": {
+          "max": 1.0,
+          "median": 1.0,
+          "min": 1.0
+        },
+        "task": "walking_vs_mall"
+      },
+      {
+        "label": "Walking vs PT",
+        "model_points": [
+          {
+            "date_grouped_balanced_accuracy": 0.9555555555555555,
+            "decision": "reject",
+            "label": "Logistic",
+            "model": "logistic_regression",
+            "value": 0.9462962962962963
+          },
+          {
+            "date_grouped_balanced_accuracy": 1.0,
+            "decision": "reject",
+            "label": "LDA",
+            "model": "linear_discriminant",
+            "value": 1.0
+          },
+          {
+            "date_grouped_balanced_accuracy": 0.9296296296296296,
+            "decision": "reject",
+            "label": "Random Forest",
+            "model": "random_forest",
+            "value": 0.8962962962962964
+          },
+          {
+            "date_grouped_balanced_accuracy": 0.8962962962962964,
+            "decision": "reject",
+            "label": "Gradient Boosting",
+            "model": "gradient_boosted_trees",
+            "value": 0.8722222222222222
+          }
+        ],
+        "null_median": 0.4898148148148148,
+        "observed": {
+          "max": 1.0,
+          "median": 0.9212962962962963,
+          "min": 0.8722222222222222
+        },
+        "task": "walking_vs_pt"
+      },
+      {
+        "label": "Walking vs FNS/SNS",
+        "model_points": [
+          {
+            "date_grouped_balanced_accuracy": 1.0,
+            "decision": "reject",
+            "label": "Logistic",
+            "model": "logistic_regression",
+            "value": 1.0
+          },
+          {
+            "date_grouped_balanced_accuracy": 1.0,
+            "decision": "reject",
+            "label": "LDA",
+            "model": "linear_discriminant",
+            "value": 1.0
+          },
+          {
+            "date_grouped_balanced_accuracy": 1.0,
+            "decision": "reject",
+            "label": "Random Forest",
+            "model": "random_forest",
+            "value": 1.0
+          },
+          {
+            "date_grouped_balanced_accuracy": 1.0,
+            "decision": "reject",
+            "label": "Gradient Boosting",
+            "model": "gradient_boosted_trees",
+            "value": 1.0
+          }
+        ],
+        "null_median": 0.48690476190476184,
+        "observed": {
+          "max": 1.0,
+          "median": 1.0,
+          "min": 1.0
+        },
+        "task": "walking_vs_fns_sns"
+      }
+    ],
+    "visual_contract_version": "hypothesis_ml_scientific_figure.v1.0.0",
+    "x_axis": {
+      "format": "percent",
+      "label": "Held-out balanced accuracy",
+      "max": 1.0,
+      "min": 0.4
+    }
+  }
 }

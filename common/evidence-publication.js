@@ -416,6 +416,80 @@
     return panels;
   }
 
+  function percentage(value) { return (Number(value) * 100).toFixed(1) + "%"; }
+  function percentagePoints(value) { return (Number(value) * 100).toFixed(1) + " pp"; }
+  function taskLabel(value) {
+    return ({ walking_vs_mall: "Walking vs Mall", walking_vs_pt: "Walking vs PT", walking_vs_fns_sns: "Walking vs FNS/SNS" })[value] || String(value || "").replaceAll("_", " ");
+  }
+  function modelLabel(value) {
+    return ({ logistic_regression: "Logistic regression", random_forest: "Random forest", linear_discriminant: "Linear discriminant", gradient_boosted_trees: "Gradient boosted trees" })[value] || String(value || "").replaceAll("_", " ");
+  }
+  function svgText(svg, x, y, text, className, anchor) {
+    const node = svgNode("text", { x: x, y: y, class: className || "publication-axis-label", "text-anchor": anchor || "start" });
+    node.textContent = text;
+    svg.appendChild(node);
+  }
+  function scientificPlot(rows, options) {
+    const width = options.width || 720, left = options.left || 168, right = 34, top = 28, rowHeight = options.rowHeight || 34, bottom = 44;
+    const height = top + rows.length * rowHeight + bottom;
+    const svg = svgNode("svg", { viewBox: "0 0 " + width + " " + height, class: "publication-ml-chart", role: "img", "aria-label": options.ariaLabel, "data-left-margin": left, "data-visual-row-count": rows.length });
+    const scale = function (value) { return left + ((value - options.min) / (options.max - options.min || 1)) * (width - left - right); };
+    (options.ticks || []).forEach(function (tick) {
+      const x = scale(tick);
+      svg.appendChild(svgNode("line", { x1: x, x2: x, y1: top - 12, y2: height - bottom + 4, class: "publication-grid-line" }));
+      svgText(svg, x, height - 13, options.format(tick), "publication-axis-label", "middle");
+    });
+    if (options.reference !== undefined) svg.appendChild(svgNode("line", { x1: scale(options.reference), x2: scale(options.reference), y1: top - 14, y2: height - bottom + 4, class: options.reference === 0 ? "publication-zero-line" : "publication-null-line" }));
+    rows.forEach(function (row, index) {
+      const y = top + index * rowHeight + 8;
+      svgText(svg, left - 12, y + 4, row.label, "publication-ml-label", "end");
+      if (row.stem) svg.appendChild(svgNode("line", { x1: scale(0), x2: scale(row.value), y1: y, y2: y, class: "publication-range-line" }));
+      if (row.range) svg.appendChild(svgNode("line", { x1: scale(row.range.min), x2: scale(row.range.max), y1: y, y2: y, class: "publication-range-line" }));
+      if (Number.isFinite(row.nullValue) && Number.isFinite(row.value)) svg.appendChild(svgNode("line", { x1: scale(row.nullValue), x2: scale(row.value), y1: y, y2: y, class: "publication-dumbbell-line" }));
+      if (Number.isFinite(row.nullValue)) svg.appendChild(svgNode("circle", { cx: scale(row.nullValue), cy: y, r: 5, class: "publication-null-dot" }));
+      (row.points || []).forEach(function (point, pointIndex) {
+        const dot = svgNode("circle", { cx: scale(point.value), cy: y + (pointIndex - 1.5) * 3.2, r: 3, class: "publication-model-dot" });
+        const title = svgNode("title", {}); title.textContent = point.label + ": " + percentage(point.value) + (Number.isFinite(point.date_grouped_balanced_accuracy) ? "; date-grouped " + percentage(point.date_grouped_balanced_accuracy) : ""); dot.appendChild(title); svg.appendChild(dot);
+      });
+      if (Number.isFinite(row.value)) {
+        const dot = svgNode("circle", { cx: scale(row.value), cy: y, r: row.range ? 6 : 5, class: row.decision === "fail_to_reject" ? "publication-observed-dot publication-nonreject-dot" : "publication-observed-dot" });
+        const title = svgNode("title", {}); title.textContent = row.detail || options.format(row.value); dot.appendChild(title); svg.appendChild(dot);
+      }
+    });
+    svgText(svg, (left + width - right) / 2, height - 1, options.axisLabel, "publication-axis-title", "middle");
+    return svg;
+  }
+  function mlValidationPanels(payload) {
+    const panel = element("section", "publication-ml-panel");
+    const visual = payload.visual;
+    if (!visual || visual.visual_contract_version !== "hypothesis_ml_scientific_figure.v1.0.0") throw new Error("Missing scientific visual contract: " + payload.graph_id);
+    const baOptions = { min: visual.x_axis.min, max: visual.x_axis.max, ticks: [.4, .5, .6, .7, .8, .9, 1], format: percentage, axisLabel: "Held-out balanced accuracy" };
+    if (payload.graph_type === "grouped_score_dot_plot") {
+      const grid = element("div", "publication-ml-small-multiples");
+      visual.groups.forEach(function (group) { const section = element("section", "publication-ml-multiple"); section.appendChild(element("h3", "", group.label)); section.appendChild(scientificPlot(group.tiers.map(function (row) { return { label: row.label, value: row.observed.median, range: row.observed, points: row.model_points, nullValue: row.null_median, detail: "Median " + percentage(row.observed.median) + "; range " + percentage(row.observed.min) + "–" + percentage(row.observed.max) }; }), Object.assign({ width: 560, left: 160, ariaLabel: group.label + " feature-tier model distributions" }, baOptions))); grid.appendChild(section); }); panel.appendChild(grid);
+    } else if (payload.graph_type === "observed_null_dumbbell") {
+      const isTransport = visual.layout === "model_dumbbell";
+      const plotRows = visual.rows.map(function (row) { return isTransport ? { label: row.label, value: row.observed, nullValue: row.null_median, decision: row.decision, detail: percentage(row.observed) + " observed; " + percentage(row.null_median) + " null; " + row.decision } : { label: row.label, value: row.observed.median, range: row.observed, points: row.model_points, nullValue: row.null_median, detail: "Median " + percentage(row.observed.median) }; });
+      if (isTransport) panel.appendChild(element("p", "publication-ml-subtitle", visual.decision_counts_all_tiers.reject + "/20 model-tier combinations reject · " + visual.decision_counts_all_tiers.fail_to_reject + "/20 fail to reject · primary visual: baseline tier"));
+      panel.appendChild(scientificPlot(plotRows, Object.assign({ ariaLabel: isTransport ? "Observed versus permutation null for four transportation models" : "Mechanical-only model distributions for three H1 tasks" }, baOptions)));
+    } else if (payload.graph_type === "grouped_point_range") {
+      panel.appendChild(element("p", "publication-ml-subtitle", visual.inference.requested_permutations + " permutations · " + visual.inference.date_cluster_bootstraps + " date-cluster bootstraps · " + visual.inference.rejected_null_n + "/" + visual.inference.tested_null_n + " task-model nulls rejected · p=" + visual.inference.empirical_p.toFixed(3)));
+      panel.appendChild(element("p", "publication-ml-subtitle", "Strict features: " + visual.strict_features.join(" · ") + ". No duration, distance, cumulative, count, or rate features."));
+      panel.appendChild(scientificPlot(visual.rows.map(function (row) { return { label: row.label, value: row.observed.median, range: row.observed, points: row.model_points, nullValue: row.null_median, detail: "Median " + percentage(row.observed.median) + "; range " + percentage(row.observed.min) + "–" + percentage(row.observed.max) }; }), Object.assign({ ariaLabel: "Exposure-length-blind model distributions and permutation nulls" }, baOptions)));
+    } else if (payload.graph_type === "diverging_increment_bar") {
+      panel.appendChild(element("p", "publication-ml-subtitle", "MIXED / INCONCLUSIVE incremental value. Positive values improve on baseline; negative values are worse."));
+      const grid = element("div", "publication-ml-small-multiples publication-ml-context-grid"); const bound = visual.x_axis.max_pp / 100;
+      visual.groups.forEach(function (group) { const section = element("section", "publication-ml-multiple"); section.appendChild(element("h3", "", group.label)); section.appendChild(scientificPlot(group.tiers.map(function (row) { return { label: row.label, value: row.incremental_balanced_accuracy, stem: true, detail: percentagePoints(row.incremental_balanced_accuracy) }; }), { width: 560, left: 160, min: -bound, max: bound, ticks: [-bound, 0, bound], reference: 0, format: percentagePoints, axisLabel: "Incremental balanced accuracy", ariaLabel: group.label + " signed incremental balanced accuracy" })); grid.appendChild(section); }); panel.appendChild(grid);
+    } else if (payload.graph_type === "feature_stability_frequency") {
+      const maximum = Math.max.apply(null, visual.rows.map(function (row) { return row.top_three_fold_appearances; }));
+      panel.appendChild(element("p", "publication-ml-subtitle", "Frequency of appearing among fold-level top-three features. Frequency is not effect size. Feature importance is not causation."));
+      panel.appendChild(scientificPlot(visual.rows.map(function (row) { return { label: row.label + " · " + row.domain, value: row.top_three_fold_appearances, stem: true, detail: row.top_three_fold_appearances + " fold-level top-three appearances; " + row.domain }; }), { min: 0, max: maximum * 1.08, ticks: [0, Math.round(maximum / 2), maximum], format: function (value) { return String(Math.round(value)); }, axisLabel: "Fold-level top-three appearances", ariaLabel: "Ranked feature stability frequency by scientific domain" }));
+    } else {
+      throw new Error("Unsupported ML graph type: " + payload.graph_type);
+    }
+    return panel;
+  }
+
   function svgNode(tag, attributes) {
     const node = document.createElementNS("http://www.w3.org/2000/svg", tag);
     Object.keys(attributes || {}).forEach(function (key) { node.setAttribute(key, attributes[key]); });
@@ -897,8 +971,18 @@
       visual.appendChild(distributionPanels(payload));
     } else if (payload.graph_type === "similarity_matrix" || payload.graph_type === "coverage_matrix") {
       visual.appendChild(renderTable(payload));
-    } else {
+    } else if (
+      payload.graph_type === "grouped_point_range" ||
+      payload.graph_type === "grouped_score_dot_plot" ||
+      payload.graph_type === "observed_null_dumbbell" ||
+      payload.graph_type === "diverging_increment_bar" ||
+      payload.graph_type === "feature_stability_frequency"
+    ) {
+      visual.appendChild(mlValidationPanels(payload));
+    } else if (["aligned_dot_panels", "distribution_panels", "functional_output_burden_panels", "paired_date_dumbbells", "paired_delta_panels", "return_profile_panels", "stage_small_multiples", "time_series_small_multiples"].includes(payload.graph_type)) {
       visual.appendChild(graphPanels(payload));
+    } else {
+      throw new Error("Unsupported publication graph type: " + payload.graph_type);
     }
     figure.appendChild(visual);
 

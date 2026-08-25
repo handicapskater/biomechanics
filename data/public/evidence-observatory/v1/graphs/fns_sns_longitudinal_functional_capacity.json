@@ -4688,7 +4688,7 @@
     "repeatability": "MEASURED",
     "values": "MEASURED"
   },
-  "content_hash": "6e62b9697116ca0983767ff39ca1c716a96826334437893c5aa7b29ce51d9b44",
+  "content_hash": "1ea58ffc06b9850c10dfb27bd8f995778865b503b6bde5803de45bf442d7066a",
   "coverage": {
     "FNS": 173,
     "SNS": 186,
@@ -19426,5 +19426,6 @@
     "miles",
     "s",
     "bpm"
-  ]
+  ],
+  "visual": {}
 }

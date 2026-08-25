@@ -96,7 +96,7 @@
   "alt_text": "Four aligned panels compare walking, Mall skating, PT skating, and FNS/SNS skating. Walking has the shortest median distance and the highest median cumulative shock per mile.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "b9cb54f460956c11dbf0136a6b836e8d401a56b0d6d9890ae1693f4e7c9a8c05",
+  "content_hash": "c183e70d917d81bdd9c1242ff20df26c58bfca26a3175fb281e78c14d4dc44e0",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -457,5 +457,6 @@
     "g*s",
     "g*s/mile",
     "miles/(g*s)"
-  ]
+  ],
+  "visual": {}
 }

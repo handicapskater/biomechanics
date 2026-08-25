@@ -504,7 +504,7 @@
   "alt_text": "24 of 25 accepted triplets have valid pre-Mall WHOOP recovery context; 1 retain explicit missingness.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "8575642547908ec77e05287ac424204fe1d48c6ca99a6022d4b5199b54547c31",
+  "content_hash": "a23c8f290d1a36eba4ba6657ba8e96fadcd48f8107675369481484f68c2c613b",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -1824,5 +1824,6 @@
     "bpm",
     "ms",
     "percent"
-  ]
+  ],
+  "visual": {}
 }

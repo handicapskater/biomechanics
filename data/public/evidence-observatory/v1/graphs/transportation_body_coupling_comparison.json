@@ -6639,7 +6639,7 @@
     "repeatability": "MEASURED",
     "values": "MEASURED"
   },
-  "content_hash": "dc437887d419d095582399d4def83ae9fabfbf8fe5a2f2335fa1e10e211b9eb0",
+  "content_hash": "7191479e734b55198a6020e6c69f9e37c60b658786e65d8fca6c3beff8f33a71",
   "coverage": {
     "motorcycle": 210,
     "paratransit_bus": 15,
@@ -8042,5 +8042,6 @@
     "spikes/min",
     "unitless_index",
     "unitless_similarity_0_to_1"
-  ]
+  ],
+  "visual": {}
 }

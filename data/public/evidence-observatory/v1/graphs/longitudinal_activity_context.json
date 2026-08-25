@@ -3007,7 +3007,7 @@
   "alt_text": "Monthly time series show activity frequency and distance for walking, Mall skating, PT skating, and FNS/SNS skating. Missing months are omitted rather than plotted as zero.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "ef6a989e4c6cb00aab05d65af655319404a4bb5685f7de7785e8809766e8a109",
+  "content_hash": "1217808172b03905401ec64cef2ecee0864248b31c2eceb2baf60ef2e3e73919",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -5029,5 +5029,6 @@
   "units": [
     "miles",
     "activities/week"
-  ]
+  ],
+  "visual": {}
 }

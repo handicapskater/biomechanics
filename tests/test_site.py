@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import re
+import subprocess
 import unittest
 from html.parser import HTMLParser
 from pathlib import Path
@@ -320,6 +321,141 @@ class SiteTests(unittest.TestCase):
         reader = read("common/evidence-publication.js")
         self.assertIn('entryById(manifest.graphs, "graph_id", id)', reader)
         self.assertIn('throw new Error("Publication entry unavailable")', reader)
+
+    def test_actual_com_reader_renders_ml_graphs_from_synchronized_bundle(self) -> None:
+        graph_ids = [
+            "h1_exposure_blind_mechanical",
+            "h1_feature_tier_validation",
+            "h1_mechanical_only_validation",
+            "h2_h13_context_increment",
+            "h3_transport_validation",
+            "ml_feature_domain_importance",
+        ]
+        reader_path = ROOT / "common/evidence-publication.js"
+        bundle_root = ROOT / "data/public/evidence-observatory/v1"
+        harness = """
+const fs = require("fs");
+const vm = require("vm");
+const readerPath = __READER_PATH__;
+const bundleRoot = __BUNDLE_ROOT__;
+const graphIds = __GRAPH_IDS__;
+const readyIds = new Set(__READY_IDS__);
+
+class Element {
+  constructor(tag) {
+    this.tagName = tag;
+    this.dataset = {};
+    this.children = [];
+    this.attributes = {};
+    this._text = "";
+    this.style = { setProperty() {} };
+    this.classList = { add() {}, toggle() {} };
+  }
+  appendChild(child) { this.children.push(child); return child; }
+  append(...children) { children.forEach((child) => this.appendChild(child)); }
+  replaceChildren(...children) { this.children = []; this._text = ""; this.append(...children); }
+  setAttribute(name, value) { this.attributes[name] = String(value); }
+  get textContent() { return this._text + this.children.map((child) => child.textContent || "").join(""); }
+  set textContent(value) { this.children = []; this._text = String(value); }
+}
+
+const mounts = graphIds.map((graphId) => {
+  const mount = new Element("div");
+  mount.dataset.publicationGraph = graphId;
+  mount.textContent = "Loading approved graph…";
+  return mount;
+});
+global.document = {
+  readyState: "complete",
+  createElement(tag) { return new Element(tag); },
+  createElementNS(_namespace, tag) { return new Element(tag); },
+  addEventListener() {},
+  querySelectorAll(selector) {
+    return selector.includes("[data-publication-graph]") ? mounts : [];
+  },
+};
+global.window = {};
+global.fetch = async (url) => {
+  const prefix = "/data/public/evidence-observatory/v1/";
+  const relative = String(url).startsWith(prefix) ? String(url).slice(prefix.length) : "";
+  const target = relative ? bundleRoot + "/" + relative : "";
+  if (!target || !fs.existsSync(target)) return { ok: false, json: async () => ({}) };
+  return { ok: true, json: async () => JSON.parse(fs.readFileSync(target, "utf8")) };
+};
+function hasClass(node, className) {
+  return node && (node.className === className || node.attributes.class === className || (node.children || []).some((child) => hasClass(child, className)));
+}
+
+(async () => {
+  vm.runInThisContext(fs.readFileSync(readerPath, "utf8"), { filename: readerPath });
+  await new Promise((resolve) => setTimeout(resolve, 25));
+  for (const mount of mounts) {
+    if (readyIds.has(mount.dataset.publicationGraph)) {
+      if (mount.dataset.state !== "ready" || mount.textContent.includes("Loading approved")) {
+        throw new Error("reader did not render " + mount.dataset.publicationGraph + ": " + mount.textContent);
+      }
+      if (!hasClass(mount, "publication-ml-chart")) {
+        throw new Error("reader did not select a supported visual renderer for " + mount.dataset.publicationGraph);
+      }
+    } else if (mount.dataset.state !== "unavailable" || mount.textContent.includes("Loading approved")) {
+      throw new Error("unknown graph did not fail closed");
+    }
+  }
+})().catch((error) => { console.error(error.stack || error); process.exitCode = 1; });
+"""
+        def run_reader(ids: list[str], ready_ids: list[str]) -> None:
+            completed = subprocess.run(
+                [
+                    "node",
+                    "-e",
+                    harness.replace("__READER_PATH__", json.dumps(str(reader_path)))
+                    .replace("__BUNDLE_ROOT__", json.dumps(str(bundle_root)))
+                    .replace("__GRAPH_IDS__", json.dumps(ids))
+                    .replace("__READY_IDS__", json.dumps(ready_ids)),
+                ],
+                check=False,
+                capture_output=True,
+                text=True,
+                timeout=10,
+            )
+            self.assertEqual(completed.returncode, 0, completed.stderr)
+
+        run_reader(graph_ids, graph_ids)
+        run_reader(["unknown_graph"], [])
+
+    def test_ml_visualization_contract_preserves_supplied_data(self) -> None:
+        reader = read("common/evidence-publication.js")
+        self.assertNotIn("supplied graph units", reader.lower())
+        self.assertIn("function percentage(value)", reader)
+        self.assertIn('" pp"', reader)
+        self.assertIn("publication-zero-line", reader)
+        self.assertIn("Unsupported publication graph type", reader)
+        self.assertNotIn("mean_importance_sum", reader)
+        self.assertIn("hypothesis_ml_scientific_figure.v1.0.0", reader)
+        self.assertIn("data-visual-row-count", reader)
+        self.assertNotIn("function mlPlot(", reader)
+
+        exposure = json.loads(read("data/public/evidence-observatory/v1/graphs/h1_exposure_blind_mechanical.json"))
+        exposure_rows = exposure["accessible_table"]
+        self.assertEqual(len(exposure_rows), 12)
+        self.assertEqual(sum(row["held_out_balanced_accuracy"] == 1.0 for row in exposure_rows if row["task_id"] == "walking_vs_mall"), 4)
+        pt = [row["held_out_balanced_accuracy"] for row in exposure_rows if row["task_id"] == "walking_vs_pt"]
+        self.assertAlmostEqual(min(pt), 0.7407407407407407)
+        self.assertAlmostEqual(max(pt), 0.9833333333333334)
+
+        transport = json.loads(read("data/public/evidence-observatory/v1/graphs/h3_transport_validation.json"))
+        gbt = next(row for row in transport["accessible_table"] if row["feature_tier"] == "sensor_only" and row["model"] == "gradient_boosted_trees")
+        self.assertEqual(gbt["decision"], "fail_to_reject")
+        self.assertEqual(gbt["balanced_accuracy"], 0.5)
+
+        context = json.loads(read("data/public/evidence-observatory/v1/graphs/h2_h13_context_increment.json"))
+        self.assertTrue(any(row["incremental_over_baseline"] < 0 for row in context["accessible_table"]))
+        self.assertTrue(any(row["incremental_over_baseline"] > 0 for row in context["accessible_table"]))
+
+        css = read("common/css/publication.css")
+        self.assertIn("grid-template-columns: repeat(3, minmax(0, 1fr))", css)
+        self.assertIn("@media (max-width: 820px)", css)
+        self.assertNotIn("min-width: 42rem", css)
 
     def test_nav_focus_is_not_grouped_with_current_page_active_style(self) -> None:
         css = nav_css()

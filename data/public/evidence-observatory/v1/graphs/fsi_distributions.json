@@ -7971,7 +7971,7 @@
   "alt_text": "Session-level FSI distributions are shown by canonical cohort with sample counts, quality, and component coverage. Missing scores are not plotted.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "b20f11e5f0ea7ec1349ac3aa5837f6c844b343817475247bcf553bce7eacdc48",
+  "content_hash": "f51bd3d6b8c518ba251fd76c3c253664aba4a11ceb9713c413bf4af7f94272ae",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -11783,5 +11783,6 @@
   "title": "Fractal Stability Index distributions",
   "units": [
     "unitless_index"
-  ]
+  ],
+  "visual": {}
 }

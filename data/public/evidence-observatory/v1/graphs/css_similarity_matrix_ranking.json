@@ -895,7 +895,7 @@
   "alt_text": "A CSS matrix and ordered ranking list median similarity for canonical cohort pairs with pair counts, component coverage, quality, and distance.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "0d033d0acb8cbdc8f5521796234b955643447905fcf953abdd511d291885308b",
+  "content_hash": "06ba47716043d27a38646f84b82ba25c919ea852eadee39e11f8cbc3fdc574f0",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -3935,5 +3935,6 @@
   "units": [
     "unitless_similarity_0_to_1",
     "unitless_feature_distance"
-  ]
+  ],
+  "visual": {}
 }

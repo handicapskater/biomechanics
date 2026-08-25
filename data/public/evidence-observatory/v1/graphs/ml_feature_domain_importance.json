@@ -2,54 +2,144 @@
   "accessible_table": [
     {
       "domain": "mechanical",
-      "features": [
-        "magnitude_rms",
-        "magnitude_jerk_rms",
-        "cumulative_dynamic_shock_per_min",
-        "impact_rate_per_min",
-        "cumulative_dynamic_shock"
-      ],
-      "interpretation": "associative_not_causal",
-      "mean_importance_sum": 453.5577389741526,
-      "stable_feature_n": 5,
-      "top_three_fold_appearances": 1037
+      "feature": "magnitude_rms",
+      "importance_interpretation": "associative_not_causal",
+      "mean_importance": 134.8321769456518,
+      "model_tier_context_n": 81,
+      "task_ids": "multiclass_mobility_context;passive_transport;sensor_context_incremental;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
+      "task_n": 6,
+      "top_three_fold_appearances": 271
+    },
+    {
+      "domain": "mechanical",
+      "feature": "magnitude_jerk_rms",
+      "importance_interpretation": "associative_not_causal",
+      "mean_importance": 9.506870059742903,
+      "model_tier_context_n": 62,
+      "task_ids": "multiclass_mobility_context;passive_transport;sensor_context_incremental;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
+      "task_n": 6,
+      "top_three_fold_appearances": 217
+    },
+    {
+      "domain": "mechanical",
+      "feature": "cumulative_dynamic_shock_per_min",
+      "importance_interpretation": "associative_not_causal",
+      "mean_importance": 70.82573913906351,
+      "model_tier_context_n": 58,
+      "task_ids": "multiclass_mobility_context;passive_transport;sensor_context_incremental;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
+      "task_n": 6,
+      "top_three_fold_appearances": 216
+    },
+    {
+      "domain": "mechanical",
+      "feature": "impact_rate_per_min",
+      "importance_interpretation": "associative_not_causal",
+      "mean_importance": 4.563330759174991,
+      "model_tier_context_n": 48,
+      "task_ids": "multiclass_mobility_context;passive_transport;sensor_context_incremental;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
+      "task_n": 6,
+      "top_three_fold_appearances": 173
+    },
+    {
+      "domain": "mechanical",
+      "feature": "cumulative_dynamic_shock",
+      "importance_interpretation": "associative_not_causal",
+      "mean_importance": 233.8296220705194,
+      "model_tier_context_n": 41,
+      "task_ids": "multiclass_mobility_context;passive_transport;sensor_context_incremental;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
+      "task_n": 6,
+      "top_three_fold_appearances": 160
     },
     {
       "domain": "physiological",
-      "features": [
-        "mean_hr_bpm",
-        "max_hr_bpm",
-        "session_sdnn_ms",
-        "min_hr_bpm",
-        "session_rmssd_ms"
-      ],
-      "interpretation": "associative_not_causal",
-      "mean_importance_sum": 19.374462786070062,
-      "stable_feature_n": 5,
-      "top_three_fold_appearances": 403
+      "feature": "mean_hr_bpm",
+      "importance_interpretation": "associative_not_causal",
+      "mean_importance": 9.339069185890978,
+      "model_tier_context_n": 67,
+      "task_ids": "multiclass_mobility_context;passive_transport;sensor_context_incremental;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
+      "task_n": 6,
+      "top_three_fold_appearances": 222
+    },
+    {
+      "domain": "physiological",
+      "feature": "max_hr_bpm",
+      "importance_interpretation": "associative_not_causal",
+      "mean_importance": 3.2749814621282853,
+      "model_tier_context_n": 33,
+      "task_ids": "multiclass_mobility_context;passive_transport;sensor_context_incremental;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
+      "task_n": 6,
+      "top_three_fold_appearances": 85
+    },
+    {
+      "domain": "physiological",
+      "feature": "session_sdnn_ms",
+      "importance_interpretation": "associative_not_causal",
+      "mean_importance": 2.944022821186918,
+      "model_tier_context_n": 11,
+      "task_ids": "walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
+      "task_n": 3,
+      "top_three_fold_appearances": 45
+    },
+    {
+      "domain": "physiological",
+      "feature": "min_hr_bpm",
+      "importance_interpretation": "associative_not_causal",
+      "mean_importance": 1.0430718605691771,
+      "model_tier_context_n": 17,
+      "task_ids": "multiclass_mobility_context;passive_transport;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
+      "task_n": 5,
+      "top_three_fold_appearances": 42
+    },
+    {
+      "domain": "physiological",
+      "feature": "session_rmssd_ms",
+      "importance_interpretation": "associative_not_causal",
+      "mean_importance": 2.7733174562947074,
+      "model_tier_context_n": 5,
+      "task_ids": "walking_vs_fns_sns;walking_vs_mall",
+      "task_n": 2,
+      "top_three_fold_appearances": 9
     },
     {
       "domain": "functional",
-      "features": [
-        "authoritative_distance_miles",
-        "duration_seconds",
-        "has_kubios"
-      ],
-      "interpretation": "associative_not_causal",
-      "mean_importance_sum": 129.4297792443031,
-      "stable_feature_n": 3,
-      "top_three_fold_appearances": 769
+      "feature": "authoritative_distance_miles",
+      "importance_interpretation": "associative_not_causal",
+      "mean_importance": 86.54493617232889,
+      "model_tier_context_n": 106,
+      "task_ids": "multiclass_mobility_context;passive_transport;sensor_context_incremental;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
+      "task_n": 6,
+      "top_three_fold_appearances": 440
+    },
+    {
+      "domain": "functional",
+      "feature": "duration_seconds",
+      "importance_interpretation": "associative_not_causal",
+      "mean_importance": 42.88484307197421,
+      "model_tier_context_n": 82,
+      "task_ids": "multiclass_mobility_context;passive_transport;sensor_context_incremental;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
+      "task_n": 6,
+      "top_three_fold_appearances": 301
+    },
+    {
+      "domain": "functional",
+      "feature": "has_kubios",
+      "importance_interpretation": "associative_not_causal",
+      "mean_importance": 0.0,
+      "model_tier_context_n": 7,
+      "task_ids": "passive_transport;sensor_context_incremental;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
+      "task_n": 5,
+      "top_three_fold_appearances": 28
     }
   ],
-  "alt_text": "Repeated feature-importance patterns are summarized by mechanical, physiological, and functional domains; importance is associative and does not identify a mechanism.",
+  "alt_text": "Fold-level top-three appearance frequency is shown for individual stable features and labeled by scientific domain; frequency is not effect size, and importance is not causation.",
   "claim_class": "INTERPRETATION",
   "claim_classes": {},
-  "content_hash": "f859ffaee801e7fa63a4240126c2bb692ddeff55da641597143a873414df4419",
+  "content_hash": "9bc364d75c7cb5409ed0a78767c30d14eae356c93a63d32affc0016f283d90a6",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
   "evidence": {},
-  "finding": "Repeated feature-importance patterns are summarized by mechanical, physiological, and functional domains; importance is associative and does not identify a mechanism.",
+  "finding": "Fold-level top-three appearance frequency is shown for individual stable features and labeled by scientific domain; frequency is not effect size, and importance is not causation.",
   "formula_identities": [
     "hypothesis_ml_reporting.v1.0.0",
     "hypothesis_ml_validation.v1.1.0"
@@ -57,14 +147,14 @@
   "functional_meaning": "This is supporting N-of-1 classifier discrimination, not causal or clinical proof.",
   "graph_contract_version": "fsi_publication_graph.v1",
   "graph_id": "ml_feature_domain_importance",
-  "graph_type": "domain_importance_bar",
+  "graph_type": "feature_stability_frequency",
   "intended_route": "/platform/",
-  "interpretation": "Repeated feature-importance patterns are summarized by mechanical, physiological, and functional domains; importance is associative and does not identify a mechanism.",
+  "interpretation": "Fold-level top-three appearance frequency is shown for individual stable features and labeled by scientific domain; frequency is not effect size, and importance is not causation.",
   "limitation": "N_OF_1; FEATURE_IMPORTANCE_NOT_CAUSAL; WEARABLES_DO_NOT_MEASURE_PAIN",
   "limitations": [
     "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
   ],
-  "long_description": "Repeated feature-importance patterns are summarized by mechanical, physiological, and functional domains; importance is associative and does not identify a mechanism. Only stable/repeated top features are aggregated. No causal interpretation is permitted. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "long_description": "Fold-level top-three appearance frequency is shown for individual stable features and labeled by scientific domain; frequency is not effect size, and importance is not causation. Frequency of appearing among fold-level top-three features. Frequency is not effect size. Feature importance is not causation. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
   "matrix": [],
   "missingness": [],
   "output_asset_names": [
@@ -73,10 +163,10 @@
   "panels": [],
   "planned_comparator": null,
   "qualifications": [
-    "Only stable/repeated top features are aggregated.",
-    "No causal interpretation is permitted."
+    "Frequency of appearing among fold-level top-three features.",
+    "Frequency is not effect size. Feature importance is not causation."
   ],
-  "question": "Which feature domains repeatedly appear among fold-level top features?",
+  "question": "Which individual features repeatedly appear among fold-level top features?",
   "ranking": [],
   "relation_identities": [
     "analysis/hypothesis_ml_validation/results/full/ml_binary_results.csv",
@@ -111,8 +201,91 @@
     "Canonical Hypothesis Registry",
     "Canonical scientific reviewer views"
   ],
-  "title": "Stable feature importance by scientific domain",
+  "title": "Stable feature appearances",
   "units": [
-    "balanced_accuracy"
-  ]
+    "fold_level_top_three_appearances"
+  ],
+  "visual": {
+    "layout": "ranked_feature_frequency",
+    "rows": [
+      {
+        "domain": "functional",
+        "feature": "authoritative_distance_miles",
+        "label": "Authoritative distance",
+        "top_three_fold_appearances": 440
+      },
+      {
+        "domain": "functional",
+        "feature": "duration_seconds",
+        "label": "Duration",
+        "top_three_fold_appearances": 301
+      },
+      {
+        "domain": "mechanical",
+        "feature": "magnitude_rms",
+        "label": "Magnitude RMS",
+        "top_three_fold_appearances": 271
+      },
+      {
+        "domain": "physiological",
+        "feature": "mean_hr_bpm",
+        "label": "Mean HR",
+        "top_three_fold_appearances": 222
+      },
+      {
+        "domain": "mechanical",
+        "feature": "magnitude_jerk_rms",
+        "label": "Magnitude jerk RMS",
+        "top_three_fold_appearances": 217
+      },
+      {
+        "domain": "mechanical",
+        "feature": "cumulative_dynamic_shock_per_min",
+        "label": "Cumulative dynamic shock/min",
+        "top_three_fold_appearances": 216
+      },
+      {
+        "domain": "mechanical",
+        "feature": "impact_rate_per_min",
+        "label": "Impact rate/min",
+        "top_three_fold_appearances": 173
+      },
+      {
+        "domain": "mechanical",
+        "feature": "cumulative_dynamic_shock",
+        "label": "Cumulative dynamic shock",
+        "top_three_fold_appearances": 160
+      },
+      {
+        "domain": "physiological",
+        "feature": "max_hr_bpm",
+        "label": "Maximum HR",
+        "top_three_fold_appearances": 85
+      },
+      {
+        "domain": "physiological",
+        "feature": "session_sdnn_ms",
+        "label": "Session SDNN",
+        "top_three_fold_appearances": 45
+      },
+      {
+        "domain": "physiological",
+        "feature": "min_hr_bpm",
+        "label": "Minimum HR",
+        "top_three_fold_appearances": 42
+      },
+      {
+        "domain": "functional",
+        "feature": "has_kubios",
+        "label": "Kubios session available",
+        "top_three_fold_appearances": 28
+      }
+    ],
+    "visual_contract_version": "hypothesis_ml_scientific_figure.v1.0.0",
+    "x_axis": {
+      "format": "count",
+      "label": "Fold-level top-three appearances",
+      "min": 0
+    }
+  }
 }

@@ -10021,7 +10021,7 @@
   "alt_text": "Paired-difference panels compare Mall with Walk, Walk with PT, and Mall with PT across accepted dates for available heart-rate, HRV, and mechanical metrics.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "7ed762dab3f02456874fa603f4f7a3026fc899bc3cd2133648e4581647253a2c",
+  "content_hash": "5b4e338df799148e9afb721d7cda9f9471bc9ff82272369b151d7df40ef6c2d2",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -14767,5 +14767,6 @@
     "count/min",
     "g",
     "ms"
-  ]
+  ],
+  "visual": {}
 }

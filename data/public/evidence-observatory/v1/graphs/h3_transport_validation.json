@@ -224,7 +224,7 @@
   "alt_text": "Transportation discrimination is mixed across model/tier combinations; rejecting and non-rejecting results remain visible.",
   "claim_class": "INTERPRETATION",
   "claim_classes": {},
-  "content_hash": "ec1573d4da59756a9089c27cd856695c245b3b3fc31a593dbfa9dee6b29523b0",
+  "content_hash": "cb84dc2124bb1f64f99149f925171944e3ff7a5bd603d51a9ff03786df7ea4cc",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -294,5 +294,54 @@
   "title": "H3 transportation validation",
   "units": [
     "balanced_accuracy"
-  ]
+  ],
+  "visual": {
+    "decision_counts_all_tiers": {
+      "fail_to_reject": 5,
+      "reject": 15
+    },
+    "layout": "model_dumbbell",
+    "primary_tier": "baseline",
+    "rows": [
+      {
+        "date_grouped_balanced_accuracy": 0.5,
+        "decision": "fail_to_reject",
+        "label": "Gradient Boosting",
+        "model": "gradient_boosted_trees",
+        "null_median": 0.5,
+        "observed": 0.5
+      },
+      {
+        "date_grouped_balanced_accuracy": 0.8333333333333333,
+        "decision": "reject",
+        "label": "LDA",
+        "model": "linear_discriminant",
+        "null_median": 0.47705314009661837,
+        "observed": 0.8611111111111112
+      },
+      {
+        "date_grouped_balanced_accuracy": 0.9166666666666667,
+        "decision": "reject",
+        "label": "Logistic",
+        "model": "logistic_regression",
+        "null_median": 0.49516908212560384,
+        "observed": 0.9722222222222222
+      },
+      {
+        "date_grouped_balanced_accuracy": 0.9444444444444444,
+        "decision": "reject",
+        "label": "Random Forest",
+        "model": "random_forest",
+        "null_median": 0.4891304347826087,
+        "observed": 0.9444444444444444
+      }
+    ],
+    "visual_contract_version": "hypothesis_ml_scientific_figure.v1.0.0",
+    "x_axis": {
+      "format": "percent",
+      "label": "Held-out balanced accuracy",
+      "max": 1.0,
+      "min": 0.4
+    }
+  }
 }

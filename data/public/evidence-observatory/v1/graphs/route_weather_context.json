@@ -46679,7 +46679,7 @@
   "alt_text": "Route and weather context covers canonical event distances in miles and available temperature in degrees Fahrenheit and wind in miles per hour; missing weather is not filled.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "2cac615684eb94a0ef6d702f30e9ef5e41f04d4f452efa7efb88e4f109151cc8",
+  "content_hash": "aa7b00f9830b2f641ba7ca1f52030f026fe0fc59479fcf835ecfd6626dbbfd0d",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -87095,5 +87095,6 @@
     "miles",
     "°F",
     "mph"
-  ]
+  ],
+  "visual": {}
 }
