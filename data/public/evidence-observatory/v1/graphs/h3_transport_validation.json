@@ -224,7 +224,7 @@
   "alt_text": "Transportation discrimination is mixed across model/tier combinations; rejecting and non-rejecting results remain visible.",
   "claim_class": "INTERPRETATION",
   "claim_classes": {},
-  "content_hash": "cb84dc2124bb1f64f99149f925171944e3ff7a5bd603d51a9ff03786df7ea4cc",
+  "content_hash": "4241219ad5124aef784b443b7e58b2bf2743dcd74851fc301367d8a5076cbef7",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -234,17 +234,17 @@
     "hypothesis_ml_reporting.v1.0.0",
     "hypothesis_ml_validation.v1.1.0"
   ],
-  "functional_meaning": "This is supporting N-of-1 classifier discrimination, not causal or clinical proof.",
+  "functional_meaning": "Held-out scores quantify separation across the predeclared cohorts and feature tiers.",
   "graph_contract_version": "fsi_publication_graph.v1",
   "graph_id": "h3_transport_validation",
   "graph_type": "observed_null_dumbbell",
   "intended_route": "/evidence/transportation/",
   "interpretation": "Transportation discrimination is mixed across model/tier combinations; rejecting and non-rejecting results remain visible.",
-  "limitation": "N_OF_1; FEATURE_IMPORTANCE_NOT_CAUSAL; WEARABLES_DO_NOT_MEASURE_PAIN; SPARSE_VEHICLE_SUBTYPES; FAILURE_TO_REJECT_NOT_EQUIVALENCE",
+  "limitation": "N_OF_1; FEATURE_IMPORTANCE_SCOPE; MEASUREMENT_SCOPE; SPARSE_VEHICLE_SUBTYPES; FAILURE_TO_REJECT_NOT_EQUIVALENCE",
   "limitations": [
-    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+    "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
-  "long_description": "Transportation discrimination is mixed across model/tier combinations; rejecting and non-rejecting results remain visible. Neutral cohort labels are used. Non-rejecting results are retained. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "long_description": "Transportation discrimination is mixed across model/tier combinations; rejecting and non-rejecting results remain visible. Neutral cohort labels are used. Non-rejecting results are retained. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
   "matrix": [],
   "missingness": [],
   "output_asset_names": [

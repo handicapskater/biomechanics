@@ -3007,7 +3007,7 @@
   "alt_text": "Monthly time series show activity frequency and distance for walking, Mall skating, PT skating, and FNS/SNS skating. Missing months are omitted rather than plotted as zero.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "1217808172b03905401ec64cef2ecee0864248b31c2eceb2baf60ef2e3e73919",
+  "content_hash": "ae6d0bd531bda828154bb2a4d174893499b624cc329f1a260452c34de138236f",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -3025,9 +3025,9 @@
   "interpretation": "Longitudinal WHOOP and Strava records corroborate sustained skating activity across time; the accepted repeated protocol remains the stronger controlled comparison.",
   "limitation": null,
   "limitations": [
-    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+    "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
-  "long_description": "Longitudinal WHOOP and Strava records corroborate sustained skating activity across time; the accepted repeated protocol remains the stronger controlled comparison. Missing months are not zero-filled. Pending weekly Strava binding is a coverage state, not data loss. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "long_description": "Longitudinal WHOOP and Strava records corroborate sustained skating activity across time; the accepted repeated protocol remains the stronger controlled comparison. Missing months are not zero-filled. Pending weekly Strava binding is a coverage state, not data loss. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
   "matrix": [],
   "missingness": [],
   "output_asset_names": [

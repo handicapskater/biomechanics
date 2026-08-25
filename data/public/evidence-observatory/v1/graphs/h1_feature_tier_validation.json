@@ -724,7 +724,7 @@
   "alt_text": "Yes in this completed N-of-1 result set: every mechanical-only H1 model/task combination rejected its group-preserving permutation null, with duration and distance excluded.",
   "claim_class": "INTERPRETATION",
   "claim_classes": {},
-  "content_hash": "f0f67c4895de3d5cb88f7ebc0d06082ca05b9783bc98812dc29233799ca67e34",
+  "content_hash": "5917913eda1592889bc3821ceffba5d8bb1d92ae512e45419dae3573543492e3",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -734,17 +734,17 @@
     "hypothesis_ml_reporting.v1.0.0",
     "hypothesis_ml_validation.v1.1.0"
   ],
-  "functional_meaning": "This is supporting N-of-1 classifier discrimination, not causal or clinical proof.",
+  "functional_meaning": "Held-out scores quantify separation across the predeclared cohorts and feature tiers.",
   "graph_contract_version": "fsi_publication_graph.v1",
   "graph_id": "h1_feature_tier_validation",
   "graph_type": "grouped_score_dot_plot",
   "intended_route": "/platform/",
   "interpretation": "Yes in this completed N-of-1 result set: every mechanical-only H1 model/task combination rejected its group-preserving permutation null, with duration and distance excluded.",
-  "limitation": "N_OF_1; FEATURE_IMPORTANCE_NOT_CAUSAL; WEARABLES_DO_NOT_MEASURE_PAIN",
+  "limitation": "N_OF_1; FEATURE_IMPORTANCE_SCOPE; MEASUREMENT_SCOPE",
   "limitations": [
-    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+    "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
-  "long_description": "Yes in this completed N-of-1 result set: every mechanical-only H1 model/task combination rejected its group-preserving permutation null, with duration and distance excluded. Permutation-null median is a reference, not a chance-accuracy constant. All five predeclared H1 tiers remain separate. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "long_description": "Yes in this completed N-of-1 result set: every mechanical-only H1 model/task combination rejected its group-preserving permutation null, with duration and distance excluded. Permutation-null median is a reference, not a chance-accuracy constant. All five predeclared H1 tiers remain separate. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
   "matrix": [],
   "missingness": [],
   "output_asset_names": [

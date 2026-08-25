@@ -2833,7 +2833,7 @@
   "alt_text": "Stage-value panels compare Mall, Walk, and PT across accepted dates. The accessible table includes the canonical closer-to-Mall classification for each available metric.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "101cb102058db4cf867c9491dda36877ab15d0fd38ad2968c572ad68562458b6",
+  "content_hash": "c32ab3761ac1fe9d395cb688e0c31ce71ec39ae92d82bce8bf2972704193171c",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -2851,9 +2851,9 @@
   "interpretation": "PT is numerically closer to Mall for some metrics and dates and farther for others; the label is descriptive and is not CSS or clinical recovery.",
   "limitation": null,
   "limitations": [
-    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+    "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
-  "long_description": "PT is numerically closer to Mall for some metrics and dates and farther for others; the label is descriptive and is not CSS or clinical recovery. The canonical return-toward-Mall classification is shown in the accessible table. No pain-relief, causal, or clinical-recovery claim is made. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "long_description": "PT is numerically closer to Mall for some metrics and dates and farther for others; the label is descriptive and is not CSS or clinical recovery. The canonical return-toward-Mall classification is shown in the accessible table. No pain-relief, causal, or clinical-recovery claim is made. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
   "matrix": [],
   "missingness": [],
   "output_asset_names": [

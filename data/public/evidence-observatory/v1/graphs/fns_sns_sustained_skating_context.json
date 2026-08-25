@@ -11664,7 +11664,7 @@
   "alt_text": "A 583-event sustained-skating timeline shows available distance, duration, Kubios heart rate, and session RMSSD by preserved FNS, SNS, ENS, XNS, XMS, or unspecified subtype.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "4d9c6f9993c4e4b22f1bf38a4a945d624e40fc3c67b0a9dc78697512a6364769",
+  "content_hash": "0124502e8cec684d936d92edb113c389b43ae1c082c80537cb0b17ac96fac481",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -11681,9 +11681,9 @@
   "interpretation": "The longitudinal record documents sustained skating output and available physiologic context without treating broad routes as controlled triplet stages.",
   "limitation": null,
   "limitations": [
-    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+    "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
-  "long_description": "The longitudinal record documents sustained skating output and available physiologic context without treating broad routes as controlled triplet stages. Broad FNS/SNS context is not accepted-triplet membership. Missing route, weather, readiness, or episodic values are not estimated. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "long_description": "The longitudinal record documents sustained skating output and available physiologic context without treating broad routes as controlled triplet stages. Broad FNS/SNS context is not accepted-triplet membership. Missing route, weather, readiness, or episodic values are not estimated. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
   "matrix": [],
   "missingness": [],
   "output_asset_names": [

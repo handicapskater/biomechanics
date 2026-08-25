@@ -244,7 +244,7 @@
   "alt_text": "MIXED/INCONCLUSIVE: overall multiclass discrimination separates from permutation nulls, while incremental-over-baseline values include both gains and losses.",
   "claim_class": "INTERPRETATION",
   "claim_classes": {},
-  "content_hash": "4c675b11cb990986331d330fa7112848a31f35f5f671810df707ef868b914df3",
+  "content_hash": "2c53d1775e7729920cfb82a466f60c2f8fd4bfdccfea9bb9f7cdb447fe0929cd",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -254,17 +254,17 @@
     "hypothesis_ml_reporting.v1.0.0",
     "hypothesis_ml_validation.v1.1.0"
   ],
-  "functional_meaning": "This is supporting N-of-1 classifier discrimination, not causal or clinical proof.",
+  "functional_meaning": "Held-out scores quantify separation across the predeclared cohorts and feature tiers.",
   "graph_contract_version": "fsi_publication_graph.v1",
   "graph_id": "h2_h13_context_increment",
   "graph_type": "diverging_increment_bar",
   "intended_route": "/platform/",
   "interpretation": "MIXED/INCONCLUSIVE: overall multiclass discrimination separates from permutation nulls, while incremental-over-baseline values include both gains and losses.",
-  "limitation": "N_OF_1; FEATURE_IMPORTANCE_NOT_CAUSAL; WEARABLES_DO_NOT_MEASURE_PAIN",
+  "limitation": "N_OF_1; FEATURE_IMPORTANCE_SCOPE; MEASUREMENT_SCOPE",
   "limitations": [
-    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+    "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
-  "long_description": "MIXED/INCONCLUSIVE: overall multiclass discrimination separates from permutation nulls, while incremental-over-baseline values include both gains and losses. Zero is the no-increment reference. Positive and negative increments remain visible. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "long_description": "MIXED/INCONCLUSIVE: overall multiclass discrimination separates from permutation nulls, while incremental-over-baseline values include both gains and losses. Zero is the no-increment reference. Positive and negative increments remain visible. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
   "matrix": [],
   "missingness": [],
   "output_asset_names": [

@@ -1,6 +1,6 @@
 {
-  "bundle_id": "handicapskater-com-v1-3c3db64d6530468a",
-  "content_hash": "3c3db64d6530468aeebebaeff7fd73e5dd59c1fa94e8ed604a31b2f7b51be550",
+  "bundle_id": "handicapskater-com-v1-84be0cc66e8402f1",
+  "content_hash": "84be0cc66e8402f1404e016e4f7f9b3c5bba750a3ad1ac62b62483c10c3efbad",
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
   "generated_at_utc": "2026-08-09T17:55:07.831858Z",
@@ -10,302 +10,302 @@
     {
       "artifact_filename": "mobility_output_and_burden.json",
       "artifact_path": "graphs/mobility_output_and_burden.json",
-      "byte_size": 14453,
-      "content_hash": "c183e70d917d81bdd9c1242ff20df26c58bfca26a3175fb281e78c14d4dc44e0",
+      "byte_size": 14239,
+      "content_hash": "88d0289480e803c828aa8de2c7b719dabb94f43c53ed20e3a7bbb857d4e5d0db",
       "destination": "handicapskater.com",
       "graph_id": "mobility_output_and_burden",
       "media_type": "application/json",
       "page": "/evidence/mobility-comparison/",
       "path": "graphs/mobility_output_and_burden.json",
-      "sha256": "24a37e0b0dd16b7aa0c5d4dbe11f9f12baff74c157099be604a3179eeb1b642d"
+      "sha256": "57ffcd430d70c9fd684e78e704178f78bcaaf25d27c5eb10a4005f6ab6ffb811"
     },
     {
       "artifact_filename": "walking_vs_mall_accumulated_mechanical_load.json",
       "artifact_path": "graphs/walking_vs_mall_accumulated_mechanical_load.json",
-      "byte_size": 28225,
-      "content_hash": "248714101fbc91cea2f1f6deddfd9ead212cd1b08e5e27526e6955c58634e5dd",
+      "byte_size": 28008,
+      "content_hash": "bf9d969c1a6083af7631ab7154e6ed98a9698fcd547785ca8e00cb1016b9badf",
       "destination": "handicapskater.com",
       "graph_id": "walking_vs_mall_accumulated_mechanical_load",
       "media_type": "application/json",
       "page": "/evidence/mobility-comparison/",
       "path": "graphs/walking_vs_mall_accumulated_mechanical_load.json",
-      "sha256": "994a9fe11a19879c32ce68698d24d633636fe5eb99b6b21a76feae8130699956"
+      "sha256": "ab48d3f896686f26875caa384c4f1c17b7dfd3483da2413493f99f45992428c7"
     },
     {
       "artifact_filename": "accepted_triplet_stage_profiles.json",
       "artifact_path": "graphs/accepted_triplet_stage_profiles.json",
-      "byte_size": 479019,
-      "content_hash": "8a53bb663f5446cc3ef6211b430116e74f53598c2477003a0782fcc46aacd8cf",
+      "byte_size": 478805,
+      "content_hash": "c992eff8e23e5a47b26b07750b0d450798f27959679e477734d7ed55d248f36f",
       "destination": "handicapskater.com",
       "graph_id": "accepted_triplet_stage_profiles",
       "media_type": "application/json",
       "page": "/evidence/repeated-protocol/",
       "path": "graphs/accepted_triplet_stage_profiles.json",
-      "sha256": "e2efda1a8e5cc6877ce81480c8ceb4b1c59c44de19c800ca805599b34a469188"
+      "sha256": "03868aca43bfa404225b82fa0bca30cd5d1e938e520f62aafb05bcc5ace953a6"
     },
     {
       "artifact_filename": "triplet_functional_output_context.json",
       "artifact_path": "graphs/triplet_functional_output_context.json",
-      "byte_size": 37176,
-      "content_hash": "56b0d4ba83ee312e62cb80ae99820404807de64618a1c0e8431a25b0ea1cdb8b",
+      "byte_size": 36962,
+      "content_hash": "d9c5d6e3565861544398208dfabff6d529cdcdeb653dccc7e60fc181deedaa23",
       "destination": "handicapskater.com",
       "graph_id": "triplet_functional_output_context",
       "media_type": "application/json",
       "page": "/evidence/mobility-comparison/",
       "path": "graphs/triplet_functional_output_context.json",
-      "sha256": "8c1d9c2ded31cb574abed61723cfeed72ff160a1be34f85785566180b7229b69"
+      "sha256": "63628962b6625cfb80c9114ae3c88d44398fd4f9698dbf54f81c775183ad1ba6"
     },
     {
       "artifact_filename": "triplet_paired_comparisons.json",
       "artifact_path": "graphs/triplet_paired_comparisons.json",
-      "byte_size": 622416,
-      "content_hash": "5b4e338df799148e9afb721d7cda9f9471bc9ff82272369b151d7df40ef6c2d2",
+      "byte_size": 622202,
+      "content_hash": "4c091a8d31661553a53593e296921ce14e7aecbde2a37331d331c284e379f6c0",
       "destination": "handicapskater.com",
       "graph_id": "triplet_paired_comparisons",
       "media_type": "application/json",
       "page": "/evidence/repeated-protocol/",
       "path": "graphs/triplet_paired_comparisons.json",
-      "sha256": "7dac7846dfe096e1041670cda592f7ba92856df6a3fbc58576c0d848f33ba4d7"
+      "sha256": "8fbef568c2c532c4e0dbba91f8a0a33a48c7c58280f62aff1bc51c1166bcf4ce"
     },
     {
       "artifact_filename": "return_toward_mall_profile.json",
       "artifact_path": "graphs/return_toward_mall_profile.json",
-      "byte_size": 241469,
-      "content_hash": "101cb102058db4cf867c9491dda36877ab15d0fd38ad2968c572ad68562458b6",
+      "byte_size": 241255,
+      "content_hash": "c32ab3761ac1fe9d395cb688e0c31ce71ec39ae92d82bce8bf2972704193171c",
       "destination": "handicapskater.com",
       "graph_id": "return_toward_mall_profile",
       "media_type": "application/json",
       "page": "/evidence/repeated-protocol/",
       "path": "graphs/return_toward_mall_profile.json",
-      "sha256": "0f211fbaf38f409690157f3deb49fc3f0e0816438a8cba77d148e1cc7596d44c"
+      "sha256": "dc68ad605f44e118fcff61091b8f42039b638bd28b0b8226ce5590a38c30d5e9"
     },
     {
       "artifact_filename": "functional_output_vs_burden_authoritative_miles.json",
       "artifact_path": "graphs/functional_output_vs_burden_authoritative_miles.json",
-      "byte_size": 155182,
-      "content_hash": "bf50e9f626fc19f52f8be0e3b07b5e97f3cdaae85db6b5e0fdac0e24a31ba36c",
+      "byte_size": 154968,
+      "content_hash": "f1095d3e77ed7d27f01ff11533a96ccd28bae19f62190320b7590523cd180a4b",
       "destination": "handicapskater.com",
       "graph_id": "functional_output_vs_burden_authoritative_miles",
       "media_type": "application/json",
       "page": "/evidence/mobility-comparison/",
       "path": "graphs/functional_output_vs_burden_authoritative_miles.json",
-      "sha256": "69349dde36150a7ec168ee470f23df87cee87dc42ed99fa9d4a46619127aafd1"
+      "sha256": "5ae429757fe746230bddbf39a61117150426aada29af1c0e512e6de716fba245"
     },
     {
       "artifact_filename": "mechanical_burden_distributions.json",
       "artifact_path": "graphs/mechanical_burden_distributions.json",
-      "byte_size": 409204,
-      "content_hash": "b66a25e30a47360a24baf4b479e8de3964acaa9138cb1488cabb59f932872134",
+      "byte_size": 409002,
+      "content_hash": "b1cad08925dea4ebaeb7b712bd975d76457a30c0416ce54368f3f9c9bbde4698",
       "destination": "handicapskater.com",
       "graph_id": "mechanical_burden_distributions",
       "media_type": "application/json",
       "page": "/evidence/mobility-comparison/",
       "path": "graphs/mechanical_burden_distributions.json",
-      "sha256": "9d02f582fe60c893b543821fe71a7ca91e13bcb57016ad2035737b62c32dfb64"
+      "sha256": "95e67930af36b9ef8e4b561d0ed2435ef78138f1c2a5f88764eebbc78967aedf"
     },
     {
       "artifact_filename": "autonomic_metric_distributions.json",
       "artifact_path": "graphs/autonomic_metric_distributions.json",
-      "byte_size": 302612,
-      "content_hash": "864a66f809b488a1e4c04408f6a39eda695750245c70030100c56adf5ff6dea9",
+      "byte_size": 302398,
+      "content_hash": "13ef03b6504cb79bc3cfb2fddc440f6ec4f4340a0d4e26389b371cad4d576000",
       "destination": "handicapskater.com",
       "graph_id": "autonomic_metric_distributions",
       "media_type": "application/json",
       "page": "/evidence/mobility-comparison/",
       "path": "graphs/autonomic_metric_distributions.json",
-      "sha256": "067fbe4425eb1c898508c33a6c7fb5f0e4b2b1445b1d2062a9c31b9d9853da83"
+      "sha256": "0babc1cfa6215fdab673bfc5fb32d40a60bb22adf51253c614e4cd5e6d816eb3"
     },
     {
       "artifact_filename": "fsi_distributions.json",
       "artifact_path": "graphs/fsi_distributions.json",
-      "byte_size": 672173,
-      "content_hash": "f51bd3d6b8c518ba251fd76c3c253664aba4a11ceb9713c413bf4af7f94272ae",
+      "byte_size": 671937,
+      "content_hash": "8638ef6481361e81ea0ba22632008fe5283808d1d07534688a625a24cca85e37",
       "destination": "handicapskater.com",
       "graph_id": "fsi_distributions",
       "media_type": "application/json",
       "page": "/platform/",
       "path": "graphs/fsi_distributions.json",
-      "sha256": "eab723b04efc437a4ec5fbdc631bb824910aa9e8dc3d0c4bfc94f0190833480b"
+      "sha256": "93601208151fa9cf176db6104105b0f21bf860006f94ad5a0032344d763a92ad"
     },
     {
       "artifact_filename": "css_similarity_matrix_ranking.json",
       "artifact_path": "graphs/css_similarity_matrix_ranking.json",
-      "byte_size": 144454,
-      "content_hash": "06ba47716043d27a38646f84b82ba25c919ea852eadee39e11f8cbc3fdc574f0",
+      "byte_size": 144240,
+      "content_hash": "6f31470d1d4713c446a346aa2efa44de61780e4820e6444507bc6438eb2c6038",
       "destination": "handicapskater.com",
       "graph_id": "css_similarity_matrix_ranking",
       "media_type": "application/json",
       "page": "/platform/",
       "path": "graphs/css_similarity_matrix_ranking.json",
-      "sha256": "678324277b4ba47402a4fd4c0d98a55c13e6b2df773c3ba463c353717c579ad0"
+      "sha256": "900acb01636bdaf85e542d6ad6b1e721bfef51f57d54f70e3318220ac5f626f0"
     },
     {
       "artifact_filename": "readiness_before_activity_context.json",
       "artifact_path": "graphs/readiness_before_activity_context.json",
-      "byte_size": 57027,
-      "content_hash": "a23c8f290d1a36eba4ba6657ba8e96fadcd48f8107675369481484f68c2c613b",
+      "byte_size": 56813,
+      "content_hash": "dc8051b8c2928b12341236e979ea6e5a2b24509d436f84a4b066046bc69ad762",
       "destination": "handicapskater.com",
       "graph_id": "readiness_before_activity_context",
       "media_type": "application/json",
       "page": "/evidence/longitudinal/",
       "path": "graphs/readiness_before_activity_context.json",
-      "sha256": "61dfa4034cea7a96a0c862e66741e364b0d8a382295aba39798836c9be655518"
+      "sha256": "8fe85027f50a69556d7c6c9174f1853c0597bb48f784de4aa860b409591e6f08"
     },
     {
       "artifact_filename": "fns_sns_sustained_skating_context.json",
       "artifact_path": "graphs/fns_sns_sustained_skating_context.json",
-      "byte_size": 908665,
-      "content_hash": "4d9c6f9993c4e4b22f1bf38a4a945d624e40fc3c67b0a9dc78697512a6364769",
+      "byte_size": 908451,
+      "content_hash": "0124502e8cec684d936d92edb113c389b43ae1c082c80537cb0b17ac96fac481",
       "destination": "handicapskater.com",
       "graph_id": "fns_sns_sustained_skating_context",
       "media_type": "application/json",
       "page": "/evidence/longitudinal/",
       "path": "graphs/fns_sns_sustained_skating_context.json",
-      "sha256": "c4ae967857406b16d9740e2431f752e6fccfafd461caa239fac4eb7dfbb37a26"
+      "sha256": "dbc2f0c7c6a987f96ec7647c72b6036bdd800db78895147764f15a37c8f1fbd2"
     },
     {
       "artifact_filename": "fns_sns_longitudinal_functional_capacity.json",
       "artifact_path": "graphs/fns_sns_longitudinal_functional_capacity.json",
-      "byte_size": 1053622,
-      "content_hash": "1ea58ffc06b9850c10dfb27bd8f995778865b503b6bde5803de45bf442d7066a",
+      "byte_size": 1053408,
+      "content_hash": "bf3343372311fa18a05598df2914fbf9da4d696f81a15109e7d1527659ba07ea",
       "destination": "handicapskater.com",
       "graph_id": "fns_sns_longitudinal_functional_capacity",
       "media_type": "application/json",
       "page": "/evidence/longitudinal/",
       "path": "graphs/fns_sns_longitudinal_functional_capacity.json",
-      "sha256": "4831885f22fd5a91574552f5919616a1e15affd43a20a68944158eba3674e730"
+      "sha256": "f33353619995893927eb0f3ed1ee23eaea1cf37c7000ddfd3ee6ba1e84e4a728"
     },
     {
       "artifact_filename": "transport_coupling_profiles.json",
       "artifact_path": "graphs/transport_coupling_profiles.json",
-      "byte_size": 28423,
-      "content_hash": "095cfeddeca22d0ffbc9ba43b1342c70f0f5f3872336bca84fcfe722f9ede0e5",
+      "byte_size": 28072,
+      "content_hash": "ce885a6f8ff9314699303b626c60e3496abee02d1c0bd8b68855174f5270975a",
       "destination": "handicapskater.com",
       "graph_id": "transport_coupling_profiles",
       "media_type": "application/json",
       "page": "/evidence/transportation/",
       "path": "graphs/transport_coupling_profiles.json",
-      "sha256": "33755e8c4cc30724adeb935f2a5d8ebf8ccb9abef248aca307bbf6f69ed315cf"
+      "sha256": "0b82851a9457a6addafc7b40a0b06306de1f5f718e6b467df86db7644694f71b"
     },
     {
       "artifact_filename": "transportation_body_coupling_comparison.json",
       "artifact_path": "graphs/transportation_body_coupling_comparison.json",
-      "byte_size": 294369,
-      "content_hash": "7191479e734b55198a6020e6c69f9e37c60b658786e65d8fca6c3beff8f33a71",
+      "byte_size": 294155,
+      "content_hash": "40b7e1e8cf79730242517a492c54f13987006336dcb4f5b2884f00a56239a8d1",
       "destination": "handicapskater.com",
       "graph_id": "transportation_body_coupling_comparison",
       "media_type": "application/json",
       "page": "/evidence/transportation/",
       "path": "graphs/transportation_body_coupling_comparison.json",
-      "sha256": "bc4fe1c403f818722c2b00eb3d3ada93ac0c2324cbfd35b2c315337059bd3c11"
+      "sha256": "1596450e908994cab0953269600dc9438be2ed483e6b2878b3d24265ace48056"
     },
     {
       "artifact_filename": "longitudinal_activity_context.json",
       "artifact_path": "graphs/longitudinal_activity_context.json",
-      "byte_size": 173087,
-      "content_hash": "1217808172b03905401ec64cef2ecee0864248b31c2eceb2baf60ef2e3e73919",
+      "byte_size": 172873,
+      "content_hash": "ae6d0bd531bda828154bb2a4d174893499b624cc329f1a260452c34de138236f",
       "destination": "handicapskater.com",
       "graph_id": "longitudinal_activity_context",
       "media_type": "application/json",
       "page": "/evidence/longitudinal/",
       "path": "graphs/longitudinal_activity_context.json",
-      "sha256": "b324b165b53964934abecb79ea4f49adb4bda9646df2ac83edc54bebe1618ff8"
+      "sha256": "8b9fef1c750837764e572387927286c98dd850997da681501434f635d309aef7"
     },
     {
       "artifact_filename": "route_weather_context.json",
       "artifact_path": "graphs/route_weather_context.json",
-      "byte_size": 3110250,
-      "content_hash": "aa7b00f9830b2f641ba7ca1f52030f026fe0fc59479fcf835ecfd6626dbbfd0d",
+      "byte_size": 3110036,
+      "content_hash": "c92ffa31793aded10f9a3d621a0de763a16abea514bab05167df2cdf40537cee",
       "destination": "handicapskater.com",
       "graph_id": "route_weather_context",
       "media_type": "application/json",
       "page": "/evidence/strava-gps-skate-maps/",
       "path": "graphs/route_weather_context.json",
-      "sha256": "a343e417e28cf491edc57ff60de0bf3cf19cbcd6c38b5140b8ef2f04e208d817"
+      "sha256": "57cdad4a37c4c35441447a01c0468141c4275b4d22e47b52b55787c777796f8f"
     },
     {
       "artifact_filename": "source_metric_coverage_matrix.json",
       "artifact_path": "graphs/source_metric_coverage_matrix.json",
-      "byte_size": 69699,
-      "content_hash": "40255a5899f5847e89b6ddd9b7f6ba4ab82855ebe8a8619865fc393bb6259bf3",
+      "byte_size": 69485,
+      "content_hash": "d170bc28ea383279e6b825c77914cee6a5858eca21db636302d355dfbec61307",
       "destination": "handicapskater.com",
       "graph_id": "source_metric_coverage_matrix",
       "media_type": "application/json",
       "page": "/evidence/",
       "path": "graphs/source_metric_coverage_matrix.json",
-      "sha256": "4ab5884221272e24c3c135a9f3f3042b18fcd0d50f17537618ebb7cb107508a1"
+      "sha256": "cf03e4178880571e533e4b4c2103b944df49348aa8ac3e6fef828b6c73735af3"
     },
     {
       "artifact_filename": "h1_feature_tier_validation.json",
       "artifact_path": "graphs/h1_feature_tier_validation.json",
-      "byte_size": 45529,
-      "content_hash": "f0f67c4895de3d5cb88f7ebc0d06082ca05b9783bc98812dc29233799ca67e34",
+      "byte_size": 45301,
+      "content_hash": "5917913eda1592889bc3821ceffba5d8bb1d92ae512e45419dae3573543492e3",
       "destination": "handicapskater.com",
       "graph_id": "h1_feature_tier_validation",
       "media_type": "application/json",
       "page": "/platform/",
       "path": "graphs/h1_feature_tier_validation.json",
-      "sha256": "6e71cea7345f8a6b197c53e6350f1f5345fdc7a79d9dc97b5d0ee2a89a2f16f5"
+      "sha256": "100dc94da01ab4713b4482bb3cdcbc9a9d9d17252a909a94554fefcc699baf60"
     },
     {
       "artifact_filename": "h1_mechanical_only_validation.json",
       "artifact_path": "graphs/h1_mechanical_only_validation.json",
-      "byte_size": 11357,
-      "content_hash": "cd685fcddec9c962fc1fd5ebcdc38ff137935eed49370929832d94ef9386a1ca",
+      "byte_size": 11129,
+      "content_hash": "2e6b0c0fac25bc8ae09399cd15f9b987388142f41ece1f99a2a288fbb850bdaa",
       "destination": "handicapskater.com",
       "graph_id": "h1_mechanical_only_validation",
       "media_type": "application/json",
       "page": "/evidence/mobility-comparison/",
       "path": "graphs/h1_mechanical_only_validation.json",
-      "sha256": "00bd2ff91b60c422626bac857a87e502e544fb63ca829bbecd496965f8ab9dd5"
+      "sha256": "b71a42f97690bca492bf47c45253cd20b4b92855bac6edc7ed28644b96557444"
     },
     {
       "artifact_filename": "h1_exposure_blind_mechanical.json",
       "artifact_path": "graphs/h1_exposure_blind_mechanical.json",
-      "byte_size": 12452,
-      "content_hash": "610f798290f24c7d0670b8033951be242b119f6ad0519e40a48ba21eaabd5204",
+      "byte_size": 11846,
+      "content_hash": "463bad6d80814109e54b2fd26907da6838092db039cd2c0b4b65577b1a61320a",
       "destination": "handicapskater.com",
       "graph_id": "h1_exposure_blind_mechanical",
       "media_type": "application/json",
       "page": "/evidence/mobility-comparison/",
       "path": "graphs/h1_exposure_blind_mechanical.json",
-      "sha256": "4700b00cc0c025eedbd287263e306febfd706093aaea423409aa805491bc4e37"
+      "sha256": "90638dc423ded14d807991e54d91f72f0f5eb72cf7ef82e3b983dd53ef267385"
     },
     {
       "artifact_filename": "h3_transport_validation.json",
       "artifact_path": "graphs/h3_transport_validation.json",
-      "byte_size": 11483,
-      "content_hash": "cb84dc2124bb1f64f99149f925171944e3ff7a5bd603d51a9ff03786df7ea4cc",
+      "byte_size": 11255,
+      "content_hash": "4241219ad5124aef784b443b7e58b2bf2743dcd74851fc301367d8a5076cbef7",
       "destination": "handicapskater.com",
       "graph_id": "h3_transport_validation",
       "media_type": "application/json",
       "page": "/evidence/transportation/",
       "path": "graphs/h3_transport_validation.json",
-      "sha256": "2d774c4e4912c3a488cb99b5410016532d8c127c087fb7c3bb0a4247314a31f9"
+      "sha256": "eb4bd5e06052dd5f0e0da93418ed56cdcfcd5dffe80e5d32b071c059830cd669"
     },
     {
       "artifact_filename": "h2_h13_context_increment.json",
       "artifact_path": "graphs/h2_h13_context_increment.json",
-      "byte_size": 15332,
-      "content_hash": "4c675b11cb990986331d330fa7112848a31f35f5f671810df707ef868b914df3",
+      "byte_size": 15104,
+      "content_hash": "2c53d1775e7729920cfb82a466f60c2f8fd4bfdccfea9bb9f7cdb447fe0929cd",
       "destination": "handicapskater.com",
       "graph_id": "h2_h13_context_increment",
       "media_type": "application/json",
       "page": "/platform/",
       "path": "graphs/h2_h13_context_increment.json",
-      "sha256": "f155ad74cea1ae64db1dafc9c1ceeff21b61a57ff8523358234745e2408ad91f"
+      "sha256": "fa9c5fda79839438a71c2284309ad83f71e6622e76e40051e9bed6724193f141"
     },
     {
       "artifact_filename": "ml_feature_domain_importance.json",
       "artifact_path": "graphs/ml_feature_domain_importance.json",
-      "byte_size": 11301,
-      "content_hash": "9bc364d75c7cb5409ed0a78767c30d14eae356c93a63d32affc0016f283d90a6",
+      "byte_size": 10951,
+      "content_hash": "51bea7982e5c46356f5662ba10e7faa872c7d44b31dac2f3b377bc7829f903f4",
       "destination": "handicapskater.com",
       "graph_id": "ml_feature_domain_importance",
       "media_type": "application/json",
       "page": "/platform/",
       "path": "graphs/ml_feature_domain_importance.json",
-      "sha256": "d727a274dcb1f083e82993c1c136104d9baab455f759046f72edda39b715071d"
+      "sha256": "67ad03a253c9e75c3df9dcdc5f4c9329796f23dad9a40b58e1f650965c876117"
     }
   ],
   "limitation_count": 1,
@@ -381,76 +381,76 @@
   "resource_count": 9,
   "resources": [
     {
-      "byte_size": 35807,
-      "content_hash": "7844d248b6f347f3f221f6b8d93efd612ca4411ec270edc82f9e806db1144727",
+      "byte_size": 35700,
+      "content_hash": "eac2f78bdc07498258e75c44a873a3cc4d9acb3d759b3a53a7d72daf8fd1eb41",
       "media_type": "application/json",
       "path": "overview.json",
       "resource_id": "overview",
-      "sha256": "a8c9183e08f502aad9098e87e185d0fc8d5c27740ee477432c80911994795f5a"
+      "sha256": "7157f8fee99a5cbc7884c7e981263fd5f745485b35cfe1ad897af94674cf601c"
     },
     {
-      "byte_size": 11389,
-      "content_hash": "81582c195b1564ffa6e4a606b54a00b88a6f6659024965a1de85ff0e63ce6bfa",
+      "byte_size": 11282,
+      "content_hash": "e39d2c7c53adc311dfc62cf60fc126c87cc48bd6855f78bfd7506334bc70ea69",
       "media_type": "application/json",
       "path": "mobility-comparison.json",
       "resource_id": "mobility-comparison",
-      "sha256": "1c65c681831bc7414a3c28d74dfec57990c0cf4f31c2c57031fee3f3d8fb5342"
+      "sha256": "2e77251acc175af96d284db385f533f30f44ed6f4a4c1e21e1da7e2c60ee7236"
     },
     {
-      "byte_size": 342151,
-      "content_hash": "ee4c46b7da8e4b81d6fb2bf0954df865fdd60f97550c00943df57efcc952591a",
+      "byte_size": 342044,
+      "content_hash": "7ee432ed92b5164ddfb14519027e8e2f2d3c0ffbaeece46dc84e3257bc2cbcde",
       "media_type": "application/json",
       "path": "repeated-protocol.json",
       "resource_id": "repeated-protocol",
-      "sha256": "8e6c5b3a4664feec44bd5857bfe87e0bbb3f30ea27c364c2172581255259460d"
+      "sha256": "6dce4333dc2b44e8f03fbe3b9968b0795b61f8d24b0000b1e662c3b7aae04c14"
     },
     {
-      "byte_size": 15685,
-      "content_hash": "4f538bb009295f68fd368290c67c846fd0e4b59875cb0ea5f767456bf39426eb",
+      "byte_size": 15578,
+      "content_hash": "bac824d70c57e91e22b9640247c5af1373c4263cb0a4814ea599ca332671dbf0",
       "media_type": "application/json",
       "path": "transportation.json",
       "resource_id": "transportation",
-      "sha256": "c8bb2ef4d5905b711a77de2c5817b7f89a7293ccd7994f3e9040fe3216ee2a0f"
+      "sha256": "be9a995c963972c45ad04e2fdad71e6a3408425e25a83923beedc1068c62f0fe"
     },
     {
-      "byte_size": 147406,
-      "content_hash": "08ddaa3e49396c9d6f9e895a9a30634785c8e1b1838ec5b62c0cf7784420a436",
+      "byte_size": 147299,
+      "content_hash": "ae82bae430dafc3704d4995ac0cdbf25a9ad3a876d3dc76fc598bd90ae62a76c",
       "media_type": "application/json",
       "path": "longitudinal.json",
       "resource_id": "longitudinal",
-      "sha256": "0e179d905a416e2c02304f08b223d8ab13d84b229797ff6d5a2da709eb0f9494"
+      "sha256": "848d6cd7ae831b39607e66da7799d5d3f47a0558c4b613a28ad6e19d3e233978"
     },
     {
-      "byte_size": 4045,
-      "content_hash": "d5c6c1d5447bdf503adf5d29259268f480427fd125e9889a28479edd2c501a3e",
+      "byte_size": 3938,
+      "content_hash": "a5815e6cfaa8bba49e773de5f56ea325eccf6fc2791a6efcecbfc59003825fad",
       "media_type": "application/json",
       "path": "scientific-identities.json",
       "resource_id": "scientific-identities",
-      "sha256": "d2b524b78d283a0ec32c7aff54df7392bf8792bbc64dfbc2e71f93ef4ecfcfc3"
+      "sha256": "7b2d3c0a3ce68146bdb463843e3bf5962267297b6109068c8dd7b9e32deebbe9"
     },
     {
-      "byte_size": 79963,
-      "content_hash": "ffe302da759c45dfed3b5f0a08a6c560ecb755fcf5f520d1d93f0214874c3102",
+      "byte_size": 78382,
+      "content_hash": "b3e967b19239d0d5525f88f0382e8bb4d0570bf23739895f444e04dbe26069c3",
       "media_type": "application/json",
       "path": "hypothesis-registry.json",
       "resource_id": "hypothesis-registry",
-      "sha256": "9949854220adbe564ab683480ae14055a232615e9764ea36339af418938926fa"
+      "sha256": "3c902d31b6383f0106c4a01f5d07d0adfb3ad3ff6c72f72b215af08b7723f32a"
     },
     {
-      "byte_size": 2497,
-      "content_hash": "081b29c8c5109e4999ca64722c56f5cfc4360595c6c9f2603dfded560ea438b7",
+      "byte_size": 2106,
+      "content_hash": "6ceab2505fac207eabc970459aab0121010ebda0dc827f9ebc6bcdd0d236b837",
       "media_type": "application/json",
       "path": "limitations.json",
       "resource_id": "limitations",
-      "sha256": "e85a52e0c339e98d009a1b0b3ea811c19d2a7e66db03d330e458fe76b2eecd2d"
+      "sha256": "782bdea9d8b44bbd5cd6cdc2e5928493acbdc923902cfd881a246e8526df7dd8"
     },
     {
-      "byte_size": 3836,
-      "content_hash": "6dcb55bcfd2b1bf14f567651df3ce01c8aa70c2c67b09e401e5733ea2b6ec2a5",
+      "byte_size": 3729,
+      "content_hash": "20abd359e8300dffe02b425069c381e9900be09cf5846539d0e0851a82f71ee8",
       "media_type": "application/json",
       "path": "sources.json",
       "resource_id": "sources",
-      "sha256": "1b9894baa17fd9501c3ba37ddbc919f99e2d8a4ff360098f7268cea1239a7ccd"
+      "sha256": "739e322c29aa061f828b49b7bb2c2849a6f45c8f42f8d3f569d68a8a56b9a33e"
     }
   ],
   "safety": {

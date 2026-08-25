@@ -44,7 +44,10 @@ def main() -> None:
     assert_not_contains(index, "Data Science Evidence Snapshot", "homepage")
 
     assert_contains(pain, "Pain Is the Starting Point", "pain page")
-    assert_contains(pain, "Wearables do not directly measure pain", "pain page")
+    assert_contains(pain, "timing, source, activity, and N-of-1 baseline", "pain page")
+    assert_not_contains(pain, "not clinical proof", "pain page")
+    assert_not_contains(pain, "not legal proof", "pain page")
+    assert_not_contains(pain, "do not directly measure pain", "pain page")
     assert_contains(pain, "Walking vs Controlled Rolling", "pain page")
     assert_contains(
         pain,

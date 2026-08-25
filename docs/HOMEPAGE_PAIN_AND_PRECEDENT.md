@@ -26,11 +26,9 @@ The homepage should not include the full FSI Tensor cohort ranking, validation c
 
 ## Pain Page
 
-`pain.html` explains why pain changes the practical meaning of movement. It distinguishes walking from controlled rolling and preserves the evidence boundary:
+`pain.html` explains why pain changes the practical meaning of movement. It distinguishes walking from controlled rolling and reports heart rate, HRV/RMSSD, movement exposure, impact, duration, recovery context, and repeatability with their source and sample scope.
 
-Wearables do not directly measure pain. They measure related burden signals such as heart rate, HRV/RMSSD, movement exposure, impact, duration, recovery context, and repeatability.
-
-The Pain page should stay human, direct, and scientifically cautious. It should not claim that data establishes pain or that a wearable directly measures pain.
+The Pain page should stay human, direct, and scientifically specific.
 
 ## Precedent Summary
 

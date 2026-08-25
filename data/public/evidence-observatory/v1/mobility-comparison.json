@@ -200,7 +200,7 @@
     "unequal_distance_disclosure": "The cohorts and protocol stages cover unequal distances; source-supplied distance remains visible beside every normalized value."
   },
   "conclusion_strength": "supports",
-  "content_hash": "81582c195b1564ffa6e4a606b54a00b88a6f6659024965a1de85ff0e63ce6bfa",
+  "content_hash": "e39d2c7c53adc311dfc62cf60fc126c87cc48bd6855f78bfd7506334bc70ea69",
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
   "evidence_scope": "N-of-1 cohort summaries with unequal exposure disclosed.",
@@ -214,7 +214,7 @@
   ],
   "intended_route": "/evidence/mobility-comparison/",
   "limitations": [
-    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+    "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
   "plain_language_finding": "The repeated record distinguishes a short ballistic walking challenge, a controlled Mall rolling comparator, post-walk PT continuation, and longitudinal therapy skating context.",
   "relation_identities": [

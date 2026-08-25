@@ -104,7 +104,7 @@ Legal/accommodation framing:
 
 - Confirm `/platform.html` clearly represents HandicapSkater.com as the commercial platform/IP page.
 - Confirm `/standards.html` clearly represents HandicapSkater.org as the nonprofit standards/accessibility framework.
-- Confirm `/evidence/` describes HR/HRV/FSI/CSS as supportive evidence, not diagnosis.
+- Confirm `/evidence/` preserves HR/HRV/FSI/CSS metric definitions, source scope, and provenance.
 - Confirm `/precedent.html` preserves legal nuance and does not overstate outcomes.
 - Confirm `/story/` remains readable as the public evidence narrative.
 - Confirm `/story.html` and `/videos.html` redirect to canonical pages.

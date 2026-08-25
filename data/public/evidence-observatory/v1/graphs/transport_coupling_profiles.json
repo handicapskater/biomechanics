@@ -299,7 +299,7 @@
   "alt_text": "Aligned transport panels compare SilverRide, sedan or taxi, motorcycle, bus, and van. SilverRide has 6 persisted FSI observations; component summaries have their own sample counts. Motorcycle changes direction across metrics.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "095cfeddeca22d0ffbc9ba43b1342c70f0f5f3872336bca84fcfe722f9ede0e5",
+  "content_hash": "ce885a6f8ff9314699303b626c60e3496abee02d1c0bd8b68855174f5270975a",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -322,9 +322,9 @@
   "interpretation": "SilverRide retains a small persisted FSI sample (n=6), and motorcycle remains a distinct active-control context. Passive passenger and active locomotion contexts are not collapsed into one ranking.",
   "limitation": null,
   "limitations": [
-    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+    "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
-  "long_description": "SilverRide retains a small persisted FSI sample (n=6), and motorcycle remains a distinct active-control context. Passive passenger and active locomotion contexts are not collapsed into one ranking. FSI and component sample sizes differ and are labeled separately. No transport pattern is a universal safety or superiority claim. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "long_description": "SilverRide retains a small persisted FSI sample (n=6), and motorcycle remains a distinct active-control context. Passive passenger and active locomotion contexts are not collapsed into one ranking. FSI and component sample sizes differ and are labeled separately. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
   "matrix": [],
   "missingness": [],
   "output_asset_names": [
@@ -600,8 +600,7 @@
   ],
   "planned_comparator": null,
   "qualifications": [
-    "FSI and component sample sizes differ and are labeled separately.",
-    "No transport pattern is a universal safety or superiority claim."
+    "FSI and component sample sizes differ and are labeled separately."
   ],
   "question": null,
   "ranking": [],

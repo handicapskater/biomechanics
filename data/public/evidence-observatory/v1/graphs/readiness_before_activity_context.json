@@ -504,7 +504,7 @@
   "alt_text": "24 of 25 accepted triplets have valid pre-Mall WHOOP recovery context; 1 retain explicit missingness.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "a23c8f290d1a36eba4ba6657ba8e96fadcd48f8107675369481484f68c2c613b",
+  "content_hash": "dc8051b8c2928b12341236e979ea6e5a2b24509d436f84a4b066046bc69ad762",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -519,9 +519,9 @@
   "interpretation": "24 accepted triplets have valid pre-Mall readiness context; 1 retain an explicit missing or conflict state.",
   "limitation": null,
   "limitations": [
-    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+    "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
-  "long_description": "24 accepted triplets have valid pre-Mall readiness context; 1 retain an explicit missing or conflict state. Availability is gated by wake completion before Mall activity start. WHOOP overnight HRV is longitudinal readiness context, not Kubios session HRV. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "long_description": "24 accepted triplets have valid pre-Mall readiness context; 1 retain an explicit missing or conflict state. Availability is gated by wake completion before Mall activity start. WHOOP overnight HRV is longitudinal readiness context, not Kubios session HRV. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
   "matrix": [],
   "missingness": [],
   "output_asset_names": [

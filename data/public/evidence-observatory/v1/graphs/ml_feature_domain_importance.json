@@ -131,30 +131,30 @@
       "top_three_fold_appearances": 28
     }
   ],
-  "alt_text": "Fold-level top-three appearance frequency is shown for individual stable features and labeled by scientific domain; frequency is not effect size, and importance is not causation.",
+  "alt_text": "Fold-level top-three appearance frequency is shown for individual stable features and labeled by scientific domain; frequency does not identify effect size.",
   "claim_class": "INTERPRETATION",
   "claim_classes": {},
-  "content_hash": "9bc364d75c7cb5409ed0a78767c30d14eae356c93a63d32affc0016f283d90a6",
+  "content_hash": "51bea7982e5c46356f5662ba10e7faa872c7d44b31dac2f3b377bc7829f903f4",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
   "evidence": {},
-  "finding": "Fold-level top-three appearance frequency is shown for individual stable features and labeled by scientific domain; frequency is not effect size, and importance is not causation.",
+  "finding": "Fold-level top-three appearance frequency is shown for individual stable features and labeled by scientific domain; frequency does not identify effect size.",
   "formula_identities": [
     "hypothesis_ml_reporting.v1.0.0",
     "hypothesis_ml_validation.v1.1.0"
   ],
-  "functional_meaning": "This is supporting N-of-1 classifier discrimination, not causal or clinical proof.",
+  "functional_meaning": "Held-out scores quantify separation across the predeclared cohorts and feature tiers.",
   "graph_contract_version": "fsi_publication_graph.v1",
   "graph_id": "ml_feature_domain_importance",
   "graph_type": "feature_stability_frequency",
   "intended_route": "/platform/",
-  "interpretation": "Fold-level top-three appearance frequency is shown for individual stable features and labeled by scientific domain; frequency is not effect size, and importance is not causation.",
-  "limitation": "N_OF_1; FEATURE_IMPORTANCE_NOT_CAUSAL; WEARABLES_DO_NOT_MEASURE_PAIN",
+  "interpretation": "Fold-level top-three appearance frequency is shown for individual stable features and labeled by scientific domain; frequency does not identify effect size.",
+  "limitation": "N_OF_1; FEATURE_IMPORTANCE_SCOPE; MEASUREMENT_SCOPE",
   "limitations": [
-    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+    "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
-  "long_description": "Fold-level top-three appearance frequency is shown for individual stable features and labeled by scientific domain; frequency is not effect size, and importance is not causation. Frequency of appearing among fold-level top-three features. Frequency is not effect size. Feature importance is not causation. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "long_description": "Fold-level top-three appearance frequency is shown for individual stable features and labeled by scientific domain; frequency does not identify effect size. Frequency of appearing among fold-level top-three features. Feature importance does not identify effect size. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
   "matrix": [],
   "missingness": [],
   "output_asset_names": [
@@ -164,7 +164,7 @@
   "planned_comparator": null,
   "qualifications": [
     "Frequency of appearing among fold-level top-three features.",
-    "Frequency is not effect size. Feature importance is not causation."
+    "Feature importance does not identify effect size."
   ],
   "question": "Which individual features repeatedly appear among fold-level top features?",
   "ranking": [],

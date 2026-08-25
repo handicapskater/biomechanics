@@ -1276,7 +1276,7 @@
   "alt_text": "A coverage matrix lists expected, available, partial, missing, and not-applicable counts for canonical inputs, supported episodic metrics, v2 scientific persistence, and route, weather, readiness, and cohort context.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "40255a5899f5847e89b6ddd9b7f6ba4ab82855ebe8a8619865fc393bb6259bf3",
+  "content_hash": "d170bc28ea383279e6b825c77914cee6a5858eca21db636302d355dfbec61307",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -1293,9 +1293,9 @@
   "interpretation": "Coverage is evidence about availability, not a substitute value. Unsupported Stress/SNS/PNS indices are marked unavailable and have no published measurements.",
   "limitation": null,
   "limitations": [
-    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+    "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
-  "long_description": "Coverage is evidence about availability, not a substitute value. Unsupported Stress/SNS/PNS indices are marked unavailable and have no published measurements. Every row shows n and missingness; zero availability is not imputed. Stress Index, SNS Index, and PNS Index remain explicitly unavailable rather than plotted as values. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "long_description": "Coverage is evidence about availability, not a substitute value. Unsupported Stress/SNS/PNS indices are marked unavailable and have no published measurements. Every row shows n and missingness; zero availability is not imputed. Stress Index, SNS Index, and PNS Index remain explicitly unavailable rather than plotted as values. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
   "matrix": [
     {
       "available_count": 22,

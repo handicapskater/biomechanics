@@ -895,7 +895,7 @@
   "alt_text": "A CSS matrix and ordered ranking list median similarity for canonical cohort pairs with pair counts, component coverage, quality, and distance.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "06ba47716043d27a38646f84b82ba25c919ea852eadee39e11f8cbc3fdc574f0",
+  "content_hash": "6f31470d1d4713c446a346aa2efa44de61780e4820e6444507bc6438eb2c6038",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -913,9 +913,9 @@
   "interpretation": "Higher persisted CSS indicates greater similarity under the unchanged raw-pairwise formula; descriptive return-toward-Mall direction remains a separate contract.",
   "limitation": null,
   "limitations": [
-    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+    "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
-  "long_description": "Higher persisted CSS indicates greater similarity under the unchanged raw-pairwise formula; descriptive return-toward-Mall direction remains a separate contract. Every cell is an existing persisted cohort summary; no matrix value is recomputed in publication. Cell n and component coverage remain visible. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "long_description": "Higher persisted CSS indicates greater similarity under the unchanged raw-pairwise formula; descriptive return-toward-Mall direction remains a separate contract. Every cell is an existing persisted cohort summary; no matrix value is recomputed in publication. Cell n and component coverage remain visible. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
   "matrix": [
     {
       "cohort": null,
