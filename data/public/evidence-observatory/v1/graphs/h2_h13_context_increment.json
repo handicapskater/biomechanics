@@ -1,0 +1,318 @@
+{
+  "accessible_table": [
+    {
+      "activity_n": 182,
+      "balanced_accuracy": 0.8100786302175191,
+      "baseline_balanced_accuracy": 0.8100786302175191,
+      "date_n": 83,
+      "decision": "reject",
+      "empirical_p": 0.0010362694300518134,
+      "feature_tier": "baseline",
+      "incremental_over_baseline": 0.0,
+      "model": "gradient_boosted_trees",
+      "null_median": 0.10540674603174602
+    },
+    {
+      "activity_n": 182,
+      "balanced_accuracy": 0.725191064079953,
+      "baseline_balanced_accuracy": 0.725191064079953,
+      "date_n": 83,
+      "decision": "reject",
+      "empirical_p": 0.0010330578512396695,
+      "feature_tier": "baseline",
+      "incremental_over_baseline": 0.0,
+      "model": "linear_discriminant",
+      "null_median": 0.10400499706055262
+    },
+    {
+      "activity_n": 182,
+      "balanced_accuracy": 0.766251469723692,
+      "baseline_balanced_accuracy": 0.766251469723692,
+      "date_n": 83,
+      "decision": "reject",
+      "empirical_p": 0.001040582726326743,
+      "feature_tier": "baseline",
+      "incremental_over_baseline": 0.0,
+      "model": "logistic_regression",
+      "null_median": 0.10697935038212816
+    },
+    {
+      "activity_n": 182,
+      "balanced_accuracy": 0.7653145208700765,
+      "baseline_balanced_accuracy": 0.7653145208700765,
+      "date_n": 83,
+      "decision": "reject",
+      "empirical_p": 0.0010224948875255625,
+      "feature_tier": "baseline",
+      "incremental_over_baseline": 0.0,
+      "model": "random_forest",
+      "null_median": 0.10328483245149912
+    },
+    {
+      "activity_n": 182,
+      "balanced_accuracy": 0.7556143445032334,
+      "baseline_balanced_accuracy": 0.8100786302175191,
+      "date_n": 83,
+      "decision": "reject",
+      "empirical_p": 0.0010362694300518134,
+      "feature_tier": "baseline_mechanical",
+      "incremental_over_baseline": -0.05446428571428574,
+      "model": "gradient_boosted_trees",
+      "null_median": 0.10457635214579658
+    },
+    {
+      "activity_n": 182,
+      "balanced_accuracy": 0.7523515579071135,
+      "baseline_balanced_accuracy": 0.725191064079953,
+      "date_n": 83,
+      "decision": "reject",
+      "empirical_p": 0.0010416666666666667,
+      "feature_tier": "baseline_mechanical",
+      "incremental_over_baseline": 0.02716049382716046,
+      "model": "linear_discriminant",
+      "null_median": 0.10295781893004115
+    },
+    {
+      "activity_n": 182,
+      "balanced_accuracy": 0.7847699882422104,
+      "baseline_balanced_accuracy": 0.766251469723692,
+      "date_n": 83,
+      "decision": "reject",
+      "empirical_p": 0.001034126163391934,
+      "feature_tier": "baseline_mechanical",
+      "incremental_over_baseline": 0.01851851851851849,
+      "model": "logistic_regression",
+      "null_median": 0.10319848618459729
+    },
+    {
+      "activity_n": 182,
+      "balanced_accuracy": 0.7752792475014698,
+      "baseline_balanced_accuracy": 0.7653145208700765,
+      "date_n": 83,
+      "decision": "reject",
+      "empirical_p": 0.0010351966873706005,
+      "feature_tier": "baseline_mechanical",
+      "incremental_over_baseline": 0.009964726631393361,
+      "model": "random_forest",
+      "null_median": 0.10471781305114639
+    },
+    {
+      "activity_n": 182,
+      "balanced_accuracy": 0.7635508524397413,
+      "baseline_balanced_accuracy": 0.8100786302175191,
+      "date_n": 83,
+      "decision": "reject",
+      "empirical_p": 0.001026694045174538,
+      "feature_tier": "baseline_mechanical_physiology",
+      "incremental_over_baseline": -0.046527777777777835,
+      "model": "gradient_boosted_trees",
+      "null_median": 0.10549309229864784
+    },
+    {
+      "activity_n": 182,
+      "balanced_accuracy": 0.770870076425632,
+      "baseline_balanced_accuracy": 0.725191064079953,
+      "date_n": 83,
+      "decision": "reject",
+      "empirical_p": 0.0010319917440660474,
+      "feature_tier": "baseline_mechanical_physiology",
+      "incremental_over_baseline": 0.04567901234567895,
+      "model": "linear_discriminant",
+      "null_median": 0.10276124338624337
+    },
+    {
+      "activity_n": 182,
+      "balanced_accuracy": 0.7717813051146385,
+      "baseline_balanced_accuracy": 0.766251469723692,
+      "date_n": 83,
+      "decision": "reject",
+      "empirical_p": 0.0010362694300518134,
+      "feature_tier": "baseline_mechanical_physiology",
+      "incremental_over_baseline": 0.005529835390946536,
+      "model": "logistic_regression",
+      "null_median": 0.10148258377425043
+    },
+    {
+      "activity_n": 182,
+      "balanced_accuracy": 0.7992651381540271,
+      "baseline_balanced_accuracy": 0.7653145208700765,
+      "date_n": 83,
+      "decision": "reject",
+      "empirical_p": 0.001037344398340249,
+      "feature_tier": "baseline_mechanical_physiology",
+      "incremental_over_baseline": 0.03395061728395066,
+      "model": "random_forest",
+      "null_median": 0.10424015285126395
+    },
+    {
+      "activity_n": 182,
+      "balanced_accuracy": 0.6969429747207525,
+      "baseline_balanced_accuracy": 0.8100786302175191,
+      "date_n": 83,
+      "decision": "reject",
+      "empirical_p": 0.0010309278350515464,
+      "feature_tier": "sensor_only",
+      "incremental_over_baseline": -0.11313565549676663,
+      "model": "gradient_boosted_trees",
+      "null_median": 0.1052064961787184
+    },
+    {
+      "activity_n": 182,
+      "balanced_accuracy": 0.7155790711346266,
+      "baseline_balanced_accuracy": 0.725191064079953,
+      "date_n": 83,
+      "decision": "reject",
+      "empirical_p": 0.0010416666666666667,
+      "feature_tier": "sensor_only",
+      "incremental_over_baseline": -0.009611992945326442,
+      "model": "linear_discriminant",
+      "null_median": 0.10365226337448559
+    },
+    {
+      "activity_n": 182,
+      "balanced_accuracy": 0.7648993239271017,
+      "baseline_balanced_accuracy": 0.766251469723692,
+      "date_n": 83,
+      "decision": "reject",
+      "empirical_p": 0.0010224948875255625,
+      "feature_tier": "sensor_only",
+      "incremental_over_baseline": -0.001352145796590265,
+      "model": "logistic_regression",
+      "null_median": 0.10451572604350381
+    },
+    {
+      "activity_n": 182,
+      "balanced_accuracy": 0.723398001175779,
+      "baseline_balanced_accuracy": 0.7653145208700765,
+      "date_n": 83,
+      "decision": "reject",
+      "empirical_p": 0.001034126163391934,
+      "feature_tier": "sensor_only",
+      "incremental_over_baseline": -0.04191651969429744,
+      "model": "random_forest",
+      "null_median": 0.10407297178130512
+    },
+    {
+      "activity_n": 182,
+      "balanced_accuracy": 0.7549970605526161,
+      "baseline_balanced_accuracy": 0.8100786302175191,
+      "date_n": 83,
+      "decision": "reject",
+      "empirical_p": 0.001040582726326743,
+      "feature_tier": "sensor_plus_context",
+      "incremental_over_baseline": -0.055081569664903074,
+      "model": "gradient_boosted_trees",
+      "null_median": 0.10627755731922399
+    },
+    {
+      "activity_n": 182,
+      "balanced_accuracy": 0.7523515579071135,
+      "baseline_balanced_accuracy": 0.725191064079953,
+      "date_n": 83,
+      "decision": "reject",
+      "empirical_p": 0.0010330578512396695,
+      "feature_tier": "sensor_plus_context",
+      "incremental_over_baseline": 0.02716049382716046,
+      "model": "linear_discriminant",
+      "null_median": 0.10466637272192829
+    },
+    {
+      "activity_n": 182,
+      "balanced_accuracy": 0.7748934450323339,
+      "baseline_balanced_accuracy": 0.766251469723692,
+      "date_n": 83,
+      "decision": "reject",
+      "empirical_p": 0.0010298661174047373,
+      "feature_tier": "sensor_plus_context",
+      "incremental_over_baseline": 0.00864197530864197,
+      "model": "logistic_regression",
+      "null_median": 0.10522486772486772
+    },
+    {
+      "activity_n": 182,
+      "balanced_accuracy": 0.777336860670194,
+      "baseline_balanced_accuracy": 0.7653145208700765,
+      "date_n": 83,
+      "decision": "reject",
+      "empirical_p": 0.0010256410256410256,
+      "feature_tier": "sensor_plus_context",
+      "incremental_over_baseline": 0.012022339800117576,
+      "model": "random_forest",
+      "null_median": 0.10395539388594943
+    }
+  ],
+  "alt_text": "MIXED/INCONCLUSIVE: overall multiclass discrimination separates from permutation nulls, while incremental-over-baseline values include both gains and losses.",
+  "claim_class": "INTERPRETATION",
+  "claim_classes": {},
+  "content_hash": "cf5106233c5c43b6384a976f5b4f2edf7c8698bd8a6017910ea279c2f875bd79",
+  "coverage": {},
+  "data_through_date": "2026-08-08",
+  "destination": "handicapskater.com",
+  "evidence": {},
+  "finding": "MIXED/INCONCLUSIVE: overall multiclass discrimination separates from permutation nulls, while incremental-over-baseline values include both gains and losses.",
+  "formula_identities": [
+    "hypothesis_ml_reporting.v1.0.0",
+    "hypothesis_ml_validation.v1.1.0"
+  ],
+  "functional_meaning": "This is supporting N-of-1 classifier discrimination, not causal or clinical proof.",
+  "graph_contract_version": "fsi_publication_graph.v1",
+  "graph_id": "h2_h13_context_increment",
+  "graph_type": "diverging_increment_bar",
+  "intended_route": "/platform/",
+  "interpretation": "MIXED/INCONCLUSIVE: overall multiclass discrimination separates from permutation nulls, while incremental-over-baseline values include both gains and losses.",
+  "limitation": "N_OF_1; FEATURE_IMPORTANCE_NOT_CAUSAL; WEARABLES_DO_NOT_MEASURE_PAIN",
+  "limitations": [
+    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+  ],
+  "long_description": "MIXED/INCONCLUSIVE: overall multiclass discrimination separates from permutation nulls, while incremental-over-baseline values include both gains and losses. Zero is the no-increment reference. Positive and negative increments remain visible. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "matrix": [],
+  "missingness": [],
+  "output_asset_names": [
+    "graphs/h2_h13_context_increment.json"
+  ],
+  "panels": [],
+  "planned_comparator": null,
+  "qualifications": [
+    "Zero is the no-increment reference.",
+    "Positive and negative increments remain visible."
+  ],
+  "question": "Does added sensor/context information consistently improve multiclass performance over baseline?",
+  "ranking": [],
+  "relation_identities": [
+    "analysis/hypothesis_ml_validation/results/full/ml_binary_results.csv",
+    "analysis/hypothesis_ml_validation/results/full/ml_multiclass_results.csv",
+    "analysis/hypothesis_ml_validation/results/full/ml_permutation_results.csv",
+    "analysis/hypothesis_ml_validation/results/full/ml_feature_importance.csv"
+  ],
+  "repeatability": [],
+  "sample_counts": {
+    "sensor_context_incremental": 182
+  },
+  "series": [],
+  "source_contracts": [
+    {
+      "contract": "observatory_mcp_resource.v1",
+      "version": "observatory_bundle.v1"
+    },
+    {
+      "contract": "evidence_observatory_presentation.v1",
+      "version": "evidence_observatory_presentation.v1"
+    },
+    {
+      "contract": "scientific_consumer_contract.v1.0.0",
+      "version": "scientific_consumer_contract.v1.0.0"
+    },
+    {
+      "contract": "observatory_graph.v1",
+      "version": "observatory_graph.v1"
+    }
+  ],
+  "source_labels": [
+    "Canonical Hypothesis Registry",
+    "Canonical scientific reviewer views"
+  ],
+  "title": "H2/H13 context increment",
+  "units": [
+    "balanced_accuracy"
+  ]
+}

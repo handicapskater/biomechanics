@@ -1,0 +1,196 @@
+{
+  "accessible_table": [
+    {
+      "date_grouped_balanced_accuracy": 0.8452380952380952,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "exposure_blind_mechanical",
+      "held_out_balanced_accuracy": 0.861904761904762,
+      "model": "gradient_boosted_trees",
+      "permutation_null_median": 0.4714285714285714,
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "date_grouped_balanced_accuracy": 0.9119047619047619,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "exposure_blind_mechanical",
+      "held_out_balanced_accuracy": 0.8952380952380952,
+      "model": "linear_discriminant",
+      "permutation_null_median": 0.4714285714285714,
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "date_grouped_balanced_accuracy": 0.9428571428571428,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "exposure_blind_mechanical",
+      "held_out_balanced_accuracy": 0.9190476190476191,
+      "model": "logistic_regression",
+      "permutation_null_median": 0.5,
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "date_grouped_balanced_accuracy": 0.8785714285714286,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "exposure_blind_mechanical",
+      "held_out_balanced_accuracy": 0.8452380952380952,
+      "model": "random_forest",
+      "permutation_null_median": 0.49047619047619045,
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "date_grouped_balanced_accuracy": 1.0,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "exposure_blind_mechanical",
+      "held_out_balanced_accuracy": 1.0,
+      "model": "gradient_boosted_trees",
+      "permutation_null_median": 0.46354166666666663,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "date_grouped_balanced_accuracy": 1.0,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "exposure_blind_mechanical",
+      "held_out_balanced_accuracy": 1.0,
+      "model": "linear_discriminant",
+      "permutation_null_median": 0.4822916666666667,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "date_grouped_balanced_accuracy": 1.0,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "exposure_blind_mechanical",
+      "held_out_balanced_accuracy": 1.0,
+      "model": "logistic_regression",
+      "permutation_null_median": 0.5010416666666666,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "date_grouped_balanced_accuracy": 1.0,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "exposure_blind_mechanical",
+      "held_out_balanced_accuracy": 1.0,
+      "model": "random_forest",
+      "permutation_null_median": 0.4979166666666667,
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "date_grouped_balanced_accuracy": 0.7574074074074073,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "exposure_blind_mechanical",
+      "held_out_balanced_accuracy": 0.7407407407407407,
+      "model": "gradient_boosted_trees",
+      "permutation_null_median": 0.48518518518518516,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "date_grouped_balanced_accuracy": 0.9833333333333334,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "exposure_blind_mechanical",
+      "held_out_balanced_accuracy": 0.9833333333333334,
+      "model": "linear_discriminant",
+      "permutation_null_median": 0.48703703703703705,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "date_grouped_balanced_accuracy": 0.9203703703703704,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "exposure_blind_mechanical",
+      "held_out_balanced_accuracy": 0.9296296296296296,
+      "model": "logistic_regression",
+      "permutation_null_median": 0.4981481481481481,
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "date_grouped_balanced_accuracy": 0.8407407407407408,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "exposure_blind_mechanical",
+      "held_out_balanced_accuracy": 0.812962962962963,
+      "model": "random_forest",
+      "permutation_null_median": 0.4981481481481481,
+      "task_id": "walking_vs_pt"
+    }
+  ],
+  "alt_text": "Held-out balanced accuracy, date-grouped balanced accuracy, and the permutation-null median remain visible for every reported task/model combination. This sensitivity supports discrimination assessment only and does not establish causation.",
+  "claim_class": "INTERPRETATION",
+  "claim_classes": {},
+  "content_hash": "3b19a96715700c528ecfcfe1dc5c0f7a120bd4290935d408bab6f7c6dcb3c420",
+  "coverage": {},
+  "data_through_date": "2026-08-08",
+  "destination": "handicapskater.com",
+  "evidence": {},
+  "finding": "Held-out balanced accuracy, date-grouped balanced accuracy, and the permutation-null median remain visible for every reported task/model combination. This sensitivity supports discrimination assessment only and does not establish causation.",
+  "formula_identities": [
+    "hypothesis_ml_exposure_blind_graphs.v1.0.0",
+    "hypothesis_ml_exposure_blind_sensitivity.v1.0.0"
+  ],
+  "functional_meaning": "Tests whether H1 discrimination persists after direct exposure-length predictors are excluded.",
+  "graph_contract_version": "fsi_publication_graph.v1",
+  "graph_id": "h1_exposure_blind_mechanical",
+  "graph_type": "grouped_point_range",
+  "intended_route": "/evidence/mobility-comparison/",
+  "interpretation": "Held-out balanced accuracy, date-grouped balanced accuracy, and the permutation-null median remain visible for every reported task/model combination. This sensitivity supports discrimination assessment only and does not establish causation.",
+  "limitation": "N-of-1 sensitivity analysis; feature discrimination is not mechanism or causation, and failure to reject is not equivalence.",
+  "limitations": [
+    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+  ],
+  "long_description": "Held-out balanced accuracy, date-grouped balanced accuracy, and the permutation-null median remain visible for every reported task/model combination. This sensitivity supports discrimination assessment only and does not establish causation. permutation_null_median date_grouped_balanced_accuracy Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "matrix": [],
+  "missingness": [],
+  "output_asset_names": [
+    "graphs/h1_exposure_blind_mechanical.json"
+  ],
+  "panels": [],
+  "planned_comparator": null,
+  "qualifications": [
+    "permutation_null_median",
+    "date_grouped_balanced_accuracy"
+  ],
+  "question": "Does mechanical discrimination persist after exposure-length predictors are removed?",
+  "ranking": [],
+  "relation_identities": [
+    "analysis/hypothesis_ml_validation/results/exposure_blind/ml_binary_results.csv",
+    "analysis/hypothesis_ml_validation/results/exposure_blind/ml_permutation_results.csv"
+  ],
+  "repeatability": [],
+  "sample_counts": {
+    "reported_task_model_rows": 12
+  },
+  "series": [],
+  "source_contracts": [
+    {
+      "contract": "observatory_mcp_resource.v1",
+      "version": "observatory_bundle.v1"
+    },
+    {
+      "contract": "evidence_observatory_presentation.v1",
+      "version": "evidence_observatory_presentation.v1"
+    },
+    {
+      "contract": "scientific_consumer_contract.v1.0.0",
+      "version": "scientific_consumer_contract.v1.0.0"
+    },
+    {
+      "contract": "observatory_graph.v1",
+      "version": "observatory_graph.v1"
+    }
+  ],
+  "source_labels": [
+    "Canonical Hypothesis Registry",
+    "Canonical scientific reviewer views"
+  ],
+  "title": "Exposure-blind mechanical H1 sensitivity",
+  "units": [
+    "balanced_accuracy"
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "accessible_table": [
+    {
+      "activity_n": 41,
+      "balanced_accuracy": 0.5,
+      "date_grouped_balanced_accuracy": 0.5,
+      "date_n": 28,
+      "decision": "fail_to_reject",
+      "empirical_p": 0.773,
+      "feature_tier": "baseline",
+      "model": "gradient_boosted_trees",
+      "null_median": 0.5
+    },
+    {
+      "activity_n": 41,
+      "balanced_accuracy": 0.8611111111111112,
+      "date_grouped_balanced_accuracy": 0.8333333333333333,
+      "date_n": 28,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "baseline",
+      "model": "linear_discriminant",
+      "null_median": 0.47705314009661837
+    },
+    {
+      "activity_n": 41,
+      "balanced_accuracy": 0.9722222222222222,
+      "date_grouped_balanced_accuracy": 0.9166666666666667,
+      "date_n": 28,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "baseline",
+      "model": "logistic_regression",
+      "null_median": 0.49516908212560384
+    },
+    {
+      "activity_n": 41,
+      "balanced_accuracy": 0.9444444444444444,
+      "date_grouped_balanced_accuracy": 0.9444444444444444,
+      "date_n": 28,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "baseline",
+      "model": "random_forest",
+      "null_median": 0.4891304347826087
+    },
+    {
+      "activity_n": 41,
+      "balanced_accuracy": 0.5,
+      "date_grouped_balanced_accuracy": 0.5,
+      "date_n": 28,
+      "decision": "fail_to_reject",
+      "empirical_p": 0.777,
+      "feature_tier": "baseline_mechanical",
+      "model": "gradient_boosted_trees",
+      "null_median": 0.5
+    },
+    {
+      "activity_n": 41,
+      "balanced_accuracy": 0.783816425120773,
+      "date_grouped_balanced_accuracy": 0.8611111111111112,
+      "date_n": 28,
+      "decision": "reject",
+      "empirical_p": 0.002,
+      "feature_tier": "baseline_mechanical",
+      "model": "linear_discriminant",
+      "null_median": 0.4830917874396135
+    },
+    {
+      "activity_n": 41,
+      "balanced_accuracy": 0.9722222222222222,
+      "date_grouped_balanced_accuracy": 0.9444444444444444,
+      "date_n": 28,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "baseline_mechanical",
+      "model": "logistic_regression",
+      "null_median": 0.49879227053140096
+    },
+    {
+      "activity_n": 41,
+      "balanced_accuracy": 0.894927536231884,
+      "date_grouped_balanced_accuracy": 0.894927536231884,
+      "date_n": 28,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "baseline_mechanical",
+      "model": "random_forest",
+      "null_median": 0.4830917874396135
+    },
+    {
+      "activity_n": 41,
+      "balanced_accuracy": 0.5,
+      "date_grouped_balanced_accuracy": 0.5,
+      "date_n": 28,
+      "decision": "fail_to_reject",
+      "empirical_p": 0.753,
+      "feature_tier": "baseline_mechanical_physiology",
+      "model": "gradient_boosted_trees",
+      "null_median": 0.5
+    },
+    {
+      "activity_n": 41,
+      "balanced_accuracy": 0.8454106280193237,
+      "date_grouped_balanced_accuracy": 0.7620772946859904,
+      "date_n": 28,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "baseline_mechanical_physiology",
+      "model": "linear_discriminant",
+      "null_median": 0.49275362318840576
+    },
+    {
+      "activity_n": 41,
+      "balanced_accuracy": 0.9722222222222222,
+      "date_grouped_balanced_accuracy": 0.9444444444444444,
+      "date_n": 28,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "baseline_mechanical_physiology",
+      "model": "logistic_regression",
+      "null_median": 0.4830917874396135
+    },
+    {
+      "activity_n": 41,
+      "balanced_accuracy": 0.894927536231884,
+      "date_grouped_balanced_accuracy": 0.9227053140096618,
+      "date_n": 28,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "baseline_mechanical_physiology",
+      "model": "random_forest",
+      "null_median": 0.4891304347826087
+    },
+    {
+      "activity_n": 41,
+      "balanced_accuracy": 0.5,
+      "date_grouped_balanced_accuracy": 0.5,
+      "date_n": 28,
+      "decision": "fail_to_reject",
+      "empirical_p": 0.773,
+      "feature_tier": "sensor_only",
+      "model": "gradient_boosted_trees",
+      "null_median": 0.5
+    },
+    {
+      "activity_n": 41,
+      "balanced_accuracy": 0.8888888888888888,
+      "date_grouped_balanced_accuracy": 0.8611111111111112,
+      "date_n": 28,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "sensor_only",
+      "model": "linear_discriminant",
+      "null_median": 0.47705314009661837
+    },
+    {
+      "activity_n": 41,
+      "balanced_accuracy": 0.9444444444444444,
+      "date_grouped_balanced_accuracy": 0.9166666666666667,
+      "date_n": 28,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "sensor_only",
+      "model": "logistic_regression",
+      "null_median": 0.49516908212560384
+    },
+    {
+      "activity_n": 41,
+      "balanced_accuracy": 0.894927536231884,
+      "date_grouped_balanced_accuracy": 0.9009661835748792,
+      "date_n": 28,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "sensor_only",
+      "model": "random_forest",
+      "null_median": 0.4830917874396135
+    },
+    {
+      "activity_n": 41,
+      "balanced_accuracy": 0.5,
+      "date_grouped_balanced_accuracy": 0.5,
+      "date_n": 28,
+      "decision": "fail_to_reject",
+      "empirical_p": 0.774,
+      "feature_tier": "sensor_plus_context",
+      "model": "gradient_boosted_trees",
+      "null_median": 0.5
+    },
+    {
+      "activity_n": 41,
+      "balanced_accuracy": 0.8393719806763285,
+      "date_grouped_balanced_accuracy": 0.8611111111111112,
+      "date_n": 28,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "sensor_plus_context",
+      "model": "linear_discriminant",
+      "null_median": 0.4867149758454106
+    },
+    {
+      "activity_n": 41,
+      "balanced_accuracy": 0.9722222222222222,
+      "date_grouped_balanced_accuracy": 0.9444444444444444,
+      "date_n": 28,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "sensor_plus_context",
+      "model": "logistic_regression",
+      "null_median": 0.49516908212560384
+    },
+    {
+      "activity_n": 41,
+      "balanced_accuracy": 0.9166666666666667,
+      "date_grouped_balanced_accuracy": 0.9227053140096618,
+      "date_n": 28,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "feature_tier": "sensor_plus_context",
+      "model": "random_forest",
+      "null_median": 0.4830917874396135
+    }
+  ],
+  "alt_text": "Transportation discrimination is mixed across model/tier combinations; rejecting and non-rejecting results remain visible.",
+  "claim_class": "INTERPRETATION",
+  "claim_classes": {},
+  "content_hash": "ec1573d4da59756a9089c27cd856695c245b3b3fc31a593dbfa9dee6b29523b0",
+  "coverage": {},
+  "data_through_date": "2026-08-08",
+  "destination": "handicapskater.com",
+  "evidence": {},
+  "finding": "Transportation discrimination is mixed across model/tier combinations; rejecting and non-rejecting results remain visible.",
+  "formula_identities": [
+    "hypothesis_ml_reporting.v1.0.0",
+    "hypothesis_ml_validation.v1.1.0"
+  ],
+  "functional_meaning": "This is supporting N-of-1 classifier discrimination, not causal or clinical proof.",
+  "graph_contract_version": "fsi_publication_graph.v1",
+  "graph_id": "h3_transport_validation",
+  "graph_type": "observed_null_dumbbell",
+  "intended_route": "/evidence/transportation/",
+  "interpretation": "Transportation discrimination is mixed across model/tier combinations; rejecting and non-rejecting results remain visible.",
+  "limitation": "N_OF_1; FEATURE_IMPORTANCE_NOT_CAUSAL; WEARABLES_DO_NOT_MEASURE_PAIN; SPARSE_VEHICLE_SUBTYPES; FAILURE_TO_REJECT_NOT_EQUIVALENCE",
+  "limitations": [
+    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+  ],
+  "long_description": "Transportation discrimination is mixed across model/tier combinations; rejecting and non-rejecting results remain visible. Neutral cohort labels are used. Non-rejecting results are retained. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "matrix": [],
+  "missingness": [],
+  "output_asset_names": [
+    "graphs/h3_transport_validation.json"
+  ],
+  "panels": [],
+  "planned_comparator": null,
+  "qualifications": [
+    "Neutral cohort labels are used.",
+    "Non-rejecting results are retained."
+  ],
+  "question": "Can bus + van events be discriminated from sedan/taxi + SilverRide events?",
+  "ranking": [],
+  "relation_identities": [
+    "analysis/hypothesis_ml_validation/results/full/ml_binary_results.csv",
+    "analysis/hypothesis_ml_validation/results/full/ml_multiclass_results.csv",
+    "analysis/hypothesis_ml_validation/results/full/ml_permutation_results.csv",
+    "analysis/hypothesis_ml_validation/results/full/ml_feature_importance.csv"
+  ],
+  "repeatability": [],
+  "sample_counts": {
+    "passive_transport": 41
+  },
+  "series": [],
+  "source_contracts": [
+    {
+      "contract": "observatory_mcp_resource.v1",
+      "version": "observatory_bundle.v1"
+    },
+    {
+      "contract": "evidence_observatory_presentation.v1",
+      "version": "evidence_observatory_presentation.v1"
+    },
+    {
+      "contract": "scientific_consumer_contract.v1.0.0",
+      "version": "scientific_consumer_contract.v1.0.0"
+    },
+    {
+      "contract": "observatory_graph.v1",
+      "version": "observatory_graph.v1"
+    }
+  ],
+  "source_labels": [
+    "Kubios/Polar H10 transport sessions",
+    "Canonical body-coupling mapping"
+  ],
+  "title": "H3 transportation validation",
+  "units": [
+    "balanced_accuracy"
+  ]
+}

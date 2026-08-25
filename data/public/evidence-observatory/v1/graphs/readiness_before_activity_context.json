@@ -519,9 +519,9 @@
   "interpretation": "24 accepted triplets have valid pre-Mall readiness context; 1 retain an explicit missing or conflict state.",
   "limitation": null,
   "limitations": [
-    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. Results are N-of-1 evidence and provides the basis for evolutionary investigation."
+    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
   ],
-  "long_description": "24 accepted triplets have valid pre-Mall readiness context; 1 retain an explicit missing or conflict state. Availability is gated by wake completion before Mall activity start. WHOOP overnight HRV is longitudinal readiness context, not Kubios session HRV. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. Results are N-of-1 evidence and provides the basis for evolutionary investigation.",
+  "long_description": "24 accepted triplets have valid pre-Mall readiness context; 1 retain an explicit missing or conflict state. Availability is gated by wake completion before Mall activity start. WHOOP overnight HRV is longitudinal readiness context, not Kubios session HRV. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
   "matrix": [],
   "missingness": [],
   "output_asset_names": [

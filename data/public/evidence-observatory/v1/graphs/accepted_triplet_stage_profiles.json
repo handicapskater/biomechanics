@@ -8636,12 +8636,12 @@
   "graph_id": "accepted_triplet_stage_profiles",
   "graph_type": "stage_small_multiples",
   "intended_route": "/evidence/repeated-protocol/",
-  "interpretation": "The repeated protocol shows consistent stage structure with metric specific PT movement toward Mall, away from Mall, or unchanged.",
+  "interpretation": "The repeated protocol shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged; no universal return claim is made.",
   "limitation": "The fixed stage order may include order, duration, and environment effects; repeated observations are from one individual.",
   "limitations": [
-    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
+    "Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof."
   ],
-  "long_description": "The repeated protocol shows consistent stage structure with metric specific PT movement toward Mall, away from Mall, or unchanged. CSS connectors show three unique stage pairs when persisted canonical same-day CSS is available; an unavailable date is explicit, and reciprocal or identity rows are audit-only. Return direction is descriptive, not Cohort Similarity Score. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
+  "long_description": "The repeated protocol shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged; no universal return claim is made. CSS connectors show three unique stage pairs when persisted canonical same-day CSS is available; an unavailable date is explicit, and reciprocal or identity rows are audit-only. Return direction is descriptive, not Cohort Similarity Score. Wearables estimate physiologic, autonomic, MSK, movement, impact, and transport burden. They do not directly measure pain. Results are N-of-1 evidence, not clinical proof, diagnosis, causation, universal proof, or legal proof.",
   "matrix": [],
   "missingness": [
     "unequal_distance",

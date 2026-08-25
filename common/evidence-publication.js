@@ -79,11 +79,14 @@
 
   function graph(manifest, id) {
     const entry = entryById(manifest.graphs, "graph_id", id);
-    return fetchJson(entry.path).then(function (payload) {
+    if (!safePath(entry.artifact_path)) return Promise.reject(new Error("Publication graph artifact unavailable"));
+    return fetchJson(entry.artifact_path).then(function (payload) {
       if (
         !payload ||
         payload.graph_id !== id ||
         payload.destination !== DESTINATION ||
+        entry.destination !== DESTINATION ||
+        entry.page !== payload.intended_route ||
         payload.graph_contract_version !== GRAPH_VERSION ||
         payload.content_hash !== entry.content_hash
       ) {

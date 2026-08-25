@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import re
 import unittest
 from html.parser import HTMLParser
@@ -192,24 +193,28 @@ class SiteTests(unittest.TestCase):
         self.assertIn('rel="noopener noreferrer"', js)
         self.assertIn("const className = external ? ' class=\"nav-link external-link\"' : ' class=\"nav-link\"'", js)
 
-    def test_page_navigation_button_rows_are_pruned(self) -> None:
-        for page in ("evidence/index.html", "health-ai/index.html", "story/index.html"):
-            html = read(page)
-            self.assertNotIn('class="button-row"', html, page)
+    def test_page_button_rows_are_limited_to_current_local_actions(self) -> None:
+        for page in ("health-ai/index.html", "story/index.html"):
+            self.assertNotIn('class="button-row"', read(page), page)
+        evidence = read("evidence/index.html")
+        self.assertEqual(evidence.count('class="button-row"'), 1)
+        self.assertIn('href="/evidence/repeated-protocol/"', evidence)
+        self.assertIn('href="/evidence/mobility-comparison/#functional-output"', evidence)
         home = read("index.html")
         self.assertEqual(home.count('class="button-row"'), 1)
         hook = home.split('class="button-row"', 1)[1].split("</div>", 1)[0]
         self.assertIn("Watch the Smart &amp; Final video", hook)
         self.assertNotIn('href="/', hook)
 
-    def test_primary_navigation_is_flat_and_has_seven_items(self) -> None:
+    def test_primary_navigation_uses_current_observatory_dropdown(self) -> None:
         js = site_header_js()
         css = nav_css()
         self.assertIn("primaryLinks", js)
-        config = js[js.index("primaryLinks:"):js.index("function normalizePath")]
-        self.assertEqual(config.count("label:"), 7)
+        for label in EXPECTED_NAV_LABELS:
+            self.assertIn(f'label: "{label}"', js)
+        self.assertIn('children: [', js)
+        self.assertIn('class="nav-dropdown"', js)
         self.assertNotIn("menuGroups", js)
-        self.assertNotIn("renderNavMenu", js)
         self.assertNotIn(".nav-more", css)
 
     def test_com_header_identity_is_the_home_link(self) -> None:
@@ -256,35 +261,65 @@ class SiteTests(unittest.TestCase):
         self.assertIn("publication contract", platform)
         self.assertIn("human review", platform)
 
-    def test_evidence_observatory_navigation_links_the_seven_cases_and_ask(self) -> None:
+    def test_evidence_observatory_navigation_uses_current_local_sections(self) -> None:
         js = site_header_js()
         self.assertIn('class="nav-dropdown"', js)
         self.assertIn('class="nav-dropdown-menu"', js)
-        self.assertIn('/platform/', js)
-        for case_id in (
-            "walking-mechanical-load",
-            "experiment-validation",
-            "functional-mobility",
-            "longitudinal-capacity",
-            "transportation-body-coupling",
-            "integrated-mobility-metrics",
-            "fixed-rail-comparator",
+        for href in (
+            "/platform/",
+            "/evidence/",
+            "/evidence/mobility-comparison/",
+            "/evidence/repeated-protocol/",
+            "/evidence/transportation/",
+            "/evidence/longitudinal/",
+            "/evidence/strava-gps-skate-maps/#route-browser",
         ):
-            self.assertIn(f"https://evidence.handicapskater.com/#case-{case_id}", js)
-        self.assertIn("https://evidence.handicapskater.com/#ask-evidence", js)
+            self.assertIn(f'href: "{href}"', js)
+        self.assertNotIn('href: "https://evidence.handicapskater.com/#ask-evidence"', js)
 
-    def test_primary_pages_link_to_their_observatory_cases(self) -> None:
+    def test_primary_pages_link_to_current_local_evidence_sections(self) -> None:
         mappings = {
-            "pain/index.html": ("case-walking-mechanical-load",),
-            "evidence/index.html": ("case-experiment-validation", "case-functional-mobility"),
-            "access/index.html": ("case-transportation-body-coupling", "case-fixed-rail-comparator"),
-            "health-ai/index.html": ("case-integrated-mobility-metrics",),
-            "evidence/longitudinal/index.html": ("case-longitudinal-capacity",),
+            "evidence/index.html": (
+                "/evidence/repeated-protocol/",
+                "/evidence/mobility-comparison/#functional-output",
+            ),
+            "access/index.html": ("/evidence/transportation/#transport-graph",),
         }
-        for page, case_ids in mappings.items():
+        for page, hrefs in mappings.items():
             html = read(page)
-            for case_id in case_ids:
-                self.assertIn(f"https://evidence.handicapskater.com/#{case_id}", html)
+            for href in hrefs:
+                self.assertIn(f'href="{href}"', html)
+
+    def test_ml_graph_artifacts_resolve_to_their_current_com_pages(self) -> None:
+        manifest = json.loads(read("data/public/evidence-observatory/v1/manifest.json"))
+        entries = {entry["graph_id"]: entry for entry in manifest["graphs"]}
+        expected = {
+            "h1_exposure_blind_mechanical": "/evidence/mobility-comparison/",
+            "h1_feature_tier_validation": "/platform/",
+            "h1_mechanical_only_validation": "/evidence/mobility-comparison/",
+            "h2_h13_context_increment": "/platform/",
+            "h3_transport_validation": "/evidence/transportation/",
+            "ml_feature_domain_importance": "/platform/",
+        }
+        reader = read("common/evidence-publication.js")
+        self.assertIn("fetchJson(entry.artifact_path)", reader)
+        self.assertIn('entryById(manifest.graphs, "graph_id", id)', reader)
+        for graph_id, page in expected.items():
+            entry = entries[graph_id]
+            self.assertEqual(entry["destination"], "handicapskater.com")
+            self.assertEqual(entry["page"], page)
+            self.assertEqual(entry["artifact_filename"], Path(entry["artifact_path"]).name)
+            payload = json.loads(read(f"data/public/evidence-observatory/v1/{entry['artifact_path']}"))
+            self.assertEqual(payload["graph_id"], graph_id)
+            self.assertEqual(payload["content_hash"], entry["content_hash"])
+            page_html = read(page.removeprefix("/") + "index.html")
+            self.assertIn('evidence-publication.js', page_html)
+            self.assertIn(f'data-publication-graph="{graph_id}"', page_html)
+
+    def test_unknown_publication_graph_fails_closed_in_reader(self) -> None:
+        reader = read("common/evidence-publication.js")
+        self.assertIn('entryById(manifest.graphs, "graph_id", id)', reader)
+        self.assertIn('throw new Error("Publication entry unavailable")', reader)
 
     def test_nav_focus_is_not_grouped_with_current_page_active_style(self) -> None:
         css = nav_css()
@@ -436,15 +471,25 @@ class SiteTests(unittest.TestCase):
         self.assertNotIn("calculateFsi", reader)
         self.assertNotIn("calculateCss", reader)
 
-    def test_public_evidence_uses_five_approved_observatory_figures(self) -> None:
+    def test_public_evidence_mounts_current_approved_observatory_figures(self) -> None:
         pages = {
             "evidence/repeated-protocol/index.html": ("accepted_triplet_stage_profiles",),
             "evidence/mobility-comparison/index.html": (
                 "walking_vs_mall_accumulated_mechanical_load",
                 "triplet_functional_output_context",
+                "h1_mechanical_only_validation",
+                "h1_exposure_blind_mechanical",
             ),
             "evidence/longitudinal/index.html": ("fns_sns_longitudinal_functional_capacity",),
-            "evidence/transportation/index.html": ("transportation_body_coupling_comparison",),
+            "evidence/transportation/index.html": (
+                "transportation_body_coupling_comparison",
+                "h3_transport_validation",
+            ),
+            "platform/index.html": (
+                "h1_feature_tier_validation",
+                "h2_h13_context_increment",
+                "ml_feature_domain_importance",
+            ),
         }
         mounted = []
         for page, expected in pages.items():
@@ -452,7 +497,7 @@ class SiteTests(unittest.TestCase):
             ids = re.findall(r'data-publication-graph="([^"]+)"', html)
             self.assertEqual(tuple(ids), expected, page)
             mounted.extend(ids)
-        self.assertEqual(len(mounted), 5)
+        self.assertEqual(len(mounted), 11)
         reader = read("common/evidence-publication.js")
         self.assertIn("Inspect in Evidence Observatory", reader)
         self.assertIn("No measured value or zero bar is shown", reader)
