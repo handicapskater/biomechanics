@@ -333,7 +333,7 @@
     "repeatability": "MEASURED",
     "values": "MEASURED"
   },
-  "content_hash": "bf9d969c1a6083af7631ab7154e6ed98a9698fcd547785ca8e00cb1016b9badf",
+  "content_hash": "2a93856e85e99ffb55d0ccc48bf7c72ea54da7f7727924077928b088f7b8706f",
   "coverage": {
     "cumulative_dynamic_shock_per_min": 25
   },
@@ -357,7 +357,7 @@
       "cumulative_dynamic_shock_per_min": "g*s/min"
     }
   },
-  "finding": "Walking produced materially greater accumulated dynamic shock per minute than controlled Mall skating across the accepted repeated protocol.",
+  "finding": "Walking produced materially greater accumulated dynamic shock per minute than controlled Mall skating across accepted Mobility Perturbation & Recovery Experiment dates.",
   "formula_identities": [
     "episodic_kubios_metrics.v1.0.0",
     "kubios_acc_session_metrics.v1",
@@ -373,12 +373,12 @@
   "graph_id": "walking_vs_mall_accumulated_mechanical_load",
   "graph_type": "paired_date_dumbbells",
   "intended_route": "/evidence/mobility-comparison/",
-  "interpretation": "Walking produced materially greater accumulated dynamic shock per minute than controlled Mall skating across the accepted repeated protocol.",
+  "interpretation": "Walking produced materially greater accumulated dynamic shock per minute than controlled Mall skating across accepted Mobility Perturbation & Recovery Experiment dates.",
   "limitation": "This repeated comparison reports mechanical exposure for accepted paired dates; sample size and date coverage remain explicit.",
   "limitations": [
     "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
-  "long_description": "Walking produced materially greater accumulated dynamic shock per minute than controlled Mall skating across the accepted repeated protocol. Each line joins Mall and Walk values recorded on the same accepted date. Medians are persisted; direction counts are calculated from the displayed paired records. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
+  "long_description": "Walking produced materially greater accumulated dynamic shock per minute than controlled Mall skating across accepted Mobility Perturbation & Recovery Experiment dates. Each line joins Mall and Walk values recorded on the same accepted date. Medians are persisted; direction counts are calculated from the displayed paired records. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
   "matrix": [],
   "missingness": [
     "n_of_1",

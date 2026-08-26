@@ -1,6 +1,6 @@
 {
   "accessibility": {
-    "plain_language_summary": "The repeated protocol shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged; no universal return claim is made.",
+    "plain_language_summary": "The Mobility Perturbation & Recovery Experiment shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged.",
     "sample_counts_visible": true,
     "screen_reader_summary": "25 accepted dates are shown as three-stage Mall Skate, Walk, and PT Skate profiles. Metric-specific directions remain mixed; canonical same-day CSS is shown when materialized, and reciprocal CSS rows are omitted from the default view.",
     "table_available": true,
@@ -420,7 +420,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "no_matching_strava_activity",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -764,7 +764,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "pending_weekly_download",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -1108,7 +1108,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "pending_weekly_download",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -1452,7 +1452,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "pending_weekly_download",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -1796,7 +1796,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "partial",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -2140,7 +2140,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "partial",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -2484,7 +2484,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "partial",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -2828,7 +2828,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "partial",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -3172,7 +3172,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "partial",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -3516,7 +3516,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "partial",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -3860,7 +3860,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "partial",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -4204,7 +4204,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "partial",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -4548,7 +4548,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "partial",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -4892,7 +4892,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "partial",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -5236,7 +5236,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "partial",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -5580,7 +5580,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "partial",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -5924,7 +5924,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "partial",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -6268,7 +6268,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "partial",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -6612,7 +6612,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "partial",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -6956,7 +6956,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "partial",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -7300,7 +7300,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "partial",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -7644,7 +7644,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "partial",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -7955,7 +7955,7 @@
           ],
           "unchanged": []
         },
-        "late_strava_status": "partial",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -8301,7 +8301,7 @@
           "unavailable": [],
           "unchanged": []
         },
-        "late_strava_status": "partial",
+        "late_strava_status": "joined",
         "protocol_version": "mall_walk_pt.v1",
         "stages": [
           {
@@ -8579,6 +8579,22 @@
       }
     ],
     "accepted_triplet_count": 25,
+    "experiment_display": {
+      "canonical_resource_id_unchanged": true,
+      "display_name": "Mobility Perturbation & Recovery Experiment",
+      "sequence": [
+        "Controlled Mall skating",
+        "Walking perturbation",
+        "PT skating recovery / continued functional mobility"
+      ]
+    },
+    "planned_extension": {
+      "access_status": "ACCESS-LIMITED",
+      "context_route": "/access/",
+      "display_name": "Access-Limited Fixed-Rail Extension",
+      "measurement_status": "UNMEASURED",
+      "test_status": "PLANNED_TEST"
+    },
     "protocol": [
       {
         "description": "controlled, step-free skating comparator",
@@ -9247,7 +9263,7 @@
     "stage_fsi_status": "metric_not_exposed_for_triplet_stage"
   },
   "conclusion_strength": "supports_with_qualification",
-  "content_hash": "7ee432ed92b5164ddfb14519027e8e2f2d3c0ffbaeece46dc84e3257bc2cbcde",
+  "content_hash": "a9dbdd586790d50636f4f6fcb35c2b862fcc6c3ccfcba2d7248b40ddda658ab6",
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
   "evidence_scope": "Accepted, review-gated same-day N-of-1 protocols.",
@@ -9270,7 +9286,7 @@
   "limitations": [
     "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
-  "plain_language_finding": "The repeated protocol shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged; no universal return claim is made.",
+  "plain_language_finding": "The Mobility Perturbation & Recovery Experiment shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged.",
   "relation_identities": [
     "v_same_day_triplets",
     "v_same_day_triplet_event_detail",
@@ -9285,7 +9301,7 @@
   "sample_counts": {
     "accepted_triplets": 25
   },
-  "short_title": "Repeated protocol",
+  "short_title": "Perturbation & recovery experiment",
   "source_contracts": [
     {
       "contract": "observatory_mcp_resource.v1",
@@ -9309,8 +9325,8 @@
     "Kubios/Polar H10",
     "Strava"
   ],
-  "summary": "The repeated protocol shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged; no universal return claim is made.",
-  "title": "Repeated Mall → Walk → PT Skate protocol",
+  "summary": "The Mobility Perturbation & Recovery Experiment shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged.",
+  "title": "Mobility Perturbation & Recovery Experiment",
   "units": [
     "bpm",
     "count/min",

@@ -412,7 +412,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "no_matching_strava_activity",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -756,7 +756,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "pending_weekly_download",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -1100,7 +1100,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "pending_weekly_download",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -1444,7 +1444,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "pending_weekly_download",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -1788,7 +1788,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "partial",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -2132,7 +2132,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "partial",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -2476,7 +2476,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "partial",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -2820,7 +2820,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "partial",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -3164,7 +3164,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "partial",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -3508,7 +3508,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "partial",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -3852,7 +3852,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "partial",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -4196,7 +4196,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "partial",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -4540,7 +4540,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "partial",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -4884,7 +4884,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "partial",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -5228,7 +5228,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "partial",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -5572,7 +5572,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "partial",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -5916,7 +5916,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "partial",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -6260,7 +6260,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "partial",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -6604,7 +6604,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "partial",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -6948,7 +6948,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "partial",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -7292,7 +7292,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "partial",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -7636,7 +7636,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "partial",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -7947,7 +7947,7 @@
         ],
         "unchanged": []
       },
-      "late_strava_status": "partial",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -8293,7 +8293,7 @@
         "unavailable": [],
         "unchanged": []
       },
-      "late_strava_status": "partial",
+      "late_strava_status": "joined",
       "protocol_version": "mall_walk_pt.v1",
       "stages": [
         {
@@ -8577,7 +8577,7 @@
     "repeatability": "MEASURED",
     "values": "MEASURED"
   },
-  "content_hash": "c992eff8e23e5a47b26b07750b0d450798f27959679e477734d7ed55d248f36f",
+  "content_hash": "35886b3e74489bdd5521f872852c8370640725cb2da416ff5bdf85a0e0eb83d3",
   "coverage": {
     "accepted_triplets": 25
   },
@@ -8636,12 +8636,12 @@
   "graph_id": "accepted_triplet_stage_profiles",
   "graph_type": "stage_small_multiples",
   "intended_route": "/evidence/repeated-protocol/",
-  "interpretation": "The repeated protocol shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged; no universal return claim is made.",
+  "interpretation": "The Mobility Perturbation & Recovery Experiment shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged.",
   "limitation": "The fixed stage order may include order, duration, and environment effects; repeated observations are from one individual.",
   "limitations": [
     "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
-  "long_description": "The repeated protocol shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged; no universal return claim is made. CSS connectors show three unique stage pairs when persisted canonical same-day CSS is available; an unavailable date is explicit, and reciprocal or identity rows are audit-only. Return direction is descriptive, not Cohort Similarity Score. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
+  "long_description": "The Mobility Perturbation & Recovery Experiment shows consistent stage structure with metric-specific PT movement toward Mall, away from Mall, or unchanged. CSS connectors show three unique stage pairs when persisted canonical same-day CSS is available; an unavailable date is explicit, and reciprocal or identity rows are audit-only. Return direction is descriptive, not Cohort Similarity Score. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
   "matrix": [],
   "missingness": [
     "unequal_distance",
@@ -16094,7 +16094,7 @@
     "Kubios/Polar H10",
     "Strava"
   ],
-  "title": "Repeated Mall → Walk → PT Skate protocol",
+  "title": "Mobility Perturbation & Recovery Experiment",
   "units": [
     "bpm",
     "count/min",
