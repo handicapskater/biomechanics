@@ -4,6 +4,27 @@
   margin: 0 auto;
 }
 
+.phase2-publication-visual { display: grid; gap: 1rem; width: 100%; }
+.phase2-direction-counts { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; }
+.phase2-direction-counts article { display: grid; gap: .2rem; padding: 1rem; border: 1px solid var(--color-border, #cad5df); border-radius: .6rem; text-align: center; }
+.phase2-direction-counts strong { font-size: 1.8rem; }
+.phase2-robust-summary { margin: 0; text-align: center; font-weight: 700; }
+.phase2-forest article { display: grid; grid-template-columns: minmax(9rem, 12rem) 1fr; gap: .4rem 1rem; margin: 1rem 0; }
+.phase2-forest article p { grid-column: 1 / -1; margin: 0; font-size: .9rem; }
+.phase2-effect-track { position: relative; height: 1.5rem; border-bottom: 1px solid var(--color-border, #cad5df); }
+.phase2-zero { position: absolute; inset-block: 0; width: 1px; background: currentColor; }
+.phase2-ci { position: absolute; top: .7rem; height: 3px; background: var(--color-accent, #087f8c); }
+.phase2-point { position: absolute; top: .35rem; width: .8rem; height: .8rem; border-radius: 50%; background: var(--color-accent, #087f8c); transform: translateX(-50%); }
+.phase2-reference-row { display: grid; grid-template-columns: 6rem 1fr; gap: .4rem 1rem; padding: .75rem 0; border-bottom: 1px solid var(--color-border, #cad5df); }
+.phase2-reference-row > p { grid-column: 2; margin: 0; }
+.phase2-rate-line { position: relative; display: grid; grid-template-columns: 3rem 1fr; overflow: hidden; }
+.phase2-rate-line i { position: absolute; inset: 0 auto 0 3rem; min-width: 2px; background: var(--color-accent, #087f8c); opacity: .22; }
+.phase2-rate-line b { z-index: 1; }
+.phase2-temporal-panels { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.phase2-temporal-panels section { padding: 1rem; border: 1px solid var(--color-border, #cad5df); border-radius: .6rem; }
+.phase2-screening { justify-self: start; padding: .35rem .55rem; }
+@media (max-width: 680px) { .phase2-direction-counts, .phase2-temporal-panels { grid-template-columns: 1fr; } .phase2-forest article, .phase2-reference-row { grid-template-columns: 1fr; } .phase2-reference-row > p { grid-column: 1; } }
+
 [data-publication-resource],
 [data-publication-graph],
 [data-publication-identities],

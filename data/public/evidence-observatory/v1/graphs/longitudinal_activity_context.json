@@ -629,6 +629,72 @@
     },
     {
       "active_date_count": 10,
+      "activity_count": 10,
+      "activity_frequency_per_week": 5.833333333333334,
+      "body_coupling_class": "active_controlled",
+      "body_coupling_mapping_version": "body_coupling_mapping.v1",
+      "canonical_cohort": "mall_skating",
+      "data_end_date": "2026-08-13",
+      "data_start_date": "2026-08-02",
+      "event_count": 10,
+      "iqr_average_hr_bpm": 4.0,
+      "iqr_distance_miles": 0.07722090491529476,
+      "iqr_duration_minutes": 2.124999999999993,
+      "iqr_max_hr_bpm": 3.0,
+      "iqr_whoop_strain": 0.09999999999999964,
+      "joined_event_count": 5,
+      "longitudinal_metric_version": "longitudinal_whoop_strava_metrics.v1.0.0",
+      "median_average_hr_bpm": 66.0,
+      "median_distance_miles": 2.030672124791219,
+      "median_duration_minutes": 34.275000000000006,
+      "median_max_hr_bpm": 74.0,
+      "median_whoop_strain": 8.2,
+      "period_end_local": "2026-08-31",
+      "period_grain": "month",
+      "period_start_local": "2026-08-01",
+      "quality_status": "valid",
+      "source_coverage": "kubios+strava+whoop",
+      "strava_event_count": 10,
+      "total_distance_miles": 20.332011055436254,
+      "total_duration_minutes": 340.35,
+      "total_moving_time_minutes": 331.2333333333333,
+      "whoop_event_count": 5
+    },
+    {
+      "active_date_count": 10,
+      "activity_count": 10,
+      "activity_frequency_per_week": 5.833333333333334,
+      "body_coupling_class": "active_controlled",
+      "body_coupling_mapping_version": "body_coupling_mapping.v1",
+      "canonical_cohort": "pt_skating",
+      "data_end_date": "2026-08-13",
+      "data_start_date": "2026-08-02",
+      "event_count": 10,
+      "iqr_average_hr_bpm": 3.5,
+      "iqr_distance_miles": 0.014990580012725241,
+      "iqr_duration_minutes": 0.6791666666666671,
+      "iqr_max_hr_bpm": 6.5,
+      "iqr_whoop_strain": 0.1,
+      "joined_event_count": 5,
+      "longitudinal_metric_version": "longitudinal_whoop_strava_metrics.v1.0.0",
+      "median_average_hr_bpm": 77.0,
+      "median_distance_miles": 1.8222020897955935,
+      "median_duration_minutes": 17.40833333333333,
+      "median_max_hr_bpm": 95.0,
+      "median_whoop_strain": 0.0,
+      "period_end_local": "2026-08-31",
+      "period_grain": "month",
+      "period_start_local": "2026-08-01",
+      "quality_status": "valid",
+      "source_coverage": "kubios+strava+whoop",
+      "strava_event_count": 10,
+      "total_distance_miles": 18.21953541318699,
+      "total_duration_minutes": 172.36666666666667,
+      "total_moving_time_minutes": 164.01666666666665,
+      "whoop_event_count": 5
+    },
+    {
+      "active_date_count": 10,
       "activity_count": 11,
       "activity_frequency_per_week": 2.566666666666667,
       "body_coupling_class": "active_controlled",
@@ -791,6 +857,39 @@
       "total_duration_minutes": 1759.7666666666667,
       "total_moving_time_minutes": 1241.95,
       "whoop_event_count": 10
+    },
+    {
+      "active_date_count": 11,
+      "activity_count": 11,
+      "activity_frequency_per_week": 4.8125,
+      "body_coupling_class": "active_ballistic",
+      "body_coupling_mapping_version": "body_coupling_mapping.v1",
+      "canonical_cohort": "walking",
+      "data_end_date": "2026-08-17",
+      "data_start_date": "2026-08-02",
+      "event_count": 11,
+      "iqr_average_hr_bpm": 11.5,
+      "iqr_distance_miles": 0.06689060884434903,
+      "iqr_duration_minutes": 0.2833333333333332,
+      "iqr_max_hr_bpm": 7.0,
+      "iqr_whoop_strain": 0.0,
+      "joined_event_count": 5,
+      "longitudinal_metric_version": "longitudinal_whoop_strava_metrics.v1.0.0",
+      "median_average_hr_bpm": 73.0,
+      "median_distance_miles": 0.1434124711683767,
+      "median_duration_minutes": 5.7,
+      "median_max_hr_bpm": 80.0,
+      "median_whoop_strain": 0.0,
+      "period_end_local": "2026-08-31",
+      "period_grain": "month",
+      "period_start_local": "2026-08-01",
+      "quality_status": "partial",
+      "source_coverage": "kubios+strava+whoop",
+      "strava_event_count": 11,
+      "total_distance_miles": 1.7628300723773165,
+      "total_duration_minutes": 62.43333333333334,
+      "total_moving_time_minutes": 49.21666666666667,
+      "whoop_event_count": 5
     },
     {
       "active_date_count": 2,
@@ -1319,105 +1418,6 @@
       "total_duration_minutes": 953.0999999999999,
       "total_moving_time_minutes": 634.6,
       "whoop_event_count": 6
-    },
-    {
-      "active_date_count": 6,
-      "activity_count": 6,
-      "activity_frequency_per_week": 5.25,
-      "body_coupling_class": "active_ballistic",
-      "body_coupling_mapping_version": "body_coupling_mapping.v1",
-      "canonical_cohort": "walking",
-      "data_end_date": "2026-08-09",
-      "data_start_date": "2026-08-02",
-      "event_count": 6,
-      "iqr_average_hr_bpm": 16.75,
-      "iqr_distance_miles": 0.034610375407619465,
-      "iqr_duration_minutes": 0.14999999999999858,
-      "iqr_max_hr_bpm": 13.0,
-      "iqr_whoop_strain": 0.0,
-      "joined_event_count": 5,
-      "longitudinal_metric_version": "longitudinal_whoop_strava_metrics.v1.0.0",
-      "median_average_hr_bpm": 74.0,
-      "median_distance_miles": 0.1877162371748986,
-      "median_duration_minutes": 5.8,
-      "median_max_hr_bpm": 80.5,
-      "median_whoop_strain": 0.0,
-      "period_end_local": "2026-08-31",
-      "period_grain": "month",
-      "period_start_local": "2026-08-01",
-      "quality_status": "valid",
-      "source_coverage": "kubios+strava+whoop",
-      "strava_event_count": 6,
-      "total_distance_miles": 1.1326975463294362,
-      "total_duration_minutes": 34.96666666666667,
-      "total_moving_time_minutes": 27.950000000000003,
-      "whoop_event_count": 5
-    },
-    {
-      "active_date_count": 6,
-      "activity_count": 6,
-      "activity_frequency_per_week": 5.25,
-      "body_coupling_class": "active_controlled",
-      "body_coupling_mapping_version": "body_coupling_mapping.v1",
-      "canonical_cohort": "mall_skating",
-      "data_end_date": "2026-08-09",
-      "data_start_date": "2026-08-02",
-      "event_count": 6,
-      "iqr_average_hr_bpm": 4.0,
-      "iqr_distance_miles": 0.048917447108884016,
-      "iqr_duration_minutes": 1.3416666666666686,
-      "iqr_max_hr_bpm": 3.0,
-      "iqr_whoop_strain": 0.09999999999999964,
-      "joined_event_count": 5,
-      "longitudinal_metric_version": "longitudinal_whoop_strava_metrics.v1.0.0",
-      "median_average_hr_bpm": 66.0,
-      "median_distance_miles": 2.05381820170206,
-      "median_duration_minutes": 34.875,
-      "median_max_hr_bpm": 74.0,
-      "median_whoop_strain": 8.2,
-      "period_end_local": "2026-08-31",
-      "period_grain": "month",
-      "period_start_local": "2026-08-01",
-      "quality_status": "valid",
-      "source_coverage": "kubios+strava+whoop",
-      "strava_event_count": 6,
-      "total_distance_miles": 12.320796548158754,
-      "total_duration_minutes": 207.85000000000002,
-      "total_moving_time_minutes": 201.08333333333331,
-      "whoop_event_count": 5
-    },
-    {
-      "active_date_count": 6,
-      "activity_count": 6,
-      "activity_frequency_per_week": 5.25,
-      "body_coupling_class": "active_controlled",
-      "body_coupling_mapping_version": "body_coupling_mapping.v1",
-      "canonical_cohort": "pt_skating",
-      "data_end_date": "2026-08-09",
-      "data_start_date": "2026-08-02",
-      "event_count": 6,
-      "iqr_average_hr_bpm": 4.0,
-      "iqr_distance_miles": 0.024373285015509616,
-      "iqr_duration_minutes": 0.36666666666666714,
-      "iqr_max_hr_bpm": 8.0,
-      "iqr_whoop_strain": 0.1,
-      "joined_event_count": 5,
-      "longitudinal_metric_version": "longitudinal_whoop_strava_metrics.v1.0.0",
-      "median_average_hr_bpm": 76.0,
-      "median_distance_miles": 1.817728217211485,
-      "median_duration_minutes": 17.40833333333333,
-      "median_max_hr_bpm": 94.0,
-      "median_whoop_strain": 0.0,
-      "period_end_local": "2026-08-31",
-      "period_grain": "month",
-      "period_start_local": "2026-08-01",
-      "quality_status": "valid",
-      "source_coverage": "kubios+strava+whoop",
-      "strava_event_count": 6,
-      "total_distance_miles": 10.9251968503937,
-      "total_duration_minutes": 104.53333333333333,
-      "total_moving_time_minutes": 99.16666666666666,
-      "whoop_event_count": 5
     },
     {
       "active_date_count": 6,
@@ -3139,7 +3139,7 @@
   "alt_text": "Monthly time series show activity frequency and distance for walking, Mall skating, PT skating, and FNS/SNS skating. Missing months are omitted rather than plotted as zero.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "0faafd51e7cd80887dc7a1091fa8c484034009bbeadda03d4a6c086ffdfb1c94",
+  "content_hash": "9f8c956d56c832e2f9e91609c3e13eced8aa7103ca8d9571a31367c34807c631",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -3264,8 +3264,8 @@
             },
             {
               "date": "2026-08-01",
-              "sample_count": 6,
-              "value": 1.1326975463294362
+              "sample_count": 11,
+              "value": 1.7628300723773165
             }
           ]
         },
@@ -3285,8 +3285,8 @@
             },
             {
               "date": "2026-08-01",
-              "sample_count": 6,
-              "value": 12.320796548158754
+              "sample_count": 10,
+              "value": 20.332011055436254
             }
           ]
         },
@@ -3311,8 +3311,8 @@
             },
             {
               "date": "2026-08-01",
-              "sample_count": 6,
-              "value": 10.9251968503937
+              "sample_count": 10,
+              "value": 18.21953541318699
             }
           ]
         },
@@ -3769,8 +3769,8 @@
             },
             {
               "date": "2026-08-01",
-              "sample_count": 6,
-              "value": 5.25
+              "sample_count": 11,
+              "value": 4.8125
             }
           ]
         },
@@ -3790,8 +3790,8 @@
             },
             {
               "date": "2026-08-01",
-              "sample_count": 6,
-              "value": 5.25
+              "sample_count": 10,
+              "value": 5.833333333333334
             }
           ]
         },
@@ -3816,8 +3816,8 @@
             },
             {
               "date": "2026-08-01",
-              "sample_count": 6,
-              "value": 5.25
+              "sample_count": 10,
+              "value": 5.833333333333334
             }
           ]
         },
@@ -4190,14 +4190,14 @@
   "repeatability": [],
   "sample_counts": {
     "fns_sns_skating": 585,
-    "mall_skating": 33,
+    "mall_skating": 37,
     "motorcycle": 208,
     "paratransit_bus": 15,
     "paratransit_sedan_or_taxi": 20,
     "paratransit_silverride": 5,
     "paratransit_van": 4,
-    "pt_skating": 55,
-    "walking": 76
+    "pt_skating": 59,
+    "walking": 81
   },
   "series": [
     {
@@ -4299,8 +4299,8 @@
             },
             {
               "date": "2026-08-01",
-              "sample_count": 6,
-              "value": 1.1326975463294362
+              "sample_count": 11,
+              "value": 1.7628300723773165
             }
           ]
         },
@@ -4320,8 +4320,8 @@
             },
             {
               "date": "2026-08-01",
-              "sample_count": 6,
-              "value": 12.320796548158754
+              "sample_count": 10,
+              "value": 20.332011055436254
             }
           ]
         },
@@ -4346,8 +4346,8 @@
             },
             {
               "date": "2026-08-01",
-              "sample_count": 6,
-              "value": 10.9251968503937
+              "sample_count": 10,
+              "value": 18.21953541318699
             }
           ]
         },
@@ -4806,8 +4806,8 @@
             },
             {
               "date": "2026-08-01",
-              "sample_count": 6,
-              "value": 5.25
+              "sample_count": 11,
+              "value": 4.8125
             }
           ]
         },
@@ -4827,8 +4827,8 @@
             },
             {
               "date": "2026-08-01",
-              "sample_count": 6,
-              "value": 5.25
+              "sample_count": 10,
+              "value": 5.833333333333334
             }
           ]
         },
@@ -4853,8 +4853,8 @@
             },
             {
               "date": "2026-08-01",
-              "sample_count": 6,
-              "value": 5.25
+              "sample_count": 10,
+              "value": 5.833333333333334
             }
           ]
         },

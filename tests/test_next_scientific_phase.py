@@ -29,9 +29,13 @@ def test_com_story_hierarchy_uses_existing_pages_and_graph_mappings():
     assert "ROBUSTNESS / SENSITIVITY" in mobility and 'data-publication-graph="h1_exposure_blind_mechanical"' in mobility
     transportation = (ROOT / "evidence/transportation/index.html").read_text()
     assert 'data-publication-graph="h3_transport_validation"' in transportation
+    assert 'href="/evidence/longitudinal/#paired-results"' in transportation
+    assert 'data-publication-graph="episodic_mechanical_hr_response"' not in transportation
     longitudinal = (ROOT / "evidence/longitudinal/index.html").read_text()
-    assert "Post-Skate Transportation Trajectories" in longitudinal
-    assert "reports no transportation physiology finding" in longitudinal
+    for graph_id in ("paired_fns_sns_outcome_summary", "paired_fns_sns_max_hr", "extreme_hr_reference_sensitivity", "temporal_context_decomposition"):
+        assert f'data-publication-graph="{graph_id}"' in longitudinal
+    assert "RAW_REJECT_BUT_NOT_FAMILYWISE_SIGNIFICANT" in longitudinal
+    assert "SCREENING_ONLY_NO_POST_SELECTION_P_VALUE" in longitudinal
 
 
 def test_no_new_top_level_page_or_graph_mapping_table_was_added():

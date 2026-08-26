@@ -1,0 +1,424 @@
+{
+  "accessible_table": [
+    {
+      "delta_maximum_hr_from_minus_to": 47.0,
+      "from_whoop_max_hr_bpm": 167.0,
+      "outing_date": "2025-02-01",
+      "to_whoop_max_hr_bpm": 120.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": 5.0,
+      "from_whoop_max_hr_bpm": 88.0,
+      "outing_date": "2026-01-02",
+      "to_whoop_max_hr_bpm": 83.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": 26.0,
+      "from_whoop_max_hr_bpm": 171.0,
+      "outing_date": "2026-01-03",
+      "to_whoop_max_hr_bpm": 145.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -7.0,
+      "from_whoop_max_hr_bpm": 113.0,
+      "outing_date": "2026-01-09",
+      "to_whoop_max_hr_bpm": 120.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -13.0,
+      "from_whoop_max_hr_bpm": 110.0,
+      "outing_date": "2026-01-10",
+      "to_whoop_max_hr_bpm": 123.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": 7.0,
+      "from_whoop_max_hr_bpm": 108.0,
+      "outing_date": "2026-01-16",
+      "to_whoop_max_hr_bpm": 101.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -21.0,
+      "from_whoop_max_hr_bpm": 113.0,
+      "outing_date": "2026-01-17",
+      "to_whoop_max_hr_bpm": 134.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -16.0,
+      "from_whoop_max_hr_bpm": 111.0,
+      "outing_date": "2026-01-30",
+      "to_whoop_max_hr_bpm": 127.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -32.0,
+      "from_whoop_max_hr_bpm": 96.0,
+      "outing_date": "2026-01-31",
+      "to_whoop_max_hr_bpm": 128.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": 2.0,
+      "from_whoop_max_hr_bpm": 97.0,
+      "outing_date": "2026-02-06",
+      "to_whoop_max_hr_bpm": 95.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -49.0,
+      "from_whoop_max_hr_bpm": 113.0,
+      "outing_date": "2026-02-07",
+      "to_whoop_max_hr_bpm": 162.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": 1.0,
+      "from_whoop_max_hr_bpm": 92.0,
+      "outing_date": "2026-02-13",
+      "to_whoop_max_hr_bpm": 91.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -28.0,
+      "from_whoop_max_hr_bpm": 91.0,
+      "outing_date": "2026-02-14",
+      "to_whoop_max_hr_bpm": 119.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -9.0,
+      "from_whoop_max_hr_bpm": 102.0,
+      "outing_date": "2026-02-20",
+      "to_whoop_max_hr_bpm": 111.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -16.0,
+      "from_whoop_max_hr_bpm": 98.0,
+      "outing_date": "2026-02-21",
+      "to_whoop_max_hr_bpm": 114.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -16.0,
+      "from_whoop_max_hr_bpm": 117.0,
+      "outing_date": "2026-03-06",
+      "to_whoop_max_hr_bpm": 133.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": 3.0,
+      "from_whoop_max_hr_bpm": 97.0,
+      "outing_date": "2026-03-07",
+      "to_whoop_max_hr_bpm": 94.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -18.0,
+      "from_whoop_max_hr_bpm": 108.0,
+      "outing_date": "2026-03-13",
+      "to_whoop_max_hr_bpm": 126.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": 23.0,
+      "from_whoop_max_hr_bpm": 126.0,
+      "outing_date": "2026-03-14",
+      "to_whoop_max_hr_bpm": 103.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -21.0,
+      "from_whoop_max_hr_bpm": 101.0,
+      "outing_date": "2026-03-20",
+      "to_whoop_max_hr_bpm": 122.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -22.0,
+      "from_whoop_max_hr_bpm": 109.0,
+      "outing_date": "2026-03-21",
+      "to_whoop_max_hr_bpm": 131.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -27.0,
+      "from_whoop_max_hr_bpm": 112.0,
+      "outing_date": "2026-03-27",
+      "to_whoop_max_hr_bpm": 139.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": 15.0,
+      "from_whoop_max_hr_bpm": 83.0,
+      "outing_date": "2026-03-28",
+      "to_whoop_max_hr_bpm": 68.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": 25.0,
+      "from_whoop_max_hr_bpm": 102.0,
+      "outing_date": "2026-04-03",
+      "to_whoop_max_hr_bpm": 77.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -19.0,
+      "from_whoop_max_hr_bpm": 93.0,
+      "outing_date": "2026-04-04",
+      "to_whoop_max_hr_bpm": 112.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": 62.0,
+      "from_whoop_max_hr_bpm": 147.0,
+      "outing_date": "2026-04-10",
+      "to_whoop_max_hr_bpm": 85.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": 7.0,
+      "from_whoop_max_hr_bpm": 111.0,
+      "outing_date": "2026-04-11",
+      "to_whoop_max_hr_bpm": 104.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -50.0,
+      "from_whoop_max_hr_bpm": 100.0,
+      "outing_date": "2026-04-17",
+      "to_whoop_max_hr_bpm": 150.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -7.0,
+      "from_whoop_max_hr_bpm": 87.0,
+      "outing_date": "2026-04-18",
+      "to_whoop_max_hr_bpm": 94.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -17.0,
+      "from_whoop_max_hr_bpm": 90.0,
+      "outing_date": "2026-04-25",
+      "to_whoop_max_hr_bpm": 107.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -9.0,
+      "from_whoop_max_hr_bpm": 121.0,
+      "outing_date": "2026-05-01",
+      "to_whoop_max_hr_bpm": 130.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": 24.0,
+      "from_whoop_max_hr_bpm": 113.0,
+      "outing_date": "2026-05-02",
+      "to_whoop_max_hr_bpm": 89.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -23.0,
+      "from_whoop_max_hr_bpm": 119.0,
+      "outing_date": "2026-05-08",
+      "to_whoop_max_hr_bpm": 142.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": 18.0,
+      "from_whoop_max_hr_bpm": 134.0,
+      "outing_date": "2026-05-09",
+      "to_whoop_max_hr_bpm": 116.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": 0.0,
+      "from_whoop_max_hr_bpm": 110.0,
+      "outing_date": "2026-05-16",
+      "to_whoop_max_hr_bpm": 110.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -13.0,
+      "from_whoop_max_hr_bpm": 125.0,
+      "outing_date": "2026-05-22",
+      "to_whoop_max_hr_bpm": 138.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": 6.0,
+      "from_whoop_max_hr_bpm": 112.0,
+      "outing_date": "2026-05-23",
+      "to_whoop_max_hr_bpm": 106.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -46.0,
+      "from_whoop_max_hr_bpm": 109.0,
+      "outing_date": "2026-05-29",
+      "to_whoop_max_hr_bpm": 155.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -3.0,
+      "from_whoop_max_hr_bpm": 112.0,
+      "outing_date": "2026-05-30",
+      "to_whoop_max_hr_bpm": 115.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -9.0,
+      "from_whoop_max_hr_bpm": 121.0,
+      "outing_date": "2026-06-05",
+      "to_whoop_max_hr_bpm": 130.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -22.0,
+      "from_whoop_max_hr_bpm": 100.0,
+      "outing_date": "2026-06-06",
+      "to_whoop_max_hr_bpm": 122.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -63.0,
+      "from_whoop_max_hr_bpm": 105.0,
+      "outing_date": "2026-06-12",
+      "to_whoop_max_hr_bpm": 168.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": 9.0,
+      "from_whoop_max_hr_bpm": 111.0,
+      "outing_date": "2026-06-13",
+      "to_whoop_max_hr_bpm": 102.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -7.0,
+      "from_whoop_max_hr_bpm": 110.0,
+      "outing_date": "2026-06-20",
+      "to_whoop_max_hr_bpm": 117.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -12.0,
+      "from_whoop_max_hr_bpm": 110.0,
+      "outing_date": "2026-06-26",
+      "to_whoop_max_hr_bpm": 122.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -26.0,
+      "from_whoop_max_hr_bpm": 94.0,
+      "outing_date": "2026-06-27",
+      "to_whoop_max_hr_bpm": 120.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": 16.0,
+      "from_whoop_max_hr_bpm": 128.0,
+      "outing_date": "2026-07-03",
+      "to_whoop_max_hr_bpm": 112.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": 26.0,
+      "from_whoop_max_hr_bpm": 150.0,
+      "outing_date": "2026-07-04",
+      "to_whoop_max_hr_bpm": 124.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -15.0,
+      "from_whoop_max_hr_bpm": 110.0,
+      "outing_date": "2026-07-10",
+      "to_whoop_max_hr_bpm": 125.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -6.0,
+      "from_whoop_max_hr_bpm": 96.0,
+      "outing_date": "2026-07-11",
+      "to_whoop_max_hr_bpm": 102.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": 7.0,
+      "from_whoop_max_hr_bpm": 115.0,
+      "outing_date": "2026-07-17",
+      "to_whoop_max_hr_bpm": 108.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -31.0,
+      "from_whoop_max_hr_bpm": 87.0,
+      "outing_date": "2026-07-25",
+      "to_whoop_max_hr_bpm": 118.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -7.0,
+      "from_whoop_max_hr_bpm": 112.0,
+      "outing_date": "2026-07-31",
+      "to_whoop_max_hr_bpm": 119.0
+    },
+    {
+      "delta_maximum_hr_from_minus_to": -4.0,
+      "from_whoop_max_hr_bpm": 99.0,
+      "outing_date": "2026-08-01",
+      "to_whoop_max_hr_bpm": 103.0
+    }
+  ],
+  "alt_text": "Paired maximum-HR slopegraph for 54 complete outing dates, with FROM minus TO median -8 bpm and committed 95% bootstrap interval -15.0125 to -1.5 bpm.",
+  "claim_class": "MEASURED",
+  "claim_classes": {},
+  "content_hash": "9eda65bed2f20cfdac05a7db3e1069f800e80cc50dfa1358f264bad801cc8d18",
+  "coverage": {},
+  "data_through_date": "2026-08-08",
+  "destination": "handicapskater.com",
+  "evidence": {},
+  "finding": "LP2-H0B shows lower FROM maximum HR in the committed paired direction (FROM minus TO).",
+  "formula_identities": [
+    "longitudinal_mobility_physiology_phase2.v1.0.0"
+  ],
+  "functional_meaning": "Makes the within-outing peak-HR contrast and direction immediately reviewable.",
+  "graph_contract_version": "fsi_publication_graph.v1",
+  "graph_id": "paired_fns_sns_max_hr",
+  "graph_type": "paired_slopegraph",
+  "intended_route": "/evidence/longitudinal/",
+  "interpretation": "Maximum HR represents peak excursion or transient upper response; it is not combined with average or resting-relative HR.",
+  "limitation": "Complete paired outings with WHOOP maximum-HR coverage only; vehicle strata remain sparse.",
+  "limitations": [
+    "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
+  ],
+  "long_description": "Maximum HR represents peak excursion or transient upper response; it is not combined with average or resting-relative HR. Direction: FROM minus TO Robust summary uses the committed median, Hodges–Lehmann estimate, bootstrap CI, and sign-flip p-value. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
+  "matrix": [],
+  "missingness": [],
+  "output_asset_names": [
+    "graphs/paired_fns_sns_max_hr.json"
+  ],
+  "panels": [],
+  "planned_comparator": null,
+  "qualifications": [
+    "Direction: FROM minus TO",
+    "Robust summary uses the committed median, Hodges–Lehmann estimate, bootstrap CI, and sign-flip p-value."
+  ],
+  "question": "How did maximum HR change from TO to FROM within each complete outing?",
+  "ranking": [],
+  "relation_identities": [
+    "analysis/longitudinal_mobility_physiology_phase2/results/paired_outing_pairs.csv",
+    "analysis/longitudinal_mobility_physiology_phase2/results/paired_outing_results.csv"
+  ],
+  "repeatability": [],
+  "sample_counts": {
+    "independent_dates": 54,
+    "paired_outings": 54
+  },
+  "series": [],
+  "source_contracts": [
+    {
+      "contract": "observatory_mcp_resource.v1",
+      "version": "observatory_bundle.v1"
+    },
+    {
+      "contract": "evidence_observatory_presentation.v1",
+      "version": "evidence_observatory_presentation.v1"
+    },
+    {
+      "contract": "scientific_consumer_contract.v1.0.0",
+      "version": "scientific_consumer_contract.v1.0.0"
+    },
+    {
+      "contract": "observatory_graph.v1",
+      "version": "observatory_graph.v1"
+    }
+  ],
+  "source_labels": [
+    "WHOOP longitudinal context",
+    "Strava longitudinal context"
+  ],
+  "title": "Maximum HR across complete TO→FNS/SNS→FROM outings",
+  "units": [
+    "bpm"
+  ],
+  "visual": {
+    "pair_connection": "outing_date",
+    "robust_summary": {
+      "bootstrap_ci_high": -1.5,
+      "bootstrap_ci_low": -15.0125,
+      "bootstrap_n": 2000,
+      "decision": "reject",
+      "direction": "FROM_MINUS_TO",
+      "effect_direction": "FROM_LOWER_THAN_TO",
+      "eligible_pair_n": 54,
+      "hodges_lehmann_estimate": -7.5,
+      "hypothesis_id": "LP2-H0B",
+      "independent_date_n": 54,
+      "median_paired_difference": -8.0,
+      "negative_pair_n": 34,
+      "outcome": "Maximum HR",
+      "permutation_n": 999,
+      "positive_pair_n": 19,
+      "sign_flip_p": 0.019,
+      "zero_pair_n": 1
+    },
+    "x": "outing_leg",
+    "y": "maximum_hr_bpm"
+  }
+}

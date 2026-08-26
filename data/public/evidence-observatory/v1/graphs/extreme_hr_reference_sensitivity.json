@@ -1,0 +1,453 @@
+{
+  "accessible_table": [
+    {
+      "definition": "Mixed-activity preceding-365-day empirical reference",
+      "eligible_ride_n": 139,
+      "missing_or_unevaluated_ride_n": 10,
+      "p95_exceedance_n": 1,
+      "p95_exceedance_rate": 0.007194244604316547,
+      "p99_exceedance_n": 0,
+      "p99_exceedance_rate": 0.0,
+      "phase1_empirical_p": 1.0,
+      "reference_composition": "MIXED_ACTIVITY_PRECEDING_365D",
+      "reference_id": "L-H0D_ORIGINAL_IMMUTABLE",
+      "reference_support_n_max": 379,
+      "reference_support_n_min": 187,
+      "replaces_phase1": false,
+      "robust_3_5_exceedance_n": null,
+      "status": "PRESERVED_PHASE1_RESULT",
+      "top_ranked_rides": [
+        {
+          "canonical_cohort": "paratransit",
+          "event_date": "2026-01-04T00:00:00",
+          "extreme_p99": false,
+          "reference_observation_n": 271,
+          "reference_p95": 70.0,
+          "reference_p99": 76.30000000000001,
+          "relationship": "FROM_FNS_SNS",
+          "ride_value": 76.0
+        },
+        {
+          "canonical_cohort": "paratransit",
+          "event_date": "2026-04-17T00:00:00",
+          "extreme_p99": false,
+          "reference_observation_n": 262,
+          "reference_p95": 72.0,
+          "reference_p99": 79.77999999999997,
+          "relationship": "TO_FNS_SNS",
+          "ride_value": 72.0
+        },
+        {
+          "canonical_cohort": "paratransit",
+          "event_date": "2026-03-27T00:00:00",
+          "extreme_p99": false,
+          "reference_observation_n": 244,
+          "reference_p95": 70.0,
+          "reference_p99": 77.57,
+          "relationship": "TO_FNS_SNS",
+          "ride_value": 65.0
+        },
+        {
+          "canonical_cohort": "paratransit",
+          "event_date": "2025-02-01T00:00:00",
+          "extreme_p99": false,
+          "reference_observation_n": 210,
+          "reference_p95": 70.0,
+          "reference_p99": 76.91,
+          "relationship": "FROM_FNS_SNS",
+          "ride_value": 62.0
+        },
+        {
+          "canonical_cohort": "paratransit_van",
+          "event_date": "2026-05-15T00:00:00",
+          "extreme_p99": false,
+          "reference_observation_n": 277,
+          "reference_p95": 73.0,
+          "reference_p99": 87.0,
+          "relationship": "TO_FNS_SNS",
+          "ride_value": 71.0
+        }
+      ]
+    },
+    {
+      "definition": "ParaTransit-only preceding-365-day empirical reference",
+      "eligible_ride_n": 119,
+      "missing_or_unevaluated_ride_n": 30,
+      "p95_exceedance_n": 10,
+      "p95_exceedance_rate": 0.08403361344537816,
+      "p99_exceedance_n": 2,
+      "p99_exceedance_rate": 0.01680672268907563,
+      "phase1_empirical_p": null,
+      "reference_composition": "PARATRANSIT_ONLY_PRECEDING_365D",
+      "reference_id": "LP2-E1",
+      "reference_support_n_max": 119,
+      "reference_support_n_min": 20,
+      "replaces_phase1": false,
+      "robust_3_5_exceedance_n": 0.0,
+      "status": "EVALUATED",
+      "top_ranked_rides": [
+        {
+          "canonical_cohort": "paratransit",
+          "empirical_percentile": 1.0,
+          "event_date": "2026-01-04",
+          "exceeds_p95": true,
+          "exceeds_p99": true,
+          "reference_n": 31,
+          "relationship": "FROM_FNS_SNS",
+          "resting_relative_hr_bpm": 76.0,
+          "robust_score": 1.7986666666666666
+        },
+        {
+          "canonical_cohort": "paratransit",
+          "empirical_percentile": 0.9855072463768116,
+          "event_date": "2026-04-17",
+          "exceeds_p95": true,
+          "exceeds_p99": true,
+          "reference_n": 69,
+          "relationship": "TO_FNS_SNS",
+          "resting_relative_hr_bpm": 72.0,
+          "robust_score": 2.330090909090909
+        },
+        {
+          "canonical_cohort": "paratransit",
+          "empirical_percentile": 0.9827586206896552,
+          "event_date": "2026-03-27",
+          "exceeds_p95": true,
+          "exceeds_p99": false,
+          "reference_n": 58,
+          "relationship": "TO_FNS_SNS",
+          "resting_relative_hr_bpm": 65.0,
+          "robust_score": 2.0556190476190475
+        },
+        {
+          "canonical_cohort": "paratransit_bus",
+          "empirical_percentile": 0.9775280898876404,
+          "event_date": "2026-05-29",
+          "exceeds_p95": true,
+          "exceeds_p99": false,
+          "reference_n": 89,
+          "relationship": "TO_FNS_SNS",
+          "resting_relative_hr_bpm": 71.0,
+          "robust_score": 2.268772727272727
+        },
+        {
+          "canonical_cohort": "paratransit_sedan_or_taxi",
+          "empirical_percentile": 0.976470588235294,
+          "event_date": "2026-05-22",
+          "exceeds_p95": true,
+          "exceeds_p99": false,
+          "reference_n": 85,
+          "relationship": "TO_FNS_SNS",
+          "resting_relative_hr_bpm": 71.0,
+          "robust_score": 2.268772727272727
+        }
+      ]
+    },
+    {
+      "definition": "Resting-relative current-authority reference",
+      "eligible_ride_n": 139,
+      "missing_or_unevaluated_ride_n": 10,
+      "p95_exceedance_n": 1,
+      "p95_exceedance_rate": 0.007194244604316547,
+      "p99_exceedance_n": 0,
+      "p99_exceedance_rate": 0.0,
+      "phase1_empirical_p": null,
+      "reference_composition": "CURRENT_AUTHORITY_RESTING_RELATIVE_PRECEDING_365D",
+      "reference_id": "LP2-E2",
+      "reference_support_n_max": 370,
+      "reference_support_n_min": 187,
+      "replaces_phase1": false,
+      "robust_3_5_exceedance_n": 0.0,
+      "status": "EVALUATED",
+      "top_ranked_rides": [
+        {
+          "canonical_cohort": "paratransit",
+          "empirical_percentile": 0.988929889298893,
+          "event_date": "2026-01-04",
+          "exceeds_p95": true,
+          "exceeds_p99": false,
+          "reference_n": 271,
+          "relationship": "FROM_FNS_SNS",
+          "resting_relative_hr_bpm": 76.0,
+          "robust_score": 1.704
+        },
+        {
+          "canonical_cohort": "paratransit",
+          "empirical_percentile": 0.9541984732824428,
+          "event_date": "2026-04-17",
+          "exceeds_p95": false,
+          "exceeds_p99": false,
+          "reference_n": 262,
+          "relationship": "TO_FNS_SNS",
+          "resting_relative_hr_bpm": 72.0,
+          "robust_score": 1.01175
+        },
+        {
+          "canonical_cohort": "paratransit_van",
+          "empirical_percentile": 0.9314079422382672,
+          "event_date": "2026-05-15",
+          "exceeds_p95": false,
+          "exceeds_p99": false,
+          "reference_n": 277,
+          "relationship": "TO_FNS_SNS",
+          "resting_relative_hr_bpm": 71.0,
+          "robust_score": 0.96959375
+        },
+        {
+          "canonical_cohort": "paratransit_sedan_or_taxi",
+          "empirical_percentile": 0.9265734265734266,
+          "event_date": "2026-05-22",
+          "exceeds_p95": false,
+          "exceeds_p99": false,
+          "reference_n": 286,
+          "relationship": "TO_FNS_SNS",
+          "resting_relative_hr_bpm": 71.0,
+          "robust_score": 0.96959375
+        },
+        {
+          "canonical_cohort": "paratransit_bus",
+          "empirical_percentile": 0.9243986254295532,
+          "event_date": "2026-05-29",
+          "exceeds_p95": false,
+          "exceeds_p99": false,
+          "reference_n": 291,
+          "relationship": "TO_FNS_SNS",
+          "resting_relative_hr_bpm": 71.0,
+          "robust_score": 0.96959375
+        }
+      ]
+    },
+    {
+      "definition": "Exact context-matched ParaTransit reference",
+      "eligible_ride_n": 38,
+      "missing_or_unevaluated_ride_n": 111,
+      "p95_exceedance_n": 6,
+      "p95_exceedance_rate": 0.15789473684210525,
+      "p99_exceedance_n": 3,
+      "p99_exceedance_rate": 0.07894736842105263,
+      "phase1_empirical_p": null,
+      "reference_composition": "EXACT_CONTEXT_MATCHED_PARATRANSIT_PRECEDING_365D",
+      "reference_id": "LP2-E3",
+      "reference_support_n_max": 45,
+      "reference_support_n_min": 20,
+      "replaces_phase1": false,
+      "robust_3_5_exceedance_n": 0.0,
+      "status": "EVALUATED",
+      "top_ranked_rides": [
+        {
+          "canonical_cohort": "paratransit",
+          "empirical_percentile": 1.0,
+          "event_date": "2026-01-30",
+          "exceeds_p95": true,
+          "exceeds_p99": true,
+          "reference_n": 25,
+          "relationship": "TO_FNS_SNS",
+          "resting_relative_hr_bpm": 57.0,
+          "robust_score": 1.2044642857142858
+        },
+        {
+          "canonical_cohort": "paratransit",
+          "empirical_percentile": 1.0,
+          "event_date": "2026-03-27",
+          "exceeds_p95": true,
+          "exceeds_p99": true,
+          "reference_n": 33,
+          "relationship": "TO_FNS_SNS",
+          "resting_relative_hr_bpm": 65.0,
+          "robust_score": 1.8395454545454544
+        },
+        {
+          "canonical_cohort": "paratransit",
+          "empirical_percentile": 1.0,
+          "event_date": "2026-04-17",
+          "exceeds_p95": true,
+          "exceeds_p99": true,
+          "reference_n": 38,
+          "relationship": "TO_FNS_SNS",
+          "resting_relative_hr_bpm": 72.0,
+          "robust_score": 1.6746206896551723
+        },
+        {
+          "canonical_cohort": "paratransit",
+          "empirical_percentile": 0.9534883720930232,
+          "event_date": "2026-05-08",
+          "exceeds_p95": true,
+          "exceeds_p99": false,
+          "reference_n": 43,
+          "relationship": "TO_FNS_SNS",
+          "resting_relative_hr_bpm": 64.0,
+          "robust_score": 1.3008214285714286
+        },
+        {
+          "canonical_cohort": "paratransit",
+          "empirical_percentile": 0.951219512195122,
+          "event_date": "2026-05-01",
+          "exceeds_p95": true,
+          "exceeds_p99": false,
+          "reference_n": 41,
+          "relationship": "TO_FNS_SNS",
+          "resting_relative_hr_bpm": 58.0,
+          "robust_score": 1.01175
+        }
+      ]
+    },
+    {
+      "definition": "Median/MAD robust individualized reference",
+      "eligible_ride_n": 139,
+      "missing_or_unevaluated_ride_n": 10,
+      "p95_exceedance_n": 1,
+      "p95_exceedance_rate": 0.007194244604316547,
+      "p99_exceedance_n": 0,
+      "p99_exceedance_rate": 0.0,
+      "phase1_empirical_p": null,
+      "reference_composition": "CURRENT_AUTHORITY_ROBUST_MEDIAN_MAD_PRECEDING_365D",
+      "reference_id": "LP2-E4",
+      "reference_support_n_max": 370,
+      "reference_support_n_min": 187,
+      "replaces_phase1": false,
+      "robust_3_5_exceedance_n": 0.0,
+      "status": "EVALUATED",
+      "top_ranked_rides": [
+        {
+          "canonical_cohort": "paratransit",
+          "empirical_percentile": 0.988929889298893,
+          "event_date": "2026-01-04",
+          "exceeds_p95": true,
+          "exceeds_p99": false,
+          "reference_n": 271,
+          "relationship": "FROM_FNS_SNS",
+          "resting_relative_hr_bpm": 76.0,
+          "robust_score": 1.704
+        },
+        {
+          "canonical_cohort": "paratransit",
+          "empirical_percentile": 0.7947761194029851,
+          "event_date": "2025-12-26",
+          "exceeds_p95": false,
+          "exceeds_p99": false,
+          "reference_n": 268,
+          "relationship": "TO_FNS_SNS",
+          "resting_relative_hr_bpm": 57.0,
+          "robust_score": 1.199111111111111
+        },
+        {
+          "canonical_cohort": "paratransit",
+          "empirical_percentile": 0.7169117647058824,
+          "event_date": "2025-11-14",
+          "exceeds_p95": false,
+          "exceeds_p99": false,
+          "reference_n": 272,
+          "relationship": "TO_FNS_SNS",
+          "resting_relative_hr_bpm": 51.0,
+          "robust_score": 1.0213857142857143
+        },
+        {
+          "canonical_cohort": "paratransit",
+          "empirical_percentile": 0.9541984732824428,
+          "event_date": "2026-04-17",
+          "exceeds_p95": false,
+          "exceeds_p99": false,
+          "reference_n": 262,
+          "relationship": "TO_FNS_SNS",
+          "resting_relative_hr_bpm": 72.0,
+          "robust_score": 1.01175
+        },
+        {
+          "canonical_cohort": "paratransit",
+          "empirical_percentile": 0.7116104868913857,
+          "event_date": "2025-12-31",
+          "exceeds_p95": false,
+          "exceeds_p99": false,
+          "reference_n": 267,
+          "relationship": "UNRELATED",
+          "resting_relative_hr_bpm": 51.0,
+          "robust_score": 0.9742777777777776
+        }
+      ]
+    }
+  ],
+  "alt_text": "Grouped P95 and P99 exceedance rates for the immutable original reference and four additive Phase-2 sensitivities, each with its own eligible denominator.",
+  "claim_class": "MEASURED",
+  "claim_classes": {},
+  "content_hash": "3659aff6fef4c7eb4e9ab6d88bd28515dab6ec542a0bc5f9beff26b29c10575c",
+  "coverage": {},
+  "data_through_date": "2026-08-08",
+  "destination": "handicapskater.com",
+  "evidence": {},
+  "finding": "Extreme counts vary materially by reference definition; the original Phase-1 result remains unchanged.",
+  "formula_identities": [
+    "longitudinal_mobility_physiology_phase2.v1.0.0"
+  ],
+  "functional_meaning": "Shows how eligible support, reference composition, and missingness govern apparent extremes.",
+  "graph_contract_version": "fsi_publication_graph.v1",
+  "graph_id": "extreme_hr_reference_sensitivity",
+  "graph_type": "grouped_exceedance_rate",
+  "intended_route": "/evidence/longitudinal/",
+  "interpretation": "The scientific result is reference dependence, not selection of the strongest sensitivity.",
+  "limitation": "Exact context matching has sparse support; reference-specific denominators are mandatory.",
+  "limitations": [
+    "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
+  ],
+  "long_description": "The scientific result is reference dependence, not selection of the strongest sensitivity. L-H0D original mixed-activity P99: zero extremes, p=1.0 LP2-E1–E4 are additive sensitivities. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
+  "matrix": [],
+  "missingness": [],
+  "output_asset_names": [
+    "graphs/extreme_hr_reference_sensitivity.json"
+  ],
+  "panels": [],
+  "planned_comparator": null,
+  "qualifications": [
+    "L-H0D original mixed-activity P99: zero extremes, p=1.0",
+    "LP2-E1–E4 are additive sensitivities."
+  ],
+  "question": "How do P95 and P99 exceedances change across declared historical references?",
+  "ranking": [],
+  "relation_identities": [
+    "analysis/longitudinal_mobility_physiology_phase2/results/extreme_hr_reference_results.csv",
+    "analysis/longitudinal_mobility_physiology_phase2/results/extreme_hr_rankings.csv"
+  ],
+  "repeatability": [],
+  "sample_counts": {
+    "L-H0D_ORIGINAL_IMMUTABLE": 139,
+    "LP2-E1": 119,
+    "LP2-E2": 139,
+    "LP2-E3": 38,
+    "LP2-E4": 139
+  },
+  "series": [],
+  "source_contracts": [
+    {
+      "contract": "observatory_mcp_resource.v1",
+      "version": "observatory_bundle.v1"
+    },
+    {
+      "contract": "evidence_observatory_presentation.v1",
+      "version": "evidence_observatory_presentation.v1"
+    },
+    {
+      "contract": "scientific_consumer_contract.v1.0.0",
+      "version": "scientific_consumer_contract.v1.0.0"
+    },
+    {
+      "contract": "observatory_graph.v1",
+      "version": "observatory_graph.v1"
+    }
+  ],
+  "source_labels": [
+    "WHOOP longitudinal context",
+    "Strava longitudinal context"
+  ],
+  "title": "Extreme-HR reference sensitivity",
+  "units": [
+    "ride_count",
+    "ride_fraction"
+  ],
+  "visual": {
+    "denominator": "eligible_ride_n",
+    "group": "reference_id",
+    "series": [
+      "p95_exceedance_rate",
+      "p99_exceedance_rate"
+    ]
+  }
+}

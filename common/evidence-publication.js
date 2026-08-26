@@ -925,6 +925,33 @@
     mount.appendChild(section);
   }
 
+  function renderLongitudinalPhase2(payload) {
+    const rows = payload.accessible_table || [];
+    const root = element("div", "phase2-publication-visual");
+    if (payload.graph_type === "paired_slopegraph") {
+      const summary = payload.visual && payload.visual.robust_summary || {};
+      const counts = element("div", "phase2-direction-counts");
+      [[summary.negative_pair_n, "FROM lower"], [summary.positive_pair_n, "FROM higher"], [summary.zero_pair_n, "No change"]].forEach(function (item) { const card = element("article", ""); card.appendChild(element("strong", "", displayNumber(item[0]))); card.appendChild(element("span", "", item[1])); counts.appendChild(card); });
+      root.appendChild(counts);
+      root.appendChild(element("p", "phase2-robust-summary", "Median FROM−TO −8 bpm · Hodges–Lehmann −7.5 bpm · 95% CI [−15.0125, −1.5] · p=0.019 · n=54"));
+    } else if (payload.graph_type === "forest_effect_plot") {
+      const forest = element("div", "phase2-forest");
+      rows.forEach(function (row) { const item = element("article", ""); item.appendChild(element("strong", "", row.outcome)); const track = element("div", "phase2-effect-track"); const zero = element("i", "phase2-zero"); zero.style.left = "80%"; track.appendChild(zero); const ci = element("span", "phase2-ci"); ci.style.left = (((Number(row.bootstrap_ci_low) + 20) / 25) * 100) + "%"; ci.style.width = (((Number(row.bootstrap_ci_high) - Number(row.bootstrap_ci_low)) / 25) * 100) + "%"; track.appendChild(ci); const point = element("b", "phase2-point"); point.style.left = (((Number(row.median_paired_difference) + 20) / 25) * 100) + "%"; track.appendChild(point); item.appendChild(track); item.appendChild(element("p", "", row.hypothesis_id + " · median " + displayNumber(row.median_paired_difference) + " bpm · HL " + displayNumber(row.hodges_lehmann_estimate) + " · CI [" + displayNumber(row.bootstrap_ci_low) + ", " + displayNumber(row.bootstrap_ci_high) + "] · p=" + displayNumber(row.sign_flip_p) + " · n=" + row.eligible_pair_n + " · " + row.decision)); forest.appendChild(item); });
+      root.appendChild(forest);
+    } else if (payload.graph_type === "grouped_exceedance_rate") {
+      rows.forEach(function (row) { const item = element("article", "phase2-reference-row"); item.appendChild(element("strong", "", row.reference_id)); ["p95", "p99"].forEach(function (threshold) { const rate = Number(row[threshold + "_exceedance_rate"] || 0); const line = element("div", "phase2-rate-line"); line.appendChild(element("span", "", threshold.toUpperCase())); const bar = element("i", ""); bar.style.width = (rate * 100) + "%"; line.appendChild(bar); line.appendChild(element("b", "", row[threshold + "_exceedance_n"] + "/" + row.eligible_ride_n + " (" + (rate * 100).toFixed(1) + "%)")); item.appendChild(line); }); item.appendChild(element("p", "", row.definition)); root.appendChild(item); });
+    } else if (payload.graph_type === "faceted_composition_effect_summary") {
+      const summary = payload.visual && payload.visual.context_summary || {};
+      const outcomes = summary.broad_paratransit_outcomes || {};
+      const y25 = outcomes["2025"] || {}, y26 = outcomes["2026"] || {};
+      const panels = element("div", "phase2-temporal-panels");
+      const hr = element("section", ""); hr.appendChild(element("h3", "", "HR and duration context")); [["Average HR", "median_average_hr_bpm", "bpm"], ["Maximum HR", "median_max_hr_bpm", "bpm"], ["Resting-relative HR", "median_resting_relative_hr_bpm", "bpm"], ["Duration", "median_duration_seconds", "seconds"]].forEach(function (metric) { hr.appendChild(element("p", "", metric[0] + ": " + displayNumber(y25[metric[1]]) + " → " + displayNumber(y26[metric[1]]) + " " + metric[2])); });
+      const context = element("section", ""); context.appendChild(element("h3", "", "Measurement and outing composition")); context.appendChild(element("p", "", "Events: 31 → 118")); context.appendChild(element("p", "", "Known vehicle subtype: 0 → 44")); context.appendChild(element("p", "", "Overnight observations: 1 → 27")); context.appendChild(element("p", "", "Readiness coverage: 87.1% → 100%"));
+      panels.appendChild(hr); panels.appendChild(context); root.appendChild(panels); root.appendChild(element("code", "phase2-screening", "SCREENING_ONLY_NO_POST_SELECTION_P_VALUE"));
+    }
+    return root;
+  }
+
   function renderGraph(mount, payload) {
     mount.replaceChildren();
     mount.dataset.state = "ready";
@@ -969,6 +996,8 @@
       visual.appendChild(longitudinalTimeline(payload));
     } else if (payload.graph_id === "transportation_body_coupling_comparison") {
       visual.appendChild(distributionPanels(payload));
+    } else if (["paired_slopegraph", "forest_effect_plot", "grouped_exceedance_rate", "faceted_composition_effect_summary"].includes(payload.graph_type)) {
+      visual.appendChild(renderLongitudinalPhase2(payload));
     } else if (payload.graph_type === "similarity_matrix" || payload.graph_type === "coverage_matrix") {
       visual.appendChild(renderTable(payload));
     } else if (
@@ -1002,6 +1031,10 @@
       accepted_triplet_stage_profiles: "/evidence/repeated-protocol/",
       transportation_body_coupling_comparison: "/evidence/transportation/#transport-graph",
       fns_sns_longitudinal_functional_capacity: "/evidence/longitudinal/#longitudinal-graph",
+      paired_fns_sns_outcome_summary: "/evidence/longitudinal/#paired-results",
+      paired_fns_sns_max_hr: "/evidence/longitudinal/#paired-results",
+      extreme_hr_reference_sensitivity: "/evidence/longitudinal/#reference-dependence",
+      temporal_context_decomposition: "/evidence/longitudinal/#temporal-context",
     };
     inspect.href = inspectTargets[payload.graph_id] || "/evidence/";
     figure.appendChild(inspect);

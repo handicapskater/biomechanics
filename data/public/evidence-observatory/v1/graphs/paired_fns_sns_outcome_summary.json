@@ -1,0 +1,139 @@
+{
+  "accessible_table": [
+    {
+      "bootstrap_ci_high": 1.0,
+      "bootstrap_ci_low": -14.5,
+      "bootstrap_n": 2000,
+      "decision": "fail_to_reject",
+      "direction": "FROM_MINUS_TO",
+      "effect_direction": "FROM_LOWER_THAN_TO",
+      "eligible_pair_n": 54,
+      "hodges_lehmann_estimate": -6.5,
+      "hypothesis_id": "LP2-H0A",
+      "independent_date_n": 54,
+      "median_paired_difference": -5.0,
+      "negative_pair_n": 33,
+      "outcome": "Average HR",
+      "permutation_n": 999,
+      "positive_pair_n": 21,
+      "sign_flip_p": 0.128,
+      "zero_pair_n": 0
+    },
+    {
+      "bootstrap_ci_high": -1.5,
+      "bootstrap_ci_low": -15.0125,
+      "bootstrap_n": 2000,
+      "decision": "reject",
+      "direction": "FROM_MINUS_TO",
+      "effect_direction": "FROM_LOWER_THAN_TO",
+      "eligible_pair_n": 54,
+      "hodges_lehmann_estimate": -7.5,
+      "hypothesis_id": "LP2-H0B",
+      "independent_date_n": 54,
+      "median_paired_difference": -8.0,
+      "negative_pair_n": 34,
+      "outcome": "Maximum HR",
+      "permutation_n": 999,
+      "positive_pair_n": 19,
+      "sign_flip_p": 0.019,
+      "zero_pair_n": 1
+    },
+    {
+      "bootstrap_ci_high": -2.0,
+      "bootstrap_ci_low": -18.0125,
+      "bootstrap_n": 2000,
+      "decision": "fail_to_reject",
+      "direction": "FROM_MINUS_TO",
+      "effect_direction": "FROM_LOWER_THAN_TO",
+      "eligible_pair_n": 52,
+      "hodges_lehmann_estimate": -7.5,
+      "hypothesis_id": "LP2-H0C",
+      "independent_date_n": 52,
+      "median_paired_difference": -6.0,
+      "negative_pair_n": 34,
+      "outcome": "Resting-relative HR",
+      "permutation_n": 999,
+      "positive_pair_n": 18,
+      "sign_flip_p": 0.131,
+      "zero_pair_n": 0
+    }
+  ],
+  "alt_text": "Forest plot of separate FROM-minus-TO effects for average, maximum, and resting-relative HR with committed 95% bootstrap intervals and a zero reference.",
+  "claim_class": "MEASURED",
+  "claim_classes": {},
+  "content_hash": "b12cefd83bcf74c0d4386acba43549474e4dbe22cca121290b2a0e9aa0eff477",
+  "coverage": {},
+  "data_through_date": "2026-08-08",
+  "destination": "handicapskater.com",
+  "evidence": {},
+  "finding": "Maximum HR rejected LP2-H0B; average and resting-relative HR failed to reject LP2-H0A and LP2-H0C.",
+  "formula_identities": [
+    "longitudinal_mobility_physiology_phase2.v1.0.0"
+  ],
+  "functional_meaning": "Separates the peak-HR result from two non-rejecting paired measures.",
+  "graph_contract_version": "fsi_publication_graph.v1",
+  "graph_id": "paired_fns_sns_outcome_summary",
+  "graph_type": "forest_effect_plot",
+  "intended_route": "/evidence/longitudinal/",
+  "interpretation": "The three outcomes remain separate: peak excursion, whole-ride sustained state, and baseline-adjusted ride state.",
+  "limitation": "Intervals and p-values retain their committed methods and are not combined into a score.",
+  "limitations": [
+    "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
+  ],
+  "long_description": "The three outcomes remain separate: peak excursion, whole-ride sustained state, and baseline-adjusted ride state. Zero is the required reference line Direction: FROM minus TO Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
+  "matrix": [],
+  "missingness": [],
+  "output_asset_names": [
+    "graphs/paired_fns_sns_outcome_summary.json"
+  ],
+  "panels": [],
+  "planned_comparator": null,
+  "qualifications": [
+    "Zero is the required reference line",
+    "Direction: FROM minus TO"
+  ],
+  "question": "Which paired TO-to-FROM HR outcomes met their declared null-rejection thresholds?",
+  "ranking": [],
+  "relation_identities": [
+    "analysis/longitudinal_mobility_physiology_phase2/results/paired_outing_results.csv"
+  ],
+  "repeatability": [],
+  "sample_counts": {
+    "LP2-H0A": 54,
+    "LP2-H0B": 54,
+    "LP2-H0C": 52
+  },
+  "series": [],
+  "source_contracts": [
+    {
+      "contract": "observatory_mcp_resource.v1",
+      "version": "observatory_bundle.v1"
+    },
+    {
+      "contract": "evidence_observatory_presentation.v1",
+      "version": "evidence_observatory_presentation.v1"
+    },
+    {
+      "contract": "scientific_consumer_contract.v1.0.0",
+      "version": "scientific_consumer_contract.v1.0.0"
+    },
+    {
+      "contract": "observatory_graph.v1",
+      "version": "observatory_graph.v1"
+    }
+  ],
+  "source_labels": [
+    "WHOOP longitudinal context",
+    "Strava longitudinal context"
+  ],
+  "title": "Paired outing outcome hierarchy",
+  "units": [
+    "bpm"
+  ],
+  "visual": {
+    "ci_high": "bootstrap_ci_high",
+    "ci_low": "bootstrap_ci_low",
+    "estimate": "median_paired_difference",
+    "reference": 0
+  }
+}

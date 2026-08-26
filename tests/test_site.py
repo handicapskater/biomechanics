@@ -616,7 +616,12 @@ function hasClass(node, className) {
                 "h1_mechanical_only_validation",
                 "h1_exposure_blind_mechanical",
             ),
-            "evidence/longitudinal/index.html": ("fns_sns_longitudinal_functional_capacity",),
+            "evidence/longitudinal/index.html": (
+                "paired_fns_sns_outcome_summary",
+                "paired_fns_sns_max_hr",
+                "extreme_hr_reference_sensitivity",
+                "temporal_context_decomposition",
+            ),
             "evidence/transportation/index.html": (
                 "transportation_body_coupling_comparison",
                 "h3_transport_validation",
@@ -633,10 +638,28 @@ function hasClass(node, className) {
             ids = re.findall(r'data-publication-graph="([^"]+)"', html)
             self.assertEqual(tuple(ids), expected, page)
             mounted.extend(ids)
-        self.assertEqual(len(mounted), 11)
+        self.assertEqual(len(mounted), 14)
         reader = read("common/evidence-publication.js")
         self.assertIn("Inspect in Evidence Observatory", reader)
         self.assertIn("No measured value or zero bar is shown", reader)
+
+    def test_longitudinal_phase2_story_keeps_all_governed_results_visible(self) -> None:
+        html = read("evidence/longitudinal/index.html")
+        for text in (
+            "1,807 current mobility events",
+            "54 primary paired-HR outings",
+            "Average HR: n=54 dates",
+            "Maximum HR: n=54 dates",
+            "Resting-relative HR: n=52 dates",
+            "119 eligible rides, 10 P95 and 2 P99 exceedances",
+            "38 eligible rides, 6 P95 and 3 P99 exceedances",
+            "raw p=0.022",
+            "Holm-adjusted p=0.352",
+        ):
+            self.assertIn(text, html)
+        self.assertIn("REAL_WORLD_THERAPEUTIC_SKATING", html)
+        self.assertNotIn("FNS/SNS controlled skating", html)
+        self.assertNotIn("FNS/SNS recovery skating", html)
 
     def test_access_history_separates_fixed_rail_claim_classes(self) -> None:
         lower = read("access/index.html").lower()
