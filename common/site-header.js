@@ -19,7 +19,7 @@
             { href: "/evidence/", label: "Evidence Overview", match: ["/evidence/"] },
             { href: "/evidence/#how-to-read", label: "How to Read the Evidence" },
             { href: "/evidence/mobility-comparison/", label: "Walking Mechanical Load", match: ["/evidence/mobility-comparison/"] },
-            { href: "/evidence/repeated-protocol/", label: "Experiment Validation", match: ["/evidence/repeated-protocol/"] },
+            { href: "/evidence/repeated-protocol/", label: "Perturbation & Recovery", match: ["/evidence/repeated-protocol/"] },
             { href: "/evidence/transportation/", label: "Transportation Body Coupling", match: ["/evidence/transportation/"] },
             { href: "/evidence/longitudinal/", label: "Longitudinal Capacity", match: ["/evidence/longitudinal/"] },
             { href: "/evidence/strava-gps-skate-maps/#route-browser", label: "Route Map Explorer", match: ["/evidence/strava-gps-skate-maps/"] },
