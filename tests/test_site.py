@@ -617,13 +617,17 @@ function hasClass(node, className) {
                 "h1_exposure_blind_mechanical",
             ),
             "evidence/longitudinal/index.html": (
+                "fns_sns_historical_coverage",
+                "corrected_transport_context_counts",
                 "paired_fns_sns_outcome_summary",
                 "paired_fns_sns_max_hr",
                 "extreme_hr_reference_sensitivity",
                 "temporal_context_decomposition",
+                "authority_correction_summary",
             ),
             "evidence/transportation/index.html": (
                 "transportation_body_coupling_comparison",
+                "corrected_transport_context_counts",
                 "h3_transport_validation",
             ),
             "platform/index.html": (
@@ -638,7 +642,7 @@ function hasClass(node, className) {
             ids = re.findall(r'data-publication-graph="([^"]+)"', html)
             self.assertEqual(tuple(ids), expected, page)
             mounted.extend(ids)
-        self.assertEqual(len(mounted), 14)
+        self.assertEqual(len(mounted), 18)
         reader = read("common/evidence-publication.js")
         self.assertIn("Inspect in Evidence Observatory", reader)
         self.assertIn("No measured value or zero bar is shown", reader)

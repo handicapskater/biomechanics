@@ -43,3 +43,24 @@ def test_no_new_top_level_page_or_graph_mapping_table_was_added():
     assert 'href: "/evidence/repeated-protocol/"' in header
     assert "Perturbation & Recovery" in header
     assert "Access-Limited Fixed-Rail Extension" not in header
+
+
+def test_corrected_authority_story_keeps_cohort_route_and_inference_separate():
+    longitudinal = (ROOT / "evidence/longitudinal/index.html").read_text()
+    transportation = (ROOT / "evidence/transportation/index.html").read_text()
+    combined = longitudinal + transportation
+    for graph_id in (
+        "fns_sns_historical_coverage",
+        "corrected_transport_context_counts",
+        "authority_correction_summary",
+    ):
+        assert f'data-publication-graph="{graph_id}"' in combined
+    assert "It does not mean San Francisco geography" in longitudinal
+    assert "Roanoke Greenway" in longitudinal
+    assert "sf_route=false" in longitudinal
+    assert "inference_input_changed=false" in longitudinal
+    assert "Scientific readiness is COMPLETE" in longitudinal
+    assert "Operational archive readiness is INCOMPLETE" in longitudinal
+    assert "eight WHOOP non-activity journal export observations" in longitudinal
+    for stale in ("583 FNS/SNS events", "576 dates", "149 passive ParaTransit", "82 TO"):
+        assert stale not in combined
