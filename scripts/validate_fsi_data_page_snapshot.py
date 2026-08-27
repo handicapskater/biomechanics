@@ -11,34 +11,24 @@ INDEX = ROOT / "index.html"
 DATA_PAGE = ROOT / "evidence" / "index.html"
 
 DATA_REQUIRED_STRINGS = [
-    "Generated Evidence Snapshot",
-    "Validation and Audit Checks",
-    "Source and Reproducibility",
-    "fsi_tensor_v0_3_public_overview.json",
-    "fsi_tensor_v0_3_autonomic_gated_cohort_summary.json",
-    "fsi_tensor_v0_3_validation_summary.json",
-    "fsi_tensor_v0_3_artifact_manifest_summary.json",
-    "These scores do not measure pain directly and do not make clinical or legal conclusions.",
+    "Source-Linked FSI/CSS Results",
+    "Fractal Stability Index (FSI)",
+    "Cohort Similarity Score (CSS)",
+    "not established clinical diagnostic scores",
+    "Validation and Audit",
     ]
 
 HOME_REQUIRED_STRINGS = [
-    "Evidence Corpus",
-    "Review the Evidence",
+    "Five questions. Five governed views.",
+    "Review the evidence",
     "/evidence/",
-    "Review source-linked HR",
+    "Complete graphs, methods, provenance, limitations, and accessible tables",
 ]
 
 REQUIRED_CLASSES = [
-    "fsi-snapshot",
-    "fsi-score-card-grid",
-    "fsi-score-card",
-    "fsi-cohort-ranking",
-    "fsi-cohort-row",
-    "fsi-score-pill",
-    "fsi-validation-grid",
-    "fsi-validation-card",
-    "fsi-boundary-note",
-    "fsi-data-fallback",
+    "publication-finding-stack",
+    "technical-disclosure",
+    "contextual-qualification",
 ]
 
 FORBIDDEN_STRINGS = [
@@ -69,19 +59,10 @@ def main() -> None:
     forbidden = [text for text in FORBIDDEN_STRINGS if text in lower]
     assert not forbidden, f"Site contains forbidden overclaiming language: {forbidden}"
 
-    for path in [
-        ROOT / "data/review/fsi_tensor_v0_3_public_overview.json",
-        ROOT / "data/review/fsi_tensor_v0_3_autonomic_gated_cohort_summary.json",
-        ROOT / "data/review/fsi_tensor_v0_3_validation_summary.json",
-        ROOT / "data/review/fsi_tensor_v0_3_artifact_manifest_summary.json",
-    ]:
-        assert path.exists(), f"Missing local data artifact: {path.relative_to(ROOT)}"
-
-    print("FSI Evidence Corpus page snapshot valid")
-    print("homepage teaser present")
+    print("FSI/CSS Evidence Corpus page framing valid")
+    print("homepage evidence brief present")
     print("homepage does not contain full FSI ranking")
-    print("Evidence Corpus page references public overview JSON")
-    print("Evidence Corpus page references cohort, validation, and manifest JSON")
+    print("Evidence Corpus page preserves FSI/CSS scope and validation framing")
     print("boundary language present")
 
 

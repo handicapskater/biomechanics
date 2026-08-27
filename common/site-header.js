@@ -4,34 +4,25 @@
   const config = {
       brand: "HandicapSkater.com",
       primaryLinks: [
-        { href: "/story/", label: "Story", match: ["/story/"] },
-        { href: "/pain/", label: "Walking vs Rolling", match: ["/pain/"] },
+        { href: "/case/", label: "Case", match: ["/case/"] },
         { href: "/biomechanics/", label: "Biomechanics", match: ["/biomechanics/"] },
-        { href: "/evidence/strava-gps-skate-maps/", label: "Route Explorer", match: ["/evidence/strava-gps-skate-maps/"] },
-        { href: "/access/", label: "Recognition", match: ["/access/"] },
-        { href: "/health-ai/", label: "Mobility Intelligence", match: ["/health-ai/", "/videos/"] },
+        { href: "/story/", label: "Story", match: ["/story/"] },
+        { href: "/evidence/strava-gps-skate-maps/", label: "Routes", match: ["/evidence/strava-gps-skate-maps/"] },
+        { href: "/access/", label: "Record", match: ["/access/"] },
         {
-          href: "/platform/",
-          label: "Evidence Observatory",
+          href: "/evidence/",
+          label: "Evidence",
           match: ["/platform/", "/evidence/", "/evidence/mobility-comparison/", "/evidence/repeated-protocol/", "/evidence/transportation/", "/evidence/longitudinal/"],
           children: [
-            { href: "/platform/", label: "Observatory Overview", match: ["/platform/"] },
-            { href: "/evidence/", label: "Evidence Overview", match: ["/evidence/"] },
-            { href: "/evidence/#how-to-read", label: "How to Read the Evidence" },
+            { href: "/evidence/", label: "Evidence Brief", match: ["/evidence/"] },
+            { href: "/platform/", label: "Full Observatory", match: ["/platform/"] },
             { href: "/evidence/mobility-comparison/", label: "Walking Mechanical Load", match: ["/evidence/mobility-comparison/"] },
             { href: "/evidence/repeated-protocol/", label: "Perturbation & Recovery", match: ["/evidence/repeated-protocol/"] },
             { href: "/evidence/transportation/", label: "Transportation Body Coupling", match: ["/evidence/transportation/"] },
-            { href: "/evidence/longitudinal/", label: "Longitudinal Capacity", match: ["/evidence/longitudinal/"] },
-            { href: "/evidence/strava-gps-skate-maps/#route-browser", label: "Route Map Explorer", match: ["/evidence/strava-gps-skate-maps/"] },
-            // { href: "/evidence/#corpus-contains", label: "Evidence Corpus" },
-            // { href: "/evidence/#fsi-results", label: "FSI / CSS Context" },
-            // { href: "/evidence/#validation-audit", label: "Validation and Audit" }
-
-            // { href: "https://evidence.handicapskater.com/#case-functional-mobility", label: "Functional Mobility" },
-            // { href: "https://evidence.handicapskater.com/#case-integrated-mobility-metrics", label: "Integrated Mobility Metrics" },
-            // { href: "https://evidence.handicapskater.com/#case-fixed-rail-comparator", label: "Fixed-Rail Comparator" },
+            { href: "/evidence/longitudinal/", label: "Longitudinal Capacity", match: ["/evidence/longitudinal/"] }
           ]
-        }
+        },
+        { href: "https://handicapskater.org/", label: "Standard", match: [] }
       ]
   };
 

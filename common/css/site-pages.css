@@ -170,6 +170,38 @@
   font-variant: small-caps;
 }
 
+/* Function-first home and case briefing */
+.home-actions { margin-top: 1.5rem; }
+.compact-heading { max-width: 820px; }
+.section-links { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.25rem; }
+.section-links a { font-weight: 800; }
+.continuity-timeline { display: grid; gap: 0.75rem; grid-template-columns: repeat(6, minmax(0, 1fr)); list-style: none; margin: 1.5rem 0 0; padding: 0; }
+.continuity-timeline li { border-top: 4px solid var(--teal); padding: 0.8rem 0.75rem 0; }
+.continuity-timeline strong, .continuity-timeline span { display: block; }
+.continuity-timeline strong { color: var(--blue); font-size: 1.05rem; }
+.continuity-timeline span { font-weight: 850; margin: 0.35rem 0; text-transform: uppercase; }
+.continuity-timeline p { font-size: 0.92rem; margin: 0; }
+.source-note { border-left: 4px solid var(--gold); margin: 1.5rem 0 0; max-width: 850px; padding-left: 1rem; }
+.hillsdale-card, .requested-change-panel { background: var(--panel); border-left: 7px solid var(--gold); box-shadow: var(--shadow); padding: clamp(1.25rem, 3vw, 2.25rem); }
+.evidence-chain { display: flex; flex-wrap: wrap; gap: 0.6rem; list-style: none; margin: 1.5rem 0 0; padding: 0; }
+.evidence-chain li { background: var(--panel); border: 1px solid var(--line); border-radius: 999px; font-weight: 750; padding: 0.5rem 0.8rem; }
+.evidence-chain li:not(:last-child)::after { color: var(--teal); content: "→"; margin-left: 0.7rem; }
+.evidence-brief-grid { display: grid; gap: 1rem; grid-template-columns: repeat(5, minmax(0, 1fr)); margin-top: 1.5rem; }
+.evidence-brief-card { background: var(--panel); border: 1px solid var(--line); border-top: 5px solid var(--teal); box-shadow: var(--shadow); display: flex; flex-direction: column; min-height: 250px; padding: 1rem; }
+.evidence-brief-card > span { color: var(--blue); font-size: 0.85rem; font-weight: 900; }
+.evidence-brief-card h3 { font-size: 1.05rem; line-height: 1.25; }
+.evidence-brief-card p { font-size: 0.93rem; }
+.evidence-brief-card a { font-weight: 850; margin-top: auto; padding-top: 0.75rem; }
+.milestone-grid .tag { font-size: 0.67rem; }
+.audience-routing { display: grid; gap: 0.75rem; grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.audience-routing a { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); color: var(--ink); padding: 1rem; text-decoration: none; }
+.audience-routing a:hover, .audience-routing a:focus-visible { border-color: var(--teal); box-shadow: var(--shadow); }
+.audience-routing strong, .audience-routing span { display: block; }
+.audience-routing span { color: var(--blue); font-weight: 750; margin-top: 0.3rem; }
+.case-section { max-width: 880px; }
+@media (max-width: 1050px) { .continuity-timeline { grid-template-columns: repeat(3, minmax(0, 1fr)); } .evidence-brief-grid, .audience-routing { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 680px) { .continuity-timeline, .evidence-brief-grid, .audience-routing { grid-template-columns: 1fr; } .evidence-chain { display: grid; } .evidence-chain li:not(:last-child)::after { content: ""; } }
+
 /* Slice 10E selective content restoration */
 .perspective-grid {
   display: grid;

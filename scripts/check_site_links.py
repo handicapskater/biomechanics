@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 PUBLIC_PAGES = [
     Path("index.html"),
+    Path("case/index.html"),
     Path("story/index.html"),
     Path("pain/index.html"),
     Path("biomechanics/index.html"),

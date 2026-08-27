@@ -15,6 +15,7 @@ SAMPLED_MAP_PAGES = check_site_links.SAMPLED_MAP_PAGES
 
 MODERN_PAGES = [
     Path("index.html"),
+    Path("case/index.html"),
     Path("story/index.html"),
     Path("pain/index.html"),
     Path("biomechanics/index.html"),
@@ -27,23 +28,22 @@ MODERN_PAGES = [
 ]
 
 EXPECTED_NAV_HREFS = {
+    "/case/",
     "/story/",
-    "/pain/",
     "/biomechanics/",
     "/evidence/strava-gps-skate-maps/",
     "/access/",
-    "/platform/",
-    "/health-ai/",
+    "/evidence/",
 }
 
 EXPECTED_NAV_LABELS = {
+    "Case",
     "Story",
-    "Walking vs Rolling",
     "Biomechanics",
-    "Route Explorer",
-    "Recognition",
-    "Mobility Intelligence",
-    "Evidence Observatory",
+    "Routes",
+    "Record",
+    "Evidence",
+    "Standard",
 }
 
 
@@ -98,17 +98,11 @@ def tokens_css() -> str:
 class SiteTests(unittest.TestCase):
     def test_homepage_evidence_highlights_use_approved_publication_artifacts(self) -> None:
         home = read("index.html")
-        renderer = read("common/evidence-publication.js")
-        acceleration = read("common/acceleration-summary.js")
-        self.assertIn('data-publication-graph="functional_output_vs_burden_authoritative_miles"', home)
-        self.assertIn('data-publication-graph="transportation_body_coupling_comparison"', home)
-        self.assertIn("evidence-publication.js", home)
-        self.assertIn("apple_silicon_acceleration_summary.json", acceleration)
-        self.assertIn("speedup_vs_numpy.toFixed(2)", acceleration)
-        self.assertNotIn("acc measures pain", home.lower())
-        self.assertIn("RMSSD coupling remains unsupported", home)
-        self.assertIn("Evidence Observatory—the only scientific source", home)
-        self.assertIn("Accessible values supplied by the publication graph payload.", renderer)
+        graph_ids = re.findall(r'data-hero-graph-id="([^"]+)"', home)
+        self.assertEqual(len(graph_ids), 5)
+        self.assertEqual(len(set(graph_ids)), 5)
+        self.assertNotIn("sensors prove pain", home.lower())
+        self.assertIn("Complete graphs, methods, provenance, limitations, and accessible tables", home)
 
     def test_footer_has_no_sequence_or_related_navigation(self) -> None:
         footer = read("common/site-footer.js")
@@ -178,12 +172,12 @@ class SiteTests(unittest.TestCase):
         js = site_header_js()
         self.assertIn('normalizePath', js)
         self.assertIn('return match.includes(path)', js)
-        self.assertIn('href: "/health-ai/"', js)
-        self.assertIn('label: "Mobility Intelligence"', js)
+        self.assertIn('href: "/case/"', js)
+        self.assertIn('label: "Evidence"', js)
         self.assertNotIn('label: "Home"', js)
         self.assertIn('<a class="brand" href="/"', js)
         self.assertIn('{ href: "/story/", label: "Story", match: ["/story/"] }', js)
-        self.assertIn('{ href: "/pain/", label: "Walking vs Rolling", match: ["/pain/"] }', js)
+        self.assertIn('{ href: "/biomechanics/", label: "Biomechanics", match: ["/biomechanics/"] }', js)
         self.assertIn('label: "Biomechanics"', js)
         self.assertNotIn('"/healthcare-wearable-mobility/"', js)
 
@@ -202,10 +196,9 @@ class SiteTests(unittest.TestCase):
         self.assertIn('href="/evidence/repeated-protocol/"', evidence)
         self.assertIn('href="/evidence/mobility-comparison/#functional-output"', evidence)
         home = read("index.html")
-        self.assertEqual(home.count('class="button-row"'), 1)
-        hook = home.split('class="button-row"', 1)[1].split("</div>", 1)[0]
-        self.assertIn("Watch the Smart &amp; Final video", hook)
-        self.assertNotIn('href="/', hook)
+        self.assertEqual(home.count('button-row'), 1)
+        self.assertIn('href="/case/"', home)
+        self.assertIn('href="/evidence/"', home)
 
     def test_primary_navigation_uses_current_observatory_dropdown(self) -> None:
         js = site_header_js()
@@ -227,7 +220,7 @@ class SiteTests(unittest.TestCase):
     def test_com_header_does_not_duplicate_org_navigation(self) -> None:
         js = site_header_js()
         self.assertNotIn('brand: "HandicapSkater.org"', js)
-        self.assertNotIn("https://handicapskater.org/", js)
+        self.assertIn('label: "Standard"', js)
 
     def test_shared_navigation_css_contract(self) -> None:
         css = nav_css()
@@ -273,7 +266,6 @@ class SiteTests(unittest.TestCase):
             "/evidence/repeated-protocol/",
             "/evidence/transportation/",
             "/evidence/longitudinal/",
-            "/evidence/strava-gps-skate-maps/#route-browser",
         ):
             self.assertIn(f'href: "{href}"', js)
         self.assertNotIn('href: "https://evidence.handicapskater.com/#ask-evidence"', js)
@@ -617,43 +609,28 @@ function descendants(node, predicate) {
 
     def test_homepage_is_executive_front_door(self):
         html = read("index.html").lower()
-        self.assertIn("why skates?", html)
-        self.assertIn("a human story of movement and access", html)
-        self.assertIn("what looks unusual from a distance", html)
-        self.assertIn("let the evidence observatory remain the sole scientific authority", html)
+        self.assertIn("function before form", html)
+        self.assertIn("inline skates are not the claim. functional mobility is.", html)
+        self.assertIn("five questions. five governed views.", html)
         self.assertNotIn("<h2>a. the injury</h2>", html)
         self.assertNotIn("<h2>n. the present appeal</h2>", html)
 
     def test_homepage_chapters_follow_question_led_narrative_order(self) -> None:
         html = read("index.html")
-        chapter_ids = (
-            'id="why-skates"',
-            'id="what-happened"',
-            'id="walking"',
-            'id="rolling"',
-            'id="method"',
-            'id="evidence"',
-            'id="recognition"',
-            'id="future"',
-        )
+        chapter_ids = ('id="why-controlled-rolling"', 'id="continuity"', 'id="hillsdale"', 'id="pain-function"', 'id="evidence-brief"', 'id="recognition"', 'id="requested-change"', 'id="audience-routing"')
         positions = [html.index(chapter_id) for chapter_id in chapter_ids]
         self.assertEqual(positions, sorted(positions))
-        self.assertEqual(html.count('class="section story-chapter'), 8)
         for question in (
-            "Why did inline skates become a mobility aid?",
-            "What happened?",
-            "Why can walking hurt?",
-            "Why can rolling work differently?",
-            "How was this studied?",
-            "Where can the evidence be examined?",
-            "What happens when an unfamiliar aid meets a public system?",
-            "What should mobility intelligence understand next?",
+            "Why controlled rolling?",
+            "The functional claim came first. The technology caught up later.",
+            "Five questions. Five governed views.",
+            "Evaluate function before categorical exclusion.",
         ):
             self.assertIn(question, html)
 
     def test_scientific_routes_use_only_the_primary_navigation(self) -> None:
         js = site_header_js()
-        self.assertIn('label: "Evidence Observatory"', js)
+        self.assertIn('label: "Evidence"', js)
         self.assertNotIn("evidence-authority-strip", js)
         self.assertNotIn("ecosystem-path", js)
         self.assertNotIn("page-anchor-nav", read("evidence/index.html"))
@@ -669,13 +646,13 @@ function descendants(node, predicate) {
         js = site_header_js()
         com_config = js[js.index("const config ="):js.index("function normalizePath")]
         ordered = (
-            'label: "Story"',
-            'label: "Walking vs Rolling"',
+            'label: "Case"',
             'label: "Biomechanics"',
-            'label: "Route Explorer"',
-            'label: "Recognition"',
-            'label: "Mobility Intelligence"',
-            'label: "Evidence Observatory"',
+            'label: "Story"',
+            'label: "Routes"',
+            'label: "Record"',
+            'label: "Evidence"',
+            'label: "Standard"',
         )
         positions = [com_config.index(label) for label in ordered]
         self.assertEqual(positions, sorted(positions))
@@ -696,13 +673,13 @@ function descendants(node, predicate) {
         self.assertIn('brand: "HandicapSkater.com"', js)
         self.assertNotIn('brand: "HandicapSkater.org"', js)
         self.assertIn('{ href: "/story/", label: "Story", match: ["/story/"] }', js)
-        self.assertIn('href: "/health-ai/"', js)
+        self.assertIn('href: "/case/"', js)
         self.assertIn('return match.includes(path)', js)
 
     def test_homepage_is_story_not_redirect_shell(self) -> None:
         html = read("index.html").lower()
-        self.assertIn("a bounded, repeated n-of-1 inquiry", html)
-        self.assertIn("the evidence observatory—the only scientific source", html)
+        self.assertIn("modern governed measurements", html)
+        self.assertIn("full evidence observatory", html)
         self.assertIn("site-footer", html)
         self.assertNotIn('url=/story/', html)
         self.assertNotIn('this homepage now routes', html)
@@ -910,10 +887,6 @@ function descendants(node, predicate) {
         home = read("index.html")
         videos = read("videos/index.html")
         video_url = "https://www.reddit.com/r/HandicapSkater/s/6pPCv2k02t"
-        self.assertIn("What Looks Like a Stunt Is the Access Story", home)
-        self.assertIn("Watch the Smart &amp; Final video", home)
-        self.assertIn(video_url, home)
-        self.assertIn("shopping on skates, rolling to a motorcycle, and riding away", home)
         self.assertIn("Smart &amp; Final: Shopping, Skating, and Motorcycle Access", videos)
         self.assertIn(video_url, videos)
 
