@@ -129,6 +129,31 @@
       "canonical_activity_distance_miles": 0.0,
       "canonical_cohort": "fns_sns_skating",
       "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:14090914400",
+      "event_duration_seconds": 8999.0,
+      "event_start_local": "2025-04-05T13:34:30",
+      "precipitation_inches_per_hour": null,
+      "precipitation_type": null,
+      "protocol_scope": "broad_context",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_retained_by_sf_route_authority",
+      "temperature_f": null,
+      "triplet_sequence_role": null,
+      "weather_condition": null,
+      "weather_coverage_status": "weather_unavailable",
+      "weather_missing_reason": "Strava activity weather fields were empty",
+      "weather_provider": null,
+      "weather_source": null,
+      "weather_station": null,
+      "wind_gust_mph": null,
+      "wind_speed_mph": null
+    },
+    {
+      "canonical_activity_distance_miles": 0.0,
+      "canonical_cohort": "fns_sns_skating",
+      "distance_authority": "miles",
       "distance_source": "strava:strava_activity:16799588721",
       "event_duration_seconds": 7169.0,
       "event_start_local": "2025-12-20T21:09:00",
@@ -332,31 +357,6 @@
       "distance_source": "strava:strava_activity:9991396619",
       "event_duration_seconds": 10498.0,
       "event_start_local": "2023-10-06T20:50:30",
-      "precipitation_inches_per_hour": null,
-      "precipitation_type": null,
-      "protocol_scope": "broad_context",
-      "route_availability": "route_reference_available",
-      "route_weather_context_version": "cohort_route_weather_context.v1",
-      "sanitized_route_identity": null,
-      "sf_route_classification": "not_retained_by_sf_route_authority",
-      "temperature_f": null,
-      "triplet_sequence_role": null,
-      "weather_condition": null,
-      "weather_coverage_status": "weather_unavailable",
-      "weather_missing_reason": "Strava activity weather fields were empty",
-      "weather_provider": null,
-      "weather_source": null,
-      "weather_station": null,
-      "wind_gust_mph": null,
-      "wind_speed_mph": null
-    },
-    {
-      "canonical_activity_distance_miles": 0.0,
-      "canonical_cohort": "other_review",
-      "distance_authority": "miles",
-      "distance_source": "strava:strava_activity:14090914400",
-      "event_duration_seconds": 8999.0,
-      "event_start_local": "2025-04-05T13:34:30",
       "precipitation_inches_per_hour": null,
       "precipitation_type": null,
       "protocol_scope": "broad_context",
@@ -5002,7 +5002,7 @@
     },
     {
       "canonical_activity_distance_miles": 11.194809810705479,
-      "canonical_cohort": "other_review",
+      "canonical_cohort": "paratransit",
       "distance_authority": "miles",
       "distance_source": "strava:strava_activity:12801572442",
       "event_duration_seconds": null,
@@ -6752,7 +6752,7 @@
     },
     {
       "canonical_activity_distance_miles": 11.378487135130836,
-      "canonical_cohort": "other_review",
+      "canonical_cohort": "fns_sns_skating",
       "distance_authority": "miles",
       "distance_source": "strava:strava_activity:13692414129",
       "event_duration_seconds": null,
@@ -16129,6 +16129,31 @@
       "canonical_activity_distance_miles": 0.0,
       "canonical_cohort": "fns_sns_skating",
       "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:19760974747",
+      "event_duration_seconds": null,
+      "event_start_local": null,
+      "precipitation_inches_per_hour": null,
+      "precipitation_type": null,
+      "protocol_scope": "broad_context",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": null,
+      "triplet_sequence_role": null,
+      "weather_condition": null,
+      "weather_coverage_status": "weather_unavailable",
+      "weather_missing_reason": "Strava activity weather fields were empty",
+      "weather_provider": null,
+      "weather_source": null,
+      "weather_station": null,
+      "wind_gust_mph": null,
+      "wind_speed_mph": null
+    },
+    {
+      "canonical_activity_distance_miles": 0.0,
+      "canonical_cohort": "fns_sns_skating",
+      "distance_authority": "miles",
       "distance_source": "strava:strava_activity:5016976921",
       "event_duration_seconds": 10800.0,
       "event_start_local": "2021-03-26T21:00:00",
@@ -17107,31 +17132,6 @@
       "distance_source": "strava:strava_activity:17919276880",
       "event_duration_seconds": 1320.0,
       "event_start_local": "2026-03-30T17:08:00",
-      "precipitation_inches_per_hour": null,
-      "precipitation_type": null,
-      "protocol_scope": "broad_context",
-      "route_availability": "route_reference_available",
-      "route_weather_context_version": "cohort_route_weather_context.v1",
-      "sanitized_route_identity": null,
-      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
-      "temperature_f": null,
-      "triplet_sequence_role": null,
-      "weather_condition": null,
-      "weather_coverage_status": "weather_unavailable",
-      "weather_missing_reason": "Strava activity weather fields were empty",
-      "weather_provider": null,
-      "weather_source": null,
-      "weather_station": null,
-      "wind_gust_mph": null,
-      "wind_speed_mph": null
-    },
-    {
-      "canonical_activity_distance_miles": 0.0,
-      "canonical_cohort": "other_review",
-      "distance_authority": "miles",
-      "distance_source": "strava:strava_activity:19760974747",
-      "event_duration_seconds": null,
-      "event_start_local": null,
       "precipitation_inches_per_hour": null,
       "precipitation_type": null,
       "protocol_scope": "broad_context",
@@ -33802,7 +33802,7 @@
     },
     {
       "canonical_activity_distance_miles": 11.850853515469655,
-      "canonical_cohort": "other_review",
+      "canonical_cohort": "fns_sns_skating",
       "distance_authority": "miles",
       "distance_source": "strava:strava_activity:19747505931",
       "event_duration_seconds": null,
@@ -37202,7 +37202,7 @@
     },
     {
       "canonical_activity_distance_miles": 23.884825121291655,
-      "canonical_cohort": "other_review",
+      "canonical_cohort": "paratransit",
       "distance_authority": "miles",
       "distance_source": "strava:strava_activity:19746594409",
       "event_duration_seconds": null,
@@ -37427,7 +37427,7 @@
     },
     {
       "canonical_activity_distance_miles": 23.938449455181736,
-      "canonical_cohort": "other_review",
+      "canonical_cohort": "paratransit",
       "distance_authority": "miles",
       "distance_source": "strava:strava_activity:19760490909",
       "event_duration_seconds": null,
@@ -38077,7 +38077,7 @@
     },
     {
       "canonical_activity_distance_miles": 24.202532211882602,
-      "canonical_cohort": "other_review",
+      "canonical_cohort": "paratransit",
       "distance_authority": "miles",
       "distance_source": "strava:strava_activity:19748113330",
       "event_duration_seconds": null,
@@ -38302,7 +38302,7 @@
     },
     {
       "canonical_activity_distance_miles": 24.27088304302871,
-      "canonical_cohort": "other_review",
+      "canonical_cohort": "paratransit",
       "distance_authority": "miles",
       "distance_source": "strava:strava_activity:19761576933",
       "event_duration_seconds": null,
@@ -43827,6 +43827,131 @@
     },
     {
       "canonical_activity_distance_miles": null,
+      "canonical_cohort": "fns_sns_skating",
+      "distance_authority": null,
+      "distance_source": null,
+      "event_duration_seconds": 10647.0,
+      "event_start_local": "2022-06-25T20:37:33",
+      "precipitation_inches_per_hour": null,
+      "precipitation_type": null,
+      "protocol_scope": "broad_context",
+      "route_availability": "no_strava_activity",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": null,
+      "triplet_sequence_role": null,
+      "weather_condition": null,
+      "weather_coverage_status": "no_strava_activity",
+      "weather_missing_reason": "no linked Strava activity",
+      "weather_provider": null,
+      "weather_source": null,
+      "weather_station": null,
+      "wind_gust_mph": null,
+      "wind_speed_mph": null
+    },
+    {
+      "canonical_activity_distance_miles": null,
+      "canonical_cohort": "fns_sns_skating",
+      "distance_authority": null,
+      "distance_source": null,
+      "event_duration_seconds": 11280.0,
+      "event_start_local": "2021-06-04T20:55:00",
+      "precipitation_inches_per_hour": null,
+      "precipitation_type": null,
+      "protocol_scope": "broad_context",
+      "route_availability": "no_strava_activity",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": null,
+      "triplet_sequence_role": null,
+      "weather_condition": null,
+      "weather_coverage_status": "no_strava_activity",
+      "weather_missing_reason": "no linked Strava activity",
+      "weather_provider": null,
+      "weather_source": null,
+      "weather_station": null,
+      "wind_gust_mph": null,
+      "wind_speed_mph": null
+    },
+    {
+      "canonical_activity_distance_miles": null,
+      "canonical_cohort": "fns_sns_skating",
+      "distance_authority": null,
+      "distance_source": null,
+      "event_duration_seconds": 9259.0,
+      "event_start_local": "2021-05-08T20:40:41",
+      "precipitation_inches_per_hour": null,
+      "precipitation_type": null,
+      "protocol_scope": "broad_context",
+      "route_availability": "no_strava_activity",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": null,
+      "triplet_sequence_role": null,
+      "weather_condition": null,
+      "weather_coverage_status": "no_strava_activity",
+      "weather_missing_reason": "no linked Strava activity",
+      "weather_provider": null,
+      "weather_source": null,
+      "weather_station": null,
+      "wind_gust_mph": null,
+      "wind_speed_mph": null
+    },
+    {
+      "canonical_activity_distance_miles": null,
+      "canonical_cohort": "fns_sns_skating",
+      "distance_authority": null,
+      "distance_source": null,
+      "event_duration_seconds": 9868.0,
+      "event_start_local": "2021-11-06T20:32:35",
+      "precipitation_inches_per_hour": null,
+      "precipitation_type": null,
+      "protocol_scope": "broad_context",
+      "route_availability": "no_strava_activity",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": null,
+      "triplet_sequence_role": null,
+      "weather_condition": null,
+      "weather_coverage_status": "no_strava_activity",
+      "weather_missing_reason": "no linked Strava activity",
+      "weather_provider": null,
+      "weather_source": null,
+      "weather_station": null,
+      "wind_gust_mph": null,
+      "wind_speed_mph": null
+    },
+    {
+      "canonical_activity_distance_miles": null,
+      "canonical_cohort": "fns_sns_skating",
+      "distance_authority": null,
+      "distance_source": null,
+      "event_duration_seconds": 9981.0,
+      "event_start_local": "2021-05-21T20:58:39",
+      "precipitation_inches_per_hour": null,
+      "precipitation_type": null,
+      "protocol_scope": "broad_context",
+      "route_availability": "no_strava_activity",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": null,
+      "triplet_sequence_role": null,
+      "weather_condition": null,
+      "weather_coverage_status": "no_strava_activity",
+      "weather_missing_reason": "no linked Strava activity",
+      "weather_provider": null,
+      "weather_source": null,
+      "weather_station": null,
+      "wind_gust_mph": null,
+      "wind_speed_mph": null
+    },
+    {
+      "canonical_activity_distance_miles": null,
       "canonical_cohort": "motorcycle",
       "distance_authority": null,
       "distance_source": null,
@@ -43955,56 +44080,6 @@
       "canonical_cohort": "other_review",
       "distance_authority": null,
       "distance_source": null,
-      "event_duration_seconds": 10647.0,
-      "event_start_local": "2022-06-25T20:37:33",
-      "precipitation_inches_per_hour": null,
-      "precipitation_type": null,
-      "protocol_scope": "broad_context",
-      "route_availability": "no_strava_activity",
-      "route_weather_context_version": "cohort_route_weather_context.v1",
-      "sanitized_route_identity": null,
-      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
-      "temperature_f": null,
-      "triplet_sequence_role": null,
-      "weather_condition": null,
-      "weather_coverage_status": "no_strava_activity",
-      "weather_missing_reason": "no linked Strava activity",
-      "weather_provider": null,
-      "weather_source": null,
-      "weather_station": null,
-      "wind_gust_mph": null,
-      "wind_speed_mph": null
-    },
-    {
-      "canonical_activity_distance_miles": null,
-      "canonical_cohort": "other_review",
-      "distance_authority": null,
-      "distance_source": null,
-      "event_duration_seconds": 11280.0,
-      "event_start_local": "2021-06-04T20:55:00",
-      "precipitation_inches_per_hour": null,
-      "precipitation_type": null,
-      "protocol_scope": "broad_context",
-      "route_availability": "no_strava_activity",
-      "route_weather_context_version": "cohort_route_weather_context.v1",
-      "sanitized_route_identity": null,
-      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
-      "temperature_f": null,
-      "triplet_sequence_role": null,
-      "weather_condition": null,
-      "weather_coverage_status": "no_strava_activity",
-      "weather_missing_reason": "no linked Strava activity",
-      "weather_provider": null,
-      "weather_source": null,
-      "weather_station": null,
-      "wind_gust_mph": null,
-      "wind_speed_mph": null
-    },
-    {
-      "canonical_activity_distance_miles": null,
-      "canonical_cohort": "other_review",
-      "distance_authority": null,
-      "distance_source": null,
       "event_duration_seconds": 1317.0,
       "event_start_local": "2026-03-27T16:00:00",
       "precipitation_inches_per_hour": null,
@@ -44082,81 +44157,6 @@
       "distance_source": null,
       "event_duration_seconds": 4200.0,
       "event_start_local": "2022-04-16T11:20:00",
-      "precipitation_inches_per_hour": null,
-      "precipitation_type": null,
-      "protocol_scope": "broad_context",
-      "route_availability": "no_strava_activity",
-      "route_weather_context_version": "cohort_route_weather_context.v1",
-      "sanitized_route_identity": null,
-      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
-      "temperature_f": null,
-      "triplet_sequence_role": null,
-      "weather_condition": null,
-      "weather_coverage_status": "no_strava_activity",
-      "weather_missing_reason": "no linked Strava activity",
-      "weather_provider": null,
-      "weather_source": null,
-      "weather_station": null,
-      "wind_gust_mph": null,
-      "wind_speed_mph": null
-    },
-    {
-      "canonical_activity_distance_miles": null,
-      "canonical_cohort": "other_review",
-      "distance_authority": null,
-      "distance_source": null,
-      "event_duration_seconds": 9259.0,
-      "event_start_local": "2021-05-08T20:40:41",
-      "precipitation_inches_per_hour": null,
-      "precipitation_type": null,
-      "protocol_scope": "broad_context",
-      "route_availability": "no_strava_activity",
-      "route_weather_context_version": "cohort_route_weather_context.v1",
-      "sanitized_route_identity": null,
-      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
-      "temperature_f": null,
-      "triplet_sequence_role": null,
-      "weather_condition": null,
-      "weather_coverage_status": "no_strava_activity",
-      "weather_missing_reason": "no linked Strava activity",
-      "weather_provider": null,
-      "weather_source": null,
-      "weather_station": null,
-      "wind_gust_mph": null,
-      "wind_speed_mph": null
-    },
-    {
-      "canonical_activity_distance_miles": null,
-      "canonical_cohort": "other_review",
-      "distance_authority": null,
-      "distance_source": null,
-      "event_duration_seconds": 9868.0,
-      "event_start_local": "2021-11-06T20:32:35",
-      "precipitation_inches_per_hour": null,
-      "precipitation_type": null,
-      "protocol_scope": "broad_context",
-      "route_availability": "no_strava_activity",
-      "route_weather_context_version": "cohort_route_weather_context.v1",
-      "sanitized_route_identity": null,
-      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
-      "temperature_f": null,
-      "triplet_sequence_role": null,
-      "weather_condition": null,
-      "weather_coverage_status": "no_strava_activity",
-      "weather_missing_reason": "no linked Strava activity",
-      "weather_provider": null,
-      "weather_source": null,
-      "weather_station": null,
-      "wind_gust_mph": null,
-      "wind_speed_mph": null
-    },
-    {
-      "canonical_activity_distance_miles": null,
-      "canonical_cohort": "other_review",
-      "distance_authority": null,
-      "distance_source": null,
-      "event_duration_seconds": 9981.0,
-      "event_start_local": "2021-05-21T20:58:39",
       "precipitation_inches_per_hour": null,
       "precipitation_type": null,
       "protocol_scope": "broad_context",
@@ -47154,7 +47154,7 @@
   "alt_text": "Route and weather context covers canonical event distances in miles and available temperature in degrees Fahrenheit and wind in miles per hour; missing weather is not filled.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "016d82c6dc2a4154e6f519c32b202416e58c971e77d81ac89d5c733c49c95303",
+  "content_hash": "e55424a05be4321056c1d5f6227f22e9df6eb86b8e49e0956385db485eeb29e9",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -47208,6 +47208,11 @@
             },
             {
               "date": "2024-11-23",
+              "unit": "miles",
+              "value": 0.0
+            },
+            {
+              "date": "2025-04-05",
               "unit": "miles",
               "value": 0.0
             },
@@ -48210,6 +48215,11 @@
               "date": "2025-04-25",
               "unit": "miles",
               "value": 11.37556669052732
+            },
+            {
+              "date": "",
+              "unit": "miles",
+              "value": 11.378487135130836
             },
             {
               "date": "2022-08-19",
@@ -49942,6 +49952,11 @@
               "value": 9.998173168694821
             },
             {
+              "date": "",
+              "unit": "miles",
+              "value": 0.0
+            },
+            {
               "date": "2021-03-26",
               "unit": "miles",
               "value": 0.0
@@ -50060,6 +50075,11 @@
               "date": "2021-01-15",
               "unit": "miles",
               "value": 11.288636860733316
+            },
+            {
+              "date": "",
+              "unit": "miles",
+              "value": 11.850853515469655
             },
             {
               "date": "2026-07-17",
@@ -51330,11 +51350,6 @@
           "label": "Other Review",
           "points": [
             {
-              "date": "2025-04-05",
-              "unit": "miles",
-              "value": 0.0
-            },
-            {
               "date": "2025-10-15",
               "unit": "miles",
               "value": 0.0
@@ -51507,17 +51522,7 @@
             {
               "date": "",
               "unit": "miles",
-              "value": 11.194809810705479
-            },
-            {
-              "date": "",
-              "unit": "miles",
               "value": 11.216868488029904
-            },
-            {
-              "date": "",
-              "unit": "miles",
-              "value": 11.378487135130836
             },
             {
               "date": "2026-04-15",
@@ -51651,11 +51656,6 @@
             },
             {
               "date": "2026-03-30",
-              "unit": "miles",
-              "value": 0.0
-            },
-            {
-              "date": "",
               "unit": "miles",
               "value": 0.0
             },
@@ -51875,11 +51875,6 @@
               "value": 1.9273070269625385
             },
             {
-              "date": "",
-              "unit": "miles",
-              "value": 11.850853515469655
-            },
-            {
               "date": "2022-05-05",
               "unit": "miles",
               "value": 2.0569871947824705
@@ -51992,16 +51987,6 @@
             {
               "date": "",
               "unit": "miles",
-              "value": 23.884825121291655
-            },
-            {
-              "date": "",
-              "unit": "miles",
-              "value": 23.938449455181736
-            },
-            {
-              "date": "",
-              "unit": "miles",
               "value": 23.948080708661415
             },
             {
@@ -52013,11 +51998,6 @@
               "date": "",
               "unit": "miles",
               "value": 24.174384096874256
-            },
-            {
-              "date": "",
-              "unit": "miles",
-              "value": 24.202532211882602
             },
             {
               "date": "",
@@ -52038,11 +52018,6 @@
               "date": "",
               "unit": "miles",
               "value": 24.26199743497972
-            },
-            {
-              "date": "",
-              "unit": "miles",
-              "value": 24.27088304302871
             },
             {
               "date": "",
@@ -52140,6 +52115,11 @@
           "cohort": "paratransit",
           "label": "Paratransit",
           "points": [
+            {
+              "date": "",
+              "unit": "miles",
+              "value": 11.194809810705479
+            },
             {
               "date": "2025-12-05",
               "unit": "miles",
@@ -52446,9 +52426,19 @@
               "value": 23.755952736021634
             },
             {
+              "date": "",
+              "unit": "miles",
+              "value": 23.884825121291655
+            },
+            {
               "date": "2026-03-07",
               "unit": "miles",
               "value": 23.88557076672234
+            },
+            {
+              "date": "",
+              "unit": "miles",
+              "value": 23.938449455181736
             },
             {
               "date": "2026-05-02",
@@ -52506,6 +52496,11 @@
               "value": 24.195697128767993
             },
             {
+              "date": "",
+              "unit": "miles",
+              "value": 24.202532211882602
+            },
+            {
               "date": "2026-04-25",
               "unit": "miles",
               "value": 24.210547900262466
@@ -52514,6 +52509,11 @@
               "date": "2026-05-09",
               "unit": "miles",
               "value": 24.23552702219041
+            },
+            {
+              "date": "",
+              "unit": "miles",
+              "value": 24.27088304302871
             },
             {
               "date": "2026-05-02",
@@ -56975,6 +56975,11 @@
               "value": 53.42
             },
             {
+              "date": "",
+              "unit": "°F",
+              "value": 53.24
+            },
+            {
               "date": "2022-08-19",
               "unit": "°F",
               "value": 64.28571428571429
@@ -58735,6 +58740,11 @@
               "value": 58.64
             },
             {
+              "date": "",
+              "unit": "°F",
+              "value": 62.6
+            },
+            {
               "date": "2026-07-17",
               "unit": "°F",
               "value": 59.0
@@ -60030,17 +60040,7 @@
             {
               "date": "",
               "unit": "°F",
-              "value": 57.2
-            },
-            {
-              "date": "",
-              "unit": "°F",
               "value": 56.12
-            },
-            {
-              "date": "",
-              "unit": "°F",
-              "value": 53.24
             },
             {
               "date": "2026-04-15",
@@ -60378,11 +60378,6 @@
               "value": 53.42
             },
             {
-              "date": "",
-              "unit": "°F",
-              "value": 62.6
-            },
-            {
               "date": "2022-05-05",
               "unit": "°F",
               "value": 62.24
@@ -60495,16 +60490,6 @@
             {
               "date": "",
               "unit": "°F",
-              "value": 62.959999999999994
-            },
-            {
-              "date": "",
-              "unit": "°F",
-              "value": 66.2
-            },
-            {
-              "date": "",
-              "unit": "°F",
               "value": 65.84
             },
             {
@@ -60516,11 +60501,6 @@
               "date": "",
               "unit": "°F",
               "value": 65.48
-            },
-            {
-              "date": "",
-              "unit": "°F",
-              "value": 60.62
             },
             {
               "date": "",
@@ -60541,11 +60521,6 @@
               "date": "",
               "unit": "°F",
               "value": 56.48
-            },
-            {
-              "date": "",
-              "unit": "°F",
-              "value": 57.74
             },
             {
               "date": "",
@@ -60643,6 +60618,11 @@
           "cohort": "paratransit",
           "label": "Paratransit",
           "points": [
+            {
+              "date": "",
+              "unit": "°F",
+              "value": 57.2
+            },
             {
               "date": "2026-04-04",
               "unit": "°F",
@@ -60904,9 +60884,19 @@
               "value": 65.3
             },
             {
+              "date": "",
+              "unit": "°F",
+              "value": 62.959999999999994
+            },
+            {
               "date": "2026-03-07",
               "unit": "°F",
               "value": 58.82
+            },
+            {
+              "date": "",
+              "unit": "°F",
+              "value": 66.2
             },
             {
               "date": "2026-05-02",
@@ -60964,6 +60954,11 @@
               "value": 55.4
             },
             {
+              "date": "",
+              "unit": "°F",
+              "value": 60.62
+            },
+            {
               "date": "2026-04-25",
               "unit": "°F",
               "value": 54.68
@@ -60972,6 +60967,11 @@
               "date": "2026-05-09",
               "unit": "°F",
               "value": 54.32
+            },
+            {
+              "date": "",
+              "unit": "°F",
+              "value": 57.74
             },
             {
               "date": "2026-05-02",
@@ -62863,6 +62863,11 @@
               "value": 7.6055833929849594
             },
             {
+              "date": "",
+              "unit": "mph",
+              "value": 6.93450250537
+            },
+            {
               "date": "2022-08-19",
               "unit": "mph",
               "value": 13.285714285714286
@@ -64623,6 +64628,11 @@
               "value": 4.69756621331424
             },
             {
+              "date": "",
+              "unit": "mph",
+              "value": 9.39513242662848
+            },
+            {
               "date": "2026-07-17",
               "unit": "mph",
               "value": 9.171438797423038
@@ -65918,17 +65928,7 @@
             {
               "date": "",
               "unit": "mph",
-              "value": 12.5268432355
-            },
-            {
-              "date": "",
-              "unit": "mph",
               "value": 11.4083750895
-            },
-            {
-              "date": "",
-              "unit": "mph",
-              "value": 6.93450250537
             },
             {
               "date": "2026-04-15",
@@ -66266,11 +66266,6 @@
               "value": 5.368647100930559
             },
             {
-              "date": "",
-              "unit": "mph",
-              "value": 9.39513242662848
-            },
-            {
               "date": "2022-05-05",
               "unit": "mph",
               "value": 5.592340730136
@@ -66383,16 +66378,6 @@
             {
               "date": "",
               "unit": "mph",
-              "value": 8.052970651395839
-            },
-            {
-              "date": "",
-              "unit": "mph",
-              "value": 6.263421617752319
-            },
-            {
-              "date": "",
-              "unit": "mph",
               "value": 8.27666428060128
             },
             {
@@ -66404,11 +66389,6 @@
               "date": "",
               "unit": "mph",
               "value": 9.84251968503936
-            },
-            {
-              "date": "",
-              "unit": "mph",
-              "value": 8.27666428060128
             },
             {
               "date": "",
@@ -66429,11 +66409,6 @@
               "date": "",
               "unit": "mph",
               "value": 9.39513242662848
-            },
-            {
-              "date": "",
-              "unit": "mph",
-              "value": 7.15819613457408
             },
             {
               "date": "",
@@ -66531,6 +66506,11 @@
           "cohort": "paratransit",
           "label": "Paratransit",
           "points": [
+            {
+              "date": "",
+              "unit": "mph",
+              "value": 12.5268432355
+            },
             {
               "date": "2026-04-04",
               "unit": "mph",
@@ -66792,9 +66772,19 @@
               "value": 8.27666428060128
             },
             {
+              "date": "",
+              "unit": "mph",
+              "value": 8.052970651395839
+            },
+            {
               "date": "2026-03-07",
               "unit": "mph",
               "value": 2.46062992125984
+            },
+            {
+              "date": "",
+              "unit": "mph",
+              "value": 6.263421617752319
             },
             {
               "date": "2026-05-02",
@@ -66852,6 +66842,11 @@
               "value": 3.3554044380815995
             },
             {
+              "date": "",
+              "unit": "mph",
+              "value": 8.27666428060128
+            },
+            {
               "date": "2026-04-25",
               "unit": "mph",
               "value": 7.15819613457408
@@ -66860,6 +66855,11 @@
               "date": "2026-05-09",
               "unit": "mph",
               "value": 6.710808876163199
+            },
+            {
+              "date": "",
+              "unit": "mph",
+              "value": 7.15819613457408
             },
             {
               "date": "2026-05-02",
@@ -67851,6 +67851,11 @@
             },
             {
               "date": "2024-11-23",
+              "unit": "miles",
+              "value": 0.0
+            },
+            {
+              "date": "2025-04-05",
               "unit": "miles",
               "value": 0.0
             },
@@ -68853,6 +68858,11 @@
               "date": "2025-04-25",
               "unit": "miles",
               "value": 11.37556669052732
+            },
+            {
+              "date": "",
+              "unit": "miles",
+              "value": 11.378487135130836
             },
             {
               "date": "2022-08-19",
@@ -70585,6 +70595,11 @@
               "value": 9.998173168694821
             },
             {
+              "date": "",
+              "unit": "miles",
+              "value": 0.0
+            },
+            {
               "date": "2021-03-26",
               "unit": "miles",
               "value": 0.0
@@ -70703,6 +70718,11 @@
               "date": "2021-01-15",
               "unit": "miles",
               "value": 11.288636860733316
+            },
+            {
+              "date": "",
+              "unit": "miles",
+              "value": 11.850853515469655
             },
             {
               "date": "2026-07-17",
@@ -71973,11 +71993,6 @@
           "label": "Other Review",
           "points": [
             {
-              "date": "2025-04-05",
-              "unit": "miles",
-              "value": 0.0
-            },
-            {
               "date": "2025-10-15",
               "unit": "miles",
               "value": 0.0
@@ -72150,17 +72165,7 @@
             {
               "date": "",
               "unit": "miles",
-              "value": 11.194809810705479
-            },
-            {
-              "date": "",
-              "unit": "miles",
               "value": 11.216868488029904
-            },
-            {
-              "date": "",
-              "unit": "miles",
-              "value": 11.378487135130836
             },
             {
               "date": "2026-04-15",
@@ -72294,11 +72299,6 @@
             },
             {
               "date": "2026-03-30",
-              "unit": "miles",
-              "value": 0.0
-            },
-            {
-              "date": "",
               "unit": "miles",
               "value": 0.0
             },
@@ -72518,11 +72518,6 @@
               "value": 1.9273070269625385
             },
             {
-              "date": "",
-              "unit": "miles",
-              "value": 11.850853515469655
-            },
-            {
               "date": "2022-05-05",
               "unit": "miles",
               "value": 2.0569871947824705
@@ -72635,16 +72630,6 @@
             {
               "date": "",
               "unit": "miles",
-              "value": 23.884825121291655
-            },
-            {
-              "date": "",
-              "unit": "miles",
-              "value": 23.938449455181736
-            },
-            {
-              "date": "",
-              "unit": "miles",
               "value": 23.948080708661415
             },
             {
@@ -72656,11 +72641,6 @@
               "date": "",
               "unit": "miles",
               "value": 24.174384096874256
-            },
-            {
-              "date": "",
-              "unit": "miles",
-              "value": 24.202532211882602
             },
             {
               "date": "",
@@ -72681,11 +72661,6 @@
               "date": "",
               "unit": "miles",
               "value": 24.26199743497972
-            },
-            {
-              "date": "",
-              "unit": "miles",
-              "value": 24.27088304302871
             },
             {
               "date": "",
@@ -72783,6 +72758,11 @@
           "cohort": "paratransit",
           "label": "Paratransit",
           "points": [
+            {
+              "date": "",
+              "unit": "miles",
+              "value": 11.194809810705479
+            },
             {
               "date": "2025-12-05",
               "unit": "miles",
@@ -73089,9 +73069,19 @@
               "value": 23.755952736021634
             },
             {
+              "date": "",
+              "unit": "miles",
+              "value": 23.884825121291655
+            },
+            {
               "date": "2026-03-07",
               "unit": "miles",
               "value": 23.88557076672234
+            },
+            {
+              "date": "",
+              "unit": "miles",
+              "value": 23.938449455181736
             },
             {
               "date": "2026-05-02",
@@ -73149,6 +73139,11 @@
               "value": 24.195697128767993
             },
             {
+              "date": "",
+              "unit": "miles",
+              "value": 24.202532211882602
+            },
+            {
               "date": "2026-04-25",
               "unit": "miles",
               "value": 24.210547900262466
@@ -73157,6 +73152,11 @@
               "date": "2026-05-09",
               "unit": "miles",
               "value": 24.23552702219041
+            },
+            {
+              "date": "",
+              "unit": "miles",
+              "value": 24.27088304302871
             },
             {
               "date": "2026-05-02",
@@ -77620,6 +77620,11 @@
               "value": 53.42
             },
             {
+              "date": "",
+              "unit": "°F",
+              "value": 53.24
+            },
+            {
               "date": "2022-08-19",
               "unit": "°F",
               "value": 64.28571428571429
@@ -79380,6 +79385,11 @@
               "value": 58.64
             },
             {
+              "date": "",
+              "unit": "°F",
+              "value": 62.6
+            },
+            {
               "date": "2026-07-17",
               "unit": "°F",
               "value": 59.0
@@ -80675,17 +80685,7 @@
             {
               "date": "",
               "unit": "°F",
-              "value": 57.2
-            },
-            {
-              "date": "",
-              "unit": "°F",
               "value": 56.12
-            },
-            {
-              "date": "",
-              "unit": "°F",
-              "value": 53.24
             },
             {
               "date": "2026-04-15",
@@ -81023,11 +81023,6 @@
               "value": 53.42
             },
             {
-              "date": "",
-              "unit": "°F",
-              "value": 62.6
-            },
-            {
               "date": "2022-05-05",
               "unit": "°F",
               "value": 62.24
@@ -81140,16 +81135,6 @@
             {
               "date": "",
               "unit": "°F",
-              "value": 62.959999999999994
-            },
-            {
-              "date": "",
-              "unit": "°F",
-              "value": 66.2
-            },
-            {
-              "date": "",
-              "unit": "°F",
               "value": 65.84
             },
             {
@@ -81161,11 +81146,6 @@
               "date": "",
               "unit": "°F",
               "value": 65.48
-            },
-            {
-              "date": "",
-              "unit": "°F",
-              "value": 60.62
             },
             {
               "date": "",
@@ -81186,11 +81166,6 @@
               "date": "",
               "unit": "°F",
               "value": 56.48
-            },
-            {
-              "date": "",
-              "unit": "°F",
-              "value": 57.74
             },
             {
               "date": "",
@@ -81288,6 +81263,11 @@
           "cohort": "paratransit",
           "label": "Paratransit",
           "points": [
+            {
+              "date": "",
+              "unit": "°F",
+              "value": 57.2
+            },
             {
               "date": "2026-04-04",
               "unit": "°F",
@@ -81549,9 +81529,19 @@
               "value": 65.3
             },
             {
+              "date": "",
+              "unit": "°F",
+              "value": 62.959999999999994
+            },
+            {
               "date": "2026-03-07",
               "unit": "°F",
               "value": 58.82
+            },
+            {
+              "date": "",
+              "unit": "°F",
+              "value": 66.2
             },
             {
               "date": "2026-05-02",
@@ -81609,6 +81599,11 @@
               "value": 55.4
             },
             {
+              "date": "",
+              "unit": "°F",
+              "value": 60.62
+            },
+            {
               "date": "2026-04-25",
               "unit": "°F",
               "value": 54.68
@@ -81617,6 +81612,11 @@
               "date": "2026-05-09",
               "unit": "°F",
               "value": 54.32
+            },
+            {
+              "date": "",
+              "unit": "°F",
+              "value": 57.74
             },
             {
               "date": "2026-05-02",
@@ -83510,6 +83510,11 @@
               "value": 7.6055833929849594
             },
             {
+              "date": "",
+              "unit": "mph",
+              "value": 6.93450250537
+            },
+            {
               "date": "2022-08-19",
               "unit": "mph",
               "value": 13.285714285714286
@@ -85270,6 +85275,11 @@
               "value": 4.69756621331424
             },
             {
+              "date": "",
+              "unit": "mph",
+              "value": 9.39513242662848
+            },
+            {
               "date": "2026-07-17",
               "unit": "mph",
               "value": 9.171438797423038
@@ -86565,17 +86575,7 @@
             {
               "date": "",
               "unit": "mph",
-              "value": 12.5268432355
-            },
-            {
-              "date": "",
-              "unit": "mph",
               "value": 11.4083750895
-            },
-            {
-              "date": "",
-              "unit": "mph",
-              "value": 6.93450250537
             },
             {
               "date": "2026-04-15",
@@ -86913,11 +86913,6 @@
               "value": 5.368647100930559
             },
             {
-              "date": "",
-              "unit": "mph",
-              "value": 9.39513242662848
-            },
-            {
               "date": "2022-05-05",
               "unit": "mph",
               "value": 5.592340730136
@@ -87030,16 +87025,6 @@
             {
               "date": "",
               "unit": "mph",
-              "value": 8.052970651395839
-            },
-            {
-              "date": "",
-              "unit": "mph",
-              "value": 6.263421617752319
-            },
-            {
-              "date": "",
-              "unit": "mph",
               "value": 8.27666428060128
             },
             {
@@ -87051,11 +87036,6 @@
               "date": "",
               "unit": "mph",
               "value": 9.84251968503936
-            },
-            {
-              "date": "",
-              "unit": "mph",
-              "value": 8.27666428060128
             },
             {
               "date": "",
@@ -87076,11 +87056,6 @@
               "date": "",
               "unit": "mph",
               "value": 9.39513242662848
-            },
-            {
-              "date": "",
-              "unit": "mph",
-              "value": 7.15819613457408
             },
             {
               "date": "",
@@ -87178,6 +87153,11 @@
           "cohort": "paratransit",
           "label": "Paratransit",
           "points": [
+            {
+              "date": "",
+              "unit": "mph",
+              "value": 12.5268432355
+            },
             {
               "date": "2026-04-04",
               "unit": "mph",
@@ -87439,9 +87419,19 @@
               "value": 8.27666428060128
             },
             {
+              "date": "",
+              "unit": "mph",
+              "value": 8.052970651395839
+            },
+            {
               "date": "2026-03-07",
               "unit": "mph",
               "value": 2.46062992125984
+            },
+            {
+              "date": "",
+              "unit": "mph",
+              "value": 6.263421617752319
             },
             {
               "date": "2026-05-02",
@@ -87499,6 +87489,11 @@
               "value": 3.3554044380815995
             },
             {
+              "date": "",
+              "unit": "mph",
+              "value": 8.27666428060128
+            },
+            {
               "date": "2026-04-25",
               "unit": "mph",
               "value": 7.15819613457408
@@ -87507,6 +87502,11 @@
               "date": "2026-05-09",
               "unit": "mph",
               "value": 6.710808876163199
+            },
+            {
+              "date": "",
+              "unit": "mph",
+              "value": 7.15819613457408
             },
             {
               "date": "2026-05-02",

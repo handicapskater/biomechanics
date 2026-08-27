@@ -11243,6 +11243,186 @@
     {
       "cohort_context_version": "fns_sns_cohort_context.v1",
       "distance_authority": "miles",
+      "distance_miles": 0.0,
+      "distance_source": "strava:strava_activity:14090914400",
+      "event_date_local": "2025-04-05",
+      "event_duration_seconds": 8999.0,
+      "event_subtype": null,
+      "kubios_mean_hr_bpm": null,
+      "kubios_rmssd_ms": null,
+      "raw_event_label": "Morning Inline Skate",
+      "readiness_status": "valid",
+      "route_availability": "route_reference_available",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_retained_by_sf_route_authority",
+      "temperature_f": null,
+      "weather_condition": null,
+      "weather_coverage_status": "weather_unavailable",
+      "wind_speed_mph": null
+    },
+    {
+      "cohort_context_version": "fns_sns_cohort_context.v1",
+      "distance_authority": "miles",
+      "distance_miles": 0.0,
+      "distance_source": "strava:strava_activity:19760974747",
+      "event_date_local": null,
+      "event_duration_seconds": null,
+      "event_subtype": null,
+      "kubios_mean_hr_bpm": null,
+      "kubios_rmssd_ms": null,
+      "raw_event_label": "Evening Inline Skate",
+      "readiness_status": null,
+      "route_availability": "route_reference_available",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": null,
+      "weather_condition": null,
+      "weather_coverage_status": "weather_unavailable",
+      "wind_speed_mph": null
+    },
+    {
+      "cohort_context_version": "fns_sns_cohort_context.v1",
+      "distance_authority": "miles",
+      "distance_miles": 11.378487135130836,
+      "distance_source": "strava:strava_activity:13692414129",
+      "event_date_local": null,
+      "event_duration_seconds": null,
+      "event_subtype": null,
+      "kubios_mean_hr_bpm": null,
+      "kubios_rmssd_ms": null,
+      "raw_event_label": "Night Inline Skate",
+      "readiness_status": "missing",
+      "route_availability": "route_with_gps_points",
+      "sanitized_route_identity": "url:/common/maps/20250221-20_46_12-night inline skate-13692414129.html",
+      "sf_route_classification": "san_francisco_full_activity",
+      "temperature_f": 53.24,
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "activity_time_point_observation",
+      "wind_speed_mph": 6.93450250537
+    },
+    {
+      "cohort_context_version": "fns_sns_cohort_context.v1",
+      "distance_authority": "miles",
+      "distance_miles": 11.850853515469655,
+      "distance_source": "strava:strava_activity:19747505931",
+      "event_date_local": null,
+      "event_duration_seconds": null,
+      "event_subtype": null,
+      "kubios_mean_hr_bpm": null,
+      "kubios_rmssd_ms": null,
+      "raw_event_label": "Night Inline Skate",
+      "readiness_status": null,
+      "route_availability": "route_with_gps_points",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 62.6,
+      "weather_condition": "Strava weather condition code 2.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "wind_speed_mph": 9.39513242662848
+    },
+    {
+      "cohort_context_version": "fns_sns_cohort_context.v1",
+      "distance_authority": null,
+      "distance_miles": null,
+      "distance_source": null,
+      "event_date_local": "2021-05-08",
+      "event_duration_seconds": 9259.0,
+      "event_subtype": null,
+      "kubios_mean_hr_bpm": null,
+      "kubios_rmssd_ms": null,
+      "raw_event_label": "Inline Skating",
+      "readiness_status": "missing",
+      "route_availability": "no_strava_activity",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": null,
+      "weather_condition": null,
+      "weather_coverage_status": "no_strava_activity",
+      "wind_speed_mph": null
+    },
+    {
+      "cohort_context_version": "fns_sns_cohort_context.v1",
+      "distance_authority": null,
+      "distance_miles": null,
+      "distance_source": null,
+      "event_date_local": "2021-05-21",
+      "event_duration_seconds": 9981.0,
+      "event_subtype": null,
+      "kubios_mean_hr_bpm": null,
+      "kubios_rmssd_ms": null,
+      "raw_event_label": "Inline Skating",
+      "readiness_status": "valid",
+      "route_availability": "no_strava_activity",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": null,
+      "weather_condition": null,
+      "weather_coverage_status": "no_strava_activity",
+      "wind_speed_mph": null
+    },
+    {
+      "cohort_context_version": "fns_sns_cohort_context.v1",
+      "distance_authority": null,
+      "distance_miles": null,
+      "distance_source": null,
+      "event_date_local": "2021-06-04",
+      "event_duration_seconds": 11280.0,
+      "event_subtype": null,
+      "kubios_mean_hr_bpm": null,
+      "kubios_rmssd_ms": null,
+      "raw_event_label": "Inline Skating",
+      "readiness_status": "valid",
+      "route_availability": "no_strava_activity",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": null,
+      "weather_condition": null,
+      "weather_coverage_status": "no_strava_activity",
+      "wind_speed_mph": null
+    },
+    {
+      "cohort_context_version": "fns_sns_cohort_context.v1",
+      "distance_authority": null,
+      "distance_miles": null,
+      "distance_source": null,
+      "event_date_local": "2021-11-06",
+      "event_duration_seconds": 9868.0,
+      "event_subtype": null,
+      "kubios_mean_hr_bpm": null,
+      "kubios_rmssd_ms": null,
+      "raw_event_label": "Inline Skating",
+      "readiness_status": "valid",
+      "route_availability": "no_strava_activity",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": null,
+      "weather_condition": null,
+      "weather_coverage_status": "no_strava_activity",
+      "wind_speed_mph": null
+    },
+    {
+      "cohort_context_version": "fns_sns_cohort_context.v1",
+      "distance_authority": null,
+      "distance_miles": null,
+      "distance_source": null,
+      "event_date_local": "2022-06-25",
+      "event_duration_seconds": 10647.0,
+      "event_subtype": null,
+      "kubios_mean_hr_bpm": null,
+      "kubios_rmssd_ms": null,
+      "raw_event_label": "Inline Skating",
+      "readiness_status": "missing",
+      "route_availability": "no_strava_activity",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": null,
+      "weather_condition": null,
+      "weather_coverage_status": "no_strava_activity",
+      "wind_speed_mph": null
+    },
+    {
+      "cohort_context_version": "fns_sns_cohort_context.v1",
+      "distance_authority": "miles",
       "distance_miles": 11.325546309552216,
       "distance_source": "strava:strava_activity:7406251654",
       "event_date_local": null,
@@ -11661,10 +11841,10 @@
       "wind_speed_mph": 10.571428571428571
     }
   ],
-  "alt_text": "A 583-event sustained-skating timeline shows available distance, duration, Kubios heart rate, and session RMSSD by preserved FNS, SNS, ENS, XNS, XMS, or unspecified subtype.",
+  "alt_text": "A 592-event sustained-skating timeline shows available distance, duration, Kubios heart rate, and session RMSSD by preserved FNS, SNS, ENS, XNS, XMS, or unspecified subtype.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "0124502e8cec684d936d92edb113c389b43ae1c082c80537cb0b17ac96fac481",
+  "content_hash": "58a20aabe8772d3696e841ed2ab2d2baeeca2684bb07b2811641ef31d84c3280",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -15217,6 +15397,30 @@
               "quality": "verified",
               "unit": "miles",
               "value": 8.890951841247118
+            },
+            {
+              "date": "2025-04-05",
+              "quality": "verified",
+              "unit": "miles",
+              "value": 0.0
+            },
+            {
+              "date": "None",
+              "quality": "accepted",
+              "unit": "miles",
+              "value": 0.0
+            },
+            {
+              "date": "None",
+              "quality": "accepted",
+              "unit": "miles",
+              "value": 11.378487135130836
+            },
+            {
+              "date": "None",
+              "quality": "accepted",
+              "unit": "miles",
+              "value": 11.850853515469655
             }
           ]
         }
@@ -18666,6 +18870,42 @@
               "quality": "verified",
               "unit": "s",
               "value": 5784.0
+            },
+            {
+              "date": "2025-04-05",
+              "quality": "verified",
+              "unit": "s",
+              "value": 8999.0
+            },
+            {
+              "date": "2021-05-08",
+              "quality": "accepted",
+              "unit": "s",
+              "value": 9259.0
+            },
+            {
+              "date": "2021-05-21",
+              "quality": "accepted",
+              "unit": "s",
+              "value": 9981.0
+            },
+            {
+              "date": "2021-06-04",
+              "quality": "accepted",
+              "unit": "s",
+              "value": 11280.0
+            },
+            {
+              "date": "2021-11-06",
+              "quality": "accepted",
+              "unit": "s",
+              "value": 9868.0
+            },
+            {
+              "date": "2022-06-25",
+              "quality": "accepted",
+              "unit": "s",
+              "value": 10647.0
             }
           ]
         }
@@ -19007,7 +19247,7 @@
     "SNS": 187,
     "XMS": 1,
     "XNS": 2,
-    "source_unspecified": 211
+    "source_unspecified": 220
   },
   "series": [
     {
@@ -22538,6 +22778,30 @@
               "quality": "verified",
               "unit": "miles",
               "value": 8.890951841247118
+            },
+            {
+              "date": "2025-04-05",
+              "quality": "verified",
+              "unit": "miles",
+              "value": 0.0
+            },
+            {
+              "date": "None",
+              "quality": "accepted",
+              "unit": "miles",
+              "value": 0.0
+            },
+            {
+              "date": "None",
+              "quality": "accepted",
+              "unit": "miles",
+              "value": 11.378487135130836
+            },
+            {
+              "date": "None",
+              "quality": "accepted",
+              "unit": "miles",
+              "value": 11.850853515469655
             }
           ]
         }
@@ -25989,6 +26253,42 @@
               "quality": "verified",
               "unit": "s",
               "value": 5784.0
+            },
+            {
+              "date": "2025-04-05",
+              "quality": "verified",
+              "unit": "s",
+              "value": 8999.0
+            },
+            {
+              "date": "2021-05-08",
+              "quality": "accepted",
+              "unit": "s",
+              "value": 9259.0
+            },
+            {
+              "date": "2021-05-21",
+              "quality": "accepted",
+              "unit": "s",
+              "value": 9981.0
+            },
+            {
+              "date": "2021-06-04",
+              "quality": "accepted",
+              "unit": "s",
+              "value": 11280.0
+            },
+            {
+              "date": "2021-11-06",
+              "quality": "accepted",
+              "unit": "s",
+              "value": 9868.0
+            },
+            {
+              "date": "2022-06-25",
+              "quality": "accepted",
+              "unit": "s",
+              "value": 10647.0
             }
           ]
         }

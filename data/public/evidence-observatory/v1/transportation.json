@@ -304,6 +304,85 @@
         "source_coverage": "kubios+strava+whoop"
       }
     ],
+    "corrected_authority": {
+      "authority_hash": "602c37b06de0b0a0a2b8dc871cdf81238484611afd9103929854e6fdbc50d6b9",
+      "contract_version": "longitudinal_corrected_authority_descriptive.v1.0.0",
+      "counts": {
+        "adjacent_date_existing_fns_sns_n": 7,
+        "ambiguous_n": 4,
+        "authority_local_date_shift_event_n": 15,
+        "authority_unique_date_n": 584,
+        "average_hr_eligible_n": 54,
+        "broad_paratransit_n": 110,
+        "calendar_slot_n": 590,
+        "complete_outing_n": 55,
+        "effective_paratransit_family_n": 159,
+        "exact_fri_sat_slot_n": 570,
+        "fns_sns_event_n": 592,
+        "fns_sns_local_unique_date_n": 585,
+        "fns_sns_unique_date_n": 584,
+        "friday_slot_n": 295,
+        "from_fns_sns_n": 61,
+        "local_activity_fri_sat_slot_n": 575,
+        "local_inclusive_slot_n": 573,
+        "local_unique_date_n": 585,
+        "longitudinal_event_n": 1807,
+        "maximum_hr_eligible_n": 54,
+        "no_skating_source_found_n": 4,
+        "non_fns_activity_only_n": 5,
+        "paratransit_bus_n": 15,
+        "paratransit_longitudinal_n": 154,
+        "paratransit_sedan_or_taxi_n": 20,
+        "paratransit_silverride_n": 5,
+        "paratransit_van_n": 4,
+        "resting_relative_hr_eligible_n": 52,
+        "saturday_slot_n": 295,
+        "timezone_boundary_case_n": 3,
+        "timezone_boundary_slot_n": 3,
+        "to_fns_sns_n": 84,
+        "unrelated_n": 5
+      },
+      "coverage_contract_version": "fns_sns_coverage_dates.v1.0.0",
+      "inference": {
+        "inference_executed": false,
+        "inference_input_changed": false,
+        "phase1_inference_unchanged": true,
+        "phase2_inference_unchanged": true
+      },
+      "namespace": "corrected_authority_v1",
+      "paratransit_counts": {
+        "paratransit": 110,
+        "paratransit_bus": 15,
+        "paratransit_sedan_or_taxi": 20,
+        "paratransit_silverride": 5,
+        "paratransit_van": 4
+      },
+      "prior_authority_hash": "1b6b908130086ae40e8cd29e9c564ef4ac91544e2ba41748816323a5c70bc6fb",
+      "readiness": {
+        "legacy_readiness": "INCOMPLETE",
+        "operational_archive_readiness": "INCOMPLETE",
+        "operational_warning": "8 WHOOP non-activity journal export observations remain in inbox rather than archive.",
+        "scientific_readiness": "COMPLETE"
+      },
+      "reason": "HISTORICAL_COHORT_AUTHORITY_CORRECTION",
+      "route_context": {
+        "allowed_contexts": [
+          "SF Friday Night Skate",
+          "SF Saturday Night Skate",
+          "Roanoke Greenway",
+          "other governed route/location context",
+          "route unavailable"
+        ],
+        "cohort_semantics": "REAL_WORLD_THERAPEUTIC_SKATING",
+        "roanoke": {
+          "cohort": "fns_sns_skating",
+          "date": "2025-04-05",
+          "location_context": "Roanoke Greenway",
+          "sf_route": false
+        },
+        "route_location_is_separate": true
+      }
+    },
     "coupling_model": [
       {
         "cohorts": [
@@ -356,7 +435,7 @@
     ]
   },
   "conclusion_strength": "mixed",
-  "content_hash": "bac824d70c57e91e22b9640247c5af1373c4263cb0a4814ea599ca332671dbf0",
+  "content_hash": "6c8792cdbdad8a19116c0b72567ef0e78d732af9e949471bc6ee8c9730e5c19c",
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
   "evidence_scope": "N-of-1 transport cohort summaries with component and FSI counts separated.",

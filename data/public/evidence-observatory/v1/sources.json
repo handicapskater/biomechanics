@@ -15,7 +15,7 @@
       "writes": false
     },
     "lineage_row_count": 33913,
-    "migration_count": 30,
+    "migration_count": 31,
     "source_contracts": [
       {
         "content_hash": "e61609fcb63babbba301fdac74936379a0b3027dcb6b8d3f7da57ba20caec303",
@@ -60,7 +60,7 @@
     ]
   },
   "conclusion_strength": "not_applicable",
-  "content_hash": "6f905ff12551a241c2da99fc85d0397e53f30e87ec51afc69226db5dc0ad4fc2",
+  "content_hash": "9bdaf6329acec9d5c74b54b4ef41a6340747d93558f18a0406a76fb7d0965a6f",
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
   "evidence_scope": "Public-safe provenance summary; no raw source records.",

@@ -1175,32 +1175,32 @@
       "weather_count": 2
     },
     {
-      "available_count": 211,
+      "available_count": 215,
       "conflict_count": 0,
       "domain": "fns_sns_subtype",
       "episodic_count": 0,
-      "expected_count": 211,
+      "expected_count": 220,
       "key": "unspecified",
       "metric": "distance_route_weather_readiness_context",
-      "missing_count": 0,
-      "readiness_count": 203,
-      "route_count": 211,
+      "missing_count": 5,
+      "readiness_count": 207,
+      "route_count": 215,
       "status": "context_coverage",
-      "weather_count": 185
+      "weather_count": 187
     },
     {
-      "available_count": 101,
+      "available_count": 106,
       "conflict_count": 0,
       "domain": "transport_cohort",
       "episodic_count": 0,
-      "expected_count": 105,
+      "expected_count": 110,
       "key": "paratransit",
       "metric": "distance_route_weather_readiness_context",
       "missing_count": 4,
       "readiness_count": 89,
-      "route_count": 101,
+      "route_count": 106,
       "status": "context_coverage",
-      "weather_count": 92
+      "weather_count": 97
     },
     {
       "available_count": 15,
@@ -1276,7 +1276,7 @@
   "alt_text": "A coverage matrix lists expected, available, partial, missing, and not-applicable counts for canonical inputs, supported episodic metrics, v2 scientific persistence, and route, weather, readiness, and cohort context.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "d170bc28ea383279e6b825c77914cee6a5858eca21db636302d355dfbec61307",
+  "content_hash": "9222c7e49740aa16ba7b35f32badf00b947318813ee38795cf4a6e07fe2e9d1c",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -2472,32 +2472,32 @@
       "weather_count": 2
     },
     {
-      "available_count": 211,
+      "available_count": 215,
       "conflict_count": 0,
       "domain": "fns_sns_subtype",
       "episodic_count": 0,
-      "expected_count": 211,
+      "expected_count": 220,
       "key": "unspecified",
       "metric": "distance_route_weather_readiness_context",
-      "missing_count": 0,
-      "readiness_count": 203,
-      "route_count": 211,
+      "missing_count": 5,
+      "readiness_count": 207,
+      "route_count": 215,
       "status": "context_coverage",
-      "weather_count": 185
+      "weather_count": 187
     },
     {
-      "available_count": 101,
+      "available_count": 106,
       "conflict_count": 0,
       "domain": "transport_cohort",
       "episodic_count": 0,
-      "expected_count": 105,
+      "expected_count": 110,
       "key": "paratransit",
       "metric": "distance_route_weather_readiness_context",
       "missing_count": 4,
       "readiness_count": 89,
-      "route_count": 101,
+      "route_count": 106,
       "status": "context_coverage",
-      "weather_count": 92
+      "weather_count": 97
     },
     {
       "available_count": 15,

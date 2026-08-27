@@ -1,0 +1,135 @@
+{
+  "accessible_table": [
+    {
+      "authority_exact_fri_sat_slot_n": 2,
+      "calendar_slot_n": 2,
+      "legacy_local_inclusive_slot_n": 2,
+      "source_local_fri_sat_slot_n": 2,
+      "year": 2020
+    },
+    {
+      "authority_exact_fri_sat_slot_n": 100,
+      "calendar_slot_n": 105,
+      "legacy_local_inclusive_slot_n": 101,
+      "source_local_fri_sat_slot_n": 101,
+      "year": 2021
+    },
+    {
+      "authority_exact_fri_sat_slot_n": 104,
+      "calendar_slot_n": 105,
+      "legacy_local_inclusive_slot_n": 105,
+      "source_local_fri_sat_slot_n": 105,
+      "year": 2022
+    },
+    {
+      "authority_exact_fri_sat_slot_n": 99,
+      "calendar_slot_n": 104,
+      "legacy_local_inclusive_slot_n": 100,
+      "source_local_fri_sat_slot_n": 100,
+      "year": 2023
+    },
+    {
+      "authority_exact_fri_sat_slot_n": 103,
+      "calendar_slot_n": 104,
+      "legacy_local_inclusive_slot_n": 103,
+      "source_local_fri_sat_slot_n": 103,
+      "year": 2024
+    },
+    {
+      "authority_exact_fri_sat_slot_n": 100,
+      "calendar_slot_n": 104,
+      "legacy_local_inclusive_slot_n": 100,
+      "source_local_fri_sat_slot_n": 101,
+      "year": 2025
+    },
+    {
+      "authority_exact_fri_sat_slot_n": 62,
+      "calendar_slot_n": 66,
+      "legacy_local_inclusive_slot_n": 62,
+      "source_local_fri_sat_slot_n": 63,
+      "year": 2026
+    }
+  ],
+  "alt_text": "Calendar coverage distinguishes authority dates from source-local activity starts; the three settled timezone exceptions remain a separate legacy-inclusive lens.",
+  "claim_class": "DESCRIPTIVE",
+  "claim_classes": {},
+  "content_hash": "4257e44fa47495a0f208f2dcb7ddb9cbd32d03e741cd335741d69a1fa0e3f513",
+  "coverage": {},
+  "data_through_date": "2026-08-08",
+  "destination": "handicapskater.com",
+  "evidence": {},
+  "finding": "Calendar coverage distinguishes authority dates from source-local activity starts; the three settled timezone exceptions remain a separate legacy-inclusive lens.",
+  "formula_identities": [
+    "longitudinal_corrected_authority_descriptive.v1.0.0"
+  ],
+  "functional_meaning": "Shows the current governed descriptive authority without recalculating inference.",
+  "graph_contract_version": "fsi_publication_graph.v1",
+  "graph_id": "fns_sns_historical_coverage",
+  "graph_type": "bar",
+  "intended_route": "/evidence/longitudinal/",
+  "interpretation": "Calendar coverage distinguishes authority dates from source-local activity starts; the three settled timezone exceptions remain a separate legacy-inclusive lens.",
+  "limitation": "N-of-1 descriptive authority; the calendar grid is a coverage framework, not proof that every slot should contain an event.",
+  "limitations": [
+    "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
+  ],
+  "long_description": "Calendar coverage distinguishes authority dates from source-local activity starts; the three settled timezone exceptions remain a separate legacy-inclusive lens. authority_unique_date_n=584 local_unique_date_n=585 exact_fri_sat_slot_n=570 timezone_boundary_slot_n=3 local_inclusive_slot_n=573 source_local_fri_sat_slot_n=575 calendar_slot_n=590 Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
+  "matrix": [],
+  "missingness": [],
+  "output_asset_names": [
+    "graphs/fns_sns_historical_coverage.json"
+  ],
+  "panels": [],
+  "planned_comparator": null,
+  "qualifications": [
+    "authority_unique_date_n=584",
+    "local_unique_date_n=585",
+    "exact_fri_sat_slot_n=570",
+    "timezone_boundary_slot_n=3",
+    "local_inclusive_slot_n=573",
+    "source_local_fri_sat_slot_n=575",
+    "calendar_slot_n=590"
+  ],
+  "question": "Governed FNS/SNS historical coverage",
+  "ranking": [],
+  "relation_identities": [
+    "v_longitudinal_mobility_metrics",
+    "corrected_authority_v1"
+  ],
+  "repeatability": [],
+  "sample_counts": {
+    "authority_unique_dates": 584,
+    "calendar_slots": 590,
+    "fns_sns_events": 592,
+    "source_local_unique_dates": 585
+  },
+  "series": [],
+  "source_contracts": [
+    {
+      "contract": "observatory_mcp_resource.v1",
+      "version": "observatory_bundle.v1"
+    },
+    {
+      "contract": "evidence_observatory_presentation.v1",
+      "version": "evidence_observatory_presentation.v1"
+    },
+    {
+      "contract": "scientific_consumer_contract.v1.0.0",
+      "version": "scientific_consumer_contract.v1.0.0"
+    },
+    {
+      "contract": "observatory_graph.v1",
+      "version": "observatory_graph.v1"
+    }
+  ],
+  "source_labels": [
+    "WHOOP longitudinal context",
+    "Strava longitudinal context"
+  ],
+  "title": "Governed FNS/SNS historical coverage",
+  "units": [
+    "calendar_slots"
+  ],
+  "visual": {
+    "mark": "bar"
+  }
+}

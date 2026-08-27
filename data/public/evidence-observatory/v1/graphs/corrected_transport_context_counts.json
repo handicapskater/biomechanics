@@ -1,0 +1,111 @@
+{
+  "accessible_table": [
+    {
+      "context": "broad_paratransit",
+      "event_n": 110
+    },
+    {
+      "context": "paratransit_bus",
+      "event_n": 15
+    },
+    {
+      "context": "paratransit_van",
+      "event_n": 4
+    },
+    {
+      "context": "paratransit_sedan_or_taxi",
+      "event_n": 20
+    },
+    {
+      "context": "paratransit_silverride",
+      "event_n": 5
+    },
+    {
+      "context": "TO_FNS_SNS",
+      "event_n": 84
+    },
+    {
+      "context": "FROM_FNS_SNS",
+      "event_n": 61
+    },
+    {
+      "context": "UNRELATED",
+      "event_n": 5
+    },
+    {
+      "context": "AMBIGUOUS",
+      "event_n": 4
+    }
+  ],
+  "alt_text": "Current ParaTransit and deterministic TO/FROM context counts reflect governed cohort authority; subtype and relationship labels are not inferred beyond their contracts.",
+  "claim_class": "DESCRIPTIVE",
+  "claim_classes": {},
+  "content_hash": "43b04bf71c21c6fce010c461802b70e2bfa7c667376930bec48207d22a9fec49",
+  "coverage": {},
+  "data_through_date": "2026-08-08",
+  "destination": "handicapskater.com",
+  "evidence": {},
+  "finding": "Current ParaTransit and deterministic TO/FROM context counts reflect governed cohort authority; subtype and relationship labels are not inferred beyond their contracts.",
+  "formula_identities": [
+    "longitudinal_corrected_authority_descriptive.v1.0.0"
+  ],
+  "functional_meaning": "Shows the current governed descriptive authority without recalculating inference.",
+  "graph_contract_version": "fsi_publication_graph.v1",
+  "graph_id": "corrected_transport_context_counts",
+  "graph_type": "bar",
+  "intended_route": "/evidence/transportation/",
+  "interpretation": "Current ParaTransit and deterministic TO/FROM context counts reflect governed cohort authority; subtype and relationship labels are not inferred beyond their contracts.",
+  "limitation": "N-of-1 descriptive authority; the calendar grid is a coverage framework, not proof that every slot should contain an event.",
+  "limitations": [
+    "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
+  ],
+  "long_description": "Current ParaTransit and deterministic TO/FROM context counts reflect governed cohort authority; subtype and relationship labels are not inferred beyond their contracts. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
+  "matrix": [],
+  "missingness": [],
+  "output_asset_names": [
+    "graphs/corrected_transport_context_counts.json"
+  ],
+  "panels": [],
+  "planned_comparator": null,
+  "qualifications": [],
+  "question": "Corrected transportation context",
+  "ranking": [],
+  "relation_identities": [
+    "v_longitudinal_mobility_metrics",
+    "corrected_authority_v1"
+  ],
+  "repeatability": [],
+  "sample_counts": {
+    "longitudinal_paratransit_events": 154
+  },
+  "series": [],
+  "source_contracts": [
+    {
+      "contract": "observatory_mcp_resource.v1",
+      "version": "observatory_bundle.v1"
+    },
+    {
+      "contract": "evidence_observatory_presentation.v1",
+      "version": "evidence_observatory_presentation.v1"
+    },
+    {
+      "contract": "scientific_consumer_contract.v1.0.0",
+      "version": "scientific_consumer_contract.v1.0.0"
+    },
+    {
+      "contract": "observatory_graph.v1",
+      "version": "observatory_graph.v1"
+    }
+  ],
+  "source_labels": [
+    "Kubios/Polar H10 transport sessions",
+    "Canonical body-coupling mapping"
+  ],
+  "title": "Corrected transportation context",
+  "units": [
+    "events"
+  ],
+  "visual": {
+    "mark": "bar"
+  }
+}
