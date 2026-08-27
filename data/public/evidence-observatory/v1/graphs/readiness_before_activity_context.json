@@ -1,304 +1,24 @@
 {
   "accessible_table": [
     {
-      "baseline_status": "missing",
-      "conflict_group_id": "ricg_03d6c2a6ce6eb6af8c376e19c6631f5a8c29530b531ed0a15a133e590588241c",
-      "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": null,
-      "mall_start_local": "2026-07-08T15:52:17",
-      "mall_start_utc": "2026-07-08T22:52:17",
-      "missing_reason": "multiple_candidates_conflict",
-      "overnight_hrv_rmssd_ms": null,
-      "readiness_context_id": null,
-      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
-      "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": null,
-      "resting_hr_bpm": null,
-      "sequence_date_local": "2026-07-08",
-      "sleep_performance_pct": null,
-      "source_date_local": null,
-      "wake_time_local": null,
-      "wake_time_utc": null
-    },
-    {
       "baseline_status": "valid",
       "conflict_group_id": null,
       "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 27013.0,
-      "mall_start_local": "2026-07-28T14:27:55",
-      "mall_start_utc": "2026-07-28T21:27:55",
+      "mall_event_lag_seconds": 9572.0,
+      "mall_start_local": "2026-07-05T12:35:54",
+      "mall_start_utc": "2026-07-05T19:35:54",
       "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 43.0,
-      "readiness_context_id": "ric_f1e0ec2a53d5c08797a413ec7c19b166d8fe307f50e1016016ef6d76015d8033",
+      "overnight_hrv_rmssd_ms": 25.0,
+      "readiness_context_id": "ric_51757f0917df00e3df78fe52e0be500dbc9576c662a9e84751ad2f9cb80e56d7",
       "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
       "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 88.0,
-      "resting_hr_bpm": 48.0,
-      "sequence_date_local": "2026-07-28",
-      "sleep_performance_pct": 59.0,
-      "source_date_local": "2026-07-27",
-      "wake_time_local": "2026-07-28T06:57:42",
-      "wake_time_utc": "2026-07-28T13:57:42"
-    },
-    {
-      "baseline_status": "valid",
-      "conflict_group_id": null,
-      "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 18324.0,
-      "mall_start_local": "2026-08-06T12:58:18",
-      "mall_start_utc": "2026-08-06T19:58:18",
-      "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 40.0,
-      "readiness_context_id": "ric_7afa71be140ba613b764b43ea67a4fa5ff1664b76fa6be72727bf37c913e3f33",
-      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
-      "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 40.0,
-      "resting_hr_bpm": 47.0,
-      "sequence_date_local": "2026-08-06",
-      "sleep_performance_pct": 34.0,
-      "source_date_local": "2026-08-06",
-      "wake_time_local": "2026-08-06T07:52:54",
-      "wake_time_utc": "2026-08-06T14:52:54"
-    },
-    {
-      "baseline_status": "valid",
-      "conflict_group_id": null,
-      "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 29032.0,
-      "mall_start_local": "2026-07-27T16:21:12",
-      "mall_start_utc": "2026-07-27T23:21:12",
-      "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 42.0,
-      "readiness_context_id": "ric_e49541da87f41e42f02e6123e10d5e72ded9d4fdcc136b2f29b1e1b1177c53cf",
-      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
-      "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 68.0,
-      "resting_hr_bpm": 48.0,
-      "sequence_date_local": "2026-07-27",
-      "sleep_performance_pct": 57.0,
-      "source_date_local": "2026-07-27",
-      "wake_time_local": "2026-07-27T08:17:20",
-      "wake_time_utc": "2026-07-27T15:17:20"
-    },
-    {
-      "baseline_status": "valid",
-      "conflict_group_id": null,
-      "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 25815.0,
-      "mall_start_local": "2026-07-19T16:17:28",
-      "mall_start_utc": "2026-07-19T23:17:28",
-      "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 22.0,
-      "readiness_context_id": "ric_8acfec5351c08e3b9d9a9266410fcb77c8e567ec1466ee75cda485b24a0157d4",
-      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
-      "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 35.0,
-      "resting_hr_bpm": 53.0,
-      "sequence_date_local": "2026-07-19",
-      "sleep_performance_pct": 68.0,
-      "source_date_local": "2026-07-19",
-      "wake_time_local": "2026-07-19T09:07:13",
-      "wake_time_utc": "2026-07-19T16:07:13"
-    },
-    {
-      "baseline_status": "valid",
-      "conflict_group_id": null,
-      "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 26784.0,
-      "mall_start_local": "2026-07-29T13:24:59",
-      "mall_start_utc": "2026-07-29T20:24:59",
-      "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 50.0,
-      "readiness_context_id": "ric_483189fe939401a05eabeb26239e9e62ccb6e36e7130aea19f5861f0ffd2de39",
-      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
-      "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 41.0,
-      "resting_hr_bpm": 47.0,
-      "sequence_date_local": "2026-07-29",
-      "sleep_performance_pct": 41.0,
-      "source_date_local": "2026-07-29",
-      "wake_time_local": "2026-07-29T05:58:35",
-      "wake_time_utc": "2026-07-29T12:58:35"
-    },
-    {
-      "baseline_status": "valid",
-      "conflict_group_id": null,
-      "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 12988.0,
-      "mall_start_local": "2026-07-22T12:38:21",
-      "mall_start_utc": "2026-07-22T19:38:21",
-      "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 40.0,
-      "readiness_context_id": "ric_9a3c245aa5956c5689256499ad0289cf147284f37927ade27b283d56ff9d9a4a",
-      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
-      "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 83.0,
-      "resting_hr_bpm": 49.0,
-      "sequence_date_local": "2026-07-22",
+      "recovery_score_pct": 34.0,
+      "resting_hr_bpm": 56.0,
+      "sequence_date_local": "2026-07-05",
       "sleep_performance_pct": 71.0,
-      "source_date_local": "2026-07-22",
-      "wake_time_local": "2026-07-22T09:01:53",
-      "wake_time_utc": "2026-07-22T16:01:53"
-    },
-    {
-      "baseline_status": "valid",
-      "conflict_group_id": null,
-      "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 30673.0,
-      "mall_start_local": "2026-07-07T15:23:29",
-      "mall_start_utc": "2026-07-07T22:23:29",
-      "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 43.0,
-      "readiness_context_id": "ric_1294305e38a6ee8053158831df29d744e06a53a2f9d2ce7f85e424197f4be24f",
-      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
-      "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 90.0,
-      "resting_hr_bpm": 52.0,
-      "sequence_date_local": "2026-07-07",
-      "sleep_performance_pct": 68.0,
-      "source_date_local": "2026-07-07",
-      "wake_time_local": "2026-07-07T06:52:16",
-      "wake_time_utc": "2026-07-07T13:52:16"
-    },
-    {
-      "baseline_status": "valid",
-      "conflict_group_id": null,
-      "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 36397.0,
-      "mall_start_local": "2026-07-15T16:06:51",
-      "mall_start_utc": "2026-07-15T23:06:51",
-      "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 34.0,
-      "readiness_context_id": "ric_29e5db26e469e031d42ef05315afbcca4aa68531845bfa2ceff923a820b7bf27",
-      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
-      "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 43.0,
-      "resting_hr_bpm": 53.0,
-      "sequence_date_local": "2026-07-15",
-      "sleep_performance_pct": 59.0,
-      "source_date_local": "2026-07-15",
-      "wake_time_local": "2026-07-15T06:00:14",
-      "wake_time_utc": "2026-07-15T13:00:14"
-    },
-    {
-      "baseline_status": "valid",
-      "conflict_group_id": null,
-      "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 29630.0,
-      "mall_start_local": "2026-08-05T13:57:11",
-      "mall_start_utc": "2026-08-05T20:57:11",
-      "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 48.0,
-      "readiness_context_id": "ric_f275e2eb10aa145596677ad4e6ae349af33e62bdb28bd8848aea9c8615f994e2",
-      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
-      "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 74.0,
-      "resting_hr_bpm": 48.0,
-      "sequence_date_local": "2026-08-05",
-      "sleep_performance_pct": 45.0,
-      "source_date_local": "2026-08-04",
-      "wake_time_local": "2026-08-05T05:43:21",
-      "wake_time_utc": "2026-08-05T12:43:21"
-    },
-    {
-      "baseline_status": "valid",
-      "conflict_group_id": null,
-      "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 31161.0,
-      "mall_start_local": "2026-07-23T13:17:02",
-      "mall_start_utc": "2026-07-23T20:17:02",
-      "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 41.0,
-      "readiness_context_id": "ric_f34b1ea5c02507d804a05142f4ee320784483d157c2d3b88c97c1c1151bb55d3",
-      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
-      "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 54.0,
-      "resting_hr_bpm": 50.0,
-      "sequence_date_local": "2026-07-23",
-      "sleep_performance_pct": 47.0,
-      "source_date_local": "2026-07-23",
-      "wake_time_local": "2026-07-23T04:37:41",
-      "wake_time_utc": "2026-07-23T11:37:41"
-    },
-    {
-      "baseline_status": "valid",
-      "conflict_group_id": null,
-      "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 4670.0,
-      "mall_start_local": "2026-08-02T13:19:59",
-      "mall_start_utc": "2026-08-02T20:19:59",
-      "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 28.0,
-      "readiness_context_id": "ric_6967e945e1a13ecfe7cfcc8421c8e75b902c2cc385bdef280dffb84ceca3b461",
-      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
-      "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 36.0,
-      "resting_hr_bpm": 52.0,
-      "sequence_date_local": "2026-08-02",
-      "sleep_performance_pct": 54.0,
-      "source_date_local": "2026-08-02",
-      "wake_time_local": "2026-08-02T12:02:09",
-      "wake_time_utc": "2026-08-02T19:02:09"
-    },
-    {
-      "baseline_status": "valid",
-      "conflict_group_id": null,
-      "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 17815.0,
-      "mall_start_local": "2026-07-20T14:40:44",
-      "mall_start_utc": "2026-07-20T21:40:44",
-      "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 40.0,
-      "readiness_context_id": "ric_b7e2152091b2ea87c9889331b6c77cd31dc00bc85289aa163e0309bd5e9cdb80",
-      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
-      "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 83.0,
-      "resting_hr_bpm": 52.0,
-      "sequence_date_local": "2026-07-20",
-      "sleep_performance_pct": 63.0,
-      "source_date_local": "2026-07-19",
-      "wake_time_local": "2026-07-20T09:43:49",
-      "wake_time_utc": "2026-07-20T16:43:49"
-    },
-    {
-      "baseline_status": "valid",
-      "conflict_group_id": null,
-      "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 24764.0,
-      "mall_start_local": "2026-07-13T12:22:18",
-      "mall_start_utc": "2026-07-13T19:22:18",
-      "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 43.0,
-      "readiness_context_id": "ric_9f78265b6c2886d9142863141fb62116da82e0dbff30f40f8d3ea410da7fc716",
-      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
-      "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 27.0,
-      "resting_hr_bpm": 52.0,
-      "sequence_date_local": "2026-07-13",
-      "sleep_performance_pct": 27.0,
-      "source_date_local": "2026-07-13",
-      "wake_time_local": "2026-07-13T05:29:34",
-      "wake_time_utc": "2026-07-13T12:29:34"
-    },
-    {
-      "baseline_status": "valid",
-      "conflict_group_id": null,
-      "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 22603.0,
-      "mall_start_local": "2026-07-16T12:38:09",
-      "mall_start_utc": "2026-07-16T19:38:09",
-      "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 40.0,
-      "readiness_context_id": "ric_b48afede8c164ee12b40809c74ed149945a8a6ee36eed94d6c6737a19c938ced",
-      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
-      "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 43.0,
-      "resting_hr_bpm": 52.0,
-      "sequence_date_local": "2026-07-16",
-      "sleep_performance_pct": 47.0,
-      "source_date_local": "2026-07-16",
-      "wake_time_local": "2026-07-16T06:21:26",
-      "wake_time_utc": "2026-07-16T13:21:26"
+      "source_date_local": "2026-07-05",
+      "wake_time_local": "2026-07-05T09:56:22",
+      "wake_time_utc": "2026-07-05T16:56:22"
     },
     {
       "baseline_status": "valid",
@@ -324,6 +44,46 @@
       "baseline_status": "valid",
       "conflict_group_id": null,
       "created_at_utc": "2026-08-09T17:22:04.627288",
+      "mall_event_lag_seconds": 30673.0,
+      "mall_start_local": "2026-07-07T15:23:29",
+      "mall_start_utc": "2026-07-07T22:23:29",
+      "missing_reason": null,
+      "overnight_hrv_rmssd_ms": 43.0,
+      "readiness_context_id": "ric_1294305e38a6ee8053158831df29d744e06a53a2f9d2ce7f85e424197f4be24f",
+      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
+      "readiness_scope": "overnight_recovery_not_session_hrv",
+      "recovery_score_pct": 90.0,
+      "resting_hr_bpm": 52.0,
+      "sequence_date_local": "2026-07-07",
+      "sleep_performance_pct": 68.0,
+      "source_date_local": "2026-07-07",
+      "wake_time_local": "2026-07-07T06:52:16",
+      "wake_time_utc": "2026-07-07T13:52:16"
+    },
+    {
+      "baseline_status": "missing",
+      "conflict_group_id": "ricg_03d6c2a6ce6eb6af8c376e19c6631f5a8c29530b531ed0a15a133e590588241c",
+      "created_at_utc": "2026-08-09T17:22:04.627288",
+      "mall_event_lag_seconds": null,
+      "mall_start_local": "2026-07-08T15:52:17",
+      "mall_start_utc": "2026-07-08T22:52:17",
+      "missing_reason": "multiple_candidates_conflict",
+      "overnight_hrv_rmssd_ms": null,
+      "readiness_context_id": null,
+      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
+      "readiness_scope": "overnight_recovery_not_session_hrv",
+      "recovery_score_pct": null,
+      "resting_hr_bpm": null,
+      "sequence_date_local": "2026-07-08",
+      "sleep_performance_pct": null,
+      "source_date_local": null,
+      "wake_time_local": null,
+      "wake_time_utc": null
+    },
+    {
+      "baseline_status": "valid",
+      "conflict_group_id": null,
+      "created_at_utc": "2026-08-09T17:22:04.627288",
       "mall_event_lag_seconds": 17085.0,
       "mall_start_local": "2026-07-09T14:25:58",
       "mall_start_utc": "2026-07-09T21:25:58",
@@ -339,126 +99,6 @@
       "source_date_local": "2026-07-09",
       "wake_time_local": "2026-07-09T09:41:13",
       "wake_time_utc": "2026-07-09T16:41:13"
-    },
-    {
-      "baseline_status": "valid",
-      "conflict_group_id": null,
-      "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 14875.0,
-      "mall_start_local": "2026-07-21T16:07:02",
-      "mall_start_utc": "2026-07-21T23:07:02",
-      "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 47.0,
-      "readiness_context_id": "ric_6b99b0c99935335680e22787188a73c34537c7aca9fdd41328f6c06b44b48b9f",
-      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
-      "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 88.0,
-      "resting_hr_bpm": 49.0,
-      "sequence_date_local": "2026-07-21",
-      "sleep_performance_pct": 35.0,
-      "source_date_local": "2026-07-21",
-      "wake_time_local": "2026-07-21T11:59:07",
-      "wake_time_utc": "2026-07-21T18:59:07"
-    },
-    {
-      "baseline_status": "valid",
-      "conflict_group_id": null,
-      "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 16478.0,
-      "mall_start_local": "2026-07-14T14:07:56",
-      "mall_start_utc": "2026-07-14T21:07:56",
-      "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 42.0,
-      "readiness_context_id": "ric_8a0737554deff315c27421a79784f2816508116f9ebdf3c0ab8380eff7a8149a",
-      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
-      "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 46.0,
-      "resting_hr_bpm": 48.0,
-      "sequence_date_local": "2026-07-14",
-      "sleep_performance_pct": 34.0,
-      "source_date_local": "2026-07-14",
-      "wake_time_local": "2026-07-14T09:33:18",
-      "wake_time_utc": "2026-07-14T16:33:18"
-    },
-    {
-      "baseline_status": "valid",
-      "conflict_group_id": null,
-      "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 24256.0,
-      "mall_start_local": "2026-08-04T13:04:15",
-      "mall_start_utc": "2026-08-04T20:04:15",
-      "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 43.0,
-      "readiness_context_id": "ric_dede530aee931147bb7ea027b1bf1aedb681869ba5f5633e4f8c8a41c59776c8",
-      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
-      "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 62.0,
-      "resting_hr_bpm": 48.0,
-      "sequence_date_local": "2026-08-04",
-      "sleep_performance_pct": 63.0,
-      "source_date_local": "2026-08-04",
-      "wake_time_local": "2026-08-04T06:19:59",
-      "wake_time_utc": "2026-08-04T13:19:59"
-    },
-    {
-      "baseline_status": "valid",
-      "conflict_group_id": null,
-      "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 13990.0,
-      "mall_start_local": "2026-08-03T12:56:39",
-      "mall_start_utc": "2026-08-03T19:56:39",
-      "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 44.0,
-      "readiness_context_id": "ric_3447d730640d3c03e9422a011eba022dc4f360352227002afd5a6bf0f5602fce",
-      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
-      "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 74.0,
-      "resting_hr_bpm": 48.0,
-      "sequence_date_local": "2026-08-03",
-      "sleep_performance_pct": 62.0,
-      "source_date_local": "2026-08-03",
-      "wake_time_local": "2026-08-03T09:03:29",
-      "wake_time_utc": "2026-08-03T16:03:29"
-    },
-    {
-      "baseline_status": "valid",
-      "conflict_group_id": null,
-      "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 24815.0,
-      "mall_start_local": "2026-07-26T15:00:10",
-      "mall_start_utc": "2026-07-26T22:00:10",
-      "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 32.0,
-      "readiness_context_id": "ric_cce11af9de3f4628e3cd474c467d1f09d55966a88b95a5ee401662d84ac7b087",
-      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
-      "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 54.0,
-      "resting_hr_bpm": 50.0,
-      "sequence_date_local": "2026-07-26",
-      "sleep_performance_pct": 68.0,
-      "source_date_local": "2026-07-26",
-      "wake_time_local": "2026-07-26T08:06:35",
-      "wake_time_utc": "2026-07-26T15:06:35"
-    },
-    {
-      "baseline_status": "valid",
-      "conflict_group_id": null,
-      "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 29439.0,
-      "mall_start_local": "2026-07-30T16:12:19",
-      "mall_start_utc": "2026-07-30T23:12:19",
-      "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 47.0,
-      "readiness_context_id": "ric_c754a0482f10a5b4c50a7b4bb06070de9699a5d77f94fd0ab84758c2e5689666",
-      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
-      "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 66.0,
-      "resting_hr_bpm": 48.0,
-      "sequence_date_local": "2026-07-30",
-      "sleep_performance_pct": 53.0,
-      "source_date_local": "2026-07-30",
-      "wake_time_local": "2026-07-30T08:01:40",
-      "wake_time_utc": "2026-07-30T15:01:40"
     },
     {
       "baseline_status": "valid",
@@ -484,27 +124,387 @@
       "baseline_status": "valid",
       "conflict_group_id": null,
       "created_at_utc": "2026-08-09T17:22:04.627288",
-      "mall_event_lag_seconds": 9572.0,
-      "mall_start_local": "2026-07-05T12:35:54",
-      "mall_start_utc": "2026-07-05T19:35:54",
+      "mall_event_lag_seconds": 24764.0,
+      "mall_start_local": "2026-07-13T12:22:18",
+      "mall_start_utc": "2026-07-13T19:22:18",
       "missing_reason": null,
-      "overnight_hrv_rmssd_ms": 25.0,
-      "readiness_context_id": "ric_51757f0917df00e3df78fe52e0be500dbc9576c662a9e84751ad2f9cb80e56d7",
+      "overnight_hrv_rmssd_ms": 43.0,
+      "readiness_context_id": "ric_9f78265b6c2886d9142863141fb62116da82e0dbff30f40f8d3ea410da7fc716",
       "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
       "readiness_scope": "overnight_recovery_not_session_hrv",
-      "recovery_score_pct": 34.0,
-      "resting_hr_bpm": 56.0,
-      "sequence_date_local": "2026-07-05",
+      "recovery_score_pct": 27.0,
+      "resting_hr_bpm": 52.0,
+      "sequence_date_local": "2026-07-13",
+      "sleep_performance_pct": 27.0,
+      "source_date_local": "2026-07-13",
+      "wake_time_local": "2026-07-13T05:29:34",
+      "wake_time_utc": "2026-07-13T12:29:34"
+    },
+    {
+      "baseline_status": "valid",
+      "conflict_group_id": null,
+      "created_at_utc": "2026-08-09T17:22:04.627288",
+      "mall_event_lag_seconds": 16478.0,
+      "mall_start_local": "2026-07-14T14:07:56",
+      "mall_start_utc": "2026-07-14T21:07:56",
+      "missing_reason": null,
+      "overnight_hrv_rmssd_ms": 42.0,
+      "readiness_context_id": "ric_8a0737554deff315c27421a79784f2816508116f9ebdf3c0ab8380eff7a8149a",
+      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
+      "readiness_scope": "overnight_recovery_not_session_hrv",
+      "recovery_score_pct": 46.0,
+      "resting_hr_bpm": 48.0,
+      "sequence_date_local": "2026-07-14",
+      "sleep_performance_pct": 34.0,
+      "source_date_local": "2026-07-14",
+      "wake_time_local": "2026-07-14T09:33:18",
+      "wake_time_utc": "2026-07-14T16:33:18"
+    },
+    {
+      "baseline_status": "valid",
+      "conflict_group_id": null,
+      "created_at_utc": "2026-08-09T17:22:04.627288",
+      "mall_event_lag_seconds": 36397.0,
+      "mall_start_local": "2026-07-15T16:06:51",
+      "mall_start_utc": "2026-07-15T23:06:51",
+      "missing_reason": null,
+      "overnight_hrv_rmssd_ms": 34.0,
+      "readiness_context_id": "ric_29e5db26e469e031d42ef05315afbcca4aa68531845bfa2ceff923a820b7bf27",
+      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
+      "readiness_scope": "overnight_recovery_not_session_hrv",
+      "recovery_score_pct": 43.0,
+      "resting_hr_bpm": 53.0,
+      "sequence_date_local": "2026-07-15",
+      "sleep_performance_pct": 59.0,
+      "source_date_local": "2026-07-15",
+      "wake_time_local": "2026-07-15T06:00:14",
+      "wake_time_utc": "2026-07-15T13:00:14"
+    },
+    {
+      "baseline_status": "valid",
+      "conflict_group_id": null,
+      "created_at_utc": "2026-08-09T17:22:04.627288",
+      "mall_event_lag_seconds": 22603.0,
+      "mall_start_local": "2026-07-16T12:38:09",
+      "mall_start_utc": "2026-07-16T19:38:09",
+      "missing_reason": null,
+      "overnight_hrv_rmssd_ms": 40.0,
+      "readiness_context_id": "ric_b48afede8c164ee12b40809c74ed149945a8a6ee36eed94d6c6737a19c938ced",
+      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
+      "readiness_scope": "overnight_recovery_not_session_hrv",
+      "recovery_score_pct": 43.0,
+      "resting_hr_bpm": 52.0,
+      "sequence_date_local": "2026-07-16",
+      "sleep_performance_pct": 47.0,
+      "source_date_local": "2026-07-16",
+      "wake_time_local": "2026-07-16T06:21:26",
+      "wake_time_utc": "2026-07-16T13:21:26"
+    },
+    {
+      "baseline_status": "valid",
+      "conflict_group_id": null,
+      "created_at_utc": "2026-08-09T17:22:04.627288",
+      "mall_event_lag_seconds": 25815.0,
+      "mall_start_local": "2026-07-19T16:17:28",
+      "mall_start_utc": "2026-07-19T23:17:28",
+      "missing_reason": null,
+      "overnight_hrv_rmssd_ms": 22.0,
+      "readiness_context_id": "ric_8acfec5351c08e3b9d9a9266410fcb77c8e567ec1466ee75cda485b24a0157d4",
+      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
+      "readiness_scope": "overnight_recovery_not_session_hrv",
+      "recovery_score_pct": 35.0,
+      "resting_hr_bpm": 53.0,
+      "sequence_date_local": "2026-07-19",
+      "sleep_performance_pct": 68.0,
+      "source_date_local": "2026-07-19",
+      "wake_time_local": "2026-07-19T09:07:13",
+      "wake_time_utc": "2026-07-19T16:07:13"
+    },
+    {
+      "baseline_status": "valid",
+      "conflict_group_id": null,
+      "created_at_utc": "2026-08-09T17:22:04.627288",
+      "mall_event_lag_seconds": 17815.0,
+      "mall_start_local": "2026-07-20T14:40:44",
+      "mall_start_utc": "2026-07-20T21:40:44",
+      "missing_reason": null,
+      "overnight_hrv_rmssd_ms": 40.0,
+      "readiness_context_id": "ric_b7e2152091b2ea87c9889331b6c77cd31dc00bc85289aa163e0309bd5e9cdb80",
+      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
+      "readiness_scope": "overnight_recovery_not_session_hrv",
+      "recovery_score_pct": 83.0,
+      "resting_hr_bpm": 52.0,
+      "sequence_date_local": "2026-07-20",
+      "sleep_performance_pct": 63.0,
+      "source_date_local": "2026-07-19",
+      "wake_time_local": "2026-07-20T09:43:49",
+      "wake_time_utc": "2026-07-20T16:43:49"
+    },
+    {
+      "baseline_status": "valid",
+      "conflict_group_id": null,
+      "created_at_utc": "2026-08-09T17:22:04.627288",
+      "mall_event_lag_seconds": 14875.0,
+      "mall_start_local": "2026-07-21T16:07:02",
+      "mall_start_utc": "2026-07-21T23:07:02",
+      "missing_reason": null,
+      "overnight_hrv_rmssd_ms": 47.0,
+      "readiness_context_id": "ric_6b99b0c99935335680e22787188a73c34537c7aca9fdd41328f6c06b44b48b9f",
+      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
+      "readiness_scope": "overnight_recovery_not_session_hrv",
+      "recovery_score_pct": 88.0,
+      "resting_hr_bpm": 49.0,
+      "sequence_date_local": "2026-07-21",
+      "sleep_performance_pct": 35.0,
+      "source_date_local": "2026-07-21",
+      "wake_time_local": "2026-07-21T11:59:07",
+      "wake_time_utc": "2026-07-21T18:59:07"
+    },
+    {
+      "baseline_status": "valid",
+      "conflict_group_id": null,
+      "created_at_utc": "2026-08-09T17:22:04.627288",
+      "mall_event_lag_seconds": 12988.0,
+      "mall_start_local": "2026-07-22T12:38:21",
+      "mall_start_utc": "2026-07-22T19:38:21",
+      "missing_reason": null,
+      "overnight_hrv_rmssd_ms": 40.0,
+      "readiness_context_id": "ric_9a3c245aa5956c5689256499ad0289cf147284f37927ade27b283d56ff9d9a4a",
+      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
+      "readiness_scope": "overnight_recovery_not_session_hrv",
+      "recovery_score_pct": 83.0,
+      "resting_hr_bpm": 49.0,
+      "sequence_date_local": "2026-07-22",
       "sleep_performance_pct": 71.0,
-      "source_date_local": "2026-07-05",
-      "wake_time_local": "2026-07-05T09:56:22",
-      "wake_time_utc": "2026-07-05T16:56:22"
+      "source_date_local": "2026-07-22",
+      "wake_time_local": "2026-07-22T09:01:53",
+      "wake_time_utc": "2026-07-22T16:01:53"
+    },
+    {
+      "baseline_status": "valid",
+      "conflict_group_id": null,
+      "created_at_utc": "2026-08-09T17:22:04.627288",
+      "mall_event_lag_seconds": 31161.0,
+      "mall_start_local": "2026-07-23T13:17:02",
+      "mall_start_utc": "2026-07-23T20:17:02",
+      "missing_reason": null,
+      "overnight_hrv_rmssd_ms": 41.0,
+      "readiness_context_id": "ric_f34b1ea5c02507d804a05142f4ee320784483d157c2d3b88c97c1c1151bb55d3",
+      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
+      "readiness_scope": "overnight_recovery_not_session_hrv",
+      "recovery_score_pct": 54.0,
+      "resting_hr_bpm": 50.0,
+      "sequence_date_local": "2026-07-23",
+      "sleep_performance_pct": 47.0,
+      "source_date_local": "2026-07-23",
+      "wake_time_local": "2026-07-23T04:37:41",
+      "wake_time_utc": "2026-07-23T11:37:41"
+    },
+    {
+      "baseline_status": "valid",
+      "conflict_group_id": null,
+      "created_at_utc": "2026-08-09T17:22:04.627288",
+      "mall_event_lag_seconds": 24815.0,
+      "mall_start_local": "2026-07-26T15:00:10",
+      "mall_start_utc": "2026-07-26T22:00:10",
+      "missing_reason": null,
+      "overnight_hrv_rmssd_ms": 32.0,
+      "readiness_context_id": "ric_cce11af9de3f4628e3cd474c467d1f09d55966a88b95a5ee401662d84ac7b087",
+      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
+      "readiness_scope": "overnight_recovery_not_session_hrv",
+      "recovery_score_pct": 54.0,
+      "resting_hr_bpm": 50.0,
+      "sequence_date_local": "2026-07-26",
+      "sleep_performance_pct": 68.0,
+      "source_date_local": "2026-07-26",
+      "wake_time_local": "2026-07-26T08:06:35",
+      "wake_time_utc": "2026-07-26T15:06:35"
+    },
+    {
+      "baseline_status": "valid",
+      "conflict_group_id": null,
+      "created_at_utc": "2026-08-09T17:22:04.627288",
+      "mall_event_lag_seconds": 29032.0,
+      "mall_start_local": "2026-07-27T16:21:12",
+      "mall_start_utc": "2026-07-27T23:21:12",
+      "missing_reason": null,
+      "overnight_hrv_rmssd_ms": 42.0,
+      "readiness_context_id": "ric_e49541da87f41e42f02e6123e10d5e72ded9d4fdcc136b2f29b1e1b1177c53cf",
+      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
+      "readiness_scope": "overnight_recovery_not_session_hrv",
+      "recovery_score_pct": 68.0,
+      "resting_hr_bpm": 48.0,
+      "sequence_date_local": "2026-07-27",
+      "sleep_performance_pct": 57.0,
+      "source_date_local": "2026-07-27",
+      "wake_time_local": "2026-07-27T08:17:20",
+      "wake_time_utc": "2026-07-27T15:17:20"
+    },
+    {
+      "baseline_status": "valid",
+      "conflict_group_id": null,
+      "created_at_utc": "2026-08-09T17:22:04.627288",
+      "mall_event_lag_seconds": 27013.0,
+      "mall_start_local": "2026-07-28T14:27:55",
+      "mall_start_utc": "2026-07-28T21:27:55",
+      "missing_reason": null,
+      "overnight_hrv_rmssd_ms": 43.0,
+      "readiness_context_id": "ric_f1e0ec2a53d5c08797a413ec7c19b166d8fe307f50e1016016ef6d76015d8033",
+      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
+      "readiness_scope": "overnight_recovery_not_session_hrv",
+      "recovery_score_pct": 88.0,
+      "resting_hr_bpm": 48.0,
+      "sequence_date_local": "2026-07-28",
+      "sleep_performance_pct": 59.0,
+      "source_date_local": "2026-07-27",
+      "wake_time_local": "2026-07-28T06:57:42",
+      "wake_time_utc": "2026-07-28T13:57:42"
+    },
+    {
+      "baseline_status": "valid",
+      "conflict_group_id": null,
+      "created_at_utc": "2026-08-09T17:22:04.627288",
+      "mall_event_lag_seconds": 26784.0,
+      "mall_start_local": "2026-07-29T13:24:59",
+      "mall_start_utc": "2026-07-29T20:24:59",
+      "missing_reason": null,
+      "overnight_hrv_rmssd_ms": 50.0,
+      "readiness_context_id": "ric_483189fe939401a05eabeb26239e9e62ccb6e36e7130aea19f5861f0ffd2de39",
+      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
+      "readiness_scope": "overnight_recovery_not_session_hrv",
+      "recovery_score_pct": 41.0,
+      "resting_hr_bpm": 47.0,
+      "sequence_date_local": "2026-07-29",
+      "sleep_performance_pct": 41.0,
+      "source_date_local": "2026-07-29",
+      "wake_time_local": "2026-07-29T05:58:35",
+      "wake_time_utc": "2026-07-29T12:58:35"
+    },
+    {
+      "baseline_status": "valid",
+      "conflict_group_id": null,
+      "created_at_utc": "2026-08-09T17:22:04.627288",
+      "mall_event_lag_seconds": 29439.0,
+      "mall_start_local": "2026-07-30T16:12:19",
+      "mall_start_utc": "2026-07-30T23:12:19",
+      "missing_reason": null,
+      "overnight_hrv_rmssd_ms": 47.0,
+      "readiness_context_id": "ric_c754a0482f10a5b4c50a7b4bb06070de9699a5d77f94fd0ab84758c2e5689666",
+      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
+      "readiness_scope": "overnight_recovery_not_session_hrv",
+      "recovery_score_pct": 66.0,
+      "resting_hr_bpm": 48.0,
+      "sequence_date_local": "2026-07-30",
+      "sleep_performance_pct": 53.0,
+      "source_date_local": "2026-07-30",
+      "wake_time_local": "2026-07-30T08:01:40",
+      "wake_time_utc": "2026-07-30T15:01:40"
+    },
+    {
+      "baseline_status": "valid",
+      "conflict_group_id": null,
+      "created_at_utc": "2026-08-09T17:22:04.627288",
+      "mall_event_lag_seconds": 4670.0,
+      "mall_start_local": "2026-08-02T13:19:59",
+      "mall_start_utc": "2026-08-02T20:19:59",
+      "missing_reason": null,
+      "overnight_hrv_rmssd_ms": 28.0,
+      "readiness_context_id": "ric_6967e945e1a13ecfe7cfcc8421c8e75b902c2cc385bdef280dffb84ceca3b461",
+      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
+      "readiness_scope": "overnight_recovery_not_session_hrv",
+      "recovery_score_pct": 36.0,
+      "resting_hr_bpm": 52.0,
+      "sequence_date_local": "2026-08-02",
+      "sleep_performance_pct": 54.0,
+      "source_date_local": "2026-08-02",
+      "wake_time_local": "2026-08-02T12:02:09",
+      "wake_time_utc": "2026-08-02T19:02:09"
+    },
+    {
+      "baseline_status": "valid",
+      "conflict_group_id": null,
+      "created_at_utc": "2026-08-09T17:22:04.627288",
+      "mall_event_lag_seconds": 13990.0,
+      "mall_start_local": "2026-08-03T12:56:39",
+      "mall_start_utc": "2026-08-03T19:56:39",
+      "missing_reason": null,
+      "overnight_hrv_rmssd_ms": 44.0,
+      "readiness_context_id": "ric_3447d730640d3c03e9422a011eba022dc4f360352227002afd5a6bf0f5602fce",
+      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
+      "readiness_scope": "overnight_recovery_not_session_hrv",
+      "recovery_score_pct": 74.0,
+      "resting_hr_bpm": 48.0,
+      "sequence_date_local": "2026-08-03",
+      "sleep_performance_pct": 62.0,
+      "source_date_local": "2026-08-03",
+      "wake_time_local": "2026-08-03T09:03:29",
+      "wake_time_utc": "2026-08-03T16:03:29"
+    },
+    {
+      "baseline_status": "valid",
+      "conflict_group_id": null,
+      "created_at_utc": "2026-08-09T17:22:04.627288",
+      "mall_event_lag_seconds": 24256.0,
+      "mall_start_local": "2026-08-04T13:04:15",
+      "mall_start_utc": "2026-08-04T20:04:15",
+      "missing_reason": null,
+      "overnight_hrv_rmssd_ms": 43.0,
+      "readiness_context_id": "ric_dede530aee931147bb7ea027b1bf1aedb681869ba5f5633e4f8c8a41c59776c8",
+      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
+      "readiness_scope": "overnight_recovery_not_session_hrv",
+      "recovery_score_pct": 62.0,
+      "resting_hr_bpm": 48.0,
+      "sequence_date_local": "2026-08-04",
+      "sleep_performance_pct": 63.0,
+      "source_date_local": "2026-08-04",
+      "wake_time_local": "2026-08-04T06:19:59",
+      "wake_time_utc": "2026-08-04T13:19:59"
+    },
+    {
+      "baseline_status": "valid",
+      "conflict_group_id": null,
+      "created_at_utc": "2026-08-09T17:22:04.627288",
+      "mall_event_lag_seconds": 29630.0,
+      "mall_start_local": "2026-08-05T13:57:11",
+      "mall_start_utc": "2026-08-05T20:57:11",
+      "missing_reason": null,
+      "overnight_hrv_rmssd_ms": 48.0,
+      "readiness_context_id": "ric_f275e2eb10aa145596677ad4e6ae349af33e62bdb28bd8848aea9c8615f994e2",
+      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
+      "readiness_scope": "overnight_recovery_not_session_hrv",
+      "recovery_score_pct": 74.0,
+      "resting_hr_bpm": 48.0,
+      "sequence_date_local": "2026-08-05",
+      "sleep_performance_pct": 45.0,
+      "source_date_local": "2026-08-04",
+      "wake_time_local": "2026-08-05T05:43:21",
+      "wake_time_utc": "2026-08-05T12:43:21"
+    },
+    {
+      "baseline_status": "valid",
+      "conflict_group_id": null,
+      "created_at_utc": "2026-08-09T17:22:04.627288",
+      "mall_event_lag_seconds": 18324.0,
+      "mall_start_local": "2026-08-06T12:58:18",
+      "mall_start_utc": "2026-08-06T19:58:18",
+      "missing_reason": null,
+      "overnight_hrv_rmssd_ms": 40.0,
+      "readiness_context_id": "ric_7afa71be140ba613b764b43ea67a4fa5ff1664b76fa6be72727bf37c913e3f33",
+      "readiness_run_id": "rir_33fc8b6ff409dca07e4d32eab479a9ff8da9778f517b2e8407f82e7f7626e9c1",
+      "readiness_scope": "overnight_recovery_not_session_hrv",
+      "recovery_score_pct": 40.0,
+      "resting_hr_bpm": 47.0,
+      "sequence_date_local": "2026-08-06",
+      "sleep_performance_pct": 34.0,
+      "source_date_local": "2026-08-06",
+      "wake_time_local": "2026-08-06T07:52:54",
+      "wake_time_utc": "2026-08-06T14:52:54"
     }
   ],
   "alt_text": "24 of 25 accepted triplets have valid pre-Mall WHOOP recovery context; 1 retain explicit missingness.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "dc8051b8c2928b12341236e979ea6e5a2b24509d436f84a4b066046bc69ad762",
+  "content_hash": "fa573f37fbfa848e1e3baecf0567fdf82b2566281adbf009eebc60c48b0ff2f6",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -534,88 +534,10 @@
           "label": "WHOOP pre-Mall recovery score",
           "points": [
             {
-              "date": "2026-07-28",
+              "date": "2026-07-05",
               "status": "valid",
               "unit": "percent",
-              "value": 88.0
-            },
-            {
-              "date": "2026-08-06",
-              "status": "valid",
-              "unit": "percent",
-              "value": 40.0
-            },
-            {
-              "date": "2026-07-27",
-              "status": "valid",
-              "unit": "percent",
-              "value": 68.0
-            },
-            {
-              "date": "2026-07-19",
-              "status": "valid",
-              "unit": "percent",
-              "value": 35.0
-            },
-            {
-              "date": "2026-07-29",
-              "status": "valid",
-              "unit": "percent",
-              "value": 41.0
-            },
-            {
-              "date": "2026-07-22",
-              "status": "valid",
-              "unit": "percent",
-              "value": 83.0
-            },
-            {
-              "date": "2026-07-07",
-              "status": "valid",
-              "unit": "percent",
-              "value": 90.0
-            },
-            {
-              "date": "2026-07-15",
-              "status": "valid",
-              "unit": "percent",
-              "value": 43.0
-            },
-            {
-              "date": "2026-08-05",
-              "status": "valid",
-              "unit": "percent",
-              "value": 74.0
-            },
-            {
-              "date": "2026-07-23",
-              "status": "valid",
-              "unit": "percent",
-              "value": 54.0
-            },
-            {
-              "date": "2026-08-02",
-              "status": "valid",
-              "unit": "percent",
-              "value": 36.0
-            },
-            {
-              "date": "2026-07-20",
-              "status": "valid",
-              "unit": "percent",
-              "value": 83.0
-            },
-            {
-              "date": "2026-07-13",
-              "status": "valid",
-              "unit": "percent",
-              "value": 27.0
-            },
-            {
-              "date": "2026-07-16",
-              "status": "valid",
-              "unit": "percent",
-              "value": 43.0
+              "value": 34.0
             },
             {
               "date": "2026-07-06",
@@ -624,46 +546,16 @@
               "value": 18.0
             },
             {
+              "date": "2026-07-07",
+              "status": "valid",
+              "unit": "percent",
+              "value": 90.0
+            },
+            {
               "date": "2026-07-09",
               "status": "valid",
               "unit": "percent",
               "value": 88.0
-            },
-            {
-              "date": "2026-07-21",
-              "status": "valid",
-              "unit": "percent",
-              "value": 88.0
-            },
-            {
-              "date": "2026-07-14",
-              "status": "valid",
-              "unit": "percent",
-              "value": 46.0
-            },
-            {
-              "date": "2026-08-04",
-              "status": "valid",
-              "unit": "percent",
-              "value": 62.0
-            },
-            {
-              "date": "2026-08-03",
-              "status": "valid",
-              "unit": "percent",
-              "value": 74.0
-            },
-            {
-              "date": "2026-07-26",
-              "status": "valid",
-              "unit": "percent",
-              "value": 54.0
-            },
-            {
-              "date": "2026-07-30",
-              "status": "valid",
-              "unit": "percent",
-              "value": 66.0
             },
             {
               "date": "2026-07-12",
@@ -672,10 +564,118 @@
               "value": 35.0
             },
             {
-              "date": "2026-07-05",
+              "date": "2026-07-13",
               "status": "valid",
               "unit": "percent",
-              "value": 34.0
+              "value": 27.0
+            },
+            {
+              "date": "2026-07-14",
+              "status": "valid",
+              "unit": "percent",
+              "value": 46.0
+            },
+            {
+              "date": "2026-07-15",
+              "status": "valid",
+              "unit": "percent",
+              "value": 43.0
+            },
+            {
+              "date": "2026-07-16",
+              "status": "valid",
+              "unit": "percent",
+              "value": 43.0
+            },
+            {
+              "date": "2026-07-19",
+              "status": "valid",
+              "unit": "percent",
+              "value": 35.0
+            },
+            {
+              "date": "2026-07-20",
+              "status": "valid",
+              "unit": "percent",
+              "value": 83.0
+            },
+            {
+              "date": "2026-07-21",
+              "status": "valid",
+              "unit": "percent",
+              "value": 88.0
+            },
+            {
+              "date": "2026-07-22",
+              "status": "valid",
+              "unit": "percent",
+              "value": 83.0
+            },
+            {
+              "date": "2026-07-23",
+              "status": "valid",
+              "unit": "percent",
+              "value": 54.0
+            },
+            {
+              "date": "2026-07-26",
+              "status": "valid",
+              "unit": "percent",
+              "value": 54.0
+            },
+            {
+              "date": "2026-07-27",
+              "status": "valid",
+              "unit": "percent",
+              "value": 68.0
+            },
+            {
+              "date": "2026-07-28",
+              "status": "valid",
+              "unit": "percent",
+              "value": 88.0
+            },
+            {
+              "date": "2026-07-29",
+              "status": "valid",
+              "unit": "percent",
+              "value": 41.0
+            },
+            {
+              "date": "2026-07-30",
+              "status": "valid",
+              "unit": "percent",
+              "value": 66.0
+            },
+            {
+              "date": "2026-08-02",
+              "status": "valid",
+              "unit": "percent",
+              "value": 36.0
+            },
+            {
+              "date": "2026-08-03",
+              "status": "valid",
+              "unit": "percent",
+              "value": 74.0
+            },
+            {
+              "date": "2026-08-04",
+              "status": "valid",
+              "unit": "percent",
+              "value": 62.0
+            },
+            {
+              "date": "2026-08-05",
+              "status": "valid",
+              "unit": "percent",
+              "value": 74.0
+            },
+            {
+              "date": "2026-08-06",
+              "status": "valid",
+              "unit": "percent",
+              "value": 40.0
             }
           ]
         }
@@ -689,88 +689,10 @@
           "label": "WHOOP pre-Mall resting heart rate",
           "points": [
             {
-              "date": "2026-07-28",
+              "date": "2026-07-05",
               "status": "valid",
               "unit": "bpm",
-              "value": 48.0
-            },
-            {
-              "date": "2026-08-06",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 47.0
-            },
-            {
-              "date": "2026-07-27",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 48.0
-            },
-            {
-              "date": "2026-07-19",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 53.0
-            },
-            {
-              "date": "2026-07-29",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 47.0
-            },
-            {
-              "date": "2026-07-22",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 49.0
-            },
-            {
-              "date": "2026-07-07",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 52.0
-            },
-            {
-              "date": "2026-07-15",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 53.0
-            },
-            {
-              "date": "2026-08-05",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 48.0
-            },
-            {
-              "date": "2026-07-23",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 50.0
-            },
-            {
-              "date": "2026-08-02",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 52.0
-            },
-            {
-              "date": "2026-07-20",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 52.0
-            },
-            {
-              "date": "2026-07-13",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 52.0
-            },
-            {
-              "date": "2026-07-16",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 52.0
+              "value": 56.0
             },
             {
               "date": "2026-07-06",
@@ -779,10 +701,58 @@
               "value": 55.0
             },
             {
+              "date": "2026-07-07",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 52.0
+            },
+            {
               "date": "2026-07-09",
               "status": "valid",
               "unit": "bpm",
               "value": 51.0
+            },
+            {
+              "date": "2026-07-12",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 54.0
+            },
+            {
+              "date": "2026-07-13",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 52.0
+            },
+            {
+              "date": "2026-07-14",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 48.0
+            },
+            {
+              "date": "2026-07-15",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 53.0
+            },
+            {
+              "date": "2026-07-16",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 52.0
+            },
+            {
+              "date": "2026-07-19",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 53.0
+            },
+            {
+              "date": "2026-07-20",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 52.0
             },
             {
               "date": "2026-07-21",
@@ -791,7 +761,55 @@
               "value": 49.0
             },
             {
-              "date": "2026-07-14",
+              "date": "2026-07-22",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 49.0
+            },
+            {
+              "date": "2026-07-23",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 50.0
+            },
+            {
+              "date": "2026-07-26",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 50.0
+            },
+            {
+              "date": "2026-07-27",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 48.0
+            },
+            {
+              "date": "2026-07-28",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 48.0
+            },
+            {
+              "date": "2026-07-29",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 47.0
+            },
+            {
+              "date": "2026-07-30",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 48.0
+            },
+            {
+              "date": "2026-08-02",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 52.0
+            },
+            {
+              "date": "2026-08-03",
               "status": "valid",
               "unit": "bpm",
               "value": 48.0
@@ -803,34 +821,16 @@
               "value": 48.0
             },
             {
-              "date": "2026-08-03",
+              "date": "2026-08-05",
               "status": "valid",
               "unit": "bpm",
               "value": 48.0
             },
             {
-              "date": "2026-07-26",
+              "date": "2026-08-06",
               "status": "valid",
               "unit": "bpm",
-              "value": 50.0
-            },
-            {
-              "date": "2026-07-30",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 48.0
-            },
-            {
-              "date": "2026-07-12",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 54.0
-            },
-            {
-              "date": "2026-07-05",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 56.0
+              "value": 47.0
             }
           ]
         }
@@ -844,88 +844,10 @@
           "label": "WHOOP pre-Mall overnight HRV",
           "points": [
             {
-              "date": "2026-07-28",
+              "date": "2026-07-05",
               "status": "valid",
               "unit": "ms",
-              "value": 43.0
-            },
-            {
-              "date": "2026-08-06",
-              "status": "valid",
-              "unit": "ms",
-              "value": 40.0
-            },
-            {
-              "date": "2026-07-27",
-              "status": "valid",
-              "unit": "ms",
-              "value": 42.0
-            },
-            {
-              "date": "2026-07-19",
-              "status": "valid",
-              "unit": "ms",
-              "value": 22.0
-            },
-            {
-              "date": "2026-07-29",
-              "status": "valid",
-              "unit": "ms",
-              "value": 50.0
-            },
-            {
-              "date": "2026-07-22",
-              "status": "valid",
-              "unit": "ms",
-              "value": 40.0
-            },
-            {
-              "date": "2026-07-07",
-              "status": "valid",
-              "unit": "ms",
-              "value": 43.0
-            },
-            {
-              "date": "2026-07-15",
-              "status": "valid",
-              "unit": "ms",
-              "value": 34.0
-            },
-            {
-              "date": "2026-08-05",
-              "status": "valid",
-              "unit": "ms",
-              "value": 48.0
-            },
-            {
-              "date": "2026-07-23",
-              "status": "valid",
-              "unit": "ms",
-              "value": 41.0
-            },
-            {
-              "date": "2026-08-02",
-              "status": "valid",
-              "unit": "ms",
-              "value": 28.0
-            },
-            {
-              "date": "2026-07-20",
-              "status": "valid",
-              "unit": "ms",
-              "value": 40.0
-            },
-            {
-              "date": "2026-07-13",
-              "status": "valid",
-              "unit": "ms",
-              "value": 43.0
-            },
-            {
-              "date": "2026-07-16",
-              "status": "valid",
-              "unit": "ms",
-              "value": 40.0
+              "value": 25.0
             },
             {
               "date": "2026-07-06",
@@ -934,46 +856,16 @@
               "value": 49.0
             },
             {
-              "date": "2026-07-09",
-              "status": "valid",
-              "unit": "ms",
-              "value": 42.0
-            },
-            {
-              "date": "2026-07-21",
-              "status": "valid",
-              "unit": "ms",
-              "value": 47.0
-            },
-            {
-              "date": "2026-07-14",
-              "status": "valid",
-              "unit": "ms",
-              "value": 42.0
-            },
-            {
-              "date": "2026-08-04",
+              "date": "2026-07-07",
               "status": "valid",
               "unit": "ms",
               "value": 43.0
             },
             {
-              "date": "2026-08-03",
+              "date": "2026-07-09",
               "status": "valid",
               "unit": "ms",
-              "value": 44.0
-            },
-            {
-              "date": "2026-07-26",
-              "status": "valid",
-              "unit": "ms",
-              "value": 32.0
-            },
-            {
-              "date": "2026-07-30",
-              "status": "valid",
-              "unit": "ms",
-              "value": 47.0
+              "value": 42.0
             },
             {
               "date": "2026-07-12",
@@ -982,10 +874,118 @@
               "value": 26.0
             },
             {
-              "date": "2026-07-05",
+              "date": "2026-07-13",
               "status": "valid",
               "unit": "ms",
-              "value": 25.0
+              "value": 43.0
+            },
+            {
+              "date": "2026-07-14",
+              "status": "valid",
+              "unit": "ms",
+              "value": 42.0
+            },
+            {
+              "date": "2026-07-15",
+              "status": "valid",
+              "unit": "ms",
+              "value": 34.0
+            },
+            {
+              "date": "2026-07-16",
+              "status": "valid",
+              "unit": "ms",
+              "value": 40.0
+            },
+            {
+              "date": "2026-07-19",
+              "status": "valid",
+              "unit": "ms",
+              "value": 22.0
+            },
+            {
+              "date": "2026-07-20",
+              "status": "valid",
+              "unit": "ms",
+              "value": 40.0
+            },
+            {
+              "date": "2026-07-21",
+              "status": "valid",
+              "unit": "ms",
+              "value": 47.0
+            },
+            {
+              "date": "2026-07-22",
+              "status": "valid",
+              "unit": "ms",
+              "value": 40.0
+            },
+            {
+              "date": "2026-07-23",
+              "status": "valid",
+              "unit": "ms",
+              "value": 41.0
+            },
+            {
+              "date": "2026-07-26",
+              "status": "valid",
+              "unit": "ms",
+              "value": 32.0
+            },
+            {
+              "date": "2026-07-27",
+              "status": "valid",
+              "unit": "ms",
+              "value": 42.0
+            },
+            {
+              "date": "2026-07-28",
+              "status": "valid",
+              "unit": "ms",
+              "value": 43.0
+            },
+            {
+              "date": "2026-07-29",
+              "status": "valid",
+              "unit": "ms",
+              "value": 50.0
+            },
+            {
+              "date": "2026-07-30",
+              "status": "valid",
+              "unit": "ms",
+              "value": 47.0
+            },
+            {
+              "date": "2026-08-02",
+              "status": "valid",
+              "unit": "ms",
+              "value": 28.0
+            },
+            {
+              "date": "2026-08-03",
+              "status": "valid",
+              "unit": "ms",
+              "value": 44.0
+            },
+            {
+              "date": "2026-08-04",
+              "status": "valid",
+              "unit": "ms",
+              "value": 43.0
+            },
+            {
+              "date": "2026-08-05",
+              "status": "valid",
+              "unit": "ms",
+              "value": 48.0
+            },
+            {
+              "date": "2026-08-06",
+              "status": "valid",
+              "unit": "ms",
+              "value": 40.0
             }
           ]
         }
@@ -999,88 +999,10 @@
           "label": "WHOOP pre-Mall sleep performance",
           "points": [
             {
-              "date": "2026-07-28",
-              "status": "valid",
-              "unit": "percent",
-              "value": 59.0
-            },
-            {
-              "date": "2026-08-06",
-              "status": "valid",
-              "unit": "percent",
-              "value": 34.0
-            },
-            {
-              "date": "2026-07-27",
-              "status": "valid",
-              "unit": "percent",
-              "value": 57.0
-            },
-            {
-              "date": "2026-07-19",
-              "status": "valid",
-              "unit": "percent",
-              "value": 68.0
-            },
-            {
-              "date": "2026-07-29",
-              "status": "valid",
-              "unit": "percent",
-              "value": 41.0
-            },
-            {
-              "date": "2026-07-22",
+              "date": "2026-07-05",
               "status": "valid",
               "unit": "percent",
               "value": 71.0
-            },
-            {
-              "date": "2026-07-07",
-              "status": "valid",
-              "unit": "percent",
-              "value": 68.0
-            },
-            {
-              "date": "2026-07-15",
-              "status": "valid",
-              "unit": "percent",
-              "value": 59.0
-            },
-            {
-              "date": "2026-08-05",
-              "status": "valid",
-              "unit": "percent",
-              "value": 45.0
-            },
-            {
-              "date": "2026-07-23",
-              "status": "valid",
-              "unit": "percent",
-              "value": 47.0
-            },
-            {
-              "date": "2026-08-02",
-              "status": "valid",
-              "unit": "percent",
-              "value": 54.0
-            },
-            {
-              "date": "2026-07-20",
-              "status": "valid",
-              "unit": "percent",
-              "value": 63.0
-            },
-            {
-              "date": "2026-07-13",
-              "status": "valid",
-              "unit": "percent",
-              "value": 27.0
-            },
-            {
-              "date": "2026-07-16",
-              "status": "valid",
-              "unit": "percent",
-              "value": 47.0
             },
             {
               "date": "2026-07-06",
@@ -1089,46 +1011,16 @@
               "value": 4.0
             },
             {
-              "date": "2026-07-09",
-              "status": "valid",
-              "unit": "percent",
-              "value": 69.0
-            },
-            {
-              "date": "2026-07-21",
-              "status": "valid",
-              "unit": "percent",
-              "value": 35.0
-            },
-            {
-              "date": "2026-07-14",
-              "status": "valid",
-              "unit": "percent",
-              "value": 34.0
-            },
-            {
-              "date": "2026-08-04",
-              "status": "valid",
-              "unit": "percent",
-              "value": 63.0
-            },
-            {
-              "date": "2026-08-03",
-              "status": "valid",
-              "unit": "percent",
-              "value": 62.0
-            },
-            {
-              "date": "2026-07-26",
+              "date": "2026-07-07",
               "status": "valid",
               "unit": "percent",
               "value": 68.0
             },
             {
-              "date": "2026-07-30",
+              "date": "2026-07-09",
               "status": "valid",
               "unit": "percent",
-              "value": 53.0
+              "value": 69.0
             },
             {
               "date": "2026-07-12",
@@ -1137,10 +1029,118 @@
               "value": 62.0
             },
             {
-              "date": "2026-07-05",
+              "date": "2026-07-13",
+              "status": "valid",
+              "unit": "percent",
+              "value": 27.0
+            },
+            {
+              "date": "2026-07-14",
+              "status": "valid",
+              "unit": "percent",
+              "value": 34.0
+            },
+            {
+              "date": "2026-07-15",
+              "status": "valid",
+              "unit": "percent",
+              "value": 59.0
+            },
+            {
+              "date": "2026-07-16",
+              "status": "valid",
+              "unit": "percent",
+              "value": 47.0
+            },
+            {
+              "date": "2026-07-19",
+              "status": "valid",
+              "unit": "percent",
+              "value": 68.0
+            },
+            {
+              "date": "2026-07-20",
+              "status": "valid",
+              "unit": "percent",
+              "value": 63.0
+            },
+            {
+              "date": "2026-07-21",
+              "status": "valid",
+              "unit": "percent",
+              "value": 35.0
+            },
+            {
+              "date": "2026-07-22",
               "status": "valid",
               "unit": "percent",
               "value": 71.0
+            },
+            {
+              "date": "2026-07-23",
+              "status": "valid",
+              "unit": "percent",
+              "value": 47.0
+            },
+            {
+              "date": "2026-07-26",
+              "status": "valid",
+              "unit": "percent",
+              "value": 68.0
+            },
+            {
+              "date": "2026-07-27",
+              "status": "valid",
+              "unit": "percent",
+              "value": 57.0
+            },
+            {
+              "date": "2026-07-28",
+              "status": "valid",
+              "unit": "percent",
+              "value": 59.0
+            },
+            {
+              "date": "2026-07-29",
+              "status": "valid",
+              "unit": "percent",
+              "value": 41.0
+            },
+            {
+              "date": "2026-07-30",
+              "status": "valid",
+              "unit": "percent",
+              "value": 53.0
+            },
+            {
+              "date": "2026-08-02",
+              "status": "valid",
+              "unit": "percent",
+              "value": 54.0
+            },
+            {
+              "date": "2026-08-03",
+              "status": "valid",
+              "unit": "percent",
+              "value": 62.0
+            },
+            {
+              "date": "2026-08-04",
+              "status": "valid",
+              "unit": "percent",
+              "value": 63.0
+            },
+            {
+              "date": "2026-08-05",
+              "status": "valid",
+              "unit": "percent",
+              "value": 45.0
+            },
+            {
+              "date": "2026-08-06",
+              "status": "valid",
+              "unit": "percent",
+              "value": 34.0
             }
           ]
         }
@@ -1175,88 +1175,10 @@
           "label": "WHOOP pre-Mall recovery score",
           "points": [
             {
-              "date": "2026-07-28",
+              "date": "2026-07-05",
               "status": "valid",
               "unit": "percent",
-              "value": 88.0
-            },
-            {
-              "date": "2026-08-06",
-              "status": "valid",
-              "unit": "percent",
-              "value": 40.0
-            },
-            {
-              "date": "2026-07-27",
-              "status": "valid",
-              "unit": "percent",
-              "value": 68.0
-            },
-            {
-              "date": "2026-07-19",
-              "status": "valid",
-              "unit": "percent",
-              "value": 35.0
-            },
-            {
-              "date": "2026-07-29",
-              "status": "valid",
-              "unit": "percent",
-              "value": 41.0
-            },
-            {
-              "date": "2026-07-22",
-              "status": "valid",
-              "unit": "percent",
-              "value": 83.0
-            },
-            {
-              "date": "2026-07-07",
-              "status": "valid",
-              "unit": "percent",
-              "value": 90.0
-            },
-            {
-              "date": "2026-07-15",
-              "status": "valid",
-              "unit": "percent",
-              "value": 43.0
-            },
-            {
-              "date": "2026-08-05",
-              "status": "valid",
-              "unit": "percent",
-              "value": 74.0
-            },
-            {
-              "date": "2026-07-23",
-              "status": "valid",
-              "unit": "percent",
-              "value": 54.0
-            },
-            {
-              "date": "2026-08-02",
-              "status": "valid",
-              "unit": "percent",
-              "value": 36.0
-            },
-            {
-              "date": "2026-07-20",
-              "status": "valid",
-              "unit": "percent",
-              "value": 83.0
-            },
-            {
-              "date": "2026-07-13",
-              "status": "valid",
-              "unit": "percent",
-              "value": 27.0
-            },
-            {
-              "date": "2026-07-16",
-              "status": "valid",
-              "unit": "percent",
-              "value": 43.0
+              "value": 34.0
             },
             {
               "date": "2026-07-06",
@@ -1265,46 +1187,16 @@
               "value": 18.0
             },
             {
+              "date": "2026-07-07",
+              "status": "valid",
+              "unit": "percent",
+              "value": 90.0
+            },
+            {
               "date": "2026-07-09",
               "status": "valid",
               "unit": "percent",
               "value": 88.0
-            },
-            {
-              "date": "2026-07-21",
-              "status": "valid",
-              "unit": "percent",
-              "value": 88.0
-            },
-            {
-              "date": "2026-07-14",
-              "status": "valid",
-              "unit": "percent",
-              "value": 46.0
-            },
-            {
-              "date": "2026-08-04",
-              "status": "valid",
-              "unit": "percent",
-              "value": 62.0
-            },
-            {
-              "date": "2026-08-03",
-              "status": "valid",
-              "unit": "percent",
-              "value": 74.0
-            },
-            {
-              "date": "2026-07-26",
-              "status": "valid",
-              "unit": "percent",
-              "value": 54.0
-            },
-            {
-              "date": "2026-07-30",
-              "status": "valid",
-              "unit": "percent",
-              "value": 66.0
             },
             {
               "date": "2026-07-12",
@@ -1313,10 +1205,118 @@
               "value": 35.0
             },
             {
-              "date": "2026-07-05",
+              "date": "2026-07-13",
               "status": "valid",
               "unit": "percent",
-              "value": 34.0
+              "value": 27.0
+            },
+            {
+              "date": "2026-07-14",
+              "status": "valid",
+              "unit": "percent",
+              "value": 46.0
+            },
+            {
+              "date": "2026-07-15",
+              "status": "valid",
+              "unit": "percent",
+              "value": 43.0
+            },
+            {
+              "date": "2026-07-16",
+              "status": "valid",
+              "unit": "percent",
+              "value": 43.0
+            },
+            {
+              "date": "2026-07-19",
+              "status": "valid",
+              "unit": "percent",
+              "value": 35.0
+            },
+            {
+              "date": "2026-07-20",
+              "status": "valid",
+              "unit": "percent",
+              "value": 83.0
+            },
+            {
+              "date": "2026-07-21",
+              "status": "valid",
+              "unit": "percent",
+              "value": 88.0
+            },
+            {
+              "date": "2026-07-22",
+              "status": "valid",
+              "unit": "percent",
+              "value": 83.0
+            },
+            {
+              "date": "2026-07-23",
+              "status": "valid",
+              "unit": "percent",
+              "value": 54.0
+            },
+            {
+              "date": "2026-07-26",
+              "status": "valid",
+              "unit": "percent",
+              "value": 54.0
+            },
+            {
+              "date": "2026-07-27",
+              "status": "valid",
+              "unit": "percent",
+              "value": 68.0
+            },
+            {
+              "date": "2026-07-28",
+              "status": "valid",
+              "unit": "percent",
+              "value": 88.0
+            },
+            {
+              "date": "2026-07-29",
+              "status": "valid",
+              "unit": "percent",
+              "value": 41.0
+            },
+            {
+              "date": "2026-07-30",
+              "status": "valid",
+              "unit": "percent",
+              "value": 66.0
+            },
+            {
+              "date": "2026-08-02",
+              "status": "valid",
+              "unit": "percent",
+              "value": 36.0
+            },
+            {
+              "date": "2026-08-03",
+              "status": "valid",
+              "unit": "percent",
+              "value": 74.0
+            },
+            {
+              "date": "2026-08-04",
+              "status": "valid",
+              "unit": "percent",
+              "value": 62.0
+            },
+            {
+              "date": "2026-08-05",
+              "status": "valid",
+              "unit": "percent",
+              "value": 74.0
+            },
+            {
+              "date": "2026-08-06",
+              "status": "valid",
+              "unit": "percent",
+              "value": 40.0
             }
           ]
         }
@@ -1332,88 +1332,10 @@
           "label": "WHOOP pre-Mall resting heart rate",
           "points": [
             {
-              "date": "2026-07-28",
+              "date": "2026-07-05",
               "status": "valid",
               "unit": "bpm",
-              "value": 48.0
-            },
-            {
-              "date": "2026-08-06",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 47.0
-            },
-            {
-              "date": "2026-07-27",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 48.0
-            },
-            {
-              "date": "2026-07-19",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 53.0
-            },
-            {
-              "date": "2026-07-29",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 47.0
-            },
-            {
-              "date": "2026-07-22",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 49.0
-            },
-            {
-              "date": "2026-07-07",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 52.0
-            },
-            {
-              "date": "2026-07-15",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 53.0
-            },
-            {
-              "date": "2026-08-05",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 48.0
-            },
-            {
-              "date": "2026-07-23",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 50.0
-            },
-            {
-              "date": "2026-08-02",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 52.0
-            },
-            {
-              "date": "2026-07-20",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 52.0
-            },
-            {
-              "date": "2026-07-13",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 52.0
-            },
-            {
-              "date": "2026-07-16",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 52.0
+              "value": 56.0
             },
             {
               "date": "2026-07-06",
@@ -1422,10 +1344,58 @@
               "value": 55.0
             },
             {
+              "date": "2026-07-07",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 52.0
+            },
+            {
               "date": "2026-07-09",
               "status": "valid",
               "unit": "bpm",
               "value": 51.0
+            },
+            {
+              "date": "2026-07-12",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 54.0
+            },
+            {
+              "date": "2026-07-13",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 52.0
+            },
+            {
+              "date": "2026-07-14",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 48.0
+            },
+            {
+              "date": "2026-07-15",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 53.0
+            },
+            {
+              "date": "2026-07-16",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 52.0
+            },
+            {
+              "date": "2026-07-19",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 53.0
+            },
+            {
+              "date": "2026-07-20",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 52.0
             },
             {
               "date": "2026-07-21",
@@ -1434,7 +1404,55 @@
               "value": 49.0
             },
             {
-              "date": "2026-07-14",
+              "date": "2026-07-22",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 49.0
+            },
+            {
+              "date": "2026-07-23",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 50.0
+            },
+            {
+              "date": "2026-07-26",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 50.0
+            },
+            {
+              "date": "2026-07-27",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 48.0
+            },
+            {
+              "date": "2026-07-28",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 48.0
+            },
+            {
+              "date": "2026-07-29",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 47.0
+            },
+            {
+              "date": "2026-07-30",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 48.0
+            },
+            {
+              "date": "2026-08-02",
+              "status": "valid",
+              "unit": "bpm",
+              "value": 52.0
+            },
+            {
+              "date": "2026-08-03",
               "status": "valid",
               "unit": "bpm",
               "value": 48.0
@@ -1446,34 +1464,16 @@
               "value": 48.0
             },
             {
-              "date": "2026-08-03",
+              "date": "2026-08-05",
               "status": "valid",
               "unit": "bpm",
               "value": 48.0
             },
             {
-              "date": "2026-07-26",
+              "date": "2026-08-06",
               "status": "valid",
               "unit": "bpm",
-              "value": 50.0
-            },
-            {
-              "date": "2026-07-30",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 48.0
-            },
-            {
-              "date": "2026-07-12",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 54.0
-            },
-            {
-              "date": "2026-07-05",
-              "status": "valid",
-              "unit": "bpm",
-              "value": 56.0
+              "value": 47.0
             }
           ]
         }
@@ -1489,88 +1489,10 @@
           "label": "WHOOP pre-Mall overnight HRV",
           "points": [
             {
-              "date": "2026-07-28",
+              "date": "2026-07-05",
               "status": "valid",
               "unit": "ms",
-              "value": 43.0
-            },
-            {
-              "date": "2026-08-06",
-              "status": "valid",
-              "unit": "ms",
-              "value": 40.0
-            },
-            {
-              "date": "2026-07-27",
-              "status": "valid",
-              "unit": "ms",
-              "value": 42.0
-            },
-            {
-              "date": "2026-07-19",
-              "status": "valid",
-              "unit": "ms",
-              "value": 22.0
-            },
-            {
-              "date": "2026-07-29",
-              "status": "valid",
-              "unit": "ms",
-              "value": 50.0
-            },
-            {
-              "date": "2026-07-22",
-              "status": "valid",
-              "unit": "ms",
-              "value": 40.0
-            },
-            {
-              "date": "2026-07-07",
-              "status": "valid",
-              "unit": "ms",
-              "value": 43.0
-            },
-            {
-              "date": "2026-07-15",
-              "status": "valid",
-              "unit": "ms",
-              "value": 34.0
-            },
-            {
-              "date": "2026-08-05",
-              "status": "valid",
-              "unit": "ms",
-              "value": 48.0
-            },
-            {
-              "date": "2026-07-23",
-              "status": "valid",
-              "unit": "ms",
-              "value": 41.0
-            },
-            {
-              "date": "2026-08-02",
-              "status": "valid",
-              "unit": "ms",
-              "value": 28.0
-            },
-            {
-              "date": "2026-07-20",
-              "status": "valid",
-              "unit": "ms",
-              "value": 40.0
-            },
-            {
-              "date": "2026-07-13",
-              "status": "valid",
-              "unit": "ms",
-              "value": 43.0
-            },
-            {
-              "date": "2026-07-16",
-              "status": "valid",
-              "unit": "ms",
-              "value": 40.0
+              "value": 25.0
             },
             {
               "date": "2026-07-06",
@@ -1579,46 +1501,16 @@
               "value": 49.0
             },
             {
-              "date": "2026-07-09",
-              "status": "valid",
-              "unit": "ms",
-              "value": 42.0
-            },
-            {
-              "date": "2026-07-21",
-              "status": "valid",
-              "unit": "ms",
-              "value": 47.0
-            },
-            {
-              "date": "2026-07-14",
-              "status": "valid",
-              "unit": "ms",
-              "value": 42.0
-            },
-            {
-              "date": "2026-08-04",
+              "date": "2026-07-07",
               "status": "valid",
               "unit": "ms",
               "value": 43.0
             },
             {
-              "date": "2026-08-03",
+              "date": "2026-07-09",
               "status": "valid",
               "unit": "ms",
-              "value": 44.0
-            },
-            {
-              "date": "2026-07-26",
-              "status": "valid",
-              "unit": "ms",
-              "value": 32.0
-            },
-            {
-              "date": "2026-07-30",
-              "status": "valid",
-              "unit": "ms",
-              "value": 47.0
+              "value": 42.0
             },
             {
               "date": "2026-07-12",
@@ -1627,10 +1519,118 @@
               "value": 26.0
             },
             {
-              "date": "2026-07-05",
+              "date": "2026-07-13",
               "status": "valid",
               "unit": "ms",
-              "value": 25.0
+              "value": 43.0
+            },
+            {
+              "date": "2026-07-14",
+              "status": "valid",
+              "unit": "ms",
+              "value": 42.0
+            },
+            {
+              "date": "2026-07-15",
+              "status": "valid",
+              "unit": "ms",
+              "value": 34.0
+            },
+            {
+              "date": "2026-07-16",
+              "status": "valid",
+              "unit": "ms",
+              "value": 40.0
+            },
+            {
+              "date": "2026-07-19",
+              "status": "valid",
+              "unit": "ms",
+              "value": 22.0
+            },
+            {
+              "date": "2026-07-20",
+              "status": "valid",
+              "unit": "ms",
+              "value": 40.0
+            },
+            {
+              "date": "2026-07-21",
+              "status": "valid",
+              "unit": "ms",
+              "value": 47.0
+            },
+            {
+              "date": "2026-07-22",
+              "status": "valid",
+              "unit": "ms",
+              "value": 40.0
+            },
+            {
+              "date": "2026-07-23",
+              "status": "valid",
+              "unit": "ms",
+              "value": 41.0
+            },
+            {
+              "date": "2026-07-26",
+              "status": "valid",
+              "unit": "ms",
+              "value": 32.0
+            },
+            {
+              "date": "2026-07-27",
+              "status": "valid",
+              "unit": "ms",
+              "value": 42.0
+            },
+            {
+              "date": "2026-07-28",
+              "status": "valid",
+              "unit": "ms",
+              "value": 43.0
+            },
+            {
+              "date": "2026-07-29",
+              "status": "valid",
+              "unit": "ms",
+              "value": 50.0
+            },
+            {
+              "date": "2026-07-30",
+              "status": "valid",
+              "unit": "ms",
+              "value": 47.0
+            },
+            {
+              "date": "2026-08-02",
+              "status": "valid",
+              "unit": "ms",
+              "value": 28.0
+            },
+            {
+              "date": "2026-08-03",
+              "status": "valid",
+              "unit": "ms",
+              "value": 44.0
+            },
+            {
+              "date": "2026-08-04",
+              "status": "valid",
+              "unit": "ms",
+              "value": 43.0
+            },
+            {
+              "date": "2026-08-05",
+              "status": "valid",
+              "unit": "ms",
+              "value": 48.0
+            },
+            {
+              "date": "2026-08-06",
+              "status": "valid",
+              "unit": "ms",
+              "value": 40.0
             }
           ]
         }
@@ -1646,88 +1646,10 @@
           "label": "WHOOP pre-Mall sleep performance",
           "points": [
             {
-              "date": "2026-07-28",
-              "status": "valid",
-              "unit": "percent",
-              "value": 59.0
-            },
-            {
-              "date": "2026-08-06",
-              "status": "valid",
-              "unit": "percent",
-              "value": 34.0
-            },
-            {
-              "date": "2026-07-27",
-              "status": "valid",
-              "unit": "percent",
-              "value": 57.0
-            },
-            {
-              "date": "2026-07-19",
-              "status": "valid",
-              "unit": "percent",
-              "value": 68.0
-            },
-            {
-              "date": "2026-07-29",
-              "status": "valid",
-              "unit": "percent",
-              "value": 41.0
-            },
-            {
-              "date": "2026-07-22",
+              "date": "2026-07-05",
               "status": "valid",
               "unit": "percent",
               "value": 71.0
-            },
-            {
-              "date": "2026-07-07",
-              "status": "valid",
-              "unit": "percent",
-              "value": 68.0
-            },
-            {
-              "date": "2026-07-15",
-              "status": "valid",
-              "unit": "percent",
-              "value": 59.0
-            },
-            {
-              "date": "2026-08-05",
-              "status": "valid",
-              "unit": "percent",
-              "value": 45.0
-            },
-            {
-              "date": "2026-07-23",
-              "status": "valid",
-              "unit": "percent",
-              "value": 47.0
-            },
-            {
-              "date": "2026-08-02",
-              "status": "valid",
-              "unit": "percent",
-              "value": 54.0
-            },
-            {
-              "date": "2026-07-20",
-              "status": "valid",
-              "unit": "percent",
-              "value": 63.0
-            },
-            {
-              "date": "2026-07-13",
-              "status": "valid",
-              "unit": "percent",
-              "value": 27.0
-            },
-            {
-              "date": "2026-07-16",
-              "status": "valid",
-              "unit": "percent",
-              "value": 47.0
             },
             {
               "date": "2026-07-06",
@@ -1736,46 +1658,16 @@
               "value": 4.0
             },
             {
-              "date": "2026-07-09",
-              "status": "valid",
-              "unit": "percent",
-              "value": 69.0
-            },
-            {
-              "date": "2026-07-21",
-              "status": "valid",
-              "unit": "percent",
-              "value": 35.0
-            },
-            {
-              "date": "2026-07-14",
-              "status": "valid",
-              "unit": "percent",
-              "value": 34.0
-            },
-            {
-              "date": "2026-08-04",
-              "status": "valid",
-              "unit": "percent",
-              "value": 63.0
-            },
-            {
-              "date": "2026-08-03",
-              "status": "valid",
-              "unit": "percent",
-              "value": 62.0
-            },
-            {
-              "date": "2026-07-26",
+              "date": "2026-07-07",
               "status": "valid",
               "unit": "percent",
               "value": 68.0
             },
             {
-              "date": "2026-07-30",
+              "date": "2026-07-09",
               "status": "valid",
               "unit": "percent",
-              "value": 53.0
+              "value": 69.0
             },
             {
               "date": "2026-07-12",
@@ -1784,10 +1676,118 @@
               "value": 62.0
             },
             {
-              "date": "2026-07-05",
+              "date": "2026-07-13",
+              "status": "valid",
+              "unit": "percent",
+              "value": 27.0
+            },
+            {
+              "date": "2026-07-14",
+              "status": "valid",
+              "unit": "percent",
+              "value": 34.0
+            },
+            {
+              "date": "2026-07-15",
+              "status": "valid",
+              "unit": "percent",
+              "value": 59.0
+            },
+            {
+              "date": "2026-07-16",
+              "status": "valid",
+              "unit": "percent",
+              "value": 47.0
+            },
+            {
+              "date": "2026-07-19",
+              "status": "valid",
+              "unit": "percent",
+              "value": 68.0
+            },
+            {
+              "date": "2026-07-20",
+              "status": "valid",
+              "unit": "percent",
+              "value": 63.0
+            },
+            {
+              "date": "2026-07-21",
+              "status": "valid",
+              "unit": "percent",
+              "value": 35.0
+            },
+            {
+              "date": "2026-07-22",
               "status": "valid",
               "unit": "percent",
               "value": 71.0
+            },
+            {
+              "date": "2026-07-23",
+              "status": "valid",
+              "unit": "percent",
+              "value": 47.0
+            },
+            {
+              "date": "2026-07-26",
+              "status": "valid",
+              "unit": "percent",
+              "value": 68.0
+            },
+            {
+              "date": "2026-07-27",
+              "status": "valid",
+              "unit": "percent",
+              "value": 57.0
+            },
+            {
+              "date": "2026-07-28",
+              "status": "valid",
+              "unit": "percent",
+              "value": 59.0
+            },
+            {
+              "date": "2026-07-29",
+              "status": "valid",
+              "unit": "percent",
+              "value": 41.0
+            },
+            {
+              "date": "2026-07-30",
+              "status": "valid",
+              "unit": "percent",
+              "value": 53.0
+            },
+            {
+              "date": "2026-08-02",
+              "status": "valid",
+              "unit": "percent",
+              "value": 54.0
+            },
+            {
+              "date": "2026-08-03",
+              "status": "valid",
+              "unit": "percent",
+              "value": 62.0
+            },
+            {
+              "date": "2026-08-04",
+              "status": "valid",
+              "unit": "percent",
+              "value": 63.0
+            },
+            {
+              "date": "2026-08-05",
+              "status": "valid",
+              "unit": "percent",
+              "value": 45.0
+            },
+            {
+              "date": "2026-08-06",
+              "status": "valid",
+              "unit": "percent",
+              "value": 34.0
             }
           ]
         }

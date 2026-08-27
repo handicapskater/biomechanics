@@ -303,7 +303,7 @@ class SiteTests(unittest.TestCase):
             "ml_feature_domain_importance": "/platform/",
         }
         reader = read("common/evidence-publication.js")
-        self.assertIn("fetchJson(entry.artifact_path)", reader)
+        self.assertIn("fetchJson(entry.artifact_path, entry.content_hash)", reader)
         self.assertIn('entryById(manifest.graphs, "graph_id", id)', reader)
         for graph_id, page in expected.items():
             entry = entries[graph_id]
@@ -355,6 +355,7 @@ class Element {
   append(...children) { children.forEach((child) => this.appendChild(child)); }
   replaceChildren(...children) { this.children = []; this._text = ""; this.append(...children); }
   setAttribute(name, value) { this.attributes[name] = String(value); }
+  getAttribute(name) { return this.attributes[name] || null; }
   get textContent() { return this._text + this.children.map((child) => child.textContent || "").join(""); }
   set textContent(value) { this.children = []; this._text = String(value); }
 }
@@ -377,7 +378,7 @@ global.document = {
 global.window = {};
 global.fetch = async (url) => {
   const prefix = "/data/public/evidence-observatory/v1/";
-  const relative = String(url).startsWith(prefix) ? String(url).slice(prefix.length) : "";
+  const relative = String(url).startsWith(prefix) ? String(url).slice(prefix.length).split("?")[0] : "";
   const target = relative ? bundleRoot + "/" + relative : "";
   if (!target || !fs.existsSync(target)) return { ok: false, json: async () => ({}) };
   return { ok: true, json: async () => JSON.parse(fs.readFileSync(target, "utf8")) };
@@ -422,6 +423,116 @@ function hasClass(node, className) {
 
         run_reader(graph_ids, graph_ids)
         run_reader(["unknown_graph"], [])
+
+    def test_approved_publication_pages_hydrate_every_graph_mount(self) -> None:
+        pages = (
+            "evidence/longitudinal/index.html",
+            "evidence/transportation/index.html",
+            "evidence/strava-gps-skate-maps/index.html",
+        )
+        graph_ids = [
+            graph_id
+            for page in pages
+            for graph_id in re.findall(
+                r'data-publication-graph="([^"]+)"', read(page)
+            )
+        ]
+        resource_ids = [
+            resource_id
+            for page in pages
+            for resource_id in re.findall(
+                r'data-publication-resource="([^"]+)"', read(page)
+            )
+        ]
+        reader_path = ROOT / "common/evidence-publication.js"
+        bundle_root = ROOT / "data/public/evidence-observatory/v1"
+        harness = """
+const fs = require("fs");
+const vm = require("vm");
+const readerPath = __READER_PATH__;
+const bundleRoot = __BUNDLE_ROOT__;
+const graphIds = __GRAPH_IDS__;
+const resourceIds = __RESOURCE_IDS__;
+
+class Element {
+  constructor(tag) {
+    this.tagName = tag;
+    this.dataset = {};
+    this.children = [];
+    this.attributes = {};
+    this._text = "";
+    this.style = { setProperty() {} };
+    this.classList = { add() {}, toggle() {} };
+  }
+  appendChild(child) { this.children.push(child); return child; }
+  append(...children) { children.forEach((child) => this.appendChild(child)); }
+  replaceChildren(...children) { this.children = []; this._text = ""; this.append(...children); }
+  setAttribute(name, value) { this.attributes[name] = String(value); }
+  getAttribute(name) { return this.attributes[name] || null; }
+  addEventListener() {}
+  get firstChild() { return this.children[0] || null; }
+  get textContent() { return this._text + this.children.map((child) => child.textContent || "").join(""); }
+  set textContent(value) { this.children = []; this._text = String(value); }
+}
+
+const graphMounts = graphIds.map((graphId) => {
+  const mount = new Element("div");
+  mount.dataset.publicationGraph = graphId;
+  mount.textContent = "Loading approved graph…";
+  return mount;
+});
+const resourceMounts = resourceIds.map((resourceId) => {
+  const mount = new Element("div");
+  mount.dataset.publicationResource = resourceId;
+  mount.textContent = "Loading approved resource…";
+  return mount;
+});
+global.document = {
+  readyState: "complete",
+  createElement(tag) { return new Element(tag); },
+  createElementNS(_namespace, tag) { return new Element(tag); },
+  addEventListener() {},
+  querySelectorAll(selector) {
+    const mounts = [];
+    if (selector.includes("[data-publication-graph]")) mounts.push(...graphMounts);
+    if (selector.includes("[data-publication-resource]")) mounts.push(...resourceMounts);
+    return mounts;
+  },
+};
+global.window = {};
+global.fetch = async (url) => {
+  const prefix = "/data/public/evidence-observatory/v1/";
+  const relative = String(url).startsWith(prefix) ? String(url).slice(prefix.length).split("?")[0] : "";
+  const target = relative ? bundleRoot + "/" + relative : "";
+  if (!target || !fs.existsSync(target)) return { ok: false, json: async () => ({}) };
+  return { ok: true, json: async () => JSON.parse(fs.readFileSync(target, "utf8")) };
+};
+
+(async () => {
+  vm.runInThisContext(fs.readFileSync(readerPath, "utf8"), { filename: readerPath });
+  await new Promise((resolve) => setTimeout(resolve, 75));
+  for (const mount of [...graphMounts, ...resourceMounts]) {
+    if (mount.dataset.state !== "ready" || mount.textContent.includes("Loading approved")) {
+      throw new Error("publication mount did not hydrate: " + (mount.dataset.publicationGraph || mount.dataset.publicationResource) + " " + (mount.dataset.publicationError || mount.textContent));
+    }
+  }
+})().catch((error) => { console.error(error.stack || error); process.exitCode = 1; });
+"""
+        completed = subprocess.run(
+            [
+                "node",
+                "-e",
+                harness.replace("__READER_PATH__", json.dumps(str(reader_path)))
+                .replace("__BUNDLE_ROOT__", json.dumps(str(bundle_root)))
+                .replace("__GRAPH_IDS__", json.dumps(graph_ids))
+                .replace("__RESOURCE_IDS__", json.dumps(resource_ids)),
+            ],
+            check=False,
+            capture_output=True,
+            text=True,
+            timeout=15,
+        )
+        self.assertEqual(completed.returncode, 0, completed.stderr)
 
     def test_ml_visualization_contract_preserves_supplied_data(self) -> None:
         reader = read("common/evidence-publication.js")
@@ -618,7 +729,10 @@ function hasClass(node, className) {
             ),
             "evidence/longitudinal/index.html": (
                 "fns_sns_historical_coverage",
-                "corrected_transport_context_counts",
+                "fns_sns_longitudinal_functional_capacity",
+                "fns_sns_sustained_skating_context",
+                "longitudinal_activity_context",
+                "readiness_before_activity_context",
                 "paired_fns_sns_outcome_summary",
                 "paired_fns_sns_max_hr",
                 "extreme_hr_reference_sensitivity",
@@ -627,8 +741,12 @@ function hasClass(node, className) {
             ),
             "evidence/transportation/index.html": (
                 "transportation_body_coupling_comparison",
+                "transport_coupling_profiles",
                 "corrected_transport_context_counts",
                 "h3_transport_validation",
+            ),
+            "evidence/strava-gps-skate-maps/index.html": (
+                "route_weather_context",
             ),
             "platform/index.html": (
                 "h1_feature_tier_validation",
@@ -642,7 +760,7 @@ function hasClass(node, className) {
             ids = re.findall(r'data-publication-graph="([^"]+)"', html)
             self.assertEqual(tuple(ids), expected, page)
             mounted.extend(ids)
-        self.assertEqual(len(mounted), 18)
+        self.assertEqual(len(mounted), 23)
         reader = read("common/evidence-publication.js")
         self.assertIn("Inspect in Evidence Observatory", reader)
         self.assertIn("No measured value or zero bar is shown", reader)
@@ -777,10 +895,10 @@ function hasClass(node, className) {
         self.assertIn("Smart &amp; Final: Shopping, Skating, and Motorcycle Access", videos)
         self.assertIn(video_url, videos)
 
-    def test_route_and_weather_context_presentation_is_absent(self) -> None:
+    def test_route_and_weather_context_presentation_is_mounted(self) -> None:
         route = read("evidence/strava-gps-skate-maps/index.html")
-        self.assertNotIn("Route and Weather Context", route)
-        self.assertNotIn('data-publication-graph="route_weather_context"', route)
+        self.assertIn("Governed route and weather context", route)
+        self.assertIn('data-publication-graph="route_weather_context"', route)
 
     def test_fsi_and_css_graph_presentations_are_absent_from_static_evidence_ui(self) -> None:
         platform = read("platform/index.html")

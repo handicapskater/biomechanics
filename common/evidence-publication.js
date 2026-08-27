@@ -26,18 +26,22 @@
     );
   }
 
-  function fetchJson(path) {
+  function fetchJson(path, contentHash) {
     if (!safePath(path)) return Promise.reject(new Error("Unsafe publication path"));
-    if (!requestCache.has(path)) {
+    if (contentHash !== undefined && !/^[a-f0-9]{64}$/.test(String(contentHash))) {
+      return Promise.reject(new Error("Invalid publication content hash"));
+    }
+    const requestPath = contentHash ? path + "?v=" + contentHash : path;
+    if (!requestCache.has(requestPath)) {
       requestCache.set(
-        path,
-        fetch(ROOT + path, { cache: "no-store", credentials: "same-origin" }).then(function (response) {
+        requestPath,
+        fetch(ROOT + requestPath, { cache: "no-store", credentials: "same-origin" }).then(function (response) {
           if (!response.ok) throw new Error("Publication resource unavailable");
           return response.json();
         })
       );
     }
-    return requestCache.get(path);
+    return requestCache.get(requestPath);
   }
 
   function validateManifest(manifest) {
@@ -63,7 +67,7 @@
 
   function resource(manifest, id) {
     const entry = entryById(manifest.resources, "resource_id", id);
-    return fetchJson(entry.path).then(function (payload) {
+    return fetchJson(entry.path, entry.content_hash).then(function (payload) {
       if (
         !payload ||
         payload.resource_id !== id ||
@@ -80,7 +84,7 @@
   function graph(manifest, id) {
     const entry = entryById(manifest.graphs, "graph_id", id);
     if (!safePath(entry.artifact_path)) return Promise.reject(new Error("Publication graph artifact unavailable"));
-    return fetchJson(entry.artifact_path).then(function (payload) {
+    return fetchJson(entry.artifact_path, entry.content_hash).then(function (payload) {
       if (
         !payload ||
         payload.graph_id !== id ||
@@ -130,9 +134,13 @@
     return "n=" + value;
   }
 
-  function unavailable(mount, message) {
+  function unavailable(mount, error) {
     mount.replaceChildren();
     mount.dataset.state = "unavailable";
+    if (error) {
+      mount.dataset.publicationError = error instanceof Error ? error.message : String(error);
+      console.error("[evidence-publication]", mount.dataset.publicationError);
+    }
     const note = element("div", "publication-unavailable");
     note.setAttribute("role", "status");
     note.appendChild(element("strong", "", "Evidence snapshot unavailable"));
@@ -140,7 +148,7 @@
       element(
         "p",
         "",
-        message || "The approved publication bundle could not be loaded. The authored page remains available."
+        "The approved publication bundle could not be loaded. The authored page remains available."
       )
     );
     mount.appendChild(note);
@@ -416,6 +424,42 @@
     return panels;
   }
 
+  function labelForField(field) {
+    return String(field).replaceAll("_", " ");
+  }
+
+  function categoricalBarPanels(payload) {
+    const rows = Array.isArray(payload.accessible_table) ? payload.accessible_table : [];
+    if (!rows.length || !rows[0] || typeof rows[0] !== "object") {
+      throw new Error("Bar graph has no accessible categorical rows");
+    }
+    const category = ["year", "context", "measure", "label"].find(function (field) {
+      return rows.some(function (row) { return typeof row[field] === "string" || Number.isFinite(Number(row[field])); });
+    });
+    if (!category) throw new Error("Bar graph category field unavailable");
+    const valueFields = Object.keys(rows[0]).filter(function (field) {
+      return field !== category && rows.some(function (row) { return Number.isFinite(Number(row[field])); });
+    });
+    if (!valueFields.length) throw new Error("Bar graph value field unavailable");
+    const panels = element("div", "publication-graph-panels");
+    valueFields.forEach(function (field) {
+      panels.appendChild(
+        barPanel({
+          title: labelForField(field),
+          unit: (payload.units || [])[0] || "count",
+          points: rows.map(function (row) {
+            return {
+              label: detailed(row[category]),
+              unit: (payload.units || [])[0] || "count",
+              value: row[field]
+            };
+          })
+        }, "")
+      );
+    });
+    return panels;
+  }
+
   function percentage(value) { return (Number(value) * 100).toFixed(1) + "%"; }
   function percentagePoints(value) { return (Number(value) * 100).toFixed(1) + " pp"; }
   function taskLabel(value) {
@@ -612,7 +656,7 @@
     }
     function panelGroups(panelIndex) {
       const source = payload.panels && payload.panels[panelIndex] && payload.panels[panelIndex].series;
-      return (Array.isArray(source) ? source : []).filter(function (series) { return ["FNS", "SNS", "XMS"].includes(series.label); }).map(function (series) {
+      return (Array.isArray(source) ? source : []).map(function (series) {
         const points = (series.points || []).map(function (point) { return { date: point.date, value: point.value }; }).filter(function (point) { return Number.isFinite(Number(point.value)); });
         return { label: series.label, points: points, rawOnly: true, trendPoints: rollingMedian(points, 9) };
       });
@@ -1008,6 +1052,8 @@
       payload.graph_type === "feature_stability_frequency"
     ) {
       visual.appendChild(mlValidationPanels(payload));
+    } else if (payload.graph_type === "bar") {
+      visual.appendChild(categoricalBarPanels(payload));
     } else if (["aligned_dot_panels", "distribution_panels", "functional_output_burden_panels", "paired_date_dumbbells", "paired_delta_panels", "return_profile_panels", "stage_small_multiples", "time_series_small_multiples"].includes(payload.graph_type)) {
       visual.appendChild(graphPanels(payload));
     } else {
@@ -1067,22 +1113,22 @@
     document.querySelectorAll("[data-publication-facts]").forEach(function (mount) {
       resource(manifest, mount.dataset.publicationFacts)
         .then(function (payload) { renderFacts(mount, payload); })
-        .catch(function () { unavailable(mount); });
+        .catch(function (error) { unavailable(mount, error); });
     });
     document.querySelectorAll("[data-publication-resource]").forEach(function (mount) {
       resource(manifest, mount.dataset.publicationResource)
         .then(function (payload) { renderResource(mount, payload); })
-        .catch(function () { unavailable(mount); });
+        .catch(function (error) { unavailable(mount, error); });
     });
     document.querySelectorAll("[data-publication-hypothesis-registry]").forEach(function (mount) {
       resource(manifest, mount.dataset.publicationHypothesisRegistry)
         .then(function (payload) { renderHypothesisRegistry(mount, payload); })
-        .catch(function () { unavailable(mount); });
+        .catch(function (error) { unavailable(mount, error); });
     });
     document.querySelectorAll("[data-publication-identities]").forEach(function (mount) {
       resource(manifest, mount.dataset.publicationIdentities)
         .then(function (payload) { renderIdentities(mount, payload); })
-        .catch(function () { unavailable(mount); });
+        .catch(function (error) { unavailable(mount, error); });
     });
     document.querySelectorAll("[data-publication-graph]").forEach(function (mount) {
       const graphId = mount.dataset.publicationGraph;
@@ -1093,7 +1139,7 @@
           }
           renderGraph(mount, payload);
         })
-        .catch(function () { unavailable(mount); });
+        .catch(function (error) { unavailable(mount, error); });
     });
   }
 
@@ -1101,12 +1147,12 @@
     fetchJson("manifest.json")
       .then(validateManifest)
       .then(loadMounts)
-      .catch(function () {
+      .catch(function (error) {
         document
           .querySelectorAll(
             "[data-publication-status], [data-publication-facts], [data-publication-resource], [data-publication-hypothesis-registry], [data-publication-identities], [data-publication-graph]"
           )
-          .forEach(function (mount) { unavailable(mount); });
+          .forEach(function (mount) { unavailable(mount, error); });
       });
   }
 

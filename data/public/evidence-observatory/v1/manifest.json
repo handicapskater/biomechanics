@@ -1,6 +1,6 @@
 {
-  "bundle_id": "handicapskater-com-v1-b540db99ee34a94e",
-  "content_hash": "b540db99ee34a94e31f4a5ff61c9a71f9ccb0362ec81e3a8430a735a50fb3330",
+  "bundle_id": "handicapskater-com-v1-7d0a677a27569594",
+  "content_hash": "7d0a677a27569594f58beff20b01b1fbb219e1f10ea849fcfe9292e62ba4769f",
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
   "generated_at_utc": "2026-08-09T17:55:07.831858Z",
@@ -143,37 +143,37 @@
       "artifact_filename": "readiness_before_activity_context.json",
       "artifact_path": "graphs/readiness_before_activity_context.json",
       "byte_size": 56813,
-      "content_hash": "dc8051b8c2928b12341236e979ea6e5a2b24509d436f84a4b066046bc69ad762",
+      "content_hash": "fa573f37fbfa848e1e3baecf0567fdf82b2566281adbf009eebc60c48b0ff2f6",
       "destination": "handicapskater.com",
       "graph_id": "readiness_before_activity_context",
       "media_type": "application/json",
       "page": "/evidence/longitudinal/",
       "path": "graphs/readiness_before_activity_context.json",
-      "sha256": "8fe85027f50a69556d7c6c9174f1853c0597bb48f784de4aa860b409591e6f08"
+      "sha256": "875b617494cfd9d7c7f8165785084b15516710981aa55917ddee8ab8008cd60a"
     },
     {
       "artifact_filename": "fns_sns_sustained_skating_context.json",
       "artifact_path": "graphs/fns_sns_sustained_skating_context.json",
       "byte_size": 918654,
-      "content_hash": "58a20aabe8772d3696e841ed2ab2d2baeeca2684bb07b2811641ef31d84c3280",
+      "content_hash": "90fe22deb5838f3de60525f308af7facc843a344a3890ba930ca284b32732202",
       "destination": "handicapskater.com",
       "graph_id": "fns_sns_sustained_skating_context",
       "media_type": "application/json",
       "page": "/evidence/longitudinal/",
       "path": "graphs/fns_sns_sustained_skating_context.json",
-      "sha256": "43fbd0f3eaea6e844a5b124a20d2037ae261f4d5da0fc553d4685e2fe04e59d2"
+      "sha256": "b18f05cb8c9b54adf2c6c8e02d3cf98411db650c1191064be7137cd2180c6be9"
     },
     {
       "artifact_filename": "fns_sns_longitudinal_functional_capacity.json",
       "artifact_path": "graphs/fns_sns_longitudinal_functional_capacity.json",
-      "byte_size": 1552216,
-      "content_hash": "db8b64766ecd84147fa12d4185782b0a298c4ab08cf03001c1a5143f67392df9",
+      "byte_size": 1562517,
+      "content_hash": "83924e5a2d52d4591881936fb3c7c9872e05c78dd658539e867b2dd99e5d72f4",
       "destination": "handicapskater.com",
       "graph_id": "fns_sns_longitudinal_functional_capacity",
       "media_type": "application/json",
       "page": "/evidence/longitudinal/",
       "path": "graphs/fns_sns_longitudinal_functional_capacity.json",
-      "sha256": "c293385863d81a85a863caa4711740dcff4d8800cb22c8fd480f9b3a042439a4"
+      "sha256": "e16532fb75081d4c78b0875df55bfdd5d68dc2beccfa25c56efeb84bb7c9548a"
     },
     {
       "artifact_filename": "transport_coupling_profiles.json",
@@ -215,13 +215,13 @@
       "artifact_filename": "route_weather_context.json",
       "artifact_path": "graphs/route_weather_context.json",
       "byte_size": 3155869,
-      "content_hash": "e55424a05be4321056c1d5f6227f22e9df6eb86b8e49e0956385db485eeb29e9",
+      "content_hash": "e3e73136a49fa818c5592c8413e8f02b9ed380ccc8fc965cbf59a215317c8ae7",
       "destination": "handicapskater.com",
       "graph_id": "route_weather_context",
       "media_type": "application/json",
       "page": "/evidence/strava-gps-skate-maps/",
       "path": "graphs/route_weather_context.json",
-      "sha256": "4dab9cbf6d6a27cf79508e43b99842841dfa46a5c737fa42fb5461cb0707c1a3"
+      "sha256": "8811a0b9720cd3d024241448e8e4c7b87f94b47858f3ef15c62a3f09f67832fa"
     },
     {
       "artifact_filename": "source_metric_coverage_matrix.json",
