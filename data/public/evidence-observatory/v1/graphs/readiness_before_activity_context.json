@@ -504,7 +504,7 @@
   "alt_text": "24 of 25 accepted triplets have valid pre-Mall WHOOP recovery context; 1 retain explicit missingness.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "fa573f37fbfa848e1e3baecf0567fdf82b2566281adbf009eebc60c48b0ff2f6",
+  "content_hash": "1488c2e1181c2ce859f91599c52232b2a5031ac3bdd22eada791410f348bf0a3",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -529,6 +529,7 @@
   ],
   "panels": [
     {
+      "presentation_role": "primary",
       "series": [
         {
           "label": "WHOOP pre-Mall recovery score",
@@ -684,6 +685,7 @@
       "unit": "percent"
     },
     {
+      "presentation_role": "secondary",
       "series": [
         {
           "label": "WHOOP pre-Mall resting heart rate",
@@ -839,6 +841,7 @@
       "unit": "bpm"
     },
     {
+      "presentation_role": "secondary",
       "series": [
         {
           "label": "WHOOP pre-Mall overnight HRV",
@@ -994,6 +997,7 @@
       "unit": "ms"
     },
     {
+      "presentation_role": "detail",
       "series": [
         {
           "label": "WHOOP pre-Mall sleep performance",
@@ -1170,6 +1174,7 @@
   "series": [
     {
       "points": [],
+      "presentation_role": "primary",
       "series": [
         {
           "label": "WHOOP pre-Mall recovery score",
@@ -1327,6 +1332,7 @@
     },
     {
       "points": [],
+      "presentation_role": "secondary",
       "series": [
         {
           "label": "WHOOP pre-Mall resting heart rate",
@@ -1484,6 +1490,7 @@
     },
     {
       "points": [],
+      "presentation_role": "secondary",
       "series": [
         {
           "label": "WHOOP pre-Mall overnight HRV",
@@ -1641,6 +1648,7 @@
     },
     {
       "points": [],
+      "presentation_role": "detail",
       "series": [
         {
           "label": "WHOOP pre-Mall sleep performance",

@@ -7704,7 +7704,7 @@
     "repeatability": "MEASURED",
     "values": "MEASURED"
   },
-  "content_hash": "83924e5a2d52d4591881936fb3c7c9872e05c78dd658539e867b2dd99e5d72f4",
+  "content_hash": "1e82017ad9ec2d6e24fa5c442f16972b9fe123ff6b435c8bd2393a46acf0bf5a",
   "coverage": {
     "ENS": 8,
     "FNS": 174,
@@ -7765,6 +7765,7 @@
   ],
   "panels": [
     {
+      "presentation_role": "primary",
       "series": [
         {
           "label": "FNS",
@@ -11804,6 +11805,7 @@
       "unit": "miles"
     },
     {
+      "presentation_role": "secondary",
       "series": [
         {
           "label": "FNS",
@@ -15864,6 +15866,7 @@
       "unit": "s"
     },
     {
+      "presentation_role": "secondary",
       "series": [
         {
           "label": "FNS",
@@ -20001,6 +20004,7 @@
   "series": [
     {
       "points": [],
+      "presentation_role": "primary",
       "series": [
         {
           "label": "FNS",
@@ -24042,6 +24046,7 @@
     },
     {
       "points": [],
+      "presentation_role": "secondary",
       "series": [
         {
           "label": "FNS",
@@ -28104,6 +28109,7 @@
     },
     {
       "points": [],
+      "presentation_role": "secondary",
       "series": [
         {
           "label": "FNS",

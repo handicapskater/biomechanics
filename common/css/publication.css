@@ -267,7 +267,15 @@
 .publication-nonreject-dot { fill: #fff; stroke: #9d5b2a; stroke-width: 2.5; }
 .publication-ml-subtitle { margin: .35rem 0; color: var(--muted, #4c5a67); font-size: .93rem; }
 @media (max-width: 820px) { .publication-ml-small-multiples, .publication-ml-context-grid { grid-template-columns: 1fr; } .publication-ml-chart { max-height: 21rem; } }
-.publication-line-chart { display: block; width: 100%; min-height: 20rem; overflow: visible; }
+.publication-time-series-hierarchy { display: grid; gap: .75rem; margin-top: 1rem; }
+.publication-time-series-primary, .publication-time-series-secondary, .publication-time-series-detail-grid { display: grid; gap: 1rem; }
+.publication-time-series-secondary, .publication-time-series-detail-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.publication-line-chart { display: block; width: 100%; max-height: 18rem; overflow: visible; }
+.publication-line-chart-compact { max-height: 8.5rem; }
+.publication-line-panel-secondary, .publication-line-panel-detail { padding: .7rem; }
+.publication-line-panel-secondary h3, .publication-line-panel-detail h3 { font-size: .9rem; }
+.publication-series-key { margin-top: .4rem; color: var(--muted); font-size: .82rem; }
+.publication-series-key summary { width: fit-content; cursor: pointer; color: var(--blue); font-weight: 750; }
 .publication-grid-line { stroke: color-mix(in srgb, currentColor 18%, transparent); stroke-width: 1; }
 .publication-axis-label { fill: var(--muted); font-size: 12px; }
 .publication-series { stroke-width: 2.5; vector-effect: non-scaling-stroke; }
@@ -562,6 +570,8 @@
 }
 
 @media (max-width: 620px) {
+  .publication-time-series-secondary, .publication-time-series-detail-grid { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(260px, 84vw); overflow-x: auto; scroll-snap-type: x proximity; }
+  .publication-time-series-secondary > *, .publication-time-series-detail-grid > * { scroll-snap-align: start; }
   .coverage-overview-stats { grid-template-columns: 1fr 1fr; }
   .coverage-overview-row { grid-template-columns: 1fr auto; gap: .3rem .6rem; }
   .coverage-overview-track { grid-column: 1 / -1; grid-row: 2; }

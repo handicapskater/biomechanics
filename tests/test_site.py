@@ -507,6 +507,10 @@ global.fetch = async (url) => {
   if (!target || !fs.existsSync(target)) return { ok: false, json: async () => ({}) };
   return { ok: true, json: async () => JSON.parse(fs.readFileSync(target, "utf8")) };
 };
+function descendants(node, predicate) {
+  const children = (node && node.children) || [];
+  return children.filter(predicate).concat(children.flatMap((child) => descendants(child, predicate)));
+}
 
 (async () => {
   vm.runInThisContext(fs.readFileSync(readerPath, "utf8"), { filename: readerPath });
@@ -515,6 +519,24 @@ global.fetch = async (url) => {
     if (mount.dataset.state !== "ready" || mount.textContent.includes("Loading approved")) {
       throw new Error("publication mount did not hydrate: " + (mount.dataset.publicationGraph || mount.dataset.publicationResource) + " " + (mount.dataset.publicationError || mount.textContent));
     }
+  }
+  const manifest = JSON.parse(fs.readFileSync(bundleRoot + "/manifest.json", "utf8"));
+  for (const graphId of [
+    "fns_sns_longitudinal_functional_capacity",
+    "fns_sns_sustained_skating_context",
+    "readiness_before_activity_context",
+    "route_weather_context",
+  ]) {
+    const mount = graphMounts.find((item) => item.dataset.publicationGraph === graphId);
+    const entry = manifest.graphs.find((item) => item.graph_id === graphId);
+    const payload = JSON.parse(fs.readFileSync(bundleRoot + "/" + entry.artifact_path, "utf8"));
+    const sourcePanels = payload.series.length ? payload.series : payload.panels;
+    const renderedPanels = descendants(mount, (node) => Boolean(node.dataset.presentationRole));
+    if (renderedPanels.length !== sourcePanels.length) throw new Error(graphId + " dropped a panel");
+    if (renderedPanels.filter((node) => node.dataset.heightBudget === "standard").length !== 1) throw new Error(graphId + " violated the one-card initial height contract");
+    const expectedPointN = sourcePanels.reduce((total, panel) => total + (panel.series || []).reduce((panelTotal, series) => panelTotal + (series.points || []).filter((point) => point && Number.isFinite(Number(point.value)) && Number.isFinite(Date.parse(String(point.date)))).length, 0), 0);
+    const renderedPointN = descendants(mount, (node) => node.tagName === "circle" && String(node.attributes.class || "").includes("publication-point")).length;
+    if (renderedPointN !== expectedPointN) throw new Error(graphId + " dropped canonical points: " + renderedPointN + " != " + expectedPointN);
   }
 })().catch((error) => { console.error(error.stack || error); process.exitCode = 1; });
 """
@@ -899,6 +921,21 @@ global.fetch = async (url) => {
         route = read("evidence/strava-gps-skate-maps/index.html")
         self.assertIn("Governed route and weather context", route)
         self.assertIn('data-publication-graph="route_weather_context"', route)
+
+    def test_longitudinal_time_series_use_governed_compact_presentation_roles(self) -> None:
+        reader = read("common/evidence-publication.js")
+        css = read("common/css/publication.css")
+        self.assertIn("function timeSeriesHierarchy(payload)", reader)
+        self.assertIn('payload.graph_type === "time_series_small_multiples"', reader)
+        self.assertIn('settings.role || "primary"', reader)
+        self.assertIn('wrapper.dataset.initialHeightBudget = "one-chart-card"', reader)
+        self.assertIn('wrapper.dataset.presentationAuthority = usesGovernedRoles ? "governed" : "legacy-compatible"', reader)
+        self.assertIn('throw new Error("Invalid governed presentation hierarchy: " + payload.graph_id)', reader)
+        self.assertIn('"More metrics (" + detailItems.length + ")"', reader)
+        self.assertIn("publication-time-series-secondary", css)
+        self.assertIn("publication-line-chart-compact", css)
+        self.assertIn("grid-auto-flow: column", css)
+        self.assertNotIn('"time_series_small_multiples"].includes(payload.graph_type)', reader)
 
     def test_fsi_and_css_graph_presentations_are_absent_from_static_evidence_ui(self) -> None:
         platform = read("platform/index.html")

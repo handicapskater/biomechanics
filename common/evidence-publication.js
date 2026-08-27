@@ -540,23 +540,28 @@
     return node;
   }
 
-  function linePanel(title, unit, groups) {
-    const panel = element("section", "publication-graph-panel publication-line-panel");
+  function linePanel(title, unit, groups, options) {
+    const settings = options || {};
+    const compact = settings.compact === true;
+    const role = settings.role || "primary";
+    const panel = element("section", "publication-graph-panel publication-line-panel publication-line-panel-" + role);
+    panel.dataset.presentationRole = role;
+    panel.dataset.heightBudget = compact ? "compact" : "standard";
     panel.appendChild(element("h3", "", title));
     panel.appendChild(element("p", "publication-unit", "Unit: " + unit));
     const all = groups.flatMap(function (group) { return group.points || []; }).filter(function (point) {
       return point && Number.isFinite(Number(point.value)) && Number.isFinite(Date.parse(String(point.date)));
     }).sort(function (a, b) { return String(a.date).localeCompare(String(b.date)); });
     if (!all.length) return panel;
-    const width = 760, height = 340, left = 72, right = 22, top = 22, bottom = 58;
+    const width = 760, height = compact ? 160 : 280, left = 72, right = 22, top = 22, bottom = compact ? 42 : 58;
     const values = all.map(function (point) { return Number(point.value); });
     const min = Math.min.apply(null, values), max = Math.max.apply(null, values);
     const dates = Array.from(new Set(all.map(function (point) { return String(point.date); }))).sort();
     const times = dates.map(Date.parse), firstTime = Math.min.apply(null, times), lastTime = Math.max.apply(null, times);
     const x = function (date) { return left + ((Date.parse(String(date)) - firstTime) / (lastTime - firstTime || 1)) * (width - left - right); };
     const y = function (value) { return top + (1 - (Number(value) - min) / (max - min || 1)) * (height - top - bottom); };
-    const svg = svgNode("svg", { viewBox: "0 0 " + width + " " + height, class: "publication-line-chart", role: "img", "aria-label": title + " by accepted date", "data-date-min": dates[0], "data-date-max": dates[dates.length - 1] });
-    [0, 0.25, 0.5, 0.75, 1].forEach(function (ratio) {
+    const svg = svgNode("svg", { viewBox: "0 0 " + width + " " + height, class: "publication-line-chart" + (compact ? " publication-line-chart-compact" : ""), role: "img", "aria-label": title + " by accepted date", "data-date-min": dates[0], "data-date-max": dates[dates.length - 1] });
+    (compact ? [0, 0.5, 1] : [0, 0.25, 0.5, 0.75, 1]).forEach(function (ratio) {
       const yy = top + ratio * (height - top - bottom);
       svg.appendChild(svgNode("line", { x1: left, x2: width - right, y1: yy, y2: yy, class: "publication-grid-line" }));
       const label = svgNode("text", { x: left - 10, y: yy + 4, class: "publication-axis-label", "text-anchor": "end" });
@@ -586,8 +591,61 @@
     panel.appendChild(svg);
     const legend = element("div", "publication-line-legend");
     groups.forEach(function (group, index) { legend.appendChild(element("span", "publication-legend-item publication-legend-" + (index % 4), group.label)); });
-    panel.appendChild(legend);
+    if (groups.length > 4) {
+      const seriesKey = element("details", "publication-series-key");
+      seriesKey.appendChild(element("summary", "", "Series key (" + groups.length + ")"));
+      seriesKey.appendChild(legend);
+      panel.appendChild(seriesKey);
+    } else {
+      panel.appendChild(legend);
+    }
     return panel;
+  }
+
+  function timeSeriesHierarchy(payload) {
+    const sourcePanels = Array.isArray(payload.series) && payload.series.length ? payload.series : (payload.panels || []);
+    const governedRoles = sourcePanels.map(function (item) { return item.presentation_role; });
+    const usesGovernedRoles = governedRoles.some(function (role) { return role !== undefined && role !== null; });
+    if (usesGovernedRoles && (governedRoles.some(function (role) { return !["primary", "secondary", "detail"].includes(role); }) || governedRoles.filter(function (role) { return role === "primary"; }).length !== 1)) {
+      throw new Error("Invalid governed presentation hierarchy: " + payload.graph_id);
+    }
+    const assigned = sourcePanels.map(function (item, index) {
+      const role = usesGovernedRoles ? item.presentation_role : (index === 0 ? "primary" : "detail");
+      const nested = Array.isArray(item.series) ? item.series : [];
+      return {
+        item: item,
+        role: role,
+        groups: nested.length ? nested.map(function (series) {
+          return { label: series.label || series.id || "Series", rawOnly: true, points: series.points || [] };
+        }) : [{ label: item.title || item.series_id || "Series", rawOnly: true, points: item.points || [] }]
+      };
+    });
+    const wrapper = element("div", "publication-time-series-hierarchy");
+    wrapper.dataset.initialHeightBudget = "one-chart-card";
+    wrapper.dataset.presentationAuthority = usesGovernedRoles ? "governed" : "legacy-compatible";
+    const primary = element("div", "publication-time-series-primary");
+    const secondary = element("div", "publication-time-series-secondary");
+    const secondaryItems = assigned.filter(function (entry) { return entry.role === "secondary"; });
+    const detailItems = assigned.filter(function (entry) { return entry.role === "detail"; });
+    assigned.filter(function (entry) { return entry.role === "primary"; }).forEach(function (entry) {
+      primary.appendChild(linePanel(entry.item.title, entry.item.unit, entry.groups, { role: "primary", compact: false }));
+    });
+    secondaryItems.forEach(function (entry) {
+      secondary.appendChild(linePanel(entry.item.title, entry.item.unit, entry.groups, { role: "secondary", compact: true }));
+    });
+    wrapper.appendChild(primary);
+    if (secondaryItems.length) wrapper.appendChild(secondary);
+    if (detailItems.length) {
+      const details = element("details", "publication-details publication-time-series-details");
+      details.appendChild(element("summary", "", "More metrics (" + detailItems.length + ")"));
+      const detailGrid = element("div", "publication-time-series-detail-grid");
+      detailItems.forEach(function (entry) {
+        detailGrid.appendChild(linePanel(entry.item.title, entry.item.unit, entry.groups, { role: "detail", compact: true }));
+      });
+      details.appendChild(detailGrid);
+      wrapper.appendChild(details);
+    }
+    return wrapper;
   }
 
   function pairedDatePanels(payload) {
@@ -1036,8 +1094,8 @@
       visual.appendChild(tripletTimeline(payload));
     } else if (payload.graph_id === "triplet_functional_output_context") {
       visual.appendChild(functionalTimeline(payload));
-    } else if (payload.graph_id === "fns_sns_longitudinal_functional_capacity") {
-      visual.appendChild(longitudinalTimeline(payload));
+    } else if (payload.graph_type === "time_series_small_multiples") {
+      visual.appendChild(timeSeriesHierarchy(payload));
     } else if (payload.graph_id === "transportation_body_coupling_comparison") {
       visual.appendChild(distributionPanels(payload));
     } else if (["paired_slopegraph", "forest_effect_plot", "grouped_exceedance_rate", "faceted_composition_effect_summary"].includes(payload.graph_type)) {
@@ -1054,7 +1112,7 @@
       visual.appendChild(mlValidationPanels(payload));
     } else if (payload.graph_type === "bar") {
       visual.appendChild(categoricalBarPanels(payload));
-    } else if (["aligned_dot_panels", "distribution_panels", "functional_output_burden_panels", "paired_date_dumbbells", "paired_delta_panels", "return_profile_panels", "stage_small_multiples", "time_series_small_multiples"].includes(payload.graph_type)) {
+    } else if (["aligned_dot_panels", "distribution_panels", "functional_output_burden_panels", "paired_date_dumbbells", "paired_delta_panels", "return_profile_panels", "stage_small_multiples"].includes(payload.graph_type)) {
       visual.appendChild(graphPanels(payload));
     } else {
       throw new Error("Unsupported publication graph type: " + payload.graph_type);

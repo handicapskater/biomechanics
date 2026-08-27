@@ -47154,7 +47154,7 @@
   "alt_text": "Route and weather context covers canonical event distances in miles and available temperature in degrees Fahrenheit and wind in miles per hour; missing weather is not filled.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "e3e73136a49fa818c5592c8413e8f02b9ed380ccc8fc965cbf59a215317c8ae7",
+  "content_hash": "140efb84cc18da7b3d8a930ddad80c16f1dde766acff9eee485500a5711bc192",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -47181,6 +47181,7 @@
   ],
   "panels": [
     {
+      "presentation_role": "detail",
       "series": [
         {
           "cohort": "fns_sns_skating",
@@ -56029,6 +56030,7 @@
       "unit": "miles"
     },
     {
+      "presentation_role": "primary",
       "series": [
         {
           "cohort": "fns_sns_skating",
@@ -61917,6 +61919,7 @@
       "unit": "°F"
     },
     {
+      "presentation_role": "secondary",
       "series": [
         {
           "cohort": "fns_sns_skating",
@@ -67824,6 +67827,7 @@
   "series": [
     {
       "points": [],
+      "presentation_role": "detail",
       "series": [
         {
           "cohort": "fns_sns_skating",
@@ -76674,6 +76678,7 @@
     },
     {
       "points": [],
+      "presentation_role": "primary",
       "series": [
         {
           "cohort": "fns_sns_skating",
@@ -82564,6 +82569,7 @@
     },
     {
       "points": [],
+      "presentation_role": "secondary",
       "series": [
         {
           "cohort": "fns_sns_skating",

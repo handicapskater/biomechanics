@@ -11844,7 +11844,7 @@
   "alt_text": "A 592-event sustained-skating timeline shows available distance, duration, Kubios heart rate, and session RMSSD by preserved FNS, SNS, ENS, XNS, XMS, or unspecified subtype.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "90fe22deb5838f3de60525f308af7facc843a344a3890ba930ca284b32732202",
+  "content_hash": "bc94d9f3e0166aef9ba224e6bab84a224db6fd0f44b597f2eb430f32d17b249e",
   "coverage": {},
   "data_through_date": "2026-08-08",
   "destination": "handicapskater.com",
@@ -11871,6 +11871,7 @@
   ],
   "panels": [
     {
+      "presentation_role": "primary",
       "series": [
         {
           "label": "ENS",
@@ -15429,6 +15430,7 @@
       "unit": "miles"
     },
     {
+      "presentation_role": "secondary",
       "series": [
         {
           "label": "ENS",
@@ -18914,6 +18916,7 @@
       "unit": "s"
     },
     {
+      "presentation_role": "detail",
       "series": [
         {
           "label": "ENS",
@@ -19072,6 +19075,7 @@
       "unit": "bpm"
     },
     {
+      "presentation_role": "detail",
       "series": [
         {
           "label": "ENS",
@@ -19252,6 +19256,7 @@
   "series": [
     {
       "points": [],
+      "presentation_role": "primary",
       "series": [
         {
           "label": "ENS",
@@ -22812,6 +22817,7 @@
     },
     {
       "points": [],
+      "presentation_role": "secondary",
       "series": [
         {
           "label": "ENS",
@@ -26299,6 +26305,7 @@
     },
     {
       "points": [],
+      "presentation_role": "detail",
       "series": [
         {
           "label": "ENS",
@@ -26459,6 +26466,7 @@
     },
     {
       "points": [],
+      "presentation_role": "detail",
       "series": [
         {
           "label": "ENS",
