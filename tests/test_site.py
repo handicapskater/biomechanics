@@ -196,9 +196,10 @@ class SiteTests(unittest.TestCase):
         self.assertIn('href="/evidence/repeated-protocol/"', evidence)
         self.assertIn('href="/evidence/mobility-comparison/#functional-output"', evidence)
         home = read("index.html")
-        self.assertEqual(home.count('button-row'), 1)
+        self.assertEqual(home.count('button-row'), 2)
         self.assertIn('href="/case/"', home)
         self.assertIn('href="/evidence/"', home)
+        self.assertIn("Watch the Smart &amp; Final video", home)
 
     def test_primary_navigation_uses_current_observatory_dropdown(self) -> None:
         js = site_header_js()

@@ -27,6 +27,9 @@ def test_home_is_function_first_and_uses_exactly_five_governed_evidence_ids():
     assert len(ids) == 5
     assert set(ids) == HERO_IDS
     assert len(ids) == len(set(ids))
+    assert "What Looks Like a Stunt Is the Access Story" in HOME
+    assert "Watch the Smart &amp; Final video" in HOME
+    assert "reddit.com/r/HandicapSkater/s/6pPCv2k02t" in HOME
 
 
 def test_medical_boundaries_and_privacy_are_preserved():
@@ -35,6 +38,7 @@ def test_medical_boundaries_and_privacy_are_preserved():
     assert "told him not to walk" not in combined.lower()
     assert "The MRI itself is not described here as diagnosing HIS" in CASE
     assert "The individual reports that subsequent clinical evaluation" in CASE
+    assert "surgery, which helped but did not eliminate the functional need" in CASE
     assert "does not measure pain" in CASE
     for private_path in ("HandicapSkater-DrNote.pdf", "Valley", "MRI.pdf"):
         assert private_path not in combined

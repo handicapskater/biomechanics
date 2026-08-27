@@ -12,7 +12,7 @@ ROOT = Path(".").resolve()
 BASE_URL = "https://handicapskater.com/"
 HTML_FILES = [
     p for p in ROOT.rglob("*.html")
-    if ".git" not in p.parts
+    if ".git" not in p.parts and "node_modules" not in p.parts
 ]
 
 SKIP_SCHEMES = {"mailto", "tel", "javascript"}
