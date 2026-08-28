@@ -15,11 +15,8 @@
           match: ["/platform/", "/evidence/", "/evidence/mobility-comparison/", "/evidence/repeated-protocol/", "/evidence/transportation/", "/evidence/longitudinal/"],
           children: [
             { href: "/evidence/", label: "Evidence Brief", match: ["/evidence/"] },
-            { href: "/platform/", label: "Full Observatory", match: ["/platform/"] },
-            { href: "/evidence/mobility-comparison/", label: "Walking Mechanical Load", match: ["/evidence/mobility-comparison/"] },
-            { href: "/evidence/repeated-protocol/", label: "Perturbation & Recovery", match: ["/evidence/repeated-protocol/"] },
-            { href: "/evidence/transportation/", label: "Transportation Body Coupling", match: ["/evidence/transportation/"] },
-            { href: "/evidence/longitudinal/", label: "Longitudinal Capacity", match: ["/evidence/longitudinal/"] }
+            { href: "/platform/", label: "How the System Works", match: ["/platform/"] },
+            { href: "", label: "Open Evidence Observatory", match: [], observatory: true }
           ]
         },
         { href: "https://handicapskater.org/", label: "Standard", match: [] }
@@ -73,6 +70,7 @@
     const href = link.href || "#";
     const label = link.label || "";
     const external = href.startsWith("http");
+    const observatory = Boolean(link.observatory);
     const active = linkMatchesPath(link, path) ? ' aria-current="page"' : "";
     const attrs = external ? ' target="_blank" rel="noopener noreferrer"' : "";
     const className = external ? ' class="nav-link external-link"' : ' class="nav-link"';
@@ -80,7 +78,8 @@
     // return `<a${className} href="${href}"${active}${attrs}>${label}</a>`;
     const renderedLabel = renderHeaderLabel(label);
 
-    return `<a${className} href="${href}"${active}${attrs}>${renderedLabel}</a>`;
+    const observatoryAttr = observatory ? " data-evidence-observatory-link" : "";
+    return `<a${className}${observatoryAttr} href="${href || '#'}"${active}${attrs}>${renderedLabel}</a>`;
   }
 
   function renderPrimaryNav(path) {

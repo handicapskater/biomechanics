@@ -1,0 +1,30 @@
+{
+  "contract": "com_graph_demotion_audit.v1",
+  "lab_public_url": "https://hs-evidence-public-dpnhm5kswq-uc.a.run.app/",
+  "removed_from_com": [
+    {"route": "/evidence/", "graph_id": "source_metric_coverage_matrix", "artifact_path": "graphs/source_metric_coverage_matrix.json"},
+    {"route": "/evidence/longitudinal/", "graph_id": "fns_sns_historical_coverage", "artifact_path": "graphs/fns_sns_historical_coverage.json"},
+    {"route": "/evidence/longitudinal/", "graph_id": "fns_sns_longitudinal_functional_capacity", "artifact_path": "graphs/fns_sns_longitudinal_functional_capacity.json"},
+    {"route": "/evidence/longitudinal/", "graph_id": "fns_sns_sustained_skating_context", "artifact_path": "graphs/fns_sns_sustained_skating_context.json"},
+    {"route": "/evidence/longitudinal/", "graph_id": "longitudinal_activity_context", "artifact_path": "graphs/longitudinal_activity_context.json"},
+    {"route": "/evidence/longitudinal/", "graph_id": "readiness_before_activity_context", "artifact_path": "graphs/readiness_before_activity_context.json"},
+    {"route": "/evidence/longitudinal/", "graph_id": "paired_fns_sns_outcome_summary", "artifact_path": "graphs/paired_fns_sns_outcome_summary.json"},
+    {"route": "/evidence/longitudinal/", "graph_id": "paired_fns_sns_max_hr", "artifact_path": "graphs/paired_fns_sns_max_hr.json"},
+    {"route": "/evidence/longitudinal/", "graph_id": "extreme_hr_reference_sensitivity", "artifact_path": "graphs/extreme_hr_reference_sensitivity.json"},
+    {"route": "/evidence/longitudinal/", "graph_id": "temporal_context_decomposition", "artifact_path": "graphs/temporal_context_decomposition.json"},
+    {"route": "/evidence/longitudinal/", "graph_id": "authority_correction_summary", "artifact_path": "graphs/authority_correction_summary.json"},
+    {"route": "/evidence/transportation/", "graph_id": "transportation_body_coupling_comparison", "artifact_path": "graphs/transportation_body_coupling_comparison.json"},
+    {"route": "/evidence/transportation/", "graph_id": "transport_coupling_profiles", "artifact_path": "graphs/transport_coupling_profiles.json"},
+    {"route": "/evidence/transportation/", "graph_id": "corrected_transport_context_counts", "artifact_path": "graphs/corrected_transport_context_counts.json"},
+    {"route": "/evidence/transportation/", "graph_id": "h3_transport_validation", "artifact_path": "graphs/h3_transport_validation.json"},
+    {"route": "/evidence/mobility-comparison/", "graph_id": "walking_vs_mall_accumulated_mechanical_load", "artifact_path": "graphs/walking_vs_mall_accumulated_mechanical_load.json"},
+    {"route": "/evidence/mobility-comparison/", "graph_id": "triplet_functional_output_context", "artifact_path": "graphs/triplet_functional_output_context.json"},
+    {"route": "/evidence/mobility-comparison/", "graph_id": "h1_mechanical_only_validation", "artifact_path": "graphs/h1_mechanical_only_validation.json"},
+    {"route": "/evidence/mobility-comparison/", "graph_id": "h1_exposure_blind_mechanical", "artifact_path": "graphs/h1_exposure_blind_mechanical.json"},
+    {"route": "/evidence/repeated-protocol/", "graph_id": "accepted_triplet_stage_profiles", "artifact_path": "graphs/accepted_triplet_stage_profiles.json"},
+    {"route": "/platform/", "graph_id": "h1_feature_tier_validation", "artifact_path": "graphs/h1_feature_tier_validation.json"},
+    {"route": "/platform/", "graph_id": "h2_h13_context_increment", "artifact_path": "graphs/h2_h13_context_increment.json"},
+    {"route": "/platform/", "graph_id": "ml_feature_domain_importance", "artifact_path": "graphs/ml_feature_domain_importance.json"},
+    {"route": "/evidence/strava-gps-skate-maps/", "graph_id": "route_weather_context", "artifact_path": "graphs/route_weather_context.json"}
+  ]
+}
