@@ -36,8 +36,8 @@ class PublicSurfaceConsolidationTests(unittest.TestCase):
     def test_lab_url_is_centralized_and_safe(self) -> None:
         config = LAB_CONFIG.read_text()
         self.assertIn("PUBLIC_EVIDENCE_OBSERVATORY_URL", config)
-        self.assertIn("https://hs-evidence-public-dpnhm5kswq-uc.a.run.app/", config)
-        self.assertNotIn("evidence.handicapskater.com", config)
+        self.assertIn("https://evidence.handicapskater.com/", config)
+        self.assertNotIn("run.app", config)
         self.assertNotIn("rag", config.lower())
         self.assertNotIn("clinical", config.lower())
         for page in ("index.html", "case/index.html", "evidence/index.html", "platform/index.html", "access/index.html"):
@@ -63,4 +63,3 @@ class PublicSurfaceConsolidationTests(unittest.TestCase):
     def test_redirected_evidence_routes_are_demoted(self) -> None:
         for page in ("evidence/mobility-comparison/index.html", "evidence/repeated-protocol/index.html"):
             self.assertIn("url=/evidence/", self.read(page))
-

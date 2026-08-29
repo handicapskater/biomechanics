@@ -1,9 +1,8 @@
 /*
- * Public Lab destination. Change this one value when the canonical hostname
- * completes provisioning; public pages use data-evidence-observatory-link.
+ * Public Lab destination; public pages use data-evidence-observatory-link.
  */
 (function () {
-  const PUBLIC_EVIDENCE_OBSERVATORY_URL = "https://hs-evidence-public-dpnhm5kswq-uc.a.run.app/";
+  const PUBLIC_EVIDENCE_OBSERVATORY_URL = "https://evidence.handicapskater.com/";
   window.PUBLIC_EVIDENCE_OBSERVATORY_URL = PUBLIC_EVIDENCE_OBSERVATORY_URL;
   function connectObservatoryLinks() {
     document.querySelectorAll("[data-evidence-observatory-link]").forEach((link) => {
