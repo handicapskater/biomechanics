@@ -16,96 +16,96 @@
         "graph_id": "mobility_output_and_burden",
         "key_values": [
           {
-            "absolute_burden": 134.739077162861,
+            "absolute_burden": 135.3574840138221,
             "absolute_burden_unit": "g*s",
-            "burden_per_mile": 877.7084593577725,
+            "burden_per_mile": 933.3860680117788,
             "burden_per_mile_unit": "g*s/mile",
-            "burden_per_minute": 5.894663053424213,
+            "burden_per_minute": 6.124015608385067,
             "burden_per_minute_unit": "g*s/min",
-            "burden_sample_count": 33,
+            "burden_sample_count": 48,
             "cohort": "walking",
-            "data_through_date": "2026-08-06",
-            "distance_miles": 0.14993686868686867,
-            "distance_sample_count": 30,
-            "duration_minutes": 5.416666666666667,
+            "data_through_date": "2026-08-27",
+            "distance_miles": 0.14471735067207508,
+            "distance_sample_count": 35,
+            "duration_minutes": 5.441666666666666,
             "formula_version": "kubios_acc_session_metrics.v1",
-            "fsi": 0.3596928319470765,
+            "fsi": 0.35352967992668094,
             "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
-            "fsi_sample_count": 33,
-            "functional_output_per_burden": 0.0011393822568450348,
+            "fsi_sample_count": 48,
+            "functional_output_per_burden": 0.0010713680375904011,
             "functional_output_per_burden_unit": "miles/(g*s)",
-            "functional_output_sample_count": 30,
+            "functional_output_sample_count": 35,
             "label": "Walking",
-            "quality": "kubios|kubios+strava+whoop"
+            "quality": "kubios|kubios+strava|kubios+strava+whoop"
           },
           {
-            "absolute_burden": 293.2117739882495,
+            "absolute_burden": 294.87818849113586,
             "absolute_burden_unit": "g*s",
-            "burden_per_mile": 144.9738243658494,
+            "burden_per_mile": 145.59733546185515,
             "burden_per_mile_unit": "g*s/mile",
-            "burden_per_minute": 2.121646834901325,
+            "burden_per_minute": 2.1505093694319775,
             "burden_per_minute_unit": "g*s/min",
-            "burden_sample_count": 32,
+            "burden_sample_count": 47,
             "cohort": "mall_skating",
-            "data_through_date": "2026-08-06",
-            "distance_miles": 1.9947258013202895,
-            "distance_sample_count": 32,
-            "duration_minutes": 34.375,
+            "data_through_date": "2026-08-27",
+            "distance_miles": 2.0026172154617035,
+            "distance_sample_count": 37,
+            "duration_minutes": 34.56666666666667,
             "formula_version": "kubios_acc_session_metrics.v1",
-            "fsi": 0.2252151966233777,
+            "fsi": 0.2213535798422415,
             "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
-            "fsi_sample_count": 32,
-            "functional_output_per_burden": 0.006893872369404835,
+            "fsi_sample_count": 47,
+            "functional_output_per_burden": 0.0068467034443952,
             "functional_output_per_burden_unit": "miles/(g*s)",
-            "functional_output_sample_count": 32,
+            "functional_output_sample_count": 37,
             "label": "Mall skating",
-            "quality": "kubios+strava+whoop"
+            "quality": "kubios|kubios+strava|kubios+strava+whoop"
           },
           {
-            "absolute_burden": 398.18878225951454,
+            "absolute_burden": 393.7343261551114,
             "absolute_burden_unit": "g*s",
-            "burden_per_mile": 221.1142419159681,
+            "burden_per_mile": 220.2161564346927,
             "burden_per_mile_unit": "g*s/mile",
-            "burden_per_minute": 5.797496199933905,
+            "burden_per_minute": 5.856949465414399,
             "burden_per_minute_unit": "g*s/min",
-            "burden_sample_count": 56,
+            "burden_sample_count": 71,
             "cohort": "pt_skating",
-            "data_through_date": "2026-08-06",
-            "distance_miles": 1.8180389028076036,
-            "distance_sample_count": 54,
-            "duration_minutes": 17.03333333333333,
+            "data_through_date": "2026-08-27",
+            "distance_miles": 1.8185049312017816,
+            "distance_sample_count": 59,
+            "duration_minutes": 17.166666666666668,
             "formula_version": "kubios_acc_session_metrics.v1",
-            "fsi": 0.28106949493136935,
+            "fsi": 0.27424653992479087,
             "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
-            "fsi_sample_count": 56,
-            "functional_output_per_burden": 0.004522549028660209,
+            "fsi_sample_count": 71,
+            "functional_output_per_burden": 0.004541068412873918,
             "functional_output_per_burden_unit": "miles/(g*s)",
-            "functional_output_sample_count": 53,
+            "functional_output_sample_count": 58,
             "label": "PT skating",
-            "quality": "kubios|kubios+strava+whoop"
+            "quality": "kubios|kubios+strava|kubios+strava+whoop"
           },
           {
-            "absolute_burden": 2998.644009765848,
+            "absolute_burden": 3013.183522047997,
             "absolute_burden_unit": "g*s",
-            "burden_per_mile": 253.9553292892274,
+            "burden_per_mile": 250.9070303671184,
             "burden_per_mile_unit": "g*s/mile",
-            "burden_per_minute": 4.774184421269677,
+            "burden_per_minute": 4.635215821802628,
             "burden_per_minute_unit": "g*s/min",
-            "burden_sample_count": 22,
+            "burden_sample_count": 27,
             "cohort": "fns_sns_skating",
-            "data_through_date": "2026-08-01",
-            "distance_miles": 12.154269068639147,
-            "distance_sample_count": 21,
-            "duration_minutes": 175.44166666666666,
+            "data_through_date": "2026-08-22",
+            "distance_miles": 12.1363425097431,
+            "distance_sample_count": 24,
+            "duration_minutes": 176.88333333333333,
             "formula_version": "kubios_acc_session_metrics.v1",
-            "fsi": 0.3943666458347973,
+            "fsi": 0.39230737845849406,
             "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
-            "fsi_sample_count": 22,
-            "functional_output_per_burden": 0.003937700393210135,
+            "fsi_sample_count": 27,
+            "functional_output_per_burden": 0.003986128333570484,
             "functional_output_per_burden_unit": "miles/(g*s)",
-            "functional_output_sample_count": 21,
+            "functional_output_sample_count": 24,
             "label": "FNS/SNS skating",
-            "quality": "kubios|kubios+strava+whoop"
+            "quality": "kubios|kubios+strava|kubios+strava+whoop"
           }
         ],
         "qualification": "N-of-1 cohort summaries; unequal distances remain visible.",
@@ -131,58 +131,58 @@
           {
             "body_coupling_class": "supported_transport",
             "cohort": "paratransit_silverride",
-            "component_sample_count": 6,
-            "data_through_date": "2026-07-31",
-            "duration_minutes": 36.0,
+            "component_sample_count": 8,
+            "data_through_date": "2026-08-22",
+            "duration_minutes": 50.858333333333334,
             "fsi": 0.395249353481837,
             "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
-            "fsi_sample_count": 6,
+            "fsi_sample_count": 8,
             "label": "SilverRide",
             "metrics": {
               "cumulative_dynamic_shock": {
                 "formula_version": "kubios_acc_session_metrics.v1",
-                "q1": 2.4307232615844905,
-                "q3": 2.593268075716726,
-                "quality_count": 6,
-                "sample_count": 6,
+                "q1": 2.1329029861398103,
+                "q3": 2.5859495128223293,
+                "quality_count": 8,
+                "sample_count": 8,
                 "unit": "g*s/min",
-                "value": 2.5444122218061347
+                "value": 2.4559935784687066
               },
               "magnitude_jerk_rms_g_per_s": {
                 "formula_version": "kubios_acc_session_metrics.v1",
-                "q1": 0.5907660832019549,
-                "q3": 0.7770686414580513,
-                "quality_count": 6,
-                "sample_count": 6,
+                "q1": 0.5843808465888352,
+                "q3": 0.7673235545100479,
+                "quality_count": 8,
+                "sample_count": 8,
                 "unit": "g/s",
-                "value": 0.7156558803630916
+                "value": 0.64093523068208
               },
               "shock_spike_count": {
                 "formula_version": "kubios_acc_session_metrics.v1",
-                "q1": 20.93498593130118,
-                "q3": 25.1949432416232,
-                "quality_count": 6,
-                "sample_count": 6,
+                "q1": 22.020388619365853,
+                "q3": 26.584086000543895,
+                "quality_count": 8,
+                "sample_count": 8,
                 "unit": "count/min",
-                "value": 22.851853729820732
+                "value": 23.22228033763915
               },
               "vertical_dynamic_g_rms": {
                 "formula_version": "kubios_acc_session_metrics.v1",
-                "q1": 0.11195837819803207,
-                "q3": 0.1622255054062988,
-                "quality_count": 6,
-                "sample_count": 6,
+                "q1": 0.11295706970524962,
+                "q3": 0.19958577899900348,
+                "quality_count": 8,
+                "sample_count": 8,
                 "unit": "g",
-                "value": 0.11497984075903345
+                "value": 0.1469847589572687
               },
               "vertical_to_horizontal_dynamic_rms_ratio": {
                 "formula_version": "kubios_acc_session_metrics.v1",
-                "q1": 1.00492212960969,
-                "q3": 1.2214359869127045,
-                "quality_count": 6,
-                "sample_count": 6,
+                "q1": 1.010892109918197,
+                "q3": 1.2611802186660401,
+                "quality_count": 8,
+                "sample_count": 8,
                 "unit": "ratio",
-                "value": 1.0468567372491628
+                "value": 1.0948861598741528
               }
             },
             "source_coverage": "kubios|kubios+strava+whoop"
@@ -190,61 +190,61 @@
           {
             "body_coupling_class": "supported_transport",
             "cohort": "paratransit_sedan_or_taxi",
-            "component_sample_count": 20,
-            "data_through_date": "2026-08-01",
-            "duration_minutes": 35.94166666666666,
+            "component_sample_count": 24,
+            "data_through_date": "2026-08-15",
+            "duration_minutes": 37.075,
             "fsi": 0.4400065677857018,
             "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
-            "fsi_sample_count": 20,
+            "fsi_sample_count": 24,
             "label": "ParaTransit sedan/taxi",
             "metrics": {
               "cumulative_dynamic_shock": {
                 "formula_version": "kubios_acc_session_metrics.v1",
-                "q1": 2.2933313245679177,
-                "q3": 2.4461697896904053,
-                "quality_count": 20,
-                "sample_count": 20,
+                "q1": 2.2227654420202025,
+                "q3": 2.431941623134702,
+                "quality_count": 24,
+                "sample_count": 24,
                 "unit": "g*s/min",
-                "value": 2.392574846202038
+                "value": 2.361421959293042
               },
               "magnitude_jerk_rms_g_per_s": {
                 "formula_version": "kubios_acc_session_metrics.v1",
-                "q1": 0.53447022850144,
-                "q3": 0.6132240806298747,
-                "quality_count": 20,
-                "sample_count": 20,
+                "q1": 0.5287901206152973,
+                "q3": 0.6104568208255166,
+                "quality_count": 24,
+                "sample_count": 24,
                 "unit": "g/s",
                 "value": 0.5585086197559599
               },
               "shock_spike_count": {
                 "formula_version": "kubios_acc_session_metrics.v1",
-                "q1": 21.26257718159023,
-                "q3": 24.396041299343526,
-                "quality_count": 20,
-                "sample_count": 20,
+                "q1": 21.355106121724006,
+                "q3": 24.617578180623685,
+                "quality_count": 24,
+                "sample_count": 24,
                 "unit": "count/min",
-                "value": 22.554110265418473
+                "value": 22.752135981295456
               },
               "vertical_dynamic_g_rms": {
                 "formula_version": "kubios_acc_session_metrics.v1",
-                "q1": 0.11486583254432971,
+                "q1": 0.11877933518228077,
                 "q3": 0.14819466344020316,
-                "quality_count": 20,
-                "sample_count": 20,
+                "quality_count": 24,
+                "sample_count": 24,
                 "unit": "g",
-                "value": 0.13418848015101814
+                "value": 0.13751491862133736
               },
               "vertical_to_horizontal_dynamic_rms_ratio": {
                 "formula_version": "kubios_acc_session_metrics.v1",
-                "q1": 0.9052909127609037,
-                "q3": 1.0903751097724972,
-                "quality_count": 20,
-                "sample_count": 20,
+                "q1": 0.9269767011516609,
+                "q3": 1.1004128867132519,
+                "quality_count": 24,
+                "sample_count": 24,
                 "unit": "ratio",
-                "value": 1.0218715724998626
+                "value": 1.0285895521143256
               }
             },
-            "source_coverage": "kubios|kubios+strava+whoop|kubios+whoop"
+            "source_coverage": "kubios|kubios+strava|kubios+strava+whoop|kubios+whoop"
           },
           {
             "body_coupling_class": "supported_transport",
@@ -308,123 +308,123 @@
           {
             "body_coupling_class": "passive_upright",
             "cohort": "paratransit_bus",
-            "component_sample_count": 15,
-            "data_through_date": "2026-07-26",
-            "duration_minutes": 42.25,
-            "fsi": 0.45043451023970166,
+            "component_sample_count": 19,
+            "data_through_date": "2026-08-23",
+            "duration_minutes": 43.56666666666667,
+            "fsi": 0.4702923721025967,
             "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
-            "fsi_sample_count": 15,
+            "fsi_sample_count": 19,
             "label": "ParaTransit bus",
             "metrics": {
               "cumulative_dynamic_shock": {
                 "formula_version": "kubios_acc_session_metrics.v1",
-                "q1": 4.454617829188429,
-                "q3": 4.913235204757072,
-                "quality_count": 15,
-                "sample_count": 15,
+                "q1": 4.385672542357007,
+                "q3": 4.883412793138639,
+                "quality_count": 19,
+                "sample_count": 19,
                 "unit": "g*s/min",
                 "value": 4.642731663998724
               },
               "magnitude_jerk_rms_g_per_s": {
                 "formula_version": "kubios_acc_session_metrics.v1",
-                "q1": 1.1133148539196096,
-                "q3": 1.3834250555750223,
-                "quality_count": 15,
-                "sample_count": 15,
+                "q1": 1.153685095921909,
+                "q3": 1.396450244196949,
+                "quality_count": 19,
+                "sample_count": 19,
                 "unit": "g/s",
-                "value": 1.1971846094987502
+                "value": 1.2759194868985422
               },
               "shock_spike_count": {
                 "formula_version": "kubios_acc_session_metrics.v1",
-                "q1": 22.080601842781157,
+                "q1": 23.048990026150797,
                 "q3": 27.26302792898683,
-                "quality_count": 15,
-                "sample_count": 15,
+                "quality_count": 19,
+                "sample_count": 19,
                 "unit": "count/min",
-                "value": 27.003855411421387
+                "value": 26.820516791863493
               },
               "vertical_dynamic_g_rms": {
                 "formula_version": "kubios_acc_session_metrics.v1",
-                "q1": 0.16750384516186612,
-                "q3": 0.18522128169096563,
-                "quality_count": 15,
-                "sample_count": 15,
+                "q1": 0.16913799750676073,
+                "q3": 0.18853462626298184,
+                "quality_count": 19,
+                "sample_count": 19,
                 "unit": "g",
-                "value": 0.1753918503332274
+                "value": 0.1771802104536997
               },
               "vertical_to_horizontal_dynamic_rms_ratio": {
                 "formula_version": "kubios_acc_session_metrics.v1",
-                "q1": 1.2378830986965008,
-                "q3": 1.2960171214157432,
-                "quality_count": 15,
-                "sample_count": 15,
+                "q1": 1.2259661422400345,
+                "q3": 1.3093437445762088,
+                "quality_count": 19,
+                "sample_count": 19,
                 "unit": "ratio",
                 "value": 1.2810931924074251
               }
             },
-            "source_coverage": "kubios|kubios+strava+whoop"
+            "source_coverage": "kubios|kubios+strava|kubios+strava+whoop"
           },
           {
             "body_coupling_class": "passive_upright",
             "cohort": "paratransit_van",
-            "component_sample_count": 4,
-            "data_through_date": "2026-07-11",
-            "duration_minutes": 38.94166666666666,
-            "fsi": 0.572705337118042,
+            "component_sample_count": 6,
+            "data_through_date": "2026-08-22",
+            "duration_minutes": 59.766666666666666,
+            "fsi": 0.5296191570668014,
             "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
-            "fsi_sample_count": 4,
+            "fsi_sample_count": 6,
             "label": "ParaTransit van",
             "metrics": {
               "cumulative_dynamic_shock": {
                 "formula_version": "kubios_acc_session_metrics.v1",
-                "q1": 2.3076474997352183,
-                "q3": 2.6514222248869315,
-                "quality_count": 4,
-                "sample_count": 4,
+                "q1": 2.480214937348088,
+                "q3": 2.6859670314598794,
+                "quality_count": 6,
+                "sample_count": 6,
                 "unit": "g*s/min",
-                "value": 2.5543261939855633
+                "value": 2.565750935940402
               },
               "magnitude_jerk_rms_g_per_s": {
                 "formula_version": "kubios_acc_session_metrics.v1",
-                "q1": 0.7689843247687215,
-                "q3": 0.90977981050527,
-                "quality_count": 4,
-                "sample_count": 4,
+                "q1": 0.760989425772002,
+                "q3": 0.9306328512706725,
+                "quality_count": 6,
+                "sample_count": 6,
                 "unit": "g/s",
                 "value": 0.8393233429549636
               },
               "shock_spike_count": {
                 "formula_version": "kubios_acc_session_metrics.v1",
-                "q1": 28.647691658630666,
-                "q3": 31.200006780117587,
-                "quality_count": 4,
-                "sample_count": 4,
+                "q1": 26.343401773277616,
+                "q3": 31.61116603044467,
+                "quality_count": 6,
+                "sample_count": 6,
                 "unit": "count/min",
                 "value": 30.397131878130615
               },
               "vertical_dynamic_g_rms": {
                 "formula_version": "kubios_acc_session_metrics.v1",
-                "q1": 0.15617847729476877,
-                "q3": 0.1935540399485463,
-                "quality_count": 4,
-                "sample_count": 4,
+                "q1": 0.1314172284335966,
+                "q3": 0.18292463117961832,
+                "quality_count": 6,
+                "sample_count": 6,
                 "unit": "g",
-                "value": 0.1761807046914993
+                "value": 0.1496641028742763
               },
               "vertical_to_horizontal_dynamic_rms_ratio": {
                 "formula_version": "kubios_acc_session_metrics.v1",
-                "q1": 1.238786652239312,
-                "q3": 1.320695174016232,
-                "quality_count": 4,
-                "sample_count": 4,
+                "q1": 1.1606991416870882,
+                "q3": 1.2920455084827984,
+                "quality_count": 6,
+                "sample_count": 6,
                 "unit": "ratio",
-                "value": 1.2791363454562474
+                "value": 1.2242552850754789
               }
             },
-            "source_coverage": "kubios+strava+whoop"
+            "source_coverage": "kubios|kubios+strava+whoop"
           }
         ],
-        "qualification": "Observed SilverRide FSI context has n=6; component summaries use separately labeled samples and are not a superiority ranking.",
+        "qualification": "Observed SilverRide FSI context has n=8; component summaries use separately labeled samples and are not a superiority ranking.",
         "result": "SilverRide shows a favorable observed pattern with small-sample qualification; motorcycle remains a distinct mixed active-control context.",
         "title": "Vehicle coupling changed the observed pattern"
       },
@@ -693,8 +693,8 @@
             "source_coverage": "kubios+strava+whoop",
             "strava_event_count": 589,
             "total_distance_miles": 6474.140270818419,
-            "total_duration_minutes": 95298.41666666673,
-            "total_moving_time_minutes": 61676.49999999997,
+            "total_duration_minutes": 95298.41666666674,
+            "total_moving_time_minutes": 61676.49999999998,
             "whoop_event_count": 575
           },
           {
@@ -739,27 +739,27 @@
     "hero_facts": [
       {
         "label": "Pain-limited walk",
-        "sample_count": 30,
+        "sample_count": 35,
         "unit": "miles",
-        "value": 0.14993686868686867
+        "value": 0.14471735067207508
       },
       {
         "label": "Mall / PT skating",
         "sample_count": [
-          32,
-          54
+          37,
+          59
         ],
         "unit": "miles",
         "value": [
-          1.9947258013202895,
-          1.8180389028076036
+          2.0026172154617035,
+          1.8185049312017816
         ]
       },
       {
         "label": "Walking burden per mile",
-        "sample_count": 30,
+        "sample_count": 35,
         "unit": "g*s/mile",
-        "value": 877.7084593577725
+        "value": 933.3860680117788
       },
       {
         "label": "Accepted experiment dates",
@@ -779,8 +779,8 @@
     ]
   },
   "conclusion_strength": "supports_with_qualification",
-  "content_hash": "9a2ade9384e91bc45c3d934de6e8b2fa4469958181999ad56411cf944eb98ee0",
-  "data_through_date": "2026-08-08",
+  "content_hash": "80a3e4bd04df021325b859ef3a605b686b48ed16c7168d6f21e7abad046251e7",
+  "data_through_date": "2026-08-27",
   "destination": "handicapskater.com",
   "evidence_scope": "N-of-1 individual mobility evidence.",
   "formula_identities": [
@@ -803,10 +803,10 @@
   "resource_id": "overview",
   "resource_version": "fsi_publication_resource.v1",
   "sample_counts": {
-    "fns_sns_skating": 22,
-    "mall_skating": 32,
-    "pt_skating": 56,
-    "walking": 33
+    "fns_sns_skating": 27,
+    "mall_skating": 47,
+    "pt_skating": 71,
+    "walking": 48
   },
   "short_title": "Overview",
   "source_contracts": [

@@ -632,7 +632,7 @@
         "strava_event_count": 10,
         "total_distance_miles": 75.65069991251093,
         "total_duration_minutes": 1496.35,
-        "total_moving_time_minutes": 902.3999999999999,
+        "total_moving_time_minutes": 902.4000000000001,
         "whoop_event_count": 9
       },
       {
@@ -1257,8 +1257,8 @@
         "quality_status": "partial",
         "source_coverage": "kubios+strava+whoop",
         "strava_event_count": 5,
-        "total_distance_miles": 45.179464427741976,
-        "total_duration_minutes": 786.3000000000001,
+        "total_distance_miles": 45.17946442774199,
+        "total_duration_minutes": 786.3,
         "total_moving_time_minutes": 527.5333333333333,
         "whoop_event_count": 1
       },
@@ -1555,7 +1555,7 @@
         "source_coverage": "strava+whoop",
         "strava_event_count": 8,
         "total_distance_miles": 92.96632665235028,
-        "total_duration_minutes": 1302.6833333333334,
+        "total_duration_minutes": 1302.6833333333332,
         "total_moving_time_minutes": 856.9166666666667,
         "whoop_event_count": 7
       },
@@ -3405,8 +3405,8 @@
         "source_coverage": "kubios+strava+whoop",
         "strava_event_count": 589,
         "total_distance_miles": 6474.140270818419,
-        "total_duration_minutes": 95298.41666666673,
-        "total_moving_time_minutes": 61676.49999999997,
+        "total_duration_minutes": 95298.41666666674,
+        "total_moving_time_minutes": 61676.49999999998,
         "whoop_event_count": 575
       },
       {
@@ -3523,84 +3523,6 @@
       }
     },
     "coverage": [
-      {
-        "coverage_status": "available",
-        "data_end_date": "2026-08-06",
-        "data_start_date": "2020-12-30",
-        "longitudinal_metric_version": "longitudinal_whoop_strava_metrics.v1.0.0",
-        "metric_name": "daily_strain",
-        "metric_scope": "overnight_recovery_not_session_hrv",
-        "missing_count": 1,
-        "missing_pct": 0.0547945205479452,
-        "non_null_count": 1824,
-        "record_count": 1825,
-        "unit": "unitless_source_score"
-      },
-      {
-        "coverage_status": "available",
-        "data_end_date": "2026-08-06",
-        "data_start_date": "2020-12-30",
-        "longitudinal_metric_version": "longitudinal_whoop_strava_metrics.v1.0.0",
-        "metric_name": "overnight_hrv_rmssd_ms",
-        "metric_scope": "overnight_recovery_not_session_hrv",
-        "missing_count": 87,
-        "missing_pct": 4.767123287671233,
-        "non_null_count": 1738,
-        "record_count": 1825,
-        "unit": "ms"
-      },
-      {
-        "coverage_status": "available",
-        "data_end_date": "2026-08-06",
-        "data_start_date": "2020-12-30",
-        "longitudinal_metric_version": "longitudinal_whoop_strava_metrics.v1.0.0",
-        "metric_name": "recovery_score_pct",
-        "metric_scope": "overnight_recovery_not_session_hrv",
-        "missing_count": 87,
-        "missing_pct": 4.767123287671233,
-        "non_null_count": 1738,
-        "record_count": 1825,
-        "unit": "percent"
-      },
-      {
-        "coverage_status": "available",
-        "data_end_date": "2026-08-06",
-        "data_start_date": "2020-12-30",
-        "longitudinal_metric_version": "longitudinal_whoop_strava_metrics.v1.0.0",
-        "metric_name": "resting_hr_bpm",
-        "metric_scope": "overnight_recovery_not_session_hrv",
-        "missing_count": 87,
-        "missing_pct": 4.767123287671233,
-        "non_null_count": 1738,
-        "record_count": 1825,
-        "unit": "bpm"
-      },
-      {
-        "coverage_status": "available",
-        "data_end_date": "2026-08-06",
-        "data_start_date": "2020-12-30",
-        "longitudinal_metric_version": "longitudinal_whoop_strava_metrics.v1.0.0",
-        "metric_name": "sleep_duration_minutes",
-        "metric_scope": "overnight_recovery_not_session_hrv",
-        "missing_count": 49,
-        "missing_pct": 2.684931506849315,
-        "non_null_count": 1776,
-        "record_count": 1825,
-        "unit": "min"
-      },
-      {
-        "coverage_status": "available",
-        "data_end_date": "2026-08-06",
-        "data_start_date": "2020-12-30",
-        "longitudinal_metric_version": "longitudinal_whoop_strava_metrics.v1.0.0",
-        "metric_name": "sleep_performance_pct",
-        "metric_scope": "overnight_recovery_not_session_hrv",
-        "missing_count": 40,
-        "missing_pct": 2.191780821917808,
-        "non_null_count": 1785,
-        "record_count": 1825,
-        "unit": "percent"
-      },
       {
         "coverage_status": "available",
         "data_end_date": "2026-08-17",
@@ -3743,6 +3665,84 @@
         "non_null_count": 1622,
         "record_count": 1807,
         "unit": "unitless_source_score"
+      },
+      {
+        "coverage_status": "available",
+        "data_end_date": "2026-08-27",
+        "data_start_date": "2020-12-30",
+        "longitudinal_metric_version": "longitudinal_whoop_strava_metrics.v1.0.0",
+        "metric_name": "daily_strain",
+        "metric_scope": "overnight_recovery_not_session_hrv",
+        "missing_count": 1,
+        "missing_pct": 0.05425935973955507,
+        "non_null_count": 1842,
+        "record_count": 1843,
+        "unit": "unitless_source_score"
+      },
+      {
+        "coverage_status": "available",
+        "data_end_date": "2026-08-27",
+        "data_start_date": "2020-12-30",
+        "longitudinal_metric_version": "longitudinal_whoop_strava_metrics.v1.0.0",
+        "metric_name": "overnight_hrv_rmssd_ms",
+        "metric_scope": "overnight_recovery_not_session_hrv",
+        "missing_count": 87,
+        "missing_pct": 4.720564297341292,
+        "non_null_count": 1756,
+        "record_count": 1843,
+        "unit": "ms"
+      },
+      {
+        "coverage_status": "available",
+        "data_end_date": "2026-08-27",
+        "data_start_date": "2020-12-30",
+        "longitudinal_metric_version": "longitudinal_whoop_strava_metrics.v1.0.0",
+        "metric_name": "recovery_score_pct",
+        "metric_scope": "overnight_recovery_not_session_hrv",
+        "missing_count": 87,
+        "missing_pct": 4.720564297341292,
+        "non_null_count": 1756,
+        "record_count": 1843,
+        "unit": "percent"
+      },
+      {
+        "coverage_status": "available",
+        "data_end_date": "2026-08-27",
+        "data_start_date": "2020-12-30",
+        "longitudinal_metric_version": "longitudinal_whoop_strava_metrics.v1.0.0",
+        "metric_name": "resting_hr_bpm",
+        "metric_scope": "overnight_recovery_not_session_hrv",
+        "missing_count": 87,
+        "missing_pct": 4.720564297341292,
+        "non_null_count": 1756,
+        "record_count": 1843,
+        "unit": "bpm"
+      },
+      {
+        "coverage_status": "available",
+        "data_end_date": "2026-08-27",
+        "data_start_date": "2020-12-30",
+        "longitudinal_metric_version": "longitudinal_whoop_strava_metrics.v1.0.0",
+        "metric_name": "sleep_duration_minutes",
+        "metric_scope": "overnight_recovery_not_session_hrv",
+        "missing_count": 49,
+        "missing_pct": 2.6587086272381986,
+        "non_null_count": 1794,
+        "record_count": 1843,
+        "unit": "min"
+      },
+      {
+        "coverage_status": "available",
+        "data_end_date": "2026-08-27",
+        "data_start_date": "2020-12-30",
+        "longitudinal_metric_version": "longitudinal_whoop_strava_metrics.v1.0.0",
+        "metric_name": "sleep_performance_pct",
+        "metric_scope": "overnight_recovery_not_session_hrv",
+        "missing_count": 40,
+        "missing_pct": 2.1703743895822027,
+        "non_null_count": 1803,
+        "record_count": 1843,
+        "unit": "percent"
       }
     ],
     "hrv_scopes": [
@@ -4364,8 +4364,8 @@
     }
   },
   "conclusion_strength": "supports_with_qualification",
-  "content_hash": "e05842a55cb6f25fed6f94e5f4037e6dcb031f90d0d57713be90ca2d9fdde88b",
-  "data_through_date": "2026-08-08",
+  "content_hash": "19ec375e7e76edbb3f40a4bd97a15ddb52b1e85db8dd44a998a73d842ca4975f",
+  "data_through_date": "2026-08-27",
   "destination": "handicapskater.com",
   "evidence_scope": "Aggregate WHOOP and Strava longitudinal context; not a session-HRV substitution.",
   "formula_identities": [

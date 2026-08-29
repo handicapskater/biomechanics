@@ -11708,8 +11708,8 @@
       "event_date_local": "2026-07-24",
       "event_duration_seconds": 2220.0,
       "event_subtype": "SNS",
-      "kubios_mean_hr_bpm": null,
-      "kubios_rmssd_ms": null,
+      "kubios_mean_hr_bpm": 104.76127252208215,
+      "kubios_rmssd_ms": 14.478473840181426,
       "raw_event_label": "Skate - SNS",
       "readiness_status": "valid",
       "route_availability": "route_with_gps_points",
@@ -11808,8 +11808,8 @@
       "event_date_local": "2026-08-07",
       "event_duration_seconds": null,
       "event_subtype": "FNS",
-      "kubios_mean_hr_bpm": null,
-      "kubios_rmssd_ms": null,
+      "kubios_mean_hr_bpm": 111.59130987594216,
+      "kubios_rmssd_ms": 32.503528234869485,
       "raw_event_label": "Skate - FNS",
       "readiness_status": null,
       "route_availability": "route_with_gps_points",
@@ -11828,8 +11828,8 @@
       "event_date_local": "2026-08-08",
       "event_duration_seconds": null,
       "event_subtype": "SNS",
-      "kubios_mean_hr_bpm": null,
-      "kubios_rmssd_ms": null,
+      "kubios_mean_hr_bpm": 106.13029674206813,
+      "kubios_rmssd_ms": 16.59428719813624,
       "raw_event_label": "Skate - SNS",
       "readiness_status": null,
       "route_availability": "route_with_gps_points",
@@ -11844,9 +11844,9 @@
   "alt_text": "A 592-event sustained-skating timeline shows available distance, duration, Kubios heart rate, and session RMSSD by preserved FNS, SNS, ENS, XNS, XMS, or unspecified subtype.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "bc94d9f3e0166aef9ba224e6bab84a224db6fd0f44b597f2eb430f32d17b249e",
+  "content_hash": "fe5ea412587fae2d2d2ea071a04b0dc6cecbededaf2078d084cced460c5cb8b2",
   "coverage": {},
-  "data_through_date": "2026-08-08",
+  "data_through_date": "2026-08-27",
   "destination": "handicapskater.com",
   "evidence": {},
   "finding": null,
@@ -19002,6 +19002,12 @@
               "quality": "verified",
               "unit": "bpm",
               "value": 123.44247237504987
+            },
+            {
+              "date": "2026-08-07",
+              "quality": "verified",
+              "unit": "bpm",
+              "value": 111.59130987594216
             }
           ]
         },
@@ -19051,10 +19057,22 @@
               "value": 108.955260313699
             },
             {
+              "date": "2026-07-24",
+              "quality": "conflict",
+              "unit": "bpm",
+              "value": 104.76127252208215
+            },
+            {
               "date": "2026-08-01",
               "quality": "verified",
               "unit": "bpm",
               "value": 101.38560144014427
+            },
+            {
+              "date": "2026-08-08",
+              "quality": "verified",
+              "unit": "bpm",
+              "value": 106.13029674206813
             }
           ]
         },
@@ -19161,6 +19179,12 @@
               "quality": "verified",
               "unit": "ms",
               "value": 33.97342166508704
+            },
+            {
+              "date": "2026-08-07",
+              "quality": "verified",
+              "unit": "ms",
+              "value": 32.503528234869485
             }
           ]
         },
@@ -19210,10 +19234,22 @@
               "value": 14.924091294934213
             },
             {
+              "date": "2026-07-24",
+              "quality": "conflict",
+              "unit": "ms",
+              "value": 14.478473840181426
+            },
+            {
               "date": "2026-08-01",
               "quality": "verified",
               "unit": "ms",
               "value": 17.698295036040275
+            },
+            {
+              "date": "2026-08-08",
+              "quality": "verified",
+              "unit": "ms",
+              "value": 16.59428719813624
             }
           ]
         },
@@ -26391,6 +26427,12 @@
               "quality": "verified",
               "unit": "bpm",
               "value": 123.44247237504987
+            },
+            {
+              "date": "2026-08-07",
+              "quality": "verified",
+              "unit": "bpm",
+              "value": 111.59130987594216
             }
           ]
         },
@@ -26440,10 +26482,22 @@
               "value": 108.955260313699
             },
             {
+              "date": "2026-07-24",
+              "quality": "conflict",
+              "unit": "bpm",
+              "value": 104.76127252208215
+            },
+            {
               "date": "2026-08-01",
               "quality": "verified",
               "unit": "bpm",
               "value": 101.38560144014427
+            },
+            {
+              "date": "2026-08-08",
+              "quality": "verified",
+              "unit": "bpm",
+              "value": 106.13029674206813
             }
           ]
         },
@@ -26552,6 +26606,12 @@
               "quality": "verified",
               "unit": "ms",
               "value": 33.97342166508704
+            },
+            {
+              "date": "2026-08-07",
+              "quality": "verified",
+              "unit": "ms",
+              "value": 32.503528234869485
             }
           ]
         },
@@ -26601,10 +26661,22 @@
               "value": 14.924091294934213
             },
             {
+              "date": "2026-07-24",
+              "quality": "conflict",
+              "unit": "ms",
+              "value": 14.478473840181426
+            },
+            {
               "date": "2026-08-01",
               "quality": "verified",
               "unit": "ms",
               "value": 17.698295036040275
+            },
+            {
+              "date": "2026-08-08",
+              "quality": "verified",
+              "unit": "ms",
+              "value": 16.59428719813624
             }
           ]
         },

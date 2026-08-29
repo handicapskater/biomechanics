@@ -10021,9 +10021,9 @@
   "alt_text": "Paired-difference panels compare Mall with Walk, Walk with PT, and Mall with PT across accepted dates for available heart-rate, HRV, and mechanical metrics.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "4c091a8d31661553a53593e296921ce14e7aecbde2a37331d331c284e379f6c0",
+  "content_hash": "832294c9dc3154afadda81e57f2a3ee6d5e1ddd4292940f1964e1109ba4d6833",
   "coverage": {},
-  "data_through_date": "2026-08-08",
+  "data_through_date": "2026-08-27",
   "destination": "handicapskater.com",
   "evidence": {},
   "finding": null,
@@ -10034,7 +10034,7 @@
   "graph_type": "paired_delta_panels",
   "intended_route": "/evidence/repeated-protocol/",
   "interpretation": "Paired differences are interpreted per metric and comparison; mixed direction is retained rather than converted into a universal result.",
-  "limitation": null,
+  "limitation": "Inference is bounded to accepted same-day triplets; fixed order, duration, and environment can contribute to observed differences, and results remain N-of-1.",
   "limitations": [
     "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
@@ -12382,7 +12382,7 @@
     "Positive and negative differences retain each metric's stated direction rule.",
     "Unavailable Stress/SNS/PNS comparisons have no plotted values."
   ],
-  "question": null,
+  "question": "Which paired measures changed across accepted same-day Mall → Walk → PT triplets?",
   "ranking": [],
   "relation_identities": [
     "v_canonical_triplet_paired_metric_detail"

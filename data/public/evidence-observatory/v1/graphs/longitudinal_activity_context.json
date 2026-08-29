@@ -624,7 +624,7 @@
       "strava_event_count": 10,
       "total_distance_miles": 75.65069991251093,
       "total_duration_minutes": 1496.35,
-      "total_moving_time_minutes": 902.3999999999999,
+      "total_moving_time_minutes": 902.4000000000001,
       "whoop_event_count": 9
     },
     {
@@ -1249,8 +1249,8 @@
       "quality_status": "partial",
       "source_coverage": "kubios+strava+whoop",
       "strava_event_count": 5,
-      "total_distance_miles": 45.179464427741976,
-      "total_duration_minutes": 786.3000000000001,
+      "total_distance_miles": 45.17946442774199,
+      "total_duration_minutes": 786.3,
       "total_moving_time_minutes": 527.5333333333333,
       "whoop_event_count": 1
     },
@@ -1547,7 +1547,7 @@
       "source_coverage": "strava+whoop",
       "strava_event_count": 8,
       "total_distance_miles": 92.96632665235028,
-      "total_duration_minutes": 1302.6833333333334,
+      "total_duration_minutes": 1302.6833333333332,
       "total_moving_time_minutes": 856.9166666666667,
       "whoop_event_count": 7
     },
@@ -3139,9 +3139,9 @@
   "alt_text": "Monthly time series show activity frequency and distance for walking, Mall skating, PT skating, and FNS/SNS skating. Missing months are omitted rather than plotted as zero.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "80317351b3a0199583cd4de23ca52cd378f1b9c299f6090cf1e5c3fc6bcba8dd",
+  "content_hash": "e661289caf136ec42c37c5d79a35d771be5b41f22fa15f1725f8ee002c7002f1",
   "coverage": {},
-  "data_through_date": "2026-08-08",
+  "data_through_date": "2026-08-27",
   "destination": "handicapskater.com",
   "evidence": {},
   "finding": null,
@@ -3663,7 +3663,7 @@
             {
               "date": "2026-08-01",
               "sample_count": 5,
-              "value": 45.179464427741976
+              "value": 45.17946442774199
             }
           ]
         }
@@ -4698,7 +4698,7 @@
             {
               "date": "2026-08-01",
               "sample_count": 5,
-              "value": 45.179464427741976
+              "value": 45.17946442774199
             }
           ]
         }

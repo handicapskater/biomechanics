@@ -1,162 +1,273 @@
 {
   "accessible_table": [
     {
-      "activity_n": 51,
+      "activity_n": 59,
       "balanced_accuracy": 1.0,
       "date_grouped_balanced_accuracy": 1.0,
-      "date_n": 51,
+      "date_n": 58,
       "decision": "reject",
       "empirical_p": 0.001,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "legacy_activity_n": 51,
+      "legacy_best_empirical_p": 0.001,
+      "legacy_best_held_out_balanced_accuracy": 1.0,
+      "legacy_date_n": 51,
+      "legacy_result_identity": "legacy-182-events-83-dates",
       "model": "gradient_boosted_trees",
-      "null_median": 0.47619047619047616,
-      "task_id": "walking_vs_fns_sns"
-    },
-    {
-      "activity_n": 51,
-      "balanced_accuracy": 1.0,
-      "date_grouped_balanced_accuracy": 1.0,
-      "date_n": 51,
-      "decision": "reject",
-      "empirical_p": 0.001,
-      "model": "linear_discriminant",
-      "null_median": 0.4833333333333333,
-      "task_id": "walking_vs_fns_sns"
-    },
-    {
-      "activity_n": 51,
-      "balanced_accuracy": 1.0,
-      "date_grouped_balanced_accuracy": 1.0,
-      "date_n": 51,
-      "decision": "reject",
-      "empirical_p": 0.001,
-      "model": "logistic_regression",
-      "null_median": 0.4976190476190476,
-      "task_id": "walking_vs_fns_sns"
-    },
-    {
-      "activity_n": 51,
-      "balanced_accuracy": 1.0,
-      "date_grouped_balanced_accuracy": 1.0,
-      "date_n": 51,
-      "decision": "reject",
-      "empirical_p": 0.001,
-      "model": "random_forest",
-      "null_median": 0.49047619047619045,
-      "task_id": "walking_vs_fns_sns"
-    },
-    {
-      "activity_n": 62,
-      "balanced_accuracy": 1.0,
-      "date_grouped_balanced_accuracy": 1.0,
-      "date_n": 37,
-      "decision": "reject",
-      "empirical_p": 0.001,
-      "model": "gradient_boosted_trees",
-      "null_median": 0.4666666666666667,
-      "task_id": "walking_vs_mall"
-    },
-    {
-      "activity_n": 62,
-      "balanced_accuracy": 1.0,
-      "date_grouped_balanced_accuracy": 1.0,
-      "date_n": 37,
-      "decision": "reject",
-      "empirical_p": 0.001,
-      "model": "linear_discriminant",
       "null_median": 0.48333333333333334,
-      "task_id": "walking_vs_mall"
+      "result_identity": "full-feature-2f026711c42e",
+      "task_id": "walking_vs_fns_sns"
     },
     {
-      "activity_n": 62,
+      "activity_n": 59,
       "balanced_accuracy": 1.0,
       "date_grouped_balanced_accuracy": 1.0,
-      "date_n": 37,
+      "date_n": 58,
       "decision": "reject",
       "empirical_p": 0.001,
-      "model": "logistic_regression",
-      "null_median": 0.49895833333333334,
-      "task_id": "walking_vs_mall"
-    },
-    {
-      "activity_n": 62,
-      "balanced_accuracy": 1.0,
-      "date_grouped_balanced_accuracy": 1.0,
-      "date_n": 37,
-      "decision": "reject",
-      "empirical_p": 0.001,
-      "model": "random_forest",
-      "null_median": 0.49895833333333334,
-      "task_id": "walking_vs_mall"
-    },
-    {
-      "activity_n": 84,
-      "balanced_accuracy": 0.8722222222222222,
-      "date_grouped_balanced_accuracy": 0.8962962962962964,
-      "date_n": 53,
-      "decision": "reject",
-      "empirical_p": 0.001,
-      "model": "gradient_boosted_trees",
-      "null_median": 0.48888888888888893,
-      "task_id": "walking_vs_pt"
-    },
-    {
-      "activity_n": 84,
-      "balanced_accuracy": 1.0,
-      "date_grouped_balanced_accuracy": 1.0,
-      "date_n": 53,
-      "decision": "reject",
-      "empirical_p": 0.001,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "legacy_activity_n": 51,
+      "legacy_best_empirical_p": 0.001,
+      "legacy_best_held_out_balanced_accuracy": 1.0,
+      "legacy_date_n": 51,
+      "legacy_result_identity": "legacy-182-events-83-dates",
       "model": "linear_discriminant",
-      "null_median": 0.48703703703703705,
-      "task_id": "walking_vs_pt"
+      "null_median": 0.48214285714285715,
+      "result_identity": "full-feature-2f026711c42e",
+      "task_id": "walking_vs_fns_sns"
     },
     {
-      "activity_n": 84,
-      "balanced_accuracy": 0.9462962962962963,
-      "date_grouped_balanced_accuracy": 0.9555555555555555,
-      "date_n": 53,
+      "activity_n": 59,
+      "balanced_accuracy": 0.9791666666666667,
+      "date_grouped_balanced_accuracy": 0.9791666666666667,
+      "date_n": 58,
       "decision": "reject",
       "empirical_p": 0.001,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "legacy_activity_n": 51,
+      "legacy_best_empirical_p": 0.001,
+      "legacy_best_held_out_balanced_accuracy": 1.0,
+      "legacy_date_n": 51,
+      "legacy_result_identity": "legacy-182-events-83-dates",
       "model": "logistic_regression",
-      "null_median": 0.49444444444444446,
+      "null_median": 0.5017857142857143,
+      "result_identity": "full-feature-2f026711c42e",
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "activity_n": 59,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 58,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "legacy_activity_n": 51,
+      "legacy_best_empirical_p": 0.001,
+      "legacy_best_held_out_balanced_accuracy": 1.0,
+      "legacy_date_n": 51,
+      "legacy_result_identity": "legacy-182-events-83-dates",
+      "model": "random_forest",
+      "null_median": 0.4875,
+      "result_identity": "full-feature-2f026711c42e",
+      "task_id": "walking_vs_fns_sns"
+    },
+    {
+      "activity_n": 72,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 42,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "legacy_activity_n": 62,
+      "legacy_best_empirical_p": 0.001,
+      "legacy_best_held_out_balanced_accuracy": 1.0,
+      "legacy_date_n": 37,
+      "legacy_result_identity": "legacy-182-events-83-dates",
+      "model": "gradient_boosted_trees",
+      "null_median": 0.4845559845559846,
+      "result_identity": "full-feature-2f026711c42e",
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 72,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 42,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "legacy_activity_n": 62,
+      "legacy_best_empirical_p": 0.001,
+      "legacy_best_held_out_balanced_accuracy": 1.0,
+      "legacy_date_n": 37,
+      "legacy_result_identity": "legacy-182-events-83-dates",
+      "model": "linear_discriminant",
+      "null_median": 0.4845559845559846,
+      "result_identity": "full-feature-2f026711c42e",
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 72,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 42,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "legacy_activity_n": 62,
+      "legacy_best_empirical_p": 0.001,
+      "legacy_best_held_out_balanced_accuracy": 1.0,
+      "legacy_date_n": 37,
+      "legacy_result_identity": "legacy-182-events-83-dates",
+      "model": "logistic_regression",
+      "null_median": 0.5108108108108108,
+      "result_identity": "full-feature-2f026711c42e",
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 72,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 42,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "legacy_activity_n": 62,
+      "legacy_best_empirical_p": 0.001,
+      "legacy_best_held_out_balanced_accuracy": 1.0,
+      "legacy_date_n": 37,
+      "legacy_result_identity": "legacy-182-events-83-dates",
+      "model": "random_forest",
+      "null_median": 0.4980694980694981,
+      "result_identity": "full-feature-2f026711c42e",
+      "task_id": "walking_vs_mall"
+    },
+    {
+      "activity_n": 94,
+      "balanced_accuracy": 0.9343825665859564,
+      "date_grouped_balanced_accuracy": 0.9486682808716707,
+      "date_n": 58,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "legacy_activity_n": 84,
+      "legacy_best_empirical_p": 0.001,
+      "legacy_best_held_out_balanced_accuracy": 1.0,
+      "legacy_date_n": 53,
+      "legacy_result_identity": "legacy-182-events-83-dates",
+      "model": "gradient_boosted_trees",
+      "null_median": 0.49031476997578693,
+      "result_identity": "full-feature-2f026711c42e",
       "task_id": "walking_vs_pt"
     },
     {
-      "activity_n": 84,
-      "balanced_accuracy": 0.8962962962962964,
-      "date_grouped_balanced_accuracy": 0.9296296296296296,
-      "date_n": 53,
+      "activity_n": 94,
+      "balanced_accuracy": 1.0,
+      "date_grouped_balanced_accuracy": 1.0,
+      "date_n": 58,
       "decision": "reject",
       "empirical_p": 0.001,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "legacy_activity_n": 84,
+      "legacy_best_empirical_p": 0.001,
+      "legacy_best_held_out_balanced_accuracy": 1.0,
+      "legacy_date_n": 53,
+      "legacy_result_identity": "legacy-182-events-83-dates",
+      "model": "linear_discriminant",
+      "null_median": 0.486682808716707,
+      "result_identity": "full-feature-2f026711c42e",
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 94,
+      "balanced_accuracy": 0.9687651331719128,
+      "date_grouped_balanced_accuracy": 0.9687651331719128,
+      "date_n": 58,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "legacy_activity_n": 84,
+      "legacy_best_empirical_p": 0.001,
+      "legacy_best_held_out_balanced_accuracy": 1.0,
+      "legacy_date_n": 53,
+      "legacy_result_identity": "legacy-182-events-83-dates",
+      "model": "logistic_regression",
+      "null_median": 0.4997578692493947,
+      "result_identity": "full-feature-2f026711c42e",
+      "task_id": "walking_vs_pt"
+    },
+    {
+      "activity_n": 94,
+      "balanced_accuracy": 0.92590799031477,
+      "date_grouped_balanced_accuracy": 0.9317191283292978,
+      "date_n": 58,
+      "decision": "reject",
+      "empirical_p": 0.001,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "legacy_activity_n": 84,
+      "legacy_best_empirical_p": 0.001,
+      "legacy_best_held_out_balanced_accuracy": 1.0,
+      "legacy_date_n": 53,
+      "legacy_result_identity": "legacy-182-events-83-dates",
       "model": "random_forest",
-      "null_median": 0.4907407407407407,
+      "null_median": 0.4966101694915254,
+      "result_identity": "full-feature-2f026711c42e",
       "task_id": "walking_vs_pt"
     }
   ],
-  "alt_text": "Mechanical-only discrimination remains above the permutation-null reference across Walking versus Mall, PT, and FNS/SNS tasks; date-grouped scores are shown as a separate audit.",
+  "alt_text": "Yes, within this completed N-of-1 result: current best mechanical-only balanced accuracy is 1.000 with empirical p=.001 for Mall, PT, and FNS/SNS. This reports held-out discrimination rather than an effect estimate.",
   "claim_class": "INTERPRETATION",
   "claim_classes": {},
-  "content_hash": "2e6b0c0fac25bc8ae09399cd15f9b987388142f41ece1f99a2a288fbb850bdaa",
-  "coverage": {},
-  "data_through_date": "2026-08-08",
+  "content_hash": "d0fb9a96801f2f026ddc399d16bd75a3c51520d9c4a13b677f4f42519b353774",
+  "coverage": {
+    "walking_vs_fns_sns": 59,
+    "walking_vs_mall": 72,
+    "walking_vs_pt": 94
+  },
+  "data_through_date": "2026-08-27",
   "destination": "handicapskater.com",
-  "evidence": {},
-  "finding": "Mechanical-only discrimination remains above the permutation-null reference across Walking versus Mall, PT, and FNS/SNS tasks; date-grouped scores are shown as a separate audit.",
+  "evidence": {
+    "canonical_relations": [
+      "analysis/hypothesis_ml_validation/results/full/full-feature-2f026711c42e/ml_binary_results.csv",
+      "analysis/hypothesis_ml_validation/results/full/full-feature-2f026711c42e/ml_multiclass_results.csv",
+      "analysis/hypothesis_ml_validation/results/full/full-feature-2f026711c42e/ml_permutation_results.csv",
+      "analysis/hypothesis_ml_validation/results/full/full-feature-2f026711c42e/ml_feature_importance.csv"
+    ],
+    "source_systems": [
+      "governed local result artifact"
+    ]
+  },
+  "finding": "Yes, within this completed N-of-1 result: current best mechanical-only balanced accuracy is 1.000 with empirical p=.001 for Mall, PT, and FNS/SNS. This reports held-out discrimination rather than an effect estimate.",
   "formula_identities": [
     "hypothesis_ml_reporting.v1.0.0",
-    "hypothesis_ml_validation.v1.1.0"
+    "hypothesis_ml_validation.v1.1.0",
+    "hypothesis_ml_graph_provenance.v1.0.0"
   ],
   "functional_meaning": "Held-out scores quantify separation across the predeclared cohorts and feature tiers.",
   "graph_contract_version": "fsi_publication_graph.v1",
   "graph_id": "h1_mechanical_only_validation",
   "graph_type": "observed_null_dumbbell",
   "intended_route": "/evidence/mobility-comparison/",
-  "interpretation": "Mechanical-only discrimination remains above the permutation-null reference across Walking versus Mall, PT, and FNS/SNS tasks; date-grouped scores are shown as a separate audit.",
-  "limitation": "N_OF_1; FEATURE_IMPORTANCE_SCOPE; MEASUREMENT_SCOPE",
+  "interpretation": "Yes, within this completed N-of-1 result: current best mechanical-only balanced accuracy is 1.000 with empirical p=.001 for Mall, PT, and FNS/SNS. This reports held-out discrimination rather than an effect estimate.",
+  "limitation": "N_OF_1; TASK_SUPPORT_SUBSETS; FEATURE_IMPORTANCE_SCOPE; MEASUREMENT_SCOPE",
   "limitations": [
     "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
-  "long_description": "Mechanical-only discrimination remains above the permutation-null reference across Walking versus Mall, PT, and FNS/SNS tasks; date-grouped scores are shown as a separate audit. Mechanical-only excludes duration_seconds and authoritative_distance_miles. Date-grouped performance is an audit, not a replacement outcome. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
+  "long_description": "Yes, within this completed N-of-1 result: current best mechanical-only balanced accuracy is 1.000 with empirical p=.001 for Mall, PT, and FNS/SNS. This reports held-out discrimination rather than an effect estimate. Mechanical-only excludes duration_seconds and authoritative_distance_miles. Current result is primary; legacy support growth is a compact robustness context. Exposure-blind sensitivity was not rerun on 203/90 and remains legacy-pinned in graphs 29-30. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
   "matrix": [],
   "missingness": [],
   "output_asset_names": [
@@ -166,21 +277,26 @@
   "planned_comparator": null,
   "qualifications": [
     "Mechanical-only excludes duration_seconds and authoritative_distance_miles.",
-    "Date-grouped performance is an audit, not a replacement outcome."
+    "Current result is primary; legacy support growth is a compact robustness context.",
+    "Exposure-blind sensitivity was not rerun on 203/90 and remains legacy-pinned in graphs 29-30."
   ],
-  "question": "How does mechanical-only H1 performance compare with its permutation null and date-grouped audit?",
+  "question": "Does H1 discrimination persist after duration and distance are excluded?",
   "ranking": [],
   "relation_identities": [
-    "analysis/hypothesis_ml_validation/results/full/ml_binary_results.csv",
-    "analysis/hypothesis_ml_validation/results/full/ml_multiclass_results.csv",
-    "analysis/hypothesis_ml_validation/results/full/ml_permutation_results.csv",
-    "analysis/hypothesis_ml_validation/results/full/ml_feature_importance.csv"
+    "analysis/hypothesis_ml_validation/results/full/full-feature-2f026711c42e/ml_binary_results.csv",
+    "analysis/hypothesis_ml_validation/results/full/full-feature-2f026711c42e/ml_multiclass_results.csv",
+    "analysis/hypothesis_ml_validation/results/full/full-feature-2f026711c42e/ml_permutation_results.csv",
+    "analysis/hypothesis_ml_validation/results/full/full-feature-2f026711c42e/ml_feature_importance.csv"
   ],
-  "repeatability": [],
+  "repeatability": {
+    "walking_vs_fns_sns": 59,
+    "walking_vs_mall": 72,
+    "walking_vs_pt": 94
+  },
   "sample_counts": {
-    "walking_vs_fns_sns": 51,
-    "walking_vs_mall": 62,
-    "walking_vs_pt": 84
+    "walking_vs_fns_sns": 59,
+    "walking_vs_mall": 72,
+    "walking_vs_pt": 94
   },
   "series": [],
   "source_contracts": [
@@ -205,14 +321,31 @@
     "Canonical Hypothesis Registry",
     "Canonical scientific reviewer views"
   ],
-  "title": "H1 mechanical-only validation",
+  "title": "H1 mechanical-only replication",
   "units": [
     "balanced_accuracy"
   ],
   "visual": {
+    "historical_comparison_role": "support_growth_context_only",
     "layout": "three_task_range_points",
     "rows": [
       {
+        "historical_support_comparison": {
+          "current": {
+            "activity_n": 72,
+            "best_empirical_p": 0.001,
+            "best_held_out_balanced_accuracy": 1.0,
+            "date_n": 42
+          },
+          "legacy": {
+            "activity_n": 62,
+            "best_empirical_p": 0.001,
+            "best_held_out_balanced_accuracy": 1.0,
+            "date_n": 37
+          },
+          "legacy_result_identity": "legacy-182-events-83-dates",
+          "task_id": "walking_vs_mall"
+        },
         "label": "Walking vs Mall",
         "model_points": [
           {
@@ -244,7 +377,7 @@
             "value": 1.0
           }
         ],
-        "null_median": 0.49114583333333334,
+        "null_median": 0.49131274131274133,
         "observed": {
           "max": 1.0,
           "median": 1.0,
@@ -253,14 +386,30 @@
         "task": "walking_vs_mall"
       },
       {
+        "historical_support_comparison": {
+          "current": {
+            "activity_n": 94,
+            "best_empirical_p": 0.001,
+            "best_held_out_balanced_accuracy": 1.0,
+            "date_n": 58
+          },
+          "legacy": {
+            "activity_n": 84,
+            "best_empirical_p": 0.001,
+            "best_held_out_balanced_accuracy": 1.0,
+            "date_n": 53
+          },
+          "legacy_result_identity": "legacy-182-events-83-dates",
+          "task_id": "walking_vs_pt"
+        },
         "label": "Walking vs PT",
         "model_points": [
           {
-            "date_grouped_balanced_accuracy": 0.9555555555555555,
+            "date_grouped_balanced_accuracy": 0.9687651331719128,
             "decision": "reject",
             "label": "Logistic",
             "model": "logistic_regression",
-            "value": 0.9462962962962963
+            "value": 0.9687651331719128
           },
           {
             "date_grouped_balanced_accuracy": 1.0,
@@ -270,37 +419,53 @@
             "value": 1.0
           },
           {
-            "date_grouped_balanced_accuracy": 0.9296296296296296,
+            "date_grouped_balanced_accuracy": 0.9317191283292978,
             "decision": "reject",
             "label": "Random Forest",
             "model": "random_forest",
-            "value": 0.8962962962962964
+            "value": 0.92590799031477
           },
           {
-            "date_grouped_balanced_accuracy": 0.8962962962962964,
+            "date_grouped_balanced_accuracy": 0.9486682808716707,
             "decision": "reject",
             "label": "Gradient Boosting",
             "model": "gradient_boosted_trees",
-            "value": 0.8722222222222222
+            "value": 0.9343825665859564
           }
         ],
-        "null_median": 0.4898148148148148,
+        "null_median": 0.49346246973365615,
         "observed": {
           "max": 1.0,
-          "median": 0.9212962962962963,
-          "min": 0.8722222222222222
+          "median": 0.9515738498789346,
+          "min": 0.92590799031477
         },
         "task": "walking_vs_pt"
       },
       {
+        "historical_support_comparison": {
+          "current": {
+            "activity_n": 59,
+            "best_empirical_p": 0.001,
+            "best_held_out_balanced_accuracy": 1.0,
+            "date_n": 58
+          },
+          "legacy": {
+            "activity_n": 51,
+            "best_empirical_p": 0.001,
+            "best_held_out_balanced_accuracy": 1.0,
+            "date_n": 51
+          },
+          "legacy_result_identity": "legacy-182-events-83-dates",
+          "task_id": "walking_vs_fns_sns"
+        },
         "label": "Walking vs FNS/SNS",
         "model_points": [
           {
-            "date_grouped_balanced_accuracy": 1.0,
+            "date_grouped_balanced_accuracy": 0.9791666666666667,
             "decision": "reject",
             "label": "Logistic",
             "model": "logistic_regression",
-            "value": 1.0
+            "value": 0.9791666666666667
           },
           {
             "date_grouped_balanced_accuracy": 1.0,
@@ -324,11 +489,11 @@
             "value": 1.0
           }
         ],
-        "null_median": 0.48690476190476184,
+        "null_median": 0.48541666666666666,
         "observed": {
           "max": 1.0,
           "median": 1.0,
-          "min": 1.0
+          "min": 0.9791666666666667
         },
         "task": "walking_vs_fns_sns"
       }

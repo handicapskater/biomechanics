@@ -2833,9 +2833,9 @@
   "alt_text": "Stage-value panels compare Mall, Walk, and PT across accepted dates. The accessible table includes the canonical closer-to-Mall classification for each available metric.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "c32ab3761ac1fe9d395cb688e0c31ce71ec39ae92d82bce8bf2972704193171c",
+  "content_hash": "4ec12bf4e0b62ae77f760203f9dfe717ee3f232690d0e1d43e8e6e9fe14ac40d",
   "coverage": {},
-  "data_through_date": "2026-08-08",
+  "data_through_date": "2026-08-27",
   "destination": "handicapskater.com",
   "evidence": {},
   "finding": null,
@@ -2849,7 +2849,7 @@
   "graph_type": "return_profile_panels",
   "intended_route": "/evidence/repeated-protocol/",
   "interpretation": "PT is numerically closer to Mall for some metrics and dates and farther for others; the label is descriptive and is not CSS or clinical recovery.",
-  "limitation": null,
+  "limitation": "This is a descriptive, metric-specific trajectory. It does not establish causal recovery from skating or a universal direction of change.",
   "limitations": [
     "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],

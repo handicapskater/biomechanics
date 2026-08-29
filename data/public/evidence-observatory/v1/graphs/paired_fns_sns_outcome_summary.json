@@ -61,11 +61,22 @@
   "alt_text": "Forest plot of separate FROM-minus-TO effects for average, maximum, and resting-relative HR with committed 95% bootstrap intervals and a zero reference.",
   "claim_class": "MEASURED",
   "claim_classes": {},
-  "content_hash": "b12cefd83bcf74c0d4386acba43549474e4dbe22cca121290b2a0e9aa0eff477",
-  "coverage": {},
-  "data_through_date": "2026-08-08",
+  "content_hash": "5c84f6b95ab57cc1a26a7c99ae70c430db55775223954c31c39f124088bdefba",
+  "coverage": {
+    "LP2-H0A": 54,
+    "LP2-H0B": 54,
+    "LP2-H0C": 52
+  },
+  "data_through_date": "2026-08-27",
   "destination": "handicapskater.com",
-  "evidence": {},
+  "evidence": {
+    "canonical_relations": [
+      "analysis/longitudinal_mobility_physiology_phase2/results/paired_outing_results.csv"
+    ],
+    "source_systems": [
+      "governed local result artifact"
+    ]
+  },
   "finding": "Maximum HR rejected LP2-H0B; average and resting-relative HR failed to reject LP2-H0A and LP2-H0C.",
   "formula_identities": [
     "longitudinal_mobility_physiology_phase2.v1.0.0"
@@ -97,7 +108,11 @@
   "relation_identities": [
     "analysis/longitudinal_mobility_physiology_phase2/results/paired_outing_results.csv"
   ],
-  "repeatability": [],
+  "repeatability": {
+    "LP2-H0A": 54,
+    "LP2-H0B": 54,
+    "LP2-H0C": 52
+  },
   "sample_counts": {
     "LP2-H0A": 54,
     "LP2-H0B": 54,

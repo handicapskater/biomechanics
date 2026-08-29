@@ -24,9 +24,9 @@
   "alt_text": "Manual source review corrected descriptive cohort/context authority while locked Phase-1 and Phase-2 inference inputs remained unchanged.",
   "claim_class": "DESCRIPTIVE",
   "claim_classes": {},
-  "content_hash": "5c253a46ef84724116bc3b5ed7153459126ecd66271dc06c4212ccf333f62bfe",
+  "content_hash": "8af5c722585abb82d3afd85383f3bf768b10a251a1b1452c398918644b70d0be",
   "coverage": {},
-  "data_through_date": "2026-08-08",
+  "data_through_date": "2026-08-27",
   "destination": "handicapskater.com",
   "evidence": {},
   "finding": "Manual source review corrected descriptive cohort/context authority while locked Phase-1 and Phase-2 inference inputs remained unchanged.",
@@ -39,7 +39,7 @@
   "graph_type": "bar",
   "intended_route": "/evidence/longitudinal/",
   "interpretation": "Manual source review corrected descriptive cohort/context authority while locked Phase-1 and Phase-2 inference inputs remained unchanged.",
-  "limitation": "N-of-1 descriptive authority; the calendar grid is a coverage framework, not proof that every slot should contain an event.",
+  "limitation": "Correction values and provenance are retained as a ledger; mixed event/date quantities are not interpreted as one unit or a primary finding.",
   "limitations": [
     "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
@@ -88,7 +88,7 @@
     "WHOOP longitudinal context",
     "Strava longitudinal context"
   ],
-  "title": "Historical cohort authority correction",
+  "title": "Authority Correction Ledger",
   "units": [
     "events_or_dates"
   ],

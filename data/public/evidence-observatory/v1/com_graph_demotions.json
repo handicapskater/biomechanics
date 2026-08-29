@@ -1,30 +1,175 @@
 {
-  "contract": "com_graph_demotion_audit.v1",
-  "lab_public_url": "https://evidence.handicapskater.com/",
-  "removed_from_com": [
-    {"route": "/evidence/", "graph_id": "source_metric_coverage_matrix", "artifact_path": "graphs/source_metric_coverage_matrix.json"},
-    {"route": "/evidence/longitudinal/", "graph_id": "fns_sns_historical_coverage", "artifact_path": "graphs/fns_sns_historical_coverage.json"},
-    {"route": "/evidence/longitudinal/", "graph_id": "fns_sns_longitudinal_functional_capacity", "artifact_path": "graphs/fns_sns_longitudinal_functional_capacity.json"},
-    {"route": "/evidence/longitudinal/", "graph_id": "fns_sns_sustained_skating_context", "artifact_path": "graphs/fns_sns_sustained_skating_context.json"},
-    {"route": "/evidence/longitudinal/", "graph_id": "longitudinal_activity_context", "artifact_path": "graphs/longitudinal_activity_context.json"},
-    {"route": "/evidence/longitudinal/", "graph_id": "readiness_before_activity_context", "artifact_path": "graphs/readiness_before_activity_context.json"},
-    {"route": "/evidence/longitudinal/", "graph_id": "paired_fns_sns_outcome_summary", "artifact_path": "graphs/paired_fns_sns_outcome_summary.json"},
-    {"route": "/evidence/longitudinal/", "graph_id": "paired_fns_sns_max_hr", "artifact_path": "graphs/paired_fns_sns_max_hr.json"},
-    {"route": "/evidence/longitudinal/", "graph_id": "extreme_hr_reference_sensitivity", "artifact_path": "graphs/extreme_hr_reference_sensitivity.json"},
-    {"route": "/evidence/longitudinal/", "graph_id": "temporal_context_decomposition", "artifact_path": "graphs/temporal_context_decomposition.json"},
-    {"route": "/evidence/longitudinal/", "graph_id": "authority_correction_summary", "artifact_path": "graphs/authority_correction_summary.json"},
-    {"route": "/evidence/transportation/", "graph_id": "transportation_body_coupling_comparison", "artifact_path": "graphs/transportation_body_coupling_comparison.json"},
-    {"route": "/evidence/transportation/", "graph_id": "transport_coupling_profiles", "artifact_path": "graphs/transport_coupling_profiles.json"},
-    {"route": "/evidence/transportation/", "graph_id": "corrected_transport_context_counts", "artifact_path": "graphs/corrected_transport_context_counts.json"},
-    {"route": "/evidence/transportation/", "graph_id": "h3_transport_validation", "artifact_path": "graphs/h3_transport_validation.json"},
-    {"route": "/evidence/mobility-comparison/", "graph_id": "walking_vs_mall_accumulated_mechanical_load", "artifact_path": "graphs/walking_vs_mall_accumulated_mechanical_load.json"},
-    {"route": "/evidence/mobility-comparison/", "graph_id": "triplet_functional_output_context", "artifact_path": "graphs/triplet_functional_output_context.json"},
-    {"route": "/evidence/mobility-comparison/", "graph_id": "h1_mechanical_only_validation", "artifact_path": "graphs/h1_mechanical_only_validation.json"},
-    {"route": "/evidence/mobility-comparison/", "graph_id": "h1_exposure_blind_mechanical", "artifact_path": "graphs/h1_exposure_blind_mechanical.json"},
-    {"route": "/evidence/repeated-protocol/", "graph_id": "accepted_triplet_stage_profiles", "artifact_path": "graphs/accepted_triplet_stage_profiles.json"},
-    {"route": "/platform/", "graph_id": "h1_feature_tier_validation", "artifact_path": "graphs/h1_feature_tier_validation.json"},
-    {"route": "/platform/", "graph_id": "h2_h13_context_increment", "artifact_path": "graphs/h2_h13_context_increment.json"},
-    {"route": "/platform/", "graph_id": "ml_feature_domain_importance", "artifact_path": "graphs/ml_feature_domain_importance.json"},
-    {"route": "/evidence/strava-gps-skate-maps/", "graph_id": "route_weather_context", "artifact_path": "graphs/route_weather_context.json"}
-  ]
+  "accessibility": {
+    "plain_language_summary": "Technical graph mounts were demoted from the .com case surface; the governed Lab remains the audit location.",
+    "sample_counts_visible": false,
+    "screen_reader_summary": "Audit record of graph mounts demoted from the .com case surface.",
+    "table_available": true,
+    "units_visible": false
+  },
+  "approved_values": {
+    "contract": "com_graph_demotion_audit.v1",
+    "lab_public_url": "https://evidence.handicapskater.com/",
+    "removed_from_com": [
+      {
+        "artifact_path": "graphs/source_metric_coverage_matrix.json",
+        "graph_id": "source_metric_coverage_matrix",
+        "route": "/evidence/"
+      },
+      {
+        "artifact_path": "graphs/fns_sns_historical_coverage.json",
+        "graph_id": "fns_sns_historical_coverage",
+        "route": "/evidence/longitudinal/"
+      },
+      {
+        "artifact_path": "graphs/fns_sns_longitudinal_functional_capacity.json",
+        "graph_id": "fns_sns_longitudinal_functional_capacity",
+        "route": "/evidence/longitudinal/"
+      },
+      {
+        "artifact_path": "graphs/fns_sns_sustained_skating_context.json",
+        "graph_id": "fns_sns_sustained_skating_context",
+        "route": "/evidence/longitudinal/"
+      },
+      {
+        "artifact_path": "graphs/longitudinal_activity_context.json",
+        "graph_id": "longitudinal_activity_context",
+        "route": "/evidence/longitudinal/"
+      },
+      {
+        "artifact_path": "graphs/readiness_before_activity_context.json",
+        "graph_id": "readiness_before_activity_context",
+        "route": "/evidence/longitudinal/"
+      },
+      {
+        "artifact_path": "graphs/paired_fns_sns_outcome_summary.json",
+        "graph_id": "paired_fns_sns_outcome_summary",
+        "route": "/evidence/longitudinal/"
+      },
+      {
+        "artifact_path": "graphs/paired_fns_sns_max_hr.json",
+        "graph_id": "paired_fns_sns_max_hr",
+        "route": "/evidence/longitudinal/"
+      },
+      {
+        "artifact_path": "graphs/extreme_hr_reference_sensitivity.json",
+        "graph_id": "extreme_hr_reference_sensitivity",
+        "route": "/evidence/longitudinal/"
+      },
+      {
+        "artifact_path": "graphs/temporal_context_decomposition.json",
+        "graph_id": "temporal_context_decomposition",
+        "route": "/evidence/longitudinal/"
+      },
+      {
+        "artifact_path": "graphs/authority_correction_summary.json",
+        "graph_id": "authority_correction_summary",
+        "route": "/evidence/longitudinal/"
+      },
+      {
+        "artifact_path": "graphs/transportation_body_coupling_comparison.json",
+        "graph_id": "transportation_body_coupling_comparison",
+        "route": "/evidence/transportation/"
+      },
+      {
+        "artifact_path": "graphs/transport_coupling_profiles.json",
+        "graph_id": "transport_coupling_profiles",
+        "route": "/evidence/transportation/"
+      },
+      {
+        "artifact_path": "graphs/corrected_transport_context_counts.json",
+        "graph_id": "corrected_transport_context_counts",
+        "route": "/evidence/transportation/"
+      },
+      {
+        "artifact_path": "graphs/h3_transport_validation.json",
+        "graph_id": "h3_transport_validation",
+        "route": "/evidence/transportation/"
+      },
+      {
+        "artifact_path": "graphs/walking_vs_mall_accumulated_mechanical_load.json",
+        "graph_id": "walking_vs_mall_accumulated_mechanical_load",
+        "route": "/evidence/mobility-comparison/"
+      },
+      {
+        "artifact_path": "graphs/triplet_functional_output_context.json",
+        "graph_id": "triplet_functional_output_context",
+        "route": "/evidence/mobility-comparison/"
+      },
+      {
+        "artifact_path": "graphs/h1_mechanical_only_validation.json",
+        "graph_id": "h1_mechanical_only_validation",
+        "route": "/evidence/mobility-comparison/"
+      },
+      {
+        "artifact_path": "graphs/h1_exposure_blind_mechanical.json",
+        "graph_id": "h1_exposure_blind_mechanical",
+        "route": "/evidence/mobility-comparison/"
+      },
+      {
+        "artifact_path": "graphs/accepted_triplet_stage_profiles.json",
+        "graph_id": "accepted_triplet_stage_profiles",
+        "route": "/evidence/repeated-protocol/"
+      },
+      {
+        "artifact_path": "graphs/h1_feature_tier_validation.json",
+        "graph_id": "h1_feature_tier_validation",
+        "route": "/platform/"
+      },
+      {
+        "artifact_path": "graphs/h2_h13_context_increment.json",
+        "graph_id": "h2_h13_context_increment",
+        "route": "/platform/"
+      },
+      {
+        "artifact_path": "graphs/ml_feature_domain_importance.json",
+        "graph_id": "ml_feature_domain_importance",
+        "route": "/platform/"
+      },
+      {
+        "artifact_path": "graphs/route_weather_context.json",
+        "graph_id": "route_weather_context",
+        "route": "/evidence/strava-gps-skate-maps/"
+      }
+    ]
+  },
+  "conclusion_strength": "not_applicable",
+  "content_hash": "bb33338731c65141ab11ffaadee74231456fb02d1ca70ee1fb91eec604ed3af8",
+  "data_through_date": "2026-08-27",
+  "destination": "handicapskater.com",
+  "evidence_scope": "Publication audit metadata only; it creates no scientific decision.",
+  "formula_identities": [],
+  "intended_route": "/evidence/",
+  "limitations": [
+    "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
+  ],
+  "plain_language_finding": "Technical graph mounts were demoted from the .com case surface; the governed Lab remains the audit location.",
+  "relation_identities": [],
+  "resource_id": "com_graph_demotions",
+  "resource_version": "fsi_publication_resource.v1",
+  "sample_counts": {},
+  "short_title": "Graph demotion audit",
+  "source_contracts": [
+    {
+      "contract": "observatory_mcp_resource.v1",
+      "version": "observatory_bundle.v1"
+    },
+    {
+      "contract": "evidence_observatory_presentation.v1",
+      "version": "evidence_observatory_presentation.v1"
+    },
+    {
+      "contract": "scientific_consumer_contract.v1.0.0",
+      "version": "scientific_consumer_contract.v1.0.0"
+    },
+    {
+      "contract": "observatory_graph.v1",
+      "version": "observatory_graph.v1"
+    }
+  ],
+  "source_labels": [
+    "Evidence Observatory"
+  ],
+  "summary": "The listed technical graphs remain available in the public Evidence Observatory.",
+  "title": ".com graph demotion audit",
+  "units": []
 }

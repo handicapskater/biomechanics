@@ -40,9 +40,9 @@
   "alt_text": "Current ParaTransit and deterministic TO/FROM context counts reflect governed cohort authority; subtype and relationship labels are not inferred beyond their contracts.",
   "claim_class": "DESCRIPTIVE",
   "claim_classes": {},
-  "content_hash": "43b04bf71c21c6fce010c461802b70e2bfa7c667376930bec48207d22a9fec49",
+  "content_hash": "cb6bd1ab71f69760b9bdb1bc13d49a02e22496d87a7cb288ab220f25ad48aa16",
   "coverage": {},
-  "data_through_date": "2026-08-08",
+  "data_through_date": "2026-08-27",
   "destination": "handicapskater.com",
   "evidence": {},
   "finding": "Current ParaTransit and deterministic TO/FROM context counts reflect governed cohort authority; subtype and relationship labels are not inferred beyond their contracts.",
@@ -55,7 +55,7 @@
   "graph_type": "bar",
   "intended_route": "/evidence/transportation/",
   "interpretation": "Current ParaTransit and deterministic TO/FROM context counts reflect governed cohort authority; subtype and relationship labels are not inferred beyond their contracts.",
-  "limitation": "N-of-1 descriptive authority; the calendar grid is a coverage framework, not proof that every slot should contain an event.",
+  "limitation": "Count categories have different scopes and are not additive; they are displayed separately rather than stacked into one total.",
   "limitations": [
     "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
@@ -101,7 +101,7 @@
     "Kubios/Polar H10 transport sessions",
     "Canonical body-coupling mapping"
   ],
-  "title": "Corrected transportation context",
+  "title": "Corrected Transportation Context Counts",
   "units": [
     "events"
   ],

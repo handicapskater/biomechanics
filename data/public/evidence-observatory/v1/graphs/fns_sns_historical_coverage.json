@@ -53,12 +53,12 @@
   "alt_text": "Calendar coverage distinguishes authority dates from source-local activity starts; the three settled timezone exceptions remain a separate legacy-inclusive lens.",
   "claim_class": "DESCRIPTIVE",
   "claim_classes": {},
-  "content_hash": "4257e44fa47495a0f208f2dcb7ddb9cbd32d03e741cd335741d69a1fa0e3f513",
+  "content_hash": "9f933264d1e720e37da2bde7cb43e4188be5c5b55c145e05f8ecb78e18b0ea2a",
   "coverage": {},
-  "data_through_date": "2026-08-08",
+  "data_through_date": "2026-08-27",
   "destination": "handicapskater.com",
   "evidence": {},
-  "finding": "Calendar coverage distinguishes authority dates from source-local activity starts; the three settled timezone exceptions remain a separate legacy-inclusive lens.",
+  "finding": "Historical coverage retains subtype ambiguity: ENS 8, FNS 174, SNS 187, XMS 1, XNS 2, and unspecified 220 (total 592).",
   "formula_identities": [
     "longitudinal_corrected_authority_descriptive.v1.0.0"
   ],
@@ -68,7 +68,7 @@
   "graph_type": "bar",
   "intended_route": "/evidence/longitudinal/",
   "interpretation": "Calendar coverage distinguishes authority dates from source-local activity starts; the three settled timezone exceptions remain a separate legacy-inclusive lens.",
-  "limitation": "N-of-1 descriptive authority; the calendar grid is a coverage framework, not proof that every slot should contain an event.",
+  "limitation": "Subtype ambiguity is retained rather than hidden; coverage counts are historical context, not a performance comparison.",
   "limitations": [
     "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
@@ -125,7 +125,7 @@
     "WHOOP longitudinal context",
     "Strava longitudinal context"
   ],
-  "title": "Governed FNS/SNS historical coverage",
+  "title": "FNS/SNS Historical Coverage Timeline",
   "units": [
     "calendar_slots"
   ],

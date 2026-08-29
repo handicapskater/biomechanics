@@ -4,157 +4,499 @@
       "domain": "mechanical",
       "feature": "magnitude_rms",
       "importance_interpretation": "associative_not_causal",
-      "mean_importance": 134.8321769456518,
-      "model_tier_context_n": 81,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "mean_importance": 115.54025850015033,
+      "model_tier_context_n": 80,
+      "result_identity": "full-feature-2f026711c42e",
       "task_ids": "multiclass_mobility_context;passive_transport;sensor_context_incremental;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
       "task_n": 6,
-      "top_three_fold_appearances": 271
+      "task_support": {
+        "multiclass_mobility_context": {
+          "activity_n": 203,
+          "date_n": 90
+        },
+        "passive_transport": {
+          "activity_n": 44,
+          "date_n": 29
+        },
+        "sensor_context_incremental": {
+          "activity_n": 203,
+          "date_n": 90
+        },
+        "walking_vs_fns_sns": {
+          "activity_n": 59,
+          "date_n": 58
+        },
+        "walking_vs_mall": {
+          "activity_n": 72,
+          "date_n": 42
+        },
+        "walking_vs_pt": {
+          "activity_n": 94,
+          "date_n": 58
+        }
+      },
+      "top_three_fold_appearances": 291
     },
     {
       "domain": "mechanical",
       "feature": "magnitude_jerk_rms",
       "importance_interpretation": "associative_not_causal",
-      "mean_importance": 9.506870059742903,
-      "model_tier_context_n": 62,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "mean_importance": 17.283009981220886,
+      "model_tier_context_n": 73,
+      "result_identity": "full-feature-2f026711c42e",
       "task_ids": "multiclass_mobility_context;passive_transport;sensor_context_incremental;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
       "task_n": 6,
-      "top_three_fold_appearances": 217
+      "task_support": {
+        "multiclass_mobility_context": {
+          "activity_n": 203,
+          "date_n": 90
+        },
+        "passive_transport": {
+          "activity_n": 44,
+          "date_n": 29
+        },
+        "sensor_context_incremental": {
+          "activity_n": 203,
+          "date_n": 90
+        },
+        "walking_vs_fns_sns": {
+          "activity_n": 59,
+          "date_n": 58
+        },
+        "walking_vs_mall": {
+          "activity_n": 72,
+          "date_n": 42
+        },
+        "walking_vs_pt": {
+          "activity_n": 94,
+          "date_n": 58
+        }
+      },
+      "top_three_fold_appearances": 246
     },
     {
       "domain": "mechanical",
       "feature": "cumulative_dynamic_shock_per_min",
       "importance_interpretation": "associative_not_causal",
-      "mean_importance": 70.82573913906351,
-      "model_tier_context_n": 58,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "mean_importance": 70.8184416559182,
+      "model_tier_context_n": 55,
+      "result_identity": "full-feature-2f026711c42e",
       "task_ids": "multiclass_mobility_context;passive_transport;sensor_context_incremental;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
       "task_n": 6,
-      "top_three_fold_appearances": 216
+      "task_support": {
+        "multiclass_mobility_context": {
+          "activity_n": 203,
+          "date_n": 90
+        },
+        "passive_transport": {
+          "activity_n": 44,
+          "date_n": 29
+        },
+        "sensor_context_incremental": {
+          "activity_n": 203,
+          "date_n": 90
+        },
+        "walking_vs_fns_sns": {
+          "activity_n": 59,
+          "date_n": 58
+        },
+        "walking_vs_mall": {
+          "activity_n": 72,
+          "date_n": 42
+        },
+        "walking_vs_pt": {
+          "activity_n": 94,
+          "date_n": 58
+        }
+      },
+      "top_three_fold_appearances": 208
     },
     {
       "domain": "mechanical",
       "feature": "impact_rate_per_min",
       "importance_interpretation": "associative_not_causal",
-      "mean_importance": 4.563330759174991,
-      "model_tier_context_n": 48,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "mean_importance": 3.4112593583570723,
+      "model_tier_context_n": 50,
+      "result_identity": "full-feature-2f026711c42e",
       "task_ids": "multiclass_mobility_context;passive_transport;sensor_context_incremental;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
       "task_n": 6,
-      "top_three_fold_appearances": 173
+      "task_support": {
+        "multiclass_mobility_context": {
+          "activity_n": 203,
+          "date_n": 90
+        },
+        "passive_transport": {
+          "activity_n": 44,
+          "date_n": 29
+        },
+        "sensor_context_incremental": {
+          "activity_n": 203,
+          "date_n": 90
+        },
+        "walking_vs_fns_sns": {
+          "activity_n": 59,
+          "date_n": 58
+        },
+        "walking_vs_mall": {
+          "activity_n": 72,
+          "date_n": 42
+        },
+        "walking_vs_pt": {
+          "activity_n": 94,
+          "date_n": 58
+        }
+      },
+      "top_three_fold_appearances": 185
     },
     {
       "domain": "mechanical",
       "feature": "cumulative_dynamic_shock",
       "importance_interpretation": "associative_not_causal",
-      "mean_importance": 233.8296220705194,
-      "model_tier_context_n": 41,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "mean_importance": 111.64852084660426,
+      "model_tier_context_n": 45,
+      "result_identity": "full-feature-2f026711c42e",
       "task_ids": "multiclass_mobility_context;passive_transport;sensor_context_incremental;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
       "task_n": 6,
-      "top_three_fold_appearances": 160
+      "task_support": {
+        "multiclass_mobility_context": {
+          "activity_n": 203,
+          "date_n": 90
+        },
+        "passive_transport": {
+          "activity_n": 44,
+          "date_n": 29
+        },
+        "sensor_context_incremental": {
+          "activity_n": 203,
+          "date_n": 90
+        },
+        "walking_vs_fns_sns": {
+          "activity_n": 59,
+          "date_n": 58
+        },
+        "walking_vs_mall": {
+          "activity_n": 72,
+          "date_n": 42
+        },
+        "walking_vs_pt": {
+          "activity_n": 94,
+          "date_n": 58
+        }
+      },
+      "top_three_fold_appearances": 165
     },
     {
       "domain": "physiological",
       "feature": "mean_hr_bpm",
       "importance_interpretation": "associative_not_causal",
-      "mean_importance": 9.339069185890978,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "mean_importance": 4.8771477303883035,
       "model_tier_context_n": 67,
+      "result_identity": "full-feature-2f026711c42e",
       "task_ids": "multiclass_mobility_context;passive_transport;sensor_context_incremental;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
       "task_n": 6,
-      "top_three_fold_appearances": 222
+      "task_support": {
+        "multiclass_mobility_context": {
+          "activity_n": 203,
+          "date_n": 90
+        },
+        "passive_transport": {
+          "activity_n": 44,
+          "date_n": 29
+        },
+        "sensor_context_incremental": {
+          "activity_n": 203,
+          "date_n": 90
+        },
+        "walking_vs_fns_sns": {
+          "activity_n": 59,
+          "date_n": 58
+        },
+        "walking_vs_mall": {
+          "activity_n": 72,
+          "date_n": 42
+        },
+        "walking_vs_pt": {
+          "activity_n": 94,
+          "date_n": 58
+        }
+      },
+      "top_three_fold_appearances": 218
     },
     {
       "domain": "physiological",
       "feature": "max_hr_bpm",
       "importance_interpretation": "associative_not_causal",
-      "mean_importance": 3.2749814621282853,
-      "model_tier_context_n": 33,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "mean_importance": 0.7733626922546467,
+      "model_tier_context_n": 22,
+      "result_identity": "full-feature-2f026711c42e",
       "task_ids": "multiclass_mobility_context;passive_transport;sensor_context_incremental;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
       "task_n": 6,
-      "top_three_fold_appearances": 85
-    },
-    {
-      "domain": "physiological",
-      "feature": "session_sdnn_ms",
-      "importance_interpretation": "associative_not_causal",
-      "mean_importance": 2.944022821186918,
-      "model_tier_context_n": 11,
-      "task_ids": "walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
-      "task_n": 3,
-      "top_three_fold_appearances": 45
+      "task_support": {
+        "multiclass_mobility_context": {
+          "activity_n": 203,
+          "date_n": 90
+        },
+        "passive_transport": {
+          "activity_n": 44,
+          "date_n": 29
+        },
+        "sensor_context_incremental": {
+          "activity_n": 203,
+          "date_n": 90
+        },
+        "walking_vs_fns_sns": {
+          "activity_n": 59,
+          "date_n": 58
+        },
+        "walking_vs_mall": {
+          "activity_n": 72,
+          "date_n": 42
+        },
+        "walking_vs_pt": {
+          "activity_n": 94,
+          "date_n": 58
+        }
+      },
+      "top_three_fold_appearances": 60
     },
     {
       "domain": "physiological",
       "feature": "min_hr_bpm",
       "importance_interpretation": "associative_not_causal",
-      "mean_importance": 1.0430718605691771,
-      "model_tier_context_n": 17,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "mean_importance": 0.48940605832442297,
+      "model_tier_context_n": 15,
+      "result_identity": "full-feature-2f026711c42e",
       "task_ids": "multiclass_mobility_context;passive_transport;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
       "task_n": 5,
-      "top_three_fold_appearances": 42
+      "task_support": {
+        "multiclass_mobility_context": {
+          "activity_n": 203,
+          "date_n": 90
+        },
+        "passive_transport": {
+          "activity_n": 44,
+          "date_n": 29
+        },
+        "walking_vs_fns_sns": {
+          "activity_n": 59,
+          "date_n": 58
+        },
+        "walking_vs_mall": {
+          "activity_n": 72,
+          "date_n": 42
+        },
+        "walking_vs_pt": {
+          "activity_n": 94,
+          "date_n": 58
+        }
+      },
+      "top_three_fold_appearances": 41
+    },
+    {
+      "domain": "physiological",
+      "feature": "session_sdnn_ms",
+      "importance_interpretation": "associative_not_causal",
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "mean_importance": 3.6550359147830607,
+      "model_tier_context_n": 7,
+      "result_identity": "full-feature-2f026711c42e",
+      "task_ids": "walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
+      "task_n": 3,
+      "task_support": {
+        "walking_vs_fns_sns": {
+          "activity_n": 59,
+          "date_n": 58
+        },
+        "walking_vs_mall": {
+          "activity_n": 72,
+          "date_n": 42
+        },
+        "walking_vs_pt": {
+          "activity_n": 94,
+          "date_n": 58
+        }
+      },
+      "top_three_fold_appearances": 33
     },
     {
       "domain": "physiological",
       "feature": "session_rmssd_ms",
       "importance_interpretation": "associative_not_causal",
-      "mean_importance": 2.7733174562947074,
-      "model_tier_context_n": 5,
-      "task_ids": "walking_vs_fns_sns;walking_vs_mall",
-      "task_n": 2,
-      "top_three_fold_appearances": 9
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "mean_importance": 3.652826215698845,
+      "model_tier_context_n": 8,
+      "result_identity": "full-feature-2f026711c42e",
+      "task_ids": "walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
+      "task_n": 3,
+      "task_support": {
+        "walking_vs_fns_sns": {
+          "activity_n": 59,
+          "date_n": 58
+        },
+        "walking_vs_mall": {
+          "activity_n": 72,
+          "date_n": 42
+        },
+        "walking_vs_pt": {
+          "activity_n": 94,
+          "date_n": 58
+        }
+      },
+      "top_three_fold_appearances": 24
     },
     {
       "domain": "functional",
       "feature": "authoritative_distance_miles",
       "importance_interpretation": "associative_not_causal",
-      "mean_importance": 86.54493617232889,
-      "model_tier_context_n": 106,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "mean_importance": 39.61393718199277,
+      "model_tier_context_n": 104,
+      "result_identity": "full-feature-2f026711c42e",
       "task_ids": "multiclass_mobility_context;passive_transport;sensor_context_incremental;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
       "task_n": 6,
-      "top_three_fold_appearances": 440
+      "task_support": {
+        "multiclass_mobility_context": {
+          "activity_n": 203,
+          "date_n": 90
+        },
+        "passive_transport": {
+          "activity_n": 44,
+          "date_n": 29
+        },
+        "sensor_context_incremental": {
+          "activity_n": 203,
+          "date_n": 90
+        },
+        "walking_vs_fns_sns": {
+          "activity_n": 59,
+          "date_n": 58
+        },
+        "walking_vs_mall": {
+          "activity_n": 72,
+          "date_n": 42
+        },
+        "walking_vs_pt": {
+          "activity_n": 94,
+          "date_n": 58
+        }
+      },
+      "top_three_fold_appearances": 445
     },
     {
       "domain": "functional",
       "feature": "duration_seconds",
       "importance_interpretation": "associative_not_causal",
-      "mean_importance": 42.88484307197421,
-      "model_tier_context_n": 82,
+      "input_activity_n": 203,
+      "input_date_n": 90,
+      "mean_importance": 19.186621154712327,
+      "model_tier_context_n": 81,
+      "result_identity": "full-feature-2f026711c42e",
       "task_ids": "multiclass_mobility_context;passive_transport;sensor_context_incremental;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
       "task_n": 6,
-      "top_three_fold_appearances": 301
+      "task_support": {
+        "multiclass_mobility_context": {
+          "activity_n": 203,
+          "date_n": 90
+        },
+        "passive_transport": {
+          "activity_n": 44,
+          "date_n": 29
+        },
+        "sensor_context_incremental": {
+          "activity_n": 203,
+          "date_n": 90
+        },
+        "walking_vs_fns_sns": {
+          "activity_n": 59,
+          "date_n": 58
+        },
+        "walking_vs_mall": {
+          "activity_n": 72,
+          "date_n": 42
+        },
+        "walking_vs_pt": {
+          "activity_n": 94,
+          "date_n": 58
+        }
+      },
+      "top_three_fold_appearances": 280
     },
     {
       "domain": "functional",
       "feature": "has_kubios",
       "importance_interpretation": "associative_not_causal",
+      "input_activity_n": 203,
+      "input_date_n": 90,
       "mean_importance": 0.0,
       "model_tier_context_n": 7,
-      "task_ids": "passive_transport;sensor_context_incremental;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
-      "task_n": 5,
-      "top_three_fold_appearances": 28
+      "result_identity": "full-feature-2f026711c42e",
+      "task_ids": "passive_transport;walking_vs_fns_sns;walking_vs_mall;walking_vs_pt",
+      "task_n": 4,
+      "task_support": {
+        "passive_transport": {
+          "activity_n": 44,
+          "date_n": 29
+        },
+        "walking_vs_fns_sns": {
+          "activity_n": 59,
+          "date_n": 58
+        },
+        "walking_vs_mall": {
+          "activity_n": 72,
+          "date_n": 42
+        },
+        "walking_vs_pt": {
+          "activity_n": 94,
+          "date_n": 58
+        }
+      },
+      "top_three_fold_appearances": 29
     }
   ],
-  "alt_text": "Fold-level top-three appearance frequency is shown for individual stable features and labeled by scientific domain; frequency does not identify effect size.",
+  "alt_text": "Current fold-level top-three appearance frequency is shown by scientific domain. Feature importance is an associative stability summary, not an effect-size estimate.",
   "claim_class": "INTERPRETATION",
   "claim_classes": {},
-  "content_hash": "51bea7982e5c46356f5662ba10e7faa872c7d44b31dac2f3b377bc7829f903f4",
+  "content_hash": "acd3cfb503f891407f007be49295e0c3e04dda815bddd5684f05c230d61ff7c3",
   "coverage": {},
-  "data_through_date": "2026-08-08",
+  "data_through_date": "2026-08-27",
   "destination": "handicapskater.com",
   "evidence": {},
-  "finding": "Fold-level top-three appearance frequency is shown for individual stable features and labeled by scientific domain; frequency does not identify effect size.",
+  "finding": "Current fold-level top-three appearance frequency is shown by scientific domain. Feature importance is an associative stability summary, not an effect-size estimate.",
   "formula_identities": [
     "hypothesis_ml_reporting.v1.0.0",
-    "hypothesis_ml_validation.v1.1.0"
+    "hypothesis_ml_validation.v1.1.0",
+    "hypothesis_ml_graph_provenance.v1.0.0"
   ],
   "functional_meaning": "Held-out scores quantify separation across the predeclared cohorts and feature tiers.",
   "graph_contract_version": "fsi_publication_graph.v1",
   "graph_id": "ml_feature_domain_importance",
   "graph_type": "feature_stability_frequency",
   "intended_route": "/platform/",
-  "interpretation": "Fold-level top-three appearance frequency is shown for individual stable features and labeled by scientific domain; frequency does not identify effect size.",
-  "limitation": "N_OF_1; FEATURE_IMPORTANCE_SCOPE; MEASUREMENT_SCOPE",
+  "interpretation": "Current fold-level top-three appearance frequency is shown by scientific domain. Feature importance is an associative stability summary, not an effect-size estimate.",
+  "limitation": "N_OF_1; TASK_SUPPORT_SUBSETS; FEATURE_IMPORTANCE_SCOPE; MEASUREMENT_SCOPE",
   "limitations": [
     "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
-  "long_description": "Fold-level top-three appearance frequency is shown for individual stable features and labeled by scientific domain; frequency does not identify effect size. Frequency of appearing among fold-level top-three features. Feature importance does not identify effect size. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
+  "long_description": "Current fold-level top-three appearance frequency is shown by scientific domain. Feature importance is an associative stability summary, not an effect-size estimate. Current result only; no unsupported old-to-new paired comparison is implied. Frequency of appearing among fold-level top-three features. Feature importance does not identify effect size. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
   "matrix": [],
   "missingness": [],
   "output_asset_names": [
@@ -163,16 +505,17 @@
   "panels": [],
   "planned_comparator": null,
   "qualifications": [
+    "Current result only; no unsupported old-to-new paired comparison is implied.",
     "Frequency of appearing among fold-level top-three features.",
     "Feature importance does not identify effect size."
   ],
-  "question": "Which individual features repeatedly appear among fold-level top features?",
+  "question": "Which individual features repeatedly appear among fold-level top features in the current completed result?",
   "ranking": [],
   "relation_identities": [
-    "analysis/hypothesis_ml_validation/results/full/ml_binary_results.csv",
-    "analysis/hypothesis_ml_validation/results/full/ml_multiclass_results.csv",
-    "analysis/hypothesis_ml_validation/results/full/ml_permutation_results.csv",
-    "analysis/hypothesis_ml_validation/results/full/ml_feature_importance.csv"
+    "analysis/hypothesis_ml_validation/results/full/full-feature-2f026711c42e/ml_binary_results.csv",
+    "analysis/hypothesis_ml_validation/results/full/full-feature-2f026711c42e/ml_multiclass_results.csv",
+    "analysis/hypothesis_ml_validation/results/full/full-feature-2f026711c42e/ml_permutation_results.csv",
+    "analysis/hypothesis_ml_validation/results/full/full-feature-2f026711c42e/ml_feature_importance.csv"
   ],
   "repeatability": [],
   "sample_counts": {
@@ -201,7 +544,7 @@
     "Canonical Hypothesis Registry",
     "Canonical scientific reviewer views"
   ],
-  "title": "Stable feature appearances",
+  "title": "Current ML feature-domain stability",
   "units": [
     "fold_level_top_three_appearances"
   ],
@@ -212,73 +555,73 @@
         "domain": "functional",
         "feature": "authoritative_distance_miles",
         "label": "Authoritative distance",
-        "top_three_fold_appearances": 440
-      },
-      {
-        "domain": "functional",
-        "feature": "duration_seconds",
-        "label": "Duration",
-        "top_three_fold_appearances": 301
+        "top_three_fold_appearances": 445
       },
       {
         "domain": "mechanical",
         "feature": "magnitude_rms",
         "label": "Magnitude RMS",
-        "top_three_fold_appearances": 271
+        "top_three_fold_appearances": 291
       },
       {
-        "domain": "physiological",
-        "feature": "mean_hr_bpm",
-        "label": "Mean HR",
-        "top_three_fold_appearances": 222
+        "domain": "functional",
+        "feature": "duration_seconds",
+        "label": "Duration",
+        "top_three_fold_appearances": 280
       },
       {
         "domain": "mechanical",
         "feature": "magnitude_jerk_rms",
         "label": "Magnitude jerk RMS",
-        "top_three_fold_appearances": 217
+        "top_three_fold_appearances": 246
+      },
+      {
+        "domain": "physiological",
+        "feature": "mean_hr_bpm",
+        "label": "Mean HR",
+        "top_three_fold_appearances": 218
       },
       {
         "domain": "mechanical",
         "feature": "cumulative_dynamic_shock_per_min",
         "label": "Cumulative dynamic shock/min",
-        "top_three_fold_appearances": 216
+        "top_three_fold_appearances": 208
       },
       {
         "domain": "mechanical",
         "feature": "impact_rate_per_min",
         "label": "Impact rate/min",
-        "top_three_fold_appearances": 173
+        "top_three_fold_appearances": 185
       },
       {
         "domain": "mechanical",
         "feature": "cumulative_dynamic_shock",
         "label": "Cumulative dynamic shock",
-        "top_three_fold_appearances": 160
+        "top_three_fold_appearances": 165
       },
       {
         "domain": "physiological",
         "feature": "max_hr_bpm",
         "label": "Maximum HR",
-        "top_three_fold_appearances": 85
-      },
-      {
-        "domain": "physiological",
-        "feature": "session_sdnn_ms",
-        "label": "Session SDNN",
-        "top_three_fold_appearances": 45
+        "top_three_fold_appearances": 60
       },
       {
         "domain": "physiological",
         "feature": "min_hr_bpm",
         "label": "Minimum HR",
-        "top_three_fold_appearances": 42
+        "top_three_fold_appearances": 41
+      },
+      {
+        "domain": "physiological",
+        "feature": "session_sdnn_ms",
+        "label": "Session SDNN",
+        "top_three_fold_appearances": 33
       },
       {
         "domain": "functional",
         "feature": "has_kubios",
         "label": "Kubios session available",
-        "top_three_fold_appearances": 28
+        "top_three_fold_appearances": 29
       }
     ],
     "visual_contract_version": "hypothesis_ml_scientific_figure.v1.0.0",
