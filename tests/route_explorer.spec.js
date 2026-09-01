@@ -13,10 +13,10 @@ test("route and weather graph presentation is absent", async ({ page }) => {
 test("loads the embedded manifest and filters immediately", async ({ page }) => {
   await page.goto(explorer);
   await expect(page.locator("#route-browser-summary")).toContainText("route maps shown");
-  await expect(page.locator("#route-select option")).toHaveCount(542);
+  await expect(page.locator("#route-select option")).toHaveCount(555);
 
   await page.locator("#route-search").fill("Xmas FNS");
-  await expect(page.locator("#route-browser-summary")).toContainText("1 of 542");
+  await expect(page.locator("#route-browser-summary")).toContainText("1 of 555");
   await expect(page.locator("#route-select option")).toHaveCount(1);
 });
 
@@ -45,7 +45,7 @@ test("weather failure keeps direct route links usable", async ({ page }) => {
   await page.route("**/strava_routes_weather_conditions_9pm_midnight.json", (route) => route.abort());
   await page.goto(explorer);
   await expect(page.locator("#weather-summary-text")).toContainText("could not be loaded");
-  await expect(page.locator("#route-map-list a")).toHaveCount(542);
+  await expect(page.locator("#route-map-list a")).toHaveCount(555);
 });
 
 test("missing embedded manifest shows a clear fallback", async ({ page }) => {
@@ -100,7 +100,7 @@ test("raw archive works without JavaScript", async ({ browser }) => {
   const context = await browser.newContext({ javaScriptEnabled: false });
   const page = await context.newPage();
   await page.goto(explorer);
-  await expect(page.locator("#route-map-list a")).toHaveCount(542);
+  await expect(page.locator("#route-map-list a")).toHaveCount(555);
   await expect(page.locator("#route-browser-summary")).not.toContainText("Loading route maps");
   await context.close();
 });
