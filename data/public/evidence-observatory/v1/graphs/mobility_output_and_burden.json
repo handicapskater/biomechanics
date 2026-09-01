@@ -3,71 +3,71 @@
     {
       "absolute_burden": 135.3574840138221,
       "absolute_burden_unit": "g*s",
-      "burden_per_mile": 933.3860680117788,
+      "burden_per_mile": 940.4689063153824,
       "burden_per_mile_unit": "g*s/mile",
       "burden_per_minute": 6.124015608385067,
       "burden_per_minute_unit": "g*s/min",
       "burden_sample_count": 48,
       "cohort": "walking",
       "data_through_date": "2026-08-27",
-      "distance_miles": 0.14471735067207508,
-      "distance_sample_count": 35,
-      "duration_minutes": 5.441666666666666,
+      "distance_miles": 0.14288430565497495,
+      "distance_sample_count": 44,
+      "duration_minutes": 5.324999999999999,
       "formula_version": "kubios_acc_session_metrics.v1",
       "fsi": 0.35352967992668094,
       "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
       "fsi_sample_count": 48,
-      "functional_output_per_burden": 0.0010713680375904011,
+      "functional_output_per_burden": 0.0010632995153596367,
       "functional_output_per_burden_unit": "miles/(g*s)",
-      "functional_output_sample_count": 35,
+      "functional_output_sample_count": 44,
       "label": "Walking",
-      "quality": "kubios|kubios+strava|kubios+strava+whoop"
+      "quality": "kubios|kubios+strava+whoop|kubios+whoop"
     },
     {
       "absolute_burden": 294.87818849113586,
       "absolute_burden_unit": "g*s",
-      "burden_per_mile": 145.59733546185515,
+      "burden_per_mile": 147.4695409145732,
       "burden_per_mile_unit": "g*s/mile",
       "burden_per_minute": 2.1505093694319775,
       "burden_per_minute_unit": "g*s/min",
       "burden_sample_count": 47,
       "cohort": "mall_skating",
       "data_through_date": "2026-08-27",
-      "distance_miles": 2.0026172154617035,
-      "distance_sample_count": 37,
-      "duration_minutes": 34.56666666666667,
+      "distance_miles": 1.9960306808239878,
+      "distance_sample_count": 46,
+      "duration_minutes": 33.916666666666664,
       "formula_version": "kubios_acc_session_metrics.v1",
       "fsi": 0.2213535798422415,
       "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
       "fsi_sample_count": 47,
-      "functional_output_per_burden": 0.0068467034443952,
+      "functional_output_per_burden": 0.006765476661368314,
       "functional_output_per_burden_unit": "miles/(g*s)",
-      "functional_output_sample_count": 37,
+      "functional_output_sample_count": 46,
       "label": "Mall skating",
-      "quality": "kubios|kubios+strava|kubios+strava+whoop"
+      "quality": "kubios+strava+whoop|kubios+whoop"
     },
     {
       "absolute_burden": 393.7343261551114,
       "absolute_burden_unit": "g*s",
-      "burden_per_mile": 220.2161564346927,
+      "burden_per_mile": 217.43815338669827,
       "burden_per_mile_unit": "g*s/mile",
       "burden_per_minute": 5.856949465414399,
       "burden_per_minute_unit": "g*s/min",
       "burden_sample_count": 71,
       "cohort": "pt_skating",
       "data_through_date": "2026-08-27",
-      "distance_miles": 1.8185049312017816,
-      "distance_sample_count": 59,
-      "duration_minutes": 17.166666666666668,
+      "distance_miles": 1.8182563827248868,
+      "distance_sample_count": 68,
+      "duration_minutes": 16.95,
       "formula_version": "kubios_acc_session_metrics.v1",
       "fsi": 0.27424653992479087,
       "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
       "fsi_sample_count": 71,
-      "functional_output_per_burden": 0.004541068412873918,
+      "functional_output_per_burden": 0.004599008887927645,
       "functional_output_per_burden_unit": "miles/(g*s)",
-      "functional_output_sample_count": 58,
+      "functional_output_sample_count": 67,
       "label": "PT skating",
-      "quality": "kubios|kubios+strava|kubios+strava+whoop"
+      "quality": "kubios|kubios+strava+whoop|kubios+whoop"
     },
     {
       "absolute_burden": 3013.183522047997,
@@ -79,24 +79,24 @@
       "burden_sample_count": 27,
       "cohort": "fns_sns_skating",
       "data_through_date": "2026-08-22",
-      "distance_miles": 12.1363425097431,
-      "distance_sample_count": 24,
-      "duration_minutes": 176.88333333333333,
+      "distance_miles": 12.09725826175137,
+      "distance_sample_count": 26,
+      "duration_minutes": 174.53333333333333,
       "formula_version": "kubios_acc_session_metrics.v1",
       "fsi": 0.39230737845849406,
       "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
       "fsi_sample_count": 27,
       "functional_output_per_burden": 0.003986128333570484,
       "functional_output_per_burden_unit": "miles/(g*s)",
-      "functional_output_sample_count": 24,
+      "functional_output_sample_count": 26,
       "label": "FNS/SNS skating",
-      "quality": "kubios|kubios+strava|kubios+strava+whoop"
+      "quality": "kubios+strava+whoop|kubios+whoop"
     }
   ],
   "alt_text": "Four aligned panels compare walking, Mall skating, PT skating, and FNS/SNS skating. Walking has the shortest median distance and the highest median cumulative shock per mile.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "92837e72699c2fdf29300d836072a59de012b1f9b78cf9174e2b4a787b348737",
+  "content_hash": "c4b55d2834d802e2ce8de4514300b64daf7999ed3128321c7a0644d485ae02e8",
   "coverage": {},
   "data_through_date": "2026-08-27",
   "destination": "handicapskater.com",
@@ -131,31 +131,31 @@
       "points": [
         {
           "label": "Walking",
-          "sample_count": 35,
+          "sample_count": 44,
           "status": "available",
           "unit": "miles",
-          "value": 0.14471735067207508
+          "value": 0.14288430565497495
         },
         {
           "label": "Mall skating",
-          "sample_count": 37,
+          "sample_count": 46,
           "status": "available",
           "unit": "miles",
-          "value": 2.0026172154617035
+          "value": 1.9960306808239878
         },
         {
           "label": "PT skating",
-          "sample_count": 59,
+          "sample_count": 68,
           "status": "available",
           "unit": "miles",
-          "value": 1.8185049312017816
+          "value": 1.8182563827248868
         },
         {
           "label": "FNS/SNS skating",
-          "sample_count": 24,
+          "sample_count": 26,
           "status": "available",
           "unit": "miles",
-          "value": 12.1363425097431
+          "value": 12.09725826175137
         }
       ],
       "title": "Useful distance",
@@ -199,28 +199,28 @@
       "points": [
         {
           "label": "Walking",
-          "sample_count": 35,
+          "sample_count": 44,
           "status": "available",
           "unit": "g*s/mile",
-          "value": 933.3860680117788
+          "value": 940.4689063153824
         },
         {
           "label": "Mall skating",
-          "sample_count": 37,
+          "sample_count": 46,
           "status": "available",
           "unit": "g*s/mile",
-          "value": 145.59733546185515
+          "value": 147.4695409145732
         },
         {
           "label": "PT skating",
-          "sample_count": 59,
+          "sample_count": 68,
           "status": "available",
           "unit": "g*s/mile",
-          "value": 220.2161564346927
+          "value": 217.43815338669827
         },
         {
           "label": "FNS/SNS skating",
-          "sample_count": 24,
+          "sample_count": 26,
           "status": "available",
           "unit": "g*s/mile",
           "value": 250.9070303671184
@@ -233,28 +233,28 @@
       "points": [
         {
           "label": "Walking",
-          "sample_count": 35,
+          "sample_count": 44,
           "status": "available",
           "unit": "miles/(g*s)",
-          "value": 0.0010713680375904011
+          "value": 0.0010632995153596367
         },
         {
           "label": "Mall skating",
-          "sample_count": 37,
+          "sample_count": 46,
           "status": "available",
           "unit": "miles/(g*s)",
-          "value": 0.0068467034443952
+          "value": 0.006765476661368314
         },
         {
           "label": "PT skating",
-          "sample_count": 58,
+          "sample_count": 67,
           "status": "available",
           "unit": "miles/(g*s)",
-          "value": 0.004541068412873918
+          "value": 0.004599008887927645
         },
         {
           "label": "FNS/SNS skating",
-          "sample_count": 24,
+          "sample_count": 26,
           "status": "available",
           "unit": "miles/(g*s)",
           "value": 0.003986128333570484
@@ -288,31 +288,31 @@
       "points": [
         {
           "label": "Walking",
-          "sample_count": 35,
+          "sample_count": 44,
           "status": "available",
           "unit": "miles",
-          "value": 0.14471735067207508
+          "value": 0.14288430565497495
         },
         {
           "label": "Mall skating",
-          "sample_count": 37,
+          "sample_count": 46,
           "status": "available",
           "unit": "miles",
-          "value": 2.0026172154617035
+          "value": 1.9960306808239878
         },
         {
           "label": "PT skating",
-          "sample_count": 59,
+          "sample_count": 68,
           "status": "available",
           "unit": "miles",
-          "value": 1.8185049312017816
+          "value": 1.8182563827248868
         },
         {
           "label": "FNS/SNS skating",
-          "sample_count": 24,
+          "sample_count": 26,
           "status": "available",
           "unit": "miles",
-          "value": 12.1363425097431
+          "value": 12.09725826175137
         }
       ],
       "series": [],
@@ -360,28 +360,28 @@
       "points": [
         {
           "label": "Walking",
-          "sample_count": 35,
+          "sample_count": 44,
           "status": "available",
           "unit": "g*s/mile",
-          "value": 933.3860680117788
+          "value": 940.4689063153824
         },
         {
           "label": "Mall skating",
-          "sample_count": 37,
+          "sample_count": 46,
           "status": "available",
           "unit": "g*s/mile",
-          "value": 145.59733546185515
+          "value": 147.4695409145732
         },
         {
           "label": "PT skating",
-          "sample_count": 59,
+          "sample_count": 68,
           "status": "available",
           "unit": "g*s/mile",
-          "value": 220.2161564346927
+          "value": 217.43815338669827
         },
         {
           "label": "FNS/SNS skating",
-          "sample_count": 24,
+          "sample_count": 26,
           "status": "available",
           "unit": "g*s/mile",
           "value": 250.9070303671184
@@ -396,28 +396,28 @@
       "points": [
         {
           "label": "Walking",
-          "sample_count": 35,
+          "sample_count": 44,
           "status": "available",
           "unit": "miles/(g*s)",
-          "value": 0.0010713680375904011
+          "value": 0.0010632995153596367
         },
         {
           "label": "Mall skating",
-          "sample_count": 37,
+          "sample_count": 46,
           "status": "available",
           "unit": "miles/(g*s)",
-          "value": 0.0068467034443952
+          "value": 0.006765476661368314
         },
         {
           "label": "PT skating",
-          "sample_count": 58,
+          "sample_count": 67,
           "status": "available",
           "unit": "miles/(g*s)",
-          "value": 0.004541068412873918
+          "value": 0.004599008887927645
         },
         {
           "label": "FNS/SNS skating",
-          "sample_count": 24,
+          "sample_count": 26,
           "status": "available",
           "unit": "miles/(g*s)",
           "value": 0.003986128333570484

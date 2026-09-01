@@ -72,7 +72,7 @@
         "cohort": "paratransit_sedan_or_taxi",
         "component_sample_count": 24,
         "data_through_date": "2026-08-15",
-        "duration_minutes": 37.075,
+        "duration_minutes": 36.49166666666667,
         "fsi": 0.4400065677857018,
         "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
         "fsi_sample_count": 24,
@@ -124,7 +124,7 @@
             "value": 1.0285895521143256
           }
         },
-        "source_coverage": "kubios|kubios+strava|kubios+strava+whoop|kubios+whoop"
+        "source_coverage": "kubios|kubios+strava+whoop|kubios+whoop"
       },
       {
         "body_coupling_class": "supported_transport",
@@ -190,7 +190,7 @@
         "cohort": "paratransit_bus",
         "component_sample_count": 19,
         "data_through_date": "2026-08-23",
-        "duration_minutes": 43.56666666666667,
+        "duration_minutes": 41.766666666666666,
         "fsi": 0.4702923721025967,
         "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
         "fsi_sample_count": 19,
@@ -242,14 +242,14 @@
             "value": 1.2810931924074251
           }
         },
-        "source_coverage": "kubios|kubios+strava|kubios+strava+whoop"
+        "source_coverage": "kubios|kubios+strava+whoop|kubios+whoop"
       },
       {
         "body_coupling_class": "passive_upright",
         "cohort": "paratransit_van",
         "component_sample_count": 6,
         "data_through_date": "2026-08-22",
-        "duration_minutes": 59.766666666666666,
+        "duration_minutes": 40.40833333333333,
         "fsi": 0.5296191570668014,
         "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
         "fsi_sample_count": 6,
@@ -301,7 +301,7 @@
             "value": 1.2242552850754789
           }
         },
-        "source_coverage": "kubios|kubios+strava+whoop"
+        "source_coverage": "kubios+strava+whoop"
       }
     ],
     "corrected_authority": {
@@ -435,7 +435,7 @@
     ]
   },
   "conclusion_strength": "mixed",
-  "content_hash": "9715afb1104699792acef4e091d82c5e8c016fded8e23d5e728a9c200a7e6959",
+  "content_hash": "357921e0f26da169d1c7481d7d5682965683144719da299130e56506fe43bd0c",
   "data_through_date": "2026-08-27",
   "destination": "handicapskater.com",
   "evidence_scope": "N-of-1 transport cohort summaries with component and FSI counts separated.",

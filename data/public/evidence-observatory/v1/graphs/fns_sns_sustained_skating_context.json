@@ -51,7 +51,7 @@
       "kubios_mean_hr_bpm": null,
       "kubios_rmssd_ms": null,
       "raw_event_label": "Night Inline Skate",
-      "readiness_status": null,
+      "readiness_status": "missing",
       "route_availability": "route_with_gps_points",
       "sanitized_route_identity": null,
       "sf_route_classification": "not_classified_by_existing_sf_route_authority",
@@ -291,7 +291,7 @@
       "kubios_mean_hr_bpm": null,
       "kubios_rmssd_ms": null,
       "raw_event_label": "Evening Inline Skate",
-      "readiness_status": null,
+      "readiness_status": "missing",
       "route_availability": "route_reference_available",
       "sanitized_route_identity": null,
       "sf_route_classification": "not_classified_by_existing_sf_route_authority",
@@ -11811,7 +11811,7 @@
       "kubios_mean_hr_bpm": 111.59130987594216,
       "kubios_rmssd_ms": 32.503528234869485,
       "raw_event_label": "Skate - FNS",
-      "readiness_status": null,
+      "readiness_status": "valid",
       "route_availability": "route_with_gps_points",
       "sanitized_route_identity": null,
       "sf_route_classification": "not_classified_by_existing_sf_route_authority",
@@ -11831,7 +11831,7 @@
       "kubios_mean_hr_bpm": 106.13029674206813,
       "kubios_rmssd_ms": 16.59428719813624,
       "raw_event_label": "Skate - SNS",
-      "readiness_status": null,
+      "readiness_status": "valid",
       "route_availability": "route_with_gps_points",
       "sanitized_route_identity": null,
       "sf_route_classification": "not_classified_by_existing_sf_route_authority",
@@ -11839,12 +11839,92 @@
       "weather_condition": "Strava weather condition code 3.0",
       "weather_coverage_status": "strava_activity_time_point_observation",
       "wind_speed_mph": 4.4738725841088
+    },
+    {
+      "cohort_context_version": "fns_sns_cohort_context.v1",
+      "distance_authority": null,
+      "distance_miles": null,
+      "distance_source": null,
+      "event_date_local": "2026-08-14",
+      "event_duration_seconds": 10472.0,
+      "event_subtype": "FNS",
+      "kubios_mean_hr_bpm": 114.06457829507868,
+      "kubios_rmssd_ms": 25.63469624984588,
+      "raw_event_label": "Skate - FNS",
+      "readiness_status": "valid",
+      "route_availability": "no_strava_activity",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": null,
+      "weather_condition": null,
+      "weather_coverage_status": "no_strava_activity",
+      "wind_speed_mph": null
+    },
+    {
+      "cohort_context_version": "fns_sns_cohort_context.v1",
+      "distance_authority": null,
+      "distance_miles": null,
+      "distance_source": null,
+      "event_date_local": "2026-08-15",
+      "event_duration_seconds": 7440.0,
+      "event_subtype": null,
+      "kubios_mean_hr_bpm": null,
+      "kubios_rmssd_ms": null,
+      "raw_event_label": "Evening Inline Skate",
+      "readiness_status": "valid",
+      "route_availability": "no_strava_activity",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": null,
+      "weather_condition": null,
+      "weather_coverage_status": "no_strava_activity",
+      "wind_speed_mph": null
+    },
+    {
+      "cohort_context_version": "fns_sns_cohort_context.v1",
+      "distance_authority": "miles",
+      "distance_miles": 11.5813026922771,
+      "distance_source": "strava:strava_activity:19845670417",
+      "event_date_local": "2026-08-21",
+      "event_duration_seconds": 10543.0,
+      "event_subtype": "FNS",
+      "kubios_mean_hr_bpm": 110.95716333903249,
+      "kubios_rmssd_ms": 47.82505075480867,
+      "raw_event_label": "Skate - FNS",
+      "readiness_status": "valid",
+      "route_availability": "route_reference_available",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 62.24,
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "wind_speed_mph": 10.737294201861118
+    },
+    {
+      "cohort_context_version": "fns_sns_cohort_context.v1",
+      "distance_authority": "miles",
+      "distance_miles": 11.773430664916885,
+      "distance_source": "strava:strava_activity:19859540463",
+      "event_date_local": "2026-08-22",
+      "event_duration_seconds": 9954.0,
+      "event_subtype": "SNS",
+      "kubios_mean_hr_bpm": 103.19368566073274,
+      "kubios_rmssd_ms": 19.85078142328225,
+      "raw_event_label": "Skate - SNS",
+      "readiness_status": "valid",
+      "route_availability": "route_reference_available",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 63.68,
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "wind_speed_mph": 11.85576234788832
     }
   ],
-  "alt_text": "A 592-event sustained-skating timeline shows available distance, duration, Kubios heart rate, and session RMSSD by preserved FNS, SNS, ENS, XNS, XMS, or unspecified subtype.",
+  "alt_text": "A 596-event sustained-skating timeline shows available distance, duration, Kubios heart rate, and session RMSSD by preserved FNS, SNS, ENS, XNS, XMS, or unspecified subtype.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "fe5ea412587fae2d2d2ea071a04b0dc6cecbededaf2078d084cced460c5cb8b2",
+  "content_hash": "6655ba9204c6631df0dc9ab752c17a07a62cce69e8b553eecabc13b77b6e65df",
   "coverage": {},
   "data_through_date": "2026-08-27",
   "destination": "handicapskater.com",
@@ -12972,6 +13052,12 @@
               "quality": "verified",
               "unit": "miles",
               "value": 11.090481587528831
+            },
+            {
+              "date": "2026-08-21",
+              "quality": "verified",
+              "unit": "miles",
+              "value": 11.5813026922771
             }
           ]
         },
@@ -14099,6 +14185,12 @@
               "quality": "verified",
               "unit": "miles",
               "value": 10.989695180147937
+            },
+            {
+              "date": "2026-08-22",
+              "quality": "verified",
+              "unit": "miles",
+              "value": 11.773430664916885
             }
           ]
         },
@@ -16495,6 +16587,18 @@
               "quality": "verified",
               "unit": "s",
               "value": 10811.0
+            },
+            {
+              "date": "2026-08-14",
+              "quality": "verified",
+              "unit": "s",
+              "value": 10472.0
+            },
+            {
+              "date": "2026-08-21",
+              "quality": "verified",
+              "unit": "s",
+              "value": 10543.0
             }
           ]
         },
@@ -17586,6 +17690,12 @@
               "quality": "verified",
               "unit": "s",
               "value": 11251.0
+            },
+            {
+              "date": "2026-08-22",
+              "quality": "verified",
+              "unit": "s",
+              "value": 9954.0
             }
           ]
         },
@@ -18908,6 +19018,12 @@
               "quality": "verified",
               "unit": "s",
               "value": 10859.0
+            },
+            {
+              "date": "2026-08-15",
+              "quality": "verified",
+              "unit": "s",
+              "value": 7440.0
             }
           ]
         }
@@ -19008,6 +19124,18 @@
               "quality": "verified",
               "unit": "bpm",
               "value": 111.59130987594216
+            },
+            {
+              "date": "2026-08-14",
+              "quality": "verified",
+              "unit": "bpm",
+              "value": 114.06457829507868
+            },
+            {
+              "date": "2026-08-21",
+              "quality": "verified",
+              "unit": "bpm",
+              "value": 110.95716333903249
             }
           ]
         },
@@ -19073,6 +19201,12 @@
               "quality": "verified",
               "unit": "bpm",
               "value": 106.13029674206813
+            },
+            {
+              "date": "2026-08-22",
+              "quality": "verified",
+              "unit": "bpm",
+              "value": 103.19368566073274
             }
           ]
         },
@@ -19185,6 +19319,18 @@
               "quality": "verified",
               "unit": "ms",
               "value": 32.503528234869485
+            },
+            {
+              "date": "2026-08-14",
+              "quality": "verified",
+              "unit": "ms",
+              "value": 25.63469624984588
+            },
+            {
+              "date": "2026-08-21",
+              "quality": "verified",
+              "unit": "ms",
+              "value": 47.82505075480867
             }
           ]
         },
@@ -19250,6 +19396,12 @@
               "quality": "verified",
               "unit": "ms",
               "value": 16.59428719813624
+            },
+            {
+              "date": "2026-08-22",
+              "quality": "verified",
+              "unit": "ms",
+              "value": 19.85078142328225
             }
           ]
         },
@@ -19283,11 +19435,11 @@
   "repeatability": [],
   "sample_counts": {
     "ENS": 8,
-    "FNS": 174,
-    "SNS": 187,
+    "FNS": 176,
+    "SNS": 188,
     "XMS": 1,
     "XNS": 2,
-    "source_unspecified": 220
+    "source_unspecified": 221
   },
   "series": [
     {
@@ -20393,6 +20545,12 @@
               "quality": "verified",
               "unit": "miles",
               "value": 11.090481587528831
+            },
+            {
+              "date": "2026-08-21",
+              "quality": "verified",
+              "unit": "miles",
+              "value": 11.5813026922771
             }
           ]
         },
@@ -21520,6 +21678,12 @@
               "quality": "verified",
               "unit": "miles",
               "value": 10.989695180147937
+            },
+            {
+              "date": "2026-08-22",
+              "quality": "verified",
+              "unit": "miles",
+              "value": 11.773430664916885
             }
           ]
         },
@@ -23918,6 +24082,18 @@
               "quality": "verified",
               "unit": "s",
               "value": 10811.0
+            },
+            {
+              "date": "2026-08-14",
+              "quality": "verified",
+              "unit": "s",
+              "value": 10472.0
+            },
+            {
+              "date": "2026-08-21",
+              "quality": "verified",
+              "unit": "s",
+              "value": 10543.0
             }
           ]
         },
@@ -25009,6 +25185,12 @@
               "quality": "verified",
               "unit": "s",
               "value": 11251.0
+            },
+            {
+              "date": "2026-08-22",
+              "quality": "verified",
+              "unit": "s",
+              "value": 9954.0
             }
           ]
         },
@@ -26331,6 +26513,12 @@
               "quality": "verified",
               "unit": "s",
               "value": 10859.0
+            },
+            {
+              "date": "2026-08-15",
+              "quality": "verified",
+              "unit": "s",
+              "value": 7440.0
             }
           ]
         }
@@ -26433,6 +26621,18 @@
               "quality": "verified",
               "unit": "bpm",
               "value": 111.59130987594216
+            },
+            {
+              "date": "2026-08-14",
+              "quality": "verified",
+              "unit": "bpm",
+              "value": 114.06457829507868
+            },
+            {
+              "date": "2026-08-21",
+              "quality": "verified",
+              "unit": "bpm",
+              "value": 110.95716333903249
             }
           ]
         },
@@ -26498,6 +26698,12 @@
               "quality": "verified",
               "unit": "bpm",
               "value": 106.13029674206813
+            },
+            {
+              "date": "2026-08-22",
+              "quality": "verified",
+              "unit": "bpm",
+              "value": 103.19368566073274
             }
           ]
         },
@@ -26612,6 +26818,18 @@
               "quality": "verified",
               "unit": "ms",
               "value": 32.503528234869485
+            },
+            {
+              "date": "2026-08-14",
+              "quality": "verified",
+              "unit": "ms",
+              "value": 25.63469624984588
+            },
+            {
+              "date": "2026-08-21",
+              "quality": "verified",
+              "unit": "ms",
+              "value": 47.82505075480867
             }
           ]
         },
@@ -26677,6 +26895,12 @@
               "quality": "verified",
               "unit": "ms",
               "value": 16.59428719813624
+            },
+            {
+              "date": "2026-08-22",
+              "quality": "verified",
+              "unit": "ms",
+              "value": 19.85078142328225
             }
           ]
         },

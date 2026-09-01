@@ -32,6 +32,29 @@
       "formula_version": "kubios_rri_time_domain_metrics.v1",
       "interpretation": "greater mean episodic session heart rate",
       "is_duration_normalized": false,
+      "mall_value": 71.33724362534142,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 11.87214771758309,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 83.2093913429245,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-10",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 3.9476562138255105,
+      "walk_value": 75.28489983916693
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
       "mall_value": 67.48970220612135,
       "metric_name": "mean_hr_bpm",
       "metric_scope_count": 1,
@@ -68,6 +91,75 @@
       "unit": "bpm",
       "walk_distance_from_mall_numeric": 0.5669566759197835,
       "walk_value": 69.8177402830654
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 73.80887308794392,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 21.16134246194933,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 94.97021554989325,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-26",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 3.724304375030343,
+      "walk_value": 70.08456871291358
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 80.07374489220312,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 2.773094429188376,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 82.8468393213915,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-18",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 16.395359100922455,
+      "walk_value": 63.67838579128067
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 69.95535369703076,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 25.952157684977934,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 95.90751138200869,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-27",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 5.53674874762396,
+      "walk_value": 75.49210244465472
     },
     {
       "clinical_recovery_claim": false,
@@ -170,6 +262,29 @@
       "formula_version": "kubios_rri_time_domain_metrics.v1",
       "interpretation": "greater mean episodic session heart rate",
       "is_duration_normalized": false,
+      "mall_value": 71.54423768990648,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 12.026061023622958,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 83.57029871352944,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-17",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 2.2795626741645094,
+      "walk_value": 69.26467501574197
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
       "mall_value": 74.71837852267747,
       "metric_name": "mean_hr_bpm",
       "metric_scope_count": 1,
@@ -183,6 +298,75 @@
       "unit": "bpm",
       "walk_distance_from_mall_numeric": 1.9786802117604765,
       "walk_value": 76.69705873443795
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 75.27793662694363,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 27.019853177689484,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 102.29778980463311,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-20",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 1.8773681132564661,
+      "walk_value": 73.40056851368716
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 70.08456871291358,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 10.87010583402028,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 80.95467454693386,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-16",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 1.1291742337173076,
+      "walk_value": 68.95539447919627
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 64.00539964435035,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 19.505709154234395,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 83.51110879858474,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-09",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 2.9527438723280284,
+      "walk_value": 66.95814351667838
     },
     {
       "clinical_recovery_claim": false,
@@ -331,6 +515,52 @@
       "formula_version": "kubios_rri_time_domain_metrics.v1",
       "interpretation": "greater mean episodic session heart rate",
       "is_duration_normalized": false,
+      "mall_value": 67.73688190739637,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 24.366970021632525,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 92.10385192902889,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-13",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 5.3153014445650655,
+      "walk_value": 73.05218335196143
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 71.29330848823645,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 21.658178982446188,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 92.95148747068264,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-23",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 0.17129745206231917,
+      "walk_value": 71.12201103617413
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
       "mall_value": 78.03068437669926,
       "metric_name": "mean_hr_bpm",
       "metric_scope_count": 1,
@@ -344,6 +574,29 @@
       "unit": "bpm",
       "walk_distance_from_mall_numeric": 0.8848289180312179,
       "walk_value": 77.14585545866804
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 67.63013167305266,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 21.459970154604576,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 89.09010182765724,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-19",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 2.3874037469439315,
+      "walk_value": 70.01753541999659
     },
     {
       "clinical_recovery_claim": false,
@@ -492,6 +745,75 @@
       "formula_version": "kubios_rri_time_domain_metrics.v1",
       "interpretation": "greater mean episodic session heart rate",
       "is_duration_normalized": false,
+      "mall_value": 62.3120156863818,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 37.27200874560094,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 99.58402443198274,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-12",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 10.388457116521224,
+      "walk_value": 72.70047280290302
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 70.2154210288888,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 10.680625976855765,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 80.89604700574456,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-11",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 5.573683950043133,
+      "walk_value": 64.64173707884567
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 83.2230670265522,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 9.790568430490467,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 93.01363545704267,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-24",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 10.238097308574595,
+      "walk_value": 72.9849697179776
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
       "mall_value": 68.7755283522134,
       "metric_name": "mean_hr_bpm",
       "metric_scope_count": 1,
@@ -505,6 +827,29 @@
       "unit": "bpm",
       "walk_distance_from_mall_numeric": 6.738913784845323,
       "walk_value": 75.51444213705872
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "mall_value": 78.14187218641102,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 14.330478866032792,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 92.47235105244381,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-25",
+      "unit": "bpm",
+      "walk_distance_from_mall_numeric": 9.718859712011465,
+      "walk_value": 68.42301247439956
     },
     {
       "clinical_recovery_claim": false,
@@ -607,6 +952,29 @@
       "formula_version": "kubios_rri_time_domain_metrics.v1",
       "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
       "is_duration_normalized": false,
+      "mall_value": 17.035824971700272,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 15.601541258107623,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 32.637366229807895,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-10",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 46.5455205629768,
+      "walk_value": 63.58134553467707
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
       "mall_value": 34.666308667581056,
       "metric_name": "rmssd_ms",
       "metric_scope_count": 1,
@@ -643,6 +1011,75 @@
       "unit": "ms",
       "walk_distance_from_mall_numeric": 0.3899909091221616,
       "walk_value": 15.796819601957374
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 20.102854746189546,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 9.618950621010377,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 29.721805367199924,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-26",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 0.041844650122634164,
+      "walk_value": 20.061010096066912
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 29.773270788235592,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 7.350403176967511,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 37.1236739652031,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-18",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 18.167276481351898,
+      "walk_value": 47.94054726958749
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 23.053040210539752,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 2.6590168430983034,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 20.39402336744145,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-27",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 16.49352650803291,
+      "walk_value": 39.54656671857266
     },
     {
       "clinical_recovery_claim": false,
@@ -745,6 +1182,29 @@
       "formula_version": "kubios_rri_time_domain_metrics.v1",
       "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
       "is_duration_normalized": false,
+      "mall_value": 18.68624161192507,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 19.247902243881043,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 37.93414385580611,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-17",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 24.676929868998442,
+      "walk_value": 43.36317148092351
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
       "mall_value": 16.92949491760276,
       "metric_name": "rmssd_ms",
       "metric_scope_count": 1,
@@ -758,6 +1218,75 @@
       "unit": "ms",
       "walk_distance_from_mall_numeric": 6.806933884062669,
       "walk_value": 23.73642880166543
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 21.249427585605567,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 8.867974520228856,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 30.117402105834422,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-20",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 38.71317157313955,
+      "walk_value": 59.962599158745114
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 31.488290745337114,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 1.8473121296933428,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 29.64097861564377,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-16",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 11.972210601102585,
+      "walk_value": 19.51608014423453
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 21.389734439793056,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 26.622936249959142,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 48.0126706897522,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-09",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 4.460015463525771,
+      "walk_value": 16.929718976267285
     },
     {
       "clinical_recovery_claim": false,
@@ -906,6 +1435,52 @@
       "formula_version": "kubios_rri_time_domain_metrics.v1",
       "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
       "is_duration_normalized": false,
+      "mall_value": 18.412845834671625,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 19.09373286417645,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 37.506578698848074,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-13",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 7.268170283453774,
+      "walk_value": 25.6810161181254
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 18.126562799150992,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 2.2456546188159834,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 20.372217417966976,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-23",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 0.7054640722892493,
+      "walk_value": 17.421098726861743
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
       "mall_value": 32.44325382779772,
       "metric_name": "rmssd_ms",
       "metric_scope_count": 1,
@@ -919,6 +1494,29 @@
       "unit": "ms",
       "walk_distance_from_mall_numeric": 2.637700530282718,
       "walk_value": 29.805553297515
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 21.02255363161264,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 31.082987207387742,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 52.10554083900038,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-19",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 20.019473608766216,
+      "walk_value": 41.04202724037886
     },
     {
       "clinical_recovery_claim": false,
@@ -1067,6 +1665,75 @@
       "formula_version": "kubios_rri_time_domain_metrics.v1",
       "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
       "is_duration_normalized": false,
+      "mall_value": 23.781112414126465,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 2.540038970013498,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 21.241073444112967,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-12",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 243.41816190446602,
+      "walk_value": 267.1992743185925
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 31.584954470678884,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 3.700010621749513,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 27.88494384892937,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-11",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 20.603748466697457,
+      "walk_value": 52.18870293737634
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 33.631373494696405,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 6.448410305624844,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 27.18296318907156,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-24",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 8.671829508901393,
+      "walk_value": 24.959543985795012
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
       "mall_value": 16.85094923274939,
       "metric_name": "rmssd_ms",
       "metric_scope_count": 1,
@@ -1080,6 +1747,29 @@
       "unit": "ms",
       "walk_distance_from_mall_numeric": 2.9030516627260923,
       "walk_value": 19.75400089547548
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "mall_value": 38.24512175736004,
+      "metric_name": "rmssd_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 11.70509589126539,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 26.54002586609465,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-25",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 14.565239111847138,
+      "walk_value": 23.6798826455129
     },
     {
       "clinical_recovery_claim": false,
@@ -1182,6 +1872,29 @@
       "formula_version": "kubios_rri_time_domain_metrics.v1",
       "interpretation": "session SDNN is episodic autonomic context",
       "is_duration_normalized": false,
+      "mall_value": 24.353378355502894,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 45.64173093507948,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 69.99510929058238,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-10",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 44.66670795890842,
+      "walk_value": 69.02008631441132
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
       "mall_value": 36.14510687302808,
       "metric_name": "sdnn_ms",
       "metric_scope_count": 1,
@@ -1218,6 +1931,75 @@
       "unit": "ms",
       "walk_distance_from_mall_numeric": 32.802871524542034,
       "walk_value": 64.66054209607888
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 27.276063800113164,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 34.357316753577415,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 61.63338055369058,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-26",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 24.59701962157549,
+      "walk_value": 51.873083421688655
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 58.25931381222212,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 20.886929652514098,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 79.14624346473622,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-18",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 14.378997851678179,
+      "walk_value": 72.6383116639003
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 58.886171442004006,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 4.579906893261821,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 63.46607833526583,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-27",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 5.488777760459236,
+      "walk_value": 53.39739368154477
     },
     {
       "clinical_recovery_claim": false,
@@ -1320,6 +2102,29 @@
       "formula_version": "kubios_rri_time_domain_metrics.v1",
       "interpretation": "session SDNN is episodic autonomic context",
       "is_duration_normalized": false,
+      "mall_value": 26.919451997003613,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 29.55084725353059,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 56.470299250534204,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-17",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 49.945974870779885,
+      "walk_value": 76.8654268677835
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
       "mall_value": 26.311451270223106,
       "metric_name": "sdnn_ms",
       "metric_scope_count": 1,
@@ -1333,6 +2138,75 @@
       "unit": "ms",
       "walk_distance_from_mall_numeric": 9.759449788549357,
       "walk_value": 36.07090105877246
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 33.681020151100086,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 28.90885879169872,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 62.589878942798805,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-20",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 39.41585110023725,
+      "walk_value": 73.09687125133733
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 34.738422649326864,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 29.66403817808684,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 64.4024608274137,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-16",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 32.52761708330074,
+      "walk_value": 67.2660397326276
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 35.95148996017461,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 31.243464777952724,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 67.19495473812734,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-09",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 20.74949295625504,
+      "walk_value": 56.70098291642965
     },
     {
       "clinical_recovery_claim": false,
@@ -1481,6 +2355,52 @@
       "formula_version": "kubios_rri_time_domain_metrics.v1",
       "interpretation": "session SDNN is episodic autonomic context",
       "is_duration_normalized": false,
+      "mall_value": 30.471060870135283,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 33.01651016946255,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 63.48757103959783,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-13",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 26.944017068148185,
+      "walk_value": 57.41507793828347
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 39.883412683366345,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 28.3730683802454,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 68.25648106361174,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-23",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 28.737267641333446,
+      "walk_value": 68.62068032469979
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
       "mall_value": 32.130154018145454,
       "metric_name": "sdnn_ms",
       "metric_scope_count": 1,
@@ -1494,6 +2414,29 @@
       "unit": "ms",
       "walk_distance_from_mall_numeric": 13.435974331937402,
       "walk_value": 45.566128350082856
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 45.97816332485504,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 10.850231744020924,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 56.82839506887596,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-19",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 18.39816254808914,
+      "walk_value": 64.37632587294418
     },
     {
       "clinical_recovery_claim": false,
@@ -1642,6 +2585,75 @@
       "formula_version": "kubios_rri_time_domain_metrics.v1",
       "interpretation": "session SDNN is episodic autonomic context",
       "is_duration_normalized": false,
+      "mall_value": 48.031491436080486,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 13.54637446798931,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 61.577865904069796,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-12",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 147.30184850960114,
+      "walk_value": 195.33333994568162
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 32.925136229991175,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 27.93098406411091,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 60.856120294102084,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-11",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 43.983003181510036,
+      "walk_value": 76.90813941150121
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 30.147619897667546,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 21.447530442366876,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 51.59515034003442,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-24",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 40.47726017366363,
+      "walk_value": 70.62488007133118
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
       "mall_value": 40.10366589417295,
       "metric_name": "sdnn_ms",
       "metric_scope_count": 1,
@@ -1655,6 +2667,29 @@
       "unit": "ms",
       "walk_distance_from_mall_numeric": 19.989615760268258,
       "walk_value": 60.093281654441206
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_rri_time_domain_metrics.v1",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "mall_value": 55.88722788256116,
+      "metric_name": "sdnn_ms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 29.601390813799796,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 85.48861869636096,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-25",
+      "unit": "ms",
+      "walk_distance_from_mall_numeric": 20.02547763376745,
+      "walk_value": 75.91270551632861
     },
     {
       "clinical_recovery_claim": false,
@@ -1757,6 +2792,29 @@
       "formula_version": "kubios_acc_session_metrics.v1",
       "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
       "is_duration_normalized": false,
+      "mall_value": 0.05322097410814261,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.06382029768257562,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.11704127179071823,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-10",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.08632600124531342,
+      "walk_value": 0.13954697535345603
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
       "mall_value": 0.0502830247254234,
       "metric_name": "vertical_dynamic_g_rms",
       "metric_scope_count": 1,
@@ -1793,6 +2851,75 @@
       "unit": "g",
       "walk_distance_from_mall_numeric": 0.08886976951945938,
       "walk_value": 0.14251533619276946
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.05725484469821268,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.09065036740304175,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.14790521210125443,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-26",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.09086967697598924,
+      "walk_value": 0.14812452167420193
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.07486277945233788,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.06059615197090901,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.1354589314232469,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-18",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.058191025574781424,
+      "walk_value": 0.1330538050271193
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.054112299322181825,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.0925254042067384,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.14663770352892022,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-27",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.1058036373075014,
+      "walk_value": 0.15991593662968323
     },
     {
       "clinical_recovery_claim": false,
@@ -1895,6 +3022,29 @@
       "formula_version": "kubios_acc_session_metrics.v1",
       "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
       "is_duration_normalized": false,
+      "mall_value": 0.05184338470859939,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.07938526324839917,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.13122864795699857,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-17",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.08882829810816117,
+      "walk_value": 0.14067168281676057
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
       "mall_value": 0.04922681480139578,
       "metric_name": "vertical_dynamic_g_rms",
       "metric_scope_count": 1,
@@ -1908,6 +3058,75 @@
       "unit": "g",
       "walk_distance_from_mall_numeric": 0.08606217173926882,
       "walk_value": 0.1352889865406646
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.05549310522830183,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.10917566448962263,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.16466876971792446,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-20",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.08271296564444763,
+      "walk_value": 0.13820607087274947
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.05278643352854709,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.07346867592146111,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.1262551094500082,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-16",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.0820540074978191,
+      "walk_value": 0.1348404410263662
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.050865622767740135,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.07549681701735649,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.12636243978509662,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-09",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.08298920080980644,
+      "walk_value": 0.13385482357754658
     },
     {
       "clinical_recovery_claim": false,
@@ -2033,6 +3252,52 @@
       "formula_version": "kubios_acc_session_metrics.v1",
       "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
       "is_duration_normalized": false,
+      "mall_value": 0.05329957377383272,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.09626178188527619,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.1495613556591089,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-13",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.08657919235751653,
+      "walk_value": 0.13987876613134925
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.054104775413342604,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.09034483440218671,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.14444960981552932,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-23",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.08557232775587309,
+      "walk_value": 0.1396771031692157
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
       "mall_value": 0.05167310724689018,
       "metric_name": "vertical_dynamic_g_rms",
       "metric_scope_count": 1,
@@ -2046,6 +3311,29 @@
       "unit": "g",
       "walk_distance_from_mall_numeric": 0.0915097884590445,
       "walk_value": 0.14318289570593468
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.056057029667639056,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.06553499606754856,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.12159202573518761,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-19",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.08100279243546407,
+      "walk_value": 0.13705982210310313
     },
     {
       "clinical_recovery_claim": false,
@@ -2194,6 +3482,75 @@
       "formula_version": "kubios_acc_session_metrics.v1",
       "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
       "is_duration_normalized": false,
+      "mall_value": 0.051521503041621806,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.10726016731954158,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.1587816703611634,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-12",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.08409437444269971,
+      "walk_value": 0.13561587748432152
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.05214651922621141,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.08156189962371829,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.1337084188499297,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-11",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.0858209458643584,
+      "walk_value": 0.1379674650905698
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.05713230251085393,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.08097584893683751,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.13810815144769145,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-24",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.08493185581746512,
+      "walk_value": 0.14206415832831906
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
       "mall_value": 0.04987327914898757,
       "metric_name": "vertical_dynamic_g_rms",
       "metric_scope_count": 1,
@@ -2207,6 +3564,29 @@
       "unit": "g",
       "walk_distance_from_mall_numeric": 0.09159674257501821,
       "walk_value": 0.14147002172400577
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "duration_scope_count": 0,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "mall_value": 0.055749636618892824,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.09394317646413516,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 0.14969281308302798,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-25",
+      "unit": "g",
+      "walk_distance_from_mall_numeric": 0.08515330428577036,
+      "walk_value": 0.14090294090466318
     },
     {
       "clinical_recovery_claim": false,
@@ -2309,6 +3689,29 @@
       "formula_version": "kubios_acc_session_metrics.v1",
       "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
       "is_duration_normalized": true,
+      "mall_value": 25.8133064269553,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 6.729990918973627,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 32.54329734592893,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-10",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 1.9334347276070822,
+      "walk_value": 27.746741154562383
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
       "mall_value": 25.57567235014941,
       "metric_name": "shock_spike_rate_per_min",
       "metric_scope_count": 1,
@@ -2345,6 +3748,75 @@
       "unit": "count/min",
       "walk_distance_from_mall_numeric": 4.584860526990589,
       "walk_value": 30.22184621169393
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 26.03428494297091,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.09633617901463154,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 26.13062112198554,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-26",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 4.9251611500063355,
+      "walk_value": 30.959446092977245
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 26.519337016574585,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.6307525061765418,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 27.150089522751127,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-18",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 2.4434995401186264,
+      "walk_value": 28.96283655669321
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 25.480050176098814,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 1.3670811712048483,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 24.112969004893966,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-27",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 3.278727188626508,
+      "walk_value": 28.758777364725322
     },
     {
       "clinical_recovery_claim": false,
@@ -2447,6 +3919,29 @@
       "formula_version": "kubios_acc_session_metrics.v1",
       "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
       "is_duration_normalized": true,
+      "mall_value": 26.957648525407603,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 1.9714615801730915,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 28.929110105580694,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-17",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 2.415101142964577,
+      "walk_value": 29.37274966837218
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
       "mall_value": 23.542569155412103,
       "metric_name": "shock_spike_rate_per_min",
       "metric_scope_count": 1,
@@ -2460,6 +3955,75 @@
       "unit": "count/min",
       "walk_distance_from_mall_numeric": 5.885076632924829,
       "walk_value": 29.427645788336932
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 29.20088341420928,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 2.1927219021817876,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 27.008161512027492,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-20",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 1.214732231289485,
+      "walk_value": 27.986151182919794
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 26.58821196929787,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 2.0212358018265455,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 28.609447771124415,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-16",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 3.9256073592126093,
+      "walk_value": 30.51381932851048
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 25.308324768756425,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.9369885681476973,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 26.245313336904122,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-09",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 1.7272986409127888,
+      "walk_value": 27.035623409669213
     },
     {
       "clinical_recovery_claim": false,
@@ -2585,6 +4149,52 @@
       "formula_version": "kubios_acc_session_metrics.v1",
       "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
       "is_duration_normalized": true,
+      "mall_value": 28.22901370533529,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 2.2566493245778716,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 25.97236438075742,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-13",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 1.1968695511931244,
+      "walk_value": 29.425883256528415
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 25.845780097174735,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.9241178931740528,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 26.769897990348788,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-23",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 2.369442999938123,
+      "walk_value": 28.215223097112858
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
       "mall_value": 24.98285910181694,
       "metric_name": "shock_spike_rate_per_min",
       "metric_scope_count": 1,
@@ -2598,6 +4208,29 @@
       "unit": "count/min",
       "walk_distance_from_mall_numeric": 4.094555404007938,
       "walk_value": 29.077414505824876
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 28.835899486769318,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 4.410917964719996,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 33.246817451489314,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-19",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 0.6108393350017849,
+      "walk_value": 28.225060151767533
     },
     {
       "clinical_recovery_claim": false,
@@ -2746,6 +4379,75 @@
       "formula_version": "kubios_acc_session_metrics.v1",
       "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
       "is_duration_normalized": true,
+      "mall_value": 23.848581427321587,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 3.3962632607494108,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 27.244844688070998,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-12",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 6.325411246671088,
+      "walk_value": 30.173992673992675
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 26.93456263952915,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.31894814569276875,
+      "pt_is_numerically_closer_to_mall": true,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 26.615614493836382,
+      "return_toward_mall_classification": "pt_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-11",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 5.896591425280402,
+      "walk_value": 32.83115406480955
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 27.89055021949368,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 0.8173947641510786,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 27.0731554553426,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-24",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 0.36533044602553844,
+      "walk_value": 28.255880665519218
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
       "mall_value": 24.027950740279508,
       "metric_name": "shock_spike_rate_per_min",
       "metric_scope_count": 1,
@@ -2759,6 +4461,29 @@
       "unit": "count/min",
       "walk_distance_from_mall_numeric": 4.2951002972976084,
       "walk_value": 28.323051037577116
+    },
+    {
+      "clinical_recovery_claim": false,
+      "comparison_contract_version": "triplet_return_toward_mall_descriptive.v2",
+      "descriptive_comparison_label": "return toward the Mall profile",
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "duration_scope_count": 1,
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "mall_value": 30.02064865249742,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope_count": 1,
+      "pain_recovery_claim": false,
+      "pt_distance_from_mall_numeric": 4.106875014337671,
+      "pt_is_numerically_closer_to_mall": false,
+      "pt_state_label": "post-walk PT skating state",
+      "pt_value": 25.91377363815975,
+      "return_toward_mall_classification": "pt_not_closer_to_mall_than_walk",
+      "sequence_date_local": "2026-08-25",
+      "unit": "count/min",
+      "walk_distance_from_mall_numeric": 2.1768119501589354,
+      "walk_value": 27.843836702338486
     },
     {
       "clinical_recovery_claim": false,
@@ -2833,7 +4558,7 @@
   "alt_text": "Stage-value panels compare Mall, Walk, and PT across accepted dates. The accessible table includes the canonical closer-to-Mall classification for each available metric.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "4ec12bf4e0b62ae77f760203f9dfe717ee3f232690d0e1d43e8e6e9fe14ac40d",
+  "content_hash": "2714a089eb3f9597a298bd0b4dbe89c12022cd348aeb5e6cde1f3bdf6e948024",
   "coverage": {},
   "data_through_date": "2026-08-27",
   "destination": "handicapskater.com",
@@ -2871,6 +4596,11 @@
               "value": 71.96859649224277
             },
             {
+              "date": "2026-08-10",
+              "unit": "bpm",
+              "value": 71.33724362534142
+            },
+            {
               "date": "2026-08-06",
               "unit": "bpm",
               "value": 67.48970220612135
@@ -2879,6 +4609,21 @@
               "date": "2026-07-27",
               "unit": "bpm",
               "value": 70.38469695898519
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "bpm",
+              "value": 73.80887308794392
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "bpm",
+              "value": 80.07374489220312
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "bpm",
+              "value": 69.95535369703076
             },
             {
               "date": "2026-07-19",
@@ -2901,9 +4646,29 @@
               "value": 77.27550796513158
             },
             {
+              "date": "2026-08-17",
+              "unit": "bpm",
+              "value": 71.54423768990648
+            },
+            {
               "date": "2026-07-15",
               "unit": "bpm",
               "value": 74.71837852267747
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "bpm",
+              "value": 75.27793662694363
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "bpm",
+              "value": 70.08456871291358
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "bpm",
+              "value": 64.00539964435035
             },
             {
               "date": "2026-08-05",
@@ -2936,9 +4701,24 @@
               "value": 70.44930461759796
             },
             {
+              "date": "2026-08-13",
+              "unit": "bpm",
+              "value": 67.73688190739637
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "bpm",
+              "value": 71.29330848823645
+            },
+            {
               "date": "2026-07-16",
               "unit": "bpm",
               "value": 78.03068437669926
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "bpm",
+              "value": 67.63013167305266
             },
             {
               "date": "2026-07-06",
@@ -2971,9 +4751,29 @@
               "value": 70.02696355140141
             },
             {
+              "date": "2026-08-12",
+              "unit": "bpm",
+              "value": 62.3120156863818
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "bpm",
+              "value": 70.2154210288888
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "bpm",
+              "value": 83.2230670265522
+            },
+            {
               "date": "2026-07-26",
               "unit": "bpm",
               "value": 68.7755283522134
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "bpm",
+              "value": 78.14187218641102
             },
             {
               "date": "2026-07-30",
@@ -3001,6 +4801,11 @@
               "value": 76.36936682117562
             },
             {
+              "date": "2026-08-10",
+              "unit": "bpm",
+              "value": 75.28489983916693
+            },
+            {
               "date": "2026-08-06",
               "unit": "bpm",
               "value": 77.03591539298728
@@ -3009,6 +4814,21 @@
               "date": "2026-07-27",
               "unit": "bpm",
               "value": 69.8177402830654
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "bpm",
+              "value": 70.08456871291358
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "bpm",
+              "value": 63.67838579128067
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "bpm",
+              "value": 75.49210244465472
             },
             {
               "date": "2026-07-19",
@@ -3031,9 +4851,29 @@
               "value": 72.70375839981824
             },
             {
+              "date": "2026-08-17",
+              "unit": "bpm",
+              "value": 69.26467501574197
+            },
+            {
               "date": "2026-07-15",
               "unit": "bpm",
               "value": 76.69705873443795
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "bpm",
+              "value": 73.40056851368716
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "bpm",
+              "value": 68.95539447919627
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "bpm",
+              "value": 66.95814351667838
             },
             {
               "date": "2026-08-05",
@@ -3066,9 +4906,24 @@
               "value": 76.14680777024952
             },
             {
+              "date": "2026-08-13",
+              "unit": "bpm",
+              "value": 73.05218335196143
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "bpm",
+              "value": 71.12201103617413
+            },
+            {
               "date": "2026-07-16",
               "unit": "bpm",
               "value": 77.14585545866804
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "bpm",
+              "value": 70.01753541999659
             },
             {
               "date": "2026-07-06",
@@ -3101,9 +4956,29 @@
               "value": 65.66574408216282
             },
             {
+              "date": "2026-08-12",
+              "unit": "bpm",
+              "value": 72.70047280290302
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "bpm",
+              "value": 64.64173707884567
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "bpm",
+              "value": 72.9849697179776
+            },
+            {
               "date": "2026-07-26",
               "unit": "bpm",
               "value": 75.51444213705872
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "bpm",
+              "value": 68.42301247439956
             },
             {
               "date": "2026-07-30",
@@ -3131,6 +5006,11 @@
               "value": 85.63267836931018
             },
             {
+              "date": "2026-08-10",
+              "unit": "bpm",
+              "value": 83.2093913429245
+            },
+            {
               "date": "2026-08-06",
               "unit": "bpm",
               "value": 93.92235239611416
@@ -3139,6 +5019,21 @@
               "date": "2026-07-27",
               "unit": "bpm",
               "value": 85.99343728902463
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "bpm",
+              "value": 94.97021554989325
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "bpm",
+              "value": 82.8468393213915
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "bpm",
+              "value": 95.90751138200869
             },
             {
               "date": "2026-07-19",
@@ -3161,9 +5056,29 @@
               "value": 91.98706981420982
             },
             {
+              "date": "2026-08-17",
+              "unit": "bpm",
+              "value": 83.57029871352944
+            },
+            {
               "date": "2026-07-15",
               "unit": "bpm",
               "value": 100.29147209076378
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "bpm",
+              "value": 102.29778980463311
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "bpm",
+              "value": 80.95467454693386
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "bpm",
+              "value": 83.51110879858474
             },
             {
               "date": "2026-08-05",
@@ -3196,9 +5111,24 @@
               "value": 96.90930640395146
             },
             {
+              "date": "2026-08-13",
+              "unit": "bpm",
+              "value": 92.10385192902889
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "bpm",
+              "value": 92.95148747068264
+            },
+            {
               "date": "2026-07-16",
               "unit": "bpm",
               "value": 97.20574701153133
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "bpm",
+              "value": 89.09010182765724
             },
             {
               "date": "2026-07-06",
@@ -3231,9 +5161,29 @@
               "value": 81.25415763763387
             },
             {
+              "date": "2026-08-12",
+              "unit": "bpm",
+              "value": 99.58402443198274
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "bpm",
+              "value": 80.89604700574456
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "bpm",
+              "value": 93.01363545704267
+            },
+            {
               "date": "2026-07-26",
               "unit": "bpm",
               "value": 92.02113344665065
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "bpm",
+              "value": 92.47235105244381
             },
             {
               "date": "2026-07-30",
@@ -3267,6 +5217,11 @@
               "value": 19.372024279236403
             },
             {
+              "date": "2026-08-10",
+              "unit": "ms",
+              "value": 17.035824971700272
+            },
+            {
               "date": "2026-08-06",
               "unit": "ms",
               "value": 34.666308667581056
@@ -3275,6 +5230,21 @@
               "date": "2026-07-27",
               "unit": "ms",
               "value": 15.406828692835212
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "ms",
+              "value": 20.102854746189546
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "ms",
+              "value": 29.773270788235592
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "ms",
+              "value": 23.053040210539752
             },
             {
               "date": "2026-07-19",
@@ -3297,9 +5267,29 @@
               "value": 22.837881879860596
             },
             {
+              "date": "2026-08-17",
+              "unit": "ms",
+              "value": 18.68624161192507
+            },
+            {
               "date": "2026-07-15",
               "unit": "ms",
               "value": 16.92949491760276
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "ms",
+              "value": 21.249427585605567
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "ms",
+              "value": 31.488290745337114
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "ms",
+              "value": 21.389734439793056
             },
             {
               "date": "2026-08-05",
@@ -3332,9 +5322,24 @@
               "value": 16.339365601547872
             },
             {
+              "date": "2026-08-13",
+              "unit": "ms",
+              "value": 18.412845834671625
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "ms",
+              "value": 18.126562799150992
+            },
+            {
               "date": "2026-07-16",
               "unit": "ms",
               "value": 32.44325382779772
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "ms",
+              "value": 21.02255363161264
             },
             {
               "date": "2026-07-06",
@@ -3367,9 +5372,29 @@
               "value": 18.99616678284368
             },
             {
+              "date": "2026-08-12",
+              "unit": "ms",
+              "value": 23.781112414126465
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "ms",
+              "value": 31.584954470678884
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "ms",
+              "value": 33.631373494696405
+            },
+            {
               "date": "2026-07-26",
               "unit": "ms",
               "value": 16.85094923274939
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "ms",
+              "value": 38.24512175736004
             },
             {
               "date": "2026-07-30",
@@ -3397,6 +5422,11 @@
               "value": 41.8719910723581
             },
             {
+              "date": "2026-08-10",
+              "unit": "ms",
+              "value": 63.58134553467707
+            },
+            {
               "date": "2026-08-06",
               "unit": "ms",
               "value": 58.07098170563468
@@ -3405,6 +5435,21 @@
               "date": "2026-07-27",
               "unit": "ms",
               "value": 15.796819601957374
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "ms",
+              "value": 20.061010096066912
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "ms",
+              "value": 47.94054726958749
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "ms",
+              "value": 39.54656671857266
             },
             {
               "date": "2026-07-19",
@@ -3427,9 +5472,29 @@
               "value": 36.06055816847109
             },
             {
+              "date": "2026-08-17",
+              "unit": "ms",
+              "value": 43.36317148092351
+            },
+            {
               "date": "2026-07-15",
               "unit": "ms",
               "value": 23.73642880166543
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "ms",
+              "value": 59.962599158745114
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "ms",
+              "value": 19.51608014423453
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "ms",
+              "value": 16.929718976267285
             },
             {
               "date": "2026-08-05",
@@ -3462,9 +5527,24 @@
               "value": 19.884191267327374
             },
             {
+              "date": "2026-08-13",
+              "unit": "ms",
+              "value": 25.6810161181254
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "ms",
+              "value": 17.421098726861743
+            },
+            {
               "date": "2026-07-16",
               "unit": "ms",
               "value": 29.805553297515
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "ms",
+              "value": 41.04202724037886
             },
             {
               "date": "2026-07-06",
@@ -3497,9 +5577,29 @@
               "value": 24.643366541766838
             },
             {
+              "date": "2026-08-12",
+              "unit": "ms",
+              "value": 267.1992743185925
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "ms",
+              "value": 52.18870293737634
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "ms",
+              "value": 24.959543985795012
+            },
+            {
               "date": "2026-07-26",
               "unit": "ms",
               "value": 19.75400089547548
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "ms",
+              "value": 23.6798826455129
             },
             {
               "date": "2026-07-30",
@@ -3527,6 +5627,11 @@
               "value": 28.23469622183936
             },
             {
+              "date": "2026-08-10",
+              "unit": "ms",
+              "value": 32.637366229807895
+            },
+            {
               "date": "2026-08-06",
               "unit": "ms",
               "value": 41.300465111176365
@@ -3535,6 +5640,21 @@
               "date": "2026-07-27",
               "unit": "ms",
               "value": 36.07163830669125
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "ms",
+              "value": 29.721805367199924
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "ms",
+              "value": 37.1236739652031
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "ms",
+              "value": 20.39402336744145
             },
             {
               "date": "2026-07-19",
@@ -3557,9 +5677,29 @@
               "value": 32.87916211386847
             },
             {
+              "date": "2026-08-17",
+              "unit": "ms",
+              "value": 37.93414385580611
+            },
+            {
               "date": "2026-07-15",
               "unit": "ms",
               "value": 16.6875176497058
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "ms",
+              "value": 30.117402105834422
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "ms",
+              "value": 29.64097861564377
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "ms",
+              "value": 48.0126706897522
             },
             {
               "date": "2026-08-05",
@@ -3592,9 +5732,24 @@
               "value": 23.284104055366388
             },
             {
+              "date": "2026-08-13",
+              "unit": "ms",
+              "value": 37.506578698848074
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "ms",
+              "value": 20.372217417966976
+            },
+            {
               "date": "2026-07-16",
               "unit": "ms",
               "value": 15.700652943887956
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "ms",
+              "value": 52.10554083900038
             },
             {
               "date": "2026-07-06",
@@ -3627,9 +5782,29 @@
               "value": 28.72916599734412
             },
             {
+              "date": "2026-08-12",
+              "unit": "ms",
+              "value": 21.241073444112967
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "ms",
+              "value": 27.88494384892937
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "ms",
+              "value": 27.18296318907156
+            },
+            {
               "date": "2026-07-26",
               "unit": "ms",
               "value": 29.34069923934646
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "ms",
+              "value": 26.54002586609465
             },
             {
               "date": "2026-07-30",
@@ -3663,6 +5838,11 @@
               "value": 33.776250452153256
             },
             {
+              "date": "2026-08-10",
+              "unit": "ms",
+              "value": 24.353378355502894
+            },
+            {
               "date": "2026-08-06",
               "unit": "ms",
               "value": 36.14510687302808
@@ -3671,6 +5851,21 @@
               "date": "2026-07-27",
               "unit": "ms",
               "value": 31.85767057153685
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "ms",
+              "value": 27.276063800113164
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "ms",
+              "value": 58.25931381222212
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "ms",
+              "value": 58.886171442004006
             },
             {
               "date": "2026-07-19",
@@ -3693,9 +5888,29 @@
               "value": 31.870353697663056
             },
             {
+              "date": "2026-08-17",
+              "unit": "ms",
+              "value": 26.919451997003613
+            },
+            {
               "date": "2026-07-15",
               "unit": "ms",
               "value": 26.311451270223106
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "ms",
+              "value": 33.681020151100086
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "ms",
+              "value": 34.738422649326864
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "ms",
+              "value": 35.95148996017461
             },
             {
               "date": "2026-08-05",
@@ -3728,9 +5943,24 @@
               "value": 31.042478402981583
             },
             {
+              "date": "2026-08-13",
+              "unit": "ms",
+              "value": 30.471060870135283
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "ms",
+              "value": 39.883412683366345
+            },
+            {
               "date": "2026-07-16",
               "unit": "ms",
               "value": 32.130154018145454
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "ms",
+              "value": 45.97816332485504
             },
             {
               "date": "2026-07-06",
@@ -3763,9 +5993,29 @@
               "value": 28.3633384814957
             },
             {
+              "date": "2026-08-12",
+              "unit": "ms",
+              "value": 48.031491436080486
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "ms",
+              "value": 32.925136229991175
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "ms",
+              "value": 30.147619897667546
+            },
+            {
               "date": "2026-07-26",
               "unit": "ms",
               "value": 40.10366589417295
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "ms",
+              "value": 55.88722788256116
             },
             {
               "date": "2026-07-30",
@@ -3793,6 +6043,11 @@
               "value": 57.30385276662203
             },
             {
+              "date": "2026-08-10",
+              "unit": "ms",
+              "value": 69.02008631441132
+            },
+            {
               "date": "2026-08-06",
               "unit": "ms",
               "value": 49.6781715035928
@@ -3801,6 +6056,21 @@
               "date": "2026-07-27",
               "unit": "ms",
               "value": 64.66054209607888
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "ms",
+              "value": 51.873083421688655
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "ms",
+              "value": 72.6383116639003
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "ms",
+              "value": 53.39739368154477
             },
             {
               "date": "2026-07-19",
@@ -3823,9 +6093,29 @@
               "value": 62.495911062620465
             },
             {
+              "date": "2026-08-17",
+              "unit": "ms",
+              "value": 76.8654268677835
+            },
+            {
               "date": "2026-07-15",
               "unit": "ms",
               "value": 36.07090105877246
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "ms",
+              "value": 73.09687125133733
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "ms",
+              "value": 67.2660397326276
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "ms",
+              "value": 56.70098291642965
             },
             {
               "date": "2026-08-05",
@@ -3858,9 +6148,24 @@
               "value": 47.33890908192484
             },
             {
+              "date": "2026-08-13",
+              "unit": "ms",
+              "value": 57.41507793828347
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "ms",
+              "value": 68.62068032469979
+            },
+            {
               "date": "2026-07-16",
               "unit": "ms",
               "value": 45.566128350082856
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "ms",
+              "value": 64.37632587294418
             },
             {
               "date": "2026-07-06",
@@ -3893,9 +6198,29 @@
               "value": 74.51454946329241
             },
             {
+              "date": "2026-08-12",
+              "unit": "ms",
+              "value": 195.33333994568162
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "ms",
+              "value": 76.90813941150121
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "ms",
+              "value": 70.62488007133118
+            },
+            {
               "date": "2026-07-26",
               "unit": "ms",
               "value": 60.093281654441206
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "ms",
+              "value": 75.91270551632861
             },
             {
               "date": "2026-07-30",
@@ -3923,6 +6248,11 @@
               "value": 111.01605281010461
             },
             {
+              "date": "2026-08-10",
+              "unit": "ms",
+              "value": 69.99510929058238
+            },
+            {
               "date": "2026-08-06",
               "unit": "ms",
               "value": 58.75508811232312
@@ -3931,6 +6261,21 @@
               "date": "2026-07-27",
               "unit": "ms",
               "value": 67.30327401370667
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "ms",
+              "value": 61.63338055369058
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "ms",
+              "value": 79.14624346473622
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "ms",
+              "value": 63.46607833526583
             },
             {
               "date": "2026-07-19",
@@ -3953,9 +6298,29 @@
               "value": 56.638454264435424
             },
             {
+              "date": "2026-08-17",
+              "unit": "ms",
+              "value": 56.470299250534204
+            },
+            {
               "date": "2026-07-15",
               "unit": "ms",
               "value": 48.742666426673296
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "ms",
+              "value": 62.589878942798805
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "ms",
+              "value": 64.4024608274137
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "ms",
+              "value": 67.19495473812734
             },
             {
               "date": "2026-08-05",
@@ -3988,9 +6353,24 @@
               "value": 52.0627722411716
             },
             {
+              "date": "2026-08-13",
+              "unit": "ms",
+              "value": 63.48757103959783
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "ms",
+              "value": 68.25648106361174
+            },
+            {
               "date": "2026-07-16",
               "unit": "ms",
               "value": 61.8094458420923
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "ms",
+              "value": 56.82839506887596
             },
             {
               "date": "2026-07-06",
@@ -4023,9 +6403,29 @@
               "value": 66.84888969024573
             },
             {
+              "date": "2026-08-12",
+              "unit": "ms",
+              "value": 61.577865904069796
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "ms",
+              "value": 60.856120294102084
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "ms",
+              "value": 51.59515034003442
+            },
+            {
               "date": "2026-07-26",
               "unit": "ms",
               "value": 59.70428380676865
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "ms",
+              "value": 85.48861869636096
             },
             {
               "date": "2026-07-30",
@@ -4059,6 +6459,11 @@
               "value": 25.675068695835975
             },
             {
+              "date": "2026-08-10",
+              "unit": "count/min",
+              "value": 25.8133064269553
+            },
+            {
               "date": "2026-08-06",
               "unit": "count/min",
               "value": 25.57567235014941
@@ -4067,6 +6472,21 @@
               "date": "2026-07-27",
               "unit": "count/min",
               "value": 25.63698568470334
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "count/min",
+              "value": 26.03428494297091
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "count/min",
+              "value": 26.519337016574585
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "count/min",
+              "value": 25.480050176098814
             },
             {
               "date": "2026-07-19",
@@ -4089,9 +6509,29 @@
               "value": 28.15938022003341
             },
             {
+              "date": "2026-08-17",
+              "unit": "count/min",
+              "value": 26.957648525407603
+            },
+            {
               "date": "2026-07-15",
               "unit": "count/min",
               "value": 23.542569155412103
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "count/min",
+              "value": 29.20088341420928
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "count/min",
+              "value": 26.58821196929787
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "count/min",
+              "value": 25.308324768756425
             },
             {
               "date": "2026-07-23",
@@ -4119,9 +6559,24 @@
               "value": 25.22533977564918
             },
             {
+              "date": "2026-08-13",
+              "unit": "count/min",
+              "value": 28.22901370533529
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "count/min",
+              "value": 25.845780097174735
+            },
+            {
               "date": "2026-07-16",
               "unit": "count/min",
               "value": 24.98285910181694
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "count/min",
+              "value": 28.835899486769318
             },
             {
               "date": "2026-07-06",
@@ -4154,9 +6609,29 @@
               "value": 24.635251206024236
             },
             {
+              "date": "2026-08-12",
+              "unit": "count/min",
+              "value": 23.848581427321587
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "count/min",
+              "value": 26.93456263952915
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "count/min",
+              "value": 27.89055021949368
+            },
+            {
               "date": "2026-07-26",
               "unit": "count/min",
               "value": 24.027950740279508
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "count/min",
+              "value": 30.02064865249742
             },
             {
               "date": "2026-07-30",
@@ -4184,6 +6659,11 @@
               "value": 29.62390520350335
             },
             {
+              "date": "2026-08-10",
+              "unit": "count/min",
+              "value": 27.746741154562383
+            },
+            {
               "date": "2026-08-06",
               "unit": "count/min",
               "value": 28.0578898225957
@@ -4192,6 +6672,21 @@
               "date": "2026-07-27",
               "unit": "count/min",
               "value": 30.22184621169393
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "count/min",
+              "value": 30.959446092977245
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "count/min",
+              "value": 28.96283655669321
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "count/min",
+              "value": 28.758777364725322
             },
             {
               "date": "2026-07-19",
@@ -4214,9 +6709,29 @@
               "value": 30.114226375908615
             },
             {
+              "date": "2026-08-17",
+              "unit": "count/min",
+              "value": 29.37274966837218
+            },
+            {
               "date": "2026-07-15",
               "unit": "count/min",
               "value": 29.427645788336932
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "count/min",
+              "value": 27.986151182919794
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "count/min",
+              "value": 30.51381932851048
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "count/min",
+              "value": 27.035623409669213
             },
             {
               "date": "2026-07-23",
@@ -4244,9 +6759,24 @@
               "value": 29.986052998605295
             },
             {
+              "date": "2026-08-13",
+              "unit": "count/min",
+              "value": 29.425883256528415
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "count/min",
+              "value": 28.215223097112858
+            },
+            {
               "date": "2026-07-16",
               "unit": "count/min",
               "value": 29.077414505824876
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "count/min",
+              "value": 28.225060151767533
             },
             {
               "date": "2026-07-06",
@@ -4279,9 +6809,29 @@
               "value": 28.991092840013707
             },
             {
+              "date": "2026-08-12",
+              "unit": "count/min",
+              "value": 30.173992673992675
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "count/min",
+              "value": 32.83115406480955
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "count/min",
+              "value": 28.255880665519218
+            },
+            {
               "date": "2026-07-26",
               "unit": "count/min",
               "value": 28.323051037577116
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "count/min",
+              "value": 27.843836702338486
             },
             {
               "date": "2026-07-30",
@@ -4309,6 +6859,11 @@
               "value": 26.60823503713412
             },
             {
+              "date": "2026-08-10",
+              "unit": "count/min",
+              "value": 32.54329734592893
+            },
+            {
               "date": "2026-08-06",
               "unit": "count/min",
               "value": 26.469209585750278
@@ -4317,6 +6872,21 @@
               "date": "2026-07-27",
               "unit": "count/min",
               "value": 24.04666179337232
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "count/min",
+              "value": 26.13062112198554
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "count/min",
+              "value": 27.150089522751127
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "count/min",
+              "value": 24.112969004893966
             },
             {
               "date": "2026-07-19",
@@ -4339,9 +6909,29 @@
               "value": 32.191158086146146
             },
             {
+              "date": "2026-08-17",
+              "unit": "count/min",
+              "value": 28.929110105580694
+            },
+            {
               "date": "2026-07-15",
               "unit": "count/min",
               "value": 28.41614906832298
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "count/min",
+              "value": 27.008161512027492
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "count/min",
+              "value": 28.609447771124415
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "count/min",
+              "value": 26.245313336904122
             },
             {
               "date": "2026-07-23",
@@ -4369,9 +6959,24 @@
               "value": 27.281191806331467
             },
             {
+              "date": "2026-08-13",
+              "unit": "count/min",
+              "value": 25.97236438075742
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "count/min",
+              "value": 26.769897990348788
+            },
+            {
               "date": "2026-07-16",
               "unit": "count/min",
               "value": 27.18491260349586
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "count/min",
+              "value": 33.246817451489314
             },
             {
               "date": "2026-07-06",
@@ -4404,9 +7009,29 @@
               "value": 27.25500169548999
             },
             {
+              "date": "2026-08-12",
+              "unit": "count/min",
+              "value": 27.244844688070998
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "count/min",
+              "value": 26.615614493836382
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "count/min",
+              "value": 27.0731554553426
+            },
+            {
               "date": "2026-07-26",
               "unit": "count/min",
               "value": 29.08776944146719
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "count/min",
+              "value": 25.91377363815975
             },
             {
               "date": "2026-07-30",
@@ -4440,6 +7065,11 @@
               "value": 0.04896044963695271
             },
             {
+              "date": "2026-08-10",
+              "unit": "g",
+              "value": 0.05322097410814261
+            },
+            {
               "date": "2026-08-06",
               "unit": "g",
               "value": 0.0502830247254234
@@ -4448,6 +7078,21 @@
               "date": "2026-07-27",
               "unit": "g",
               "value": 0.05364556667331009
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "g",
+              "value": 0.05725484469821268
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "g",
+              "value": 0.07486277945233788
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "g",
+              "value": 0.054112299322181825
             },
             {
               "date": "2026-07-19",
@@ -4470,9 +7115,29 @@
               "value": 0.04946651320855935
             },
             {
+              "date": "2026-08-17",
+              "unit": "g",
+              "value": 0.05184338470859939
+            },
+            {
               "date": "2026-07-15",
               "unit": "g",
               "value": 0.04922681480139578
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "g",
+              "value": 0.05549310522830183
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "g",
+              "value": 0.05278643352854709
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "g",
+              "value": 0.050865622767740135
             },
             {
               "date": "2026-07-23",
@@ -4500,9 +7165,24 @@
               "value": 0.05062696962970238
             },
             {
+              "date": "2026-08-13",
+              "unit": "g",
+              "value": 0.05329957377383272
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "g",
+              "value": 0.054104775413342604
+            },
+            {
               "date": "2026-07-16",
               "unit": "g",
               "value": 0.05167310724689018
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "g",
+              "value": 0.056057029667639056
             },
             {
               "date": "2026-07-06",
@@ -4535,9 +7215,29 @@
               "value": 0.04795396517734018
             },
             {
+              "date": "2026-08-12",
+              "unit": "g",
+              "value": 0.051521503041621806
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "g",
+              "value": 0.05214651922621141
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "g",
+              "value": 0.05713230251085393
+            },
+            {
               "date": "2026-07-26",
               "unit": "g",
               "value": 0.04987327914898757
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "g",
+              "value": 0.055749636618892824
             },
             {
               "date": "2026-07-30",
@@ -4565,6 +7265,11 @@
               "value": 0.13410629662525228
             },
             {
+              "date": "2026-08-10",
+              "unit": "g",
+              "value": 0.13954697535345603
+            },
+            {
               "date": "2026-08-06",
               "unit": "g",
               "value": 0.13347113582689096
@@ -4573,6 +7278,21 @@
               "date": "2026-07-27",
               "unit": "g",
               "value": 0.14251533619276946
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "g",
+              "value": 0.14812452167420193
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "g",
+              "value": 0.1330538050271193
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "g",
+              "value": 0.15991593662968323
             },
             {
               "date": "2026-07-19",
@@ -4595,9 +7315,29 @@
               "value": 0.12634899559174578
             },
             {
+              "date": "2026-08-17",
+              "unit": "g",
+              "value": 0.14067168281676057
+            },
+            {
               "date": "2026-07-15",
               "unit": "g",
               "value": 0.1352889865406646
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "g",
+              "value": 0.13820607087274947
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "g",
+              "value": 0.1348404410263662
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "g",
+              "value": 0.13385482357754658
             },
             {
               "date": "2026-07-23",
@@ -4625,9 +7365,24 @@
               "value": 0.1224656036647771
             },
             {
+              "date": "2026-08-13",
+              "unit": "g",
+              "value": 0.13987876613134925
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "g",
+              "value": 0.1396771031692157
+            },
+            {
               "date": "2026-07-16",
               "unit": "g",
               "value": 0.14318289570593468
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "g",
+              "value": 0.13705982210310313
             },
             {
               "date": "2026-07-06",
@@ -4660,9 +7415,29 @@
               "value": 0.13071424026963815
             },
             {
+              "date": "2026-08-12",
+              "unit": "g",
+              "value": 0.13561587748432152
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "g",
+              "value": 0.1379674650905698
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "g",
+              "value": 0.14206415832831906
+            },
+            {
               "date": "2026-07-26",
               "unit": "g",
               "value": 0.14147002172400577
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "g",
+              "value": 0.14090294090466318
             },
             {
               "date": "2026-07-30",
@@ -4690,6 +7465,11 @@
               "value": 0.13820688107586587
             },
             {
+              "date": "2026-08-10",
+              "unit": "g",
+              "value": 0.11704127179071823
+            },
+            {
               "date": "2026-08-06",
               "unit": "g",
               "value": 0.13180861771187138
@@ -4698,6 +7478,21 @@
               "date": "2026-07-27",
               "unit": "g",
               "value": 0.13595009514489315
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "g",
+              "value": 0.14790521210125443
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "g",
+              "value": 0.1354589314232469
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "g",
+              "value": 0.14663770352892022
             },
             {
               "date": "2026-07-19",
@@ -4720,9 +7515,29 @@
               "value": 0.12776367391373683
             },
             {
+              "date": "2026-08-17",
+              "unit": "g",
+              "value": 0.13122864795699857
+            },
+            {
               "date": "2026-07-15",
               "unit": "g",
               "value": 0.1404629455035847
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "g",
+              "value": 0.16466876971792446
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "g",
+              "value": 0.1262551094500082
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "g",
+              "value": 0.12636243978509662
             },
             {
               "date": "2026-07-23",
@@ -4750,9 +7565,24 @@
               "value": 0.14073728436967511
             },
             {
+              "date": "2026-08-13",
+              "unit": "g",
+              "value": 0.1495613556591089
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "g",
+              "value": 0.14444960981552932
+            },
+            {
               "date": "2026-07-16",
               "unit": "g",
               "value": 0.14282490664765418
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "g",
+              "value": 0.12159202573518761
             },
             {
               "date": "2026-07-06",
@@ -4785,9 +7615,29 @@
               "value": 0.11806637922658582
             },
             {
+              "date": "2026-08-12",
+              "unit": "g",
+              "value": 0.1587816703611634
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "g",
+              "value": 0.1337084188499297
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "g",
+              "value": 0.13810815144769145
+            },
+            {
               "date": "2026-07-26",
               "unit": "g",
               "value": 0.12862928698041626
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "g",
+              "value": 0.14969281308302798
             },
             {
               "date": "2026-07-30",
@@ -4823,11 +7673,11 @@
   ],
   "repeatability": [],
   "sample_counts": {
-    "mean_hr_bpm": 25,
-    "rmssd_ms": 25,
-    "sdnn_ms": 25,
-    "shock_spike_rate_per_min": 24,
-    "vertical_dynamic_g_rms": 24
+    "mean_hr_bpm": 40,
+    "rmssd_ms": 40,
+    "sdnn_ms": 40,
+    "shock_spike_rate_per_min": 39,
+    "vertical_dynamic_g_rms": 39
   },
   "series": [
     {
@@ -4842,6 +7692,11 @@
               "value": 71.96859649224277
             },
             {
+              "date": "2026-08-10",
+              "unit": "bpm",
+              "value": 71.33724362534142
+            },
+            {
               "date": "2026-08-06",
               "unit": "bpm",
               "value": 67.48970220612135
@@ -4850,6 +7705,21 @@
               "date": "2026-07-27",
               "unit": "bpm",
               "value": 70.38469695898519
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "bpm",
+              "value": 73.80887308794392
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "bpm",
+              "value": 80.07374489220312
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "bpm",
+              "value": 69.95535369703076
             },
             {
               "date": "2026-07-19",
@@ -4872,9 +7742,29 @@
               "value": 77.27550796513158
             },
             {
+              "date": "2026-08-17",
+              "unit": "bpm",
+              "value": 71.54423768990648
+            },
+            {
               "date": "2026-07-15",
               "unit": "bpm",
               "value": 74.71837852267747
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "bpm",
+              "value": 75.27793662694363
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "bpm",
+              "value": 70.08456871291358
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "bpm",
+              "value": 64.00539964435035
             },
             {
               "date": "2026-08-05",
@@ -4907,9 +7797,24 @@
               "value": 70.44930461759796
             },
             {
+              "date": "2026-08-13",
+              "unit": "bpm",
+              "value": 67.73688190739637
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "bpm",
+              "value": 71.29330848823645
+            },
+            {
               "date": "2026-07-16",
               "unit": "bpm",
               "value": 78.03068437669926
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "bpm",
+              "value": 67.63013167305266
             },
             {
               "date": "2026-07-06",
@@ -4942,9 +7847,29 @@
               "value": 70.02696355140141
             },
             {
+              "date": "2026-08-12",
+              "unit": "bpm",
+              "value": 62.3120156863818
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "bpm",
+              "value": 70.2154210288888
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "bpm",
+              "value": 83.2230670265522
+            },
+            {
               "date": "2026-07-26",
               "unit": "bpm",
               "value": 68.7755283522134
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "bpm",
+              "value": 78.14187218641102
             },
             {
               "date": "2026-07-30",
@@ -4972,6 +7897,11 @@
               "value": 76.36936682117562
             },
             {
+              "date": "2026-08-10",
+              "unit": "bpm",
+              "value": 75.28489983916693
+            },
+            {
               "date": "2026-08-06",
               "unit": "bpm",
               "value": 77.03591539298728
@@ -4980,6 +7910,21 @@
               "date": "2026-07-27",
               "unit": "bpm",
               "value": 69.8177402830654
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "bpm",
+              "value": 70.08456871291358
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "bpm",
+              "value": 63.67838579128067
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "bpm",
+              "value": 75.49210244465472
             },
             {
               "date": "2026-07-19",
@@ -5002,9 +7947,29 @@
               "value": 72.70375839981824
             },
             {
+              "date": "2026-08-17",
+              "unit": "bpm",
+              "value": 69.26467501574197
+            },
+            {
               "date": "2026-07-15",
               "unit": "bpm",
               "value": 76.69705873443795
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "bpm",
+              "value": 73.40056851368716
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "bpm",
+              "value": 68.95539447919627
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "bpm",
+              "value": 66.95814351667838
             },
             {
               "date": "2026-08-05",
@@ -5037,9 +8002,24 @@
               "value": 76.14680777024952
             },
             {
+              "date": "2026-08-13",
+              "unit": "bpm",
+              "value": 73.05218335196143
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "bpm",
+              "value": 71.12201103617413
+            },
+            {
               "date": "2026-07-16",
               "unit": "bpm",
               "value": 77.14585545866804
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "bpm",
+              "value": 70.01753541999659
             },
             {
               "date": "2026-07-06",
@@ -5072,9 +8052,29 @@
               "value": 65.66574408216282
             },
             {
+              "date": "2026-08-12",
+              "unit": "bpm",
+              "value": 72.70047280290302
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "bpm",
+              "value": 64.64173707884567
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "bpm",
+              "value": 72.9849697179776
+            },
+            {
               "date": "2026-07-26",
               "unit": "bpm",
               "value": 75.51444213705872
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "bpm",
+              "value": 68.42301247439956
             },
             {
               "date": "2026-07-30",
@@ -5102,6 +8102,11 @@
               "value": 85.63267836931018
             },
             {
+              "date": "2026-08-10",
+              "unit": "bpm",
+              "value": 83.2093913429245
+            },
+            {
               "date": "2026-08-06",
               "unit": "bpm",
               "value": 93.92235239611416
@@ -5110,6 +8115,21 @@
               "date": "2026-07-27",
               "unit": "bpm",
               "value": 85.99343728902463
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "bpm",
+              "value": 94.97021554989325
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "bpm",
+              "value": 82.8468393213915
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "bpm",
+              "value": 95.90751138200869
             },
             {
               "date": "2026-07-19",
@@ -5132,9 +8152,29 @@
               "value": 91.98706981420982
             },
             {
+              "date": "2026-08-17",
+              "unit": "bpm",
+              "value": 83.57029871352944
+            },
+            {
               "date": "2026-07-15",
               "unit": "bpm",
               "value": 100.29147209076378
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "bpm",
+              "value": 102.29778980463311
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "bpm",
+              "value": 80.95467454693386
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "bpm",
+              "value": 83.51110879858474
             },
             {
               "date": "2026-08-05",
@@ -5167,9 +8207,24 @@
               "value": 96.90930640395146
             },
             {
+              "date": "2026-08-13",
+              "unit": "bpm",
+              "value": 92.10385192902889
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "bpm",
+              "value": 92.95148747068264
+            },
+            {
               "date": "2026-07-16",
               "unit": "bpm",
               "value": 97.20574701153133
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "bpm",
+              "value": 89.09010182765724
             },
             {
               "date": "2026-07-06",
@@ -5202,9 +8257,29 @@
               "value": 81.25415763763387
             },
             {
+              "date": "2026-08-12",
+              "unit": "bpm",
+              "value": 99.58402443198274
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "bpm",
+              "value": 80.89604700574456
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "bpm",
+              "value": 93.01363545704267
+            },
+            {
               "date": "2026-07-26",
               "unit": "bpm",
               "value": 92.02113344665065
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "bpm",
+              "value": 92.47235105244381
             },
             {
               "date": "2026-07-30",
@@ -5240,6 +8315,11 @@
               "value": 19.372024279236403
             },
             {
+              "date": "2026-08-10",
+              "unit": "ms",
+              "value": 17.035824971700272
+            },
+            {
               "date": "2026-08-06",
               "unit": "ms",
               "value": 34.666308667581056
@@ -5248,6 +8328,21 @@
               "date": "2026-07-27",
               "unit": "ms",
               "value": 15.406828692835212
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "ms",
+              "value": 20.102854746189546
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "ms",
+              "value": 29.773270788235592
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "ms",
+              "value": 23.053040210539752
             },
             {
               "date": "2026-07-19",
@@ -5270,9 +8365,29 @@
               "value": 22.837881879860596
             },
             {
+              "date": "2026-08-17",
+              "unit": "ms",
+              "value": 18.68624161192507
+            },
+            {
               "date": "2026-07-15",
               "unit": "ms",
               "value": 16.92949491760276
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "ms",
+              "value": 21.249427585605567
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "ms",
+              "value": 31.488290745337114
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "ms",
+              "value": 21.389734439793056
             },
             {
               "date": "2026-08-05",
@@ -5305,9 +8420,24 @@
               "value": 16.339365601547872
             },
             {
+              "date": "2026-08-13",
+              "unit": "ms",
+              "value": 18.412845834671625
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "ms",
+              "value": 18.126562799150992
+            },
+            {
               "date": "2026-07-16",
               "unit": "ms",
               "value": 32.44325382779772
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "ms",
+              "value": 21.02255363161264
             },
             {
               "date": "2026-07-06",
@@ -5340,9 +8470,29 @@
               "value": 18.99616678284368
             },
             {
+              "date": "2026-08-12",
+              "unit": "ms",
+              "value": 23.781112414126465
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "ms",
+              "value": 31.584954470678884
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "ms",
+              "value": 33.631373494696405
+            },
+            {
               "date": "2026-07-26",
               "unit": "ms",
               "value": 16.85094923274939
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "ms",
+              "value": 38.24512175736004
             },
             {
               "date": "2026-07-30",
@@ -5370,6 +8520,11 @@
               "value": 41.8719910723581
             },
             {
+              "date": "2026-08-10",
+              "unit": "ms",
+              "value": 63.58134553467707
+            },
+            {
               "date": "2026-08-06",
               "unit": "ms",
               "value": 58.07098170563468
@@ -5378,6 +8533,21 @@
               "date": "2026-07-27",
               "unit": "ms",
               "value": 15.796819601957374
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "ms",
+              "value": 20.061010096066912
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "ms",
+              "value": 47.94054726958749
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "ms",
+              "value": 39.54656671857266
             },
             {
               "date": "2026-07-19",
@@ -5400,9 +8570,29 @@
               "value": 36.06055816847109
             },
             {
+              "date": "2026-08-17",
+              "unit": "ms",
+              "value": 43.36317148092351
+            },
+            {
               "date": "2026-07-15",
               "unit": "ms",
               "value": 23.73642880166543
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "ms",
+              "value": 59.962599158745114
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "ms",
+              "value": 19.51608014423453
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "ms",
+              "value": 16.929718976267285
             },
             {
               "date": "2026-08-05",
@@ -5435,9 +8625,24 @@
               "value": 19.884191267327374
             },
             {
+              "date": "2026-08-13",
+              "unit": "ms",
+              "value": 25.6810161181254
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "ms",
+              "value": 17.421098726861743
+            },
+            {
               "date": "2026-07-16",
               "unit": "ms",
               "value": 29.805553297515
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "ms",
+              "value": 41.04202724037886
             },
             {
               "date": "2026-07-06",
@@ -5470,9 +8675,29 @@
               "value": 24.643366541766838
             },
             {
+              "date": "2026-08-12",
+              "unit": "ms",
+              "value": 267.1992743185925
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "ms",
+              "value": 52.18870293737634
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "ms",
+              "value": 24.959543985795012
+            },
+            {
               "date": "2026-07-26",
               "unit": "ms",
               "value": 19.75400089547548
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "ms",
+              "value": 23.6798826455129
             },
             {
               "date": "2026-07-30",
@@ -5500,6 +8725,11 @@
               "value": 28.23469622183936
             },
             {
+              "date": "2026-08-10",
+              "unit": "ms",
+              "value": 32.637366229807895
+            },
+            {
               "date": "2026-08-06",
               "unit": "ms",
               "value": 41.300465111176365
@@ -5508,6 +8738,21 @@
               "date": "2026-07-27",
               "unit": "ms",
               "value": 36.07163830669125
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "ms",
+              "value": 29.721805367199924
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "ms",
+              "value": 37.1236739652031
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "ms",
+              "value": 20.39402336744145
             },
             {
               "date": "2026-07-19",
@@ -5530,9 +8775,29 @@
               "value": 32.87916211386847
             },
             {
+              "date": "2026-08-17",
+              "unit": "ms",
+              "value": 37.93414385580611
+            },
+            {
               "date": "2026-07-15",
               "unit": "ms",
               "value": 16.6875176497058
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "ms",
+              "value": 30.117402105834422
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "ms",
+              "value": 29.64097861564377
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "ms",
+              "value": 48.0126706897522
             },
             {
               "date": "2026-08-05",
@@ -5565,9 +8830,24 @@
               "value": 23.284104055366388
             },
             {
+              "date": "2026-08-13",
+              "unit": "ms",
+              "value": 37.506578698848074
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "ms",
+              "value": 20.372217417966976
+            },
+            {
               "date": "2026-07-16",
               "unit": "ms",
               "value": 15.700652943887956
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "ms",
+              "value": 52.10554083900038
             },
             {
               "date": "2026-07-06",
@@ -5600,9 +8880,29 @@
               "value": 28.72916599734412
             },
             {
+              "date": "2026-08-12",
+              "unit": "ms",
+              "value": 21.241073444112967
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "ms",
+              "value": 27.88494384892937
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "ms",
+              "value": 27.18296318907156
+            },
+            {
               "date": "2026-07-26",
               "unit": "ms",
               "value": 29.34069923934646
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "ms",
+              "value": 26.54002586609465
             },
             {
               "date": "2026-07-30",
@@ -5638,6 +8938,11 @@
               "value": 33.776250452153256
             },
             {
+              "date": "2026-08-10",
+              "unit": "ms",
+              "value": 24.353378355502894
+            },
+            {
               "date": "2026-08-06",
               "unit": "ms",
               "value": 36.14510687302808
@@ -5646,6 +8951,21 @@
               "date": "2026-07-27",
               "unit": "ms",
               "value": 31.85767057153685
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "ms",
+              "value": 27.276063800113164
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "ms",
+              "value": 58.25931381222212
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "ms",
+              "value": 58.886171442004006
             },
             {
               "date": "2026-07-19",
@@ -5668,9 +8988,29 @@
               "value": 31.870353697663056
             },
             {
+              "date": "2026-08-17",
+              "unit": "ms",
+              "value": 26.919451997003613
+            },
+            {
               "date": "2026-07-15",
               "unit": "ms",
               "value": 26.311451270223106
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "ms",
+              "value": 33.681020151100086
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "ms",
+              "value": 34.738422649326864
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "ms",
+              "value": 35.95148996017461
             },
             {
               "date": "2026-08-05",
@@ -5703,9 +9043,24 @@
               "value": 31.042478402981583
             },
             {
+              "date": "2026-08-13",
+              "unit": "ms",
+              "value": 30.471060870135283
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "ms",
+              "value": 39.883412683366345
+            },
+            {
               "date": "2026-07-16",
               "unit": "ms",
               "value": 32.130154018145454
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "ms",
+              "value": 45.97816332485504
             },
             {
               "date": "2026-07-06",
@@ -5738,9 +9093,29 @@
               "value": 28.3633384814957
             },
             {
+              "date": "2026-08-12",
+              "unit": "ms",
+              "value": 48.031491436080486
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "ms",
+              "value": 32.925136229991175
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "ms",
+              "value": 30.147619897667546
+            },
+            {
               "date": "2026-07-26",
               "unit": "ms",
               "value": 40.10366589417295
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "ms",
+              "value": 55.88722788256116
             },
             {
               "date": "2026-07-30",
@@ -5768,6 +9143,11 @@
               "value": 57.30385276662203
             },
             {
+              "date": "2026-08-10",
+              "unit": "ms",
+              "value": 69.02008631441132
+            },
+            {
               "date": "2026-08-06",
               "unit": "ms",
               "value": 49.6781715035928
@@ -5776,6 +9156,21 @@
               "date": "2026-07-27",
               "unit": "ms",
               "value": 64.66054209607888
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "ms",
+              "value": 51.873083421688655
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "ms",
+              "value": 72.6383116639003
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "ms",
+              "value": 53.39739368154477
             },
             {
               "date": "2026-07-19",
@@ -5798,9 +9193,29 @@
               "value": 62.495911062620465
             },
             {
+              "date": "2026-08-17",
+              "unit": "ms",
+              "value": 76.8654268677835
+            },
+            {
               "date": "2026-07-15",
               "unit": "ms",
               "value": 36.07090105877246
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "ms",
+              "value": 73.09687125133733
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "ms",
+              "value": 67.2660397326276
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "ms",
+              "value": 56.70098291642965
             },
             {
               "date": "2026-08-05",
@@ -5833,9 +9248,24 @@
               "value": 47.33890908192484
             },
             {
+              "date": "2026-08-13",
+              "unit": "ms",
+              "value": 57.41507793828347
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "ms",
+              "value": 68.62068032469979
+            },
+            {
               "date": "2026-07-16",
               "unit": "ms",
               "value": 45.566128350082856
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "ms",
+              "value": 64.37632587294418
             },
             {
               "date": "2026-07-06",
@@ -5868,9 +9298,29 @@
               "value": 74.51454946329241
             },
             {
+              "date": "2026-08-12",
+              "unit": "ms",
+              "value": 195.33333994568162
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "ms",
+              "value": 76.90813941150121
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "ms",
+              "value": 70.62488007133118
+            },
+            {
               "date": "2026-07-26",
               "unit": "ms",
               "value": 60.093281654441206
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "ms",
+              "value": 75.91270551632861
             },
             {
               "date": "2026-07-30",
@@ -5898,6 +9348,11 @@
               "value": 111.01605281010461
             },
             {
+              "date": "2026-08-10",
+              "unit": "ms",
+              "value": 69.99510929058238
+            },
+            {
               "date": "2026-08-06",
               "unit": "ms",
               "value": 58.75508811232312
@@ -5906,6 +9361,21 @@
               "date": "2026-07-27",
               "unit": "ms",
               "value": 67.30327401370667
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "ms",
+              "value": 61.63338055369058
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "ms",
+              "value": 79.14624346473622
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "ms",
+              "value": 63.46607833526583
             },
             {
               "date": "2026-07-19",
@@ -5928,9 +9398,29 @@
               "value": 56.638454264435424
             },
             {
+              "date": "2026-08-17",
+              "unit": "ms",
+              "value": 56.470299250534204
+            },
+            {
               "date": "2026-07-15",
               "unit": "ms",
               "value": 48.742666426673296
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "ms",
+              "value": 62.589878942798805
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "ms",
+              "value": 64.4024608274137
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "ms",
+              "value": 67.19495473812734
             },
             {
               "date": "2026-08-05",
@@ -5963,9 +9453,24 @@
               "value": 52.0627722411716
             },
             {
+              "date": "2026-08-13",
+              "unit": "ms",
+              "value": 63.48757103959783
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "ms",
+              "value": 68.25648106361174
+            },
+            {
               "date": "2026-07-16",
               "unit": "ms",
               "value": 61.8094458420923
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "ms",
+              "value": 56.82839506887596
             },
             {
               "date": "2026-07-06",
@@ -5998,9 +9503,29 @@
               "value": 66.84888969024573
             },
             {
+              "date": "2026-08-12",
+              "unit": "ms",
+              "value": 61.577865904069796
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "ms",
+              "value": 60.856120294102084
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "ms",
+              "value": 51.59515034003442
+            },
+            {
               "date": "2026-07-26",
               "unit": "ms",
               "value": 59.70428380676865
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "ms",
+              "value": 85.48861869636096
             },
             {
               "date": "2026-07-30",
@@ -6036,6 +9561,11 @@
               "value": 25.675068695835975
             },
             {
+              "date": "2026-08-10",
+              "unit": "count/min",
+              "value": 25.8133064269553
+            },
+            {
               "date": "2026-08-06",
               "unit": "count/min",
               "value": 25.57567235014941
@@ -6044,6 +9574,21 @@
               "date": "2026-07-27",
               "unit": "count/min",
               "value": 25.63698568470334
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "count/min",
+              "value": 26.03428494297091
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "count/min",
+              "value": 26.519337016574585
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "count/min",
+              "value": 25.480050176098814
             },
             {
               "date": "2026-07-19",
@@ -6066,9 +9611,29 @@
               "value": 28.15938022003341
             },
             {
+              "date": "2026-08-17",
+              "unit": "count/min",
+              "value": 26.957648525407603
+            },
+            {
               "date": "2026-07-15",
               "unit": "count/min",
               "value": 23.542569155412103
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "count/min",
+              "value": 29.20088341420928
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "count/min",
+              "value": 26.58821196929787
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "count/min",
+              "value": 25.308324768756425
             },
             {
               "date": "2026-07-23",
@@ -6096,9 +9661,24 @@
               "value": 25.22533977564918
             },
             {
+              "date": "2026-08-13",
+              "unit": "count/min",
+              "value": 28.22901370533529
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "count/min",
+              "value": 25.845780097174735
+            },
+            {
               "date": "2026-07-16",
               "unit": "count/min",
               "value": 24.98285910181694
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "count/min",
+              "value": 28.835899486769318
             },
             {
               "date": "2026-07-06",
@@ -6131,9 +9711,29 @@
               "value": 24.635251206024236
             },
             {
+              "date": "2026-08-12",
+              "unit": "count/min",
+              "value": 23.848581427321587
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "count/min",
+              "value": 26.93456263952915
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "count/min",
+              "value": 27.89055021949368
+            },
+            {
               "date": "2026-07-26",
               "unit": "count/min",
               "value": 24.027950740279508
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "count/min",
+              "value": 30.02064865249742
             },
             {
               "date": "2026-07-30",
@@ -6161,6 +9761,11 @@
               "value": 29.62390520350335
             },
             {
+              "date": "2026-08-10",
+              "unit": "count/min",
+              "value": 27.746741154562383
+            },
+            {
               "date": "2026-08-06",
               "unit": "count/min",
               "value": 28.0578898225957
@@ -6169,6 +9774,21 @@
               "date": "2026-07-27",
               "unit": "count/min",
               "value": 30.22184621169393
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "count/min",
+              "value": 30.959446092977245
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "count/min",
+              "value": 28.96283655669321
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "count/min",
+              "value": 28.758777364725322
             },
             {
               "date": "2026-07-19",
@@ -6191,9 +9811,29 @@
               "value": 30.114226375908615
             },
             {
+              "date": "2026-08-17",
+              "unit": "count/min",
+              "value": 29.37274966837218
+            },
+            {
               "date": "2026-07-15",
               "unit": "count/min",
               "value": 29.427645788336932
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "count/min",
+              "value": 27.986151182919794
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "count/min",
+              "value": 30.51381932851048
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "count/min",
+              "value": 27.035623409669213
             },
             {
               "date": "2026-07-23",
@@ -6221,9 +9861,24 @@
               "value": 29.986052998605295
             },
             {
+              "date": "2026-08-13",
+              "unit": "count/min",
+              "value": 29.425883256528415
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "count/min",
+              "value": 28.215223097112858
+            },
+            {
               "date": "2026-07-16",
               "unit": "count/min",
               "value": 29.077414505824876
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "count/min",
+              "value": 28.225060151767533
             },
             {
               "date": "2026-07-06",
@@ -6256,9 +9911,29 @@
               "value": 28.991092840013707
             },
             {
+              "date": "2026-08-12",
+              "unit": "count/min",
+              "value": 30.173992673992675
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "count/min",
+              "value": 32.83115406480955
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "count/min",
+              "value": 28.255880665519218
+            },
+            {
               "date": "2026-07-26",
               "unit": "count/min",
               "value": 28.323051037577116
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "count/min",
+              "value": 27.843836702338486
             },
             {
               "date": "2026-07-30",
@@ -6286,6 +9961,11 @@
               "value": 26.60823503713412
             },
             {
+              "date": "2026-08-10",
+              "unit": "count/min",
+              "value": 32.54329734592893
+            },
+            {
               "date": "2026-08-06",
               "unit": "count/min",
               "value": 26.469209585750278
@@ -6294,6 +9974,21 @@
               "date": "2026-07-27",
               "unit": "count/min",
               "value": 24.04666179337232
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "count/min",
+              "value": 26.13062112198554
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "count/min",
+              "value": 27.150089522751127
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "count/min",
+              "value": 24.112969004893966
             },
             {
               "date": "2026-07-19",
@@ -6316,9 +10011,29 @@
               "value": 32.191158086146146
             },
             {
+              "date": "2026-08-17",
+              "unit": "count/min",
+              "value": 28.929110105580694
+            },
+            {
               "date": "2026-07-15",
               "unit": "count/min",
               "value": 28.41614906832298
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "count/min",
+              "value": 27.008161512027492
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "count/min",
+              "value": 28.609447771124415
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "count/min",
+              "value": 26.245313336904122
             },
             {
               "date": "2026-07-23",
@@ -6346,9 +10061,24 @@
               "value": 27.281191806331467
             },
             {
+              "date": "2026-08-13",
+              "unit": "count/min",
+              "value": 25.97236438075742
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "count/min",
+              "value": 26.769897990348788
+            },
+            {
               "date": "2026-07-16",
               "unit": "count/min",
               "value": 27.18491260349586
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "count/min",
+              "value": 33.246817451489314
             },
             {
               "date": "2026-07-06",
@@ -6381,9 +10111,29 @@
               "value": 27.25500169548999
             },
             {
+              "date": "2026-08-12",
+              "unit": "count/min",
+              "value": 27.244844688070998
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "count/min",
+              "value": 26.615614493836382
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "count/min",
+              "value": 27.0731554553426
+            },
+            {
               "date": "2026-07-26",
               "unit": "count/min",
               "value": 29.08776944146719
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "count/min",
+              "value": 25.91377363815975
             },
             {
               "date": "2026-07-30",
@@ -6419,6 +10169,11 @@
               "value": 0.04896044963695271
             },
             {
+              "date": "2026-08-10",
+              "unit": "g",
+              "value": 0.05322097410814261
+            },
+            {
               "date": "2026-08-06",
               "unit": "g",
               "value": 0.0502830247254234
@@ -6427,6 +10182,21 @@
               "date": "2026-07-27",
               "unit": "g",
               "value": 0.05364556667331009
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "g",
+              "value": 0.05725484469821268
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "g",
+              "value": 0.07486277945233788
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "g",
+              "value": 0.054112299322181825
             },
             {
               "date": "2026-07-19",
@@ -6449,9 +10219,29 @@
               "value": 0.04946651320855935
             },
             {
+              "date": "2026-08-17",
+              "unit": "g",
+              "value": 0.05184338470859939
+            },
+            {
               "date": "2026-07-15",
               "unit": "g",
               "value": 0.04922681480139578
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "g",
+              "value": 0.05549310522830183
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "g",
+              "value": 0.05278643352854709
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "g",
+              "value": 0.050865622767740135
             },
             {
               "date": "2026-07-23",
@@ -6479,9 +10269,24 @@
               "value": 0.05062696962970238
             },
             {
+              "date": "2026-08-13",
+              "unit": "g",
+              "value": 0.05329957377383272
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "g",
+              "value": 0.054104775413342604
+            },
+            {
               "date": "2026-07-16",
               "unit": "g",
               "value": 0.05167310724689018
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "g",
+              "value": 0.056057029667639056
             },
             {
               "date": "2026-07-06",
@@ -6514,9 +10319,29 @@
               "value": 0.04795396517734018
             },
             {
+              "date": "2026-08-12",
+              "unit": "g",
+              "value": 0.051521503041621806
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "g",
+              "value": 0.05214651922621141
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "g",
+              "value": 0.05713230251085393
+            },
+            {
               "date": "2026-07-26",
               "unit": "g",
               "value": 0.04987327914898757
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "g",
+              "value": 0.055749636618892824
             },
             {
               "date": "2026-07-30",
@@ -6544,6 +10369,11 @@
               "value": 0.13410629662525228
             },
             {
+              "date": "2026-08-10",
+              "unit": "g",
+              "value": 0.13954697535345603
+            },
+            {
               "date": "2026-08-06",
               "unit": "g",
               "value": 0.13347113582689096
@@ -6552,6 +10382,21 @@
               "date": "2026-07-27",
               "unit": "g",
               "value": 0.14251533619276946
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "g",
+              "value": 0.14812452167420193
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "g",
+              "value": 0.1330538050271193
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "g",
+              "value": 0.15991593662968323
             },
             {
               "date": "2026-07-19",
@@ -6574,9 +10419,29 @@
               "value": 0.12634899559174578
             },
             {
+              "date": "2026-08-17",
+              "unit": "g",
+              "value": 0.14067168281676057
+            },
+            {
               "date": "2026-07-15",
               "unit": "g",
               "value": 0.1352889865406646
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "g",
+              "value": 0.13820607087274947
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "g",
+              "value": 0.1348404410263662
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "g",
+              "value": 0.13385482357754658
             },
             {
               "date": "2026-07-23",
@@ -6604,9 +10469,24 @@
               "value": 0.1224656036647771
             },
             {
+              "date": "2026-08-13",
+              "unit": "g",
+              "value": 0.13987876613134925
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "g",
+              "value": 0.1396771031692157
+            },
+            {
               "date": "2026-07-16",
               "unit": "g",
               "value": 0.14318289570593468
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "g",
+              "value": 0.13705982210310313
             },
             {
               "date": "2026-07-06",
@@ -6639,9 +10519,29 @@
               "value": 0.13071424026963815
             },
             {
+              "date": "2026-08-12",
+              "unit": "g",
+              "value": 0.13561587748432152
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "g",
+              "value": 0.1379674650905698
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "g",
+              "value": 0.14206415832831906
+            },
+            {
               "date": "2026-07-26",
               "unit": "g",
               "value": 0.14147002172400577
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "g",
+              "value": 0.14090294090466318
             },
             {
               "date": "2026-07-30",
@@ -6669,6 +10569,11 @@
               "value": 0.13820688107586587
             },
             {
+              "date": "2026-08-10",
+              "unit": "g",
+              "value": 0.11704127179071823
+            },
+            {
               "date": "2026-08-06",
               "unit": "g",
               "value": 0.13180861771187138
@@ -6677,6 +10582,21 @@
               "date": "2026-07-27",
               "unit": "g",
               "value": 0.13595009514489315
+            },
+            {
+              "date": "2026-08-26",
+              "unit": "g",
+              "value": 0.14790521210125443
+            },
+            {
+              "date": "2026-08-18",
+              "unit": "g",
+              "value": 0.1354589314232469
+            },
+            {
+              "date": "2026-08-27",
+              "unit": "g",
+              "value": 0.14663770352892022
             },
             {
               "date": "2026-07-19",
@@ -6699,9 +10619,29 @@
               "value": 0.12776367391373683
             },
             {
+              "date": "2026-08-17",
+              "unit": "g",
+              "value": 0.13122864795699857
+            },
+            {
               "date": "2026-07-15",
               "unit": "g",
               "value": 0.1404629455035847
+            },
+            {
+              "date": "2026-08-20",
+              "unit": "g",
+              "value": 0.16466876971792446
+            },
+            {
+              "date": "2026-08-16",
+              "unit": "g",
+              "value": 0.1262551094500082
+            },
+            {
+              "date": "2026-08-09",
+              "unit": "g",
+              "value": 0.12636243978509662
             },
             {
               "date": "2026-07-23",
@@ -6729,9 +10669,24 @@
               "value": 0.14073728436967511
             },
             {
+              "date": "2026-08-13",
+              "unit": "g",
+              "value": 0.1495613556591089
+            },
+            {
+              "date": "2026-08-23",
+              "unit": "g",
+              "value": 0.14444960981552932
+            },
+            {
               "date": "2026-07-16",
               "unit": "g",
               "value": 0.14282490664765418
+            },
+            {
+              "date": "2026-08-19",
+              "unit": "g",
+              "value": 0.12159202573518761
             },
             {
               "date": "2026-07-06",
@@ -6764,9 +10719,29 @@
               "value": 0.11806637922658582
             },
             {
+              "date": "2026-08-12",
+              "unit": "g",
+              "value": 0.1587816703611634
+            },
+            {
+              "date": "2026-08-11",
+              "unit": "g",
+              "value": 0.1337084188499297
+            },
+            {
+              "date": "2026-08-24",
+              "unit": "g",
+              "value": 0.13810815144769145
+            },
+            {
               "date": "2026-07-26",
               "unit": "g",
               "value": 0.12862928698041626
+            },
+            {
+              "date": "2026-08-25",
+              "unit": "g",
+              "value": 0.14969281308302798
             },
             {
               "date": "2026-07-30",
