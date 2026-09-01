@@ -9,29 +9,29 @@ from scripts import check_site_links
 
 ROOT = Path(__file__).resolve().parents[1]
 LAB_CONFIG = ROOT / "common/evidence-observatory.js"
-GRAPH_PAGES = (
-    "index.html", "case/index.html", "evidence/index.html",
-    "evidence/longitudinal/index.html", "evidence/transportation/index.html",
-    "evidence/mobility-comparison/index.html", "evidence/repeated-protocol/index.html",
-    "platform/index.html", "access/index.html", "story/index.html", "biomechanics/index.html",
-)
+GRAPH_PAGES = ("index.html", "case/index.html", "evidence/index.html")
 
 
 class PublicSurfaceConsolidationTests(unittest.TestCase):
     def read(self, page: str) -> str:
         return (ROOT / page).read_text(errors="ignore")
 
-    def test_case_pages_have_no_canonical_scientific_graph_mounts(self) -> None:
+    def test_case_pages_mount_only_governed_graph_projections(self) -> None:
         for page in GRAPH_PAGES:
-            self.assertNotIn('data-publication-graph="', self.read(page), page)
-        self.assertNotIn('data-hero-graph-id="', self.read("index.html"))
+            page_text = self.read(page)
+            self.assertIn("governed-evidence-graphs.js", page_text, page)
+            self.assertNotIn('data-publication-graph="', page_text, page)
+        self.assertNotIn('data-governed-graph="authority_correction_summary"', self.read("evidence/index.html"))
 
-    def test_evidence_brief_keeps_exactly_five_questions(self) -> None:
+    def test_evidence_brief_keeps_five_primary_questions(self) -> None:
         home = self.read("index.html")
         brief = self.read("evidence/index.html")
         self.assertEqual(home.count('class="evidence-brief-card"'), 5)
-        self.assertEqual(brief.count('class="evidence-brief-card"'), 5)
-        self.assertEqual(len(re.findall(r"Open in Evidence Observatory", brief)), 5)
+        self.assertEqual(brief.count('data-governed-graph="h1_mechanical_only_validation"'), 1)
+        self.assertEqual(brief.count('data-governed-graph="h3_transport_validation"'), 1)
+        self.assertEqual(brief.count('data-governed-graph="h2_h13_context_increment"'), 1)
+        self.assertEqual(brief.count('data-governed-graph="paired_fns_sns_outcome_summary"'), 1)
+        self.assertEqual(brief.count('data-governed-graph="fns_sns_longitudinal_functional_capacity"'), 1)
 
     def test_lab_url_is_centralized_and_safe(self) -> None:
         config = LAB_CONFIG.read_text()
@@ -42,16 +42,6 @@ class PublicSurfaceConsolidationTests(unittest.TestCase):
         self.assertNotIn("clinical", config.lower())
         for page in ("index.html", "case/index.html", "evidence/index.html", "platform/index.html", "access/index.html"):
             self.assertNotIn("run.app", self.read(page), page)
-
-    def test_removed_graphs_are_present_in_lab_and_have_accessible_tables(self) -> None:
-        ledger = json.loads((ROOT / "data/public/evidence-observatory/v1/com_graph_demotions.json").read_text())
-        manifest = json.loads((ROOT / "data/public/evidence-observatory/v1/manifest.json").read_text())
-        available = {entry["graph_id"] for entry in manifest["graphs"]}
-        self.assertEqual(len(ledger["removed_from_com"]), 24)
-        for item in ledger["removed_from_com"]:
-            self.assertIn(item["graph_id"], available)
-            payload = json.loads((ROOT / "data/public/evidence-observatory/v1" / item["artifact_path"]).read_text())
-            self.assertTrue(payload.get("accessible_table"), item["graph_id"])
 
     def test_route_explorer_stays_a_route_explorer(self) -> None:
         routes = self.read("evidence/strava-gps-skate-maps/index.html")

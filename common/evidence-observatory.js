@@ -11,6 +11,7 @@
       link.rel = "noopener noreferrer";
     });
   }
+  window.connectEvidenceObservatoryLinks = connectObservatoryLinks;
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", connectObservatoryLinks);
   else connectObservatoryLinks();
 })();

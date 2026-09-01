@@ -1,0 +1,26 @@
+.governed-graph-mounted {
+  margin: 2rem 0;
+  padding: 1.25rem;
+  border: 1px solid var(--line, #c9d1d5);
+  border-radius: 0.75rem;
+  background: var(--surface, #fff);
+}
+.governed-graph-header h2, .governed-graph-header h3 { margin: .2rem 0 .75rem; }
+.governed-graph-finding { font-size: 1.06rem; line-height: 1.55; }
+.governed-graph-visual { margin: 1rem 0; }
+.governed-graph-visual figcaption, .governed-graph-visual-note { color: #495057; line-height: 1.45; }
+.governed-graph-bars { display: grid; gap: .5rem; margin: 1rem 0; padding: 0; list-style: none; }
+.governed-graph-bars li { display: grid; grid-template-columns: minmax(8rem, 1fr) minmax(5rem, 2fr) auto; align-items: center; gap: .6rem; }
+.governed-graph-bar-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.governed-graph-bar-track { display: block; height: .72rem; background: #e9ecef; border-radius: 999px; overflow: hidden; }
+.governed-graph-bar { display: block; height: 100%; background: #0b5e55; border-radius: inherit; }
+.governed-graph-bar-value { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.governed-graph-details { margin: .7rem 0; }
+.governed-graph-details summary { cursor: pointer; color: #064f79; font-weight: 700; }
+.governed-graph-table-wrap { max-height: 26rem; overflow: auto; margin-top: .75rem; border: 1px solid #d9dee2; }
+.governed-graph-table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+.governed-graph-table th, .governed-graph-table td { padding: .45rem; border: 1px solid #d9dee2; text-align: left; vertical-align: top; }
+.governed-graph-table th { position: sticky; top: 0; background: #f4f7f8; }
+.governed-graph-actions { margin: 1rem 0 0; }
+.governed-graph-error { padding: 1rem; border-left: 4px solid #9b1c1c; background: #fff4f4; }
+@media (max-width: 640px) { .governed-graph-mounted { padding: 1rem; } .governed-graph-bars li { grid-template-columns: 1fr; gap: .2rem; } .governed-graph-bar-value { margin-bottom: .25rem; } }
