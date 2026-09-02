@@ -1,6 +1,6 @@
 {
-  "bundle_id": "handicapskater-com-v1-6c44a42b7be17841",
-  "content_hash": "6c44a42b7be17841bb1c29bfc90d70cc089b962d51e857cb3f72c40b7ae357fc",
+  "bundle_id": "handicapskater-com-v1-55837297bd37a84b",
+  "content_hash": "55837297bd37a84b4aaf85e71ee4c205588792432b3d2ee3c833a982b67c3a62",
   "data_through_date": "2026-08-27",
   "destination": "handicapskater.com",
   "generated_at_utc": "2026-09-01T02:22:34.133759Z",
@@ -396,6 +396,7 @@
   "limitation_resource": "limitations.json",
   "managed_files": [
     "com_graph_demotions.json",
+    "computational-evidence.json",
     "graphs/accepted_triplet_stage_profiles.json",
     "graphs/authority_correction_summary.json",
     "graphs/autonomic_metric_distributions.json",
@@ -470,7 +471,7 @@
   },
   "publication_contract": "fsicss_publication_bundle",
   "publication_contract_version": "fsicss_publication_bundle.v1",
-  "resource_count": 10,
+  "resource_count": 11,
   "resources": [
     {
       "byte_size": 35919,
@@ -527,6 +528,14 @@
       "path": "hypothesis-registry.json",
       "resource_id": "hypothesis-registry",
       "sha256": "acf965b37191ac79165f2b18af6c653a95243ca0f565c74c3f28c18b7b8e425e"
+    },
+    {
+      "byte_size": 685091,
+      "content_hash": "d2ef7508ff9ed3b869c35169f85533f65e5a8d78c5624ea1355a987743ab8a38",
+      "media_type": "application/json",
+      "path": "computational-evidence.json",
+      "resource_id": "computational-evidence",
+      "sha256": "af2ab343b915df762e3d7d896a792ca37c600e1eee98b63d7c7b63218ca14b8d"
     },
     {
       "byte_size": 2106,
