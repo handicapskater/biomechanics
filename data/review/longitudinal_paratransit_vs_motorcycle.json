@@ -32,16 +32,16 @@
       "median_duration_min": 37.0,
       "median_strain": 4.3,
       "metric_scope": "longitudinal_whoop_strava",
-      "n_activities": 141,
+      "n_activities": 159,
       "n_with_distance": 0,
-      "n_with_hr": 141
+      "n_with_hr": 159
     },
     {
       "canonical_cohort": "motorcycle",
       "evidence_tier": "longitudinal_context",
       "median_avg_hr_bpm": 95.0,
       "median_daily_hrv_rmssd_ms": 40.0,
-      "median_distance_mi": 120.02,
+      "median_distance_mi": 74.58156863914736,
       "median_duration_min": 125.0,
       "median_strain": 7.3,
       "metric_scope": "longitudinal_whoop_strava",

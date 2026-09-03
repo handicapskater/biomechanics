@@ -11,28 +11,28 @@
     {
       "canonical_cohort": "walking",
       "evidence_tier": "longitudinal_context",
-      "median_avg_hr_bpm": 99.0,
-      "median_daily_hrv_rmssd_ms": 37.5,
-      "median_distance_mi": 0.21,
-      "median_duration_min": 24.5,
-      "median_strain": 5.1,
+      "median_avg_hr_bpm": 83.0,
+      "median_daily_hrv_rmssd_ms": 40.0,
+      "median_distance_mi": 0.14024347808796628,
+      "median_duration_min": 5.0,
+      "median_strain": 2.25,
       "metric_scope": "longitudinal_whoop_strava",
-      "n_activities": 64,
-      "n_with_distance": 15,
-      "n_with_hr": 64
+      "n_activities": 128,
+      "n_with_distance": 54,
+      "n_with_hr": 128
     },
     {
       "canonical_cohort": "fns_sns_skating",
       "evidence_tier": "longitudinal_context",
-      "median_avg_hr_bpm": 116.0,
+      "median_avg_hr_bpm": 115.0,
       "median_daily_hrv_rmssd_ms": 35.0,
-      "median_distance_mi": 18.23,
-      "median_duration_min": 109.78333333333333,
-      "median_strain": 12.9,
+      "median_distance_mi": 11.236068857870038,
+      "median_duration_min": 105.7,
+      "median_strain": 12.8,
       "metric_scope": "longitudinal_whoop_strava",
-      "n_activities": 1625,
-      "n_with_distance": 983,
-      "n_with_hr": 1084
+      "n_activities": 1863,
+      "n_with_distance": 1185,
+      "n_with_hr": 1165
     }
   ]
 }
