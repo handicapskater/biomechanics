@@ -1,7 +1,7 @@
 {
   "declaration": "N-of-1 evidence model. Wearable signals estimate physiologic, MSK, movement, and transport burden; source artifacts and validation layers remain available for audit.",
-  "full_row_count": 3023,
-  "row_count": 3023,
+  "full_row_count": 3044,
+  "row_count": 3044,
   "rows": [
     {
       "avg_hr_bpm": 87.0,
