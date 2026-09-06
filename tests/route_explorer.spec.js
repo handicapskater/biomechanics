@@ -3,6 +3,16 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const explorer = "/evidence/strava-gps-skate-maps/#route-browser";
+const selectionManifest = JSON.parse(
+  fs.readFileSync(
+    path.join(
+      __dirname,
+      "../evidence/strava-gps-skate-maps/data/strava_route_selection_manifest.json"
+    ),
+    "utf8"
+  )
+);
+const routeCount = selectionManifest.retained_count;
 
 test("route and weather graph presentation is absent", async ({ page }) => {
   await page.goto(explorer);
@@ -13,10 +23,10 @@ test("route and weather graph presentation is absent", async ({ page }) => {
 test("loads the embedded manifest and filters immediately", async ({ page }) => {
   await page.goto(explorer);
   await expect(page.locator("#route-browser-summary")).toContainText("route maps shown");
-  await expect(page.locator("#route-select option")).toHaveCount(555);
+  await expect(page.locator("#route-select option")).toHaveCount(routeCount);
 
   await page.locator("#route-search").fill("Xmas FNS");
-  await expect(page.locator("#route-browser-summary")).toContainText("1 of 555");
+  await expect(page.locator("#route-browser-summary")).toContainText(`1 of ${routeCount}`);
   await expect(page.locator("#route-select option")).toHaveCount(1);
 });
 
@@ -45,7 +55,7 @@ test("weather failure keeps direct route links usable", async ({ page }) => {
   await page.route("**/strava_routes_weather_conditions_9pm_midnight.json", (route) => route.abort());
   await page.goto(explorer);
   await expect(page.locator("#weather-summary-text")).toContainText("could not be loaded");
-  await expect(page.locator("#route-map-list a")).toHaveCount(555);
+  await expect(page.locator("#route-map-list a")).toHaveCount(routeCount);
 });
 
 test("missing embedded manifest shows a clear fallback", async ({ page }) => {
@@ -100,7 +110,7 @@ test("raw archive works without JavaScript", async ({ browser }) => {
   const context = await browser.newContext({ javaScriptEnabled: false });
   const page = await context.newPage();
   await page.goto(explorer);
-  await expect(page.locator("#route-map-list a")).toHaveCount(555);
+  await expect(page.locator("#route-map-list a")).toHaveCount(routeCount);
   await expect(page.locator("#route-browser-summary")).not.toContainText("Loading route maps");
   await context.close();
 });

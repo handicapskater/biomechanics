@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import unittest
 from pathlib import Path
 
@@ -47,9 +48,18 @@ class PublicSurfaceConsolidationTests(unittest.TestCase):
 
     def test_route_explorer_stays_a_route_explorer(self) -> None:
         routes = self.read("evidence/strava-gps-skate-maps/index.html")
+        selection_manifest = json.loads(
+            self.read(
+                "evidence/strava-gps-skate-maps/data/"
+                "strava_route_selection_manifest.json"
+            )
+        )
         self.assertIn("Route Map Explorer", routes)
         self.assertNotIn('data-publication-graph="', routes)
-        self.assertEqual(len(check_site_links.evidence_map_links()), 542)
+        self.assertEqual(
+            len(check_site_links.evidence_map_links()),
+            selection_manifest["retained_count"],
+        )
         self.assertEqual(check_site_links.check_pages(check_site_links.PUBLIC_PAGES), [])
 
     def test_redirected_evidence_routes_are_demoted(self) -> None:
