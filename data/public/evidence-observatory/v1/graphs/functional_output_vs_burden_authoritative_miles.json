@@ -34,6 +34,38 @@
     },
     {
       "absolute_unit": "g*s",
+      "absolute_value": 126.52587897316678,
+      "acc_analysis_window_duration_seconds": 1120.32,
+      "burden_metric_name": "cumulative_dynamic_shock",
+      "burden_per_mile": 952.4025452300847,
+      "burden_per_mile_unit": "g*s/mile",
+      "distance_authority": "miles",
+      "distance_conversion_version": "physical_distance_to_miles.v1",
+      "distance_coverage_status": "available",
+      "distance_miles": 0.13284916090034202,
+      "distance_source": "strava:strava_activity:19971766746",
+      "ecg_analysis_window_duration_seconds": 276.83846153846156,
+      "event_activity_duration_scope": "accepted_triplet_canonical_event_interval",
+      "event_activity_duration_seconds": 276.838462,
+      "functional_output_contract_version": "established_functional_burden_passthrough.v1",
+      "higher_value_interpretation": "greater accumulated dynamic shock",
+      "insufficiency_reason": null,
+      "kubios_recording_duration_seconds": 1120.32,
+      "per_mile_denominator_status": "available",
+      "per_mile_formula_version": "metric_specific_distance_normalization.v1|kubios_acc_session_metrics.v1",
+      "quality_status": "valid",
+      "rri_analysis_window_duration_seconds": 276.977,
+      "sequence_date_local": "2026-08-30",
+      "sequence_index": 2,
+      "sequence_role": "walk",
+      "source_coverage": "kubios+strava+whoop",
+      "source_hash_bundle_sha256": "b3d9f124743250e222f5e8c620fa5ebb67402270c60c2720e2ef1c9e5ebd923b",
+      "stage_description": "pain-limited hallway walk",
+      "strava_elapsed_time_seconds": 307.0,
+      "strava_moving_time_seconds": 307.0
+    },
+    {
+      "absolute_unit": "g*s",
       "absolute_value": 127.70527751017698,
       "acc_analysis_window_duration_seconds": 1290.96,
       "burden_metric_name": "cumulative_dynamic_shock",
@@ -546,6 +578,38 @@
     },
     {
       "absolute_unit": "g*s",
+      "absolute_value": 135.21531425427568,
+      "acc_analysis_window_duration_seconds": 1223.28,
+      "burden_metric_name": "cumulative_dynamic_shock",
+      "burden_per_mile": 869.3885525498724,
+      "burden_per_mile_unit": "g*s/mile",
+      "distance_authority": "miles",
+      "distance_conversion_version": "physical_distance_to_miles.v1",
+      "distance_coverage_status": "available",
+      "distance_miles": 0.15552920941700468,
+      "distance_source": "strava:strava_activity:20000194796",
+      "ecg_analysis_window_duration_seconds": 302.10769230769233,
+      "event_activity_duration_scope": "accepted_triplet_canonical_event_interval",
+      "event_activity_duration_seconds": 302.107692,
+      "functional_output_contract_version": "established_functional_burden_passthrough.v1",
+      "higher_value_interpretation": "greater accumulated dynamic shock",
+      "insufficiency_reason": null,
+      "kubios_recording_duration_seconds": 1223.28,
+      "per_mile_denominator_status": "available",
+      "per_mile_formula_version": "metric_specific_distance_normalization.v1|kubios_acc_session_metrics.v1",
+      "quality_status": "valid",
+      "rri_analysis_window_duration_seconds": 302.457,
+      "sequence_date_local": "2026-09-01",
+      "sequence_index": 2,
+      "sequence_role": "walk",
+      "source_coverage": "kubios+strava+whoop",
+      "source_hash_bundle_sha256": "101cbb37a7dd3c3c3a109e1902e22a5610360fc37a687bd08ead4b3996e7975f",
+      "stage_description": "pain-limited hallway walk",
+      "strava_elapsed_time_seconds": 302.0,
+      "strava_moving_time_seconds": 302.0
+    },
+    {
+      "absolute_unit": "g*s",
       "absolute_value": 135.21711143195805,
       "acc_analysis_window_duration_seconds": 1310.4,
       "burden_metric_name": "cumulative_dynamic_shock",
@@ -1026,6 +1090,38 @@
     },
     {
       "absolute_unit": "g*s",
+      "absolute_value": 138.14979808239843,
+      "acc_analysis_window_duration_seconds": 1211.76,
+      "burden_metric_name": "cumulative_dynamic_shock",
+      "burden_per_mile": 1020.3329446770051,
+      "burden_per_mile_unit": "g*s/mile",
+      "distance_authority": "miles",
+      "distance_conversion_version": "physical_distance_to_miles.v1",
+      "distance_coverage_status": "available",
+      "distance_miles": 0.13539678278851508,
+      "distance_source": "strava:strava_activity:20013953398",
+      "ecg_analysis_window_duration_seconds": 298.73846153846154,
+      "event_activity_duration_scope": "accepted_triplet_canonical_event_interval",
+      "event_activity_duration_seconds": 298.738462,
+      "functional_output_contract_version": "established_functional_burden_passthrough.v1",
+      "higher_value_interpretation": "greater accumulated dynamic shock",
+      "insufficiency_reason": null,
+      "kubios_recording_duration_seconds": 1211.76,
+      "per_mile_denominator_status": "available",
+      "per_mile_formula_version": "metric_specific_distance_normalization.v1|kubios_acc_session_metrics.v1",
+      "quality_status": "valid",
+      "rri_analysis_window_duration_seconds": 299.647,
+      "sequence_date_local": "2026-09-02",
+      "sequence_index": 2,
+      "sequence_role": "walk",
+      "source_coverage": "kubios+strava+whoop",
+      "source_hash_bundle_sha256": "4db479d37eba4d2b8259c2df19fb7621ea2f745aabe6c8c76567a58b89191f0e",
+      "stage_description": "pain-limited hallway walk",
+      "strava_elapsed_time_seconds": 301.0,
+      "strava_moving_time_seconds": 301.0
+    },
+    {
+      "absolute_unit": "g*s",
       "absolute_value": 138.31398987673904,
       "acc_analysis_window_duration_seconds": 1249.92,
       "burden_metric_name": "cumulative_dynamic_shock",
@@ -1215,6 +1311,70 @@
       "stage_description": "pain-limited hallway walk",
       "strava_elapsed_time_seconds": 284.0,
       "strava_moving_time_seconds": 261.0
+    },
+    {
+      "absolute_unit": "g*s",
+      "absolute_value": 142.82408405832462,
+      "acc_analysis_window_duration_seconds": 1249.92,
+      "burden_metric_name": "cumulative_dynamic_shock",
+      "burden_per_mile": 652.0654829354904,
+      "burden_per_mile_unit": "g*s/mile",
+      "distance_authority": "miles",
+      "distance_conversion_version": "physical_distance_to_miles.v1",
+      "distance_coverage_status": "available",
+      "distance_miles": 0.21903334526366022,
+      "distance_source": "strava:strava_activity:20027287529",
+      "ecg_analysis_window_duration_seconds": 308.2846153846154,
+      "event_activity_duration_scope": "accepted_triplet_canonical_event_interval",
+      "event_activity_duration_seconds": 308.284615,
+      "functional_output_contract_version": "established_functional_burden_passthrough.v1",
+      "higher_value_interpretation": "greater accumulated dynamic shock",
+      "insufficiency_reason": null,
+      "kubios_recording_duration_seconds": 1249.92,
+      "per_mile_denominator_status": "available",
+      "per_mile_formula_version": "metric_specific_distance_normalization.v1|kubios_acc_session_metrics.v1",
+      "quality_status": "valid",
+      "rri_analysis_window_duration_seconds": 308.033,
+      "sequence_date_local": "2026-09-03",
+      "sequence_index": 2,
+      "sequence_role": "walk",
+      "source_coverage": "kubios+strava+whoop",
+      "source_hash_bundle_sha256": "7f3dfdbd305424e2a421eae4fc0c074563d738355429526b5a4751922546e3ac",
+      "stage_description": "pain-limited hallway walk",
+      "strava_elapsed_time_seconds": 308.0,
+      "strava_moving_time_seconds": 268.0
+    },
+    {
+      "absolute_unit": "g*s",
+      "absolute_value": 144.06117970308387,
+      "acc_analysis_window_duration_seconds": 1218.24,
+      "burden_metric_name": "cumulative_dynamic_shock",
+      "burden_per_mile": 1088.4694609769006,
+      "burden_per_mile_unit": "g*s/mile",
+      "distance_authority": "miles",
+      "distance_conversion_version": "physical_distance_to_miles.v1",
+      "distance_coverage_status": "available",
+      "distance_miles": 0.13235206394655213,
+      "distance_source": "strava:strava_activity:19983470367",
+      "ecg_analysis_window_duration_seconds": 300.4230769230769,
+      "event_activity_duration_scope": "accepted_triplet_canonical_event_interval",
+      "event_activity_duration_seconds": 300.423077,
+      "functional_output_contract_version": "established_functional_burden_passthrough.v1",
+      "higher_value_interpretation": "greater accumulated dynamic shock",
+      "insufficiency_reason": null,
+      "kubios_recording_duration_seconds": 1218.24,
+      "per_mile_denominator_status": "available",
+      "per_mile_formula_version": "metric_specific_distance_normalization.v1|kubios_acc_session_metrics.v1",
+      "quality_status": "valid",
+      "rri_analysis_window_duration_seconds": 301.197,
+      "sequence_date_local": "2026-08-31",
+      "sequence_index": 2,
+      "sequence_role": "walk",
+      "source_coverage": "kubios+strava+whoop",
+      "source_hash_bundle_sha256": "c33dcf6f19647c033edc4d42ac7420ed035585be0bf37caf6e5f1dce22117c32",
+      "stage_description": "pain-limited hallway walk",
+      "strava_elapsed_time_seconds": 299.0,
+      "strava_moving_time_seconds": 299.0
     },
     {
       "absolute_unit": "g*s",
@@ -1471,6 +1631,38 @@
       "stage_description": "Mall controlled skate",
       "strava_elapsed_time_seconds": 2031.0,
       "strava_moving_time_seconds": 1977.0
+    },
+    {
+      "absolute_unit": "g*s",
+      "absolute_value": 281.6920771649379,
+      "acc_analysis_window_duration_seconds": 7230.96,
+      "burden_metric_name": "cumulative_dynamic_shock",
+      "burden_per_mile": 160.33225613896724,
+      "burden_per_mile_unit": "g*s/mile",
+      "distance_authority": "miles",
+      "distance_conversion_version": "physical_distance_to_miles.v1",
+      "distance_coverage_status": "available",
+      "distance_miles": 1.7569270460510618,
+      "distance_source": "strava:strava_activity:19982072729",
+      "ecg_analysis_window_duration_seconds": 1786.8153846153846,
+      "event_activity_duration_scope": "accepted_triplet_canonical_event_interval",
+      "event_activity_duration_seconds": 1786.815385,
+      "functional_output_contract_version": "established_functional_burden_passthrough.v1",
+      "higher_value_interpretation": "greater accumulated dynamic shock",
+      "insufficiency_reason": null,
+      "kubios_recording_duration_seconds": 7230.96,
+      "per_mile_denominator_status": "available",
+      "per_mile_formula_version": "metric_specific_distance_normalization.v1|kubios_acc_session_metrics.v1",
+      "quality_status": "valid",
+      "rri_analysis_window_duration_seconds": 1790.503,
+      "sequence_date_local": "2026-08-31",
+      "sequence_index": 1,
+      "sequence_role": "mall",
+      "source_coverage": "kubios+strava+whoop",
+      "source_hash_bundle_sha256": "c6ca189e7f4439785879533417d2e6e39192501bc7a2b38eb3542c6590f8e991",
+      "stage_description": "Mall controlled skate",
+      "strava_elapsed_time_seconds": 1793.0,
+      "strava_moving_time_seconds": 1777.0
     },
     {
       "absolute_unit": "g*s",
@@ -2178,6 +2370,38 @@
     },
     {
       "absolute_unit": "g*s",
+      "absolute_value": 299.24066258487915,
+      "acc_analysis_window_duration_seconds": 7616.88,
+      "burden_metric_name": "cumulative_dynamic_shock",
+      "burden_per_mile": 151.8321347143577,
+      "burden_per_mile_unit": "g*s/mile",
+      "distance_authority": "miles",
+      "distance_conversion_version": "physical_distance_to_miles.v1",
+      "distance_coverage_status": "available",
+      "distance_miles": 1.9708651475383758,
+      "distance_source": "strava:strava_activity:19994578469",
+      "ecg_analysis_window_duration_seconds": 1882.8384615384616,
+      "event_activity_duration_scope": "accepted_triplet_canonical_event_interval",
+      "event_activity_duration_seconds": 1882.838462,
+      "functional_output_contract_version": "established_functional_burden_passthrough.v1",
+      "higher_value_interpretation": "greater accumulated dynamic shock",
+      "insufficiency_reason": null,
+      "kubios_recording_duration_seconds": 7616.88,
+      "per_mile_denominator_status": "available",
+      "per_mile_formula_version": "metric_specific_distance_normalization.v1|kubios_acc_session_metrics.v1",
+      "quality_status": "valid",
+      "rri_analysis_window_duration_seconds": 1886.403,
+      "sequence_date_local": "2026-09-01",
+      "sequence_index": 1,
+      "sequence_role": "mall",
+      "source_coverage": "kubios+strava+whoop",
+      "source_hash_bundle_sha256": "fd9871b3089aedfd35ed980267467a59a6a3d40c86b185346e761d3931a79088",
+      "stage_description": "Mall controlled skate",
+      "strava_elapsed_time_seconds": 1890.0,
+      "strava_moving_time_seconds": 1837.0
+    },
+    {
+      "absolute_unit": "g*s",
       "absolute_value": 300.18488922394636,
       "acc_analysis_window_duration_seconds": 7271.28,
       "burden_metric_name": "cumulative_dynamic_shock",
@@ -2434,6 +2658,70 @@
     },
     {
       "absolute_unit": "g*s",
+      "absolute_value": 311.7005821833761,
+      "acc_analysis_window_duration_seconds": 7882.56,
+      "burden_metric_name": "cumulative_dynamic_shock",
+      "burden_per_mile": 157.68686713608807,
+      "burden_per_mile_unit": "g*s/mile",
+      "distance_authority": "miles",
+      "distance_conversion_version": "physical_distance_to_miles.v1",
+      "distance_coverage_status": "available",
+      "distance_miles": 1.9767060367454066,
+      "distance_source": "strava:strava_activity:20012173392",
+      "ecg_analysis_window_duration_seconds": 1947.4153846153847,
+      "event_activity_duration_scope": "accepted_triplet_canonical_event_interval",
+      "event_activity_duration_seconds": 1947.415385,
+      "functional_output_contract_version": "established_functional_burden_passthrough.v1",
+      "higher_value_interpretation": "greater accumulated dynamic shock",
+      "insufficiency_reason": null,
+      "kubios_recording_duration_seconds": 7882.56,
+      "per_mile_denominator_status": "available",
+      "per_mile_formula_version": "metric_specific_distance_normalization.v1|kubios_acc_session_metrics.v1",
+      "quality_status": "valid",
+      "rri_analysis_window_duration_seconds": 1949.574,
+      "sequence_date_local": "2026-09-02",
+      "sequence_index": 1,
+      "sequence_role": "mall",
+      "source_coverage": "kubios+strava+whoop",
+      "source_hash_bundle_sha256": "196001f215a4d230ea15b1129a4fb7ecdd132f7da85b456fe9aef49622e407ed",
+      "stage_description": "Mall controlled skate",
+      "strava_elapsed_time_seconds": 1939.0,
+      "strava_moving_time_seconds": 1939.0
+    },
+    {
+      "absolute_unit": "g*s",
+      "absolute_value": 316.06096144679213,
+      "acc_analysis_window_duration_seconds": 7733.52,
+      "burden_metric_name": "cumulative_dynamic_shock",
+      "burden_per_mile": 160.40200937801592,
+      "burden_per_mile_unit": "g*s/mile",
+      "distance_authority": "miles",
+      "distance_conversion_version": "physical_distance_to_miles.v1",
+      "distance_coverage_status": "available",
+      "distance_miles": 1.9704301877038097,
+      "distance_source": "strava:strava_activity:20026111949",
+      "ecg_analysis_window_duration_seconds": 1912.6,
+      "event_activity_duration_scope": "accepted_triplet_canonical_event_interval",
+      "event_activity_duration_seconds": 1912.6,
+      "functional_output_contract_version": "established_functional_burden_passthrough.v1",
+      "higher_value_interpretation": "greater accumulated dynamic shock",
+      "insufficiency_reason": null,
+      "kubios_recording_duration_seconds": 7733.52,
+      "per_mile_denominator_status": "available",
+      "per_mile_formula_version": "metric_specific_distance_normalization.v1|kubios_acc_session_metrics.v1",
+      "quality_status": "valid",
+      "rri_analysis_window_duration_seconds": 1915.089,
+      "sequence_date_local": "2026-09-03",
+      "sequence_index": 1,
+      "sequence_role": "mall",
+      "source_coverage": "kubios+strava+whoop",
+      "source_hash_bundle_sha256": "b0b4bcc874f9f3cb885cf2da999328c9b872415b31cb0f79f68e32bc8943e0a4",
+      "stage_description": "Mall controlled skate",
+      "strava_elapsed_time_seconds": 1906.0,
+      "strava_moving_time_seconds": 1886.0
+    },
+    {
+      "absolute_unit": "g*s",
       "absolute_value": 322.85021565315327,
       "acc_analysis_window_duration_seconds": 5864.4,
       "burden_metric_name": "cumulative_dynamic_shock",
@@ -2463,6 +2751,70 @@
       "stage_description": "Mall controlled skate",
       "strava_elapsed_time_seconds": 1455.0,
       "strava_moving_time_seconds": 1437.0
+    },
+    {
+      "absolute_unit": "g*s",
+      "absolute_value": 323.47708704106856,
+      "acc_analysis_window_duration_seconds": 8807.76,
+      "burden_metric_name": "cumulative_dynamic_shock",
+      "burden_per_mile": 160.6399571595709,
+      "burden_per_mile_unit": "g*s/mile",
+      "distance_authority": "miles",
+      "distance_conversion_version": "physical_distance_to_miles.v1",
+      "distance_coverage_status": "available",
+      "distance_miles": 2.0136776226835282,
+      "distance_source": "strava:strava_activity:19969810504",
+      "ecg_analysis_window_duration_seconds": 2174.276923076923,
+      "event_activity_duration_scope": "accepted_triplet_canonical_event_interval",
+      "event_activity_duration_seconds": 2174.276923,
+      "functional_output_contract_version": "established_functional_burden_passthrough.v1",
+      "higher_value_interpretation": "greater accumulated dynamic shock",
+      "insufficiency_reason": null,
+      "kubios_recording_duration_seconds": 8807.76,
+      "per_mile_denominator_status": "available",
+      "per_mile_formula_version": "metric_specific_distance_normalization.v1|kubios_acc_session_metrics.v1",
+      "quality_status": "valid",
+      "rri_analysis_window_duration_seconds": 2178.228,
+      "sequence_date_local": "2026-08-30",
+      "sequence_index": 1,
+      "sequence_role": "mall",
+      "source_coverage": "kubios+strava+whoop",
+      "source_hash_bundle_sha256": "c0963f191f66960176a78e833ddab33d43f23a59913b387fae78fcfd9f0bbf87",
+      "stage_description": "Mall controlled skate",
+      "strava_elapsed_time_seconds": 2176.0,
+      "strava_moving_time_seconds": 2176.0
+    },
+    {
+      "absolute_unit": "g*s",
+      "absolute_value": 334.0369159677352,
+      "acc_analysis_window_duration_seconds": 3327.12,
+      "burden_metric_name": "cumulative_dynamic_shock",
+      "burden_per_mile": 195.42689635421652,
+      "burden_per_mile_unit": "g*s/mile",
+      "distance_authority": "miles",
+      "distance_conversion_version": "physical_distance_to_miles.v1",
+      "distance_coverage_status": "available",
+      "distance_miles": 1.7092678756064583,
+      "distance_source": "strava:strava_activity:19971898416",
+      "ecg_analysis_window_duration_seconds": 821.5307692307692,
+      "event_activity_duration_scope": "accepted_triplet_canonical_event_interval",
+      "event_activity_duration_seconds": 821.530769,
+      "functional_output_contract_version": "established_functional_burden_passthrough.v1",
+      "higher_value_interpretation": "greater accumulated dynamic shock",
+      "insufficiency_reason": null,
+      "kubios_recording_duration_seconds": 3327.12,
+      "per_mile_denominator_status": "available",
+      "per_mile_formula_version": "metric_specific_distance_normalization.v1|kubios_acc_session_metrics.v1",
+      "quality_status": "valid",
+      "rri_analysis_window_duration_seconds": 823.903,
+      "sequence_date_local": "2026-08-30",
+      "sequence_index": 3,
+      "sequence_role": "pt",
+      "source_coverage": "kubios+strava+whoop",
+      "source_hash_bundle_sha256": "0a30b1b3d3ab7a6f5559e04c076619b681b6592d9010f1ad596707aad540e762",
+      "stage_description": "post-walk PT controlled skate",
+      "strava_elapsed_time_seconds": 905.0,
+      "strava_moving_time_seconds": 885.0
     },
     {
       "absolute_unit": "g*s",
@@ -2527,6 +2879,38 @@
       "stage_description": "post-walk PT controlled skate",
       "strava_elapsed_time_seconds": 985.0,
       "strava_moving_time_seconds": 934.0
+    },
+    {
+      "absolute_unit": "g*s",
+      "absolute_value": 347.90803516148867,
+      "acc_analysis_window_duration_seconds": 3960.72,
+      "burden_metric_name": "cumulative_dynamic_shock",
+      "burden_per_mile": 192.79102986672092,
+      "burden_per_mile_unit": "g*s/mile",
+      "distance_authority": "miles",
+      "distance_conversion_version": "physical_distance_to_miles.v1",
+      "distance_coverage_status": "available",
+      "distance_miles": 1.8045862164956652,
+      "distance_source": "strava:strava_activity:20000331256",
+      "ecg_analysis_window_duration_seconds": 978.2,
+      "event_activity_duration_scope": "accepted_triplet_canonical_event_interval",
+      "event_activity_duration_seconds": 978.2,
+      "functional_output_contract_version": "established_functional_burden_passthrough.v1",
+      "higher_value_interpretation": "greater accumulated dynamic shock",
+      "insufficiency_reason": null,
+      "kubios_recording_duration_seconds": 3960.72,
+      "per_mile_denominator_status": "available",
+      "per_mile_formula_version": "metric_specific_distance_normalization.v1|kubios_acc_session_metrics.v1",
+      "quality_status": "valid",
+      "rri_analysis_window_duration_seconds": 980.55,
+      "sequence_date_local": "2026-09-01",
+      "sequence_index": 3,
+      "sequence_role": "pt",
+      "source_coverage": "kubios+strava+whoop",
+      "source_hash_bundle_sha256": "f1d1f427625ff46981c2aa131e86ff3e5828f0880bf3d6ce9d281900744df542",
+      "stage_description": "post-walk PT controlled skate",
+      "strava_elapsed_time_seconds": 978.0,
+      "strava_moving_time_seconds": 978.0
     },
     {
       "absolute_unit": "g*s",
@@ -3266,6 +3650,38 @@
     },
     {
       "absolute_unit": "g*s",
+      "absolute_value": 398.3402222990484,
+      "acc_analysis_window_duration_seconds": 3713.04,
+      "burden_metric_name": "cumulative_dynamic_shock",
+      "burden_per_mile": 222.0143538409142,
+      "burden_per_mile_unit": "g*s/mile",
+      "distance_authority": "miles",
+      "distance_conversion_version": "physical_distance_to_miles.v1",
+      "distance_coverage_status": "available",
+      "distance_miles": 1.7942093175853018,
+      "distance_source": "strava:strava_activity:19983759639",
+      "ecg_analysis_window_duration_seconds": 916.4307692307692,
+      "event_activity_duration_scope": "accepted_triplet_canonical_event_interval",
+      "event_activity_duration_seconds": 916.430769,
+      "functional_output_contract_version": "established_functional_burden_passthrough.v1",
+      "higher_value_interpretation": "greater accumulated dynamic shock",
+      "insufficiency_reason": null,
+      "kubios_recording_duration_seconds": 3713.04,
+      "per_mile_denominator_status": "available",
+      "per_mile_formula_version": "metric_specific_distance_normalization.v1|kubios_acc_session_metrics.v1",
+      "quality_status": "valid",
+      "rri_analysis_window_duration_seconds": 918.387,
+      "sequence_date_local": "2026-08-31",
+      "sequence_index": 3,
+      "sequence_role": "pt",
+      "source_coverage": "kubios+strava+whoop",
+      "source_hash_bundle_sha256": "ba4fe5538c3342a603fb5eaf9b95cd2c0ab372e541c13a4ecaaf54bba00d5496",
+      "stage_description": "post-walk PT controlled skate",
+      "strava_elapsed_time_seconds": 911.0,
+      "strava_moving_time_seconds": 893.0
+    },
+    {
+      "absolute_unit": "g*s",
       "absolute_value": 402.0561210770957,
       "acc_analysis_window_duration_seconds": 3913.2,
       "burden_metric_name": "cumulative_dynamic_shock",
@@ -3391,6 +3807,38 @@
       "stage_description": "post-walk PT controlled skate",
       "strava_elapsed_time_seconds": 965.0,
       "strava_moving_time_seconds": 950.0
+    },
+    {
+      "absolute_unit": "g*s",
+      "absolute_value": 416.12070928788506,
+      "acc_analysis_window_duration_seconds": 3600.72,
+      "burden_metric_name": "cumulative_dynamic_shock",
+      "burden_per_mile": 235.57104501484525,
+      "burden_per_mile_unit": "g*s/mile",
+      "distance_authority": "miles",
+      "distance_conversion_version": "physical_distance_to_miles.v1",
+      "distance_coverage_status": "available",
+      "distance_miles": 1.766434025292293,
+      "distance_source": "strava:strava_activity:20014144425",
+      "ecg_analysis_window_duration_seconds": 888.9153846153846,
+      "event_activity_duration_scope": "accepted_triplet_canonical_event_interval",
+      "event_activity_duration_seconds": 888.915385,
+      "functional_output_contract_version": "established_functional_burden_passthrough.v1",
+      "higher_value_interpretation": "greater accumulated dynamic shock",
+      "insufficiency_reason": null,
+      "kubios_recording_duration_seconds": 3600.72,
+      "per_mile_denominator_status": "available",
+      "per_mile_formula_version": "metric_specific_distance_normalization.v1|kubios_acc_session_metrics.v1",
+      "quality_status": "valid",
+      "rri_analysis_window_duration_seconds": 890.915,
+      "sequence_date_local": "2026-09-02",
+      "sequence_index": 3,
+      "sequence_role": "pt",
+      "source_coverage": "kubios+strava+whoop",
+      "source_hash_bundle_sha256": "eeea7e5c09c00276f2ea7a39b206d1204136fb4343aa72206233436c8c8ab05b",
+      "stage_description": "post-walk PT controlled skate",
+      "strava_elapsed_time_seconds": 891.0,
+      "strava_moving_time_seconds": 846.0
     },
     {
       "absolute_unit": "g*s",
@@ -3586,6 +4034,38 @@
     },
     {
       "absolute_unit": "g*s",
+      "absolute_value": 438.5974158501561,
+      "acc_analysis_window_duration_seconds": 4116.24,
+      "burden_metric_name": "cumulative_dynamic_shock",
+      "burden_per_mile": 239.9721627843726,
+      "burden_per_mile_unit": "g*s/mile",
+      "distance_authority": "miles",
+      "distance_conversion_version": "physical_distance_to_miles.v1",
+      "distance_coverage_status": "available",
+      "distance_miles": 1.8277012248468942,
+      "distance_source": "strava:strava_activity:20027488018",
+      "ecg_analysis_window_duration_seconds": 1016.3846153846154,
+      "event_activity_duration_scope": "accepted_triplet_canonical_event_interval",
+      "event_activity_duration_seconds": 1016.384615,
+      "functional_output_contract_version": "established_functional_burden_passthrough.v1",
+      "higher_value_interpretation": "greater accumulated dynamic shock",
+      "insufficiency_reason": null,
+      "kubios_recording_duration_seconds": 4116.24,
+      "per_mile_denominator_status": "available",
+      "per_mile_formula_version": "metric_specific_distance_normalization.v1|kubios_acc_session_metrics.v1",
+      "quality_status": "valid",
+      "rri_analysis_window_duration_seconds": 1017.625,
+      "sequence_date_local": "2026-09-03",
+      "sequence_index": 3,
+      "sequence_role": "pt",
+      "source_coverage": "kubios+strava+whoop",
+      "source_hash_bundle_sha256": "03300081f96c44af422c1ab6bdecd3ba5a4549c9b4e659f7dffe048ff7a90f44",
+      "stage_description": "post-walk PT controlled skate",
+      "strava_elapsed_time_seconds": 1018.0,
+      "strava_moving_time_seconds": 995.0
+    },
+    {
+      "absolute_unit": "g*s",
       "absolute_value": 439.9160086041995,
       "acc_analysis_window_duration_seconds": 4343.76,
       "burden_metric_name": "cumulative_dynamic_shock",
@@ -3713,19 +4193,19 @@
       "strava_moving_time_seconds": 1099.0
     }
   ],
-  "alt_text": "Cumulative dynamic shock per authoritative mile is available for 117 stages across 39 accepted triplets. 3 other accepted-stage distances remain unavailable and are not plotted.",
+  "alt_text": "Cumulative dynamic shock per authoritative mile is available for 132 stages across 44 accepted triplets. 3 other accepted-stage distances remain unavailable and are not plotted.",
   "claim_class": "INTERPRETATION",
   "claim_classes": {
     "finding": "INTERPRETATION",
     "repeatability": "MEASURED",
     "values": "DERIVED"
   },
-  "content_hash": "986a6f079da0a0ae366dcc346ed7e292825ef5639b4e081bdb2d86b5ce259466",
+  "content_hash": "366b89086895e5e683cd5ba704113ac7672ac564a25b37afbcac8368299925bd",
   "coverage": {
-    "covered_stages": 116,
-    "covered_triplets": 39
+    "covered_stages": 131,
+    "covered_triplets": 44
   },
-  "data_through_date": "2026-08-27",
+  "data_through_date": "2026-09-03",
   "destination": "handicapskater.com",
   "evidence": {
     "canonical_relations": [
@@ -3734,7 +4214,7 @@
       "v_normalized_distance_authority"
     ],
     "sample_count": {
-      "covered_stages": 116
+      "covered_stages": 131
     },
     "source_systems": [
       "Kubios/Polar H10",
@@ -3760,7 +4240,7 @@
   "limitations": [
     "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
-  "long_description": "Cumulative dynamic shock per mile is derived from canonical accumulated shock and authoritative recorded miles; RMS and jerk RMS values are never divided by distance. Authoritative distance coverage is 117 of 120 accepted stages and 39 complete triplets. The other 3 accepted-stage distances remain missing and are not estimated. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
+  "long_description": "Cumulative dynamic shock per mile is derived from canonical accumulated shock and authoritative recorded miles; RMS and jerk RMS values are never divided by distance. Authoritative distance coverage is 132 of 135 accepted stages and 44 complete triplets. The other 3 accepted-stage distances remain missing and are not estimated. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
   "matrix": [],
   "missingness": [
     "authoritative_miles_only",
@@ -3779,6 +4259,13 @@
           "sample_count": 1,
           "unit": "g*s/mile",
           "value": 1224.5985152617654
+        },
+        {
+          "distance_miles": 0.13284916090034202,
+          "label": "Walk",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 952.4025452300847
         },
         {
           "distance_miles": 0.14701642408335322,
@@ -3893,6 +4380,13 @@
           "value": 940.12683418405
         },
         {
+          "distance_miles": 0.15552920941700468,
+          "label": "Walk",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 869.3885525498724
+        },
+        {
           "distance_miles": 0.11625855006760517,
           "label": "Walk",
           "sample_count": 1,
@@ -3998,6 +4492,13 @@
           "value": 1092.7308628173432
         },
         {
+          "distance_miles": 0.13539678278851508,
+          "label": "Walk",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 1020.3329446770051
+        },
+        {
           "distance_miles": 0.12881024815079933,
           "label": "Walk",
           "sample_count": 1,
@@ -4038,6 +4539,20 @@
           "sample_count": 1,
           "unit": "g*s/mile",
           "value": 957.7665495953155
+        },
+        {
+          "distance_miles": 0.21903334526366022,
+          "label": "Walk",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 652.0654829354904
+        },
+        {
+          "distance_miles": 0.13235206394655213,
+          "label": "Walk",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 1088.4694609769006
         },
         {
           "distance_miles": 0.3001222858506323,
@@ -4094,6 +4609,13 @@
           "sample_count": 1,
           "unit": "g*s/mile",
           "value": 141.5698512381035
+        },
+        {
+          "distance_miles": 1.7569270460510618,
+          "label": "Mall Skate",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 160.33225613896724
         },
         {
           "distance_miles": 2.067736916408176,
@@ -4250,6 +4772,13 @@
           "value": 148.1505185300211
         },
         {
+          "distance_miles": 1.9708651475383758,
+          "label": "Mall Skate",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 151.8321347143577
+        },
+        {
           "distance_miles": 1.9644028871391077,
           "label": "Mall Skate",
           "sample_count": 1,
@@ -4306,11 +4835,39 @@
           "value": 146.05569061394252
         },
         {
+          "distance_miles": 1.9767060367454066,
+          "label": "Mall Skate",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 157.68686713608807
+        },
+        {
+          "distance_miles": 1.9704301877038097,
+          "label": "Mall Skate",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 160.40200937801592
+        },
+        {
           "distance_miles": 2.0478530382565814,
           "label": "Mall Skate",
           "sample_count": 1,
           "unit": "g*s/mile",
           "value": 157.65301983193504
+        },
+        {
+          "distance_miles": 2.0136776226835282,
+          "label": "Mall Skate",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 160.6399571595709
+        },
+        {
+          "distance_miles": 1.7092678756064583,
+          "label": "PT Skate",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 195.42689635421652
         },
         {
           "distance_miles": 2.0432548914340254,
@@ -4325,6 +4882,13 @@
           "sample_count": 1,
           "unit": "g*s/mile",
           "value": 189.19942934081448
+        },
+        {
+          "distance_miles": 1.8045862164956652,
+          "label": "PT Skate",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 192.79102986672092
         },
         {
           "distance_miles": 1.8168893661019645,
@@ -4488,6 +5052,13 @@
           "value": 216.69749633453017
         },
         {
+          "distance_miles": 1.7942093175853018,
+          "label": "PT Skate",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 222.0143538409142
+        },
+        {
           "distance_miles": 1.8183185198441105,
           "label": "PT Skate",
           "sample_count": 1,
@@ -4514,6 +5085,13 @@
           "sample_count": 1,
           "unit": "g*s/mile",
           "value": 227.7654891051594
+        },
+        {
+          "distance_miles": 1.766434025292293,
+          "label": "PT Skate",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 235.57104501484525
         },
         {
           "distance_miles": 1.810240694345025,
@@ -4556,6 +5134,13 @@
           "sample_count": 1,
           "unit": "g*s/mile",
           "value": 235.18537473419642
+        },
+        {
+          "distance_miles": 1.8277012248468942,
+          "label": "PT Skate",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 239.9721627843726
         },
         {
           "distance_miles": 1.844043287202736,
@@ -4592,7 +5177,7 @@
   ],
   "planned_comparator": null,
   "qualifications": [
-    "Authoritative distance coverage is 117 of 120 accepted stages and 39 complete triplets.",
+    "Authoritative distance coverage is 132 of 135 accepted stages and 44 complete triplets.",
     "The other 3 accepted-stage distances remain missing and are not estimated."
   ],
   "question": "How much accumulated dynamic shock occurs per authoritative mile under each protocol role?",
@@ -4603,15 +5188,15 @@
     "v_normalized_distance_authority"
   ],
   "repeatability": {
-    "accepted_stage_n": 120,
-    "accepted_triplet_n": 40,
-    "covered_stage_n": 116,
-    "covered_triplet_n": 39,
+    "accepted_stage_n": 135,
+    "accepted_triplet_n": 45,
+    "covered_stage_n": 131,
+    "covered_triplet_n": 44,
     "status": "derived from canonical paired stage rows"
   },
   "sample_counts": {
-    "covered_stages": 116,
-    "covered_triplets": 39
+    "covered_stages": 131,
+    "covered_triplets": 44
   },
   "series": [
     {
@@ -4622,6 +5207,13 @@
           "sample_count": 1,
           "unit": "g*s/mile",
           "value": 1224.5985152617654
+        },
+        {
+          "distance_miles": 0.13284916090034202,
+          "label": "Walk",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 952.4025452300847
         },
         {
           "distance_miles": 0.14701642408335322,
@@ -4736,6 +5328,13 @@
           "value": 940.12683418405
         },
         {
+          "distance_miles": 0.15552920941700468,
+          "label": "Walk",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 869.3885525498724
+        },
+        {
           "distance_miles": 0.11625855006760517,
           "label": "Walk",
           "sample_count": 1,
@@ -4841,6 +5440,13 @@
           "value": 1092.7308628173432
         },
         {
+          "distance_miles": 0.13539678278851508,
+          "label": "Walk",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 1020.3329446770051
+        },
+        {
           "distance_miles": 0.12881024815079933,
           "label": "Walk",
           "sample_count": 1,
@@ -4881,6 +5487,20 @@
           "sample_count": 1,
           "unit": "g*s/mile",
           "value": 957.7665495953155
+        },
+        {
+          "distance_miles": 0.21903334526366022,
+          "label": "Walk",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 652.0654829354904
+        },
+        {
+          "distance_miles": 0.13235206394655213,
+          "label": "Walk",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 1088.4694609769006
         },
         {
           "distance_miles": 0.3001222858506323,
@@ -4937,6 +5557,13 @@
           "sample_count": 1,
           "unit": "g*s/mile",
           "value": 141.5698512381035
+        },
+        {
+          "distance_miles": 1.7569270460510618,
+          "label": "Mall Skate",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 160.33225613896724
         },
         {
           "distance_miles": 2.067736916408176,
@@ -5093,6 +5720,13 @@
           "value": 148.1505185300211
         },
         {
+          "distance_miles": 1.9708651475383758,
+          "label": "Mall Skate",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 151.8321347143577
+        },
+        {
           "distance_miles": 1.9644028871391077,
           "label": "Mall Skate",
           "sample_count": 1,
@@ -5149,11 +5783,39 @@
           "value": 146.05569061394252
         },
         {
+          "distance_miles": 1.9767060367454066,
+          "label": "Mall Skate",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 157.68686713608807
+        },
+        {
+          "distance_miles": 1.9704301877038097,
+          "label": "Mall Skate",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 160.40200937801592
+        },
+        {
           "distance_miles": 2.0478530382565814,
           "label": "Mall Skate",
           "sample_count": 1,
           "unit": "g*s/mile",
           "value": 157.65301983193504
+        },
+        {
+          "distance_miles": 2.0136776226835282,
+          "label": "Mall Skate",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 160.6399571595709
+        },
+        {
+          "distance_miles": 1.7092678756064583,
+          "label": "PT Skate",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 195.42689635421652
         },
         {
           "distance_miles": 2.0432548914340254,
@@ -5168,6 +5830,13 @@
           "sample_count": 1,
           "unit": "g*s/mile",
           "value": 189.19942934081448
+        },
+        {
+          "distance_miles": 1.8045862164956652,
+          "label": "PT Skate",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 192.79102986672092
         },
         {
           "distance_miles": 1.8168893661019645,
@@ -5331,6 +6000,13 @@
           "value": 216.69749633453017
         },
         {
+          "distance_miles": 1.7942093175853018,
+          "label": "PT Skate",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 222.0143538409142
+        },
+        {
           "distance_miles": 1.8183185198441105,
           "label": "PT Skate",
           "sample_count": 1,
@@ -5357,6 +6033,13 @@
           "sample_count": 1,
           "unit": "g*s/mile",
           "value": 227.7654891051594
+        },
+        {
+          "distance_miles": 1.766434025292293,
+          "label": "PT Skate",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 235.57104501484525
         },
         {
           "distance_miles": 1.810240694345025,
@@ -5399,6 +6082,13 @@
           "sample_count": 1,
           "unit": "g*s/mile",
           "value": 235.18537473419642
+        },
+        {
+          "distance_miles": 1.8277012248468942,
+          "label": "PT Skate",
+          "sample_count": 1,
+          "unit": "g*s/mile",
+          "value": 239.9721627843726
         },
         {
           "distance_miles": 1.844043287202736,

@@ -404,11 +404,11 @@
   "alt_text": "Transportation evidence remains MIXED across model/tier combinations. The current best held-out balanced accuracy is .974 versus .972 historically; that small difference does not strengthen the claim.",
   "claim_class": "INTERPRETATION",
   "claim_classes": {},
-  "content_hash": "166b1645be12ef2c74ab016fa45f7d8ae4a88bf1b5939f6e9f7e08703e77c95f",
+  "content_hash": "8e4c0be15af80e01520ae56526d2da1728f68fd03534e236bf2b381950700c5f",
   "coverage": {
     "passive_transport": 44
   },
-  "data_through_date": "2026-08-27",
+  "data_through_date": "2026-09-03",
   "destination": "handicapskater.com",
   "evidence": {
     "canonical_relations": [

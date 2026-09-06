@@ -851,6 +851,56 @@
       "wind_speed_mph": 9.61882605583392
     },
     {
+      "canonical_activity_distance_miles": 0.13011512765449773,
+      "canonical_cohort": "other_review",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:19983467877",
+      "event_duration_seconds": null,
+      "event_start_local": null,
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "1.0",
+      "protocol_scope": "broad_context",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 65.66,
+      "triplet_sequence_role": null,
+      "weather_condition": "Strava weather condition code 3.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 13.869005010737279,
+      "wind_speed_mph": 8.052970651395839
+    },
+    {
+      "canonical_activity_distance_miles": 23.94764574882685,
+      "canonical_cohort": "other_review",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:19957212221",
+      "event_duration_seconds": null,
+      "event_start_local": null,
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "1.0",
+      "protocol_scope": "broad_context",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 66.38,
+      "triplet_sequence_role": null,
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 13.421617752326398,
+      "wind_speed_mph": 10.51360057265568
+    },
+    {
       "canonical_activity_distance_miles": 11.850853515469655,
       "canonical_cohort": "fns_sns_skating",
       "distance_authority": "miles",
@@ -1074,6 +1124,31 @@
       "weather_station": null,
       "wind_gust_mph": 9.61882605583392,
       "wind_speed_mph": 6.710808876163199
+    },
+    {
+      "canonical_activity_distance_miles": 24.276599657997295,
+      "canonical_cohort": "other_review",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:19958170430",
+      "event_duration_seconds": null,
+      "event_start_local": null,
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "1.0",
+      "protocol_scope": "broad_context",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 60.26,
+      "triplet_sequence_role": null,
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 12.974230493915519,
+      "wind_speed_mph": 7.381889763779519
     },
     {
       "canonical_activity_distance_miles": 24.277593851904875,
@@ -1649,6 +1724,31 @@
       "weather_station": null,
       "wind_gust_mph": 11.85576234788832,
       "wind_speed_mph": 8.724051539012159
+    },
+    {
+      "canonical_activity_distance_miles": 23.87625019883878,
+      "canonical_cohort": "other_review",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:19943506215",
+      "event_duration_seconds": null,
+      "event_start_local": null,
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "5.0",
+      "protocol_scope": "broad_context",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 70.16,
+      "triplet_sequence_role": null,
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 6.710808876163199,
+      "wind_speed_mph": 3.8027916964924797
     },
     {
       "canonical_activity_distance_miles": 0.07593155969140221,
@@ -2801,6 +2901,31 @@
       "wind_speed_mph": 9.171438797423038
     },
     {
+      "canonical_activity_distance_miles": 0.1434124711683767,
+      "canonical_cohort": "other_review",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:20013952937",
+      "event_duration_seconds": null,
+      "event_start_local": null,
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "5.0",
+      "protocol_scope": "broad_context",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 70.7,
+      "triplet_sequence_role": null,
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 10.96098783106656,
+      "wind_speed_mph": 6.710808876163199
+    },
+    {
       "canonical_activity_distance_miles": 0.40619034836554524,
       "canonical_cohort": "other_review",
       "distance_authority": "miles",
@@ -2926,6 +3051,31 @@
       "wind_speed_mph": 3.57909806728704
     },
     {
+      "canonical_activity_distance_miles": 0.1460843672949972,
+      "canonical_cohort": "other_review",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:19971765881",
+      "event_duration_seconds": null,
+      "event_start_local": null,
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "1.0",
+      "protocol_scope": "broad_context",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 57.74,
+      "triplet_sequence_role": null,
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 7.6055833929849594,
+      "wind_speed_mph": 5.1449534717251195
+    },
+    {
       "canonical_activity_distance_miles": 0.16192933269704923,
       "canonical_cohort": "other_review",
       "distance_authority": "miles",
@@ -2949,6 +3099,31 @@
       "weather_station": null,
       "wind_gust_mph": 8.9477451682176,
       "wind_speed_mph": 7.381889763779519
+    },
+    {
+      "canonical_activity_distance_miles": 0.2906774437286248,
+      "canonical_cohort": "other_review",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:20027285020",
+      "event_duration_seconds": null,
+      "event_start_local": null,
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "5.0",
+      "protocol_scope": "broad_context",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 70.34,
+      "triplet_sequence_role": null,
+      "weather_condition": "Strava weather condition code 3.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 12.303149606299199,
+      "wind_speed_mph": 6.9345025053686395
     },
     {
       "canonical_activity_distance_miles": 23.856801280521754,
@@ -3149,6 +3324,31 @@
       "weather_station": null,
       "wind_gust_mph": 9.84251968503936,
       "wind_speed_mph": 6.710808876163199
+    },
+    {
+      "canonical_activity_distance_miles": 0.15192525650202815,
+      "canonical_cohort": "other_review",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:20000194879",
+      "event_duration_seconds": null,
+      "event_start_local": null,
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "1.0",
+      "protocol_scope": "broad_context",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 62.959999999999994,
+      "triplet_sequence_role": null,
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 10.289906943450239,
+      "wind_speed_mph": 3.57909806728704
     },
     {
       "canonical_activity_distance_miles": 24.254665254911316,
@@ -48724,14 +48924,614 @@
       "weather_station": null,
       "wind_gust_mph": 5.592340730136,
       "wind_speed_mph": 3.1317108088761594
+    },
+    {
+      "canonical_activity_distance_miles": null,
+      "canonical_cohort": "readiness_baseline",
+      "distance_authority": null,
+      "distance_source": null,
+      "event_duration_seconds": null,
+      "event_start_local": "2026-08-28T09:34:31",
+      "precipitation_inches_per_hour": null,
+      "precipitation_type": null,
+      "protocol_scope": "broad_context",
+      "route_availability": "no_strava_activity",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": null,
+      "triplet_sequence_role": null,
+      "weather_condition": null,
+      "weather_coverage_status": "no_strava_activity",
+      "weather_missing_reason": "no linked Strava activity",
+      "weather_provider": null,
+      "weather_source": null,
+      "weather_station": null,
+      "wind_gust_mph": null,
+      "wind_speed_mph": null
+    },
+    {
+      "canonical_activity_distance_miles": 23.90620029030462,
+      "canonical_cohort": "paratransit_silverride",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:19943506585",
+      "event_duration_seconds": 2596.0,
+      "event_start_local": "2026-08-28T19:50:17",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "5.0",
+      "protocol_scope": "broad_context",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 70.16,
+      "triplet_sequence_role": null,
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 6.710808876163199,
+      "wind_speed_mph": 3.8027916964924797
+    },
+    {
+      "canonical_activity_distance_miles": 11.895281555714625,
+      "canonical_cohort": "fns_sns_skating",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:19944431213",
+      "event_duration_seconds": 10719.0,
+      "event_start_local": "2026-08-28T20:59:15",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "5.0",
+      "protocol_scope": "broad_context",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 62.059999999999995,
+      "triplet_sequence_role": null,
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 12.974230493915519,
+      "wind_speed_mph": 8.052970651395839
+    },
+    {
+      "canonical_activity_distance_miles": 24.00220213950529,
+      "canonical_cohort": "paratransit_sedan_or_taxi",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:19957213857",
+      "event_duration_seconds": 3137.0,
+      "event_start_local": "2026-08-29T19:50:33",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "1.0",
+      "protocol_scope": "broad_context",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 66.38,
+      "triplet_sequence_role": null,
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 13.421617752326398,
+      "wind_speed_mph": 10.51360057265568
+    },
+    {
+      "canonical_activity_distance_miles": 11.46678398154776,
+      "canonical_cohort": "fns_sns_skating",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:19957845866",
+      "event_duration_seconds": 8078.0,
+      "event_start_local": "2026-08-29T21:06:16",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "1.0",
+      "protocol_scope": "broad_context",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 61.34,
+      "triplet_sequence_role": null,
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 13.645311381531839,
+      "wind_speed_mph": 5.1449534717251195
+    },
+    {
+      "canonical_activity_distance_miles": 24.321400520957607,
+      "canonical_cohort": "paratransit_bus",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:19958174138",
+      "event_duration_seconds": 2506.0,
+      "event_start_local": "2026-08-29T23:30:45",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "1.0",
+      "protocol_scope": "broad_context",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 60.26,
+      "triplet_sequence_role": null,
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 12.974230493915519,
+      "wind_speed_mph": 7.381889763779519
+    },
+    {
+      "canonical_activity_distance_miles": 2.0136776226835282,
+      "canonical_cohort": "mall_skating",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:19969810504",
+      "event_duration_seconds": 2197.0,
+      "event_start_local": "2026-08-30T15:59:42",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "1.0",
+      "protocol_scope": "accepted_triplet_protocol",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 70.7,
+      "triplet_sequence_role": "mall",
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 13.421617752326398,
+      "wind_speed_mph": 7.15819613457408
+    },
+    {
+      "canonical_activity_distance_miles": 0.13284916090034202,
+      "canonical_cohort": "walking",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:19971766746",
+      "event_duration_seconds": 321.0,
+      "event_start_local": "2026-08-30T23:23:37",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "1.0",
+      "protocol_scope": "accepted_triplet_protocol",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 57.74,
+      "triplet_sequence_role": "walk",
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 7.6055833929849594,
+      "wind_speed_mph": 5.1449534717251195
+    },
+    {
+      "canonical_activity_distance_miles": 1.7092678756064583,
+      "canonical_cohort": "pt_skating",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:19971898416",
+      "event_duration_seconds": 931.0,
+      "event_start_local": "2026-08-30T23:35:37",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "1.0",
+      "protocol_scope": "accepted_triplet_protocol",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 58.1,
+      "triplet_sequence_role": "pt",
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 6.03972798854688,
+      "wind_speed_mph": 3.8027916964924797
+    },
+    {
+      "canonical_activity_distance_miles": 1.7569270460510618,
+      "canonical_cohort": "mall_skating",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:19982072729",
+      "event_duration_seconds": 1823.0,
+      "event_start_local": "2026-08-31T14:50:47",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "1.0",
+      "protocol_scope": "accepted_triplet_protocol",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 64.75999999999999,
+      "triplet_sequence_role": "mall",
+      "weather_condition": "Strava weather condition code 3.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 11.632068718682879,
+      "wind_speed_mph": 8.052970651395839
+    },
+    {
+      "canonical_activity_distance_miles": 0.13235206394655213,
+      "canonical_cohort": "walking",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:19983470367",
+      "event_duration_seconds": 313.0,
+      "event_start_local": "2026-08-31T17:34:09",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "1.0",
+      "protocol_scope": "accepted_triplet_protocol",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 65.66,
+      "triplet_sequence_role": "walk",
+      "weather_condition": "Strava weather condition code 3.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 13.869005010737279,
+      "wind_speed_mph": 8.052970651395839
+    },
+    {
+      "canonical_activity_distance_miles": 1.7942093175853018,
+      "canonical_cohort": "pt_skating",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:19983759639",
+      "event_duration_seconds": 938.0,
+      "event_start_local": "2026-08-31T17:56:30",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "1.0",
+      "protocol_scope": "accepted_triplet_protocol",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 63.32,
+      "triplet_sequence_role": "pt",
+      "weather_condition": "Strava weather condition code 2.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 15.882247673586237,
+      "wind_speed_mph": 9.171438797423038
+    },
+    {
+      "canonical_activity_distance_miles": 1.9708651475383758,
+      "canonical_cohort": "mall_skating",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:19994578469",
+      "event_duration_seconds": 1910.0,
+      "event_start_local": "2026-09-01T10:50:24",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "1.0",
+      "protocol_scope": "accepted_triplet_protocol",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 64.58,
+      "triplet_sequence_role": "mall",
+      "weather_condition": "Strava weather condition code 3.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 8.052970651395839,
+      "wind_speed_mph": 3.57909806728704
+    },
+    {
+      "canonical_activity_distance_miles": 25.026035452954744,
+      "canonical_cohort": "motorcycle",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:19999298345",
+      "event_duration_seconds": 2329.0,
+      "event_start_local": "2026-09-01T18:09:27",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "1.0",
+      "protocol_scope": "broad_context",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 68.54,
+      "triplet_sequence_role": null,
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 13.869005010737279,
+      "wind_speed_mph": 7.6055833929849594
+    },
+    {
+      "canonical_activity_distance_miles": 26.857029945120495,
+      "canonical_cohort": "motorcycle",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:19999661671",
+      "event_duration_seconds": 2580.0,
+      "event_start_local": "2026-09-01T19:01:04",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "5.0",
+      "protocol_scope": "broad_context",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 62.42,
+      "triplet_sequence_role": null,
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 11.184681460272,
+      "wind_speed_mph": 7.15819613457408
+    },
+    {
+      "canonical_activity_distance_miles": 0.15552920941700468,
+      "canonical_cohort": "walking",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:20000194796",
+      "event_duration_seconds": 316.0,
+      "event_start_local": "2026-09-01T21:29:31",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "1.0",
+      "protocol_scope": "accepted_triplet_protocol",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 62.959999999999994,
+      "triplet_sequence_role": "walk",
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 10.289906943450239,
+      "wind_speed_mph": 3.57909806728704
+    },
+    {
+      "canonical_activity_distance_miles": 1.8045862164956652,
+      "canonical_cohort": "pt_skating",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:20000331256",
+      "event_duration_seconds": 993.0,
+      "event_start_local": "2026-09-01T21:43:44",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "1.0",
+      "protocol_scope": "accepted_triplet_protocol",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 62.059999999999995,
+      "triplet_sequence_role": "pt",
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 9.61882605583392,
+      "wind_speed_mph": 1.78954903364352
+    },
+    {
+      "canonical_activity_distance_miles": 1.9767060367454066,
+      "canonical_cohort": "mall_skating",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:20012173392",
+      "event_duration_seconds": 1974.0,
+      "event_start_local": "2026-09-02T14:53:01",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "5.0",
+      "protocol_scope": "accepted_triplet_protocol",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 71.42,
+      "triplet_sequence_role": "mall",
+      "weather_condition": "Strava weather condition code 2.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 13.869005010737279,
+      "wind_speed_mph": 8.9477451682176
+    },
+    {
+      "canonical_activity_distance_miles": 0.13539678278851508,
+      "canonical_cohort": "walking",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:20013953398",
+      "event_duration_seconds": 321.0,
+      "event_start_local": "2026-09-02T18:35:27",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "5.0",
+      "protocol_scope": "accepted_triplet_protocol",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 70.7,
+      "triplet_sequence_role": "walk",
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 10.96098783106656,
+      "wind_speed_mph": 6.710808876163199
+    },
+    {
+      "canonical_activity_distance_miles": 1.766434025292293,
+      "canonical_cohort": "pt_skating",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:20014144425",
+      "event_duration_seconds": 911.0,
+      "event_start_local": "2026-09-02T18:47:41",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "1.0",
+      "protocol_scope": "accepted_triplet_protocol",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 71.06,
+      "triplet_sequence_role": "pt",
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 12.07945597709376,
+      "wind_speed_mph": 6.710808876163199
+    },
+    {
+      "canonical_activity_distance_miles": null,
+      "canonical_cohort": "readiness_baseline",
+      "distance_authority": null,
+      "distance_source": null,
+      "event_duration_seconds": null,
+      "event_start_local": "2026-09-03T07:50:53",
+      "precipitation_inches_per_hour": null,
+      "precipitation_type": null,
+      "protocol_scope": "broad_context",
+      "route_availability": "no_strava_activity",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": null,
+      "triplet_sequence_role": null,
+      "weather_condition": null,
+      "weather_coverage_status": "no_strava_activity",
+      "weather_missing_reason": "no linked Strava activity",
+      "weather_provider": null,
+      "weather_source": null,
+      "weather_station": null,
+      "wind_gust_mph": null,
+      "wind_speed_mph": null
+    },
+    {
+      "canonical_activity_distance_miles": 1.9704301877038097,
+      "canonical_cohort": "mall_skating",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:20026111949",
+      "event_duration_seconds": 1939.0,
+      "event_start_local": "2026-09-03T14:45:50",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "5.0",
+      "protocol_scope": "accepted_triplet_protocol",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 68.9,
+      "triplet_sequence_role": "mall",
+      "weather_condition": "Strava weather condition code 3.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 14.31639226914816,
+      "wind_speed_mph": 8.27666428060128
+    },
+    {
+      "canonical_activity_distance_miles": 0.21903334526366022,
+      "canonical_cohort": "walking",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:20027287529",
+      "event_duration_seconds": 322.0,
+      "event_start_local": "2026-09-03T17:16:16",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "5.0",
+      "protocol_scope": "accepted_triplet_protocol",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 70.34,
+      "triplet_sequence_role": "walk",
+      "weather_condition": "Strava weather condition code 3.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 12.303149606299199,
+      "wind_speed_mph": 6.9345025053686395
+    },
+    {
+      "canonical_activity_distance_miles": 1.8277012248468942,
+      "canonical_cohort": "pt_skating",
+      "distance_authority": "miles",
+      "distance_source": "strava:strava_activity:20027488018",
+      "event_duration_seconds": 1035.0,
+      "event_start_local": "2026-09-03T17:27:12",
+      "precipitation_inches_per_hour": 0.0,
+      "precipitation_type": "5.0",
+      "protocol_scope": "accepted_triplet_protocol",
+      "route_availability": "route_reference_available",
+      "route_weather_context_version": "cohort_route_weather_context.v1",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 70.7,
+      "triplet_sequence_role": "pt",
+      "weather_condition": "Strava weather condition code 3.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "weather_missing_reason": null,
+      "weather_provider": null,
+      "weather_source": "Strava export activity weather fields",
+      "weather_station": null,
+      "wind_gust_mph": 12.75053686471008,
+      "wind_speed_mph": 7.15819613457408
     }
   ],
   "alt_text": "Route and weather context covers canonical event distances in miles and available temperature in degrees Fahrenheit and wind in miles per hour; missing weather is not filled.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "6edafaa06e9c3e855ec519923a7bfdb53894f9e0dfc31ba64a3f5d731c2aec7b",
+  "content_hash": "90d69775407dcf672fbf9eef76ea99b1e400896d4f2eeb6923e4288ed933adee",
   "coverage": {},
-  "data_through_date": "2026-08-27",
+  "data_through_date": "2026-09-03",
   "destination": "handicapskater.com",
   "evidence": {},
   "finding": null,
@@ -51706,6 +52506,16 @@
               "date": "2026-08-22",
               "unit": "miles",
               "value": 11.773430664916885
+            },
+            {
+              "date": "2026-08-28",
+              "unit": "miles",
+              "value": 11.895281555714625
+            },
+            {
+              "date": "2026-08-29",
+              "unit": "miles",
+              "value": 11.46678398154776
             }
           ]
         },
@@ -51942,6 +52752,31 @@
               "date": "2026-08-27",
               "unit": "miles",
               "value": 2.0432548914340254
+            },
+            {
+              "date": "2026-08-30",
+              "unit": "miles",
+              "value": 2.0136776226835282
+            },
+            {
+              "date": "2026-08-31",
+              "unit": "miles",
+              "value": 1.7569270460510618
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "miles",
+              "value": 1.9708651475383758
+            },
+            {
+              "date": "2026-09-02",
+              "unit": "miles",
+              "value": 1.9767060367454066
+            },
+            {
+              "date": "2026-09-03",
+              "unit": "miles",
+              "value": 1.9704301877038097
             }
           ]
         },
@@ -52973,6 +53808,16 @@
               "date": "2026-05-19",
               "unit": "miles",
               "value": 24.29350095442615
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "miles",
+              "value": 25.026035452954744
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "miles",
+              "value": 26.857029945120495
             }
           ]
         },
@@ -53108,6 +53953,16 @@
             {
               "date": "",
               "unit": "miles",
+              "value": 0.13011512765449773
+            },
+            {
+              "date": "",
+              "unit": "miles",
+              "value": 23.94764574882685
+            },
+            {
+              "date": "",
+              "unit": "miles",
               "value": 22.020462996102758
             },
             {
@@ -53124,6 +53979,11 @@
               "date": "",
               "unit": "miles",
               "value": 0.11911685755189691
+            },
+            {
+              "date": "",
+              "unit": "miles",
+              "value": 24.276599657997295
             },
             {
               "date": "",
@@ -53214,6 +54074,11 @@
               "date": "",
               "unit": "miles",
               "value": 70.57148751292452
+            },
+            {
+              "date": "",
+              "unit": "miles",
+              "value": 23.87625019883878
             },
             {
               "date": "",
@@ -53393,6 +54258,11 @@
             {
               "date": "",
               "unit": "miles",
+              "value": 0.1434124711683767
+            },
+            {
+              "date": "",
+              "unit": "miles",
               "value": 0.40619034836554524
             },
             {
@@ -53418,7 +54288,17 @@
             {
               "date": "",
               "unit": "miles",
+              "value": 0.1460843672949972
+            },
+            {
+              "date": "",
+              "unit": "miles",
               "value": 0.16192933269704923
+            },
+            {
+              "date": "",
+              "unit": "miles",
+              "value": 0.2906774437286248
             },
             {
               "date": "",
@@ -53449,6 +54329,11 @@
               "date": "",
               "unit": "miles",
               "value": 0.13614242821919986
+            },
+            {
+              "date": "",
+              "unit": "miles",
+              "value": 0.15192525650202815
             },
             {
               "date": "",
@@ -54426,6 +55311,11 @@
               "date": "2026-08-23",
               "unit": "miles",
               "value": 24.327365684403084
+            },
+            {
+              "date": "2026-08-29",
+              "unit": "miles",
+              "value": 24.321400520957607
             }
           ]
         },
@@ -54527,6 +55417,11 @@
               "date": "2026-08-08",
               "unit": "miles",
               "value": 23.915955818022745
+            },
+            {
+              "date": "2026-08-29",
+              "unit": "miles",
+              "value": 24.00220213950529
             }
           ]
         },
@@ -54563,6 +55458,11 @@
               "date": "2026-08-22",
               "unit": "miles",
               "value": 25.767890519366897
+            },
+            {
+              "date": "2026-08-28",
+              "unit": "miles",
+              "value": 23.90620029030462
             }
           ]
         },
@@ -54945,6 +55845,31 @@
               "date": "2026-08-27",
               "unit": "miles",
               "value": 1.7804770142368567
+            },
+            {
+              "date": "2026-08-30",
+              "unit": "miles",
+              "value": 1.7092678756064583
+            },
+            {
+              "date": "2026-08-31",
+              "unit": "miles",
+              "value": 1.7942093175853018
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "miles",
+              "value": 1.8045862164956652
+            },
+            {
+              "date": "2026-09-02",
+              "unit": "miles",
+              "value": 1.766434025292293
+            },
+            {
+              "date": "2026-09-03",
+              "unit": "miles",
+              "value": 1.8277012248468942
             }
           ]
         },
@@ -57827,6 +58752,31 @@
               "date": "2026-08-27",
               "unit": "miles",
               "value": 0.14683001272568202
+            },
+            {
+              "date": "2026-08-30",
+              "unit": "miles",
+              "value": 0.13284916090034202
+            },
+            {
+              "date": "2026-08-31",
+              "unit": "miles",
+              "value": 0.13235206394655213
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "miles",
+              "value": 0.15552920941700468
+            },
+            {
+              "date": "2026-09-02",
+              "unit": "miles",
+              "value": 0.13539678278851508
+            },
+            {
+              "date": "2026-09-03",
+              "unit": "miles",
+              "value": 0.21903334526366022
             }
           ]
         }
@@ -60600,6 +61550,16 @@
               "date": "2026-08-22",
               "unit": "°F",
               "value": 63.68
+            },
+            {
+              "date": "2026-08-28",
+              "unit": "°F",
+              "value": 62.059999999999995
+            },
+            {
+              "date": "2026-08-29",
+              "unit": "°F",
+              "value": 61.34
             }
           ]
         },
@@ -60831,6 +61791,31 @@
               "date": "2026-08-27",
               "unit": "°F",
               "value": 73.04
+            },
+            {
+              "date": "2026-08-30",
+              "unit": "°F",
+              "value": 70.7
+            },
+            {
+              "date": "2026-08-31",
+              "unit": "°F",
+              "value": 64.75999999999999
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "°F",
+              "value": 64.58
+            },
+            {
+              "date": "2026-09-02",
+              "unit": "°F",
+              "value": 71.42
+            },
+            {
+              "date": "2026-09-03",
+              "unit": "°F",
+              "value": 68.9
             }
           ]
         },
@@ -61757,6 +62742,16 @@
               "date": "2026-05-19",
               "unit": "°F",
               "value": 75.92
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "°F",
+              "value": 68.54
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "°F",
+              "value": 62.42
             }
           ]
         },
@@ -61892,6 +62887,16 @@
             {
               "date": "",
               "unit": "°F",
+              "value": 65.66
+            },
+            {
+              "date": "",
+              "unit": "°F",
+              "value": 66.38
+            },
+            {
+              "date": "",
+              "unit": "°F",
               "value": 55.04
             },
             {
@@ -61908,6 +62913,11 @@
               "date": "",
               "unit": "°F",
               "value": 57.56
+            },
+            {
+              "date": "",
+              "unit": "°F",
+              "value": 60.26
             },
             {
               "date": "",
@@ -61998,6 +63008,11 @@
               "date": "",
               "unit": "°F",
               "value": 69.25999999999999
+            },
+            {
+              "date": "",
+              "unit": "°F",
+              "value": 70.16
             },
             {
               "date": "",
@@ -62177,6 +63192,11 @@
             {
               "date": "",
               "unit": "°F",
+              "value": 70.7
+            },
+            {
+              "date": "",
+              "unit": "°F",
               "value": 71.78
             },
             {
@@ -62197,7 +63217,17 @@
             {
               "date": "",
               "unit": "°F",
+              "value": 57.74
+            },
+            {
+              "date": "",
+              "unit": "°F",
               "value": 67.1
+            },
+            {
+              "date": "",
+              "unit": "°F",
+              "value": 70.34
             },
             {
               "date": "",
@@ -62228,6 +63258,11 @@
               "date": "",
               "unit": "°F",
               "value": 66.02
+            },
+            {
+              "date": "",
+              "unit": "°F",
+              "value": 62.959999999999994
             },
             {
               "date": "",
@@ -63115,6 +64150,11 @@
               "date": "2026-08-23",
               "unit": "°F",
               "value": 60.26
+            },
+            {
+              "date": "2026-08-29",
+              "unit": "°F",
+              "value": 60.26
             }
           ]
         },
@@ -63216,6 +64256,11 @@
               "date": "2026-08-08",
               "unit": "°F",
               "value": 72.86
+            },
+            {
+              "date": "2026-08-29",
+              "unit": "°F",
+              "value": 66.38
             }
           ]
         },
@@ -63252,6 +64297,11 @@
               "date": "2026-08-22",
               "unit": "°F",
               "value": 70.7
+            },
+            {
+              "date": "2026-08-28",
+              "unit": "°F",
+              "value": 70.16
             }
           ]
         },
@@ -63634,6 +64684,31 @@
               "date": "2026-08-27",
               "unit": "°F",
               "value": 78.25999999999999
+            },
+            {
+              "date": "2026-08-30",
+              "unit": "°F",
+              "value": 58.1
+            },
+            {
+              "date": "2026-08-31",
+              "unit": "°F",
+              "value": 63.32
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "°F",
+              "value": 62.059999999999995
+            },
+            {
+              "date": "2026-09-02",
+              "unit": "°F",
+              "value": 71.06
+            },
+            {
+              "date": "2026-09-03",
+              "unit": "°F",
+              "value": 70.7
             }
           ]
         },
@@ -63946,6 +65021,31 @@
               "date": "2026-08-27",
               "unit": "°F",
               "value": 77.18
+            },
+            {
+              "date": "2026-08-30",
+              "unit": "°F",
+              "value": 57.74
+            },
+            {
+              "date": "2026-08-31",
+              "unit": "°F",
+              "value": 65.66
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "°F",
+              "value": 62.959999999999994
+            },
+            {
+              "date": "2026-09-02",
+              "unit": "°F",
+              "value": 70.7
+            },
+            {
+              "date": "2026-09-03",
+              "unit": "°F",
+              "value": 70.34
             }
           ]
         }
@@ -66719,6 +67819,16 @@
               "date": "2026-08-22",
               "unit": "mph",
               "value": 11.85576234788832
+            },
+            {
+              "date": "2026-08-28",
+              "unit": "mph",
+              "value": 8.052970651395839
+            },
+            {
+              "date": "2026-08-29",
+              "unit": "mph",
+              "value": 5.1449534717251195
             }
           ]
         },
@@ -66950,6 +68060,31 @@
               "date": "2026-08-27",
               "unit": "mph",
               "value": 2.6843235504652796
+            },
+            {
+              "date": "2026-08-30",
+              "unit": "mph",
+              "value": 7.15819613457408
+            },
+            {
+              "date": "2026-08-31",
+              "unit": "mph",
+              "value": 8.052970651395839
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "mph",
+              "value": 3.57909806728704
+            },
+            {
+              "date": "2026-09-02",
+              "unit": "mph",
+              "value": 8.9477451682176
+            },
+            {
+              "date": "2026-09-03",
+              "unit": "mph",
+              "value": 8.27666428060128
             }
           ]
         },
@@ -67876,6 +69011,16 @@
               "date": "2026-05-19",
               "unit": "mph",
               "value": 6.9345025053686395
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "mph",
+              "value": 7.6055833929849594
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "mph",
+              "value": 7.15819613457408
             }
           ]
         },
@@ -68011,6 +69156,16 @@
             {
               "date": "",
               "unit": "mph",
+              "value": 8.052970651395839
+            },
+            {
+              "date": "",
+              "unit": "mph",
+              "value": 10.51360057265568
+            },
+            {
+              "date": "",
+              "unit": "mph",
               "value": 4.026485325697919
             },
             {
@@ -68027,6 +69182,11 @@
               "date": "",
               "unit": "mph",
               "value": 6.710808876163199
+            },
+            {
+              "date": "",
+              "unit": "mph",
+              "value": 7.381889763779519
             },
             {
               "date": "",
@@ -68117,6 +69277,11 @@
               "date": "",
               "unit": "mph",
               "value": 8.724051539012159
+            },
+            {
+              "date": "",
+              "unit": "mph",
+              "value": 3.8027916964924797
             },
             {
               "date": "",
@@ -68296,6 +69461,11 @@
             {
               "date": "",
               "unit": "mph",
+              "value": 6.710808876163199
+            },
+            {
+              "date": "",
+              "unit": "mph",
               "value": 8.724051539012159
             },
             {
@@ -68316,7 +69486,17 @@
             {
               "date": "",
               "unit": "mph",
+              "value": 5.1449534717251195
+            },
+            {
+              "date": "",
+              "unit": "mph",
               "value": 7.381889763779519
+            },
+            {
+              "date": "",
+              "unit": "mph",
+              "value": 6.9345025053686395
             },
             {
               "date": "",
@@ -68347,6 +69527,11 @@
               "date": "",
               "unit": "mph",
               "value": 11.184681460272
+            },
+            {
+              "date": "",
+              "unit": "mph",
+              "value": 3.57909806728704
             },
             {
               "date": "",
@@ -69234,6 +70419,11 @@
               "date": "2026-08-23",
               "unit": "mph",
               "value": 3.57909806728704
+            },
+            {
+              "date": "2026-08-29",
+              "unit": "mph",
+              "value": 7.381889763779519
             }
           ]
         },
@@ -69335,6 +70525,11 @@
               "date": "2026-08-08",
               "unit": "mph",
               "value": 2.0132426628489597
+            },
+            {
+              "date": "2026-08-29",
+              "unit": "mph",
+              "value": 10.51360057265568
             }
           ]
         },
@@ -69371,6 +70566,11 @@
               "date": "2026-08-22",
               "unit": "mph",
               "value": 8.500357909806718
+            },
+            {
+              "date": "2026-08-28",
+              "unit": "mph",
+              "value": 3.8027916964924797
             }
           ]
         },
@@ -69753,6 +70953,31 @@
               "date": "2026-08-27",
               "unit": "mph",
               "value": 3.1317108088761594
+            },
+            {
+              "date": "2026-08-30",
+              "unit": "mph",
+              "value": 3.8027916964924797
+            },
+            {
+              "date": "2026-08-31",
+              "unit": "mph",
+              "value": 9.171438797423038
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "mph",
+              "value": 1.78954903364352
+            },
+            {
+              "date": "2026-09-02",
+              "unit": "mph",
+              "value": 6.710808876163199
+            },
+            {
+              "date": "2026-09-03",
+              "unit": "mph",
+              "value": 7.15819613457408
             }
           ]
         },
@@ -70065,6 +71290,31 @@
               "date": "2026-08-27",
               "unit": "mph",
               "value": 2.9080171796707197
+            },
+            {
+              "date": "2026-08-30",
+              "unit": "mph",
+              "value": 5.1449534717251195
+            },
+            {
+              "date": "2026-08-31",
+              "unit": "mph",
+              "value": 8.052970651395839
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "mph",
+              "value": 3.57909806728704
+            },
+            {
+              "date": "2026-09-02",
+              "unit": "mph",
+              "value": 6.710808876163199
+            },
+            {
+              "date": "2026-09-03",
+              "unit": "mph",
+              "value": 6.9345025053686395
             }
           ]
         }
@@ -70085,9 +71335,9 @@
   ],
   "repeatability": [],
   "sample_counts": {
-    "events": 1949,
-    "route_context": 1799,
-    "weather_context": 1207
+    "events": 1981,
+    "route_context": 1829,
+    "weather_context": 1237
   },
   "series": [
     {
@@ -73042,6 +74292,16 @@
               "date": "2026-08-22",
               "unit": "miles",
               "value": 11.773430664916885
+            },
+            {
+              "date": "2026-08-28",
+              "unit": "miles",
+              "value": 11.895281555714625
+            },
+            {
+              "date": "2026-08-29",
+              "unit": "miles",
+              "value": 11.46678398154776
             }
           ]
         },
@@ -73278,6 +74538,31 @@
               "date": "2026-08-27",
               "unit": "miles",
               "value": 2.0432548914340254
+            },
+            {
+              "date": "2026-08-30",
+              "unit": "miles",
+              "value": 2.0136776226835282
+            },
+            {
+              "date": "2026-08-31",
+              "unit": "miles",
+              "value": 1.7569270460510618
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "miles",
+              "value": 1.9708651475383758
+            },
+            {
+              "date": "2026-09-02",
+              "unit": "miles",
+              "value": 1.9767060367454066
+            },
+            {
+              "date": "2026-09-03",
+              "unit": "miles",
+              "value": 1.9704301877038097
             }
           ]
         },
@@ -74309,6 +75594,16 @@
               "date": "2026-05-19",
               "unit": "miles",
               "value": 24.29350095442615
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "miles",
+              "value": 25.026035452954744
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "miles",
+              "value": 26.857029945120495
             }
           ]
         },
@@ -74444,6 +75739,16 @@
             {
               "date": "",
               "unit": "miles",
+              "value": 0.13011512765449773
+            },
+            {
+              "date": "",
+              "unit": "miles",
+              "value": 23.94764574882685
+            },
+            {
+              "date": "",
+              "unit": "miles",
               "value": 22.020462996102758
             },
             {
@@ -74460,6 +75765,11 @@
               "date": "",
               "unit": "miles",
               "value": 0.11911685755189691
+            },
+            {
+              "date": "",
+              "unit": "miles",
+              "value": 24.276599657997295
             },
             {
               "date": "",
@@ -74550,6 +75860,11 @@
               "date": "",
               "unit": "miles",
               "value": 70.57148751292452
+            },
+            {
+              "date": "",
+              "unit": "miles",
+              "value": 23.87625019883878
             },
             {
               "date": "",
@@ -74729,6 +76044,11 @@
             {
               "date": "",
               "unit": "miles",
+              "value": 0.1434124711683767
+            },
+            {
+              "date": "",
+              "unit": "miles",
               "value": 0.40619034836554524
             },
             {
@@ -74754,7 +76074,17 @@
             {
               "date": "",
               "unit": "miles",
+              "value": 0.1460843672949972
+            },
+            {
+              "date": "",
+              "unit": "miles",
               "value": 0.16192933269704923
+            },
+            {
+              "date": "",
+              "unit": "miles",
+              "value": 0.2906774437286248
             },
             {
               "date": "",
@@ -74785,6 +76115,11 @@
               "date": "",
               "unit": "miles",
               "value": 0.13614242821919986
+            },
+            {
+              "date": "",
+              "unit": "miles",
+              "value": 0.15192525650202815
             },
             {
               "date": "",
@@ -75762,6 +77097,11 @@
               "date": "2026-08-23",
               "unit": "miles",
               "value": 24.327365684403084
+            },
+            {
+              "date": "2026-08-29",
+              "unit": "miles",
+              "value": 24.321400520957607
             }
           ]
         },
@@ -75863,6 +77203,11 @@
               "date": "2026-08-08",
               "unit": "miles",
               "value": 23.915955818022745
+            },
+            {
+              "date": "2026-08-29",
+              "unit": "miles",
+              "value": 24.00220213950529
             }
           ]
         },
@@ -75899,6 +77244,11 @@
               "date": "2026-08-22",
               "unit": "miles",
               "value": 25.767890519366897
+            },
+            {
+              "date": "2026-08-28",
+              "unit": "miles",
+              "value": 23.90620029030462
             }
           ]
         },
@@ -76281,6 +77631,31 @@
               "date": "2026-08-27",
               "unit": "miles",
               "value": 1.7804770142368567
+            },
+            {
+              "date": "2026-08-30",
+              "unit": "miles",
+              "value": 1.7092678756064583
+            },
+            {
+              "date": "2026-08-31",
+              "unit": "miles",
+              "value": 1.7942093175853018
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "miles",
+              "value": 1.8045862164956652
+            },
+            {
+              "date": "2026-09-02",
+              "unit": "miles",
+              "value": 1.766434025292293
+            },
+            {
+              "date": "2026-09-03",
+              "unit": "miles",
+              "value": 1.8277012248468942
             }
           ]
         },
@@ -79163,6 +80538,31 @@
               "date": "2026-08-27",
               "unit": "miles",
               "value": 0.14683001272568202
+            },
+            {
+              "date": "2026-08-30",
+              "unit": "miles",
+              "value": 0.13284916090034202
+            },
+            {
+              "date": "2026-08-31",
+              "unit": "miles",
+              "value": 0.13235206394655213
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "miles",
+              "value": 0.15552920941700468
+            },
+            {
+              "date": "2026-09-02",
+              "unit": "miles",
+              "value": 0.13539678278851508
+            },
+            {
+              "date": "2026-09-03",
+              "unit": "miles",
+              "value": 0.21903334526366022
             }
           ]
         }
@@ -81938,6 +83338,16 @@
               "date": "2026-08-22",
               "unit": "°F",
               "value": 63.68
+            },
+            {
+              "date": "2026-08-28",
+              "unit": "°F",
+              "value": 62.059999999999995
+            },
+            {
+              "date": "2026-08-29",
+              "unit": "°F",
+              "value": 61.34
             }
           ]
         },
@@ -82169,6 +83579,31 @@
               "date": "2026-08-27",
               "unit": "°F",
               "value": 73.04
+            },
+            {
+              "date": "2026-08-30",
+              "unit": "°F",
+              "value": 70.7
+            },
+            {
+              "date": "2026-08-31",
+              "unit": "°F",
+              "value": 64.75999999999999
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "°F",
+              "value": 64.58
+            },
+            {
+              "date": "2026-09-02",
+              "unit": "°F",
+              "value": 71.42
+            },
+            {
+              "date": "2026-09-03",
+              "unit": "°F",
+              "value": 68.9
             }
           ]
         },
@@ -83095,6 +84530,16 @@
               "date": "2026-05-19",
               "unit": "°F",
               "value": 75.92
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "°F",
+              "value": 68.54
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "°F",
+              "value": 62.42
             }
           ]
         },
@@ -83230,6 +84675,16 @@
             {
               "date": "",
               "unit": "°F",
+              "value": 65.66
+            },
+            {
+              "date": "",
+              "unit": "°F",
+              "value": 66.38
+            },
+            {
+              "date": "",
+              "unit": "°F",
               "value": 55.04
             },
             {
@@ -83246,6 +84701,11 @@
               "date": "",
               "unit": "°F",
               "value": 57.56
+            },
+            {
+              "date": "",
+              "unit": "°F",
+              "value": 60.26
             },
             {
               "date": "",
@@ -83336,6 +84796,11 @@
               "date": "",
               "unit": "°F",
               "value": 69.25999999999999
+            },
+            {
+              "date": "",
+              "unit": "°F",
+              "value": 70.16
             },
             {
               "date": "",
@@ -83515,6 +84980,11 @@
             {
               "date": "",
               "unit": "°F",
+              "value": 70.7
+            },
+            {
+              "date": "",
+              "unit": "°F",
               "value": 71.78
             },
             {
@@ -83535,7 +85005,17 @@
             {
               "date": "",
               "unit": "°F",
+              "value": 57.74
+            },
+            {
+              "date": "",
+              "unit": "°F",
               "value": 67.1
+            },
+            {
+              "date": "",
+              "unit": "°F",
+              "value": 70.34
             },
             {
               "date": "",
@@ -83566,6 +85046,11 @@
               "date": "",
               "unit": "°F",
               "value": 66.02
+            },
+            {
+              "date": "",
+              "unit": "°F",
+              "value": 62.959999999999994
             },
             {
               "date": "",
@@ -84453,6 +85938,11 @@
               "date": "2026-08-23",
               "unit": "°F",
               "value": 60.26
+            },
+            {
+              "date": "2026-08-29",
+              "unit": "°F",
+              "value": 60.26
             }
           ]
         },
@@ -84554,6 +86044,11 @@
               "date": "2026-08-08",
               "unit": "°F",
               "value": 72.86
+            },
+            {
+              "date": "2026-08-29",
+              "unit": "°F",
+              "value": 66.38
             }
           ]
         },
@@ -84590,6 +86085,11 @@
               "date": "2026-08-22",
               "unit": "°F",
               "value": 70.7
+            },
+            {
+              "date": "2026-08-28",
+              "unit": "°F",
+              "value": 70.16
             }
           ]
         },
@@ -84972,6 +86472,31 @@
               "date": "2026-08-27",
               "unit": "°F",
               "value": 78.25999999999999
+            },
+            {
+              "date": "2026-08-30",
+              "unit": "°F",
+              "value": 58.1
+            },
+            {
+              "date": "2026-08-31",
+              "unit": "°F",
+              "value": 63.32
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "°F",
+              "value": 62.059999999999995
+            },
+            {
+              "date": "2026-09-02",
+              "unit": "°F",
+              "value": 71.06
+            },
+            {
+              "date": "2026-09-03",
+              "unit": "°F",
+              "value": 70.7
             }
           ]
         },
@@ -85284,6 +86809,31 @@
               "date": "2026-08-27",
               "unit": "°F",
               "value": 77.18
+            },
+            {
+              "date": "2026-08-30",
+              "unit": "°F",
+              "value": 57.74
+            },
+            {
+              "date": "2026-08-31",
+              "unit": "°F",
+              "value": 65.66
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "°F",
+              "value": 62.959999999999994
+            },
+            {
+              "date": "2026-09-02",
+              "unit": "°F",
+              "value": 70.7
+            },
+            {
+              "date": "2026-09-03",
+              "unit": "°F",
+              "value": 70.34
             }
           ]
         }
@@ -88059,6 +89609,16 @@
               "date": "2026-08-22",
               "unit": "mph",
               "value": 11.85576234788832
+            },
+            {
+              "date": "2026-08-28",
+              "unit": "mph",
+              "value": 8.052970651395839
+            },
+            {
+              "date": "2026-08-29",
+              "unit": "mph",
+              "value": 5.1449534717251195
             }
           ]
         },
@@ -88290,6 +89850,31 @@
               "date": "2026-08-27",
               "unit": "mph",
               "value": 2.6843235504652796
+            },
+            {
+              "date": "2026-08-30",
+              "unit": "mph",
+              "value": 7.15819613457408
+            },
+            {
+              "date": "2026-08-31",
+              "unit": "mph",
+              "value": 8.052970651395839
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "mph",
+              "value": 3.57909806728704
+            },
+            {
+              "date": "2026-09-02",
+              "unit": "mph",
+              "value": 8.9477451682176
+            },
+            {
+              "date": "2026-09-03",
+              "unit": "mph",
+              "value": 8.27666428060128
             }
           ]
         },
@@ -89216,6 +90801,16 @@
               "date": "2026-05-19",
               "unit": "mph",
               "value": 6.9345025053686395
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "mph",
+              "value": 7.6055833929849594
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "mph",
+              "value": 7.15819613457408
             }
           ]
         },
@@ -89351,6 +90946,16 @@
             {
               "date": "",
               "unit": "mph",
+              "value": 8.052970651395839
+            },
+            {
+              "date": "",
+              "unit": "mph",
+              "value": 10.51360057265568
+            },
+            {
+              "date": "",
+              "unit": "mph",
               "value": 4.026485325697919
             },
             {
@@ -89367,6 +90972,11 @@
               "date": "",
               "unit": "mph",
               "value": 6.710808876163199
+            },
+            {
+              "date": "",
+              "unit": "mph",
+              "value": 7.381889763779519
             },
             {
               "date": "",
@@ -89457,6 +91067,11 @@
               "date": "",
               "unit": "mph",
               "value": 8.724051539012159
+            },
+            {
+              "date": "",
+              "unit": "mph",
+              "value": 3.8027916964924797
             },
             {
               "date": "",
@@ -89636,6 +91251,11 @@
             {
               "date": "",
               "unit": "mph",
+              "value": 6.710808876163199
+            },
+            {
+              "date": "",
+              "unit": "mph",
               "value": 8.724051539012159
             },
             {
@@ -89656,7 +91276,17 @@
             {
               "date": "",
               "unit": "mph",
+              "value": 5.1449534717251195
+            },
+            {
+              "date": "",
+              "unit": "mph",
               "value": 7.381889763779519
+            },
+            {
+              "date": "",
+              "unit": "mph",
+              "value": 6.9345025053686395
             },
             {
               "date": "",
@@ -89687,6 +91317,11 @@
               "date": "",
               "unit": "mph",
               "value": 11.184681460272
+            },
+            {
+              "date": "",
+              "unit": "mph",
+              "value": 3.57909806728704
             },
             {
               "date": "",
@@ -90574,6 +92209,11 @@
               "date": "2026-08-23",
               "unit": "mph",
               "value": 3.57909806728704
+            },
+            {
+              "date": "2026-08-29",
+              "unit": "mph",
+              "value": 7.381889763779519
             }
           ]
         },
@@ -90675,6 +92315,11 @@
               "date": "2026-08-08",
               "unit": "mph",
               "value": 2.0132426628489597
+            },
+            {
+              "date": "2026-08-29",
+              "unit": "mph",
+              "value": 10.51360057265568
             }
           ]
         },
@@ -90711,6 +92356,11 @@
               "date": "2026-08-22",
               "unit": "mph",
               "value": 8.500357909806718
+            },
+            {
+              "date": "2026-08-28",
+              "unit": "mph",
+              "value": 3.8027916964924797
             }
           ]
         },
@@ -91093,6 +92743,31 @@
               "date": "2026-08-27",
               "unit": "mph",
               "value": 3.1317108088761594
+            },
+            {
+              "date": "2026-08-30",
+              "unit": "mph",
+              "value": 3.8027916964924797
+            },
+            {
+              "date": "2026-08-31",
+              "unit": "mph",
+              "value": 9.171438797423038
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "mph",
+              "value": 1.78954903364352
+            },
+            {
+              "date": "2026-09-02",
+              "unit": "mph",
+              "value": 6.710808876163199
+            },
+            {
+              "date": "2026-09-03",
+              "unit": "mph",
+              "value": 7.15819613457408
             }
           ]
         },
@@ -91405,6 +93080,31 @@
               "date": "2026-08-27",
               "unit": "mph",
               "value": 2.9080171796707197
+            },
+            {
+              "date": "2026-08-30",
+              "unit": "mph",
+              "value": 5.1449534717251195
+            },
+            {
+              "date": "2026-08-31",
+              "unit": "mph",
+              "value": 8.052970651395839
+            },
+            {
+              "date": "2026-09-01",
+              "unit": "mph",
+              "value": 3.57909806728704
+            },
+            {
+              "date": "2026-09-02",
+              "unit": "mph",
+              "value": 6.710808876163199
+            },
+            {
+              "date": "2026-09-03",
+              "unit": "mph",
+              "value": 6.9345025053686395
             }
           ]
         }

@@ -1,8 +1,6 @@
 from __future__ import annotations
 
-from html.parser import HTMLParser
 from pathlib import Path
-import re
 
 from scripts import check_site_links
 
@@ -11,25 +9,31 @@ ROOT = Path(__file__).resolve().parents[1]
 HOME = (ROOT / "index.html").read_text()
 CASE = (ROOT / "case/index.html").read_text()
 
-HERO_IDS = {
-    "functional_output_vs_burden_authoritative_miles",
-    "walking_vs_mall_accumulated_mechanical_load",
-    "accepted_triplet_stage_profiles",
-    "fns_sns_longitudinal_functional_capacity",
-    "transportation_body_coupling_comparison",
-}
-
-
-def test_home_is_function_first_and_uses_exactly_five_governed_evidence_ids():
-    assert "FUNCTION BEFORE FORM" in HOME
-    assert "Inline skates are not the claim. Functional mobility is." in HOME
-    ids = re.findall(r'data-hero-graph-id="([^"]+)"', HOME)
-    assert len(ids) == 5
-    assert set(ids) == HERO_IDS
-    assert len(ids) == len(set(ids))
+def test_home_foregrounds_core_confirmatory_mobility_evidence():
+    assert "HANDICAPSKATER" in HOME
+    assert "Skates are the mobility aid. Functional mobility is the evidence." in HOME
+    assert HOME.index('id="core-evidence"') < HOME.index('id="visual-evidence"')
+    assert HOME.count('class="core-evidence-card"') == 4
+    assert "45 accepted Mall → Walk → PT sequences" in HOME
+    assert "44 eligible whole-triplet paired comparisons" in HOME
     assert "What Looks Like a Stunt Is the Access Story" in HOME
     assert "Watch the Smart &amp; Final video" in HOME
     assert "reddit.com/r/HandicapSkater/s/6pPCv2k02t" in HOME
+
+
+def test_home_core_evidence_has_a_complete_30_second_answer():
+    for expected in (
+        "−1.864 <span>mi</span>",
+        "+0.0849 <span>g</span>",
+        "+0.637 <span>g/s</span>",
+        "+1.668 <span>mi</span>",
+        "44/44 same direction",
+        "Walking reduces mobility while increasing mechanical burden",
+        "Inspect the governed evidence",
+    ):
+        assert expected in HOME
+    assert "PT skating" in HOME
+    assert "skateboard" not in HOME.lower()
 
 
 def test_medical_boundaries_and_privacy_are_preserved():

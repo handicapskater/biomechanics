@@ -14,7 +14,9 @@ test("evidence brief renders the selected governed bundle with accessible tables
 
 test("home and case retain compact governed evidence entry points", async ({ page }) => {
   await page.goto("/");
-  await expect(page.locator(".governed-graph-mounted")).toHaveCount(1);
+  await expect(page.locator(".core-evidence-card")).toHaveCount(4);
+  await expect(page.getByRole("heading", { name: "Walking reduces mobility while increasing mechanical burden" })).toBeVisible();
+  await expect(page.locator(".governed-graph-error")).toHaveCount(0);
   await page.goto("/case/");
   await expect(page.locator(".governed-graph-mounted")).toHaveCount(3);
   await expect(page.locator(".governed-graph-error")).toHaveCount(0);

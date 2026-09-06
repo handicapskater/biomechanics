@@ -424,11 +424,11 @@
   "alt_text": "Overall current multiclass discrimination is .836 and sensor-context discrimination is .823, while incremental-over-baseline remains MIXED/INCONCLUSIVE: -.036 to +.061. Overall discrimination does not establish consistent incremental benefit.",
   "claim_class": "INTERPRETATION",
   "claim_classes": {},
-  "content_hash": "45163f26eebf0e4348a7b8712145f00e4717174921a848e1e16bd4a35e088d20",
+  "content_hash": "a436a01a9eca235f35158eef58529d6263bd85fe52ab4f81e7de5db6e783b997",
   "coverage": {
     "sensor_context_incremental": 203
   },
-  "data_through_date": "2026-08-27",
+  "data_through_date": "2026-09-03",
   "destination": "handicapskater.com",
   "evidence": {
     "canonical_relations": [

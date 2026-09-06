@@ -519,6 +519,71 @@
       "reference_role": "mall",
       "reference_value": 2.064372060338098,
       "unit": "g*s/min"
+    },
+    {
+      "comparison_quality": "valid",
+      "comparison_role": "walk",
+      "comparison_value": 6.776236020413816,
+      "date": "2026-08-30",
+      "direction": "walking_higher",
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "metric_name": "cumulative_dynamic_shock_per_min",
+      "reference_quality": "valid",
+      "reference_role": "mall",
+      "reference_value": 2.203582434406037,
+      "unit": "g*s/min"
+    },
+    {
+      "comparison_quality": "valid",
+      "comparison_role": "walk",
+      "comparison_value": 7.095211766306337,
+      "date": "2026-08-31",
+      "direction": "walking_higher",
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "metric_name": "cumulative_dynamic_shock_per_min",
+      "reference_quality": "valid",
+      "reference_role": "mall",
+      "reference_value": 2.337383228491967,
+      "unit": "g*s/min"
+    },
+    {
+      "comparison_quality": "valid",
+      "comparison_role": "walk",
+      "comparison_value": 6.632102916140656,
+      "date": "2026-09-01",
+      "direction": "walking_higher",
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "metric_name": "cumulative_dynamic_shock_per_min",
+      "reference_quality": "valid",
+      "reference_role": "mall",
+      "reference_value": 2.357190838649519,
+      "unit": "g*s/min"
+    },
+    {
+      "comparison_quality": "valid",
+      "comparison_role": "walk",
+      "comparison_value": 6.840453460209864,
+      "date": "2026-09-02",
+      "direction": "walking_higher",
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "metric_name": "cumulative_dynamic_shock_per_min",
+      "reference_quality": "valid",
+      "reference_role": "mall",
+      "reference_value": 2.3725838979979303,
+      "unit": "g*s/min"
+    },
+    {
+      "comparison_quality": "valid",
+      "comparison_role": "walk",
+      "comparison_value": 6.8559948184679635,
+      "date": "2026-09-03",
+      "direction": "walking_higher",
+      "formula_version": "kubios_acc_session_metrics.v1",
+      "metric_name": "cumulative_dynamic_shock_per_min",
+      "reference_quality": "valid",
+      "reference_role": "mall",
+      "reference_value": 2.4521379251372633,
+      "unit": "g*s/min"
     }
   ],
   "alt_text": "Paired Mall and walking values are shown by accepted date for Cumulative dynamic shock with persisted medians and calculated direction counts.",
@@ -528,11 +593,11 @@
     "repeatability": "MEASURED",
     "values": "MEASURED"
   },
-  "content_hash": "7c89b29d157831a99af615a490278fc05ebbb19293c3c6661e061460e9633623",
+  "content_hash": "4c509a58a4d8a53c8c42b4625df3fff292ce23b1b31417066213cb53e3edcaa6",
   "coverage": {
-    "cumulative_dynamic_shock_per_min": 40
+    "cumulative_dynamic_shock_per_min": 45
   },
-  "data_through_date": "2026-08-27",
+  "data_through_date": "2026-09-03",
   "destination": "handicapskater.com",
   "evidence": {
     "canonical_relations": [
@@ -542,7 +607,7 @@
     "median_status": "persisted canonical summary",
     "repeatability_status": "DERIVED from paired accepted-date records",
     "sample_count": {
-      "cumulative_dynamic_shock_per_min": 40
+      "cumulative_dynamic_shock_per_min": 45
     },
     "source_systems": [
       "Kubios",
@@ -1065,22 +1130,82 @@
           "reference_role": "mall",
           "reference_value": 2.064372060338098,
           "unit": "g*s/min"
+        },
+        {
+          "comparison_quality": "valid",
+          "comparison_role": "walk",
+          "comparison_value": 6.776236020413816,
+          "date": "2026-08-30",
+          "direction": "walking_higher",
+          "formula_version": "kubios_acc_session_metrics.v1",
+          "reference_quality": "valid",
+          "reference_role": "mall",
+          "reference_value": 2.203582434406037,
+          "unit": "g*s/min"
+        },
+        {
+          "comparison_quality": "valid",
+          "comparison_role": "walk",
+          "comparison_value": 7.095211766306337,
+          "date": "2026-08-31",
+          "direction": "walking_higher",
+          "formula_version": "kubios_acc_session_metrics.v1",
+          "reference_quality": "valid",
+          "reference_role": "mall",
+          "reference_value": 2.337383228491967,
+          "unit": "g*s/min"
+        },
+        {
+          "comparison_quality": "valid",
+          "comparison_role": "walk",
+          "comparison_value": 6.632102916140656,
+          "date": "2026-09-01",
+          "direction": "walking_higher",
+          "formula_version": "kubios_acc_session_metrics.v1",
+          "reference_quality": "valid",
+          "reference_role": "mall",
+          "reference_value": 2.357190838649519,
+          "unit": "g*s/min"
+        },
+        {
+          "comparison_quality": "valid",
+          "comparison_role": "walk",
+          "comparison_value": 6.840453460209864,
+          "date": "2026-09-02",
+          "direction": "walking_higher",
+          "formula_version": "kubios_acc_session_metrics.v1",
+          "reference_quality": "valid",
+          "reference_role": "mall",
+          "reference_value": 2.3725838979979303,
+          "unit": "g*s/min"
+        },
+        {
+          "comparison_quality": "valid",
+          "comparison_role": "walk",
+          "comparison_value": 6.8559948184679635,
+          "date": "2026-09-03",
+          "direction": "walking_higher",
+          "formula_version": "kubios_acc_session_metrics.v1",
+          "reference_quality": "valid",
+          "reference_role": "mall",
+          "reference_value": 2.4521379251372633,
+          "unit": "g*s/min"
         }
       ],
       "points": [
         {
           "label": "Mall skating",
-          "sample_count": 40,
+          "sample_count": 45,
           "status": "persisted median",
           "unit": "g*s/min",
-          "value": 2.1447119710594995
+          "value": 2.174961471587452
         },
         {
           "label": "Walking",
-          "sample_count": 40,
+          "sample_count": 45,
           "status": "persisted median",
           "unit": "g*s/min",
-          "value": 6.192412813275137
+          "value": 6.22974966114114
         }
       ],
       "title": "Cumulative dynamic shock",
@@ -1103,36 +1228,36 @@
       "derivation_status": "DERIVED",
       "formula": "count(Walk > Mall) / count(non-null paired Mall-Walk accepted dates)",
       "metric_name": "cumulative_dynamic_shock_per_min",
-      "paired_n": 40,
+      "paired_n": 45,
       "source_metrics": [
         "cumulative_dynamic_shock_per_min"
       ],
       "source_relation": "v_triplet_stage_metric_detail",
       "tie_count": 0,
-      "walking_higher_count": 40,
+      "walking_higher_count": 45,
       "walking_higher_fraction": 1.0,
       "walking_lower_count": 0
     }
   ],
   "sample_counts": {
-    "cumulative_dynamic_shock_per_min": 40
+    "cumulative_dynamic_shock_per_min": 45
   },
   "series": [
     {
       "points": [
         {
           "label": "Mall skating",
-          "sample_count": 40,
+          "sample_count": 45,
           "status": "persisted median",
           "unit": "g*s/min",
-          "value": 2.1447119710594995
+          "value": 2.174961471587452
         },
         {
           "label": "Walking",
-          "sample_count": 40,
+          "sample_count": 45,
           "status": "persisted median",
           "unit": "g*s/min",
-          "value": 6.192412813275137
+          "value": 6.22974966114114
         }
       ],
       "series": [],

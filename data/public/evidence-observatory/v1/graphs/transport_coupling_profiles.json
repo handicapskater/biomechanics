@@ -3,58 +3,58 @@
     {
       "body_coupling_class": "supported_transport",
       "cohort": "paratransit_silverride",
-      "component_sample_count": 8,
-      "data_through_date": "2026-08-22",
-      "duration_minutes": 50.858333333333334,
-      "fsi": 0.395249353481837,
+      "component_sample_count": 9,
+      "data_through_date": "2026-08-28",
+      "duration_minutes": 63.6,
+      "fsi": 0.4003111707497405,
       "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
-      "fsi_sample_count": 8,
+      "fsi_sample_count": 9,
       "label": "SilverRide",
       "metrics": {
         "cumulative_dynamic_shock": {
           "formula_version": "kubios_acc_session_metrics.v1",
-          "q1": 2.1329029861398103,
-          "q3": 2.5859495128223293,
-          "quality_count": 8,
-          "sample_count": 8,
+          "q1": 2.06990960900593,
+          "q3": 2.582290231375131,
+          "quality_count": 9,
+          "sample_count": 9,
           "unit": "g*s/min",
-          "value": 2.4559935784687066
+          "value": 2.405452944700275
         },
         "magnitude_jerk_rms_g_per_s": {
           "formula_version": "kubios_acc_session_metrics.v1",
-          "q1": 0.5843808465888352,
-          "q3": 0.7673235545100479,
-          "quality_count": 8,
-          "sample_count": 8,
+          "q1": 0.5909296195498155,
+          "q3": 0.781941184932053,
+          "quality_count": 9,
+          "sample_count": 9,
           "unit": "g/s",
-          "value": 0.64093523068208
+          "value": 0.668860749690137
         },
         "shock_spike_count": {
           "formula_version": "kubios_acc_session_metrics.v1",
-          "q1": 22.020388619365853,
-          "q3": 26.584086000543895,
-          "quality_count": 8,
-          "sample_count": 8,
+          "q1": 20.392284587268847,
+          "q3": 25.879718490083174,
+          "quality_count": 9,
+          "sample_count": 9,
           "unit": "count/min",
-          "value": 23.22228033763915
+          "value": 23.14061749624328
         },
         "vertical_dynamic_g_rms": {
           "formula_version": "kubios_acc_session_metrics.v1",
-          "q1": 0.11295706970524962,
-          "q3": 0.19958577899900348,
-          "quality_count": 8,
-          "sample_count": 8,
+          "q1": 0.1114590324444233,
+          "q3": 0.19073294962948154,
+          "quality_count": 9,
+          "sample_count": 9,
           "unit": "g",
-          "value": 0.1469847589572687
+          "value": 0.1165032660592085
         },
         "vertical_to_horizontal_dynamic_rms_ratio": {
           "formula_version": "kubios_acc_session_metrics.v1",
-          "q1": 1.010892109918197,
-          "q3": 1.2611802186660401,
-          "quality_count": 8,
-          "sample_count": 8,
+          "q1": 1.0019371394554366,
+          "q3": 1.2586950056408377,
+          "quality_count": 9,
+          "sample_count": 9,
           "unit": "ratio",
-          "value": 1.0948861598741528
+          "value": 1.0798363744258754
         }
       },
       "source_coverage": "kubios|kubios+strava+whoop"
@@ -62,58 +62,58 @@
     {
       "body_coupling_class": "supported_transport",
       "cohort": "paratransit_sedan_or_taxi",
-      "component_sample_count": 24,
-      "data_through_date": "2026-08-15",
-      "duration_minutes": 36.49166666666667,
-      "fsi": 0.4400065677857018,
+      "component_sample_count": 25,
+      "data_through_date": "2026-08-29",
+      "duration_minutes": 36.6,
+      "fsi": 0.44300281502994887,
       "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
-      "fsi_sample_count": 24,
+      "fsi_sample_count": 25,
       "label": "ParaTransit sedan/taxi",
       "metrics": {
         "cumulative_dynamic_shock": {
           "formula_version": "kubios_acc_session_metrics.v1",
-          "q1": 2.2227654420202025,
-          "q3": 2.431941623134702,
-          "quality_count": 24,
-          "sample_count": 24,
+          "q1": 2.1827664389782298,
+          "q3": 2.428766281122471,
+          "quality_count": 25,
+          "sample_count": 25,
           "unit": "g*s/min",
-          "value": 2.361421959293042
+          "value": 2.3545864853699525
         },
         "magnitude_jerk_rms_g_per_s": {
           "formula_version": "kubios_acc_session_metrics.v1",
-          "q1": 0.5287901206152973,
-          "q3": 0.6104568208255166,
-          "quality_count": 24,
-          "sample_count": 24,
+          "q1": 0.533583787504246,
+          "q3": 0.6106245337397411,
+          "quality_count": 25,
+          "sample_count": 25,
           "unit": "g/s",
-          "value": 0.5585086197559599
+          "value": 0.5589000787155362
         },
         "shock_spike_count": {
           "formula_version": "kubios_acc_session_metrics.v1",
-          "q1": 21.355106121724006,
-          "q3": 24.617578180623685,
-          "quality_count": 24,
-          "sample_count": 24,
+          "q1": 21.0419503858581,
+          "q3": 24.543040370652875,
+          "quality_count": 25,
+          "sample_count": 25,
           "unit": "count/min",
-          "value": 22.752135981295456
+          "value": 22.632687034860947
         },
         "vertical_dynamic_g_rms": {
           "formula_version": "kubios_acc_session_metrics.v1",
-          "q1": 0.11877933518228077,
-          "q3": 0.14819466344020316,
-          "quality_count": 24,
-          "sample_count": 24,
+          "q1": 0.11989854226402188,
+          "q3": 0.1473832984446729,
+          "quality_count": 25,
+          "sample_count": 25,
           "unit": "g",
-          "value": 0.13751491862133736
+          "value": 0.13738027930750443
         },
         "vertical_to_horizontal_dynamic_rms_ratio": {
           "formula_version": "kubios_acc_session_metrics.v1",
-          "q1": 0.9269767011516609,
-          "q3": 1.1004128867132519,
-          "quality_count": 24,
-          "sample_count": 24,
+          "q1": 0.9116003267323167,
+          "q3": 1.0945046697364351,
+          "quality_count": 25,
+          "sample_count": 25,
           "unit": "ratio",
-          "value": 1.0285895521143256
+          "value": 1.0247101599325144
         }
       },
       "source_coverage": "kubios|kubios+strava+whoop|kubios+whoop"
@@ -121,58 +121,58 @@
     {
       "body_coupling_class": "supported_transport",
       "cohort": "motorcycle",
-      "component_sample_count": 6,
-      "data_through_date": "2026-05-19",
-      "duration_minutes": 32.79166666666667,
+      "component_sample_count": 8,
+      "data_through_date": "2026-09-01",
+      "duration_minutes": 76.56066666666666,
       "fsi": 0.40767594127939344,
       "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
-      "fsi_sample_count": 6,
+      "fsi_sample_count": 8,
       "label": "Motorcycle",
       "metrics": {
         "cumulative_dynamic_shock": {
           "formula_version": "kubios_acc_session_metrics.v1",
-          "q1": 5.669889485823886,
-          "q3": 5.934401024621635,
-          "quality_count": 6,
-          "sample_count": 6,
+          "q1": 5.100045821511052,
+          "q3": 5.916196164507606,
+          "quality_count": 8,
+          "sample_count": 8,
           "unit": "g*s/min",
-          "value": 5.851952027758728
+          "value": 5.7121964309048785
         },
         "magnitude_jerk_rms_g_per_s": {
           "formula_version": "kubios_acc_session_metrics.v1",
-          "q1": 2.7691977139500774,
-          "q3": 4.732750086293778,
-          "quality_count": 6,
-          "sample_count": 6,
+          "q1": 2.98795867326672,
+          "q3": 4.101809126635843,
+          "quality_count": 8,
+          "sample_count": 8,
           "unit": "g/s",
           "value": 3.205101361285186
         },
         "shock_spike_count": {
           "formula_version": "kubios_acc_session_metrics.v1",
-          "q1": 40.003395816622316,
-          "q3": 69.9203957817101,
-          "quality_count": 6,
-          "sample_count": 6,
+          "q1": 41.01501110456845,
+          "q3": 74.37196830197337,
+          "quality_count": 8,
+          "sample_count": 8,
           "unit": "count/min",
-          "value": 43.05801109326986
+          "value": 44.691604408410804
         },
         "vertical_dynamic_g_rms": {
           "formula_version": "kubios_acc_session_metrics.v1",
-          "q1": 0.13958135786936898,
-          "q3": 0.1519572275893122,
-          "quality_count": 6,
-          "sample_count": 6,
+          "q1": 0.12581437809120202,
+          "q3": 0.1487636524970883,
+          "quality_count": 8,
+          "sample_count": 8,
           "unit": "g",
-          "value": 0.14486622111224523
+          "value": 0.1405760976707507
         },
         "vertical_to_horizontal_dynamic_rms_ratio": {
           "formula_version": "kubios_acc_session_metrics.v1",
-          "q1": 0.5841562830907778,
-          "q3": 0.647937173817963,
-          "quality_count": 6,
-          "sample_count": 6,
+          "q1": 0.5644088828895396,
+          "q3": 0.6434976164408703,
+          "quality_count": 8,
+          "sample_count": 8,
           "unit": "ratio",
-          "value": 0.6162232725093695
+          "value": 0.5864937578159902
         }
       },
       "source_coverage": "kubios|kubios+strava+whoop"
@@ -180,58 +180,58 @@
     {
       "body_coupling_class": "passive_upright",
       "cohort": "paratransit_bus",
-      "component_sample_count": 19,
-      "data_through_date": "2026-08-23",
-      "duration_minutes": 41.766666666666666,
-      "fsi": 0.4702923721025967,
+      "component_sample_count": 20,
+      "data_through_date": "2026-08-29",
+      "duration_minutes": 41.96666666666667,
+      "fsi": 0.4603634411711492,
       "fsi_formula_version": "fsi_tensor_v0_3_msk_autonomic_gated_burden",
-      "fsi_sample_count": 19,
+      "fsi_sample_count": 20,
       "label": "ParaTransit bus",
       "metrics": {
         "cumulative_dynamic_shock": {
           "formula_version": "kubios_acc_session_metrics.v1",
-          "q1": 4.385672542357007,
-          "q3": 4.883412793138639,
-          "quality_count": 19,
-          "sample_count": 19,
+          "q1": 4.371519825481824,
+          "q3": 4.880186359866596,
+          "quality_count": 20,
+          "sample_count": 20,
           "unit": "g*s/min",
-          "value": 4.642731663998724
+          "value": 4.603983098317508
         },
         "magnitude_jerk_rms_g_per_s": {
           "formula_version": "kubios_acc_session_metrics.v1",
-          "q1": 1.153685095921909,
-          "q3": 1.396450244196949,
-          "quality_count": 19,
-          "sample_count": 19,
+          "q1": 1.1247540314588937,
+          "q3": 1.3922622495911088,
+          "quality_count": 20,
+          "sample_count": 20,
           "unit": "g/s",
-          "value": 1.2759194868985422
+          "value": 1.236552048198646
         },
         "shock_spike_count": {
           "formula_version": "kubios_acc_session_metrics.v1",
-          "q1": 23.048990026150797,
-          "q3": 27.26302792898683,
-          "quality_count": 19,
-          "sample_count": 19,
+          "q1": 22.506944463996664,
+          "q3": 27.22717500118532,
+          "quality_count": 20,
+          "sample_count": 20,
           "unit": "count/min",
-          "value": 26.820516791863493
+          "value": 26.258762608750075
         },
         "vertical_dynamic_g_rms": {
           "formula_version": "kubios_acc_session_metrics.v1",
-          "q1": 0.16913799750676073,
-          "q3": 0.18853462626298184,
-          "quality_count": 19,
-          "sample_count": 19,
+          "q1": 0.16993435847016516,
+          "q3": 0.18806039603332783,
+          "quality_count": 20,
+          "sample_count": 20,
           "unit": "g",
-          "value": 0.1771802104536997
+          "value": 0.17808253611553476
         },
         "vertical_to_horizontal_dynamic_rms_ratio": {
           "formula_version": "kubios_acc_session_metrics.v1",
-          "q1": 1.2259661422400345,
-          "q3": 1.3093437445762088,
-          "quality_count": 19,
-          "sample_count": 19,
+          "q1": 1.2170331599594137,
+          "q3": 1.3065642406749864,
+          "quality_count": 20,
+          "sample_count": 20,
           "unit": "ratio",
-          "value": 1.2810931924074251
+          "value": 1.279501405789786
         }
       },
       "source_coverage": "kubios|kubios+strava+whoop|kubios+whoop"
@@ -296,12 +296,12 @@
       "source_coverage": "kubios+strava+whoop"
     }
   ],
-  "alt_text": "Aligned transport panels compare SilverRide, sedan or taxi, motorcycle, bus, and van. SilverRide has 8 persisted FSI observations; component summaries have their own sample counts. Motorcycle changes direction across metrics.",
+  "alt_text": "Aligned transport panels compare SilverRide, sedan or taxi, motorcycle, bus, and van. SilverRide has 9 persisted FSI observations; component summaries have their own sample counts. Motorcycle changes direction across metrics.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "64c97b0449fa2ae2cb4784c04a4165daf24423afc88154e3a9c3b2d6ec69b4ce",
+  "content_hash": "6bbc022c7a316b591a1cde1a419494b11d50224f246510d2d57c955b6318ccc8",
   "coverage": {},
-  "data_through_date": "2026-08-27",
+  "data_through_date": "2026-09-03",
   "destination": "handicapskater.com",
   "evidence": {},
   "finding": null,
@@ -319,12 +319,12 @@
   "graph_id": "transport_coupling_profiles",
   "graph_type": "aligned_dot_panels",
   "intended_route": "/evidence/transportation/",
-  "interpretation": "SilverRide retains a small persisted FSI sample (n=8), and motorcycle remains a distinct active-control context. Passive passenger and active locomotion contexts are not collapsed into one ranking.",
+  "interpretation": "SilverRide retains a small persisted FSI sample (n=9), and motorcycle remains a distinct active-control context. Passive passenger and active locomotion contexts are not collapsed into one ranking.",
   "limitation": "Motorcycle is an active-control context, whereas the passenger modes are passive transport contexts. Unequal-n descriptive profiles do not rank transport modes as universally best or worst.",
   "limitations": [
     "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
   ],
-  "long_description": "SilverRide retains a small persisted FSI sample (n=8), and motorcycle remains a distinct active-control context. Passive passenger and active locomotion contexts are not collapsed into one ranking. FSI and component sample sizes differ and are labeled separately. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
+  "long_description": "SilverRide retains a small persisted FSI sample (n=9), and motorcycle remains a distinct active-control context. Passive passenger and active locomotion contexts are not collapsed into one ranking. FSI and component sample sizes differ and are labeled separately. Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result.",
   "matrix": [],
   "missingness": [],
   "output_asset_names": [
@@ -335,27 +335,27 @@
       "points": [
         {
           "label": "SilverRide",
-          "sample_count": 8,
+          "sample_count": 9,
           "unit": "unitless_index",
-          "value": 0.395249353481837
+          "value": 0.4003111707497405
         },
         {
           "label": "ParaTransit sedan/taxi",
-          "sample_count": 24,
+          "sample_count": 25,
           "unit": "unitless_index",
-          "value": 0.4400065677857018
+          "value": 0.44300281502994887
         },
         {
           "label": "Motorcycle",
-          "sample_count": 6,
+          "sample_count": 8,
           "unit": "unitless_index",
           "value": 0.40767594127939344
         },
         {
           "label": "ParaTransit bus",
-          "sample_count": 19,
+          "sample_count": 20,
           "unit": "unitless_index",
-          "value": 0.4702923721025967
+          "value": 0.4603634411711492
         },
         {
           "label": "ParaTransit van",
@@ -371,35 +371,35 @@
       "points": [
         {
           "label": "SilverRide",
-          "q1": 2.1329029861398103,
-          "q3": 2.5859495128223293,
-          "sample_count": 8,
+          "q1": 2.06990960900593,
+          "q3": 2.582290231375131,
+          "sample_count": 9,
           "unit": "g*s/min",
-          "value": 2.4559935784687066
+          "value": 2.405452944700275
         },
         {
           "label": "ParaTransit sedan/taxi",
-          "q1": 2.2227654420202025,
-          "q3": 2.431941623134702,
-          "sample_count": 24,
+          "q1": 2.1827664389782298,
+          "q3": 2.428766281122471,
+          "sample_count": 25,
           "unit": "g*s/min",
-          "value": 2.361421959293042
+          "value": 2.3545864853699525
         },
         {
           "label": "Motorcycle",
-          "q1": 5.669889485823886,
-          "q3": 5.934401024621635,
-          "sample_count": 6,
+          "q1": 5.100045821511052,
+          "q3": 5.916196164507606,
+          "sample_count": 8,
           "unit": "g*s/min",
-          "value": 5.851952027758728
+          "value": 5.7121964309048785
         },
         {
           "label": "ParaTransit bus",
-          "q1": 4.385672542357007,
-          "q3": 4.883412793138639,
-          "sample_count": 19,
+          "q1": 4.371519825481824,
+          "q3": 4.880186359866596,
+          "sample_count": 20,
           "unit": "g*s/min",
-          "value": 4.642731663998724
+          "value": 4.603983098317508
         },
         {
           "label": "ParaTransit van",
@@ -417,35 +417,35 @@
       "points": [
         {
           "label": "SilverRide",
-          "q1": 0.11295706970524962,
-          "q3": 0.19958577899900348,
-          "sample_count": 8,
+          "q1": 0.1114590324444233,
+          "q3": 0.19073294962948154,
+          "sample_count": 9,
           "unit": "g",
-          "value": 0.1469847589572687
+          "value": 0.1165032660592085
         },
         {
           "label": "ParaTransit sedan/taxi",
-          "q1": 0.11877933518228077,
-          "q3": 0.14819466344020316,
-          "sample_count": 24,
+          "q1": 0.11989854226402188,
+          "q3": 0.1473832984446729,
+          "sample_count": 25,
           "unit": "g",
-          "value": 0.13751491862133736
+          "value": 0.13738027930750443
         },
         {
           "label": "Motorcycle",
-          "q1": 0.13958135786936898,
-          "q3": 0.1519572275893122,
-          "sample_count": 6,
+          "q1": 0.12581437809120202,
+          "q3": 0.1487636524970883,
+          "sample_count": 8,
           "unit": "g",
-          "value": 0.14486622111224523
+          "value": 0.1405760976707507
         },
         {
           "label": "ParaTransit bus",
-          "q1": 0.16913799750676073,
-          "q3": 0.18853462626298184,
-          "sample_count": 19,
+          "q1": 0.16993435847016516,
+          "q3": 0.18806039603332783,
+          "sample_count": 20,
           "unit": "g",
-          "value": 0.1771802104536997
+          "value": 0.17808253611553476
         },
         {
           "label": "ParaTransit van",
@@ -463,35 +463,35 @@
       "points": [
         {
           "label": "SilverRide",
-          "q1": 1.010892109918197,
-          "q3": 1.2611802186660401,
-          "sample_count": 8,
+          "q1": 1.0019371394554366,
+          "q3": 1.2586950056408377,
+          "sample_count": 9,
           "unit": "ratio",
-          "value": 1.0948861598741528
+          "value": 1.0798363744258754
         },
         {
           "label": "ParaTransit sedan/taxi",
-          "q1": 0.9269767011516609,
-          "q3": 1.1004128867132519,
-          "sample_count": 24,
+          "q1": 0.9116003267323167,
+          "q3": 1.0945046697364351,
+          "sample_count": 25,
           "unit": "ratio",
-          "value": 1.0285895521143256
+          "value": 1.0247101599325144
         },
         {
           "label": "Motorcycle",
-          "q1": 0.5841562830907778,
-          "q3": 0.647937173817963,
-          "sample_count": 6,
+          "q1": 0.5644088828895396,
+          "q3": 0.6434976164408703,
+          "sample_count": 8,
           "unit": "ratio",
-          "value": 0.6162232725093695
+          "value": 0.5864937578159902
         },
         {
           "label": "ParaTransit bus",
-          "q1": 1.2259661422400345,
-          "q3": 1.3093437445762088,
-          "sample_count": 19,
+          "q1": 1.2170331599594137,
+          "q3": 1.3065642406749864,
+          "sample_count": 20,
           "unit": "ratio",
-          "value": 1.2810931924074251
+          "value": 1.279501405789786
         },
         {
           "label": "ParaTransit van",
@@ -509,35 +509,35 @@
       "points": [
         {
           "label": "SilverRide",
-          "q1": 0.5843808465888352,
-          "q3": 0.7673235545100479,
-          "sample_count": 8,
+          "q1": 0.5909296195498155,
+          "q3": 0.781941184932053,
+          "sample_count": 9,
           "unit": "g/s",
-          "value": 0.64093523068208
+          "value": 0.668860749690137
         },
         {
           "label": "ParaTransit sedan/taxi",
-          "q1": 0.5287901206152973,
-          "q3": 0.6104568208255166,
-          "sample_count": 24,
+          "q1": 0.533583787504246,
+          "q3": 0.6106245337397411,
+          "sample_count": 25,
           "unit": "g/s",
-          "value": 0.5585086197559599
+          "value": 0.5589000787155362
         },
         {
           "label": "Motorcycle",
-          "q1": 2.7691977139500774,
-          "q3": 4.732750086293778,
-          "sample_count": 6,
+          "q1": 2.98795867326672,
+          "q3": 4.101809126635843,
+          "sample_count": 8,
           "unit": "g/s",
           "value": 3.205101361285186
         },
         {
           "label": "ParaTransit bus",
-          "q1": 1.153685095921909,
-          "q3": 1.396450244196949,
-          "sample_count": 19,
+          "q1": 1.1247540314588937,
+          "q3": 1.3922622495911088,
+          "sample_count": 20,
           "unit": "g/s",
-          "value": 1.2759194868985422
+          "value": 1.236552048198646
         },
         {
           "label": "ParaTransit van",
@@ -555,35 +555,35 @@
       "points": [
         {
           "label": "SilverRide",
-          "q1": 22.020388619365853,
-          "q3": 26.584086000543895,
-          "sample_count": 8,
+          "q1": 20.392284587268847,
+          "q3": 25.879718490083174,
+          "sample_count": 9,
           "unit": "count/min",
-          "value": 23.22228033763915
+          "value": 23.14061749624328
         },
         {
           "label": "ParaTransit sedan/taxi",
-          "q1": 21.355106121724006,
-          "q3": 24.617578180623685,
-          "sample_count": 24,
+          "q1": 21.0419503858581,
+          "q3": 24.543040370652875,
+          "sample_count": 25,
           "unit": "count/min",
-          "value": 22.752135981295456
+          "value": 22.632687034860947
         },
         {
           "label": "Motorcycle",
-          "q1": 40.003395816622316,
-          "q3": 69.9203957817101,
-          "sample_count": 6,
+          "q1": 41.01501110456845,
+          "q3": 74.37196830197337,
+          "sample_count": 8,
           "unit": "count/min",
-          "value": 43.05801109326986
+          "value": 44.691604408410804
         },
         {
           "label": "ParaTransit bus",
-          "q1": 23.048990026150797,
-          "q3": 27.26302792898683,
-          "sample_count": 19,
+          "q1": 22.506944463996664,
+          "q3": 27.22717500118532,
+          "sample_count": 20,
           "unit": "count/min",
-          "value": 26.820516791863493
+          "value": 26.258762608750075
         },
         {
           "label": "ParaTransit van",
@@ -611,20 +611,20 @@
   "repeatability": [],
   "sample_counts": {
     "motorcycle": {
-      "components": 6,
-      "fsi": 6
-    },
-    "paratransit_bus": {
-      "components": 19,
-      "fsi": 19
-    },
-    "paratransit_sedan_or_taxi": {
-      "components": 24,
-      "fsi": 24
-    },
-    "paratransit_silverride": {
       "components": 8,
       "fsi": 8
+    },
+    "paratransit_bus": {
+      "components": 20,
+      "fsi": 20
+    },
+    "paratransit_sedan_or_taxi": {
+      "components": 25,
+      "fsi": 25
+    },
+    "paratransit_silverride": {
+      "components": 9,
+      "fsi": 9
     },
     "paratransit_van": {
       "components": 6,
@@ -636,27 +636,27 @@
       "points": [
         {
           "label": "SilverRide",
-          "sample_count": 8,
+          "sample_count": 9,
           "unit": "unitless_index",
-          "value": 0.395249353481837
+          "value": 0.4003111707497405
         },
         {
           "label": "ParaTransit sedan/taxi",
-          "sample_count": 24,
+          "sample_count": 25,
           "unit": "unitless_index",
-          "value": 0.4400065677857018
+          "value": 0.44300281502994887
         },
         {
           "label": "Motorcycle",
-          "sample_count": 6,
+          "sample_count": 8,
           "unit": "unitless_index",
           "value": 0.40767594127939344
         },
         {
           "label": "ParaTransit bus",
-          "sample_count": 19,
+          "sample_count": 20,
           "unit": "unitless_index",
-          "value": 0.4702923721025967
+          "value": 0.4603634411711492
         },
         {
           "label": "ParaTransit van",
@@ -674,35 +674,35 @@
       "points": [
         {
           "label": "SilverRide",
-          "q1": 2.1329029861398103,
-          "q3": 2.5859495128223293,
-          "sample_count": 8,
+          "q1": 2.06990960900593,
+          "q3": 2.582290231375131,
+          "sample_count": 9,
           "unit": "g*s/min",
-          "value": 2.4559935784687066
+          "value": 2.405452944700275
         },
         {
           "label": "ParaTransit sedan/taxi",
-          "q1": 2.2227654420202025,
-          "q3": 2.431941623134702,
-          "sample_count": 24,
+          "q1": 2.1827664389782298,
+          "q3": 2.428766281122471,
+          "sample_count": 25,
           "unit": "g*s/min",
-          "value": 2.361421959293042
+          "value": 2.3545864853699525
         },
         {
           "label": "Motorcycle",
-          "q1": 5.669889485823886,
-          "q3": 5.934401024621635,
-          "sample_count": 6,
+          "q1": 5.100045821511052,
+          "q3": 5.916196164507606,
+          "sample_count": 8,
           "unit": "g*s/min",
-          "value": 5.851952027758728
+          "value": 5.7121964309048785
         },
         {
           "label": "ParaTransit bus",
-          "q1": 4.385672542357007,
-          "q3": 4.883412793138639,
-          "sample_count": 19,
+          "q1": 4.371519825481824,
+          "q3": 4.880186359866596,
+          "sample_count": 20,
           "unit": "g*s/min",
-          "value": 4.642731663998724
+          "value": 4.603983098317508
         },
         {
           "label": "ParaTransit van",
@@ -722,35 +722,35 @@
       "points": [
         {
           "label": "SilverRide",
-          "q1": 0.11295706970524962,
-          "q3": 0.19958577899900348,
-          "sample_count": 8,
+          "q1": 0.1114590324444233,
+          "q3": 0.19073294962948154,
+          "sample_count": 9,
           "unit": "g",
-          "value": 0.1469847589572687
+          "value": 0.1165032660592085
         },
         {
           "label": "ParaTransit sedan/taxi",
-          "q1": 0.11877933518228077,
-          "q3": 0.14819466344020316,
-          "sample_count": 24,
+          "q1": 0.11989854226402188,
+          "q3": 0.1473832984446729,
+          "sample_count": 25,
           "unit": "g",
-          "value": 0.13751491862133736
+          "value": 0.13738027930750443
         },
         {
           "label": "Motorcycle",
-          "q1": 0.13958135786936898,
-          "q3": 0.1519572275893122,
-          "sample_count": 6,
+          "q1": 0.12581437809120202,
+          "q3": 0.1487636524970883,
+          "sample_count": 8,
           "unit": "g",
-          "value": 0.14486622111224523
+          "value": 0.1405760976707507
         },
         {
           "label": "ParaTransit bus",
-          "q1": 0.16913799750676073,
-          "q3": 0.18853462626298184,
-          "sample_count": 19,
+          "q1": 0.16993435847016516,
+          "q3": 0.18806039603332783,
+          "sample_count": 20,
           "unit": "g",
-          "value": 0.1771802104536997
+          "value": 0.17808253611553476
         },
         {
           "label": "ParaTransit van",
@@ -770,35 +770,35 @@
       "points": [
         {
           "label": "SilverRide",
-          "q1": 1.010892109918197,
-          "q3": 1.2611802186660401,
-          "sample_count": 8,
+          "q1": 1.0019371394554366,
+          "q3": 1.2586950056408377,
+          "sample_count": 9,
           "unit": "ratio",
-          "value": 1.0948861598741528
+          "value": 1.0798363744258754
         },
         {
           "label": "ParaTransit sedan/taxi",
-          "q1": 0.9269767011516609,
-          "q3": 1.1004128867132519,
-          "sample_count": 24,
+          "q1": 0.9116003267323167,
+          "q3": 1.0945046697364351,
+          "sample_count": 25,
           "unit": "ratio",
-          "value": 1.0285895521143256
+          "value": 1.0247101599325144
         },
         {
           "label": "Motorcycle",
-          "q1": 0.5841562830907778,
-          "q3": 0.647937173817963,
-          "sample_count": 6,
+          "q1": 0.5644088828895396,
+          "q3": 0.6434976164408703,
+          "sample_count": 8,
           "unit": "ratio",
-          "value": 0.6162232725093695
+          "value": 0.5864937578159902
         },
         {
           "label": "ParaTransit bus",
-          "q1": 1.2259661422400345,
-          "q3": 1.3093437445762088,
-          "sample_count": 19,
+          "q1": 1.2170331599594137,
+          "q3": 1.3065642406749864,
+          "sample_count": 20,
           "unit": "ratio",
-          "value": 1.2810931924074251
+          "value": 1.279501405789786
         },
         {
           "label": "ParaTransit van",
@@ -818,35 +818,35 @@
       "points": [
         {
           "label": "SilverRide",
-          "q1": 0.5843808465888352,
-          "q3": 0.7673235545100479,
-          "sample_count": 8,
+          "q1": 0.5909296195498155,
+          "q3": 0.781941184932053,
+          "sample_count": 9,
           "unit": "g/s",
-          "value": 0.64093523068208
+          "value": 0.668860749690137
         },
         {
           "label": "ParaTransit sedan/taxi",
-          "q1": 0.5287901206152973,
-          "q3": 0.6104568208255166,
-          "sample_count": 24,
+          "q1": 0.533583787504246,
+          "q3": 0.6106245337397411,
+          "sample_count": 25,
           "unit": "g/s",
-          "value": 0.5585086197559599
+          "value": 0.5589000787155362
         },
         {
           "label": "Motorcycle",
-          "q1": 2.7691977139500774,
-          "q3": 4.732750086293778,
-          "sample_count": 6,
+          "q1": 2.98795867326672,
+          "q3": 4.101809126635843,
+          "sample_count": 8,
           "unit": "g/s",
           "value": 3.205101361285186
         },
         {
           "label": "ParaTransit bus",
-          "q1": 1.153685095921909,
-          "q3": 1.396450244196949,
-          "sample_count": 19,
+          "q1": 1.1247540314588937,
+          "q3": 1.3922622495911088,
+          "sample_count": 20,
           "unit": "g/s",
-          "value": 1.2759194868985422
+          "value": 1.236552048198646
         },
         {
           "label": "ParaTransit van",
@@ -866,35 +866,35 @@
       "points": [
         {
           "label": "SilverRide",
-          "q1": 22.020388619365853,
-          "q3": 26.584086000543895,
-          "sample_count": 8,
+          "q1": 20.392284587268847,
+          "q3": 25.879718490083174,
+          "sample_count": 9,
           "unit": "count/min",
-          "value": 23.22228033763915
+          "value": 23.14061749624328
         },
         {
           "label": "ParaTransit sedan/taxi",
-          "q1": 21.355106121724006,
-          "q3": 24.617578180623685,
-          "sample_count": 24,
+          "q1": 21.0419503858581,
+          "q3": 24.543040370652875,
+          "sample_count": 25,
           "unit": "count/min",
-          "value": 22.752135981295456
+          "value": 22.632687034860947
         },
         {
           "label": "Motorcycle",
-          "q1": 40.003395816622316,
-          "q3": 69.9203957817101,
-          "sample_count": 6,
+          "q1": 41.01501110456845,
+          "q3": 74.37196830197337,
+          "sample_count": 8,
           "unit": "count/min",
-          "value": 43.05801109326986
+          "value": 44.691604408410804
         },
         {
           "label": "ParaTransit bus",
-          "q1": 23.048990026150797,
-          "q3": 27.26302792898683,
-          "sample_count": 19,
+          "q1": 22.506944463996664,
+          "q3": 27.22717500118532,
+          "sample_count": 20,
           "unit": "count/min",
-          "value": 26.820516791863493
+          "value": 26.258762608750075
         },
         {
           "label": "ParaTransit van",

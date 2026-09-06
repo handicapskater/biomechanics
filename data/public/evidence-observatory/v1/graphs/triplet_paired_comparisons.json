@@ -2,6 +2,60 @@
   "accessible_table": [
     {
       "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 1120.32,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 0.1443254632250895,
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 0.0927882501876619,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 8807.76,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 0.05153721303742759,
+      "sequence_date_local": "2026-08-30",
+      "unit": "g"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 1120.32,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 26.34961439588689,
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 2.7249924715837714,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 8807.76,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 23.624621924303117,
+      "sequence_date_local": "2026-08-30",
+      "unit": "count/min"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
       "comparison_analysis_duration_seconds": 1162.08,
       "comparison_formula_version": "kubios_acc_session_metrics.v1",
       "comparison_id": "mall_vs_walk",
@@ -110,6 +164,60 @@
     },
     {
       "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 1211.76,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 0.14966955495402937,
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 0.0948390298019268,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 7882.56,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 0.05483052515210258,
+      "sequence_date_local": "2026-09-02",
+      "unit": "g"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 1211.76,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 27.827292533174884,
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 1.353659601741441,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 7882.56,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 26.473632931433443,
+      "sequence_date_local": "2026-09-02",
+      "unit": "count/min"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
       "comparison_analysis_duration_seconds": 1213.2,
       "comparison_formula_version": "kubios_acc_session_metrics.v1",
       "comparison_id": "mall_vs_walk",
@@ -164,6 +272,114 @@
     },
     {
       "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 1218.24,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 0.14589131195353852,
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 0.09089029915772825,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 7230.96,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 0.05500101279581027,
+      "sequence_date_local": "2026-08-31",
+      "unit": "g"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 1218.24,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 26.84200157604413,
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 2.52987704486155,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 7230.96,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 24.31212453118258,
+      "sequence_date_local": "2026-08-31",
+      "unit": "count/min"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 1223.28,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 0.13886000613657787,
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 0.08585923117610869,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 7616.88,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 0.05300077496046918,
+      "sequence_date_local": "2026-09-01",
+      "unit": "g"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 1223.28,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 26.633313713949384,
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 0.8353491930431893,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 7616.88,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 25.797964520906195,
+      "sequence_date_local": "2026-09-01",
+      "unit": "count/min"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
       "comparison_analysis_duration_seconds": 1247.76,
       "comparison_formula_version": "kubios_acc_session_metrics.v1",
       "comparison_id": "mall_vs_walk",
@@ -214,6 +430,60 @@
       "reference_role": "mall",
       "reference_value": 29.20088341420928,
       "sequence_date_local": "2026-08-20",
+      "unit": "count/min"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 1249.92,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 0.14861422231585716,
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 0.09300459703300074,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 7733.52,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 0.055609625282856436,
+      "sequence_date_local": "2026-09-03",
+      "unit": "g"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 1249.92,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 25.969662058371735,
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": -0.05212362266355086,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 7733.52,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 26.021785681035286,
+      "sequence_date_local": "2026-09-03",
       "unit": "count/min"
     },
     {
@@ -2162,6 +2432,114 @@
     },
     {
       "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 3327.12,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 0.14015826553918867,
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 0.08862105250176108,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 8807.76,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 0.05153721303742759,
+      "sequence_date_local": "2026-08-30",
+      "unit": "g"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 3327.12,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 27.32092620644882,
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 3.6963042821457037,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 8807.76,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 23.624621924303117,
+      "sequence_date_local": "2026-08-30",
+      "unit": "count/min"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 3327.12,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 0.14015826553918867,
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": -0.00416719768590082,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 1120.32,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 0.1443254632250895,
+      "sequence_date_local": "2026-08-30",
+      "unit": "g"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 3327.12,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 27.32092620644882,
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 0.9713118105619323,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 1120.32,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 26.34961439588689,
+      "sequence_date_local": "2026-08-30",
+      "unit": "count/min"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
       "comparison_analysis_duration_seconds": 3352.32,
       "comparison_formula_version": "kubios_acc_session_metrics.v1",
       "comparison_id": "mall_vs_pt",
@@ -2594,6 +2972,114 @@
     },
     {
       "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 3600.72,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 0.15912940123257419,
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 0.10429887608047161,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 7882.56,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 0.05483052515210258,
+      "sequence_date_local": "2026-09-02",
+      "unit": "g"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 3600.72,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 25.92814770379258,
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": -0.5454852276408637,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 7882.56,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 26.473632931433443,
+      "sequence_date_local": "2026-09-02",
+      "unit": "count/min"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 3600.72,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 0.15912940123257419,
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 0.00945984627854482,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 1211.76,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 0.14966955495402937,
+      "sequence_date_local": "2026-09-02",
+      "unit": "g"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 3600.72,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 25.92814770379258,
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": -1.8991448293823048,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 1211.76,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 27.827292533174884,
+      "sequence_date_local": "2026-09-02",
+      "unit": "count/min"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
       "comparison_analysis_duration_seconds": 3677.76,
       "comparison_formula_version": "kubios_acc_session_metrics.v1",
       "comparison_id": "mall_vs_pt",
@@ -2698,6 +3184,114 @@
       "reference_role": "walk",
       "reference_value": 30.173992673992675,
       "sequence_date_local": "2026-08-12",
+      "unit": "count/min"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 3713.04,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 0.1483580753456991,
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 0.09335706254988882,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 7230.96,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 0.05500101279581027,
+      "sequence_date_local": "2026-08-31",
+      "unit": "g"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 3713.04,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 27.61618512054812,
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 3.304060589365541,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 7230.96,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 24.31212453118258,
+      "sequence_date_local": "2026-08-31",
+      "unit": "count/min"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 3713.04,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 0.1483580753456991,
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 0.0024667633921605647,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 1218.24,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 0.14589131195353852,
+      "sequence_date_local": "2026-08-31",
+      "unit": "g"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 3713.04,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 27.61618512054812,
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 0.7741835445039911,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 1218.24,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 26.84200157604413,
+      "sequence_date_local": "2026-08-31",
       "unit": "count/min"
     },
     {
@@ -3782,6 +4376,114 @@
     },
     {
       "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 3960.72,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 0.12406104462422064,
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 0.07106026966375147,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 7616.88,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 0.05300077496046918,
+      "sequence_date_local": "2026-09-01",
+      "unit": "g"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 3960.72,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 28.646306732109313,
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 2.848342211203118,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 7616.88,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 25.797964520906195,
+      "sequence_date_local": "2026-09-01",
+      "unit": "count/min"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 3960.72,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 0.12406104462422064,
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": -0.014798961512357225,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 1223.28,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 0.13886000613657787,
+      "sequence_date_local": "2026-09-01",
+      "unit": "g"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 3960.72,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 28.646306732109313,
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 2.0129930181599285,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 1223.28,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 26.633313713949384,
+      "sequence_date_local": "2026-09-01",
+      "unit": "count/min"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
       "comparison_analysis_duration_seconds": 3967.92,
       "comparison_formula_version": "kubios_acc_session_metrics.v1",
       "comparison_id": "mall_vs_pt",
@@ -4642,6 +5344,114 @@
       "reference_role": "walk",
       "reference_value": 28.0578898225957,
       "sequence_date_local": "2026-08-06",
+      "unit": "count/min"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 4116.24,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 0.14887933793136143,
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 0.093269712648505,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 7733.52,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 0.055609625282856436,
+      "sequence_date_local": "2026-09-03",
+      "unit": "g"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 4116.24,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 24.51752084426564,
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": -1.5042648367696465,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 7733.52,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 26.021785681035286,
+      "sequence_date_local": "2026-09-03",
+      "unit": "count/min"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 4116.24,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 0.14887933793136143,
+      "directionality_rule": "higher_means_greater_vertical_dynamic_intensity",
+      "interpretation": "greater vertical dynamic intensity; no clinical preference is assigned",
+      "is_duration_normalized": false,
+      "metric_name": "vertical_dynamic_g_rms",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 0.0002651156155042689,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 1249.92,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 0.14861422231585716,
+      "sequence_date_local": "2026-09-03",
+      "unit": "g"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_acc_analysis_window",
+      "comparison_analysis_duration_seconds": 4116.24,
+      "comparison_formula_version": "kubios_acc_session_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 24.51752084426564,
+      "directionality_rule": "higher_means_more_detected_shock_spikes_per_acc_minute",
+      "interpretation": "rate uses the ACC analysis window; no clinical preference is assigned",
+      "is_duration_normalized": true,
+      "metric_name": "shock_spike_rate_per_min",
+      "metric_scope": "kubios_acc_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": -1.4521412141060956,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_acc_analysis_window",
+      "reference_analysis_duration_seconds": 1249.92,
+      "reference_formula_version": "kubios_acc_session_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 25.969662058371735,
+      "sequence_date_local": "2026-09-03",
       "unit": "count/min"
     },
     {
@@ -6856,6 +7666,168 @@
       "reference_role": "walk",
       "reference_value": 77.03591539298728,
       "sequence_date_local": "2026-08-06",
+      "unit": "bpm"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 1017.625,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 39.11024217445841,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "metric_name": "rmssd_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 16.482551530008443,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1915.089,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 22.62769064444997,
+      "sequence_date_local": "2026-09-03",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 1017.625,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 52.772595664954544,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "metric_name": "sdnn_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 18.975127786398836,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1915.089,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 33.79746787855571,
+      "sequence_date_local": "2026-09-03",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 1017.625,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 96.16509028374892,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 25.296321260481605,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1915.089,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 70.86876902326732,
+      "sequence_date_local": "2026-09-03",
+      "unit": "bpm"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 1017.625,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 39.11024217445841,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "metric_name": "rmssd_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": -4.4126063303087335,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 308.033,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 43.52284850476715,
+      "sequence_date_local": "2026-09-03",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 1017.625,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 52.772595664954544,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "metric_name": "sdnn_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": -0.49883321433297567,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 308.033,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 53.27142887928752,
+      "sequence_date_local": "2026-09-03",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 1017.625,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 96.16509028374892,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 20.78355648704533,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 308.033,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 75.3815337967036,
+      "sequence_date_local": "2026-09-03",
       "unit": "bpm"
     },
     {
@@ -9452,6 +10424,87 @@
     },
     {
       "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 276.977,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 26.79974439606075,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "metric_name": "rmssd_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 5.981570694333126,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 2178.228,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 20.818173701727623,
+      "sequence_date_local": "2026-08-30",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 276.977,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 58.84241303100782,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "metric_name": "sdnn_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 19.13082097641105,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 2178.228,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 39.71159205459677,
+      "sequence_date_local": "2026-08-30",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 276.977,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 71.0528311014994,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 2.9883309665273003,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 2178.228,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 68.06450013497209,
+      "sequence_date_local": "2026-08-30",
+      "unit": "bpm"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
       "comparison_analysis_duration_seconds": 288.507,
       "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
       "comparison_id": "mall_vs_walk",
@@ -9614,6 +10667,87 @@
     },
     {
       "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 299.647,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 28.099457553924378,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "metric_name": "rmssd_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 9.245429162912242,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1949.574,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 18.854028391012136,
+      "sequence_date_local": "2026-09-02",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 299.647,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 56.19754417470887,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "metric_name": "sdnn_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 28.548678886618855,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1949.574,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 27.64886528809001,
+      "sequence_date_local": "2026-09-02",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 299.647,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 74.48764713145802,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 2.9643297298102738,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1949.574,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 71.52331740164774,
+      "sequence_date_local": "2026-09-02",
+      "unit": "bpm"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
       "comparison_analysis_duration_seconds": 300.776,
       "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
       "comparison_id": "mall_vs_walk",
@@ -9692,6 +10826,249 @@
       "reference_value": 55.88722788256116,
       "sequence_date_local": "2026-08-25",
       "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 301.197,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 36.26881834945853,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "metric_name": "rmssd_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 13.670863189456128,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1790.503,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 22.5979551600024,
+      "sequence_date_local": "2026-08-31",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 301.197,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 45.76265575153176,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "metric_name": "sdnn_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": -6.209224750066873,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1790.503,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 51.97188050159863,
+      "sequence_date_local": "2026-08-31",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 301.197,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 82.27173577426069,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 8.649965802358949,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1790.503,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 73.62176997190174,
+      "sequence_date_local": "2026-08-31",
+      "unit": "bpm"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 302.457,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 26.93880943085482,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "metric_name": "rmssd_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": -2.6210595576386133,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1886.403,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 29.559868988493434,
+      "sequence_date_local": "2026-09-01",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 302.457,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 67.17423069240361,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "metric_name": "sdnn_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 14.636936691203985,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1886.403,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 52.537294001199626,
+      "sequence_date_local": "2026-09-01",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 302.457,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 72.8037373907696,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": -8.175777590917775,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1886.403,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 80.97951498168737,
+      "sequence_date_local": "2026-09-01",
+      "unit": "bpm"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 308.033,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 43.52284850476715,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "metric_name": "rmssd_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 20.895157860317177,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1915.089,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 22.62769064444997,
+      "sequence_date_local": "2026-09-03",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 308.033,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 53.27142887928752,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "metric_name": "sdnn_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 19.473961000731812,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1915.089,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 33.79746787855571,
+      "sequence_date_local": "2026-09-03",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 308.033,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_walk",
+      "comparison_label": "Mall vs Walk",
+      "comparison_quality_status": "valid",
+      "comparison_role": "walk",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 75.3815337967036,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 4.512764773436274,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1915.089,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 70.86876902326732,
+      "sequence_date_local": "2026-09-03",
+      "unit": "bpm"
     },
     {
       "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
@@ -12692,6 +14069,168 @@
     },
     {
       "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 823.903,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 38.74597518304805,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "metric_name": "rmssd_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 17.92780148132043,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 2178.228,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 20.818173701727623,
+      "sequence_date_local": "2026-08-30",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 823.903,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 59.47676251890871,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "metric_name": "sdnn_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 19.765170464311936,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 2178.228,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 39.71159205459677,
+      "sequence_date_local": "2026-08-30",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 823.903,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 92.19531910916697,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 24.13081897419488,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 2178.228,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 68.06450013497209,
+      "sequence_date_local": "2026-08-30",
+      "unit": "bpm"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 823.903,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 38.74597518304805,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "metric_name": "rmssd_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 11.946230786987304,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 276.977,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 26.79974439606075,
+      "sequence_date_local": "2026-08-30",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 823.903,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 59.47676251890871,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "metric_name": "sdnn_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 0.6343494879008844,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 276.977,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 58.84241303100782,
+      "sequence_date_local": "2026-08-30",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 823.903,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 92.19531910916697,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 21.14248800766758,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 276.977,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 71.0528311014994,
+      "sequence_date_local": "2026-08-30",
+      "unit": "bpm"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
       "comparison_analysis_duration_seconds": 831.103,
       "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
       "comparison_id": "mall_vs_pt",
@@ -13340,6 +14879,168 @@
     },
     {
       "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 890.915,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 30.423912049743716,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "metric_name": "rmssd_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 11.56988365873158,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1949.574,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 18.854028391012136,
+      "sequence_date_local": "2026-09-02",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 890.915,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 61.30513781367094,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "metric_name": "sdnn_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 33.65627252558093,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1949.574,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 27.64886528809001,
+      "sequence_date_local": "2026-09-02",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 890.915,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 97.1809880852831,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 25.65767068363536,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1949.574,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 71.52331740164774,
+      "sequence_date_local": "2026-09-02",
+      "unit": "bpm"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 890.915,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 30.423912049743716,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "metric_name": "rmssd_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 2.3244544958193387,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 299.647,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 28.099457553924378,
+      "sequence_date_local": "2026-09-02",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 890.915,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 61.30513781367094,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "metric_name": "sdnn_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 5.107593638962072,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 299.647,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 56.19754417470887,
+      "sequence_date_local": "2026-09-02",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 890.915,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 97.1809880852831,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 22.693340953825086,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 299.647,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 74.48764713145802,
+      "sequence_date_local": "2026-09-02",
+      "unit": "bpm"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
       "comparison_analysis_duration_seconds": 911.592,
       "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
       "comparison_id": "mall_vs_pt",
@@ -13498,6 +15199,168 @@
       "reference_role": "walk",
       "reference_value": 72.70047280290302,
       "sequence_date_local": "2026-08-12",
+      "unit": "bpm"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 918.387,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 23.33102730686535,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "metric_name": "rmssd_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 0.733072146862952,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1790.503,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 22.5979551600024,
+      "sequence_date_local": "2026-08-31",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 918.387,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 59.66561702463189,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "metric_name": "sdnn_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 7.693736523033259,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1790.503,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 51.97188050159863,
+      "sequence_date_local": "2026-08-31",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 918.387,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 99.56586929039717,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 25.944099318495432,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1790.503,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 73.62176997190174,
+      "sequence_date_local": "2026-08-31",
+      "unit": "bpm"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 918.387,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 23.33102730686535,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "metric_name": "rmssd_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": -12.937791042593176,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 301.197,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 36.26881834945853,
+      "sequence_date_local": "2026-08-31",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 918.387,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 59.66561702463189,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "metric_name": "sdnn_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 13.902961273100132,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 301.197,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 45.76265575153176,
+      "sequence_date_local": "2026-08-31",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 918.387,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 99.56586929039717,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 17.294133516136483,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 301.197,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 82.27173577426069,
+      "sequence_date_local": "2026-08-31",
       "unit": "bpm"
     },
     {
@@ -15122,6 +16985,168 @@
     },
     {
       "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 980.55,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 34.448038422083826,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "metric_name": "rmssd_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 4.888169433590392,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1886.403,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 29.559868988493434,
+      "sequence_date_local": "2026-09-01",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 980.55,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 52.84040354734691,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "metric_name": "sdnn_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 0.303109546147283,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1886.403,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 52.537294001199626,
+      "sequence_date_local": "2026-09-01",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 980.55,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "mall_vs_pt",
+      "comparison_label": "Mall vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 89.45999694049257,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 8.4804819588052,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 1886.403,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "mall",
+      "reference_value": 80.97951498168737,
+      "sequence_date_local": "2026-09-01",
+      "unit": "bpm"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 980.55,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 34.448038422083826,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session RMSSD is episodic autonomic context, not WHOOP overnight HRV",
+      "is_duration_normalized": false,
+      "metric_name": "rmssd_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 7.509228991229005,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 302.457,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 26.93880943085482,
+      "sequence_date_local": "2026-09-01",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 980.55,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 52.84040354734691,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "session SDNN is episodic autonomic context",
+      "is_duration_normalized": false,
+      "metric_name": "sdnn_ms",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": -14.333827145056702,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 302.457,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 67.17423069240361,
+      "sequence_date_local": "2026-09-01",
+      "unit": "ms"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
+      "comparison_analysis_duration_seconds": 980.55,
+      "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "comparison_id": "walk_vs_pt",
+      "comparison_label": "Walk vs PT",
+      "comparison_quality_status": "valid",
+      "comparison_role": "pt",
+      "comparison_scope_status": "compatible",
+      "comparison_value": 89.45999694049257,
+      "directionality_rule": "context_dependent_no_universal_better_direction",
+      "interpretation": "greater mean episodic session heart rate",
+      "is_duration_normalized": false,
+      "metric_name": "mean_hr_bpm",
+      "metric_scope": "kubios_rri_session",
+      "paired_metric_contract_version": "triplet_paired_metric_detail.v1",
+      "paired_numeric_difference": 16.656259549722975,
+      "paired_value_status": "available",
+      "reference_analysis_duration_scope": "kubios_rri_analysis_window",
+      "reference_analysis_duration_seconds": 302.457,
+      "reference_formula_version": "kubios_rri_time_domain_metrics.v1",
+      "reference_quality_status": "valid",
+      "reference_role": "walk",
+      "reference_value": 72.8037373907696,
+      "sequence_date_local": "2026-09-01",
+      "unit": "bpm"
+    },
+    {
+      "comparison_analysis_duration_scope": "kubios_rri_analysis_window",
       "comparison_analysis_duration_seconds": 982.031,
       "comparison_formula_version": "kubios_rri_time_domain_metrics.v1",
       "comparison_id": "mall_vs_pt",
@@ -16096,9 +18121,9 @@
   "alt_text": "Paired-difference panels compare Mall with Walk, Walk with PT, and Mall with PT across accepted dates for available heart-rate, HRV, and mechanical metrics.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "e21947b0480d5fa15ac2e1fdd0cdaad385c3475b90b60ccea602b6f0d438bff9",
+  "content_hash": "8353f5a4a3aa71f76fd7bfeab6db466c4cc22376b8c90a6506b6fcd162d9d0ca",
   "coverage": {},
-  "data_through_date": "2026-08-27",
+  "data_through_date": "2026-09-03",
   "destination": "handicapskater.com",
   "evidence": {},
   "finding": null,
@@ -16142,6 +18167,12 @@
               "quality": "valid / valid",
               "unit": "bpm",
               "value": 26.432650189992813
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 25.296321260481605
             },
             {
               "date": "2026-07-22",
@@ -16240,6 +18271,12 @@
               "value": 26.4600017863535
             },
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 24.13081897419488
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "bpm",
@@ -16264,10 +18301,22 @@
               "value": 25.952157684977934
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 25.65767068363536
+            },
+            {
               "date": "2026-08-12",
               "quality": "valid / valid",
               "unit": "bpm",
               "value": 37.27200874560094
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 25.944099318495432
             },
             {
               "date": "2026-08-26",
@@ -16330,6 +18379,12 @@
               "value": 15.608740330039439
             },
             {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 8.4804819588052
+            },
+            {
               "date": "2026-08-16",
               "quality": "valid / valid",
               "unit": "bpm",
@@ -16371,6 +18426,12 @@
           "label": "Mall Vs Walk",
           "points": [
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 2.9883309665273003
+            },
+            {
               "date": "2026-08-27",
               "quality": "valid / valid",
               "unit": "bpm",
@@ -16383,10 +18444,34 @@
               "value": -3.724304375030343
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 2.9643297298102738
+            },
+            {
               "date": "2026-08-25",
               "quality": "valid / valid",
               "unit": "bpm",
               "value": -9.718859712011465
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 8.649965802358949
+            },
+            {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": -8.175777590917775
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 4.512764773436274
             },
             {
               "date": "2026-08-20",
@@ -16634,6 +18719,12 @@
               "value": 16.886437003126886
             },
             {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 20.78355648704533
+            },
+            {
               "date": "2026-07-22",
               "quality": "valid / valid",
               "unit": "bpm",
@@ -16730,6 +18821,12 @@
               "value": 20.762498633701938
             },
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 21.14248800766758
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "bpm",
@@ -16754,10 +18851,22 @@
               "value": 20.415408937353973
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 22.693340953825086
+            },
+            {
               "date": "2026-08-12",
               "quality": "valid / valid",
               "unit": "bpm",
               "value": 26.88355162907972
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 17.294133516136483
             },
             {
               "date": "2026-08-26",
@@ -16818,6 +18927,12 @@
               "quality": "valid / valid",
               "unit": "bpm",
               "value": 16.175697005959222
+            },
+            {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 16.656259549722975
             },
             {
               "date": "2026-08-16",
@@ -16883,6 +18998,12 @@
               "quality": "valid / valid",
               "unit": "ms",
               "value": 6.634156443595309
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 16.482551530008443
             },
             {
               "date": "2026-07-22",
@@ -16981,6 +19102,12 @@
               "value": 6.944738453818516
             },
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 17.92780148132043
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "ms",
@@ -17005,10 +19132,22 @@
               "value": -2.6590168430983034
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 11.56988365873158
+            },
+            {
               "date": "2026-08-12",
               "quality": "valid / valid",
               "unit": "ms",
               "value": -2.540038970013498
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 0.733072146862952
             },
             {
               "date": "2026-08-26",
@@ -17071,6 +19210,12 @@
               "value": 20.664809613856036
             },
             {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 4.888169433590392
+            },
+            {
               "date": "2026-08-16",
               "quality": "valid / valid",
               "unit": "ms",
@@ -17112,6 +19257,12 @@
           "label": "Mall Vs Walk",
           "points": [
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 5.981570694333126
+            },
+            {
               "date": "2026-08-27",
               "quality": "valid / valid",
               "unit": "ms",
@@ -17124,10 +19275,34 @@
               "value": -0.041844650122634164
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 9.245429162912242
+            },
+            {
               "date": "2026-08-25",
               "quality": "valid / valid",
               "unit": "ms",
               "value": -14.565239111847138
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 13.670863189456128
+            },
+            {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": -2.6210595576386133
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 20.895157860317177
             },
             {
               "date": "2026-08-20",
@@ -17375,6 +19550,12 @@
               "value": -16.770516594458314
             },
             {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": -4.4126063303087335
+            },
+            {
               "date": "2026-07-22",
               "quality": "valid / valid",
               "unit": "ms",
@@ -17471,6 +19652,12 @@
               "value": 3.399912788039014
             },
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 11.946230786987304
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "ms",
@@ -17495,10 +19682,22 @@
               "value": -19.152543351131214
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 2.3244544958193387
+            },
+            {
               "date": "2026-08-12",
               "quality": "valid / valid",
               "unit": "ms",
               "value": -245.9582008744795
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": -12.937791042593176
             },
             {
               "date": "2026-08-26",
@@ -17559,6 +19758,12 @@
               "quality": "valid / valid",
               "unit": "ms",
               "value": 20.274818704733875
+            },
+            {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 7.509228991229005
             },
             {
               "date": "2026-08-16",
@@ -17624,6 +19829,12 @@
               "quality": "valid / valid",
               "unit": "ms",
               "value": 22.609981239295045
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 18.975127786398836
             },
             {
               "date": "2026-07-22",
@@ -17722,6 +19933,12 @@
               "value": 21.020293838190018
             },
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 19.765170464311936
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "ms",
@@ -17746,10 +19963,22 @@
               "value": 4.579906893261821
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 33.65627252558093
+            },
+            {
               "date": "2026-08-12",
               "quality": "valid / valid",
               "unit": "ms",
               "value": 13.54637446798931
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 7.693736523033259
             },
             {
               "date": "2026-08-26",
@@ -17812,6 +20041,12 @@
               "value": 35.44560344216982
             },
             {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 0.303109546147283
+            },
+            {
               "date": "2026-08-16",
               "quality": "valid / valid",
               "unit": "ms",
@@ -17853,6 +20088,12 @@
           "label": "Mall Vs Walk",
           "points": [
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 19.13082097641105
+            },
+            {
               "date": "2026-08-27",
               "quality": "valid / valid",
               "unit": "ms",
@@ -17865,10 +20106,34 @@
               "value": 24.59701962157549
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 28.548678886618855
+            },
+            {
               "date": "2026-08-25",
               "quality": "valid / valid",
               "unit": "ms",
               "value": 20.02547763376745
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": -6.209224750066873
+            },
+            {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 14.636936691203985
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 19.473961000731812
             },
             {
               "date": "2026-08-20",
@@ -18116,6 +20381,12 @@
               "value": 9.076916608730322
             },
             {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": -0.49883321433297567
+            },
+            {
               "date": "2026-07-22",
               "quality": "valid / valid",
               "unit": "ms",
@@ -18212,6 +20483,12 @@
               "value": 4.723863159246761
             },
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 0.6343494879008844
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "ms",
@@ -18236,10 +20513,22 @@
               "value": 10.068684653721057
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 5.107593638962072
+            },
+            {
               "date": "2026-08-12",
               "quality": "valid / valid",
               "unit": "ms",
               "value": -133.75547404161182
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 13.902961273100132
             },
             {
               "date": "2026-08-26",
@@ -18302,6 +20591,12 @@
               "value": 2.642731917627785
             },
             {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": -14.333827145056702
+            },
+            {
               "date": "2026-08-16",
               "quality": "valid / valid",
               "unit": "ms",
@@ -18349,6 +20644,12 @@
           "label": "Mall Vs Pt",
           "points": [
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": 3.6963042821457037
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "count/min",
@@ -18373,10 +20674,22 @@
               "value": -1.3670811712048483
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": -0.5454852276408637
+            },
+            {
               "date": "2026-08-12",
               "quality": "valid / valid",
               "unit": "count/min",
               "value": 3.3962632607494108
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": 3.304060589365541
             },
             {
               "date": "2026-08-26",
@@ -18439,6 +20752,12 @@
               "value": -1.5903238913310211
             },
             {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": 2.848342211203118
+            },
+            {
               "date": "2026-08-16",
               "quality": "valid / valid",
               "unit": "count/min",
@@ -18485,6 +20804,12 @@
               "quality": "valid / valid",
               "unit": "count/min",
               "value": 0.8935372356008671
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": -1.5042648367696465
             },
             {
               "date": "2026-07-22",
@@ -18588,6 +20913,12 @@
           "label": "Mall Vs Walk",
           "points": [
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": 2.7249924715837714
+            },
+            {
               "date": "2026-08-27",
               "quality": "valid / valid",
               "unit": "count/min",
@@ -18600,16 +20931,40 @@
               "value": -2.1768119501589354
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": 1.353659601741441
+            },
+            {
               "date": "2026-08-26",
               "quality": "valid / valid",
               "unit": "count/min",
               "value": 4.9251611500063355
             },
             {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": 2.52987704486155
+            },
+            {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": 0.8353491930431893
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "count/min",
               "value": -1.214732231289485
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": -0.05212362266355086
             },
             {
               "date": "2026-08-13",
@@ -18833,6 +21188,12 @@
           "label": "Walk Vs Pt",
           "points": [
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": 0.9713118105619323
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "count/min",
@@ -18857,10 +21218,22 @@
               "value": -4.645808359831356
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": -1.8991448293823048
+            },
+            {
               "date": "2026-08-12",
               "quality": "valid / valid",
               "unit": "count/min",
               "value": -2.929147985921677
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": 0.7741835445039911
             },
             {
               "date": "2026-08-26",
@@ -18923,6 +21296,12 @@
               "value": -6.17518441832161
             },
             {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": 2.0129930181599285
+            },
+            {
               "date": "2026-08-16",
               "quality": "valid / valid",
               "unit": "count/min",
@@ -18969,6 +21348,12 @@
               "quality": "valid / valid",
               "unit": "count/min",
               "value": -1.5886802368454234
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": -1.4521412141060956
             },
             {
               "date": "2026-07-22",
@@ -19078,6 +21463,12 @@
           "label": "Mall Vs Pt",
           "points": [
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.08862105250176108
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "g",
@@ -19102,10 +21493,22 @@
               "value": 0.0925254042067384
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.10429887608047161
+            },
+            {
               "date": "2026-08-12",
               "quality": "valid / valid",
               "unit": "g",
               "value": 0.10726016731954158
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.09335706254988882
             },
             {
               "date": "2026-08-26",
@@ -19168,6 +21571,12 @@
               "value": 0.08230452847158307
             },
             {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.07106026966375147
+            },
+            {
               "date": "2026-08-16",
               "quality": "valid / valid",
               "unit": "g",
@@ -19214,6 +21623,12 @@
               "quality": "valid / valid",
               "unit": "g",
               "value": 0.08152559298644799
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.093269712648505
             },
             {
               "date": "2026-07-22",
@@ -19317,6 +21732,12 @@
           "label": "Mall Vs Walk",
           "points": [
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.0927882501876619
+            },
+            {
               "date": "2026-08-27",
               "quality": "valid / valid",
               "unit": "g",
@@ -19329,16 +21750,40 @@
               "value": 0.08515330428577036
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.0948390298019268
+            },
+            {
               "date": "2026-08-26",
               "quality": "valid / valid",
               "unit": "g",
               "value": 0.09086967697598924
             },
             {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.09089029915772825
+            },
+            {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.08585923117610869
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "g",
               "value": 0.08271296564444763
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.09300459703300074
             },
             {
               "date": "2026-08-13",
@@ -19562,6 +22007,12 @@
           "label": "Walk Vs Pt",
           "points": [
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": -0.00416719768590082
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "g",
@@ -19586,10 +22037,22 @@
               "value": -0.01327823310076301
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.00945984627854482
+            },
+            {
               "date": "2026-08-12",
               "quality": "valid / valid",
               "unit": "g",
               "value": 0.023165792876841867
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.0024667633921605647
             },
             {
               "date": "2026-08-26",
@@ -19652,6 +22115,12 @@
               "value": -0.0065652410478763135
             },
             {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": -0.014798961512357225
+            },
+            {
               "date": "2026-08-16",
               "quality": "valid / valid",
               "unit": "g",
@@ -19698,6 +22167,12 @@
               "quality": "valid / valid",
               "unit": "g",
               "value": -0.001662518115019579
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.0002651156155042689
             },
             {
               "date": "2026-07-22",
@@ -19814,11 +22289,11 @@
   ],
   "repeatability": [],
   "sample_counts": {
-    "mean_hr_bpm": 120,
-    "rmssd_ms": 120,
-    "sdnn_ms": 120,
-    "shock_spike_rate_per_min": 118,
-    "vertical_dynamic_g_rms": 118
+    "mean_hr_bpm": 135,
+    "rmssd_ms": 135,
+    "sdnn_ms": 135,
+    "shock_spike_rate_per_min": 133,
+    "vertical_dynamic_g_rms": 133
   },
   "series": [
     {
@@ -19844,6 +22319,12 @@
               "quality": "valid / valid",
               "unit": "bpm",
               "value": 26.432650189992813
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 25.296321260481605
             },
             {
               "date": "2026-07-22",
@@ -19942,6 +22423,12 @@
               "value": 26.4600017863535
             },
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 24.13081897419488
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "bpm",
@@ -19966,10 +22453,22 @@
               "value": 25.952157684977934
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 25.65767068363536
+            },
+            {
               "date": "2026-08-12",
               "quality": "valid / valid",
               "unit": "bpm",
               "value": 37.27200874560094
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 25.944099318495432
             },
             {
               "date": "2026-08-26",
@@ -20032,6 +22531,12 @@
               "value": 15.608740330039439
             },
             {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 8.4804819588052
+            },
+            {
               "date": "2026-08-16",
               "quality": "valid / valid",
               "unit": "bpm",
@@ -20073,6 +22578,12 @@
           "label": "Mall Vs Walk",
           "points": [
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 2.9883309665273003
+            },
+            {
               "date": "2026-08-27",
               "quality": "valid / valid",
               "unit": "bpm",
@@ -20085,10 +22596,34 @@
               "value": -3.724304375030343
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 2.9643297298102738
+            },
+            {
               "date": "2026-08-25",
               "quality": "valid / valid",
               "unit": "bpm",
               "value": -9.718859712011465
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 8.649965802358949
+            },
+            {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": -8.175777590917775
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 4.512764773436274
             },
             {
               "date": "2026-08-20",
@@ -20336,6 +22871,12 @@
               "value": 16.886437003126886
             },
             {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 20.78355648704533
+            },
+            {
               "date": "2026-07-22",
               "quality": "valid / valid",
               "unit": "bpm",
@@ -20432,6 +22973,12 @@
               "value": 20.762498633701938
             },
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 21.14248800766758
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "bpm",
@@ -20456,10 +23003,22 @@
               "value": 20.415408937353973
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 22.693340953825086
+            },
+            {
               "date": "2026-08-12",
               "quality": "valid / valid",
               "unit": "bpm",
               "value": 26.88355162907972
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 17.294133516136483
             },
             {
               "date": "2026-08-26",
@@ -20520,6 +23079,12 @@
               "quality": "valid / valid",
               "unit": "bpm",
               "value": 16.175697005959222
+            },
+            {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "bpm",
+              "value": 16.656259549722975
             },
             {
               "date": "2026-08-16",
@@ -20587,6 +23152,12 @@
               "quality": "valid / valid",
               "unit": "ms",
               "value": 6.634156443595309
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 16.482551530008443
             },
             {
               "date": "2026-07-22",
@@ -20685,6 +23256,12 @@
               "value": 6.944738453818516
             },
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 17.92780148132043
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "ms",
@@ -20709,10 +23286,22 @@
               "value": -2.6590168430983034
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 11.56988365873158
+            },
+            {
               "date": "2026-08-12",
               "quality": "valid / valid",
               "unit": "ms",
               "value": -2.540038970013498
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 0.733072146862952
             },
             {
               "date": "2026-08-26",
@@ -20775,6 +23364,12 @@
               "value": 20.664809613856036
             },
             {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 4.888169433590392
+            },
+            {
               "date": "2026-08-16",
               "quality": "valid / valid",
               "unit": "ms",
@@ -20816,6 +23411,12 @@
           "label": "Mall Vs Walk",
           "points": [
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 5.981570694333126
+            },
+            {
               "date": "2026-08-27",
               "quality": "valid / valid",
               "unit": "ms",
@@ -20828,10 +23429,34 @@
               "value": -0.041844650122634164
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 9.245429162912242
+            },
+            {
               "date": "2026-08-25",
               "quality": "valid / valid",
               "unit": "ms",
               "value": -14.565239111847138
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 13.670863189456128
+            },
+            {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": -2.6210595576386133
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 20.895157860317177
             },
             {
               "date": "2026-08-20",
@@ -21079,6 +23704,12 @@
               "value": -16.770516594458314
             },
             {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": -4.4126063303087335
+            },
+            {
               "date": "2026-07-22",
               "quality": "valid / valid",
               "unit": "ms",
@@ -21175,6 +23806,12 @@
               "value": 3.399912788039014
             },
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 11.946230786987304
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "ms",
@@ -21199,10 +23836,22 @@
               "value": -19.152543351131214
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 2.3244544958193387
+            },
+            {
               "date": "2026-08-12",
               "quality": "valid / valid",
               "unit": "ms",
               "value": -245.9582008744795
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": -12.937791042593176
             },
             {
               "date": "2026-08-26",
@@ -21263,6 +23912,12 @@
               "quality": "valid / valid",
               "unit": "ms",
               "value": 20.274818704733875
+            },
+            {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 7.509228991229005
             },
             {
               "date": "2026-08-16",
@@ -21330,6 +23985,12 @@
               "quality": "valid / valid",
               "unit": "ms",
               "value": 22.609981239295045
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 18.975127786398836
             },
             {
               "date": "2026-07-22",
@@ -21428,6 +24089,12 @@
               "value": 21.020293838190018
             },
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 19.765170464311936
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "ms",
@@ -21452,10 +24119,22 @@
               "value": 4.579906893261821
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 33.65627252558093
+            },
+            {
               "date": "2026-08-12",
               "quality": "valid / valid",
               "unit": "ms",
               "value": 13.54637446798931
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 7.693736523033259
             },
             {
               "date": "2026-08-26",
@@ -21518,6 +24197,12 @@
               "value": 35.44560344216982
             },
             {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 0.303109546147283
+            },
+            {
               "date": "2026-08-16",
               "quality": "valid / valid",
               "unit": "ms",
@@ -21559,6 +24244,12 @@
           "label": "Mall Vs Walk",
           "points": [
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 19.13082097641105
+            },
+            {
               "date": "2026-08-27",
               "quality": "valid / valid",
               "unit": "ms",
@@ -21571,10 +24262,34 @@
               "value": 24.59701962157549
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 28.548678886618855
+            },
+            {
               "date": "2026-08-25",
               "quality": "valid / valid",
               "unit": "ms",
               "value": 20.02547763376745
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": -6.209224750066873
+            },
+            {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 14.636936691203985
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 19.473961000731812
             },
             {
               "date": "2026-08-20",
@@ -21822,6 +24537,12 @@
               "value": 9.076916608730322
             },
             {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": -0.49883321433297567
+            },
+            {
               "date": "2026-07-22",
               "quality": "valid / valid",
               "unit": "ms",
@@ -21918,6 +24639,12 @@
               "value": 4.723863159246761
             },
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 0.6343494879008844
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "ms",
@@ -21942,10 +24669,22 @@
               "value": 10.068684653721057
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 5.107593638962072
+            },
+            {
               "date": "2026-08-12",
               "quality": "valid / valid",
               "unit": "ms",
               "value": -133.75547404161182
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": 13.902961273100132
             },
             {
               "date": "2026-08-26",
@@ -22008,6 +24747,12 @@
               "value": 2.642731917627785
             },
             {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "ms",
+              "value": -14.333827145056702
+            },
+            {
               "date": "2026-08-16",
               "quality": "valid / valid",
               "unit": "ms",
@@ -22057,6 +24802,12 @@
           "label": "Mall Vs Pt",
           "points": [
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": 3.6963042821457037
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "count/min",
@@ -22081,10 +24832,22 @@
               "value": -1.3670811712048483
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": -0.5454852276408637
+            },
+            {
               "date": "2026-08-12",
               "quality": "valid / valid",
               "unit": "count/min",
               "value": 3.3962632607494108
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": 3.304060589365541
             },
             {
               "date": "2026-08-26",
@@ -22147,6 +24910,12 @@
               "value": -1.5903238913310211
             },
             {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": 2.848342211203118
+            },
+            {
               "date": "2026-08-16",
               "quality": "valid / valid",
               "unit": "count/min",
@@ -22193,6 +24962,12 @@
               "quality": "valid / valid",
               "unit": "count/min",
               "value": 0.8935372356008671
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": -1.5042648367696465
             },
             {
               "date": "2026-07-22",
@@ -22296,6 +25071,12 @@
           "label": "Mall Vs Walk",
           "points": [
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": 2.7249924715837714
+            },
+            {
               "date": "2026-08-27",
               "quality": "valid / valid",
               "unit": "count/min",
@@ -22308,16 +25089,40 @@
               "value": -2.1768119501589354
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": 1.353659601741441
+            },
+            {
               "date": "2026-08-26",
               "quality": "valid / valid",
               "unit": "count/min",
               "value": 4.9251611500063355
             },
             {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": 2.52987704486155
+            },
+            {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": 0.8353491930431893
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "count/min",
               "value": -1.214732231289485
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": -0.05212362266355086
             },
             {
               "date": "2026-08-13",
@@ -22541,6 +25346,12 @@
           "label": "Walk Vs Pt",
           "points": [
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": 0.9713118105619323
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "count/min",
@@ -22565,10 +25376,22 @@
               "value": -4.645808359831356
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": -1.8991448293823048
+            },
+            {
               "date": "2026-08-12",
               "quality": "valid / valid",
               "unit": "count/min",
               "value": -2.929147985921677
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": 0.7741835445039911
             },
             {
               "date": "2026-08-26",
@@ -22631,6 +25454,12 @@
               "value": -6.17518441832161
             },
             {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": 2.0129930181599285
+            },
+            {
               "date": "2026-08-16",
               "quality": "valid / valid",
               "unit": "count/min",
@@ -22677,6 +25506,12 @@
               "quality": "valid / valid",
               "unit": "count/min",
               "value": -1.5886802368454234
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "count/min",
+              "value": -1.4521412141060956
             },
             {
               "date": "2026-07-22",
@@ -22788,6 +25623,12 @@
           "label": "Mall Vs Pt",
           "points": [
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.08862105250176108
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "g",
@@ -22812,10 +25653,22 @@
               "value": 0.0925254042067384
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.10429887608047161
+            },
+            {
               "date": "2026-08-12",
               "quality": "valid / valid",
               "unit": "g",
               "value": 0.10726016731954158
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.09335706254988882
             },
             {
               "date": "2026-08-26",
@@ -22878,6 +25731,12 @@
               "value": 0.08230452847158307
             },
             {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.07106026966375147
+            },
+            {
               "date": "2026-08-16",
               "quality": "valid / valid",
               "unit": "g",
@@ -22924,6 +25783,12 @@
               "quality": "valid / valid",
               "unit": "g",
               "value": 0.08152559298644799
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.093269712648505
             },
             {
               "date": "2026-07-22",
@@ -23027,6 +25892,12 @@
           "label": "Mall Vs Walk",
           "points": [
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.0927882501876619
+            },
+            {
               "date": "2026-08-27",
               "quality": "valid / valid",
               "unit": "g",
@@ -23039,16 +25910,40 @@
               "value": 0.08515330428577036
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.0948390298019268
+            },
+            {
               "date": "2026-08-26",
               "quality": "valid / valid",
               "unit": "g",
               "value": 0.09086967697598924
             },
             {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.09089029915772825
+            },
+            {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.08585923117610869
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "g",
               "value": 0.08271296564444763
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.09300459703300074
             },
             {
               "date": "2026-08-13",
@@ -23272,6 +26167,12 @@
           "label": "Walk Vs Pt",
           "points": [
             {
+              "date": "2026-08-30",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": -0.00416719768590082
+            },
+            {
               "date": "2026-08-20",
               "quality": "valid / valid",
               "unit": "g",
@@ -23296,10 +26197,22 @@
               "value": -0.01327823310076301
             },
             {
+              "date": "2026-09-02",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.00945984627854482
+            },
+            {
               "date": "2026-08-12",
               "quality": "valid / valid",
               "unit": "g",
               "value": 0.023165792876841867
+            },
+            {
+              "date": "2026-08-31",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.0024667633921605647
             },
             {
               "date": "2026-08-26",
@@ -23362,6 +26275,12 @@
               "value": -0.0065652410478763135
             },
             {
+              "date": "2026-09-01",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": -0.014798961512357225
+            },
+            {
               "date": "2026-08-16",
               "quality": "valid / valid",
               "unit": "g",
@@ -23408,6 +26327,12 @@
               "quality": "valid / valid",
               "unit": "g",
               "value": -0.001662518115019579
+            },
+            {
+              "date": "2026-09-03",
+              "quality": "valid / valid",
+              "unit": "g",
+              "value": 0.0002651156155042689
             },
             {
               "date": "2026-07-22",

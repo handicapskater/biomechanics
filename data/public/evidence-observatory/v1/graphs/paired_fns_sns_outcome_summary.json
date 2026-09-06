@@ -61,13 +61,13 @@
   "alt_text": "Forest plot of separate FROM-minus-TO effects for average, maximum, and resting-relative HR with committed 95% bootstrap intervals and a zero reference.",
   "claim_class": "MEASURED",
   "claim_classes": {},
-  "content_hash": "5c84f6b95ab57cc1a26a7c99ae70c430db55775223954c31c39f124088bdefba",
+  "content_hash": "2615973df27f4f044f7a04c63ca070ca48ea45555c68d85fa80e0df98c734291",
   "coverage": {
     "LP2-H0A": 54,
     "LP2-H0B": 54,
     "LP2-H0C": 52
   },
-  "data_through_date": "2026-08-27",
+  "data_through_date": "2026-09-03",
   "destination": "handicapskater.com",
   "evidence": {
     "canonical_relations": [

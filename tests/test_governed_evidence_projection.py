@@ -54,7 +54,7 @@ class GovernedEvidenceProjectionTests(unittest.TestCase):
     def test_transport_denominator_layers_survive_the_projection(self) -> None:
         payload = self.payload("transportation_body_coupling_comparison")
         self.assertEqual(payload["coverage"]["longitudinal_transport_context_support"]["motorcycle"], 210)
-        self.assertEqual(payload["coverage"]["episodic_kubios_body_coupling_support"]["motorcycle"], 6)
+        self.assertEqual(payload["coverage"]["episodic_kubios_body_coupling_support"]["motorcycle"], 8)
         labels = {row.get("denominator_label") for row in payload["accessible_table"]}
         self.assertIn("EPISODIC BODY-COUPLING / COMPONENT SUPPORT (Kubios + WHOOP + Strava)", labels)
 
@@ -74,6 +74,26 @@ class GovernedEvidenceProjectionTests(unittest.TestCase):
         self.assertIn('const BUNDLE_ROOT = "/data/public/evidence-observatory/v1/"', (ROOT / "common/governed-evidence-graphs.js").read_text())
         for forbidden in ("/rag", "/mcp", "/warehouse", "/private", "/clinical-export", "duckdb", "sql", "model.fit"):
             self.assertNotIn(forbidden, renderer)
+
+    def test_home_core_evidence_is_render_only_and_bound_to_governed_ids(self) -> None:
+        home = (ROOT / "index.html").read_text()
+        self.assertIn(
+            'data-publication-resource-path="/data/public/evidence-observatory/v1/computational-evidence.json"',
+            home,
+        )
+        evidence_ids = set(re.findall(r'data-core-evidence-id="([A-Za-z0-9_-]+)"', home))
+        self.assertEqual(
+            evidence_ids,
+            {
+                "triplet_distance_miles_Mall_to_Walk",
+                "triplet_distance_miles_Walk_to_PT",
+                "triplet_vertical_dynamic_g_rms_Mall_to_Walk",
+                "triplet_jerk_rms_g_per_s_Mall_to_Walk",
+                "triplet_shock_spike_rate_per_min_Walk_to_PT",
+            },
+        )
+        self.assertNotIn("Math.", home)
+        self.assertNotIn("data-publication-graph=", home)
 
     def test_missing_selected_graph_fails_closed_in_the_renderer(self) -> None:
         renderer = (ROOT / "common/governed-evidence-graphs.js").read_text()

@@ -7747,6 +7747,32 @@
       "source_provenance_json": "[{\"source_system\":\"kubios\",\"normalized_record_id\":\"nr_8aa09e75dbeac5bef0c00e0d5aa45c10e8f130ce93ef85fa8ddb702732c0e979\",\"raw_artifact_id\":\"raw_kubios_40b4575b95f8aabea6750ad15a149261c2328a38465d119fda73b5677089d05a\",\"source_hash\":\"40b4575b95f8aabea6750ad15a149261c2328a38465d119fda73b5677089d05a\",\"raw_label\":\"Skate - SNS\"},{\"source_system\":\"strava\",\"normalized_record_id\":\"nr_47d41229984d5a2af0d3a116f4458fc00ac38bfb54c9fa8f8b97d031a12c785b\",\"raw_artifact_id\":\"raw_strava_26f60f366fdec907a39cd6ed6d364505b077266b3ae32b95b950444bf30a1cf7\",\"source_hash\":\"26f60f366fdec907a39cd6ed6d364505b077266b3ae32b95b950444bf30a1cf7\",\"raw_label\":\"Evening Inline Skate\"},{\"source_system\":\"strava\",\"normalized_record_id\":\"nr_5292eb96721ef0efdf4f7cb7eb215fbd17f7203f9a880e379c5c24dae661ea95\",\"raw_artifact_id\":\"raw_strava_26f60f366fdec907a39cd6ed6d364505b077266b3ae32b95b950444bf30a1cf7\",\"source_hash\":\"26f60f366fdec907a39cd6ed6d364505b077266b3ae32b95b950444bf30a1cf7\",\"raw_label\":\"Night Inline Skate\"},{\"source_system\":\"whoop\",\"normalized_record_id\":\"nr_3fcc8a649ccfdacec69c6b3a4f7504340e9df9eea8bf9c19dbf0e0480ee05855\",\"raw_artifact_id\":\"raw_whoop_472fbc041c6f6e32501d239d8ca291fb123e3ee492c4c275b098c3c610f0f0b1\",\"source_hash\":\"472fbc041c6f6e32501d239d8ca291fb123e3ee492c4c275b098c3c610f0f0b1\",\"raw_label\":\"Inline Skating\"}]",
       "whoop_average_hr_bpm": 96.0,
       "whoop_max_hr_bpm": 146.0
+    },
+    {
+      "analysis_version": "current_effective_authority_descriptive.v1",
+      "authoritative_distance_miles": 11.895281555714625,
+      "distance_authority": "miles",
+      "distance_conversion_version": "physical_distance_to_miles.v1",
+      "event_date_local": "2026-08-28",
+      "event_duration_seconds": 10719.0,
+      "event_subtype": "FNS",
+      "kubios_mean_hr_bpm": null,
+      "source_provenance_json": "[{\"source_system\":\"kubios\",\"normalized_record_id\":\"nr_d39d62c7db03f6cd7526a02e3d7bea0641332300ca81560eed8ac365c62375fb\",\"raw_artifact_id\":\"raw_kubios_a59ef261ad397b1f147e9c3bd7b3ea701d79106369261fd928017e3798e7e433\",\"source_hash\":\"a59ef261ad397b1f147e9c3bd7b3ea701d79106369261fd928017e3798e7e433\",\"raw_label\":\"Skate - FNS\"},{\"source_system\":\"strava\",\"normalized_record_id\":\"nr_304bc7d792cbee6c699037e8b8315821c473eec1e1eddbd19c8b1884d7eadb9f\",\"raw_artifact_id\":\"raw_strava_24303131bb3ab71c463f8a877d22af7d5fc18c5de2d670e3d308b0bb6c9c373e\",\"source_hash\":\"24303131bb3ab71c463f8a877d22af7d5fc18c5de2d670e3d308b0bb6c9c373e\",\"raw_label\":\"Evening Inline Skate\"},{\"source_system\":\"strava\",\"normalized_record_id\":\"nr_33e81b1a66c501c08f84af22c5298e468c001ade4dc7ab96c8b6fe1d911d48f7\",\"raw_artifact_id\":\"raw_strava_24303131bb3ab71c463f8a877d22af7d5fc18c5de2d670e3d308b0bb6c9c373e\",\"source_hash\":\"24303131bb3ab71c463f8a877d22af7d5fc18c5de2d670e3d308b0bb6c9c373e\",\"raw_label\":\"Night Inline Skate\"},{\"source_system\":\"whoop\",\"normalized_record_id\":\"nr_27d10f8671eb36e4c8f16684031f0c2515143e2d3e788559c66cd792179a5480\",\"raw_artifact_id\":\"raw_whoop_ffcf60cbe392bd5d805225ff28a60c10113c7991265f1f9e493bedac116de1f1\",\"source_hash\":\"ffcf60cbe392bd5d805225ff28a60c10113c7991265f1f9e493bedac116de1f1\",\"raw_label\":\"Inline Skating\"}]",
+      "whoop_average_hr_bpm": 116.0,
+      "whoop_max_hr_bpm": 158.0
+    },
+    {
+      "analysis_version": "current_effective_authority_descriptive.v1",
+      "authoritative_distance_miles": 11.46678398154776,
+      "distance_authority": "miles",
+      "distance_conversion_version": "physical_distance_to_miles.v1",
+      "event_date_local": "2026-08-29",
+      "event_duration_seconds": 8078.0,
+      "event_subtype": "SNS",
+      "kubios_mean_hr_bpm": null,
+      "source_provenance_json": "[{\"source_system\":\"kubios\",\"normalized_record_id\":\"nr_bb653c792584d1c69bdb0a7e54340a0489216ad0ab547fefda1657ed956e7fbc\",\"raw_artifact_id\":\"raw_kubios_6744c87d9010c775cdeec9e78c8556fda59111997f9e7dbe0d3248f1ad382e89\",\"source_hash\":\"6744c87d9010c775cdeec9e78c8556fda59111997f9e7dbe0d3248f1ad382e89\",\"raw_label\":\"Skate - SNS\"},{\"source_system\":\"strava\",\"normalized_record_id\":\"nr_704a68f535c52392d5cf9b9f7d467eca65add0976cba87ebccde5262a529e050\",\"raw_artifact_id\":\"raw_strava_24303131bb3ab71c463f8a877d22af7d5fc18c5de2d670e3d308b0bb6c9c373e\",\"source_hash\":\"24303131bb3ab71c463f8a877d22af7d5fc18c5de2d670e3d308b0bb6c9c373e\",\"raw_label\":\"Night Inline Skate\"},{\"source_system\":\"strava\",\"normalized_record_id\":\"nr_e9882e540538e93dd099b098cb7735b262067cc8e17eef2b706ea1f799b84cb3\",\"raw_artifact_id\":\"raw_strava_24303131bb3ab71c463f8a877d22af7d5fc18c5de2d670e3d308b0bb6c9c373e\",\"source_hash\":\"24303131bb3ab71c463f8a877d22af7d5fc18c5de2d670e3d308b0bb6c9c373e\",\"raw_label\":\"Night Inline Skate\"},{\"source_system\":\"whoop\",\"normalized_record_id\":\"nr_0e252f496af3cb166113330b683f58e354b412599a1f76f2272293c858610a8e\",\"raw_artifact_id\":\"raw_whoop_ffcf60cbe392bd5d805225ff28a60c10113c7991265f1f9e493bedac116de1f1\",\"source_hash\":\"ffcf60cbe392bd5d805225ff28a60c10113c7991265f1f9e493bedac116de1f1\",\"raw_label\":\"Inline Skating\"}]",
+      "whoop_average_hr_bpm": 105.0,
+      "whoop_max_hr_bpm": 147.0
     }
   ],
   "alt_text": "Distance and duration are shown over time for all persisted governed FNS/SNS events, including FNS, SNS, ENS, XNS, XMS, and source-unspecified subtype status with explicit missingness.",
@@ -7756,16 +7782,16 @@
     "repeatability": "MEASURED",
     "values": "MEASURED"
   },
-  "content_hash": "79bc5fc5abb43d52ad8806f3206b171f85ebf56cc1bcd5fd3cd52fd6ba5292cf",
+  "content_hash": "9c4613f44b1ad42d03512afc3f12b979414e40ad02ab154c297c4e4fceaf8c29",
   "coverage": {
     "ENS": 8,
-    "FNS": 176,
-    "SNS": 188,
+    "FNS": 177,
+    "SNS": 189,
     "XMS": 1,
     "XNS": 2,
     "source_unspecified": 221
   },
-  "data_through_date": "2026-08-22",
+  "data_through_date": "2026-08-29",
   "destination": "handicapskater.com",
   "evidence": {
     "canonical_relations": [
@@ -7773,8 +7799,8 @@
     ],
     "sample_count": {
       "ENS": 8,
-      "FNS": 176,
-      "SNS": 188,
+      "FNS": 177,
+      "SNS": 189,
       "XMS": 1,
       "XNS": 2,
       "source_unspecified": 221
@@ -9018,6 +9044,13 @@
               "sample_count": 1,
               "unit": "miles",
               "value": 11.5813026922771
+            },
+            {
+              "date": "2026-08-28",
+              "quality": "source_label_explicit",
+              "sample_count": 1,
+              "unit": "miles",
+              "value": 11.895281555714625
             }
           ]
         },
@@ -10304,6 +10337,13 @@
               "sample_count": 1,
               "unit": "miles",
               "value": 11.773430664916885
+            },
+            {
+              "date": "2026-08-29",
+              "quality": "source_label_explicit",
+              "sample_count": 1,
+              "unit": "miles",
+              "value": 11.46678398154776
             }
           ]
         },
@@ -13072,6 +13112,13 @@
               "sample_count": 1,
               "unit": "s",
               "value": 10543.0
+            },
+            {
+              "date": "2026-08-28",
+              "quality": "source_label_explicit",
+              "sample_count": 1,
+              "unit": "s",
+              "value": 10719.0
             }
           ]
         },
@@ -14351,6 +14398,13 @@
               "sample_count": 1,
               "unit": "s",
               "value": 9954.0
+            },
+            {
+              "date": "2026-08-29",
+              "quality": "source_label_explicit",
+              "sample_count": 1,
+              "unit": "s",
+              "value": 8078.0
             }
           ]
         },
@@ -17168,6 +17222,13 @@
               "sample_count": 1,
               "unit": "bpm",
               "value": 98.0
+            },
+            {
+              "date": "2026-08-28",
+              "quality": "source_label_explicit",
+              "sample_count": 1,
+              "unit": "bpm",
+              "value": 116.0
             }
           ]
         },
@@ -18454,6 +18515,13 @@
               "sample_count": 1,
               "unit": "bpm",
               "value": 96.0
+            },
+            {
+              "date": "2026-08-29",
+              "quality": "source_label_explicit",
+              "sample_count": 1,
+              "unit": "bpm",
+              "value": 105.0
             }
           ]
         },
@@ -20075,20 +20143,20 @@
   ],
   "repeatability": [
     {
-      "date_end": "2026-08-21",
+      "date_end": "2026-08-28",
       "date_start": "2021-01-01",
-      "distance_n": 175,
-      "duration_n": 171,
-      "event_n": 176,
+      "distance_n": 176,
+      "duration_n": 172,
+      "event_n": 177,
       "status": "persisted canonical event counts",
       "subtype": "FNS"
     },
     {
-      "date_end": "2026-08-22",
+      "date_end": "2026-08-29",
       "date_start": "2021-01-02",
-      "distance_n": 188,
-      "duration_n": 182,
-      "event_n": 188,
+      "distance_n": 189,
+      "duration_n": 183,
+      "event_n": 189,
       "status": "persisted canonical event counts",
       "subtype": "SNS"
     },
@@ -20131,8 +20199,8 @@
   ],
   "sample_counts": {
     "ENS": 8,
-    "FNS": 176,
-    "SNS": 188,
+    "FNS": 177,
+    "SNS": 189,
     "XMS": 1,
     "XNS": 2,
     "source_unspecified": 221
@@ -21341,6 +21409,13 @@
               "sample_count": 1,
               "unit": "miles",
               "value": 11.5813026922771
+            },
+            {
+              "date": "2026-08-28",
+              "quality": "source_label_explicit",
+              "sample_count": 1,
+              "unit": "miles",
+              "value": 11.895281555714625
             }
           ]
         },
@@ -22627,6 +22702,13 @@
               "sample_count": 1,
               "unit": "miles",
               "value": 11.773430664916885
+            },
+            {
+              "date": "2026-08-29",
+              "quality": "source_label_explicit",
+              "sample_count": 1,
+              "unit": "miles",
+              "value": 11.46678398154776
             }
           ]
         },
@@ -25397,6 +25479,13 @@
               "sample_count": 1,
               "unit": "s",
               "value": 10543.0
+            },
+            {
+              "date": "2026-08-28",
+              "quality": "source_label_explicit",
+              "sample_count": 1,
+              "unit": "s",
+              "value": 10719.0
             }
           ]
         },
@@ -26676,6 +26765,13 @@
               "sample_count": 1,
               "unit": "s",
               "value": 9954.0
+            },
+            {
+              "date": "2026-08-29",
+              "quality": "source_label_explicit",
+              "sample_count": 1,
+              "unit": "s",
+              "value": 8078.0
             }
           ]
         },
@@ -29495,6 +29591,13 @@
               "sample_count": 1,
               "unit": "bpm",
               "value": 98.0
+            },
+            {
+              "date": "2026-08-28",
+              "quality": "source_label_explicit",
+              "sample_count": 1,
+              "unit": "bpm",
+              "value": 116.0
             }
           ]
         },
@@ -30781,6 +30884,13 @@
               "sample_count": 1,
               "unit": "bpm",
               "value": 96.0
+            },
+            {
+              "date": "2026-08-29",
+              "quality": "source_label_explicit",
+              "sample_count": 1,
+              "unit": "bpm",
+              "value": 105.0
             }
           ]
         },

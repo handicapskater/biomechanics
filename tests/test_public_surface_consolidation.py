@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-import json
-import re
 import unittest
 from pathlib import Path
 
@@ -23,10 +21,14 @@ class PublicSurfaceConsolidationTests(unittest.TestCase):
             self.assertNotIn('data-publication-graph="', page_text, page)
         self.assertNotIn('data-governed-graph="authority_correction_summary"', self.read("evidence/index.html"))
 
-    def test_evidence_brief_keeps_five_primary_questions(self) -> None:
+    def test_home_foregrounds_four_core_confirmatory_findings(self) -> None:
         home = self.read("index.html")
         brief = self.read("evidence/index.html")
-        self.assertEqual(home.count('class="evidence-brief-card"'), 5)
+        self.assertEqual(home.count('class="core-evidence-card"'), 4)
+        self.assertIn('data-core-evidence-id="triplet_distance_miles_Mall_to_Walk"', home)
+        self.assertIn('data-core-evidence-id="triplet_vertical_dynamic_g_rms_Mall_to_Walk"', home)
+        self.assertIn('data-core-evidence-id="triplet_jerk_rms_g_per_s_Mall_to_Walk"', home)
+        self.assertIn('data-core-evidence-id="triplet_distance_miles_Walk_to_PT"', home)
         self.assertEqual(brief.count('data-governed-graph="h1_mechanical_only_validation"'), 1)
         self.assertEqual(brief.count('data-governed-graph="h3_transport_validation"'), 1)
         self.assertEqual(brief.count('data-governed-graph="h2_h13_context_increment"'), 1)

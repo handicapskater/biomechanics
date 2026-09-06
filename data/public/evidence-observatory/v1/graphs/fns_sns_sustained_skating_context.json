@@ -11919,14 +11919,54 @@
       "weather_condition": "Strava weather condition code 1.0",
       "weather_coverage_status": "strava_activity_time_point_observation",
       "wind_speed_mph": 11.85576234788832
+    },
+    {
+      "cohort_context_version": "fns_sns_cohort_context.v1",
+      "distance_authority": "miles",
+      "distance_miles": 11.895281555714625,
+      "distance_source": "strava:strava_activity:19944431213",
+      "event_date_local": "2026-08-28",
+      "event_duration_seconds": 10719.0,
+      "event_subtype": "FNS",
+      "kubios_mean_hr_bpm": null,
+      "kubios_rmssd_ms": null,
+      "raw_event_label": "Skate - FNS",
+      "readiness_status": "missing",
+      "route_availability": "route_reference_available",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 62.059999999999995,
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "wind_speed_mph": 8.052970651395839
+    },
+    {
+      "cohort_context_version": "fns_sns_cohort_context.v1",
+      "distance_authority": "miles",
+      "distance_miles": 11.46678398154776,
+      "distance_source": "strava:strava_activity:19957845866",
+      "event_date_local": "2026-08-29",
+      "event_duration_seconds": 8078.0,
+      "event_subtype": "SNS",
+      "kubios_mean_hr_bpm": null,
+      "kubios_rmssd_ms": null,
+      "raw_event_label": "Skate - SNS",
+      "readiness_status": "missing",
+      "route_availability": "route_reference_available",
+      "sanitized_route_identity": null,
+      "sf_route_classification": "not_classified_by_existing_sf_route_authority",
+      "temperature_f": 61.34,
+      "weather_condition": "Strava weather condition code 1.0",
+      "weather_coverage_status": "strava_activity_time_point_observation",
+      "wind_speed_mph": 5.1449534717251195
     }
   ],
-  "alt_text": "A 596-event sustained-skating timeline shows available distance, duration, Kubios heart rate, and session RMSSD by preserved FNS, SNS, ENS, XNS, XMS, or unspecified subtype.",
+  "alt_text": "A 598-event sustained-skating timeline shows available distance, duration, Kubios heart rate, and session RMSSD by preserved FNS, SNS, ENS, XNS, XMS, or unspecified subtype.",
   "claim_class": null,
   "claim_classes": {},
-  "content_hash": "6655ba9204c6631df0dc9ab752c17a07a62cce69e8b553eecabc13b77b6e65df",
+  "content_hash": "ebed27dc678b58863d198be724e9b13d6078f1ad244eca34801e119234d0c410",
   "coverage": {},
-  "data_through_date": "2026-08-27",
+  "data_through_date": "2026-09-03",
   "destination": "handicapskater.com",
   "evidence": {},
   "finding": null,
@@ -13058,6 +13098,12 @@
               "quality": "verified",
               "unit": "miles",
               "value": 11.5813026922771
+            },
+            {
+              "date": "2026-08-28",
+              "quality": "verified",
+              "unit": "miles",
+              "value": 11.895281555714625
             }
           ]
         },
@@ -14191,6 +14237,12 @@
               "quality": "verified",
               "unit": "miles",
               "value": 11.773430664916885
+            },
+            {
+              "date": "2026-08-29",
+              "quality": "verified",
+              "unit": "miles",
+              "value": 11.46678398154776
             }
           ]
         },
@@ -16599,6 +16651,12 @@
               "quality": "verified",
               "unit": "s",
               "value": 10543.0
+            },
+            {
+              "date": "2026-08-28",
+              "quality": "verified",
+              "unit": "s",
+              "value": 10719.0
             }
           ]
         },
@@ -17696,6 +17754,12 @@
               "quality": "verified",
               "unit": "s",
               "value": 9954.0
+            },
+            {
+              "date": "2026-08-29",
+              "quality": "verified",
+              "unit": "s",
+              "value": 8078.0
             }
           ]
         },
@@ -19435,8 +19499,8 @@
   "repeatability": [],
   "sample_counts": {
     "ENS": 8,
-    "FNS": 176,
-    "SNS": 188,
+    "FNS": 177,
+    "SNS": 189,
     "XMS": 1,
     "XNS": 2,
     "source_unspecified": 221
@@ -20551,6 +20615,12 @@
               "quality": "verified",
               "unit": "miles",
               "value": 11.5813026922771
+            },
+            {
+              "date": "2026-08-28",
+              "quality": "verified",
+              "unit": "miles",
+              "value": 11.895281555714625
             }
           ]
         },
@@ -21684,6 +21754,12 @@
               "quality": "verified",
               "unit": "miles",
               "value": 11.773430664916885
+            },
+            {
+              "date": "2026-08-29",
+              "quality": "verified",
+              "unit": "miles",
+              "value": 11.46678398154776
             }
           ]
         },
@@ -24094,6 +24170,12 @@
               "quality": "verified",
               "unit": "s",
               "value": 10543.0
+            },
+            {
+              "date": "2026-08-28",
+              "quality": "verified",
+              "unit": "s",
+              "value": 10719.0
             }
           ]
         },
@@ -25191,6 +25273,12 @@
               "quality": "verified",
               "unit": "s",
               "value": 9954.0
+            },
+            {
+              "date": "2026-08-29",
+              "quality": "verified",
+              "unit": "s",
+              "value": 8078.0
             }
           ]
         },
