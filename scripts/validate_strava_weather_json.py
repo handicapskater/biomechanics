@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "evidence" / "strava-gps-skate-maps" / "data"
 CSV_PATH = DATA_DIR / "strava_routes_weather_conditions_9pm_midnight.csv"
 JSON_PATH = DATA_DIR / "strava_routes_weather_conditions_9pm_midnight.json"
+SELECTION_PATH = DATA_DIR / "strava_route_selection_manifest.json"
 
 REQUIRED_FIELDS = {
     "date",
@@ -93,6 +94,12 @@ def main() -> None:
 
     index_path = ROOT / "evidence/strava-gps-skate-maps/index.html"
     index_text = index_path.read_text(encoding="utf-8")
+    selection = json.loads(SELECTION_PATH.read_text(encoding="utf-8"))
+    weekday_restriction = selection.get("weekday_or_time_restriction")
+    if weekday_restriction not in {None, "friday_saturday"}:
+        raise SystemExit(
+            f"Unknown route weekday restriction: {weekday_restriction}"
+        )
     listed = list(ROUTE_RE.finditer(index_text))
     if len(listed) != len(records):
         raise SystemExit(
@@ -101,7 +108,10 @@ def main() -> None:
     route_ids = []
     for match in listed:
         local_start = datetime.strptime(match.group("label")[:19], "%Y-%m-%d %H:%M:%S")
-        if local_start.weekday() not in {4, 5}:
+        if (
+            weekday_restriction == "friday_saturday"
+            and local_start.weekday() not in {4, 5}
+        ):
             raise SystemExit(
                 f"Non-Friday/Saturday route remains: {match.group('label')}"
             )
@@ -127,7 +137,7 @@ def main() -> None:
         record.get("weather_coverage_status") == "unavailable" for record in records
     )
     print(
-        f"Validated {len(records)} Friday/Saturday Strava weather records "
+        f"Validated {len(records)} geometry-selected Strava weather records "
         f"({missing} explicitly unavailable)"
     )
 

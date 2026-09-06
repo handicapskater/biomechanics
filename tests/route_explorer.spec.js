@@ -30,6 +30,33 @@ test("loads the embedded manifest and filters immediately", async ({ page }) => 
   await expect(page.locator("#route-select option")).toHaveCount(1);
 });
 
+test("publishes the recovered August weekend routes once in date order", async ({ page }) => {
+  await page.goto(explorer);
+  const options = page.locator("#route-select option");
+  await expect(options).toHaveCount(routeCount);
+  await expect(options.last()).toContainText("2026-08-29 21:06:36 - Night Inline Skate");
+
+  await page.locator("#route-search").fill("2026-08-28 20:59:38");
+  await expect(page.locator("#route-select option")).toHaveCount(1);
+  await page.locator("#route-select").selectOption(
+    await page.locator("#route-select option").first().getAttribute("value")
+  );
+  await expect(page.locator("#route-map-frame")).toHaveAttribute(
+    "src",
+    "/maps/20260828-20_59_38-Night%20Inline%20Skate-19944426893.html?v=mobilefix1"
+  );
+
+  await page.locator("#route-search").fill("2026-08-29 21:06:36");
+  await expect(page.locator("#route-select option")).toHaveCount(1);
+  await page.locator("#route-select").selectOption(
+    await page.locator("#route-select option").first().getAttribute("value")
+  );
+  await expect(page.locator("#route-map-frame")).toHaveAttribute(
+    "src",
+    "/maps/20260829-21_06_36-Night%20Inline%20Skate-19957844427.html?v=mobilefix1"
+  );
+});
+
 test("year and route-type filters update the native select", async ({ page }) => {
   await page.goto(explorer);
   await page.locator("#route-year").selectOption("2020");
