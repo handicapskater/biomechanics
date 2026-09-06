@@ -39,25 +39,25 @@ def test_home_primary_values_match_governed_b5_publication_rows() -> None:
     ) in HOME
     expected = {
         "triplet_distance_miles_Mall_to_Walk": {
-            "effect": "median paired Δ -1.8644",
+            "effect": "median paired Δ -1.8644 mi",
             "CI": "[-1.8808, -1.8465]",
             "p_value": "<0.001",
             "display": "−1.864 <span>mi</span>",
         },
         "triplet_distance_miles_Walk_to_PT": {
-            "effect": "median paired Δ 1.6683",
+            "effect": "median paired Δ +1.6683 mi",
             "CI": "[1.6529, 1.6852]",
             "p_value": "<0.001",
             "display": "+1.668 <span>mi</span>",
         },
         "triplet_vertical_dynamic_g_rms_Mall_to_Walk": {
-            "effect": "median paired Δ 0.0849",
+            "effect": "median paired Δ +0.0849 g",
             "CI": "[0.0827, 0.0861]",
             "p_value": "<0.001",
             "display": "+0.0849 <span>g</span>",
         },
         "triplet_jerk_rms_g_per_s_Mall_to_Walk": {
-            "effect": "median paired Δ 0.6370",
+            "effect": "median paired Δ +0.6370 g/s",
             "CI": "[0.6180, 0.6610]",
             "p_value": "<0.001",
             "display": "+0.637 <span>g/s</span>",
@@ -76,11 +76,34 @@ def test_home_primary_values_match_governed_b5_publication_rows() -> None:
 def test_home_secondary_shock_rate_matches_governed_b5_publication_row() -> None:
     row = _core_rows()["triplet_shock_spike_rate_per_min_Walk_to_PT"]
     assert row["independent_N"] == 44
-    assert row["effect"] == "median paired Δ -1.7744"
+    assert row["effect"] == "median paired Δ -1.7744 /min"
     assert row["CI"] == "[-2.0759, -1.0971]"
     assert row["p_value"] == "0.001"
     assert "Walking → PT shock-event rate decreased by 1.774/min" in HOME
     assert "Vertical RMS and jerk do not universally return to Mall levels." in HOME
+
+
+def test_home_sigma_column_is_secondary_governed_context() -> None:
+    rows = _core_rows()
+    bounded_ids = (
+        "triplet_distance_miles_Mall_to_Walk",
+        "triplet_distance_miles_Walk_to_PT",
+        "triplet_vertical_dynamic_g_rms_Mall_to_Walk",
+        "triplet_jerk_rms_g_per_s_Mall_to_Walk",
+        "triplet_shock_spike_rate_per_min_Mall_to_Walk",
+    )
+    assert "<th scope=\"col\">Sigma equivalent</th>" in HOME
+    for evidence_id in bounded_ids:
+        assert rows[evidence_id]["p_value"] == "<0.001"
+        assert rows[evidence_id].get("sigma_equivalent") is None
+        assert rows[evidence_id]["sigma_equivalent_display"] == ">3.29σ"
+    exact = rows["triplet_shock_spike_rate_per_min_Walk_to_PT"]
+    assert exact["p_value"] == "0.001"
+    assert exact["sigma_equivalent_display"] == "3.29σ"
+    assert exact["sigma_status"] == "EXACT_CONVERSION"
+    assert HOME.count("&gt;3.29σ") == 5
+    assert "<td>>3.29σ</td>" not in HOME
+    assert "5σ is not a HandicapSkater acceptance threshold." in HOME
 
 
 def test_home_contains_no_scientific_calculation_or_unapproved_terminology() -> None:

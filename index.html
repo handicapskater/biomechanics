@@ -121,16 +121,18 @@
           <summary>View accessible evidence table</summary>
           <div class="core-evidence-table-wrap">
             <table>
-              <thead><tr><th scope="col">Measure</th><th scope="col">Contrast</th><th scope="col">Effect</th><th scope="col">95% CI</th><th scope="col">p</th><th scope="col">Replication</th></tr></thead>
+              <thead><tr><th scope="col">Measure</th><th scope="col">Contrast</th><th scope="col">Effect</th><th scope="col">N</th><th scope="col">95% CI</th><th scope="col">p</th><th scope="col">Replication</th><th scope="col">Sigma equivalent</th></tr></thead>
               <tbody>
-                <tr><th scope="row">Distance</th><td>Mall → Walking</td><td>−1.8644 mi</td><td>[−1.8808, −1.8465]</td><td>&lt;.001</td><td>44/44 expected direction</td></tr>
-                <tr><th scope="row">Vertical dynamic RMS</th><td>Mall → Walking</td><td>+0.0849 g</td><td>[0.0827, 0.0861]</td><td>&lt;.001</td><td>44/44 expected direction</td></tr>
-                <tr><th scope="row">Jerk RMS</th><td>Mall → Walking</td><td>+0.6370 g/s</td><td>[0.6180, 0.6610]</td><td>&lt;.001</td><td>44/44 expected direction</td></tr>
-                <tr><th scope="row">Distance</th><td>Walking → PT</td><td>+1.6683 mi</td><td>[1.6529, 1.6852]</td><td>&lt;.001</td><td>44/44 expected direction</td></tr>
-                <tr><th scope="row">Shock-event rate</th><td>Walking → PT</td><td>−1.7744/min</td><td>[−2.0759, −1.0971]</td><td>.001</td><td>33/44 expected direction</td></tr>
+                <tr><th scope="row">Distance</th><td>Mall → Walking</td><td>−1.8644 mi</td><td>44</td><td>[−1.8808, −1.8465]</td><td>&lt;.001</td><td>44/44 expected direction</td><td>&gt;3.29σ</td></tr>
+                <tr><th scope="row">Vertical dynamic RMS</th><td>Mall → Walking</td><td>+0.0849 g</td><td>44</td><td>[0.0827, 0.0861]</td><td>&lt;.001</td><td>44/44 expected direction</td><td>&gt;3.29σ</td></tr>
+                <tr><th scope="row">Jerk RMS</th><td>Mall → Walking</td><td>+0.6370 g/s</td><td>44</td><td>[0.6180, 0.6610]</td><td>&lt;.001</td><td>44/44 expected direction</td><td>&gt;3.29σ</td></tr>
+                <tr><th scope="row">Shock-event rate</th><td>Mall → Walking</td><td>+3.0019/min</td><td>44</td><td>[2.1829, 4.3558]</td><td>&lt;.001</td><td>39/44 expected direction</td><td>&gt;3.29σ</td></tr>
+                <tr><th scope="row">Distance</th><td>Walking → PT</td><td>+1.6683 mi</td><td>44</td><td>[1.6529, 1.6852]</td><td>&lt;.001</td><td>44/44 expected direction</td><td>&gt;3.29σ</td></tr>
+                <tr><th scope="row">Shock-event rate</th><td>Walking → PT</td><td>−1.7744/min</td><td>44</td><td>[−2.0759, −1.0971]</td><td>.001</td><td>33/44 expected direction</td><td>3.29σ</td></tr>
               </tbody>
             </table>
           </div>
+          <p class="core-evidence-sigma-note">Sigma equivalent translates the governed two-sided p-value to the equivalent standard-normal tail distance. It is secondary context only; effect size, confidence interval, p-value, sample size, and repeated direction remain the primary evidence. 5σ is not a HandicapSkater acceptance threshold.</p>
         </details>
       </figure>
     </section>
