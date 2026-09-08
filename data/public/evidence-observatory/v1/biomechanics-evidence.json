@@ -1,0 +1,383 @@
+{
+  "accessibility": {
+    "plain_language_summary": "Walking-versus-Mall mechanics, PT functional restoration, transportation discordance, and the future direct-transfer design are published as source-linked aggregate fields without scientific recomputation.",
+    "sample_counts_visible": true,
+    "screen_reader_summary": "Governed aggregate biomechanics evidence with explicit evidence tiers and measurement boundaries.",
+    "table_available": true,
+    "units_visible": true
+  },
+  "approved_values": {
+    "analysis_ids": [
+      "IB-01",
+      "VTB-01",
+      "BCT-01",
+      "ST-01"
+    ],
+    "bct01": {
+      "acceleration_range_g": "±16 g",
+      "advancement_gate": "BODY_COUPLING_TRANSFER_MEASURED only after reproducible synchronized evidence",
+      "bct_executed": false,
+      "evidence_tier": "FUTURE EXPERIMENT",
+      "independent_unit": "session/date",
+      "recommended_design": "BCT_INTERMEDIATE",
+      "sample_rate_hz": 200,
+      "status": "DESIGN_COMPLETE_EXPERIMENT_NOT_EXECUTED",
+      "timing_acceptance_ms": 20,
+      "transfer_chain": [
+        "vehicle/frame",
+        "seat/interface",
+        "body",
+        "physiology",
+        "timed subjective state"
+      ]
+    },
+    "contract": "biomechanics_publication_evidence.v1",
+    "ib01": {
+      "classification": "Functional distance collapses while vertical RMS and jerk rise on every eligible paired date. Shock-spike rate supports the same broad direction but retains ST-01 temporal magnitude qualification.",
+      "fixed_reference_event_density": {
+        "N": 25,
+        "bootstrap_95CI": [
+          17.823870829839358,
+          19.430917065622385
+        ],
+        "direction_count": 25,
+        "evidence_tier": "RETROSPECTIVE MORPHOLOGY",
+        "mall_median": 0.4217432052483599,
+        "unit": "events/min",
+        "walking_median": 19.304347826086957,
+        "walking_minus_mall": 18.836367079319242
+      },
+      "longitudinal": {
+        "activity_N": 598,
+        "date_N": 589,
+        "evidence_tier": "LONGITUDINAL SUPPORT",
+        "median_distance_miles": 11.470885031416525,
+        "years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ]
+      },
+      "magnitude_jerk": {
+        "N": 44,
+        "bootstrap_95CI": [
+          0.613160916144127,
+          0.659602090458441
+        ],
+        "direction_count": 44,
+        "evidence_tier": "PRIMARY_BIOMECHANICAL",
+        "mall_median": 0.643500436286534,
+        "robustness": "ROBUST_ACROSS_METHODS",
+        "unit": "g/s",
+        "walking_median": 1.2847360442694744,
+        "walking_minus_mall": 0.6370384055624052
+      },
+      "pareto": {
+        "core": {
+          "N": 43,
+          "direction_count": 43
+        },
+        "evidence_tier": "ROBUST SUPPORTING",
+        "with_shock": {
+          "N": 43,
+          "direction_count": 38
+        }
+      },
+      "pt": {
+        "classification": "PT_DISTINCT_FUNCTIONAL_SKATING_STATE",
+        "distance": {
+          "bootstrap_95CI": [
+            1.6525366857551897,
+            1.6867742384474667
+          ],
+          "bootstrap_unit": "triplet/date",
+          "eligible_N": 44,
+          "known_metadata_exclusion": null,
+          "left_higher_count": 0,
+          "left_median": 0.14182797462817148,
+          "median_paired_difference_right_minus_left": 1.668319514038018,
+          "no_imputation": true,
+          "right_higher_count": 44,
+          "right_higher_fraction": 1.0,
+          "right_median": 1.8118873280044538,
+          "status": "PASS",
+          "tie_count": 0
+        },
+        "evidence_tier": "PRIMARY CONFIRMATORY",
+        "shock_rate_temporal_status": "FULL_CORPUS_SUPPORTED_TEMPORALLY_UNSTABLE"
+      },
+      "shock_taxonomy": {
+        "adaptive_mad_counter_result_preserved": true,
+        "distinct_metrics": [
+          "shock-spike rate",
+          "MAD-based impact rate",
+          "fixed-reference event density",
+          "cumulative dynamic shock",
+          "cluster rate"
+        ],
+        "explanation": "The two counts use different within-activity thresholds. A broadly elevated Walking distribution can raise its own median-plus-MAD threshold and yield fewer counted local maxima even while RMS, jerk, dose, and the mean-plus-SD shock count increase."
+      },
+      "tails": {
+        "N": 25,
+        "direction_count": 25,
+        "evidence_tier": "RETROSPECTIVE MORPHOLOGY",
+        "metrics": {
+          "p90_g": {
+            "N": 25,
+            "direction_count": 25,
+            "unit": "g",
+            "walking_minus_mall": 0.1926550153070415
+          },
+          "p95_g": {
+            "N": 25,
+            "direction_count": 25,
+            "unit": "g",
+            "walking_minus_mall": 0.24548381296791477
+          },
+          "p99_9_g": {
+            "N": 25,
+            "direction_count": 25,
+            "unit": "g",
+            "walking_minus_mall": 0.3445074122414462
+          },
+          "p99_g": {
+            "N": 25,
+            "direction_count": 25,
+            "unit": "g",
+            "walking_minus_mall": 0.31231218957176565
+          }
+        }
+      },
+      "vertical_rms": {
+        "N": 44,
+        "bootstrap_95CI": [
+          0.08271296564444763,
+          0.08596070145768875
+        ],
+        "direction_count": 44,
+        "evidence_tier": "PRIMARY_BIOMECHANICAL",
+        "mall_median": 0.05162916839829937,
+        "robustness": "ROBUST_ACROSS_METHODS",
+        "unit": "g",
+        "walking_median": 0.13681479676686842,
+        "walking_minus_mall": 0.08485904027921376
+      }
+    },
+    "measurement_boundaries": {
+      "bct_executed": false,
+      "body_coupling_directly_measured": false,
+      "frequency_structure_available": false,
+      "internal_joint_force_measured": false,
+      "pain_identified": false
+    },
+    "scientific_recomputation": false,
+    "source_artifact_sha256": {
+      "ib01_longitudinal": "9ac5b5543562ac29692e8339c7158b3dc662363fe5baabf515b2c0c30bae1b70",
+      "ib01_morphology": "56cb910a92c679999d904cf32e13ffdf7c26a48cb9066a82cedbd4f0c8ff2e9e",
+      "ib01_pareto": "c818c60dbc60ed80a92be2d98abe2b8d09b1096885447cb6968ac0b88ab59e0f",
+      "ib01_primary": "1f6ddce420b3c9c420f998e370e6d0563c0f464eedc43f6b0c543f0215fab19b",
+      "ib01_pt": "922dcb081a4dd3b5faf5f5753a2a7efbea12d8b5b4013ee6f668c68074549259",
+      "ib01_tails": "815eb446ffa5278d29c8656ba4c95bc4b6ed1c624e9da588b5c9ae9d17cac471",
+      "ib01_taxonomy": "86be148c16c7c146aa9398302e1ebdaf738eaf0291c4991a414e2f9f5d207965",
+      "ib01_temporal": "98ad96b85c1f5e5bfc1a6a6c1d0fb0f24d3aceacbb0225786e4e453c577b7ec6",
+      "vtb01_coverage": "82c41e82a2f6ca70071f6fdcceaf5ca135fdd0b1331bf9798bf8429e186e94af",
+      "vtb01_events": "56d651e4770103d30dcff16592f0ccf453648bc5bde17e56ab1d551df5723c0a",
+      "vtb01_physiology": "011abe543c2f0bc1ea7f552081c52faa90e7774a41de9863a02e05fb555589ae",
+      "vtb01_results": "b0b4663c0691a7ee7269aaa7a50d23839966710c84b39d694cc92f7a7e53cf0b"
+    },
+    "vtb01": {
+      "classification": "TRANSPORT_BIOMECHANICS_DISCORDANCE_SUPPORTED_WITH_MODE_SPECIFIC_LIMITATIONS",
+      "evidence_tier": "DESCRIPTIVE TRANSPORT",
+      "mechanics_physiology_status": "MECHANICAL_AND_PHYSIOLOGICAL_RANKS_DISCORDANT",
+      "mode_coverage": {
+        "SilverRide_BackSeat": {
+          "control_context": "PASSIVE_SEATED; SUBJECT_REPORTED_UNFAVORABLE_CONSTRAINED_INGRESS_EGRESS_CONTEXT",
+          "independent_unit": "Kubios/Polar session/event",
+          "mechanical_date_N": 2,
+          "mechanical_observation_N": 2,
+          "support": "CASE_CONTEXT_ONLY",
+          "temporal_activity_signature": "UNAVAILABLE_CANONICAL_METRIC"
+        },
+        "SilverRide_FrontSeat": {
+          "control_context": "PASSIVE_SEATED; SUBJECT_REPORTED_MORE_FAVORABLE_OPEN_SEAT_CONTEXT",
+          "independent_unit": "Kubios/Polar session/event",
+          "mechanical_date_N": 7,
+          "mechanical_observation_N": 7,
+          "support": "DESCRIPTIVE_ONLY",
+          "temporal_activity_signature": "AVAILABLE_LIMITED"
+        },
+        "motorcycle": {
+          "control_context": "ACTIVE_VEHICLE_CONTEXT; DURATION_DEPENDENT; ACTIVELY_MITIGATED",
+          "independent_unit": "Kubios/Polar session/event",
+          "mechanical_date_N": 4,
+          "mechanical_observation_N": 8,
+          "support": "SPARSE_DESCRIPTIVE_EPISODIC_SUPPORT_WITH_LARGER_LONGITUDINAL_CONTEXT",
+          "temporal_activity_signature": "AVAILABLE_LIMITED"
+        },
+        "paratransit_bus": {
+          "control_context": "PASSIVE_SEATED_TRANSPORT",
+          "independent_unit": "Kubios/Polar session/event",
+          "mechanical_date_N": 15,
+          "mechanical_observation_N": 20,
+          "support": "DESCRIPTIVE_SUPPORT",
+          "temporal_activity_signature": "AVAILABLE_LIMITED"
+        },
+        "paratransit_sedan_or_taxi": {
+          "control_context": "PASSIVE_SEATED_TRANSPORT",
+          "independent_unit": "Kubios/Polar session/event",
+          "mechanical_date_N": 18,
+          "mechanical_observation_N": 25,
+          "support": "DESCRIPTIVE_SUPPORT",
+          "temporal_activity_signature": "AVAILABLE_LIMITED"
+        },
+        "paratransit_van": {
+          "control_context": "PASSIVE_SEATED_TRANSPORT",
+          "independent_unit": "Kubios/Polar session/event",
+          "mechanical_date_N": 6,
+          "mechanical_observation_N": 6,
+          "support": "SPARSE_DESCRIPTIVE_SUPPORT",
+          "temporal_activity_signature": "AVAILABLE_LIMITED"
+        }
+      },
+      "mode_signatures": {
+        "motorcycle": {
+          "activity_N": 6,
+          "canonical_cohort": "motorcycle",
+          "date_N": 3,
+          "medians": {
+            "duration_seconds": 1909.5,
+            "jerk_rms": 4.658596453251226,
+            "mean_hr_bpm": 78.39179846900878,
+            "p99": 0.5359255101098341,
+            "p99_9": 0.8241763267083988,
+            "rms": 0.19740396546642333,
+            "shock_cluster_rate_per_hour": 23.349854105326752
+          }
+        },
+        "paratransit_bus": {
+          "activity_N": 15,
+          "canonical_cohort": "paratransit_bus",
+          "date_N": 11,
+          "medians": {
+            "duration_seconds": 2567.0,
+            "jerk_rms": 1.4987418003305077,
+            "mean_hr_bpm": 83.17248241094106,
+            "p99": 0.362202760833531,
+            "p99_9": 0.6674498852884386,
+            "rms": 0.10431732754037175,
+            "shock_cluster_rate_per_hour": 49.89172802078822
+          }
+        },
+        "paratransit_sedan_or_taxi": {
+          "activity_N": 20,
+          "canonical_cohort": "paratransit_sedan_or_taxi",
+          "date_N": 14,
+          "medians": {
+            "duration_seconds": 2163.5,
+            "jerk_rms": 0.8760225680770244,
+            "mean_hr_bpm": 90.49487181911103,
+            "p99": 0.22829147369037356,
+            "p99_9": 0.46319557141229645,
+            "rms": 0.0645126126636188,
+            "shock_cluster_rate_per_hour": 25.038441114546323
+          }
+        },
+        "paratransit_silverride": {
+          "activity_N": 6,
+          "canonical_cohort": "paratransit_silverride",
+          "date_N": 6,
+          "medians": {
+            "duration_seconds": 2177.0,
+            "jerk_rms": 0.988606301720877,
+            "mean_hr_bpm": 94.48131638158601,
+            "p99": 0.2203863790599423,
+            "p99_9": 0.40167759726574415,
+            "rms": 0.06695995225305489,
+            "shock_cluster_rate_per_hour": 28.441373619347424
+          }
+        },
+        "paratransit_van": {
+          "activity_N": 4,
+          "canonical_cohort": "paratransit_van",
+          "date_N": 4,
+          "medians": {
+            "duration_seconds": 2340.5,
+            "jerk_rms": 1.2569351119487935,
+            "mean_hr_bpm": 85.2209496458595,
+            "p99": 0.21882914135108458,
+            "p99_9": 0.4477926859269835,
+            "rms": 0.06864791080356795,
+            "shock_cluster_rate_per_hour": 32.816448486303074
+          }
+        }
+      },
+      "pain_inferred_from_mechanics": false,
+      "session_median_transients": {
+        "exact_hr_max_cotemporal_N": 0,
+        "session_median_missed_excursion_N": 33,
+        "transport_event_N": 45,
+        "travel_mechanical_excursion_N": 26
+      },
+      "strongest_discordance": "motorcycle high mechanics with lower mean HR than passive activity-signature modes"
+    }
+  },
+  "conclusion_strength": "supports_with_qualification",
+  "content_hash": "13056a9b1c36fbbcae2ec24dbcd359a5d07b9a16f23b925b5e4cfb5d63057cad",
+  "data_through_date": "2026-09-03",
+  "destination": "handicapskater.com",
+  "evidence_scope": "Public-safe aggregate N-of-1 biomechanics evidence and future experiment design; no raw telemetry.",
+  "formula_identities": [],
+  "intended_route": "/biomechanics/",
+  "limitations": [
+    "Sample counts, date coverage, source scope, missingness, and measurement availability accompany each scientific result."
+  ],
+  "plain_language_finding": "Walking-versus-Mall mechanics, PT functional restoration, transportation discordance, and the future direct-transfer design are published as source-linked aggregate fields without scientific recomputation.",
+  "relation_identities": [],
+  "resource_id": "biomechanics-evidence",
+  "resource_version": "fsi_publication_resource.v1",
+  "sample_counts": {
+    "paired_triplet_dates": 44,
+    "pareto_dates": 43,
+    "tail_paired_dates": 25,
+    "transport_events": 45
+  },
+  "short_title": "Biomechanics evidence",
+  "source_contracts": [
+    {
+      "contract": "observatory_mcp_resource.v1",
+      "version": "observatory_bundle.v1"
+    },
+    {
+      "contract": "evidence_observatory_presentation.v1",
+      "version": "evidence_observatory_presentation.v1"
+    },
+    {
+      "contract": "scientific_consumer_contract.v1.0.0",
+      "version": "scientific_consumer_contract.v1.0.0"
+    },
+    {
+      "contract": "observatory_graph.v1",
+      "version": "observatory_graph.v1"
+    }
+  ],
+  "source_labels": [
+    "IB-01",
+    "VTB-01",
+    "BCT-01",
+    "ST-01"
+  ],
+  "summary": "Aggregate IB-01, VTB-01, and BCT-01 evidence for the HandicapSkater.com biomechanics presentation.",
+  "title": "Governed biomechanics evidence",
+  "units": [
+    "g",
+    "g/s",
+    "events/min",
+    "miles",
+    "Hz",
+    "ms"
+  ]
+}

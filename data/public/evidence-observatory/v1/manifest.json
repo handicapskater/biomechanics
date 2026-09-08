@@ -1,9 +1,9 @@
 {
-  "bundle_id": "handicapskater-com-v1-1c1778a8d7a06610",
-  "content_hash": "1c1778a8d7a0661033c17a7aceb5801c36d77f3fdbc303e31836566e64945373",
+  "bundle_id": "handicapskater-com-v1-ea6198dfec94814a",
+  "content_hash": "ea6198dfec94814a758057a263bd68a85bd88aa1cec1f819379a03ba323bdead",
   "data_through_date": "2026-09-03",
   "destination": "handicapskater.com",
-  "generated_at_utc": "2026-09-04T10:18:36.922590Z",
+  "generated_at_utc": "2026-09-08T00:00:00Z",
   "generator_version": "fsi_publication_exporter.v1",
   "graph_count": 32,
   "graphs": [
@@ -214,14 +214,14 @@
     {
       "artifact_filename": "route_weather_context.json",
       "artifact_path": "graphs/route_weather_context.json",
-      "byte_size": 3321029,
-      "content_hash": "90d69775407dcf672fbf9eef76ea99b1e400896d4f2eeb6923e4288ed933adee",
+      "byte_size": 3321017,
+      "content_hash": "58451d3f6334410166ddeca33ea4475608f1e2fb4e3ef7cf3053c8582e89ce54",
       "destination": "handicapskater.com",
       "graph_id": "route_weather_context",
       "media_type": "application/json",
       "page": "/evidence/strava-gps-skate-maps/",
       "path": "graphs/route_weather_context.json",
-      "sha256": "649f41f2c99e2846de332b207c79cdfa1cfab29fa00965d5c109051cfe5f9302"
+      "sha256": "17b5be1f2024e340373f3e3e2b3b4197f3a7e739c5a07bd9248b083714c5ad6c"
     },
     {
       "artifact_filename": "source_metric_coverage_matrix.json",
@@ -395,6 +395,7 @@
   "limitation_count": 1,
   "limitation_resource": "limitations.json",
   "managed_files": [
+    "biomechanics-evidence.json",
     "com_graph_demotions.json",
     "computational-evidence.json",
     "graphs/accepted_triplet_stage_profiles.json",
@@ -471,7 +472,7 @@
   },
   "publication_contract": "fsicss_publication_bundle",
   "publication_contract_version": "fsicss_publication_bundle.v1",
-  "resource_count": 11,
+  "resource_count": 12,
   "resources": [
     {
       "byte_size": 35862,
@@ -536,6 +537,14 @@
       "path": "computational-evidence.json",
       "resource_id": "computational-evidence",
       "sha256": "817264738ad583db5b0c33fa579d1280cedf78d1ad09fdf5b55e3ebf5c929859"
+    },
+    {
+      "byte_size": 14316,
+      "content_hash": "13056a9b1c36fbbcae2ec24dbcd359a5d07b9a16f23b925b5e4cfb5d63057cad",
+      "media_type": "application/json",
+      "path": "biomechanics-evidence.json",
+      "resource_id": "biomechanics-evidence",
+      "sha256": "72fb09078c2878a284a898797c2e0e6b8c98abe5da7c4352d72d6f53179ee7b9"
     },
     {
       "byte_size": 2106,
