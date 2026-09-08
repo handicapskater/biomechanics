@@ -56,3 +56,23 @@ test("home and case retain compact governed evidence entry points", async ({ pag
   await expect(page.locator(".governed-graph-mounted")).toHaveCount(3);
   await expect(page.locator(".governed-graph-error")).toHaveCount(0);
 });
+
+test("home leads from visual context to controlled and long-horizon evidence", async ({ page }) => {
+  await page.goto("/");
+  const positions = await page.locator("main > section").evaluateAll((sections) =>
+    sections.map((section) => section.id)
+  );
+  expect(positions.indexOf("visual-evidence")).toBeLessThan(positions.indexOf("continuity"));
+  expect(positions.indexOf("continuity")).toBeLessThan(positions.indexOf("core-evidence"));
+  expect(positions.indexOf("core-evidence")).toBeLessThan(positions.indexOf("hillsdale"));
+  expect(positions.indexOf("hillsdale")).toBeLessThan(positions.indexOf("why-controlled-rolling"));
+  await expect(page.locator("#continuity")).toContainText(
+    "The visual record shows the functional contrast. The repeated same-day protocol measures it."
+  );
+  await expect(page.locator("#core-evidence")).toContainText(
+    "The controlled protocol establishes the repeated contrast. Long-horizon data show that substantial skating function persists beyond the protocol."
+  );
+  await expect(page.locator("#why-controlled-rolling a[href='/biomechanics/']")).toBeVisible();
+  await expect(page.locator("#hillsdale a[href='/evidence/mobility-comparison/']")).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBeTruthy();
+});

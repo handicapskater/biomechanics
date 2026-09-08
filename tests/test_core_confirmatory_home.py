@@ -138,3 +138,18 @@ def test_core_evidence_has_semantic_and_responsive_fallbacks() -> None:
     assert "@media (max-width: 420px)" in HOME_CSS
     assert ".core-evidence-table-wrap" in HOME_CSS
     assert "overflow-x: auto" in HOME_CSS
+
+
+def test_home_connects_visual_controlled_and_long_horizon_evidence_in_order() -> None:
+    hero = HOME.index('class="hero hero--narrative home-hero"')
+    visual = HOME.index('id="visual-evidence"')
+    continuity = HOME.index('id="continuity"')
+    core = HOME.index('id="core-evidence"')
+    long_horizon = HOME.index('id="hillsdale"')
+    why_controlled = HOME.index('id="why-controlled-rolling"')
+    assert hero < visual < continuity < core < long_horizon < why_controlled
+    assert "The visual record shows the functional contrast. The repeated same-day protocol measures it." in HOME
+    assert (
+        "The controlled protocol establishes the repeated contrast. Long-horizon data show that "
+        "substantial skating function persists beyond the protocol."
+    ) in HOME

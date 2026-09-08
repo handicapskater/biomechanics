@@ -187,6 +187,8 @@
 .evidence-chain li { background: var(--panel); border: 1px solid var(--line); border-radius: 999px; font-weight: 750; padding: 0.5rem 0.8rem; }
 .evidence-chain li:not(:last-child)::after { color: var(--teal); content: "→"; margin-left: 0.7rem; }
 .core-evidence-section { --chrome-section-y: clamp(2.25rem, 4vw, 3.5rem); }
+.evidence-sequence-transition { max-width: 62rem; margin: 1.5rem auto 0; color: var(--muted); font-weight: 750; line-height: 1.5; text-align: center; }
+.core-long-horizon-transition { margin-bottom: 0; }
 .core-evidence-header { max-width: 56rem; }
 .core-evidence-header h2 { max-width: 19ch; text-wrap: balance; }
 .core-evidence-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.9rem; margin-top: 1.5rem; }
