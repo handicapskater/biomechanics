@@ -12,6 +12,41 @@ test("evidence brief renders the selected governed bundle with accessible tables
   await expect(page.locator(".governed-graph-error")).toHaveCount(0);
 });
 
+test("evidence brief renders governed mobility biomechanics without recomputation", async ({ page }) => {
+  await page.goto("/evidence/");
+  const section = page.locator("#mobility-biomechanics-evidence");
+  await expect(section).toContainText("Mobility biomechanics evidence");
+  await expect(section).toContainText("+0.08486 g");
+  await expect(section).toContainText("+0.63704 g/s");
+  await expect(section).toContainText("44/44 expected direction");
+  await expect(section).toContainText("25/25 paired dates");
+  await expect(section).toContainText("43/43");
+  await expect(section).toContainText("PT_DISTINCT_FUNCTIONAL_SKATING_STATE");
+  await expect(section).toContainText("598 activities");
+  await expect(section).toContainText("33/45 aligned transport events");
+  await expect(section).toContainText("CASE_CONTEXT_ONLY");
+  await expect(section).toContainText("DESIGN ONLY — NOT YET EXECUTED");
+  await expect(section).toContainText("scientific_recomputation=false");
+  await expect(section.locator(".biomechanics-evidence-error")).toHaveCount(0);
+});
+
+test("biomechanics remains the restored movement-context experience", async ({ page }) => {
+  await page.goto("/biomechanics/");
+  await expect(page.getByRole("heading", { name: "Walking and Controlled Inline Skating" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "A Functional Movement Hypothesis" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "A Step Travels Through a Linked Mechanical Chain" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Mechanical Exposure Is Not the Same as Functional Burden" })).toBeVisible();
+  await expect(page.locator("script[src='/common/evidence-biomechanics.js']")).toHaveCount(0);
+});
+
+test("evidence biomechanics remains responsive without document overflow", async ({ page }) => {
+  await page.goto("/evidence/");
+  const section = page.locator("#mobility-biomechanics-evidence");
+  await expect(section.locator("[data-biomechanics-content]")).toBeVisible();
+  await expect(section.locator(".biomechanics-evidence-card")).toHaveCount(4);
+  await expect(section.locator(".biomechanics-table-wrap")).toHaveCSS("overflow-x", "auto");
+});
+
 test("home and case retain compact governed evidence entry points", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator(".core-evidence-card")).toHaveCount(4);
