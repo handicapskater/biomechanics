@@ -144,12 +144,31 @@ def test_home_connects_visual_controlled_and_long_horizon_evidence_in_order() ->
     hero = HOME.index('class="hero hero--narrative home-hero"')
     visual = HOME.index('id="visual-evidence"')
     continuity = HOME.index('id="continuity"')
+    measurements = HOME.index('id="pain-function"')
     core = HOME.index('id="core-evidence"')
     long_horizon = HOME.index('id="hillsdale"')
     why_controlled = HOME.index('id="why-controlled-rolling"')
-    assert hero < visual < continuity < core < long_horizon < why_controlled
+    assert hero < visual < continuity < measurements < core < long_horizon < why_controlled
     assert "The visual record shows the functional contrast. The repeated same-day protocol measures it." in HOME
     assert (
         "The controlled protocol establishes the repeated contrast. Long-horizon data show that "
         "substantial skating function persists beyond the protocol."
     ) in HOME
+
+
+def test_home_orients_the_case_lab_standard_and_precise_access_request() -> None:
+    for phrase in (
+        "Injury",
+        "Adaptation",
+        "Measurement",
+        "Access",
+        "The Case",
+        "The Lab",
+        "The Standard",
+        "actual function, actual environment, actual risk, and reasonable workable operating conditions",
+    ):
+        assert phrase in HOME
+    assert 'href="/access/"' in HOME
+    assert 'href="/evidence/"' in HOME
+    assert 'href="https://handicapskater.org/"' in HOME
+    assert "must always be allowed everywhere" not in HOME.lower()

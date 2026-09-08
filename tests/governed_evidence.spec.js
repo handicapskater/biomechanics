@@ -63,7 +63,8 @@ test("home leads from visual context to controlled and long-horizon evidence", a
     sections.map((section) => section.id)
   );
   expect(positions.indexOf("visual-evidence")).toBeLessThan(positions.indexOf("continuity"));
-  expect(positions.indexOf("continuity")).toBeLessThan(positions.indexOf("core-evidence"));
+  expect(positions.indexOf("continuity")).toBeLessThan(positions.indexOf("pain-function"));
+  expect(positions.indexOf("pain-function")).toBeLessThan(positions.indexOf("core-evidence"));
   expect(positions.indexOf("core-evidence")).toBeLessThan(positions.indexOf("hillsdale"));
   expect(positions.indexOf("hillsdale")).toBeLessThan(positions.indexOf("why-controlled-rolling"));
   await expect(page.locator("#continuity")).toContainText(
@@ -75,4 +76,31 @@ test("home leads from visual context to controlled and long-horizon evidence", a
   await expect(page.locator("#why-controlled-rolling a[href='/biomechanics/']")).toBeVisible();
   await expect(page.locator("#hillsdale a[href='/evidence/mobility-comparison/']")).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBeTruthy();
+});
+
+test("case orientation and evidence opening preserve progressive disclosure", async ({ page }) => {
+  await page.goto("/");
+  const orientation = page.locator("#pain-function .orientation-grid");
+  await expect(orientation).toContainText("Injury");
+  await expect(orientation).toContainText("Adaptation");
+  await expect(orientation).toContainText("Measurement");
+  await expect(orientation).toContainText("Access");
+  await expect(page.locator(".ecosystem-strip")).toContainText("The Case");
+  await expect(page.locator(".ecosystem-strip")).toContainText("The Lab");
+  await expect(page.locator(".ecosystem-strip")).toContainText("The Standard");
+  await expect(page.locator("#pain-function a[href='/access/']")).toBeVisible();
+
+  await page.goto("/evidence/");
+  const outcomes = page.locator("#evidence-outcomes");
+  await expect(outcomes).toContainText("What does the evidence show?");
+  await expect(outcomes).toContainText("Walking provides far less functional mobility");
+  await expect(outcomes.locator("details")).toContainText("How the evidence is built");
+  await expect(outcomes).toContainText("governed longitudinal N-of-1 data-science project");
+
+  await page.goto("/access/");
+  await expect(page.locator("#access-orientation")).toContainText("what is requested");
+  await expect(page.locator("#access-orientation")).toContainText("not rejected solely by category or appearance");
+
+  await page.goto("/pleadings.htm");
+  await expect(page.locator('[role="note"]')).toContainText("Historical archive");
 });
