@@ -498,6 +498,100 @@
   min-height: 10rem;
 }
 
+.connected-ai-architecture {
+  color: #eaf7f6;
+  border-color: rgba(79, 225, 212, 0.35);
+  background:
+    radial-gradient(circle at 85% 0%, rgba(79, 225, 212, 0.16), transparent 28%),
+    linear-gradient(145deg, #071118, #10182d);
+  box-shadow: 0 1.1rem 2.6rem rgba(5, 18, 25, 0.2);
+}
+
+.architecture-flow-intro {
+  margin: 0 0 1rem;
+  color: #b9d5d3;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.connected-ai-flow {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.connected-ai-flow li {
+  min-height: 12.25rem;
+  padding: 1.05rem 0.95rem 1rem;
+  border-color: rgba(169, 140, 255, 0.45);
+  background: rgba(11, 29, 39, 0.9);
+  box-shadow: none;
+}
+
+.connected-ai-flow li::before {
+  position: static;
+  width: auto;
+  height: auto;
+  margin-bottom: 0.75rem;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #4fe1d4;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  content: "STAGE " counter(evidence-step, decimal-leading-zero);
+}
+
+.connected-ai-flow strong {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.connected-ai-flow span {
+  color: #b9d5d3;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.connected-ai-flow li:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  top: 50%;
+  right: -0.62rem;
+  z-index: 1;
+  display: grid;
+  width: 1.25rem;
+  height: 1.25rem;
+  place-items: center;
+  border-radius: 999px;
+  background: #102031;
+  color: #4fe1d4;
+  font-weight: 900;
+  transform: translateY(-50%);
+}
+
+.connected-ai-flow li:nth-child(5)::after {
+  content: "↓";
+  top: auto;
+  right: 50%;
+  bottom: -1.62rem;
+  transform: translateX(50%);
+}
+
+.connected-ai-architecture figcaption {
+  color: #b9d5d3;
+}
+
+@media (max-width: 1100px) {
+  .connected-ai-flow {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .connected-ai-flow li::after {
+    display: none;
+  }
+}
+
 .identity-boundary {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1376,6 +1470,25 @@
   .review-sequence li,
   .architecture-flow li {
     min-height: 0;
+  }
+
+  .connected-ai-flow {
+    gap: 1.4rem;
+  }
+
+  .connected-ai-flow li {
+    min-height: 0;
+  }
+
+  .connected-ai-flow li:not(:last-child)::after {
+    content: "↓";
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: -1.08rem;
+    left: 50%;
+    display: grid;
+    transform: translateX(-50%);
   }
 }
 

@@ -47,6 +47,20 @@ test("evidence biomechanics remains responsive without document overflow", async
   await expect(section.locator(".biomechanics-table-wrap")).toHaveCSS("overflow-x", "auto");
 });
 
+test("health AI presents the connected governed architecture without overflow", async ({ page }) => {
+  await page.goto("/health-ai/");
+  const architecture = page.locator("#explainable-architecture");
+  await expect(architecture.getByRole("heading", { name: "One Governed Pipeline, from Telemetry to Inspectable Evidence" })).toBeVisible();
+  await expect(architecture.locator(".connected-ai-flow li")).toHaveCount(10);
+  await expect(architecture.locator(".connected-ai-flow")).toContainText("Fractal Stability Index");
+  await expect(architecture.locator(".connected-ai-flow")).toContainText("Cohort Similarity Score");
+  await expect(architecture.locator(".connected-ai-flow")).toContainText("Evidence Registry");
+  await expect(architecture.locator(".connected-ai-flow")).toContainText("RL01–RL10");
+  await expect(architecture).toContainText("not a deployed clinical policy");
+  await expect(architecture.locator("ol")).toHaveAttribute("aria-label", /Connected AI architecture/);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBeTruthy();
+});
+
 test("home and case retain compact governed evidence entry points", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator(".core-evidence-card")).toHaveCount(4);
