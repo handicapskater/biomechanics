@@ -47,6 +47,7 @@
         "walking_median": 19.304347826086957,
         "walking_minus_mall": 18.836367079319242
       },
+      "function_mechanics_classification": "FUNCTION_MECHANICS_CONVERGENCE_SUPPORTED",
       "longitudinal": {
         "activity_N": 598,
         "date_N": 589,
@@ -76,6 +77,7 @@
         "walking_median": 1.2847360442694744,
         "walking_minus_mall": 0.6370384055624052
       },
+      "overall_classification": "BALLISTIC_LOADING_SIGNATURE_SUPPORTED",
       "pareto": {
         "core": {
           "N": 43,
@@ -174,6 +176,410 @@
       "internal_joint_force_measured": false,
       "pain_identified": false
     },
+    "pvc01": {
+      "family_level_success_classification": "NOT_FROZEN_BY_CONTRACT",
+      "findings": [
+        {
+          "classification": "FROZEN_DIRECTION_REPLICATED",
+          "contrast_id": "CONTRAST-MALL_TO_WALK",
+          "display_name": "PVC-01 Mall→Walking distance_miles: 5/5 in the frozen LOWER direction; median target-minus-source -1.8564707110474825 mi. FROZEN_DIRECTION_REPLICATED. No family-level success threshold was frozen. Endpoint-specific direction replication; historical qualifications remain.",
+          "evidence_tier": "PROSPECTIVE_POST_LOCK",
+          "experiment_id": "EXP-PVC-01",
+          "finding_id": "FIND-PVC01-MALL_WALK-DISTANCE",
+          "metric_id": "METRIC-DISTANCE_MILES",
+          "source_hash": "c472349d852798c3bd5c8476f9257d98ffe89dfb609969e2c560c480cd7fb280",
+          "stability_status": "FROZEN_DIRECTION_REPLICATED",
+          "time_scale_id": "TIME-TRIPLET",
+          "values": {
+            "bootstrap_95_ci": [
+              -2.0215068997057184,
+              -1.8075687982184045
+            ],
+            "ci_display": "[-2.0215068997057184, -1.8075687982184045]",
+            "contract_sha256": "90abea108e011a558f5a2bcbfdf07414da01b9306fcca6fa6ff9264e195d0154",
+            "contrast": "Mall→Walking",
+            "date_n": 5,
+            "dates": [
+              "2026-09-06",
+              "2026-09-07",
+              "2026-09-08",
+              "2026-09-09",
+              "2026-09-10"
+            ],
+            "direction_count": 5,
+            "direction_display": "5/5",
+            "direction_total": 5,
+            "effect": -1.8564707110474825,
+            "effect_type": "MEDIAN_PAIRED_DIFFERENCE",
+            "endpoint_id": "triplet_distance_miles_Mall_to_Walk",
+            "exact_sign_inference": {
+              "expected_direction_successes": 5,
+              "non_tied_N": 5,
+              "one_sided_exact_p": 0.03125,
+              "two_sided_exact_p": 0.0625
+            },
+            "expected_direction": "LOWER",
+            "frozen_contract_spec_sha256": "2f383acb3a85322a4e92b0492e3d854c73069daab3e187be333f95e1a9e54c80",
+            "frozen_direction_met": true,
+            "historical_finding_id": "FIND-CORE-MALL_WALK-DISTANCE",
+            "historical_status": "FULL_CORPUS",
+            "inference_method": "EXACT_PAIRED_SIGN_ENUMERATION",
+            "metric": "distance_miles",
+            "n": 5,
+            "p_value_bounded": null,
+            "p_value_display": "0.25",
+            "p_value_type": "EXACT",
+            "paired_randomization": {
+              "add_one_correction": false,
+              "extreme_count": 8,
+              "method": "EXACT_PAIRED_SIGN_ENUMERATION",
+              "p_value": 0.25,
+              "possible_sign_assignments": 32,
+              "randomization_draws": 32
+            },
+            "qualification": "No family-level success threshold was frozen. Endpoint-specific direction replication; historical qualifications remain.",
+            "reuse_classification": "PROSPECTIVE_REPLICATION",
+            "sigma_display": null,
+            "sigma_type": null,
+            "study_design": "PROSPECTIVE_POST_LOCK",
+            "unit": "mi"
+          }
+        },
+        {
+          "classification": "FROZEN_DIRECTION_REPLICATED",
+          "contrast_id": "CONTRAST-MALL_TO_WALK",
+          "display_name": "PVC-01 Mall→Walking jerk_rms_g_per_s: 5/5 in the frozen HIGHER direction; median target-minus-source 0.8545011698728241 g/s. FROZEN_DIRECTION_REPLICATED. No family-level success threshold was frozen. Endpoint-specific direction replication; historical qualifications remain.",
+          "evidence_tier": "PROSPECTIVE_POST_LOCK",
+          "experiment_id": "EXP-PVC-01",
+          "finding_id": "FIND-PVC01-MALL_WALK-MAGNITUDE_JERK",
+          "metric_id": "METRIC-MAGNITUDE_JERK_RMS_G_PER_S",
+          "source_hash": "c472349d852798c3bd5c8476f9257d98ffe89dfb609969e2c560c480cd7fb280",
+          "stability_status": "FROZEN_DIRECTION_REPLICATED",
+          "time_scale_id": "TIME-TRIPLET",
+          "values": {
+            "bootstrap_95_ci": [
+              0.692089996520689,
+              1.0287453752004234
+            ],
+            "ci_display": "[0.692089996520689, 1.0287453752004234]",
+            "contract_sha256": "90abea108e011a558f5a2bcbfdf07414da01b9306fcca6fa6ff9264e195d0154",
+            "contrast": "Mall→Walking",
+            "date_n": 5,
+            "dates": [
+              "2026-09-06",
+              "2026-09-07",
+              "2026-09-08",
+              "2026-09-09",
+              "2026-09-10"
+            ],
+            "direction_count": 5,
+            "direction_display": "5/5",
+            "direction_total": 5,
+            "effect": 0.8545011698728241,
+            "effect_type": "MEDIAN_PAIRED_DIFFERENCE",
+            "endpoint_id": "triplet_jerk_rms_g_per_s_Mall_to_Walk",
+            "exact_sign_inference": {
+              "expected_direction_successes": 5,
+              "non_tied_N": 5,
+              "one_sided_exact_p": 0.03125,
+              "two_sided_exact_p": 0.0625
+            },
+            "expected_direction": "HIGHER",
+            "frozen_contract_spec_sha256": "2f383acb3a85322a4e92b0492e3d854c73069daab3e187be333f95e1a9e54c80",
+            "frozen_direction_met": true,
+            "historical_finding_id": "FIND-CORE-MALL_WALK-MAGNITUDE_JERK",
+            "historical_status": "FULL_CORPUS",
+            "inference_method": "EXACT_PAIRED_SIGN_ENUMERATION",
+            "metric": "jerk_rms_g_per_s",
+            "n": 5,
+            "p_value_bounded": null,
+            "p_value_display": "0.25",
+            "p_value_type": "EXACT",
+            "paired_randomization": {
+              "add_one_correction": false,
+              "extreme_count": 8,
+              "method": "EXACT_PAIRED_SIGN_ENUMERATION",
+              "p_value": 0.25,
+              "possible_sign_assignments": 32,
+              "randomization_draws": 32
+            },
+            "qualification": "No family-level success threshold was frozen. Endpoint-specific direction replication; historical qualifications remain.",
+            "reuse_classification": "PROSPECTIVE_REPLICATION",
+            "sigma_display": null,
+            "sigma_type": null,
+            "study_design": "PROSPECTIVE_POST_LOCK",
+            "unit": "g/s"
+          }
+        },
+        {
+          "classification": "FROZEN_DIRECTION_REPLICATED",
+          "contrast_id": "CONTRAST-MALL_TO_WALK",
+          "display_name": "PVC-01 Mall→Walking shock_spike_rate_per_min: 5/5 in the frozen HIGHER direction; median target-minus-source 2.8665229366308083 /min. FROZEN_DIRECTION_REPLICATED. No family-level success threshold was frozen. Endpoint-specific direction replication; historical qualifications remain.",
+          "evidence_tier": "PROSPECTIVE_POST_LOCK",
+          "experiment_id": "EXP-PVC-01",
+          "finding_id": "FIND-PVC01-MALL_WALK-SHOCK_SPIKE",
+          "metric_id": "METRIC-SHOCK_SPIKE_RATE_PER_MIN",
+          "source_hash": "c472349d852798c3bd5c8476f9257d98ffe89dfb609969e2c560c480cd7fb280",
+          "stability_status": "FROZEN_DIRECTION_REPLICATED",
+          "time_scale_id": "TIME-TRIPLET",
+          "values": {
+            "bootstrap_95_ci": [
+              1.0660763351451266,
+              7.914353010724891
+            ],
+            "ci_display": "[1.0660763351451266, 7.914353010724891]",
+            "contract_sha256": "90abea108e011a558f5a2bcbfdf07414da01b9306fcca6fa6ff9264e195d0154",
+            "contrast": "Mall→Walking",
+            "date_n": 5,
+            "dates": [
+              "2026-09-06",
+              "2026-09-07",
+              "2026-09-08",
+              "2026-09-09",
+              "2026-09-10"
+            ],
+            "direction_count": 5,
+            "direction_display": "5/5",
+            "direction_total": 5,
+            "effect": 2.8665229366308083,
+            "effect_type": "MEDIAN_PAIRED_DIFFERENCE",
+            "endpoint_id": "triplet_shock_spike_rate_per_min_Mall_to_Walk",
+            "exact_sign_inference": {
+              "expected_direction_successes": 5,
+              "non_tied_N": 5,
+              "one_sided_exact_p": 0.03125,
+              "two_sided_exact_p": 0.0625
+            },
+            "expected_direction": "HIGHER",
+            "frozen_contract_spec_sha256": "2f383acb3a85322a4e92b0492e3d854c73069daab3e187be333f95e1a9e54c80",
+            "frozen_direction_met": true,
+            "historical_finding_id": "FIND-CORE-MALL_WALK-SHOCK_SPIKE",
+            "historical_status": "FULL_CORPUS_SUPPORTED_TEMPORAL_MAGNITUDE_QUALIFICATION",
+            "inference_method": "EXACT_PAIRED_SIGN_ENUMERATION",
+            "metric": "shock_spike_rate_per_min",
+            "n": 5,
+            "p_value_bounded": null,
+            "p_value_display": "0.25",
+            "p_value_type": "EXACT",
+            "paired_randomization": {
+              "add_one_correction": false,
+              "extreme_count": 8,
+              "method": "EXACT_PAIRED_SIGN_ENUMERATION",
+              "p_value": 0.25,
+              "possible_sign_assignments": 32,
+              "randomization_draws": 32
+            },
+            "qualification": "No family-level success threshold was frozen. Endpoint-specific direction replication; historical qualifications remain.",
+            "reuse_classification": "PROSPECTIVE_REPLICATION",
+            "sigma_display": null,
+            "sigma_type": null,
+            "study_design": "PROSPECTIVE_POST_LOCK",
+            "unit": "/min"
+          }
+        },
+        {
+          "classification": "FROZEN_DIRECTION_REPLICATED",
+          "contrast_id": "CONTRAST-MALL_TO_WALK",
+          "display_name": "PVC-01 Mall→Walking vertical_dynamic_g_rms: 5/5 in the frozen HIGHER direction; median target-minus-source 0.09143281083804644 g. FROZEN_DIRECTION_REPLICATED. No family-level success threshold was frozen. Endpoint-specific direction replication; historical qualifications remain.",
+          "evidence_tier": "PROSPECTIVE_POST_LOCK",
+          "experiment_id": "EXP-PVC-01",
+          "finding_id": "FIND-PVC01-MALL_WALK-VERTICAL_RMS",
+          "metric_id": "METRIC-VERTICAL_DYNAMIC_G_RMS",
+          "source_hash": "c472349d852798c3bd5c8476f9257d98ffe89dfb609969e2c560c480cd7fb280",
+          "stability_status": "FROZEN_DIRECTION_REPLICATED",
+          "time_scale_id": "TIME-TRIPLET",
+          "values": {
+            "bootstrap_95_ci": [
+              0.07693223681225445,
+              0.09638591517975428
+            ],
+            "ci_display": "[0.07693223681225445, 0.09638591517975428]",
+            "contract_sha256": "90abea108e011a558f5a2bcbfdf07414da01b9306fcca6fa6ff9264e195d0154",
+            "contrast": "Mall→Walking",
+            "date_n": 5,
+            "dates": [
+              "2026-09-06",
+              "2026-09-07",
+              "2026-09-08",
+              "2026-09-09",
+              "2026-09-10"
+            ],
+            "direction_count": 5,
+            "direction_display": "5/5",
+            "direction_total": 5,
+            "effect": 0.09143281083804644,
+            "effect_type": "MEDIAN_PAIRED_DIFFERENCE",
+            "endpoint_id": "triplet_vertical_dynamic_g_rms_Mall_to_Walk",
+            "exact_sign_inference": {
+              "expected_direction_successes": 5,
+              "non_tied_N": 5,
+              "one_sided_exact_p": 0.03125,
+              "two_sided_exact_p": 0.0625
+            },
+            "expected_direction": "HIGHER",
+            "frozen_contract_spec_sha256": "2f383acb3a85322a4e92b0492e3d854c73069daab3e187be333f95e1a9e54c80",
+            "frozen_direction_met": true,
+            "historical_finding_id": "FIND-CORE-MALL_WALK-VERTICAL_RMS",
+            "historical_status": "FULL_CORPUS",
+            "inference_method": "EXACT_PAIRED_SIGN_ENUMERATION",
+            "metric": "vertical_dynamic_g_rms",
+            "n": 5,
+            "p_value_bounded": null,
+            "p_value_display": "0.25",
+            "p_value_type": "EXACT",
+            "paired_randomization": {
+              "add_one_correction": false,
+              "extreme_count": 8,
+              "method": "EXACT_PAIRED_SIGN_ENUMERATION",
+              "p_value": 0.25,
+              "possible_sign_assignments": 32,
+              "randomization_draws": 32
+            },
+            "qualification": "No family-level success threshold was frozen. Endpoint-specific direction replication; historical qualifications remain.",
+            "reuse_classification": "PROSPECTIVE_REPLICATION",
+            "sigma_display": null,
+            "sigma_type": null,
+            "study_design": "PROSPECTIVE_POST_LOCK",
+            "unit": "g"
+          }
+        },
+        {
+          "classification": "FROZEN_DIRECTION_REPLICATED",
+          "contrast_id": "CONTRAST-WALK_TO_PT",
+          "display_name": "PVC-01 Walking→PT distance_miles: 5/5 in the frozen HIGHER direction; median target-minus-source 1.6476899904557383 mi. FROZEN_DIRECTION_REPLICATED. No family-level success threshold was frozen. Endpoint-specific direction replication; historical qualifications remain.",
+          "evidence_tier": "PROSPECTIVE_POST_LOCK",
+          "experiment_id": "EXP-PVC-01",
+          "finding_id": "FIND-PVC01-WALK_PT-DISTANCE",
+          "metric_id": "METRIC-DISTANCE_MILES",
+          "source_hash": "c472349d852798c3bd5c8476f9257d98ffe89dfb609969e2c560c480cd7fb280",
+          "stability_status": "FROZEN_DIRECTION_REPLICATED",
+          "time_scale_id": "TIME-TRIPLET",
+          "values": {
+            "bootstrap_95_ci": [
+              1.6125203809751054,
+              1.6742846774834963
+            ],
+            "ci_display": "[1.6125203809751054, 1.6742846774834963]",
+            "contract_sha256": "90abea108e011a558f5a2bcbfdf07414da01b9306fcca6fa6ff9264e195d0154",
+            "contrast": "Walking→PT",
+            "date_n": 5,
+            "dates": [
+              "2026-09-06",
+              "2026-09-07",
+              "2026-09-08",
+              "2026-09-09",
+              "2026-09-10"
+            ],
+            "direction_count": 5,
+            "direction_display": "5/5",
+            "direction_total": 5,
+            "effect": 1.6476899904557383,
+            "effect_type": "MEDIAN_PAIRED_DIFFERENCE",
+            "endpoint_id": "triplet_distance_miles_Walk_to_PT",
+            "exact_sign_inference": {
+              "expected_direction_successes": 5,
+              "non_tied_N": 5,
+              "one_sided_exact_p": 0.03125,
+              "two_sided_exact_p": 0.0625
+            },
+            "expected_direction": "HIGHER",
+            "frozen_contract_spec_sha256": "2f383acb3a85322a4e92b0492e3d854c73069daab3e187be333f95e1a9e54c80",
+            "frozen_direction_met": true,
+            "historical_finding_id": "FIND-CORE-WALK_PT-DISTANCE",
+            "historical_status": "FULL_CORPUS",
+            "inference_method": "EXACT_PAIRED_SIGN_ENUMERATION",
+            "metric": "distance_miles",
+            "n": 5,
+            "p_value_bounded": null,
+            "p_value_display": "0.25",
+            "p_value_type": "EXACT",
+            "paired_randomization": {
+              "add_one_correction": false,
+              "extreme_count": 8,
+              "method": "EXACT_PAIRED_SIGN_ENUMERATION",
+              "p_value": 0.25,
+              "possible_sign_assignments": 32,
+              "randomization_draws": 32
+            },
+            "qualification": "No family-level success threshold was frozen. Endpoint-specific direction replication; historical qualifications remain.",
+            "reuse_classification": "PROSPECTIVE_REPLICATION",
+            "sigma_display": null,
+            "sigma_type": null,
+            "study_design": "PROSPECTIVE_POST_LOCK",
+            "unit": "mi"
+          }
+        },
+        {
+          "classification": "FROZEN_DIRECTION_NOT_REPLICATED",
+          "contrast_id": "CONTRAST-WALK_TO_PT",
+          "display_name": "PVC-01 Walking→PT shock_spike_rate_per_min: 1/5 in the frozen LOWER direction; median target-minus-source 1.4592453616843812 /min. FROZEN_DIRECTION_NOT_REPLICATED. No family-level success threshold was frozen. Walking→PT chest shock did not reproduce the lower-PT direction; temporal qualification strengthened.",
+          "evidence_tier": "PROSPECTIVE_POST_LOCK",
+          "experiment_id": "EXP-PVC-01",
+          "finding_id": "FIND-PVC01-WALK_PT-SHOCK_SPIKE",
+          "metric_id": "METRIC-SHOCK_SPIKE_RATE_PER_MIN",
+          "source_hash": "c472349d852798c3bd5c8476f9257d98ffe89dfb609969e2c560c480cd7fb280",
+          "stability_status": "FROZEN_DIRECTION_NOT_REPLICATED",
+          "time_scale_id": "TIME-TRIPLET",
+          "values": {
+            "bootstrap_95_ci": [
+              -3.714564587232097,
+              1.959355127461201
+            ],
+            "ci_display": "[-3.714564587232097, 1.959355127461201]",
+            "contract_sha256": "90abea108e011a558f5a2bcbfdf07414da01b9306fcca6fa6ff9264e195d0154",
+            "contrast": "Walking→PT",
+            "date_n": 5,
+            "dates": [
+              "2026-09-06",
+              "2026-09-07",
+              "2026-09-08",
+              "2026-09-09",
+              "2026-09-10"
+            ],
+            "direction_count": 1,
+            "direction_display": "1/5",
+            "direction_total": 5,
+            "effect": 1.4592453616843812,
+            "effect_type": "MEDIAN_PAIRED_DIFFERENCE",
+            "endpoint_id": "triplet_shock_spike_rate_per_min_Walk_to_PT",
+            "exact_sign_inference": {
+              "expected_direction_successes": 1,
+              "non_tied_N": 5,
+              "one_sided_exact_p": 0.96875,
+              "two_sided_exact_p": 0.375
+            },
+            "expected_direction": "LOWER",
+            "frozen_contract_spec_sha256": "2f383acb3a85322a4e92b0492e3d854c73069daab3e187be333f95e1a9e54c80",
+            "frozen_direction_met": false,
+            "historical_finding_id": "FIND-CORE-WALK_PT-SHOCK_SPIKE",
+            "historical_status": "FULL_CORPUS_SUPPORTED_TEMPORALLY_UNSTABLE",
+            "inference_method": "EXACT_PAIRED_SIGN_ENUMERATION",
+            "metric": "shock_spike_rate_per_min",
+            "n": 5,
+            "p_value_bounded": null,
+            "p_value_display": "0.625",
+            "p_value_type": "EXACT",
+            "paired_randomization": {
+              "add_one_correction": false,
+              "extreme_count": 20,
+              "method": "EXACT_PAIRED_SIGN_ENUMERATION",
+              "p_value": 0.625,
+              "possible_sign_assignments": 32,
+              "randomization_draws": 32
+            },
+            "qualification": "No family-level success threshold was frozen. Walking→PT chest shock did not reproduce the lower-PT direction; temporal qualification strengthened.",
+            "reuse_classification": "PROSPECTIVE_NONREPLICATION",
+            "sigma_display": null,
+            "sigma_type": null,
+            "study_design": "PROSPECTIVE_POST_LOCK",
+            "unit": "/min"
+          }
+        }
+      ],
+      "measurement_boundary": "Chest shock-spike rate measures on-body transient events, not pelvic load, SI-joint force, ground-reaction force, joint contact force, or pain. Lower-extremity attenuation/redistribution during PT is an untested hypothesis that this chest sensor cannot localize.",
+      "scientific_recomputation": false,
+      "status": "PVC01_EXECUTED_ENDPOINT_RESULTS_REPORTED"
+    },
     "scientific_recomputation": false,
     "source_artifact_sha256": {
       "ib01_longitudinal": "9ac5b5543562ac29692e8339c7158b3dc662363fe5baabf515b2c0c30bae1b70",
@@ -181,6 +587,7 @@
       "ib01_pareto": "c818c60dbc60ed80a92be2d98abe2b8d09b1096885447cb6968ac0b88ab59e0f",
       "ib01_primary": "1f6ddce420b3c9c420f998e370e6d0563c0f464eedc43f6b0c543f0215fab19b",
       "ib01_pt": "922dcb081a4dd3b5faf5f5753a2a7efbea12d8b5b4013ee6f668c68074549259",
+      "ib01_results": "66b834c636b13cddd9eb0f7347fa927feaea9e145b72e544cfc5a9e7cf97f5b0",
       "ib01_tails": "815eb446ffa5278d29c8656ba4c95bc4b6ed1c624e9da588b5c9ae9d17cac471",
       "ib01_taxonomy": "86be148c16c7c146aa9398302e1ebdaf738eaf0291c4991a414e2f9f5d207965",
       "ib01_temporal": "98ad96b85c1f5e5bfc1a6a6c1d0fb0f24d3aceacbb0225786e4e453c577b7ec6",
@@ -326,7 +733,7 @@
     }
   },
   "conclusion_strength": "supports_with_qualification",
-  "content_hash": "13056a9b1c36fbbcae2ec24dbcd359a5d07b9a16f23b925b5e4cfb5d63057cad",
+  "content_hash": "f9cffb54571b123c215b858c3cec892aeec374f70a8485cdbaa7687463870f0f",
   "data_through_date": "2026-09-03",
   "destination": "handicapskater.com",
   "evidence_scope": "Public-safe aggregate N-of-1 biomechanics evidence and future experiment design; no raw telemetry.",

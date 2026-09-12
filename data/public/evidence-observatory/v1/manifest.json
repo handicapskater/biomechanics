@@ -1,9 +1,9 @@
 {
-  "bundle_id": "handicapskater-com-v1-ea6198dfec94814a",
-  "content_hash": "ea6198dfec94814a758057a263bd68a85bd88aa1cec1f819379a03ba323bdead",
+  "bundle_id": "handicapskater-com-v1-92f11b9bc98d3f64",
+  "content_hash": "92f11b9bc98d3f64c6a33d581aa41f4be98b80327d337f71a80dd62025a0027b",
   "data_through_date": "2026-09-03",
   "destination": "handicapskater.com",
-  "generated_at_utc": "2026-09-08T00:00:00Z",
+  "generated_at_utc": "2026-09-04T10:18:36.922590Z",
   "generator_version": "fsi_publication_exporter.v1",
   "graph_count": 32,
   "graphs": [
@@ -539,12 +539,12 @@
       "sha256": "817264738ad583db5b0c33fa579d1280cedf78d1ad09fdf5b55e3ebf5c929859"
     },
     {
-      "byte_size": 14316,
-      "content_hash": "13056a9b1c36fbbcae2ec24dbcd359a5d07b9a16f23b925b5e4cfb5d63057cad",
+      "byte_size": 33968,
+      "content_hash": "f9cffb54571b123c215b858c3cec892aeec374f70a8485cdbaa7687463870f0f",
       "media_type": "application/json",
       "path": "biomechanics-evidence.json",
       "resource_id": "biomechanics-evidence",
-      "sha256": "72fb09078c2878a284a898797c2e0e6b8c98abe5da7c4352d72d6f53179ee7b9"
+      "sha256": "45a7813408d80c6605c4bbd185e3defa5372cd6b2d33fd67e260c18a2460cbf2"
     },
     {
       "byte_size": 2106,

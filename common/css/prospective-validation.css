@@ -1,0 +1,8 @@
+#prospective-validation { min-width: 0; overflow-wrap: anywhere; }
+#prospective-validation [data-pvc01-content] { min-width: 0; max-width: 100%; }
+#prospective-validation .biomechanics-table-wrap { max-width: 100%; overflow-x: auto; }
+#prospective-validation table { min-width: 720px; width: 100%; }
+#prospective-validation th, #prospective-validation td { padding: .75rem; text-align: left; vertical-align: top; }
+#prospective-validation summary { min-height: 44px; padding: .75rem; cursor: pointer; }
+#prospective-validation :focus-visible { outline: 3px solid #186754; outline-offset: 3px; }
+#prospective-validation code { white-space: normal; overflow-wrap: anywhere; }
