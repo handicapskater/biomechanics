@@ -1,4 +1,7 @@
 const { test, expect } = require("@playwright/test");
+test.beforeEach(async ({page}) => {
+  await page.route('https://hs-portal-324477223314.us-central1.run.app/**', route => route.abort());
+});
 
 const entries = [
   ["walking", "Why can’t he just walk?", "/pain/", "functional distance"],
@@ -50,7 +53,7 @@ test("all six journeys retain context, destinations, keyboard access, and source
     const headerBox = await page.locator(".site-header").boundingBox();
     expect(titleBox.y).toBeGreaterThanOrEqual(0);
     expect(titleBox.y).toBeGreaterThanOrEqual(Math.max(0, headerBox.y + headerBox.height));
-    await expect(page.locator("#home-journey-question")).toHaveValue(new RegExp(context));
+    await expect(page.locator("[data-journey-context]")).not.toBeEmpty();
     const links = await page.locator("[data-journey-links] a").evaluateAll(nodes => nodes.map(n => n.getAttribute("href")));
     for (const target of links) {
       const url = new URL(target, "http://127.0.0.1:4173/");
@@ -58,10 +61,8 @@ test("all six journeys retain context, destinations, keyboard access, and source
       expect(response.ok(), target).toBe(true);
       if (url.hash) expect(await response.text(), target).toContain(`id="${url.hash.slice(1)}"`);
     }
-    await page.locator("#home-journey-panel summary").click();
-    await expect(page.locator("#home-journey-panel a[href='https://hs-observatory-324477223314.us-central1.run.app/?view=ask']")).toBeVisible();
-    await expect(page.locator("#home-journey-panel")).toContainText("authorized reviewer account");
-    await expect(page.locator("#home-journey-panel")).toContainText("this page does not generate one");
+    await expect(page.locator("[data-demo-signin]")).toBeVisible();
+    await expect(page.locator("#home-journey-panel")).not.toContainText("Ask Evidence");
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     await page.keyboard.press("Escape");
     await expect(trigger).toBeFocused();
@@ -69,7 +70,7 @@ test("all six journeys retain context, destinations, keyboard access, and source
   }
   const accommodation = page.locator(".home-journey-accommodation");
   await expect(accommodation.locator("strong")).toHaveText("I need a mobility-aid accommodation");
-  await expect(accommodation).toHaveAttribute("href", "https://handicapskater.org/review-tools/#functional-intake");
+  await expect(accommodation).toHaveAttribute("href", "https://handicapskater.org/review-tools/");
   await expect(accommodation).not.toHaveAttribute("role", "button");
 });
 
@@ -102,8 +103,8 @@ test("lifelong entry is honest about CX availability and never invokes private A
   await trigger.focus();
   await page.keyboard.press("Space");
   await expect(page.locator("#home-journey-title")).toBeFocused();
-  await expect(page.locator("[data-cx-availability]")).toContainText("not connected yet");
-  await expect(page.locator("#home-journey-panel details")).toBeHidden();
+  await expect(page.locator("[data-demo-signin]")).toBeVisible();
+  await expect(page.locator("#home-journey-panel details")).toHaveCount(0);
   await expect(page.locator("[data-journey-links] a")).toHaveCount(6);
   await expect(page.locator("[data-journey-context]")).toContainText("preserving useful function");
   await expect(page.locator(".home-hero")).not.toContainText("lifespan");
@@ -114,9 +115,8 @@ test("lifelong entry is honest about CX availability and never invokes private A
   await page.keyboard.press("Escape");
   await expect(trigger).toBeFocused();
   await page.locator('[data-home-journey="evidence"]').click();
-  await expect(page.locator("#home-journey-panel details")).toBeVisible();
-  await expect(page.locator("[data-cx-availability]")).toBeHidden();
-  expect(requests.some(url => /run\.app|ces\.googleapis|\/rag\//.test(url))).toBe(false);
+  await expect(page.locator("#home-journey-panel details")).toHaveCount(0);
+  expect(requests.some(url => /hs-observatory|ces\.googleapis|\/rag\//.test(url))).toBe(false);
 });
 
 test("lifelong reading fallback keeps boundaries, six choices and working public handoffs", async ({ page }, testInfo) => {

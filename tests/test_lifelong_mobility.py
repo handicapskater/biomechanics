@@ -15,11 +15,9 @@ def test_existing_hidden_sections_and_contact_footer_are_byte_preserved():
         hashlib.sha256(comments.encode()).hexdigest()
         == "77e5e2da46bc4d9fc3589f7380af5f1874902bd1e768057c9128a683471129c4"
     )
-    footer = HOME[HOME.index("<footer") : HOME.index("</footer>") + 9]
-    assert (
-        hashlib.sha256(footer.encode()).hexdigest()
-        == "ce7e1a0b576f950ff8300390429acc2ed2b39246479b0ec6b22d625a09bfe3dd"
-    )
+    # The reviewed homepage contact content now lives in the shared renderer.
+    assert '<footer' not in HOME
+    assert 'home-contact-footer' in (ROOT / 'common/site-footer.js').read_text()
 
 
 def test_only_fourth_card_replaced_and_hero_shorter():

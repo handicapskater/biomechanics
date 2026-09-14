@@ -43,9 +43,11 @@
   const panel = document.getElementById("home-journey-panel");
   if (!panel) return;
   const heading = document.getElementById("home-journey-title");
-  const question = document.getElementById("home-journey-question");
   const feedback = panel.querySelector("[role=status]");
   const triggers = [...document.querySelectorAll("[data-home-journey]")];
+  const portal = "https://hs-portal-324477223314.us-central1.run.app";
+  const entries = {walking:"PUBLIC_WALKING", rolling:"PUBLIC_SKATING", evidence:"PUBLIC_EVIDENCE", lifelong:"PUBLIC_LIFELONG_MOBILITY", recognition:"PUBLIC_LEGAL"};
+  let frame = null, ready = false, initialEntry = null;
   let activeTrigger = null;
   function close() {
     panel.hidden = true;
@@ -68,39 +70,46 @@
       triggers.forEach(item => item.setAttribute("aria-expanded", String(item === link)));
       heading.textContent = journey.title;
       panel.querySelector("[data-journey-context]").textContent = journey.context;
-      let availability = panel.querySelector("[data-cx-availability]");
-      if (!availability) {
-        availability = document.createElement("p");
-        availability.dataset.cxAvailability = "";
-        panel.querySelector("[data-journey-context]").after(availability);
-      }
-      availability.textContent = journey.publicReadingOnly ? "Public reading guide · the live GCP CX journey is not connected yet." : "";
-      availability.hidden = !journey.publicReadingOnly;
       panel.querySelector("[data-journey-links]").replaceChildren(...journey.links.map(([label, href]) => {
         const anchor = document.createElement("a");
         anchor.href = href;
         anchor.textContent = label;
         return anchor;
       }));
-      question.value = journey.question;
       feedback.textContent = "";
-      panel.querySelector("details").open = false;
-      panel.querySelector("details").hidden = Boolean(journey.publicReadingOnly);
       panel.hidden = false;
+      const key = link.dataset.homeJourney;
+      const returnTo = window.location.origin + "/?journey=" + key + "#audience-routing";
+      panel.querySelector("[data-demo-signin]").href = portal + "/signin?return_to=" + encodeURIComponent(returnTo);
+      if (!frame) {
+        initialEntry = key;
+        frame = document.createElement("iframe"); frame.title = "Guided HandicapSkater experience";
+        const requestedRoute = new URL(window.location.href).searchParams.get("route");
+        frame.src = portal + "/embed/cx?parent_origin=" + encodeURIComponent(window.location.origin) + "&entry=" + entries[key] + (requestedRoute && /^[A-Z_]{1,50}$/.test(requestedRoute) ? "&route=" + requestedRoute : "");
+        frame.referrerPolicy = "no-referrer"; frame.allow = "storage-access";
+        frame.style.cssText = "width:100%;border:0;min-height:460px;display:none";
+        panel.querySelector("[data-guided-frame]").append(frame);
+      } else if (ready) frame.contentWindow.postMessage({type:"hs-journey", entry:entries[key]}, portal);
+      panel.querySelector("[data-journey-context]").hidden = ready;
+      panel.querySelector("[data-journey-links]").hidden = ready;
       heading.focus({ preventScroll: true });
       heading.scrollIntoView({ block: "start", behavior: "instant" });
     });
   });
   panel.querySelector(".home-journey-close").addEventListener("click", close);
   panel.addEventListener("keydown", event => { if (event.key === "Escape") close(); });
-  panel.querySelector("[data-copy-journey]").addEventListener("click", async () => {
-    try {
-      await navigator.clipboard.writeText(question.value);
-      feedback.textContent = "Question copied. Open Ask Evidence and paste it into the question box.";
-    } catch {
-      question.focus();
-      question.select();
-      feedback.textContent = "Select and copy the question above, then paste it into Ask Evidence.";
+  window.addEventListener("message", (event) => {
+    if (!frame || event.origin !== portal || event.source !== frame.contentWindow) return;
+    if (event.data?.type === "hs-close") close();
+    if (event.data?.type === "hs-size" && Number.isFinite(event.data.height)) frame.style.height = Math.max(250, Math.min(4000, event.data.height + 24)) + "px";
+    if (event.data?.type === "hs-ready") {
+      ready = true; frame.style.display = "block";
+      if (activeTrigger && activeTrigger.dataset.homeJourney !== initialEntry)
+        frame.contentWindow.postMessage({type:"hs-journey", entry:entries[activeTrigger.dataset.homeJourney]}, portal);
+      panel.querySelector("[data-journey-context]").hidden = true;
+      panel.querySelector("[data-journey-links]").hidden = true;
     }
   });
+  const requested = new URL(window.location.href).searchParams.get("journey");
+  if (entries[requested]) triggers.find(link => link.dataset.homeJourney === requested)?.click();
 })();
