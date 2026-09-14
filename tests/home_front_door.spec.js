@@ -146,22 +146,13 @@ test("lifelong reading fallback keeps boundaries, six choices and working public
   await page.screenshot({ path: testInfo.outputPath("lifelong-reading.png"), fullPage: true });
 });
 
-test("question copying preserves context and has an accessible denial fallback", async ({ page }) => {
+test("guided sign-in preserves topic without exposing private Ask Evidence", async ({ page }) => {
   await page.goto("/");
   await page.locator('[data-home-journey="evidence"]').click();
-  await page.locator("#home-journey-panel summary").click();
-  await page.evaluate(() => Object.defineProperty(navigator, "clipboard", {
-    configurable: true, value: { writeText: async text => { window.testCopiedQuestion = text; } }
-  }));
-  await page.locator("[data-copy-journey]").click();
-  expect(await page.evaluate(() => window.testCopiedQuestion)).toBe(await page.locator("#home-journey-question").inputValue());
-  await expect(page.locator(".home-journey-feedback")).toContainText("Question copied");
-  await page.evaluate(() => Object.defineProperty(navigator, "clipboard", {
-    configurable: true, value: { writeText: async () => { throw new Error("Denied"); } }
-  }));
-  await page.locator("[data-copy-journey]").click();
-  await expect(page.locator("#home-journey-question")).toBeFocused();
-  await expect(page.locator(".home-journey-feedback")).toContainText("Select and copy");
+  const url = new URL(await page.locator('[data-demo-signin]').getAttribute('href'));
+  expect(url.origin).toBe('https://hs-portal-324477223314.us-central1.run.app');
+  expect(url.searchParams.get('return_to')).toContain('journey=evidence');
+  await expect(page.locator('#home-journey-panel')).not.toContainText('Ask Evidence');
 });
 
 test("no-JavaScript routes and reduced motion remain usable", async ({ browser, browserName, page }) => {
@@ -176,6 +167,6 @@ test("no-JavaScript routes and reduced motion remain usable", async ({ browser, 
   await plain.goto("http://127.0.0.1:4173/");
   await expect(plain.locator(".home-journey-grid a")).toHaveCount(6);
   await expect(plain.locator(".home-journey-grid a").first()).not.toHaveAttribute("role", "button");
-  await expect(plain.locator(".home-footer-description")).toBeVisible();
+  await expect(plain.locator("#site-footer")).toHaveCount(1);
   await context.close();
 });
