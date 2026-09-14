@@ -11,7 +11,7 @@ CASE = (ROOT / "case/index.html").read_text()
 
 def test_home_foregrounds_human_context_before_core_evidence():
     assert "HANDICAPSKATER" in HOME
-    assert "Skates are my mobility aid." in HOME
+    assert "Walking disables me. Skates give me mobility." in HOME
     assert HOME.index('id="audience-routing"') < HOME.index('id="visual-evidence"') < HOME.index('id="core-evidence"')
     assert HOME.count('class="core-evidence-card"') == 4
     assert "45 accepted Mall → Walk → PT sequences" in HOME

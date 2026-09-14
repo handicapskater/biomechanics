@@ -15,14 +15,18 @@ test("human-first sequence preserves evidence, footer, and responsive layout", a
     if (response.url().startsWith("http://127.0.0.1:4173/") && response.status() >= 400) failures.push(response.url());
   });
   await page.goto("/");
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Skates are my mobility aid.");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Walking disables me. Skates give me mobility.");
   await expect(page.locator("#motorcycle-skates img")).toBeVisible();
+  await expect(page.locator('.home-hook-answer a[href="/pain/"]')).toHaveCSS("color", "rgb(255, 220, 150)");
   expect(await page.locator("#motorcycle-skates img").evaluate(image => image.naturalWidth)).toBeGreaterThan(0);
   const ids = await page.locator("main > section").evaluateAll(nodes => nodes.map(node => node.id));
-  const expected = ["audience-routing", "visual-evidence", "continuity", "pain-function", "core-evidence", "prospective-validation", "hillsdale", "why-controlled-rolling", "recognition", "evidence-observatory", "requested-change"];
-  expect(ids.filter(Boolean)).toEqual(expected);
-  await expect(page.locator(".core-evidence-card")).toHaveCount(4);
-  await expect(page.locator(".home-prospective-details")).not.toHaveAttribute("open");
+  expect(ids.filter(Boolean)).toEqual(["audience-routing"]);
+  await expect(page.locator(".core-evidence-card, .home-prospective-details")).toHaveCount(0);
+  const source = await (await page.request.get("/")).text();
+  for (const id of ["visual-evidence", "continuity", "pain-function", "core-evidence", "prospective-validation", "hillsdale", "why-controlled-rolling", "recognition", "evidence-observatory", "requested-change"]) {
+    expect(source).toContain(`id="${id}"`);
+    await expect(page.locator(`#${id}`)).toHaveCount(0);
+  }
   await expect(page.locator(".home-footer-description")).toContainText("separates physiologic burden, mechanical motion exposure, and body coupling");
   await expect(page.locator(".home-footer-social a")).toHaveCount(6);
   await expect(page.locator(".home-footer-donate")).toHaveText("Donation");
@@ -70,9 +74,8 @@ test("all six journeys retain context, destinations, keyboard access, and source
   await expect(accommodation).not.toHaveAttribute("role", "button");
 });
 
-test("PVC drill-down has exactly six governed endpoint rows and remains separate", async ({ page }) => {
-  await page.goto("/");
-  await page.locator(".home-prospective-details > summary").click();
+test("evidence destination has exactly six governed endpoint rows and remains separate", async ({ page }) => {
+  await page.goto("/evidence/#prospective-validation");
   const region = page.locator("[data-pvc01-content]");
   await expect(region.locator("tbody tr")).toHaveCount(6);
   await expect(region).toContainText("No family-level success threshold was frozen");
@@ -84,7 +87,9 @@ test("PVC drill-down has exactly six governed endpoint rows and remains separate
     await expect(row).toContainText(finding.values.effect.toFixed(5));
     await expect(row).toContainText(finding.classification);
   }
-  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  // The unchanged Evidence page contains other wide graphs; check the PVC
+  // table's own containment here. Homepage overflow is checked above.
+  await expect(region.locator(".biomechanics-table-wrap")).toHaveCSS("overflow-x", "auto");
 });
 
 test("question copying preserves context and has an accessible denial fallback", async ({ page }) => {

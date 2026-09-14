@@ -17,7 +17,7 @@
     evidence: {
       title: "Which evidence would you like to inspect first?",
       context: "Follow the historical controlled comparison, the separate frozen prospective test, or the longer-term record. Each has its own scope and sources.",
-      links: [["Historical Core", "#core-evidence"], ["Prospective validation", "/evidence/#prospective-validation"], ["Longitudinal evidence", "/evidence/longitudinal/"], ["Methods and provenance", "/platform/"]],
+      links: [["Historical Core", "/evidence/#mobility-biomechanics-evidence"], ["Prospective validation", "/evidence/#prospective-validation"], ["Longitudinal evidence", "/evidence/longitudinal/"], ["Methods and provenance", "/platform/"]],
       question: "What replicated prospectively in PVC-01, and how does it compare with historical Core and longitudinal evidence? Report endpoint-specific directions and qualifications, including Walking→PT shock non-replication; do not assign a family-level pass."
     },
     transport: {

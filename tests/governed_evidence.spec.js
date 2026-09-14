@@ -63,46 +63,35 @@ test("health AI presents the connected governed architecture without overflow", 
 
 test("home and case retain compact governed evidence entry points", async ({ page }) => {
   await page.goto("/");
-  await expect(page.locator(".core-evidence-card")).toHaveCount(4);
-  await expect(page.getByRole("heading", { name: "Walking reduces mobility while increasing mechanical burden" })).toBeVisible();
+  await expect(page.locator(".core-evidence-card")).toHaveCount(0);
+  await expect(page.locator('[data-home-journey="evidence"]')).toBeVisible();
   await expect(page.locator(".governed-graph-error")).toHaveCount(0);
   await page.goto("/case/");
   await expect(page.locator(".governed-graph-mounted")).toHaveCount(3);
   await expect(page.locator(".governed-graph-error")).toHaveCount(0);
 });
 
-test("home leads from visual context to controlled and long-horizon evidence", async ({ page }) => {
+test("home retains lower evidence in source while guiding visitors to visible evidence pages", async ({ page }) => {
   await page.goto("/");
   const positions = await page.locator("main > section").evaluateAll((sections) =>
     sections.map((section) => section.id)
   );
-  expect(positions.indexOf("visual-evidence")).toBeLessThan(positions.indexOf("continuity"));
-  expect(positions.indexOf("continuity")).toBeLessThan(positions.indexOf("pain-function"));
-  expect(positions.indexOf("pain-function")).toBeLessThan(positions.indexOf("core-evidence"));
-  expect(positions.indexOf("core-evidence")).toBeLessThan(positions.indexOf("hillsdale"));
-  expect(positions.indexOf("hillsdale")).toBeLessThan(positions.indexOf("why-controlled-rolling"));
-  await expect(page.locator("#continuity")).toContainText(
-    "The visual record shows the functional contrast. The repeated same-day protocol measures it."
-  );
-  await expect(page.locator("#core-evidence")).toContainText(
-    "The controlled protocol establishes the repeated contrast. Long-horizon data show that substantial skating function persists beyond the protocol."
-  );
-  await expect(page.locator("#why-controlled-rolling a[href='/biomechanics/']")).toBeVisible();
-  await expect(page.locator("#hillsdale a[href='/evidence/mobility-comparison/']")).toBeVisible();
+  expect(positions).toEqual(["", "audience-routing"]);
+  const source = await (await page.request.get("/")).text();
+  for (const id of ["visual-evidence", "continuity", "pain-function", "core-evidence", "hillsdale", "why-controlled-rolling"]) {
+    expect(source).toContain(`id="${id}"`);
+  }
+  await page.locator('[data-home-journey="evidence"]').click();
+  await expect(page.locator('[data-journey-links] a[href="/evidence/#mobility-biomechanics-evidence"]')).toBeVisible();
+  await expect(page.locator('[data-journey-links] a[href="/evidence/longitudinal/"]')).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBeTruthy();
 });
 
 test("case orientation and evidence opening preserve progressive disclosure", async ({ page }) => {
   await page.goto("/");
-  const orientation = page.locator("#pain-function .orientation-grid");
-  await expect(orientation).toContainText("Injury");
-  await expect(orientation).toContainText("Adaptation");
-  await expect(orientation).toContainText("Measurement");
-  await expect(orientation).toContainText("Access");
-  await expect(page.locator(".ecosystem-strip")).toContainText("The Case");
-  await expect(page.locator(".ecosystem-strip")).toContainText("The Lab");
-  await expect(page.locator(".ecosystem-strip")).toContainText("The Standard");
-  await expect(page.locator("#pain-function a[href='/access/']")).toBeVisible();
+  await expect(page.locator("#pain-function")).toHaveCount(0);
+  await expect(page.locator('[data-home-journey="walking"]')).toHaveAttribute("href", "/pain/");
+  await expect(page.locator('[data-home-journey="recognition"]')).toHaveAttribute("href", "/access/");
 
   await page.goto("/evidence/");
   const outcomes = page.locator("#evidence-outcomes");
