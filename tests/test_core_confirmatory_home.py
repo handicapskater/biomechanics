@@ -141,7 +141,7 @@ def test_core_evidence_has_semantic_and_responsive_fallbacks() -> None:
 
 
 def test_home_connects_visual_controlled_and_long_horizon_evidence_in_order() -> None:
-    hero = HOME.index('class="hero hero--narrative home-hero"')
+    hero = HOME.index('class="hero hero--narrative home-hero home-front-door"')
     visual = HOME.index('id="visual-evidence"')
     continuity = HOME.index('id="continuity"')
     measurements = HOME.index('id="pain-function"')

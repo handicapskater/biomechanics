@@ -34,6 +34,9 @@
     subtree: true,
   });
 
+  // Keep authored, no-JavaScript footers; other pages retain the shared footer.
+  if (mount.querySelector("footer")) return;
+
   const footers = {
     "handicapskater.com": `
 <footer class="site-footer">

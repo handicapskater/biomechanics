@@ -4,11 +4,8 @@
   const config = {
       brand: "HandicapSkater.com",
       primaryLinks: [
-        { href: "/case/", label: "Case", match: ["/case/"] },
-        { href: "/biomechanics/", label: "Biomechanics", match: ["/biomechanics/"] },
-        { href: "/story/", label: "Story", match: ["/story/"] },
-        { href: "/evidence/strava-gps-skate-maps/", label: "Routes", match: ["/evidence/strava-gps-skate-maps/"] },
-        { href: "/access/", label: "Record", match: ["/access/"] },
+        { href: "/story/", label: "The Story", match: ["/story/"] },
+        { href: "/biomechanics/", label: "The Science", match: ["/biomechanics/"] },
         {
           href: "/evidence/",
           label: "Evidence",
@@ -16,9 +13,12 @@
           children: [
             { href: "/evidence/", label: "Evidence Brief", match: ["/evidence/"] },
             { href: "/platform/", label: "How the System Works", match: ["/platform/"] },
+            { href: "/evidence/strava-gps-skate-maps/", label: "Physical Therapy Route Maps", match: ["/evidence/strava-gps-skate-maps/"] },
             { href: "", label: "Open Evidence Observatory", match: [], observatory: true }
           ]
         },
+        { href: "/access/", label: "Equality", match: ["/access/"] },
+        { href: "/case/", label: "Legal", match: ["/case/"] },
         { href: "https://handicapskater.org/", label: "Standard", match: [] }
       ]
   };
