@@ -23,6 +23,8 @@
 .home-journey-panel[hidden] { display: none; }
 .home-journey-panel h3 { margin-top: 0; }
 .home-journey-panel .button { max-width: 100%; white-space: normal; text-align: center; }
+.page-lifelong main .button { max-width: 100%; white-space: normal; text-align: center; }
+.page-lifelong main :focus-visible { outline: 3px solid #b05d00; outline-offset: 4px; }
 .home-journey-followups { display: flex; flex-wrap: wrap; gap: .5rem 1rem; margin-bottom: 1rem; }
 .home-journey-followups a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: underline; }
 .home-journey-panel label { display: block; font-weight: 700; }

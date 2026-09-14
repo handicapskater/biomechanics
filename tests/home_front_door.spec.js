@@ -4,7 +4,6 @@ const entries = [
   ["walking", "Why can’t he just walk?", "/pain/", "functional distance"],
   ["rolling", "Why do skates help?", "/biomechanics/", "vertical RMS"],
   ["evidence", "Is there actual evidence?", "/evidence/", "PVC-01"],
-  ["transport", "Why aren’t a wheelchair or paratransit enough?", "/access/#transportation-environment", "SilverRide"],
   ["recognition", "Is this legally recognized?", "/access/", "setting-specific"]
 ];
 
@@ -90,6 +89,61 @@ test("evidence destination has exactly six governed endpoint rows and remains se
   // The unchanged Evidence page contains other wide graphs; check the PVC
   // table's own containment here. Homepage overflow is checked above.
   await expect(region.locator(".biomechanics-table-wrap")).toHaveCSS("overflow-x", "auto");
+});
+
+test("lifelong entry is honest about CX availability and never invokes private Ask", async ({ page }, testInfo) => {
+  const requests = [];
+  page.on("request", request => requests.push(request.url()));
+  await page.goto("/");
+  const trigger = page.locator('[data-home-journey="lifelong"]');
+  await expect(trigger.locator("strong")).toHaveText("What does this mean for lifelong mobility?");
+  await expect(trigger).toHaveAttribute("data-cx-entry-intent", "HOMEPAGE_LIFELONG_MOBILITY");
+  await expect(trigger).toHaveAttribute("href", "/lifelong-mobility/");
+  await trigger.focus();
+  await page.keyboard.press("Space");
+  await expect(page.locator("#home-journey-title")).toBeFocused();
+  await expect(page.locator("[data-cx-availability]")).toContainText("not connected yet");
+  await expect(page.locator("#home-journey-panel details")).toBeHidden();
+  await expect(page.locator("[data-journey-links] a")).toHaveCount(6);
+  await expect(page.locator("[data-journey-context]")).toContainText("preserving useful function");
+  await expect(page.locator(".home-hero")).not.toContainText("lifespan");
+  await expect(page.locator(".home-hero")).toContainText("Shop. Skate. Ride. Continuous mobility.");
+  expect((await page.locator(".home-hero").innerText()).split(/\s+/).length).toBeLessThan(178);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.screenshot({ path: testInfo.outputPath("lifelong-menu.png"), fullPage: true });
+  await page.keyboard.press("Escape");
+  await expect(trigger).toBeFocused();
+  await page.locator('[data-home-journey="evidence"]').click();
+  await expect(page.locator("#home-journey-panel details")).toBeVisible();
+  await expect(page.locator("[data-cx-availability]")).toBeHidden();
+  expect(requests.some(url => /run\.app|ces\.googleapis|\/rag\//.test(url))).toBe(false);
+});
+
+test("lifelong reading fallback keeps boundaries, six choices and working public handoffs", async ({ page }, testInfo) => {
+  await page.goto("/lifelong-mobility/");
+  await expect(page.locator(".home-journey-grid a")).toHaveCount(6);
+  for (const anchor of ["walking", "skating", "measured", "lifetime", "evidence"]) {
+    await page.locator(`.home-journey-grid a[href="#${anchor}"]`).click();
+    await expect(page.locator(`#${anchor}`)).toBeVisible();
+  }
+  await expect(page.locator("#evidence li")).toHaveCount(6);
+  await expect(page.locator("#evidence li").last()).toContainText("1/5");
+  await expect(page.locator("#evidence")).toContainText("No family-level success threshold");
+  await expect(page.locator("#lifetime")).toContainText("No longevity benefit");
+  await expect(page.locator("#walking")).toContainText("Kinematics");
+  await expect(page.locator("#walking")).toContainText("Kinetics");
+  await expect(page.locator("#measured")).toContainText("does not directly measure ground-reaction force");
+  await expect(page.locator("#evaluation a.button")).toHaveAttribute("href", "https://handicapskater.org/review-tools/");
+  expect(await page.locator('a[href*="/nsmaep/"], a[href*="?view=ask"]').count()).toBe(0);
+  const targets = await page.locator('main a[href^="/"]').evaluateAll(nodes => nodes.map(n => n.getAttribute("href")));
+  for (const target of new Set(targets)) {
+    const response = await page.request.get(target);
+    expect(response.ok(), target).toBe(true);
+    const hash = new URL(target, "http://127.0.0.1:4173").hash;
+    if (hash) expect(await response.text()).toContain(`id="${hash.slice(1)}"`);
+  }
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.screenshot({ path: testInfo.outputPath("lifelong-reading.png"), fullPage: true });
 });
 
 test("question copying preserves context and has an accessible denial fallback", async ({ page }) => {

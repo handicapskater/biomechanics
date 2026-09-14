@@ -1,5 +1,50 @@
 # Homepage front-door restructuring
 
+## Lifelong-mobility follow-up (2026-09-13)
+
+The current user's longer motorcycle block is shortened from approximately
+178 to 148 words across the complete hero (same HTML-stripping count). The
+headline, prosthetic-mobility lead, image, pain link, removal/switching-mode
+explanation and public video remain. The closing copy is now:
+
+> Shop. Skate. Ride. Continuous mobility.
+> The skates stay with me because the mobility need doesn’t end when I reach the motorcycle.
+
+The lifespan/“mobility should evolve” discussion and redundant impact paragraph
+move out of the hero into `/lifelong-mobility/`. The fourth of six cards changes
+from “Why aren’t a wheelchair or paratransit enough?” to “What does this mean for
+lifelong mobility?” with “Mobility should evolve with us”. Other cards retain
+their behavior. Transportation remains reachable through the reading guide,
+Story, Access, Evidence and existing destinations; no cohorts/resources change.
+
+The card carries `HOMEPAGE_LIFELONG_MOBILITY`, but **does not start live GCP CX
+yet**. Its six public reading choices and destination explicitly disclose that
+the live journey is not connected. This fallback has no Ask Evidence action,
+request API, account, registration or local NSMAEP link. The optional private
+reviewer handoff on other existing cards remains unchanged.
+
+The platform contains a deterministic native CES callback package, seven
+controlled fixtures and synthetic tests under `deploy/gcp_cx/lifelong_mobility/`
+and `packages/fsicss_agents/`. It is not a deployed conversation. Existing GCP
+discovery found a shared seven-agent draft app, no public deployments, and
+Science Agent wording requiring a separate public-readiness review. No shared
+agent or access policy is changed. Public GCP activation requires approval of
+that bounded review and verified server-side route isolation, logging and
+abuse/cost controls; a browser-supplied agent ID is not isolation.
+
+Reading and prepared CX distinguish kinematics/kinetics, on-body acceleration
+proxies/internal force, mechanism hypotheses/measurements, and functional
+lifespan/longevity outcomes. Mahar 1997 is qualitative skating-versus-running
+context only; no new numeric peer-reference values. PVC-01 keeps all six
+endpoint directions (5/5, 5/5, 5/5, 5/5, 5/5, 1/5), without family-level success
+or pooled historical/prospective N. Public evidence resource bytes, hidden
+homepage comments and the full contact/donation footer remain unchanged.
+
+Validation and deployment results are recorded in the workspace task state.
+The five pre-existing `test_next_scientific_phase.py` failures were reproduced
+against a clean HEAD snapshot; those older assertions expect pages/navigation
+already superseded before this task. They are not repaired as part of this work.
+
 ## Before (2026-09-13 working-tree inventory)
 
 Visible order: hero, six audience/path links inside the hero, Visual Evidence

@@ -2,6 +2,13 @@
 (() => {
   "use strict";
   const journeys = {
+    lifelong: {
+      title: "What does this mean for lifelong mobility?",
+      context: "Mobility is not just about whether a person can walk. It is about preserving useful function while managing the mechanical demands placed on the body over time. HandicapSkater compares walking with controlled rolling mobility to ask whether different movement strategies can preserve function with different mechanical patterns. What would you like to understand?",
+      links: [["How does walking load the body?", "/lifelong-mobility/#walking"], ["How does skating change the movement?", "/lifelong-mobility/#skating"], ["What has actually been measured?", "/lifelong-mobility/#measured"], ["What could this mean over a lifetime?", "/lifelong-mobility/#lifetime"], ["Show me the evidence", "/lifelong-mobility/#evidence"], ["Back to the main questions", "/#audience-routing"]],
+      question: "",
+      publicReadingOnly: true
+    },
     walking: {
       title: "Start with what walking allows—and what it costs.",
       context: "Would you like the personal pain-and-function context, or the repeated same-day Mall skating → Walking → PT skating comparison? Sensors do not read pain.",
@@ -61,6 +68,14 @@
       triggers.forEach(item => item.setAttribute("aria-expanded", String(item === link)));
       heading.textContent = journey.title;
       panel.querySelector("[data-journey-context]").textContent = journey.context;
+      let availability = panel.querySelector("[data-cx-availability]");
+      if (!availability) {
+        availability = document.createElement("p");
+        availability.dataset.cxAvailability = "";
+        panel.querySelector("[data-journey-context]").after(availability);
+      }
+      availability.textContent = journey.publicReadingOnly ? "Public reading guide · the live GCP CX journey is not connected yet." : "";
+      availability.hidden = !journey.publicReadingOnly;
       panel.querySelector("[data-journey-links]").replaceChildren(...journey.links.map(([label, href]) => {
         const anchor = document.createElement("a");
         anchor.href = href;
@@ -70,6 +85,7 @@
       question.value = journey.question;
       feedback.textContent = "";
       panel.querySelector("details").open = false;
+      panel.querySelector("details").hidden = Boolean(journey.publicReadingOnly);
       panel.hidden = false;
       heading.focus({ preventScroll: true });
       heading.scrollIntoView({ block: "start", behavior: "instant" });
