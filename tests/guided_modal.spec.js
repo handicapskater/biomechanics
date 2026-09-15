@@ -2,10 +2,11 @@ const {test, expect} = require('@playwright/test');
 
 const portal = 'https://hs-portal-324477223314.us-central1.run.app';
 const storageKey = 'handicapskater_welcome_modal';
-const modalVersion = 1;
+const modalVersion = 2;
 const thirtyDays = 30 * 24 * 60 * 60 * 1000;
 const keys = ['walking', 'rolling', 'evidence', 'lifelong', 'recognition'];
 const home = key => `main [data-home-journey="${key}"]`;
+const currentPreference = () => ({suppressAutoOpen:true, suppressedAt:Date.now(), version:modalVersion});
 
 async function seedPreference(page, value) {
   await page.addInitScript(({key, stored}) => {
@@ -20,14 +21,21 @@ test.beforeEach(async ({page}) => {
   await page.route(portal + '/**', route => route.abort());
 });
 
-test('fresh browser auto-opens, keeps one shared landing, and remembers deliberate dismissal', async ({page, browserName}, info) => {
+test('fresh browser auto-opens; only the explicit checkbox suppresses later auto-open', async ({page, browserName}, info) => {
   await page.goto('/');
   const modal = page.locator('#heroModal');
+  const checkbox = modal.getByRole('checkbox', {name:"Don't show this again"});
   const opener = page.locator('.home-guided-open');
+  const footerOpener = page.locator('[data-welcome-modal]');
+  const close = modal.locator('[data-modal-close]');
+
   await expect(modal).toBeVisible();
   await expect(page.locator('#guided-modal-title')).toBeFocused();
   await expect(page.locator('#main')).toHaveJSProperty('inert', true);
+  await expect(checkbox).not.toBeChecked();
   await expect(opener).toHaveText('Explore HandicapSkater');
+  await expect(footerOpener).toHaveText('Welcome');
+  await expect(footerOpener).toHaveAttribute('href', '/?welcome=1');
   await expect(modal.getByRole('heading', {name:'Riding a Motorcycle with Skates'})).toBeVisible();
   await expect(modal).toContainText('Public transportation refused to carry me with my skates');
   const source = await page.locator('main .home-journey-grid a').evaluateAll(nodes => nodes.map(node => [node.textContent, node.href]));
@@ -43,92 +51,131 @@ test('fresh browser auto-opens, keeps one shared landing, and remembers delibera
     await page.keyboard.press(browserName === 'webkit' ? 'Alt+Tab' : 'Tab');
     expect(await page.evaluate(() => document.activeElement.closest('#heroModal') !== null)).toBe(true);
   }
+
   await modal.locator('[data-modal-choices] [data-home-journey="evidence"]').click();
   await expect(page.locator('#home-journey-title')).toHaveText('Is there actual evidence?');
   expect(await page.evaluate(key => localStorage.getItem(key), storageKey)).toBeNull();
   await page.locator('[data-all-questions]').click();
   await expect(page.locator('#guided-modal-title')).toBeFocused();
   expect(await page.evaluate(key => localStorage.getItem(key), storageKey)).toBeNull();
-  const close = modal.locator('[data-modal-close]');
+
   const closeBox = await close.boundingBox();
+  const checkboxBox = await checkbox.boundingBox();
   expect(closeBox.y).toBeGreaterThanOrEqual(0);
   expect(closeBox.y + closeBox.height).toBeLessThanOrEqual(page.viewportSize().height);
+  expect(checkboxBox.y + checkboxBox.height).toBeLessThanOrEqual(page.viewportSize().height);
   expect(await modal.evaluate(node => node.scrollWidth <= node.clientWidth)).toBe(true);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.screenshot({path: info.outputPath('modal-landing.png')});
+
   await page.keyboard.press('Escape');
   await expect(modal).not.toBeVisible();
   await expect(page.locator('#main')).toBeFocused();
-  await expect(page.locator('#main')).toHaveJSProperty('inert', false);
-  expect(await page.locator('body').evaluate(node => node.style.overflow)).not.toBe('hidden');
-  const dismissed = JSON.parse(await page.evaluate(key => localStorage.getItem(key), storageKey));
-  expect(dismissed.version).toBe(modalVersion);
-  expect(Date.now() - dismissed.dismissedAt).toBeLessThan(5000);
+  expect(await page.evaluate(key => localStorage.getItem(key), storageKey)).toBeNull();
+  await page.reload();
+  await expect(modal).toBeVisible();
+  await close.click();
+  expect(await page.evaluate(key => localStorage.getItem(key), storageKey)).toBeNull();
+  await page.reload();
+  await expect(modal).toBeVisible();
+
+  await checkbox.check();
+  const suppressed = JSON.parse(await page.evaluate(key => localStorage.getItem(key), storageKey));
+  expect(suppressed).toMatchObject({suppressAutoOpen:true, version:modalVersion});
+  expect(Date.now() - suppressed.suppressedAt).toBeLessThan(5000);
+  await close.click();
   await page.reload();
   await expect(modal).not.toBeVisible();
+
   const beforeManualOpen = await page.evaluate(key => localStorage.getItem(key), storageKey);
+  await footerOpener.click();
+  await expect(modal).toBeVisible();
+  await expect(page.locator('[data-modal-landing]')).toBeVisible();
+  await expect(checkbox).toBeChecked();
+  expect(await page.evaluate(key => localStorage.getItem(key), storageKey)).toBe(beforeManualOpen);
+  await close.click();
+  await expect(footerOpener).toBeFocused();
+  expect(await page.evaluate(key => localStorage.getItem(key), storageKey)).toBe(beforeManualOpen);
+  await page.reload();
+  await expect(modal).not.toBeVisible();
   await opener.click();
   await expect(modal).toBeVisible();
-  expect(await page.evaluate(key => localStorage.getItem(key), storageKey)).toBe(beforeManualOpen);
-  await page.evaluate(key => localStorage.removeItem(key), storageKey);
+  await expect(page.locator('[data-modal-landing]')).toBeVisible();
   await close.click();
-  await expect(modal).not.toBeVisible();
   await expect(opener).toBeFocused();
-  expect(JSON.parse(await page.evaluate(key => localStorage.getItem(key), storageKey)).version).toBe(modalVersion);
-  if (page.viewportSize().width > 600) {
-    await opener.click();
-    await page.evaluate(key => localStorage.removeItem(key), storageKey);
-    await page.mouse.click(1, 1);
-    await expect(modal).not.toBeVisible();
-    expect(JSON.parse(await page.evaluate(key => localStorage.getItem(key), storageKey)).version).toBe(modalVersion);
-  }
 });
 
-test('current dismissal suppresses auto-open while expired, mismatched, and malformed state reopen', async ({page}) => {
-  await seedPreference(page, {dismissedAt:Date.now(), version:modalVersion});
+test('current suppression is respected while expired, mismatched, and malformed state reopen', async ({page}) => {
+  await seedPreference(page, currentPreference());
   await page.goto('/');
-  await expect(page.locator('#heroModal')).not.toBeVisible();
-  await page.locator('.home-guided-open').click();
-  await expect(page.locator('#heroModal')).toBeVisible();
+  const modal = page.locator('#heroModal');
+  const checkbox = modal.getByRole('checkbox', {name:"Don't show this again"});
+  await expect(modal).not.toBeVisible();
+
+  await page.evaluate(({key, value}) => localStorage.setItem(key, JSON.stringify(value)), {
+    key:storageKey,
+    value:{suppressAutoOpen:true, suppressedAt:Date.now() - thirtyDays - 1, version:modalVersion}
+  });
+  await page.reload();
+  await expect(modal).toBeVisible();
+  await expect(checkbox).not.toBeChecked();
   await page.locator('[data-modal-close]').click();
 
   await page.evaluate(({key, value}) => localStorage.setItem(key, JSON.stringify(value)), {
     key:storageKey,
-    value:{dismissedAt:Date.now() - thirtyDays - 1, version:modalVersion}
+    value:{suppressAutoOpen:true, suppressedAt:Date.now(), version:modalVersion - 1}
   });
   await page.reload();
-  await expect(page.locator('#heroModal')).toBeVisible();
-  await page.locator('[data-modal-close]').click();
-
-  await page.evaluate(({key, value}) => localStorage.setItem(key, JSON.stringify(value)), {
-    key:storageKey,
-    value:{dismissedAt:Date.now(), version:modalVersion - 1}
-  });
-  await page.reload();
-  await expect(page.locator('#heroModal')).toBeVisible();
+  await expect(modal).toBeVisible();
+  await expect(checkbox).not.toBeChecked();
   await page.locator('[data-modal-close]').click();
 
   await page.evaluate(key => localStorage.setItem(key, '{malformed'), storageKey);
   await page.reload();
-  await expect(page.locator('#heroModal')).toBeVisible();
+  await expect(modal).toBeVisible();
+  await expect(checkbox).not.toBeChecked();
 });
 
-test('storage failures do not block auto-open, dismissal, or manual reopen', async ({page}) => {
+test('storage failures do not block auto-open, checkbox choice, close, or manual reopen', async ({page}) => {
   await page.addInitScript(() => {
     Storage.prototype.getItem = () => { throw new Error('storage unavailable'); };
     Storage.prototype.setItem = () => { throw new Error('storage unavailable'); };
+    Storage.prototype.removeItem = () => { throw new Error('storage unavailable'); };
   });
   await page.goto('/');
-  await expect(page.locator('#heroModal')).toBeVisible();
+  const modal = page.locator('#heroModal');
+  await expect(modal).toBeVisible();
+  await modal.getByRole('checkbox', {name:"Don't show this again"}).check();
   await page.locator('[data-modal-close]').click();
-  await expect(page.locator('#heroModal')).not.toBeVisible();
-  await page.locator('.home-guided-open').click();
+  await expect(modal).not.toBeVisible();
+  await page.locator('[data-welcome-modal]').click();
+  await expect(modal).toBeVisible();
+});
+
+test('shared footer reopens landing from another page without clearing suppression', async ({page}) => {
+  await seedPreference(page, currentPreference());
+  await page.goto('/story/');
+  const footerOpener = page.locator('[data-welcome-modal]');
+  await expect(footerOpener).toHaveText('Welcome');
+  await expect(footerOpener).toHaveAttribute('href', '/?welcome=1');
+  const beforeManualOpen = await page.evaluate(key => localStorage.getItem(key), storageKey);
+  await footerOpener.click();
+  await expect(page).toHaveURL('/');
   await expect(page.locator('#heroModal')).toBeVisible();
+  await expect(page.locator('[data-modal-landing]')).toBeVisible();
+  await expect(page.getByRole('checkbox', {name:"Don't show this again"})).toBeChecked();
+  expect(await page.evaluate(key => localStorage.getItem(key), storageKey)).toBe(beforeManualOpen);
+  await page.locator('[data-modal-close]').click();
+  await expect(page.locator('[data-welcome-modal]')).toBeFocused();
+  expect(await page.evaluate(key => localStorage.getItem(key), storageKey)).toBe(beforeManualOpen);
+  await page.reload();
+  await expect(page.locator('#heroModal')).not.toBeVisible();
 });
 
 test('homepage cards open five modal journeys and the sixth hands off to .org', async ({page}, info) => {
-  await seedPreference(page, {dismissedAt:Date.now(), version:modalVersion});
+  await seedPreference(page, currentPreference());
   await page.goto('/');
+  const beforeJourneys = await page.evaluate(key => localStorage.getItem(key), storageKey);
   for (const key of keys) {
     const trigger = page.locator(home(key));
     const title = await trigger.locator('strong').textContent();
@@ -139,8 +186,10 @@ test('homepage cards open five modal journeys and the sixth hands off to .org', 
     await expect(page.locator('[data-journey-context]')).toBeVisible();
     expect(await page.locator('[data-journey-links] a').count()).toBeGreaterThan(1);
     expect(new URL(await page.locator('[data-demo-signin]').getAttribute('href')).searchParams.get('return_to')).toContain(`journey=${key}`);
+    expect(await page.evaluate(storageKey => localStorage.getItem(storageKey), storageKey)).toBe(beforeJourneys);
     await page.locator('[data-all-questions]').click();
     await expect(page.locator('#guided-modal-title')).toBeFocused();
+    expect(await page.evaluate(storageKey => localStorage.getItem(storageKey), storageKey)).toBe(beforeJourneys);
     await page.keyboard.press('Escape');
     await expect(trigger).toBeFocused();
   }
@@ -157,8 +206,8 @@ test('homepage cards open five modal journeys and the sixth hands off to .org', 
   await expect(page).toHaveURL('https://handicapskater.org/review-tools/');
 });
 
-test('one trusted broker frame survives perspective changes and trusted Escape persists dismissal', async ({page}) => {
-  await seedPreference(page, {dismissedAt:Date.now(), version:modalVersion});
+test('one trusted broker frame survives perspective changes and preserves suppression on Escape', async ({page}) => {
+  await seedPreference(page, currentPreference());
   let loads = 0;
   await page.unroute(portal + '/**');
   await page.route(portal + '/embed/cx**', route => {
@@ -174,6 +223,7 @@ test('one trusted broker frame survives perspective changes and trusted Escape p
     </script>`});
   });
   await page.goto('/');
+  const beforeJourney = await page.evaluate(key => localStorage.getItem(key), storageKey);
   await page.locator(home('walking')).click();
   const frame = page.frameLocator('#heroModal iframe');
   await expect(frame.locator('h2')).toBeVisible();
@@ -188,7 +238,7 @@ test('one trusted broker frame survives perspective changes and trusted Escape p
   await frame.locator('#child').focus();
   await page.keyboard.press('Escape');
   await expect(page.locator('#heroModal')).not.toBeVisible();
-  expect(JSON.parse(await page.evaluate(key => localStorage.getItem(key), storageKey)).version).toBe(modalVersion);
+  expect(await page.evaluate(key => localStorage.getItem(key), storageKey)).toBe(beforeJourney);
   await page.locator(home('recognition')).click();
   await expect(frame.locator('h2')).toHaveText('PUBLIC_LEGAL');
   expect(loads).toBe(1);

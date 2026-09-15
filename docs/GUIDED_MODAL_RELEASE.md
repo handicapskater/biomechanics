@@ -14,17 +14,23 @@ It also contained claims and video targets that are not the current governed cop
 This adaptation retains the compact visual pattern and uses native `dialog` with
 an explicit Tab wrap, Escape/cancel handling, focus restoration, stable header,
 independent content scrolling and reduced-motion support. A fresh browser opens
-the landing after the homepage client is ready. Deliberate close, Escape and
-backdrop dismissal write only `{dismissedAt, version}` to the client-side
-`handicapskater_welcome_modal` localStorage preference. Version 1 dismissals remain
-current for 30 days; expired, malformed and version-mismatched values reopen safely.
-Storage failures never prevent opening or closing. No identity, health, CX, auth or
-session information is stored. The old unsupported scientific claims stay removed.
+the landing after the homepage client is ready. Close, Escape and backdrop actions
+do not suppress future auto-opening unless the real “Don't show this again”
+checkbox is selected. That explicit choice writes only `{suppressAutoOpen,
+suppressedAt, version}` to the client-side `handicapskater_welcome_modal`
+localStorage preference. Version 2 suppression remains current for 30 days;
+expired, malformed and version-mismatched values reopen safely. Unchecking removes
+the preference. Storage failures never prevent opening or closing. No identity,
+health, CX, auth or session information is stored. The old unsupported scientific
+claims stay removed.
 
 ## One homepage client
 
 - `Explore HandicapSkater` beside the direct public-video action opens landing at
   any time without clearing an existing dismissal preference.
+- The historical shared-footer label `Welcome` opens landing in place on the
+  homepage. Other `.com` pages use `/?welcome=1`; the homepage consumes and removes
+  that one-time signal before opening, so later refreshes still respect suppression.
 - Homepage cards 1–5 open their selected journey immediately in the same dialog.
 - All questions returns to the motorcycle landing without destroying the frame.
 - Card 6, on either surface, navigates directly to `.org/review-tools/`.
@@ -54,8 +60,8 @@ no auth, agent, database, IAM, budget or scientific configuration changes.
 
 ## Verification
 
-`tests/guided_modal.spec.js`: fresh auto-open, remembered dismissal/refresh,
-manual reopening, 30-day expiry, versioning, malformed/unavailable storage,
+`tests/guided_modal.spec.js`: fresh auto-open, unchecked close/reload, checked
+suppression, shared-footer reopening, 30-day expiry, versioning, malformed/unavailable storage,
 landing/video, five entries, All questions, `.org` handoff, offline fallback,
 return URL, one-frame reuse, forged-message rejection, background inertness,
 focus/Tab/Escape/body scroll and screenshots at all five configured viewports.

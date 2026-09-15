@@ -1,7 +1,7 @@
 const { test, expect } = require("@playwright/test");
 
 test.beforeEach(async ({page}) => {
-  await page.addInitScript(() => localStorage.setItem('handicapskater_welcome_modal', JSON.stringify({dismissedAt:Date.now(), version:1})));
+  await page.addInitScript(() => localStorage.setItem('handicapskater_welcome_modal', JSON.stringify({suppressAutoOpen:true, suppressedAt:Date.now(), version:2})));
 });
 
 test("evidence brief renders the selected governed bundle with accessible tables", async ({ page }) => {

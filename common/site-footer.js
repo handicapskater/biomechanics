@@ -102,6 +102,7 @@
         </svg>
       </a>
     </nav>
+    <a class="home-footer-welcome" data-welcome-modal href="/?welcome=1">Welcome</a>
     <a class="home-footer-donate" href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai" target="_blank" rel="noopener noreferrer">Donation</a>
     </div>
     <p class="home-footer-meta"><a href="/common/copyright.htm">© 2004–2026 HandicapSkater</a></p>

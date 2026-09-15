@@ -58,7 +58,7 @@ class HomeContactFooterTests(unittest.TestCase):
         self.assertNotIn("<footer", self.home)
         self.assertEqual(self.home.count('src="/common/site-footer.js"'), 1)
         self.assertEqual(len(self.footer.footers), 1)
-        self.assertEqual(len(self.footer.links), 8)
+        self.assertEqual(len(self.footer.links), 9)
         self.assertEqual(self.footer.embeds, [])
         for link in self.footer.links:
             self.assertTrue(link.get("aria-label") or link["label"].strip())
@@ -68,6 +68,9 @@ class HomeContactFooterTests(unittest.TestCase):
 
     def test_canonical_homepage_social_targets_and_description(self):
         targets = {link["href"] for link in self.footer.links}
+        welcome = next(link for link in self.footer.links if link["href"] == "/?welcome=1")
+        self.assertEqual(welcome["label"].strip(), "Welcome")
+        self.assertIn("data-welcome-modal", welcome)
         self.assertIn("https://www.facebook.com/RollerGracie/", targets)
         self.assertIn("https://www.linkedin.com/company/103320223/", targets)
         self.assertIn("This site presents an N-of-1 scientific record and public case study.", "".join(self.footer.text))
@@ -80,6 +83,7 @@ class HomeContactFooterTests(unittest.TestCase):
         css = (ROOT / "common/css/site-pages.css").read_text()
         self.assertIn(".site-com .home-footer-inner", css)
         self.assertIn(".site-com .home-contact-footer a:focus-visible", css)
+        self.assertIn(".site-com .home-footer-welcome", css)
         self.assertNotIn(".page-home .home-footer-", css)
 
 

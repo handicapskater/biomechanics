@@ -1,6 +1,6 @@
 const { test, expect } = require("@playwright/test");
 test.beforeEach(async ({page}) => {
-  await page.addInitScript(() => localStorage.setItem('handicapskater_welcome_modal', JSON.stringify({dismissedAt:Date.now(), version:1})));
+  await page.addInitScript(() => localStorage.setItem('handicapskater_welcome_modal', JSON.stringify({suppressAutoOpen:true, suppressedAt:Date.now(), version:2})));
   await page.route('https://hs-portal-324477223314.us-central1.run.app/**', route => route.abort());
 });
 
@@ -32,6 +32,7 @@ test("human-first sequence preserves evidence, footer, and responsive layout", a
   }
   await expect(page.locator(".home-footer-description")).toContainText("separates physiologic burden, mechanical motion exposure, and body coupling");
   await expect(page.locator(".home-footer-social a")).toHaveCount(6);
+  await expect(page.locator(".home-footer-welcome")).toHaveText("Welcome");
   await expect(page.locator(".home-footer-donate")).toHaveText("Donation");
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.screenshot({ path: testInfo.outputPath("homepage-full.png"), fullPage: true });

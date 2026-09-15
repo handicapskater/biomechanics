@@ -43,7 +43,7 @@
   const panel = document.getElementById("home-journey-panel");
   if (!panel) return;
   const WELCOME_MODAL_STORAGE_KEY = "handicapskater_welcome_modal";
-  const WELCOME_MODAL_VERSION = 1;
+  const WELCOME_MODAL_VERSION = 2;
   const WELCOME_MODAL_EXPIRATION_MS = 30 * 24 * 60 * 60 * 1000;
   const heading = document.getElementById("home-journey-title");
   const feedback = panel.querySelector("[role=status]");
@@ -62,11 +62,13 @@
   dialog.className = "home-guided-dialog";
   dialog.setAttribute("aria-modal", "true");
   dialog.setAttribute("aria-labelledby", "guided-modal-title");
-  dialog.innerHTML = '<header class="guided-modal-header"><button type="button" data-all-questions hidden>← All questions</button><span>HandicapSkater · Guided experience</span><button type="button" data-modal-close aria-label="Close guided experience">Close ×</button></header><div class="guided-modal-scroll"><section data-modal-landing><h2 id="guided-modal-title" tabindex="-1">Riding a Motorcycle with Skates</h2><div class="guided-modal-hook"><div data-modal-video></div><div><p>Public transportation refused to carry me with my skates because of safety concerns, initially offering no usable alternative. I began riding a motorcycle because I still needed a way to get around.</p><p>Shop. Skate. Ride. Continuous mobility. The skates stay with me because the mobility need doesn’t end at the motorcycle.</p><p>My skates function as a prosthetic mobility device. Reaching down to remove and put them on is painful because of my disability.</p><a data-modal-video-text>Watch the public video ↗</a></div></div><h3>What do you want to understand?</h3><nav class="home-journey-grid" aria-label="Six guided perspectives" data-modal-choices></nav></section></div>';
+  dialog.innerHTML = '<header class="guided-modal-header"><button type="button" data-all-questions hidden>← All questions</button><span>HandicapSkater · Guided experience</span><button type="button" data-modal-close aria-label="Close guided experience">Close ×</button></header><div class="guided-modal-scroll"><section data-modal-landing><h2 id="guided-modal-title" tabindex="-1">Riding a Motorcycle with Skates</h2><div class="guided-modal-hook"><div data-modal-video></div><div><p>Public transportation refused to carry me with my skates because of safety concerns, initially offering no usable alternative. I began riding a motorcycle because I still needed a way to get around.</p><p>Shop. Skate. Ride. Continuous mobility. The skates stay with me because the mobility need doesn’t end at the motorcycle.</p><p>My skates function as a prosthetic mobility device. Reaching down to remove and put them on is painful because of my disability.</p><a data-modal-video-text>Watch the public video ↗</a></div></div><h3>What do you want to understand?</h3><nav class="home-journey-grid" aria-label="Six guided perspectives" data-modal-choices></nav></section></div><div class="guided-modal-preference"><input type="checkbox" id="guided-modal-suppress"><label for="guided-modal-suppress">Don\'t show this again</label></div>';
   const landing = dialog.querySelector("[data-modal-landing]");
   const scroll = dialog.querySelector(".guided-modal-scroll");
   const allQuestions = dialog.querySelector("[data-all-questions]");
+  const suppressAutoOpen = dialog.querySelector("#guided-modal-suppress");
   const opener = document.querySelector(".home-guided-open");
+  const footerOpeners = [...document.querySelectorAll("[data-welcome-modal]")];
   const video = document.querySelector(".home-motorcycle-hook figure a");
   const imageLink = video.cloneNode(true);
   imageLink.setAttribute("aria-label", "Watch Troy ride a motorcycle while wearing his mobility skates");
@@ -83,23 +85,28 @@
   });
   let frame = null, ready = false, initialEntry = null, activeKey = null;
   let activeTrigger = null, savedOverflow = "", backgroundState = [];
-  function hasCurrentDismissal() {
+  function hasCurrentSuppression() {
     try {
       const preference = JSON.parse(window.localStorage.getItem(WELCOME_MODAL_STORAGE_KEY));
-      const age = Date.now() - preference.dismissedAt;
-      return preference.version === WELCOME_MODAL_VERSION && Number.isFinite(preference.dismissedAt) && age >= 0 && age < WELCOME_MODAL_EXPIRATION_MS;
+      const age = Date.now() - preference.suppressedAt;
+      return preference.suppressAutoOpen === true && preference.version === WELCOME_MODAL_VERSION && Number.isFinite(preference.suppressedAt) && age >= 0 && age < WELCOME_MODAL_EXPIRATION_MS;
     } catch {
       return false;
     }
   }
-  function rememberDismissal() {
+  function saveSuppressionChoice() {
     try {
-      window.localStorage.setItem(WELCOME_MODAL_STORAGE_KEY, JSON.stringify({dismissedAt:Date.now(), version:WELCOME_MODAL_VERSION}));
+      if (suppressAutoOpen.checked) {
+        if (!hasCurrentSuppression()) window.localStorage.setItem(WELCOME_MODAL_STORAGE_KEY, JSON.stringify({suppressAutoOpen:true, suppressedAt:Date.now(), version:WELCOME_MODAL_VERSION}));
+      } else {
+        window.localStorage.removeItem(WELCOME_MODAL_STORAGE_KEY);
+      }
     } catch {}
   }
   function open(trigger) {
     if (!dialog.open) {
       activeTrigger = trigger || null;
+      suppressAutoOpen.checked = hasCurrentSuppression();
       savedOverflow = document.body.style.overflow;
       document.body.style.overflow = "hidden";
       backgroundState = [...document.body.children].filter(node => node !== dialog).map(node => [node, node.inert]);
@@ -114,7 +121,7 @@
     dialog.querySelector("#guided-modal-title").focus({preventScroll:true});
   }
   function dismiss() {
-    rememberDismissal();
+    saveSuppressionChoice();
     dialog.close();
   }
   function restorePage() {
@@ -142,7 +149,7 @@
   allQuestions.addEventListener("click", landingView);
   dialog.addEventListener("keydown", event => {
     if (event.key !== "Tab") return;
-    const controls = [...dialog.querySelectorAll('button, a[href], iframe')].filter(node => node.getClientRects().length && !node.disabled);
+    const controls = [...dialog.querySelectorAll('button, a[href], input, iframe')].filter(node => node.getClientRects().length && !node.disabled);
     const first = controls[0], last = controls[controls.length - 1];
     if (event.shiftKey && (document.activeElement === first || document.activeElement.tabIndex === -1)) {
       event.preventDefault(); last.focus();
@@ -155,6 +162,17 @@
   opener.setAttribute("aria-haspopup", "dialog");
   opener.setAttribute("aria-controls", dialog.id);
   opener.addEventListener("click", () => { open(opener); landingView(); });
+  footerOpeners.forEach(footerOpener => {
+    footerOpener.setAttribute("aria-haspopup", "dialog");
+    footerOpener.setAttribute("aria-controls", dialog.id);
+    footerOpener.addEventListener("click", event => {
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      open(footerOpener);
+      landingView();
+    });
+  });
+  suppressAutoOpen.addEventListener("change", saveSuppressionChoice);
   [...triggers, ...menuLinks].forEach(link => {
     const journey = journeys[link.dataset.homeJourney];
     if (!journey) return;
@@ -217,10 +235,17 @@
       panel.querySelector("[data-journey-links]").hidden = true;
     }
   });
-  const requested = new URL(window.location.href).searchParams.get("journey");
+  const requestedUrl = new URL(window.location.href);
+  const requested = requestedUrl.searchParams.get("journey");
+  const welcomeRequested = requestedUrl.searchParams.get("welcome") === "1";
   if (entries[requested]) {
     triggers.find(link => link.dataset.homeJourney === requested)?.click();
-  } else if (!hasCurrentDismissal()) {
+  } else if (welcomeRequested) {
+    requestedUrl.searchParams.delete("welcome");
+    window.history.replaceState(window.history.state, "", requestedUrl.pathname + requestedUrl.search + requestedUrl.hash);
+    open(footerOpeners[0] || null);
+    landingView();
+  } else if (!hasCurrentSuppression()) {
     requestAnimationFrame(() => { open(null); landingView(); });
   }
 })();
