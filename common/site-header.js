@@ -4,7 +4,7 @@
   const config = {
       brand: "HandicapSkater.com",
       primaryLinks: [
-        { href: "/story/", label: "The Story", match: ["/story/"] },
+        // { href: "/story/", label: "The Story", match: ["/story/"] },
         { href: "/biomechanics/", label: "The Science", match: ["/biomechanics/"] },
         {
           href: "/evidence/",
