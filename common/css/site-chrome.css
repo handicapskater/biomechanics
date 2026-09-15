@@ -156,9 +156,15 @@ a:focus {
 .site-nav a.external-link:visited,
 .site-nav a.external-link:active,
 .site-nav a.external-link:focus {
-  background: transparent;
+  background: #f1f5f3;
   border-color: var(--line);
   color: var(--ink);
+}
+
+.site-nav a.external-link:hover {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
 }
 
 .site-nav a:hover {
@@ -189,7 +195,6 @@ a:focus {
 .nav-dropdown {
   position: relative;
   flex: 0 0 auto;
-  top: -10px;
 }
 
 .nav-dropdown > summary {
@@ -201,6 +206,7 @@ a:focus {
   border: 1px solid transparent;
   border-radius: 999px;
   color: var(--ink);
+  font: inherit;
   font-weight: 800;
   line-height: 1;
   list-style: none;
@@ -483,7 +489,7 @@ main > section.section > .grid {
 
 /* Mobile */
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .nav-wrap {
     min-height: auto;
     align-items: flex-start;

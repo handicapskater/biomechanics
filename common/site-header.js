@@ -18,9 +18,10 @@
           ]
         },
         { href: "/access/", label: "Equality", match: ["/access/"] },
+        { href: "https://handicapskater.org/review-tools/", label: "Accommodation", match: [], externalSite: true },
         { href: "/case/", label: "Legal", match: ["/case/"] },
         { href: "/?welcome=1", label: "Guided Tour", match: [], action: "guided-tour" },
-        { href: "https://handicapskater.org/", label: "Standard", match: [] }
+        { href: "https://handicapskater.org/", label: "Standard", match: [], externalSite: true }
       ]
   };
 
@@ -70,7 +71,7 @@
   function renderNavLink(link, path) {
     const href = link.href || "#";
     const label = link.label || "";
-    const external = href.startsWith("http");
+    const external = Boolean(link.externalSite) || href.startsWith("http");
     const observatory = Boolean(link.observatory);
     const guidedTour = link.action === "guided-tour";
     const active = linkMatchesPath(link, path) ? ' aria-current="page"' : "";

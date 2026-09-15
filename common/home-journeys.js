@@ -64,7 +64,7 @@
     {key:"evidence", title:"Is there actual evidence?", subtitle:"From repeated comparisons to independent review", href:"/evidence/"},
     {key:"lifelong", title:"What does this mean for lifelong mobility?", subtitle:"Mobility should evolve with us", href:"/lifelong-mobility/"},
     {key:"recognition", title:"Is this legally recognized?", subtitle:"Documented decisions and their limits", href:"/access/"},
-    {key:"accommodation", title:"I need a mobility-aid accommodation", subtitle:"Start a mobility-aid review →", href:"https://handicapskater.org/review-tools/"}
+    {key:"accommodation", title:"I need a mobility-aid accommodation", subtitle:"Request accommodation help →", href:"https://handicapskater.org/review-tools/"}
   ];
   const dialog = document.createElement("dialog");
   if (typeof dialog.showModal !== "function") return; // Reading links still work.
