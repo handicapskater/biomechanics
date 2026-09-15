@@ -1,5 +1,9 @@
 const { test, expect } = require("@playwright/test");
 
+test.beforeEach(async ({page}) => {
+  await page.addInitScript(() => localStorage.setItem('handicapskater_welcome_modal', JSON.stringify({dismissedAt:Date.now(), version:1})));
+});
+
 test("evidence brief renders the selected governed bundle with accessible tables", async ({ page }) => {
   await page.goto("/evidence/");
   await expect(page.locator(".governed-graph-mounted")).toHaveCount(10);
@@ -64,7 +68,7 @@ test("health AI presents the connected governed architecture without overflow", 
 test("home and case retain compact governed evidence entry points", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator(".core-evidence-card")).toHaveCount(0);
-  await expect(page.locator('[data-home-journey="evidence"]')).toBeVisible();
+  await expect(page.locator('main [data-home-journey="evidence"]')).toBeVisible();
   await expect(page.locator(".governed-graph-error")).toHaveCount(0);
   await page.goto("/case/");
   await expect(page.locator(".governed-graph-mounted")).toHaveCount(3);
@@ -81,7 +85,7 @@ test("home retains lower evidence in source while guiding visitors to visible ev
   for (const id of ["visual-evidence", "continuity", "pain-function", "core-evidence", "hillsdale", "why-controlled-rolling"]) {
     expect(source).toContain(`id="${id}"`);
   }
-  await page.locator('[data-home-journey="evidence"]').click();
+  await page.locator('main [data-home-journey="evidence"]').click();
   await expect(page.locator('[data-journey-links] a[href="/evidence/#mobility-biomechanics-evidence"]')).toBeVisible();
   await expect(page.locator('[data-journey-links] a[href="/evidence/longitudinal/"]')).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBeTruthy();
@@ -90,8 +94,8 @@ test("home retains lower evidence in source while guiding visitors to visible ev
 test("case orientation and evidence opening preserve progressive disclosure", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator("#pain-function")).toHaveCount(0);
-  await expect(page.locator('[data-home-journey="walking"]')).toHaveAttribute("href", "/pain/");
-  await expect(page.locator('[data-home-journey="recognition"]')).toHaveAttribute("href", "/access/");
+  await expect(page.locator('main [data-home-journey="walking"]')).toHaveAttribute("href", "/pain/");
+  await expect(page.locator('main [data-home-journey="recognition"]')).toHaveAttribute("href", "/access/");
 
   await page.goto("/evidence/");
   const outcomes = page.locator("#evidence-outcomes");

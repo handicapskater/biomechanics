@@ -2,6 +2,7 @@ const {test,expect}=require('@playwright/test');
 const fs=require('fs');
 const pages=['/','/story/','/biomechanics/','/evidence/','/access/','/case/','/evidence/strava-gps-skate-maps/','/lifelong-mobility/'];
 test('canonical footer, scientific section order and responsive pages',async({page},info)=>{
+  await page.addInitScript(()=>localStorage.setItem('handicapskater_welcome_modal',JSON.stringify({dismissedAt:Date.now(),version:1})));
   await page.route('https://**/*',r=>r.abort());
   let canonical;
   for(const url of pages){

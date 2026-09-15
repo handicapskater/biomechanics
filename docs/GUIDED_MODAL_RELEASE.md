@@ -5,17 +5,26 @@
 `aa707df:index.html#heroModal` and `aa707df:common/css/global.css` contained the
 original motorcycle overlay: shaded backdrop, rounded light panel, close/replay,
 body scroll lock and image-led navigation. The old implementation auto-opened and
-persisted dismissal in localStorage, without explicit focus trapping/Escape.
+persisted `hideHero=true` in localStorage when “Don't show again” was selected.
+That preference had no expiration. The separate close control did not persist,
+and the footer “Welcome” control removed `hideHero` before reopening. It had no
+explicit focus trapping, Escape behavior, focus restoration or dialog semantics.
 It also contained claims and video targets that are not the current governed copy.
 
 This adaptation retains the compact visual pattern and uses native `dialog` with
 an explicit Tab wrap, Escape/cancel handling, focus restoration, stable header,
-independent content scrolling and reduced-motion support. It opens on demand;
-it does not restore the old unsupported scientific claims or dismissal storage.
+independent content scrolling and reduced-motion support. A fresh browser opens
+the landing after the homepage client is ready. Deliberate close, Escape and
+backdrop dismissal write only `{dismissedAt, version}` to the client-side
+`handicapskater_welcome_modal` localStorage preference. Version 1 dismissals remain
+current for 30 days; expired, malformed and version-mismatched values reopen safely.
+Storage failures never prevent opening or closing. No identity, health, CX, auth or
+session information is stored. The old unsupported scientific claims stay removed.
 
 ## One homepage client
 
-- `Explore the six questions` beside the direct public-video action opens landing.
+- `Explore HandicapSkater` beside the direct public-video action opens landing at
+  any time without clearing an existing dismissal preference.
 - Homepage cards 1–5 open their selected journey immediately in the same dialog.
 - All questions returns to the motorcycle landing without destroying the frame.
 - Card 6, on either surface, navigates directly to `.org/review-tools/`.
@@ -45,8 +54,10 @@ no auth, agent, database, IAM, budget or scientific configuration changes.
 
 ## Verification
 
-`tests/guided_modal.spec.js`: landing/video, five entries, All questions, .org
-handoff, offline fallback, return URL, one-frame reuse, forged-message rejection,
+`tests/guided_modal.spec.js`: fresh auto-open, remembered dismissal/refresh,
+manual reopening, 30-day expiry, versioning, malformed/unavailable storage,
+landing/video, five entries, All questions, `.org` handoff, offline fallback,
+return URL, one-frame reuse, forged-message rejection, background inertness,
 focus/Tab/Escape/body scroll and screenshots at all five configured viewports.
 The portal's site-ownership browser tests exercise the actual embedded client
 with anonymous and approved synthetic mocks, not billable native sessions.

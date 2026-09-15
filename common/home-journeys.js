@@ -42,6 +42,9 @@
   };
   const panel = document.getElementById("home-journey-panel");
   if (!panel) return;
+  const WELCOME_MODAL_STORAGE_KEY = "handicapskater_welcome_modal";
+  const WELCOME_MODAL_VERSION = 1;
+  const WELCOME_MODAL_EXPIRATION_MS = 30 * 24 * 60 * 60 * 1000;
   const heading = document.getElementById("home-journey-title");
   const feedback = panel.querySelector("[role=status]");
   const homeGrid = document.querySelector(".home-journey-grid");
@@ -79,12 +82,28 @@
     return link;
   });
   let frame = null, ready = false, initialEntry = null, activeKey = null;
-  let activeTrigger = null, savedOverflow = "";
+  let activeTrigger = null, savedOverflow = "", backgroundState = [];
+  function hasCurrentDismissal() {
+    try {
+      const preference = JSON.parse(window.localStorage.getItem(WELCOME_MODAL_STORAGE_KEY));
+      const age = Date.now() - preference.dismissedAt;
+      return preference.version === WELCOME_MODAL_VERSION && Number.isFinite(preference.dismissedAt) && age >= 0 && age < WELCOME_MODAL_EXPIRATION_MS;
+    } catch {
+      return false;
+    }
+  }
+  function rememberDismissal() {
+    try {
+      window.localStorage.setItem(WELCOME_MODAL_STORAGE_KEY, JSON.stringify({dismissedAt:Date.now(), version:WELCOME_MODAL_VERSION}));
+    } catch {}
+  }
   function open(trigger) {
     if (!dialog.open) {
-      activeTrigger = trigger;
+      activeTrigger = trigger || null;
       savedOverflow = document.body.style.overflow;
       document.body.style.overflow = "hidden";
+      backgroundState = [...document.body.children].filter(node => node !== dialog).map(node => [node, node.inert]);
+      backgroundState.forEach(([node]) => { node.inert = true; });
       dialog.showModal();
     }
   }
@@ -94,19 +113,32 @@
     scroll.scrollTop = 0;
     dialog.querySelector("#guided-modal-title").focus({preventScroll:true});
   }
-  function close() {
+  function dismiss() {
+    rememberDismissal();
     dialog.close();
-    restorePage();
   }
   function restorePage() {
     if (dialog.open) return;
     document.body.style.overflow = savedOverflow;
+    backgroundState.forEach(([node, inert]) => { node.inert = inert; });
+    backgroundState = [];
     [...triggers, ...menuLinks].forEach(link => link.setAttribute("aria-expanded", "false"));
-    activeTrigger?.focus();
+    if (activeTrigger) {
+      activeTrigger.focus();
+    } else {
+      const main = document.getElementById("main");
+      if (main) {
+        const hadTabindex = main.hasAttribute("tabindex");
+        main.setAttribute("tabindex", "-1");
+        main.focus({preventScroll:true});
+        if (!hadTabindex) main.addEventListener("blur", () => main.removeAttribute("tabindex"), {once:true});
+      }
+    }
   }
   dialog.addEventListener("close", restorePage);
-  dialog.addEventListener("cancel", event => { event.preventDefault(); close(); });
-  dialog.querySelector("[data-modal-close]").addEventListener("click", close);
+  dialog.addEventListener("cancel", event => { event.preventDefault(); dismiss(); });
+  dialog.querySelector("[data-modal-close]").addEventListener("click", dismiss);
+  dialog.addEventListener("click", event => { if (event.target === dialog) dismiss(); });
   allQuestions.addEventListener("click", landingView);
   dialog.addEventListener("keydown", event => {
     if (event.key !== "Tab") return;
@@ -119,7 +151,9 @@
     }
   });
   opener.hidden = false;
+  opener.textContent = "Explore HandicapSkater";
   opener.setAttribute("aria-haspopup", "dialog");
+  opener.setAttribute("aria-controls", dialog.id);
   opener.addEventListener("click", () => { open(opener); landingView(); });
   [...triggers, ...menuLinks].forEach(link => {
     const journey = journeys[link.dataset.homeJourney];
@@ -172,7 +206,7 @@
   panel.querySelector(".home-journey-close").addEventListener("click", landingView);
   window.addEventListener("message", (event) => {
     if (!frame || event.origin !== portal || event.source !== frame.contentWindow) return;
-    if (event.data?.type === "hs-escape" && dialog.open) close();
+    if (event.data?.type === "hs-escape" && dialog.open) dismiss();
     if (event.data?.type === "hs-close" && dialog.open) landingView();
     if (event.data?.type === "hs-size" && Number.isFinite(event.data.height)) frame.style.height = Math.max(250, Math.min(4000, event.data.height + 24)) + "px";
     if (event.data?.type === "hs-ready") {
@@ -184,5 +218,9 @@
     }
   });
   const requested = new URL(window.location.href).searchParams.get("journey");
-  if (entries[requested]) triggers.find(link => link.dataset.homeJourney === requested)?.click();
+  if (entries[requested]) {
+    triggers.find(link => link.dataset.homeJourney === requested)?.click();
+  } else if (!hasCurrentDismissal()) {
+    requestAnimationFrame(() => { open(null); landingView(); });
+  }
 })();

@@ -1,5 +1,6 @@
 const { test, expect } = require("@playwright/test");
 test.beforeEach(async ({page}) => {
+  await page.addInitScript(() => localStorage.setItem('handicapskater_welcome_modal', JSON.stringify({dismissedAt:Date.now(), version:1})));
   await page.route('https://hs-portal-324477223314.us-central1.run.app/**', route => route.abort());
 });
 
