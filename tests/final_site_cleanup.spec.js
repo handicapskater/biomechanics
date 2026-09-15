@@ -18,13 +18,40 @@ test('canonical footer, scientific section order and responsive pages',async({pa
     if(!canonical)canonical=html;else expect(html).toBe(canonical);
     await expect(footer.locator('a')).toHaveCount(9);
     await expect(footer.getByRole('link',{name:'Facebook',exact:true})).toHaveAttribute('href','https://www.facebook.com/RollerGracie/');
-    await expect(footer.getByRole('link',{name:'Welcome',exact:true})).toHaveAttribute('href','/?welcome=1');
+    const guidedTour=footer.getByRole('link',{name:'Guided Tour',exact:true});
+    const social=footer.locator('.home-footer-social');
+    const donate=footer.getByRole('link',{name:'Donate / Support',exact:true});
+    await expect(guidedTour).toHaveAttribute('href','/?welcome=1');
+    await expect(guidedTour).toHaveCSS('background-color','rgb(246, 199, 107)');
+    await expect(donate).not.toHaveCSS('background-color','rgba(0, 0, 0, 0)');
+    await expect(guidedTour).toHaveCSS('min-height','44px');
+    await expect(donate).toHaveCSS('min-height','44px');
     if(url==='/'){
-      await expect(footer.getByRole('link',{name:'Welcome',exact:true})).toHaveAttribute('aria-haspopup','dialog');
-      await expect(footer.getByRole('link',{name:'Welcome',exact:true})).toHaveAttribute('aria-controls','heroModal');
+      await expect(guidedTour).toHaveAttribute('aria-haspopup','dialog');
+      await expect(guidedTour).toHaveAttribute('aria-controls','heroModal');
     }
-    await footer.getByRole('link',{name:'Donation',exact:true}).focus();
-    await expect(footer.getByRole('link',{name:'Donation',exact:true})).toBeFocused();
+    await guidedTour.focus();
+    await expect(guidedTour).toBeFocused();
+    await expect(guidedTour).not.toHaveCSS('outline-style','none');
+    await donate.focus();
+    await expect(donate).toBeFocused();
+    await expect(donate).not.toHaveCSS('outline-style','none');
+    const guidedBox=await guidedTour.boundingBox();
+    const socialBox=await social.boundingBox();
+    const donateBox=await donate.boundingBox();
+    if(page.viewportSize().width>600){
+      expect(guidedBox.x+guidedBox.width).toBeLessThanOrEqual(socialBox.x);
+      expect(socialBox.x+socialBox.width).toBeLessThanOrEqual(donateBox.x);
+    }else{
+      expect(guidedBox.x+guidedBox.width/2).toBeCloseTo(page.viewportSize().width/2,-1);
+      expect(socialBox.x+socialBox.width/2).toBeCloseTo(page.viewportSize().width/2,-1);
+      expect(donateBox.x+donateBox.width/2).toBeCloseTo(page.viewportSize().width/2,-1);
+    }
+    expect(await footer.evaluate(node=>node.scrollWidth<=node.clientWidth),url).toBe(true);
+    for(const box of [guidedBox,socialBox,donateBox]){
+      expect(box.x,url).toBeGreaterThanOrEqual(0);
+      expect(box.x+box.width,url).toBeLessThanOrEqual(page.viewportSize().width);
+    }
     if(['/','/story/','/biomechanics/','/lifelong-mobility/'].includes(url))
       expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),url).toBe(true);
     if(url==='/biomechanics/'){

@@ -41,6 +41,7 @@
 <footer class="site-footer home-contact-footer" aria-label="Contact and support">
   <div class="home-footer-inner">
     <div class="home-footer-actions">
+    <a class="home-footer-welcome" data-welcome-modal href="/?welcome=1">Guided Tour</a>
     <nav class="home-footer-social" aria-label="Connect with HandicapSkater on social media">
       <a href="https://www.facebook.com/RollerGracie/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
@@ -102,8 +103,7 @@
         </svg>
       </a>
     </nav>
-    <a class="home-footer-welcome" data-welcome-modal href="/?welcome=1">Welcome</a>
-    <a class="home-footer-donate" href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai" target="_blank" rel="noopener noreferrer">Donation</a>
+    <a class="home-footer-donate" href="https://www.gofundme.com/f/handicapskater-revolutionizing-health-mobility-through-ai" target="_blank" rel="noopener noreferrer">Donate / Support</a>
     </div>
     <p class="home-footer-meta"><a href="/common/copyright.htm">© 2004–2026 HandicapSkater</a></p>
     <p class="footer-description home-footer-description"><span class="small-caps">HandicapSkater</span> separates physiologic burden, mechanical motion exposure, and body coupling so mobility aid review can preserve context. This site presents an N-of-1 scientific record and public case study.</p>

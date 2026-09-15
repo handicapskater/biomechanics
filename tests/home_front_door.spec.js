@@ -32,8 +32,8 @@ test("human-first sequence preserves evidence, footer, and responsive layout", a
   }
   await expect(page.locator(".home-footer-description")).toContainText("separates physiologic burden, mechanical motion exposure, and body coupling");
   await expect(page.locator(".home-footer-social a")).toHaveCount(6);
-  await expect(page.locator(".home-footer-welcome")).toHaveText("Welcome");
-  await expect(page.locator(".home-footer-donate")).toHaveText("Donation");
+  await expect(page.locator(".home-footer-welcome")).toHaveText("Guided Tour");
+  await expect(page.locator(".home-footer-donate")).toHaveText("Donate / Support");
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.screenshot({ path: testInfo.outputPath("homepage-full.png"), fullPage: true });
   await page.screenshot({ path: testInfo.outputPath("homepage-opening.png") });

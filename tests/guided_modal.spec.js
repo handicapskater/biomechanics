@@ -8,6 +8,31 @@ const keys = ['walking', 'rolling', 'evidence', 'lifelong', 'recognition'];
 const home = key => `main [data-home-journey="${key}"]`;
 const currentPreference = () => ({suppressAutoOpen:true, suppressedAt:Date.now(), version:modalVersion});
 
+async function captureModalFirstPaint(page) {
+  await page.addInitScript(() => {
+    window.__modalFirstPaint = [];
+    const showModal = HTMLDialogElement.prototype.showModal;
+    HTMLDialogElement.prototype.showModal = function () {
+      showModal.call(this);
+      if (!window.__modalFirstPaint.length) {
+        const started = performance.now();
+        const sample = () => {
+          const dialogStyle = getComputedStyle(this);
+          const headerStyle = getComputedStyle(this.querySelector('.guided-modal-header'));
+          window.__modalFirstPaint.push({
+            elapsed:Math.round(performance.now() - started),
+            opacity:dialogStyle.opacity,
+            background:dialogStyle.backgroundColor,
+            headerBackground:headerStyle.backgroundColor
+          });
+          if (performance.now() - started < 220) requestAnimationFrame(sample);
+        };
+        sample();
+      }
+    };
+  });
+}
+
 async function seedPreference(page, value) {
   await page.addInitScript(({key, stored}) => {
     if (localStorage.getItem(key) === null) localStorage.setItem(key, stored);
@@ -22,6 +47,7 @@ test.beforeEach(async ({page}) => {
 });
 
 test('fresh browser auto-opens; only the explicit checkbox suppresses later auto-open', async ({page, browserName}, info) => {
+  await captureModalFirstPaint(page);
   await page.goto('/');
   const modal = page.locator('#heroModal');
   const checkbox = modal.getByRole('checkbox', {name:"Don't show this again"});
@@ -30,14 +56,20 @@ test('fresh browser auto-opens; only the explicit checkbox suppresses later auto
   const close = modal.locator('[data-modal-close]');
 
   await expect(modal).toBeVisible();
+  await expect.poll(() => page.evaluate(() => window.__modalFirstPaint.length)).toBeGreaterThan(2);
+  const firstPaint = await page.evaluate(() => window.__modalFirstPaint);
+  expect(firstPaint.every(frame => frame.opacity === '1')).toBe(true);
+  expect(firstPaint.every(frame => frame.background === 'rgb(245, 250, 247)')).toBe(true);
+  expect(firstPaint.every(frame => frame.headerBackground === 'rgb(245, 250, 247)')).toBe(true);
   await expect(page.locator('#guided-modal-title')).toBeFocused();
   await expect(page.locator('#main')).toHaveJSProperty('inert', true);
   await expect(checkbox).not.toBeChecked();
   await expect(opener).toHaveText('Explore HandicapSkater');
-  await expect(footerOpener).toHaveText('Welcome');
+  await expect(footerOpener).toHaveText('Guided Tour');
   await expect(footerOpener).toHaveAttribute('href', '/?welcome=1');
   await expect(modal.getByRole('heading', {name:'Riding a Motorcycle with Skates'})).toBeVisible();
-  await expect(modal).toContainText('Public transportation refused to carry me with my skates');
+  await expect(modal).toContainText('Public transportation refused');
+  await expect(modal).toContainText('motorcycle');
   const source = await page.locator('main .home-journey-grid a').evaluateAll(nodes => nodes.map(node => [node.textContent, node.href]));
   expect(await modal.locator('[data-modal-choices] a').evaluateAll(nodes => nodes.map(node => [node.textContent, node.href]))).toEqual(source);
   await expect(modal.locator('[data-modal-choices] a')).toHaveCount(6);
@@ -156,7 +188,7 @@ test('shared footer reopens landing from another page without clearing suppressi
   await seedPreference(page, currentPreference());
   await page.goto('/story/');
   const footerOpener = page.locator('[data-welcome-modal]');
-  await expect(footerOpener).toHaveText('Welcome');
+  await expect(footerOpener).toHaveText('Guided Tour');
   await expect(footerOpener).toHaveAttribute('href', '/?welcome=1');
   const beforeManualOpen = await page.evaluate(key => localStorage.getItem(key), storageKey);
   await footerOpener.click();

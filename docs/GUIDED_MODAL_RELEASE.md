@@ -28,9 +28,14 @@ claims stay removed.
 
 - `Explore HandicapSkater` beside the direct public-video action opens landing at
   any time without clearing an existing dismissal preference.
-- The historical shared-footer label `Welcome` opens landing in place on the
-  homepage. Other `.com` pages use `/?welcome=1`; the homepage consumes and removes
-  that one-time signal before opening, so later refreshes still respect suppression.
+- The historical shared-footer reopening behavior now uses the clearer public label
+  `Guided Tour`. It opens landing in place on the homepage. Other `.com` pages use
+  `/?welcome=1`; the homepage consumes and removes that one-time signal before
+  opening, so later refreshes still respect suppression.
+- The compact shared footer places primary `Guided Tour`, social links and secondary
+  `Donate / Support` in that desktop order. At 600px and below the same DOM/tab order
+  becomes a centered one-column stack; this avoids six-icon collisions and avoids a
+  mismatch between visual and keyboard order.
 - Homepage cards 1–5 open their selected journey immediately in the same dialog.
 - All questions returns to the motorcycle landing without destroying the frame.
 - Card 6, on either surface, navigates directly to `.org/review-tools/`.
@@ -57,6 +62,12 @@ Sources remain the public `/access/`, `/case/` and `/story/` records.
 No native/Ask Evidence call or email is required for this presentation release.
 The small portal keyboard bridge reuses its existing scale-to-zero service;
 no auth, agent, database, IAM, budget or scientific configuration changes.
+
+The prior dialog entrance animated the entire element from `opacity: 0`. Although
+its computed background was already correct, translucent first frames blended with
+the page beneath and produced the reported tan flash. The entrance now keeps the
+dialog and header fully opaque from the first visible frame and animates vertical
+position only. Cold-context tests sample every initial animation frame.
 
 ## Verification
 
