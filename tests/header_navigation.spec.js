@@ -32,9 +32,6 @@ test('shared header has ordered, aligned navigation and working actions', async 
   await page.locator('[data-modal-close]').click();
   const evidence = nav.locator('.nav-dropdown > summary');
   await expect(evidence).toHaveText('Evidence');
-  await evidence.press('Space');
-  await expect(nav.locator('.nav-dropdown')).toHaveJSProperty('open', true);
-  await expect(nav.getByRole('link', {name:'Evidence Brief'})).toBeVisible();
 
   const geometry = await controls.evaluateAll(nodes => nodes.map(node => {
     const style = getComputedStyle(node);
@@ -43,5 +40,28 @@ test('shared header has ordered, aligned navigation and working actions', async 
   expect(new Set(geometry.map(item => Math.round(item.height))).size).toBe(1);
   expect(new Set(geometry.map(item => item.radius)).size).toBe(1);
   expect(new Set(geometry.map(item => item.font)).size).toBe(1);
+
+  const alignment = await nav.evaluate(node => {
+    const primary = node.querySelector(':scope > .nav-link').getBoundingClientRect();
+    const wrapper = node.querySelector(':scope > .nav-dropdown').getBoundingClientRect();
+    const evidence = node.querySelector(':scope > .nav-dropdown > summary').getBoundingClientRect();
+    const center = rect => rect.top + rect.height / 2;
+    return {
+      primaryHeight: primary.height,
+      wrapperHeight: wrapper.height,
+      evidenceHeight: evidence.height,
+      wrapperCenterDelta: Math.abs(center(wrapper) - center(primary)),
+      evidenceCenterDelta: Math.abs(center(evidence) - center(primary)),
+    };
+  });
+  expect(alignment.wrapperHeight).toBeCloseTo(alignment.primaryHeight, 4);
+  expect(alignment.evidenceHeight).toBeCloseTo(alignment.primaryHeight, 4);
+  expect(alignment.wrapperCenterDelta).toBeLessThan(0.1);
+  expect(alignment.evidenceCenterDelta).toBeLessThan(0.1);
+
+  await evidence.focus();
+  await page.keyboard.press('Enter');
+  await expect(nav.locator('.nav-dropdown')).toHaveJSProperty('open', true);
+  await expect(nav.getByRole('link', {name:'Evidence Brief'})).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
