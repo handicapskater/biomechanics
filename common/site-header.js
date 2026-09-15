@@ -19,6 +19,7 @@
         },
         { href: "/access/", label: "Equality", match: ["/access/"] },
         { href: "/case/", label: "Legal", match: ["/case/"] },
+        { href: "/?welcome=1", label: "Guided Tour", match: [], action: "guided-tour" },
         { href: "https://handicapskater.org/", label: "Standard", match: [] }
       ]
   };
@@ -71,15 +72,17 @@
     const label = link.label || "";
     const external = href.startsWith("http");
     const observatory = Boolean(link.observatory);
+    const guidedTour = link.action === "guided-tour";
     const active = linkMatchesPath(link, path) ? ' aria-current="page"' : "";
     const attrs = external ? ' target="_blank" rel="noopener noreferrer"' : "";
-    const className = external ? ' class="nav-link external-link"' : ' class="nav-link"';
+    const className = external ? ' class="nav-link external-link"' : ` class="nav-link${guidedTour ? " nav-guided-tour" : ""}"`;
 
     // return `<a${className} href="${href}"${active}${attrs}>${label}</a>`;
     const renderedLabel = renderHeaderLabel(label);
 
     const observatoryAttr = observatory ? " data-evidence-observatory-link" : "";
-    return `<a${className}${observatoryAttr} href="${href || '#'}"${active}${attrs}>${renderedLabel}</a>`;
+    const guidedTourAttr = guidedTour ? ` data-welcome-modal aria-haspopup="dialog"${path === "/" ? ' aria-controls="heroModal"' : ""}` : "";
+    return `<a${className}${observatoryAttr}${guidedTourAttr} href="${href || '#'}"${active}${attrs}>${renderedLabel}</a>`;
   }
 
   function renderPrimaryNav(path) {

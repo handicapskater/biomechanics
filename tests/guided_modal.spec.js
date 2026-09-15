@@ -51,7 +51,7 @@ test('fresh browser auto-opens; only the explicit checkbox suppresses later auto
   await page.goto('/');
   const modal = page.locator('#heroModal');
   const checkbox = modal.getByRole('checkbox', {name:"Don't show this again"});
-  const footerOpener = page.locator('[data-welcome-modal]');
+  const footerOpener = page.locator('.home-footer-welcome');
   const close = modal.locator('[data-modal-close]');
 
   await expect(modal).toBeVisible();
@@ -171,14 +171,14 @@ test('storage failures do not block auto-open, checkbox choice, close, or manual
   await modal.getByRole('checkbox', {name:"Don't show this again"}).check();
   await page.locator('[data-modal-close]').click();
   await expect(modal).not.toBeVisible();
-  await page.locator('[data-welcome-modal]').click();
+  await page.locator('.site-nav .nav-guided-tour').click();
   await expect(modal).toBeVisible();
 });
 
 test('shared footer reopens landing from another page without clearing suppression', async ({page}) => {
   await seedPreference(page, currentPreference());
   await page.goto('/story/');
-  const footerOpener = page.locator('[data-welcome-modal]');
+  const footerOpener = page.locator('.home-footer-welcome');
   await expect(footerOpener).toHaveText('Guided Tour');
   await expect(footerOpener).toHaveAttribute('href', '/?welcome=1');
   const beforeManualOpen = await page.evaluate(key => localStorage.getItem(key), storageKey);
@@ -189,7 +189,7 @@ test('shared footer reopens landing from another page without clearing suppressi
   await expect(page.getByRole('checkbox', {name:"Don't show this again"})).toBeChecked();
   expect(await page.evaluate(key => localStorage.getItem(key), storageKey)).toBe(beforeManualOpen);
   await page.locator('[data-modal-close]').click();
-  await expect(page.locator('[data-welcome-modal]')).toBeFocused();
+  await expect(page.locator('.home-footer-welcome')).toBeFocused();
   expect(await page.evaluate(key => localStorage.getItem(key), storageKey)).toBe(beforeManualOpen);
   await page.reload();
   await expect(page.locator('#heroModal')).not.toBeVisible();
@@ -200,7 +200,7 @@ test('modal cards open five journeys and the sixth hands off to .org', async ({p
   await page.goto('/');
   const beforeJourneys = await page.evaluate(key => localStorage.getItem(key), storageKey);
   for (const key of keys) {
-    await page.locator('[data-welcome-modal]').click();
+    await page.locator('.site-nav .nav-guided-tour').click();
     const trigger = page.locator(home(key));
     const title = await trigger.locator('strong').textContent();
     await trigger.click();
@@ -215,7 +215,7 @@ test('modal cards open five journeys and the sixth hands off to .org', async ({p
     await expect(page.locator('#guided-modal-title')).toBeFocused();
     expect(await page.evaluate(storageKey => localStorage.getItem(storageKey), storageKey)).toBe(beforeJourneys);
     await page.keyboard.press('Escape');
-    await expect(page.locator('[data-welcome-modal]')).toBeFocused();
+    await expect(page.locator('.site-nav .nav-guided-tour')).toBeFocused();
   }
   await page.goto('/?journey=lifelong&route=MEASURED#audience-routing');
   await expect(page.locator('#heroModal')).toBeVisible();
@@ -248,7 +248,7 @@ test('one trusted broker frame survives perspective changes and preserves suppre
   });
   await page.goto('/');
   const beforeJourney = await page.evaluate(key => localStorage.getItem(key), storageKey);
-  await page.locator('[data-welcome-modal]').click();
+  await page.locator('.site-nav .nav-guided-tour').click();
   await page.locator(home('walking')).click();
   const frame = page.frameLocator('#heroModal iframe');
   await expect(frame.locator('h2')).toBeVisible();
@@ -264,7 +264,7 @@ test('one trusted broker frame survives perspective changes and preserves suppre
   await page.keyboard.press('Escape');
   await expect(page.locator('#heroModal')).not.toBeVisible();
   expect(await page.evaluate(key => localStorage.getItem(key), storageKey)).toBe(beforeJourney);
-  await page.locator('[data-welcome-modal]').click();
+  await page.locator('.site-nav .nav-guided-tour').click();
   await page.locator(home('recognition')).click();
   await expect(frame.locator('h2')).toHaveText('PUBLIC_LEGAL');
   expect(loads).toBe(1);

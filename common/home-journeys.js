@@ -73,13 +73,13 @@
   dialog.setAttribute("aria-modal", "true");
   dialog.setAttribute("aria-labelledby", "guided-tour-label");
   dialog.setAttribute("aria-describedby", "guided-tour-subtitle");
-  dialog.innerHTML = '<header class="guided-modal-header"><button type="button" data-all-questions hidden>← All questions</button><div class="guided-modal-identity"><strong id="guided-tour-label">HANDICAPSKATER · GUIDED TOUR</strong><span id="guided-tour-subtitle">Start with the story. Then choose what you want to understand.</span></div><button type="button" data-modal-close aria-label="Close Guided Tour">Close ×</button></header><div class="guided-modal-scroll"><section data-modal-landing><h2 id="guided-modal-title" tabindex="-1">Riding a Motorcycle with Skates</h2><div class="guided-modal-hook"><div data-modal-video></div><div><p>My skates function as a prosthetic mobility device. Because of my disability, reaching down to remove them or put them back on is extremely painful.</p><p>Public transportation refused to let me ride with my skates, citing safety concerns, while initially providing no alternative transportation. I began riding a motorcycle with my skates because I still needed a way to get around.</p><p><strong class="guided-modal-continuity">Shop. Skate. Ride. Continuous mobility.</strong> The transportation changes, but my need for the mobility device doesn’t.</p><a data-modal-video-text>Watch the public video ↗</a></div></div><h3>What do you want to understand?</h3><nav class="home-journey-grid" aria-label="Six guided perspectives" data-modal-choices></nav></section></div><div class="guided-modal-preference"><input type="checkbox" id="guided-modal-suppress"><label for="guided-modal-suppress">Don\'t show this again</label></div>';
+  dialog.innerHTML = '<header class="guided-modal-header"><button type="button" data-all-questions hidden>← All questions</button><div class="guided-modal-identity"><strong id="guided-tour-label">HANDICAPSKATER · GUIDED TOUR</strong><span id="guided-tour-subtitle">Watch the video. Read the Human Story. Or choose what you want to understand.</span></div><button type="button" data-modal-close aria-label="Close Guided Tour">Close ×</button></header><div class="guided-modal-scroll"><section data-modal-landing><h2 id="guided-modal-title" tabindex="-1">Riding a Motorcycle with Skates</h2><div class="guided-modal-hook"><div data-modal-video></div><div><p>My skates function as a prosthetic mobility device. Because of my disability, reaching down to remove them or put them back on is extremely painful.</p><p>Public transportation refused to let me ride with my skates, citing safety concerns, while initially providing no alternative transportation. I began riding a motorcycle with my skates because I still needed a way to get around.</p><p><strong class="guided-modal-continuity">Shop. Skate. Ride. Continuous mobility.</strong> The transportation changes, but my need for the mobility device doesn’t.</p><div class="guided-modal-actions"><a data-modal-video-text>Watch the public video ↗</a><a data-modal-story href="/#story">Read the Human Story →</a></div></div></div><h3>What do you want to understand?</h3><nav class="home-journey-grid" aria-label="Six guided perspectives" data-modal-choices></nav></section></div><div class="guided-modal-preference"><input type="checkbox" id="guided-modal-suppress"><label for="guided-modal-suppress">Don\'t show this again</label></div>';
   const landing = dialog.querySelector("[data-modal-landing]");
   const scroll = dialog.querySelector(".guided-modal-scroll");
   const allQuestions = dialog.querySelector("[data-all-questions]");
   const suppressAutoOpen = dialog.querySelector("#guided-modal-suppress");
   const opener = document.querySelector(".home-guided-open");
-  const footerOpeners = [...document.querySelectorAll("[data-welcome-modal]")];
+  const storyLink = dialog.querySelector("[data-modal-story]");
   const imageLink = document.createElement("a");
   imageLink.href = "https://www.reddit.com/r/HandicapSkater/s/6pPCv2k02t";
   imageLink.target = "_blank";
@@ -92,6 +92,23 @@
   dialog.querySelector("[data-modal-video]").append(imageLink);
   const videoText = dialog.querySelector("[data-modal-video-text]");
   videoText.href = imageLink.href; videoText.target = imageLink.target; videoText.rel = imageLink.rel;
+  storyLink.addEventListener("click", event => {
+    const story = document.getElementById("story");
+    if (!story) return;
+    event.preventDefault();
+    window.history.pushState(window.history.state, "", "/#story");
+    const storyHeading = story.querySelector("h1, h2");
+    dialog.addEventListener("close", () => {
+      if (storyHeading) {
+        const hadTabindex = storyHeading.hasAttribute("tabindex");
+        storyHeading.setAttribute("tabindex", "-1");
+        storyHeading.focus({preventScroll:true});
+        if (!hadTabindex) storyHeading.addEventListener("blur", () => storyHeading.removeAttribute("tabindex"), {once:true});
+      }
+      story.scrollIntoView({block:"start"});
+    }, {once:true});
+    dialog.close();
+  });
   // Move, rather than duplicate, the existing client and its one shared iframe.
   scroll.append(panel);
   document.body.append(dialog);
@@ -186,15 +203,12 @@
     opener.setAttribute("aria-controls", dialog.id);
     opener.addEventListener("click", () => { open(opener); landingView(); });
   }
-  footerOpeners.forEach(footerOpener => {
-    footerOpener.setAttribute("aria-haspopup", "dialog");
-    footerOpener.setAttribute("aria-controls", dialog.id);
-    footerOpener.addEventListener("click", event => {
-      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-      event.preventDefault();
-      open(footerOpener);
-      landingView();
-    });
+  document.addEventListener("click", event => {
+    const manualOpener = event.target.closest("[data-welcome-modal]");
+    if (!manualOpener || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    open(manualOpener);
+    landingView();
   });
   suppressAutoOpen.addEventListener("change", saveSuppressionChoice);
   [...triggers, ...menuLinks].forEach(link => {
@@ -266,7 +280,7 @@
   } else if (welcomeRequested) {
     requestedUrl.searchParams.delete("welcome");
     window.history.replaceState(window.history.state, "", requestedUrl.pathname + requestedUrl.search + requestedUrl.hash);
-    open(footerOpeners[0] || null);
+    open(document.querySelector("[data-welcome-modal]") || null);
     landingView();
   } else if (!hasCurrentSuppression()) {
     requestAnimationFrame(() => { open(null); landingView(); });

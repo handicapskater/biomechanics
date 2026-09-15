@@ -26,6 +26,7 @@
 .guided-modal-hook p { font-size: .9rem; margin: 0 0 .7rem; }
 .guided-modal-continuity { color: #154e41; font-weight: 800; }
 .guided-modal-hook a { display: inline-block; min-height: 44px; text-underline-offset: .2em; }
+.guided-modal-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem 1.25rem; }
 .home-guided-dialog .home-journey-grid a { padding: .8rem; min-height: 104px; }
 .home-guided-dialog .home-journey-grid strong { font-size: 1rem; }
 .home-guided-dialog .home-journey-panel { margin: 0; padding: 0; border: 0; }
@@ -46,6 +47,8 @@
 .page-home .home-front-door { --hero-image: none; }
 .page-home .home-front-door h1 { max-width: none; font-size: clamp(2.2rem, 4.5vw, 3.8rem); }
 .page-home .home-front-door .lead { max-width: 52ch; margin-bottom: 1rem; }
+.page-home #story { scroll-margin-top: 5rem; }
+.page-home .home-story-invitation { max-width: 58ch; margin: .75rem 0; font-size: clamp(1.05rem, 2vw, 1.25rem); font-weight: 750; color: #e1eae8; }
 .home-motorcycle-hook { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 1.5rem; align-items: center; }
 .home-motorcycle-hook figure { margin: 0; }
 .home-motorcycle-hook img { display: block; width: 100%; height: 240px; object-fit: contain; background: #142128; border-radius: 10px; }

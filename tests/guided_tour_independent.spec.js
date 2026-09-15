@@ -39,7 +39,7 @@ test('tour works without homepage cards, panel, video block or extra opener', as
   await expect(modal).toHaveAttribute('aria-labelledby', 'guided-tour-label');
   await expect(modal).toHaveAttribute('aria-describedby', 'guided-tour-subtitle');
   await expect(page.locator('#guided-tour-label')).toHaveText('HANDICAPSKATER · GUIDED TOUR');
-  await expect(page.locator('#guided-tour-subtitle')).toHaveText('Start with the story. Then choose what you want to understand.');
+  await expect(page.locator('#guided-tour-subtitle')).toHaveText('Watch the video. Read the Human Story. Or choose what you want to understand.');
   await expect(page.locator('.guided-modal-header')).toHaveCSS('background-color', 'rgb(21, 78, 65)');
   const firstPaint = await page.evaluate(() => window.__guidedFirstPaint);
   expect(firstPaint.length).toBeGreaterThan(0);
@@ -57,6 +57,8 @@ test('tour works without homepage cards, panel, video block or extra opener', as
   const video = modal.locator('[data-modal-video] a');
   await expect(video).toHaveAttribute('href', 'https://www.reddit.com/r/HandicapSkater/s/6pPCv2k02t');
   await expect(modal.locator('[data-modal-video-text]')).toHaveAttribute('href', await video.getAttribute('href'));
+  await expect(modal.locator('[data-modal-story]')).toHaveText('Read the Human Story →');
+  await expect(modal.locator('[data-modal-story]')).toHaveAttribute('href', '/#story');
   await expect.poll(() => video.locator('img').evaluate(img => img.naturalWidth)).toBeGreaterThan(0);
   for (const key of keys) {
     const link = modal.locator(`[data-modal-choices] [data-home-journey="${key}"]`);
@@ -103,11 +105,53 @@ test('checkbox suppression, footer reopening, focus trap and unchecked refresh w
   await page.keyboard.press('Escape');
   await page.reload();
   await expect(modal).not.toBeVisible();
-  await page.locator('[data-welcome-modal]').click();
+  await page.locator('.site-nav .nav-guided-tour').click();
   await expect(modal).toBeVisible();
   await expect(checkbox).toBeChecked();
   await page.locator('[data-modal-close]').click();
-  await expect(page.locator('[data-welcome-modal]')).toBeFocused();
+  await expect(page.locator('.site-nav .nav-guided-tour')).toBeFocused();
+  await page.reload();
+  await expect(modal).not.toBeVisible();
+  await page.locator('.home-footer-welcome').click();
+  await expect(modal).toBeVisible();
+  await expect(checkbox).toBeChecked();
+  await page.locator('[data-modal-close]').click();
+  await expect(page.locator('.home-footer-welcome')).toBeFocused();
+});
+
+test('Human Story action and shared header complete the watch-read-explore journey', async ({page}) => {
+  await page.goto('/');
+  const modal = page.locator('#heroModal');
+  const headerTour = page.locator('.site-nav .nav-guided-tour');
+  const footerTour = page.locator('.home-footer-welcome');
+  await expect(page.locator('#story')).toHaveAttribute('aria-labelledby', 'home-title');
+  await expect(page.locator('#home-title')).toHaveText('Walking disables me. Skates give me mobility.');
+  await expect(page.locator('.home-story-invitation')).toContainText('unconventional mobility aid');
+  await expect(headerTour).toHaveText('Guided Tour');
+  await expect(headerTour).toHaveAttribute('href', '/?welcome=1');
+  await expect(headerTour).toHaveAttribute('aria-haspopup', 'dialog');
+  await expect(headerTour).toHaveAttribute('aria-controls', 'heroModal');
+  await expect(headerTour).toHaveCSS('border-color', 'rgb(47, 111, 84)');
+  await expect(footerTour).toHaveText('Guided Tour');
+  await modal.locator('[data-modal-story]').click();
+  await expect(modal).not.toBeVisible();
+  await expect(page).toHaveURL(/\/#story$/);
+  await expect(page.locator('#home-title')).toBeFocused();
+  expect(await page.evaluate(() => {
+    const box = document.getElementById('story').getBoundingClientRect();
+    return box.top < innerHeight && box.bottom > 0;
+  })).toBe(true);
+  await headerTour.click();
+  await expect(modal).toBeVisible();
+  await expect(modal.locator('[data-modal-landing]')).toBeVisible();
+  await page.locator('[data-modal-close]').click();
+  await expect(headerTour).toBeFocused();
+  await footerTour.scrollIntoViewIfNeeded();
+  await footerTour.click();
+  await expect(modal).toBeVisible();
+  await expect(modal.locator('[data-modal-landing]')).toBeVisible();
+  expect(await page.locator('.site-header').evaluate(el => el.scrollWidth <= el.clientWidth)).toBe(true);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 
 test('sign-in journey returns and footer URL open the independent tour', async ({page}) => {
@@ -121,4 +165,15 @@ test('sign-in journey returns and footer URL open the independent tour', async (
   await page.route('https://handicapskater.org/review-tools/', route => route.fulfill({body:'Review Tools entry'}));
   await page.locator('#heroModal .home-journey-accommodation').click();
   await expect(page).toHaveURL('https://handicapskater.org/review-tools/');
+});
+
+test('shared header action returns from another page to the homepage tour', async ({page}) => {
+  await page.goto('/biomechanics/');
+  const headerTour = page.locator('.site-nav .nav-guided-tour');
+  await expect(headerTour).toHaveAttribute('href', '/?welcome=1');
+  await expect(headerTour).not.toHaveAttribute('aria-controls');
+  await headerTour.click();
+  await expect(page).toHaveURL('/');
+  await expect(page.locator('#heroModal')).toBeVisible();
+  await expect(page.locator('[data-modal-landing]')).toBeVisible();
 });

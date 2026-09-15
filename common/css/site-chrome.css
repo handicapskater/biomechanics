@@ -167,6 +167,20 @@ a:focus {
   color: #fff;
 }
 
+.site-nav a.nav-guided-tour,
+.site-nav a.nav-guided-tour:visited {
+  border-color: var(--green);
+  background: #edf6f2;
+  color: #154e41;
+}
+
+.site-nav a.nav-guided-tour:hover,
+.site-nav a.nav-guided-tour:focus-visible {
+  border-color: var(--green);
+  background: var(--green);
+  color: #fff;
+}
+
 .site-nav a:focus-visible {
   outline: 3px solid var(--chrome-focus);
   outline-offset: 2px;
