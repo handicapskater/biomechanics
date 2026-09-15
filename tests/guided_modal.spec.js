@@ -5,7 +5,7 @@ const storageKey = 'handicapskater_welcome_modal';
 const modalVersion = 2;
 const thirtyDays = 30 * 24 * 60 * 60 * 1000;
 const keys = ['walking', 'rolling', 'evidence', 'lifelong', 'recognition'];
-const home = key => `main [data-home-journey="${key}"]`;
+const home = key => `#heroModal [data-modal-choices] [data-home-journey="${key}"]`;
 const currentPreference = () => ({suppressAutoOpen:true, suppressedAt:Date.now(), version:modalVersion});
 
 async function captureModalFirstPaint(page) {
@@ -51,7 +51,6 @@ test('fresh browser auto-opens; only the explicit checkbox suppresses later auto
   await page.goto('/');
   const modal = page.locator('#heroModal');
   const checkbox = modal.getByRole('checkbox', {name:"Don't show this again"});
-  const opener = page.locator('.home-guided-open');
   const footerOpener = page.locator('[data-welcome-modal]');
   const close = modal.locator('[data-modal-close]');
 
@@ -60,20 +59,17 @@ test('fresh browser auto-opens; only the explicit checkbox suppresses later auto
   const firstPaint = await page.evaluate(() => window.__modalFirstPaint);
   expect(firstPaint.every(frame => frame.opacity === '1')).toBe(true);
   expect(firstPaint.every(frame => frame.background === 'rgb(245, 250, 247)')).toBe(true);
-  expect(firstPaint.every(frame => frame.headerBackground === 'rgb(245, 250, 247)')).toBe(true);
+  expect(firstPaint.every(frame => frame.headerBackground === 'rgb(21, 78, 65)')).toBe(true);
   await expect(page.locator('#guided-modal-title')).toBeFocused();
   await expect(page.locator('#main')).toHaveJSProperty('inert', true);
   await expect(checkbox).not.toBeChecked();
-  await expect(opener).toHaveText('Explore HandicapSkater');
   await expect(footerOpener).toHaveText('Guided Tour');
   await expect(footerOpener).toHaveAttribute('href', '/?welcome=1');
   await expect(modal.getByRole('heading', {name:'Riding a Motorcycle with Skates'})).toBeVisible();
   await expect(modal).toContainText('Public transportation refused');
   await expect(modal).toContainText('motorcycle');
-  const source = await page.locator('main .home-journey-grid a').evaluateAll(nodes => nodes.map(node => [node.textContent, node.href]));
-  expect(await modal.locator('[data-modal-choices] a').evaluateAll(nodes => nodes.map(node => [node.textContent, node.href]))).toEqual(source);
   await expect(modal.locator('[data-modal-choices] a')).toHaveCount(6);
-  const video = await page.locator('.home-motorcycle-hook figure a').getAttribute('href');
+  const video = 'https://www.reddit.com/r/HandicapSkater/s/6pPCv2k02t';
   await expect(modal.locator('[data-modal-video] a')).toHaveAttribute('href', video);
   await expect(modal.locator('[data-modal-video] a')).toHaveAccessibleName(/Watch Troy ride/);
   await expect(modal.locator('[data-modal-video-text]')).toHaveAttribute('href', video);
@@ -130,11 +126,6 @@ test('fresh browser auto-opens; only the explicit checkbox suppresses later auto
   expect(await page.evaluate(key => localStorage.getItem(key), storageKey)).toBe(beforeManualOpen);
   await page.reload();
   await expect(modal).not.toBeVisible();
-  await opener.click();
-  await expect(modal).toBeVisible();
-  await expect(page.locator('[data-modal-landing]')).toBeVisible();
-  await close.click();
-  await expect(opener).toBeFocused();
 });
 
 test('current suppression is respected while expired, mismatched, and malformed state reopen', async ({page}) => {
@@ -204,11 +195,12 @@ test('shared footer reopens landing from another page without clearing suppressi
   await expect(page.locator('#heroModal')).not.toBeVisible();
 });
 
-test('homepage cards open five modal journeys and the sixth hands off to .org', async ({page}, info) => {
+test('modal cards open five journeys and the sixth hands off to .org', async ({page}, info) => {
   await seedPreference(page, currentPreference());
   await page.goto('/');
   const beforeJourneys = await page.evaluate(key => localStorage.getItem(key), storageKey);
   for (const key of keys) {
+    await page.locator('[data-welcome-modal]').click();
     const trigger = page.locator(home(key));
     const title = await trigger.locator('strong').textContent();
     await trigger.click();
@@ -223,7 +215,7 @@ test('homepage cards open five modal journeys and the sixth hands off to .org', 
     await expect(page.locator('#guided-modal-title')).toBeFocused();
     expect(await page.evaluate(storageKey => localStorage.getItem(storageKey), storageKey)).toBe(beforeJourneys);
     await page.keyboard.press('Escape');
-    await expect(trigger).toBeFocused();
+    await expect(page.locator('[data-welcome-modal]')).toBeFocused();
   }
   await page.goto('/?journey=lifelong&route=MEASURED#audience-routing');
   await expect(page.locator('#heroModal')).toBeVisible();
@@ -256,6 +248,7 @@ test('one trusted broker frame survives perspective changes and preserves suppre
   });
   await page.goto('/');
   const beforeJourney = await page.evaluate(key => localStorage.getItem(key), storageKey);
+  await page.locator('[data-welcome-modal]').click();
   await page.locator(home('walking')).click();
   const frame = page.frameLocator('#heroModal iframe');
   await expect(frame.locator('h2')).toBeVisible();
@@ -271,6 +264,7 @@ test('one trusted broker frame survives perspective changes and preserves suppre
   await page.keyboard.press('Escape');
   await expect(page.locator('#heroModal')).not.toBeVisible();
   expect(await page.evaluate(key => localStorage.getItem(key), storageKey)).toBe(beforeJourney);
+  await page.locator('[data-welcome-modal]').click();
   await page.locator(home('recognition')).click();
   await expect(frame.locator('h2')).toHaveText('PUBLIC_LEGAL');
   expect(loads).toBe(1);
