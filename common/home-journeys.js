@@ -35,7 +35,7 @@
     },
     recognition: {
       title: "Read the record, including what each decision does not establish.",
-      context: "Explore physician and biomechanics documentation, DOT/FTA and BART history, DMV records, airline arrangements, and the continuing access problem. A setting-specific decision is not universal approval or legal advice.",
+      context: "Troy’s personal account: public transportation refused skates on safety grounds without an initially usable alternative, so the motorcycle became part of his mobility solution. He pursued Civil Rights action to obtain ParaTransit access. Explore the documented DOT/FTA and BART history, physician and biomechanics support, DMV records, airline arrangements, and continuing disputes. Personal history, policy, legal arguments and setting-specific decisions are distinct—not universal approval or legal advice.",
       links: [["Documented recognition and access", "/access/"], ["The case and scoped decisions", "/case/"], ["History and source context", "/story/"]],
       question: "What documented recognition and access history exists for this mobility aid, including physician/biomechanics records, DOT/FTA, BART, DMV, and airlines? Distinguish source records, personal accounts, and setting-specific decisions; do not claim universal legal recognition."
     }
@@ -44,21 +44,89 @@
   if (!panel) return;
   const heading = document.getElementById("home-journey-title");
   const feedback = panel.querySelector("[role=status]");
-  const triggers = [...document.querySelectorAll("[data-home-journey]")];
+  const homeGrid = document.querySelector(".home-journey-grid");
+  // Authored homepage links are the single source of labels, subtitles and
+  // reading destinations, including the distinct .org accommodation handoff.
+  const triggers = [...homeGrid.querySelectorAll("a")];
   const portal = "https://hs-portal-324477223314.us-central1.run.app";
   const entries = {walking:"PUBLIC_WALKING", rolling:"PUBLIC_SKATING", evidence:"PUBLIC_EVIDENCE", lifelong:"PUBLIC_LIFELONG_MOBILITY", recognition:"PUBLIC_LEGAL"};
-  let frame = null, ready = false, initialEntry = null;
-  let activeTrigger = null;
+  const guidedJourneys = triggers.map(link => ({link, key:link.dataset.homeJourney,
+    entry:entries[link.dataset.homeJourney], title:link.querySelector("strong").textContent,
+    subtitle:link.querySelector("span").textContent, href:link.href}));
+  const dialog = document.createElement("dialog");
+  if (typeof dialog.showModal !== "function") return; // Reading links still work.
+  dialog.id = "heroModal";
+  dialog.className = "home-guided-dialog";
+  dialog.setAttribute("aria-modal", "true");
+  dialog.setAttribute("aria-labelledby", "guided-modal-title");
+  dialog.innerHTML = '<header class="guided-modal-header"><button type="button" data-all-questions hidden>← All questions</button><span>HandicapSkater · Guided experience</span><button type="button" data-modal-close aria-label="Close guided experience">Close ×</button></header><div class="guided-modal-scroll"><section data-modal-landing><h2 id="guided-modal-title" tabindex="-1">Riding a Motorcycle with Skates</h2><div class="guided-modal-hook"><div data-modal-video></div><div><p>Public transportation refused to carry me with my skates because of safety concerns, initially offering no usable alternative. I began riding a motorcycle because I still needed a way to get around.</p><p>Shop. Skate. Ride. Continuous mobility. The skates stay with me because the mobility need doesn’t end at the motorcycle.</p><p>My skates function as a prosthetic mobility device. Reaching down to remove and put them on is painful because of my disability.</p><a data-modal-video-text>Watch the public video ↗</a></div></div><h3>What do you want to understand?</h3><nav class="home-journey-grid" aria-label="Six guided perspectives" data-modal-choices></nav></section></div>';
+  const landing = dialog.querySelector("[data-modal-landing]");
+  const scroll = dialog.querySelector(".guided-modal-scroll");
+  const allQuestions = dialog.querySelector("[data-all-questions]");
+  const opener = document.querySelector(".home-guided-open");
+  const video = document.querySelector(".home-motorcycle-hook figure a");
+  const imageLink = video.cloneNode(true);
+  imageLink.setAttribute("aria-label", "Watch Troy ride a motorcycle while wearing his mobility skates");
+  dialog.querySelector("[data-modal-video]").append(imageLink);
+  const videoText = dialog.querySelector("[data-modal-video-text]");
+  videoText.href = video.href; videoText.target = video.target; videoText.rel = video.rel;
+  // Move, rather than duplicate, the existing client and its one shared iframe.
+  scroll.append(panel);
+  document.body.append(dialog);
+  const menuLinks = guidedJourneys.map(journey => {
+    const link = journey.link.cloneNode(true);
+    dialog.querySelector("[data-modal-choices]").append(link);
+    return link;
+  });
+  let frame = null, ready = false, initialEntry = null, activeKey = null;
+  let activeTrigger = null, savedOverflow = "";
+  function open(trigger) {
+    if (!dialog.open) {
+      activeTrigger = trigger;
+      savedOverflow = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      dialog.showModal();
+    }
+  }
+  function landingView() {
+    landing.hidden = false; panel.hidden = true; allQuestions.hidden = true;
+    dialog.setAttribute("aria-labelledby", "guided-modal-title");
+    scroll.scrollTop = 0;
+    dialog.querySelector("#guided-modal-title").focus({preventScroll:true});
+  }
   function close() {
-    panel.hidden = true;
-    triggers.forEach(link => link.setAttribute("aria-expanded", "false"));
+    dialog.close();
+    restorePage();
+  }
+  function restorePage() {
+    if (dialog.open) return;
+    document.body.style.overflow = savedOverflow;
+    [...triggers, ...menuLinks].forEach(link => link.setAttribute("aria-expanded", "false"));
     activeTrigger?.focus();
   }
-  triggers.forEach(link => {
+  dialog.addEventListener("close", restorePage);
+  dialog.addEventListener("cancel", event => { event.preventDefault(); close(); });
+  dialog.querySelector("[data-modal-close]").addEventListener("click", close);
+  allQuestions.addEventListener("click", landingView);
+  dialog.addEventListener("keydown", event => {
+    if (event.key !== "Tab") return;
+    const controls = [...dialog.querySelectorAll('button, a[href], iframe')].filter(node => node.getClientRects().length && !node.disabled);
+    const first = controls[0], last = controls[controls.length - 1];
+    if (event.shiftKey && (document.activeElement === first || document.activeElement.tabIndex === -1)) {
+      event.preventDefault(); last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault(); first.focus();
+    }
+  });
+  opener.hidden = false;
+  opener.setAttribute("aria-haspopup", "dialog");
+  opener.addEventListener("click", () => { open(opener); landingView(); });
+  [...triggers, ...menuLinks].forEach(link => {
     const journey = journeys[link.dataset.homeJourney];
     if (!journey) return;
     link.setAttribute("role", "button");
-    link.setAttribute("aria-controls", panel.id);
+    link.setAttribute("aria-controls", dialog.id);
+    link.setAttribute("aria-haspopup", "dialog");
     link.setAttribute("aria-expanded", "false");
     link.addEventListener("keydown", event => {
       if (event.key === " ") { event.preventDefault(); link.click(); }
@@ -66,19 +134,23 @@
     link.addEventListener("click", event => {
       if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
       event.preventDefault();
-      activeTrigger = link;
-      triggers.forEach(item => item.setAttribute("aria-expanded", String(item === link)));
-      heading.textContent = journey.title;
+      open(link);
+      [...triggers, ...menuLinks].forEach(item => item.setAttribute("aria-expanded", String(item.dataset.homeJourney === link.dataset.homeJourney)));
+      heading.textContent = guidedJourneys.find(item => item.key === link.dataset.homeJourney).title;
       panel.querySelector("[data-journey-context]").textContent = journey.context;
       panel.querySelector("[data-journey-links]").replaceChildren(...journey.links.map(([label, href]) => {
         const anchor = document.createElement("a");
         anchor.href = href;
         anchor.textContent = label;
+        if (href === "/#audience-routing") anchor.addEventListener("click", event => { event.preventDefault(); landingView(); });
         return anchor;
       }));
       feedback.textContent = "";
       panel.hidden = false;
+      landing.hidden = true; allQuestions.hidden = false;
+      dialog.setAttribute("aria-labelledby", heading.id);
       const key = link.dataset.homeJourney;
+      activeKey = key;
       const returnTo = window.location.origin + "/?journey=" + key + "#audience-routing";
       panel.querySelector("[data-demo-signin]").href = portal + "/signin?return_to=" + encodeURIComponent(returnTo);
       if (!frame) {
@@ -90,23 +162,24 @@
         frame.style.cssText = "width:100%;border:0;min-height:460px;display:none";
         panel.querySelector("[data-guided-frame]").append(frame);
       } else if (ready) frame.contentWindow.postMessage({type:"hs-journey", entry:entries[key]}, portal);
-      panel.querySelector("[data-journey-context]").hidden = ready;
+      panel.querySelector("[data-journey-context]").hidden = ready && key !== "recognition";
       panel.querySelector("[data-journey-links]").hidden = ready;
       heading.focus({ preventScroll: true });
-      heading.scrollIntoView({ block: "start", behavior: "instant" });
+      scroll.scrollTop = 0;
     });
   });
-  panel.querySelector(".home-journey-close").addEventListener("click", close);
-  panel.addEventListener("keydown", event => { if (event.key === "Escape") close(); });
+  panel.querySelector(".home-journey-close").textContent = "← All questions";
+  panel.querySelector(".home-journey-close").addEventListener("click", landingView);
   window.addEventListener("message", (event) => {
     if (!frame || event.origin !== portal || event.source !== frame.contentWindow) return;
-    if (event.data?.type === "hs-close") close();
+    if (event.data?.type === "hs-escape" && dialog.open) close();
+    if (event.data?.type === "hs-close" && dialog.open) landingView();
     if (event.data?.type === "hs-size" && Number.isFinite(event.data.height)) frame.style.height = Math.max(250, Math.min(4000, event.data.height + 24)) + "px";
     if (event.data?.type === "hs-ready") {
       ready = true; frame.style.display = "block";
-      if (activeTrigger && activeTrigger.dataset.homeJourney !== initialEntry)
-        frame.contentWindow.postMessage({type:"hs-journey", entry:entries[activeTrigger.dataset.homeJourney]}, portal);
-      panel.querySelector("[data-journey-context]").hidden = true;
+      if (activeKey && activeKey !== initialEntry)
+        frame.contentWindow.postMessage({type:"hs-journey", entry:entries[activeKey]}, portal);
+      panel.querySelector("[data-journey-context]").hidden = activeKey !== "recognition";
       panel.querySelector("[data-journey-links]").hidden = true;
     }
   });

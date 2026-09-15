@@ -40,9 +40,9 @@ test("human-first sequence preserves evidence, footer, and responsive layout", a
 
 test("all six journeys retain context, destinations, keyboard access, and source boundaries", async ({ page }) => {
   await page.goto("/");
-  await expect(page.locator(".home-journey-grid > a")).toHaveCount(6);
+  await expect(page.locator("main .home-journey-grid > a")).toHaveCount(6);
   for (const [id, label, href, context] of entries) {
-    const trigger = page.locator(`[data-home-journey="${id}"]`);
+    const trigger = page.locator(`main [data-home-journey="${id}"]`);
     await expect(trigger.locator("strong")).toHaveText(label);
     await expect(trigger).toHaveAttribute("href", href);
     await trigger.focus();
@@ -50,7 +50,7 @@ test("all six journeys retain context, destinations, keyboard access, and source
     await expect(trigger).toHaveAttribute("aria-expanded", "true");
     await expect(page.locator("#home-journey-title")).toBeFocused();
     const titleBox = await page.locator("#home-journey-title").boundingBox();
-    const headerBox = await page.locator(".site-header").boundingBox();
+    const headerBox = await page.locator(".guided-modal-header").boundingBox();
     expect(titleBox.y).toBeGreaterThanOrEqual(0);
     expect(titleBox.y).toBeGreaterThanOrEqual(Math.max(0, headerBox.y + headerBox.height));
     await expect(page.locator("[data-journey-context]")).not.toBeEmpty();
@@ -68,7 +68,7 @@ test("all six journeys retain context, destinations, keyboard access, and source
     await expect(trigger).toBeFocused();
     await expect(page.locator("#home-journey-panel")).toBeHidden();
   }
-  const accommodation = page.locator(".home-journey-accommodation");
+  const accommodation = page.locator("main .home-journey-accommodation");
   await expect(accommodation.locator("strong")).toHaveText("I need a mobility-aid accommodation");
   await expect(accommodation).toHaveAttribute("href", "https://handicapskater.org/review-tools/");
   await expect(accommodation).not.toHaveAttribute("role", "button");
@@ -96,7 +96,7 @@ test("lifelong entry is honest about CX availability and never invokes private A
   const requests = [];
   page.on("request", request => requests.push(request.url()));
   await page.goto("/");
-  const trigger = page.locator('[data-home-journey="lifelong"]');
+  const trigger = page.locator('main [data-home-journey="lifelong"]');
   await expect(trigger.locator("strong")).toHaveText("What does this mean for lifelong mobility?");
   await expect(trigger).toHaveAttribute("data-cx-entry-intent", "HOMEPAGE_LIFELONG_MOBILITY");
   await expect(trigger).toHaveAttribute("href", "/lifelong-mobility/");
@@ -114,7 +114,7 @@ test("lifelong entry is honest about CX availability and never invokes private A
   await page.screenshot({ path: testInfo.outputPath("lifelong-menu.png"), fullPage: true });
   await page.keyboard.press("Escape");
   await expect(trigger).toBeFocused();
-  await page.locator('[data-home-journey="evidence"]').click();
+  await page.locator('main [data-home-journey="evidence"]').click();
   await expect(page.locator("#home-journey-panel details")).toHaveCount(0);
   expect(requests.some(url => /hs-observatory|ces\.googleapis|\/rag\//.test(url))).toBe(false);
 });
@@ -148,7 +148,7 @@ test("lifelong reading fallback keeps boundaries, six choices and working public
 
 test("guided sign-in preserves topic without exposing private Ask Evidence", async ({ page }) => {
   await page.goto("/");
-  await page.locator('[data-home-journey="evidence"]').click();
+  await page.locator('main [data-home-journey="evidence"]').click();
   const url = new URL(await page.locator('[data-demo-signin]').getAttribute('href'));
   expect(url.origin).toBe('https://hs-portal-324477223314.us-central1.run.app');
   expect(url.searchParams.get('return_to')).toContain('journey=evidence');
