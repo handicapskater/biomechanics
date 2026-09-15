@@ -1619,28 +1619,34 @@
   line-height: 1.2;
   text-decoration: none;
   white-space: nowrap;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 120ms ease;
 }
 
-.site-com .home-footer-welcome {
-  background: #f6c76b;
-  color: var(--ink);
+.site-com .home-footer-welcome,
+.site-com .home-footer-welcome:visited {
+  border-color: color-mix(in srgb, var(--green) 70%, white);
+  background: var(--green);
+  color: #fff;
+  box-shadow: 0 3px 12px color-mix(in srgb, var(--green) 55%, transparent);
+  font-weight: 800;
 }
 
-.site-com .home-footer-donate {
-  border-color: rgba(255, 255, 255, 0.48);
-  background: rgba(255, 255, 255, 0.12);
+.site-com .home-footer-donate,
+.site-com .home-footer-donate:visited {
+  border-color: color-mix(in srgb, var(--green) 50%, white);
+  background: color-mix(in srgb, var(--green) 74%, var(--ink));
   color: #fff;
 }
 
-.site-com .home-footer-welcome:hover,
-.site-com .home-footer-welcome:focus-visible {
-  background: #ffdc96;
-  color: var(--ink);
+.site-com .home-footer-welcome:hover {
+  border-color: color-mix(in srgb, var(--green) 78%, white);
+  background: color-mix(in srgb, var(--green) 88%, var(--ink));
+  color: #fff;
 }
 
-.site-com .home-footer-donate:hover,
-.site-com .home-footer-donate:focus-visible {
-  background: rgba(255, 255, 255, 0.22);
+.site-com .home-footer-donate:hover {
+  border-color: color-mix(in srgb, var(--green) 62%, white);
+  background: color-mix(in srgb, var(--green) 84%, var(--ink));
   color: #fff;
 }
 
@@ -1650,15 +1656,15 @@
 }
 
 .site-com .home-footer-welcome:active {
-  background: #e8b44f;
+  background: color-mix(in srgb, var(--green) 76%, var(--ink));
 }
 
 .site-com .home-footer-donate:active {
-  background: rgba(255, 255, 255, 0.3);
+  background: color-mix(in srgb, var(--green) 66%, var(--ink));
 }
 
 .site-com .home-contact-footer a:focus-visible {
-  outline: 2px solid #f6c76b;
+  outline: 3px solid color-mix(in srgb, var(--green) 35%, white);
   outline-offset: 4px;
 }
 

@@ -88,6 +88,10 @@ class HomeContactFooterTests(unittest.TestCase):
         self.assertIn(".site-com .home-footer-welcome", css)
         self.assertIn(".site-com .home-footer-welcome:active", css)
         self.assertIn(".site-com .home-footer-donate:active", css)
+        self.assertIn(".site-com .home-footer-welcome:visited", css)
+        self.assertIn(".site-com .home-footer-donate:visited", css)
+        self.assertIn("background: var(--green)", css)
+        self.assertIn("color-mix(in srgb, var(--green) 74%, var(--ink))", css)
         self.assertIn("grid-template-columns: auto auto auto", css)
         self.assertNotIn(".page-home .home-footer-", css)
 

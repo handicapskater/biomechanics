@@ -35,7 +35,10 @@ claims stay removed.
 - The compact shared footer places primary `Guided Tour`, social links and secondary
   `Donate / Support` in that desktop order. At 600px and below the same DOM/tab order
   becomes a centered one-column stack; this avoids six-icon collisions and avoids a
-  mismatch between visual and keyboard order.
+  mismatch between visual and keyboard order. Both actions derive their normal,
+  visited, hover, focus and pressed treatments from the canonical `--green: #2f6f54`
+  token; the stronger Guided Tour action uses the token directly and Donate / Support
+  uses a darker mix with `--ink`.
 - Homepage cards 1–5 open their selected journey immediately in the same dialog.
 - All questions returns to the motorcycle landing without destroying the frame.
 - Card 6, on either surface, navigates directly to `.org/review-tools/`.
